@@ -1,3 +1,6 @@
+import { PlayIcon } from 'phosphor-react-native/src/icons/Play';
+import { SquaresFourIcon } from 'phosphor-react-native/src/icons/SquaresFour';
+import { TrashIcon } from 'phosphor-react-native/src/icons/Trash';
 import { type ReactNode, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
@@ -15,6 +18,9 @@ import {
   Screen,
   SegmentedControl,
   Text,
+  CategoryIcon,
+  Flag,
+  Icon,
 } from '@/ui/components';
 import { Mascot, type MascotState, mascotStates } from '@/ui/mascot';
 import {
@@ -41,13 +47,23 @@ import {
 // Écran caché de validation du design system (docs/PROMPTS.md, étape 0.3).
 
 const REGIONS = ['cm', 'africa', 'fr', 'us', 'world', 'party', 'mine'] as const;
+// Drapeaux (flag-icons) pour les pays, Fluent 3D pour le reste (docs/ASSETS.md §1).
+const REGION_ICONS: Record<(typeof REGIONS)[number], ReactNode> = {
+  cm: <Flag code="cm" />,
+  africa: <CategoryIcon name="region-africa" size={20} />,
+  fr: <Flag code="fr" />,
+  us: <Flag code="us" />,
+  world: <CategoryIcon name="region-world" size={20} />,
+  party: <CategoryIcon name="region-party" size={20} />,
+  mine: <CategoryIcon name="region-mine" size={20} />,
+};
 const DURATIONS = [30, 60, 90, 120] as const;
 const CATEGORY_CARDS = [
-  { key: 'food', accent: 'mango', words: 120 },
-  { key: 'music', accent: 'hibiscus', words: 140 },
-  { key: 'football', accent: 'palm', words: 110 },
-  { key: 'party', accent: 'plum', words: 90 },
-  { key: 'animals', accent: 'lagoon', words: 160 },
+  { key: 'food', accent: 'mango', words: 120, icon: 'plats-camerounais' },
+  { key: 'music', accent: 'hibiscus', words: 140, icon: 'artistes-africains' },
+  { key: 'football', accent: 'palm', words: 110, icon: 'footballeurs' },
+  { key: 'party', accent: 'plum', words: 90, icon: 'situations-genantes' },
+  { key: 'animals', accent: 'lagoon', words: 160, icon: 'animaux' },
 ] as const;
 // Contenu de démonstration (mots du paquet d'exemple), pas des textes d'interface.
 const PREVIEW_WORDS = ['Ndolé', 'Eru', 'Poulet DG', 'Koki', 'Achu'];
@@ -158,7 +174,12 @@ export default function DevUiScreen() {
         <Section title={t('devUi.sections.buttons')}>
           <View style={styles.row}>
             <Animated.View style={breatheStyle}>
-              <Button label={t('devUi.buttons.play')} size="lg" onPress={() => undefined} />
+              <Button
+                label={t('devUi.buttons.play')}
+                size="lg"
+                icon={<Icon icon={PlayIcon} size={22} emphasis />}
+                onPress={() => undefined}
+              />
             </Animated.View>
             <Chip
               label={t('devUi.motion.breathe')}
@@ -179,12 +200,18 @@ export default function DevUiScreen() {
             <Button
               label={t('devUi.buttons.secondary')}
               variant="secondary"
+              icon={<Icon icon={SquaresFourIcon} />}
               onPress={() => undefined}
             />
             <Button label={t('devUi.buttons.ghost')} variant="ghost" onPress={() => undefined} />
           </View>
           <View style={styles.row}>
-            <Button label={t('devUi.buttons.danger')} accent="danger" onPress={() => undefined} />
+            <Button
+              label={t('devUi.buttons.danger')}
+              accent="danger"
+              icon={<Icon icon={TrashIcon} />}
+              onPress={() => undefined}
+            />
             <Button label={t('devUi.buttons.disabled')} disabled onPress={() => undefined} />
           </View>
         </Section>
@@ -195,6 +222,7 @@ export default function DevUiScreen() {
               <Chip
                 key={key}
                 label={t(`devUi.regions.${key}`)}
+                icon={REGION_ICONS[key]}
                 selected={region === key}
                 onPress={() => setRegion(key)}
               />
@@ -238,7 +266,7 @@ export default function DevUiScreen() {
             <Text>{t('devUi.cards.plain')}</Text>
           </Card>
           <View style={styles.grid}>
-            {CATEGORY_CARDS.map(({ key, accent, words }) => (
+            {CATEGORY_CARDS.map(({ key, accent, words, icon }) => (
               <View key={key} style={styles.gridItem}>
                 <Card
                   accent={accent}
@@ -247,6 +275,7 @@ export default function DevUiScreen() {
                   onLongPress={() => setSheetOpen(true)}
                   accessibilityLabel={t(`devUi.cards.${key}`)}
                 >
+                  <CategoryIcon name={icon} size={44} />
                   {/* Dernier recours si un mot ne tient pas : coupure avec trait d'union (titres de cartes seulement). */}
                   <Text variant="subheading" android_hyphenationFrequency="normal">
                     {t(`devUi.cards.${key}`)}
