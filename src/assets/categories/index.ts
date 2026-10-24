@@ -1,0 +1,14 @@
+// Fichier généré par scripts/fluent-emoji.mjs : icônes Fluent Emoji 3D (MIT), WebP 256 px.
+export const categoryIcons = {
+  animaux: require('./animaux.webp') as number,
+  'artistes-africains': require('./artistes-africains.webp') as number,
+  footballeurs: require('./footballeurs.webp') as number,
+  'plats-camerounais': require('./plats-camerounais.webp') as number,
+  'region-africa': require('./region-africa.webp') as number,
+  'region-mine': require('./region-mine.webp') as number,
+  'region-party': require('./region-party.webp') as number,
+  'region-world': require('./region-world.webp') as number,
+  'situations-genantes': require('./situations-genantes.webp') as number,
+};
+
+export type CategoryIconName = keyof typeof categoryIcons;

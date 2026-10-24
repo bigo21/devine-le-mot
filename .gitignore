@@ -46,3 +46,6 @@ example
 .impeccable/review/
 .impeccable/mocks/
 .impeccable/build/
+
+# Cache des scripts d’assets
+scripts/.cache/

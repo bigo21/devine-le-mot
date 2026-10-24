@@ -9,3 +9,5 @@ export { SegmentedControl } from './segmented-control';
 export { SurfaceContext, useSurface } from './surface';
 export { Text } from './text';
 export { Icon } from './icon';
+export { CategoryIcon } from './category-icon';
+export { Flag } from './flag';
