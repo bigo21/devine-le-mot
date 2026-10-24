@@ -51,9 +51,16 @@ export function Button({
   const feedback = useFeedback();
   const inactive = disabled || loading;
 
-  const foreground = variant === 'primary' ? onColor(accent) : colors.text;
-  const surface =
-    variant === 'primary'
+  // Désactivé : surface neutre et texte atténué, quel que soit le variant (une couleur vive pâlie
+  // ressemble encore à un bouton actif).
+  const foreground = disabled
+    ? colors.textMuted
+    : variant === 'primary'
+      ? onColor(accent)
+      : colors.text;
+  const surface = disabled
+    ? { backgroundColor: colors.bgSunken, borderColor: colors.hairline, borderWidth: 1 }
+    : variant === 'primary'
       ? {
           backgroundColor: colors[accent],
           boxShadow: `${shadows.soft}, inset 0px 1px 0px ${colors.highlight}`,
@@ -76,13 +83,7 @@ export function Button({
       style={block ? styles.block : styles.inline}
     >
       <Animated.View
-        style={[
-          styles.base,
-          size === 'lg' ? styles.lg : styles.md,
-          surface,
-          disabled && styles.disabled,
-          press.style,
-        ]}
+        style={[styles.base, size === 'lg' ? styles.lg : styles.md, surface, press.style]}
       >
         <SurfaceContext value={{ foreground, muted: foreground }}>
           <View style={[styles.row, loading && styles.hidden]}>
@@ -113,5 +114,4 @@ const styles = StyleSheet.create({
   lg: { minHeight: 60, paddingHorizontal: spacing.xxl },
   row: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   hidden: { opacity: 0 },
-  disabled: { opacity: 0.4 },
 });

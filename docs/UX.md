@@ -63,7 +63,7 @@ Mes catégories → « Importer » → explication courte (fichier reçu sur Wha
 
 Android dessine l'app **bord à bord** (obligatoire depuis Android 15) : l'écran passe sous la **barre d'état** (en haut : heure, batterie, réseau, notifications), sous la **barre de navigation** (en bas : boutons ou barre de gestes) et autour de l'**encoche** (caméra). Ces zones s'appellent les **zones sûres** (*safe areas* / *insets*).
 
-- **Rien d'utile sous les barres système** : textes, boutons, champs et le mot en jeu restent toujours dans les zones sûres. Seuls le fond (couleur, filigrane, flash plein écran) peut passer dessous. C'est le rôle du composant `Screen` et de la marge basse des feuilles du bas ; tout nouvel écran ou élément ancré en haut ou en bas les utilise.
+- **Rien d'utile sous les barres système au repos** : en haut d'un écran, rien ne passe sous la barre d'état ; une fois arrivé en bas, rien ne passe sous la barre de navigation. **Pendant le défilement**, le contenu peut glisser sous les barres (choix validé). Les éléments fixes (boutons ancrés en bas, en-têtes, mot en jeu) restent toujours dans les zones sûres. Le fond (couleur, filigrane, flash plein écran) passe dessous. C'est le rôle des marges du composant `Screen` et de la marge basse des feuilles du bas ; tout nouvel écran ou élément ancré en haut ou en bas les utilise.
 - **Paysage pendant la partie** : l'encoche et la barre de navigation passent sur les **côtés** ; le mot, la consigne et les libellés du mode tap respectent les marges gauche et droite.
 - **Icônes de la barre d'état** toujours lisibles sur le fond (claires sur `bg`, adaptées sur un fond de catégorie).
 - **Clavier** :

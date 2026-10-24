@@ -84,7 +84,7 @@ export const en: Translation = {
       reduced: 'Reduced motion: {{state}}',
       on: 'on',
       off: 'off',
-      toggleReduced: 'Toggle reduced motion (app setting)',
+      toggleReduced: 'Reduced motion (app setting)',
       pop: 'Replay pop',
       rise: 'Replay rise',
       breathe: 'Breathe',

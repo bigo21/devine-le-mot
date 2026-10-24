@@ -85,6 +85,7 @@ Toutes les couleurs vives passent avec le texte foncé ; aucune ne passe avec le
 | `display` | Unbounded 800 | 32 / 38 |
 | `title` | Unbounded 700 | 24 / 30 |
 | `heading` | Unbounded 700 | 20 / 26 |
+| `subheading` | Unbounded 700 | 16 / 22 (titres de cartes ; césure avec trait d'union en dernier recours, au point d'usage) |
 | `bodyLarge` | Plus Jakarta Sans 500 | 20 / 28 |
 | `body` | Plus Jakarta Sans 400 | 16 / 24 |
 | `bodyStrong` | Plus Jakarta Sans 600 | 16 / 24 |
@@ -97,7 +98,7 @@ Toutes les couleurs vives passent avec le texte foncé ; aucune ne passe avec le
 
 **Espacements** : base 4 (4, 8, 12, 16, 24, 32, 48). **Rayons** : 12 (petits), 20 (cartes), 32 (grandes cartes), 999 (pilules). **Cible tactile** : 48 dp minimum (`touchTarget`) ; un élément visuellement plus petit (pilule de 40 dp) compense avec une zone de toucher élargie.
 
-**États des composants** : une pilule sélectionnée et l'indicateur du choix segmenté sont en `text` (blanc cassé) avec texte `bg` (17:1) ; le `mango` reste réservé à l'action principale de l'écran. Un élément désactivé passe à 40 % d'opacité.
+**États des composants** : une pilule sélectionnée et l'indicateur du choix segmenté sont en `text` (blanc cassé) avec texte `bg` (17:1) ; le `mango` reste réservé à l'action principale de l'écran. Un bouton désactivé prend une surface neutre (`bgSunken`) et un texte `textMuted`, quelle que soit sa couleur : une couleur vive pâlie ressemble encore à un bouton actif.
 
 ## 3. Mouvement (`src/ui/motion/`)
 

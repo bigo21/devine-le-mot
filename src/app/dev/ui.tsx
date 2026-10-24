@@ -138,9 +138,16 @@ export default function DevUiScreen() {
         </Section>
 
         <Section title={t('devUi.sections.buttons')}>
-          <Animated.View style={[styles.start, breatheStyle]}>
-            <Button label={t('devUi.buttons.play')} size="lg" onPress={() => undefined} />
-          </Animated.View>
+          <View style={styles.row}>
+            <Animated.View style={breatheStyle}>
+              <Button label={t('devUi.buttons.play')} size="lg" onPress={() => undefined} />
+            </Animated.View>
+            <Chip
+              label={t('devUi.motion.breathe')}
+              selected={breathing}
+              onPress={() => setBreathing((b) => !b)}
+            />
+          </View>
           <Button
             label={t('devUi.buttons.primary')}
             block
@@ -214,17 +221,21 @@ export default function DevUiScreen() {
           </Card>
           <View style={styles.grid}>
             {CATEGORY_CARDS.map(({ key, accent, words }) => (
-              <Card
-                key={key}
-                accent={accent}
-                style={styles.categoryCard}
-                onPress={() => undefined}
-                onLongPress={() => setSheetOpen(true)}
-                accessibilityLabel={t(`devUi.cards.${key}`)}
-              >
-                <Text variant="heading">{t(`devUi.cards.${key}`)}</Text>
-                <Text variant="labelSmall">{t('devUi.cards.words', { count: words })}</Text>
-              </Card>
+              <View key={key} style={styles.gridItem}>
+                <Card
+                  accent={accent}
+                  style={styles.categoryCard}
+                  onPress={() => undefined}
+                  onLongPress={() => setSheetOpen(true)}
+                  accessibilityLabel={t(`devUi.cards.${key}`)}
+                >
+                  {/* Dernier recours si un mot ne tient pas : coupure avec trait d'union (titres de cartes seulement). */}
+                  <Text variant="subheading" android_hyphenationFrequency="normal">
+                    {t(`devUi.cards.${key}`)}
+                  </Text>
+                  <Text variant="labelSmall">{t('devUi.cards.words', { count: words })}</Text>
+                </Card>
+              </View>
             ))}
           </View>
           <Text variant="caption" muted>
@@ -246,11 +257,13 @@ export default function DevUiScreen() {
               state: reduced ? t('devUi.motion.on') : t('devUi.motion.off'),
             })}
           </Text>
-          <Button
-            label={t('devUi.motion.toggleReduced')}
-            variant="secondary"
-            onPress={() => updateSettings({ reduceMotion: !appReduceMotion })}
-          />
+          <View style={styles.row}>
+            <Chip
+              label={t('devUi.motion.toggleReduced')}
+              selected={appReduceMotion}
+              onPress={() => updateSettings({ reduceMotion: !appReduceMotion })}
+            />
+          </View>
 
           <View style={styles.demoRow}>
             <Animated.View key={popKey} entering={pop({ reduced })} style={styles.badge}>
@@ -281,11 +294,6 @@ export default function DevUiScreen() {
           />
 
           <View style={styles.row}>
-            <Chip
-              label={t('devUi.motion.breathe')}
-              selected={breathing}
-              onPress={() => setBreathing((b) => !b)}
-            />
             <Button
               label={t('devUi.motion.shake')}
               variant="secondary"
@@ -370,7 +378,6 @@ const styles = StyleSheet.create({
   section: { gap: spacing.md, marginTop: spacing.xl },
   row: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, alignItems: 'center' },
   wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
-  start: { alignSelf: 'flex-start' },
   swatchItem: { alignItems: 'center', gap: spacing.xs, width: 72 },
   swatch: {
     width: 72,
@@ -384,7 +391,9 @@ const styles = StyleSheet.create({
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
   wordCard: { minHeight: 200, justifyContent: 'center' },
   wordSample: { fontSize: 56, lineHeight: 64 },
-  categoryCard: { width: 156, minHeight: 120, justifyContent: 'flex-end' },
+  // Deux colonnes qui suivent la largeur de l'écran (la largeur vit sur le conteneur extérieur).
+  gridItem: { width: '48%' },
+  categoryCard: { minHeight: 120, justifyContent: 'flex-end' },
   demoRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg },
   badge: {
     width: 64,

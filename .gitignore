@@ -41,3 +41,8 @@ example
 # generated native folders
 /ios
 /android
+
+# Captures et fichiers de travail des revues impeccable
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/

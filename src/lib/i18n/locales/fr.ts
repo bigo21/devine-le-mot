@@ -83,7 +83,7 @@ export const fr = {
       reduced: 'Mode réduit : {{state}}',
       on: 'activé',
       off: 'désactivé',
-      toggleReduced: 'Basculer le mode réduit (réglage de l’app)',
+      toggleReduced: 'Mode réduit (réglage de l’app)',
       pop: 'Rejouer pop',
       rise: 'Rejouer rise',
       breathe: 'Respiration',

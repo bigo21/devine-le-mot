@@ -112,6 +112,8 @@ export const typography = {
   display: { fontFamily: fonts.display, fontSize: 32, lineHeight: 38, letterSpacing: -0.64 },
   title: { fontFamily: fonts.displayBold, fontSize: 24, lineHeight: 30, letterSpacing: -0.24 },
   heading: { fontFamily: fonts.displayBold, fontSize: 20, lineHeight: 26 },
+  /** Titre de carte (catégorie) : Unbounded est large, 16 évite de couper les mots. */
+  subheading: { fontFamily: fonts.displayBold, fontSize: 16, lineHeight: 22 },
   bodyLarge: { fontFamily: fonts.bodyMedium, fontSize: 20, lineHeight: 28 },
   body: { fontFamily: fonts.body, fontSize: 16, lineHeight: 24 },
   bodyStrong: { fontFamily: fonts.bodySemiBold, fontSize: 16, lineHeight: 24 },
