@@ -10,6 +10,7 @@ export type FeedbackEvent =
   | 'tap'
   | 'select'
   | 'snap'
+  | 'calibrated'
   | 'countdown'
   | 'start'
   | 'found'
@@ -23,6 +24,8 @@ const recipes: Record<FeedbackEvent, { haptic?: HapticKind; sound?: SoundName }>
   tap: { haptic: 'tap' },
   select: { haptic: 'select' },
   snap: { haptic: 'light' },
+  /** Anneau de calibration plein (MOTION.md §3) : vibration de succès, sans son. */
+  calibrated: { haptic: 'success' },
   countdown: { haptic: 'light', sound: 'tick' },
   start: { haptic: 'medium', sound: 'start' },
   found: { haptic: 'success', sound: 'found' },

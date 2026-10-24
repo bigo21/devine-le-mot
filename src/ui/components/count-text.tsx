@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 import { StyleSheet, TextInput, type TextStyle } from 'react-native';
-import Animated, { useAnimatedProps, useSharedValue, withTiming } from 'react-native-reanimated';
+import Animated, {
+  useAnimatedProps,
+  useSharedValue,
+  withDelay,
+  withTiming,
+} from 'react-native-reanimated';
 
 import { easing, motion, useReducedMotion } from '@/ui/motion';
 import { maxFontScale, typography, type TypographyRole } from '@/ui/tokens';
@@ -16,20 +21,34 @@ type Props = {
   color?: string;
   /** Valeur de départ du défilement au premier affichage. */
   from?: number;
+  /** Délai avant le défilement (ms), pour s'insérer dans une séquence. */
+  delay?: number;
   style?: TextStyle;
 };
 
 /** `count` : le nombre défile jusqu'à sa valeur et ralentit à la fin (scores, nombre de mots). */
-export function CountText({ value, variant = 'display', color, from = value, style }: Props) {
+export function CountText({
+  value,
+  variant = 'display',
+  color,
+  from = value,
+  delay = 0,
+  style,
+}: Props) {
   const reduced = useReducedMotion();
   const surface = useSurface();
   const shown = useSharedValue(from);
 
   useEffect(() => {
     shown.set(
-      reduced ? value : withTiming(value, { duration: motion.countDuration, easing: easing.out }),
+      reduced
+        ? value
+        : withDelay(
+            delay,
+            withTiming(value, { duration: motion.countDuration, easing: easing.out }),
+          ),
     );
-  }, [value, reduced, shown]);
+  }, [value, reduced, shown, delay]);
 
   const animatedProps = useAnimatedProps(() => {
     const text = String(Math.round(shown.get()));

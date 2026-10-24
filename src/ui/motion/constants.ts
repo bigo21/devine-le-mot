@@ -17,6 +17,9 @@ export const motion = {
   stagger: 35,
   /** Au-delà, les éléments d'une liste apparaissent sans animation. */
   maxStaggered: 12,
+  /** Liste des mots sur l'écran des résultats (MOTION.md §3) : 25 ms par ligne, 15 lignes animées. */
+  resultsStagger: 25,
+  resultsMaxStaggered: 15,
 } as const;
 
 /** Délai d'un élément de liste en cascade ; `undefined` au-delà du plafond (apparition directe). */

@@ -1,0 +1,186 @@
+// TEMPORAIRE (étape 1.2) : 5 catégories de test en mémoire, pour jouer avant la base de données.
+// Remplacées en Phase 2 par les paquets intégrés (seed JSON → SQLite).
+import type { CategoryIconName } from '@/assets/categories';
+import type { AccentColor } from '@/ui/tokens';
+
+import type { Card } from './engine';
+
+export type TestCategory = {
+  id: string;
+  /** Clé i18n du nom (`testCategories.<id>`). */
+  nameKey: 'food' | 'animals' | 'objects' | 'sports' | 'jobs';
+  accent: AccentColor;
+  icon: CategoryIconName;
+  cards: Card[];
+};
+
+function cards(base: number, words: string[]): Card[] {
+  return words.map((text, i) => ({ id: base + i, text }));
+}
+
+export const testCategories: TestCategory[] = [
+  {
+    id: 'test-plats',
+    nameKey: 'food',
+    accent: 'mango',
+    icon: 'plats-camerounais',
+    cards: cards(1000, [
+      'Ndolé',
+      'Eru',
+      'Poulet DG',
+      'Koki',
+      'Achu',
+      'Mbongo tchobi',
+      'Okok',
+      'Kondre',
+      'Bobolo',
+      'Miondo',
+      'Beignets haricots bouillie',
+      'Soya',
+      'Poisson braisé',
+      'Met de pistache',
+      'Pepper soup',
+      'Sauce gombo',
+      'Fufu corn et njama njama',
+      'Ekwang',
+      'Plantain frit',
+      'Safou',
+      'Folere',
+      'Kossam',
+      'Folong',
+      'Sanga',
+    ]),
+  },
+  {
+    id: 'test-animaux',
+    nameKey: 'animals',
+    accent: 'lagoon',
+    icon: 'animaux',
+    cards: cards(2000, [
+      'Lion',
+      'Éléphant',
+      'Girafe',
+      'Crocodile',
+      'Gorille',
+      'Chimpanzé',
+      'Hippopotame',
+      'Zèbre',
+      'Panthère',
+      'Perroquet',
+      'Serpent',
+      'Tortue',
+      'Hérisson',
+      'Chameau',
+      'Pingouin',
+      'Requin',
+      'Dauphin',
+      'Abeille',
+      'Papillon',
+      'Coq',
+      'Chèvre',
+      'Mouton',
+      'Chat',
+      'Chien',
+    ]),
+  },
+  {
+    id: 'test-objets',
+    nameKey: 'objects',
+    accent: 'teal',
+    icon: 'objets-du-quotidien',
+    cards: cards(3000, [
+      'Parapluie',
+      'Brosse à dents',
+      'Téléphone',
+      'Lampe torche',
+      'Ventilateur',
+      'Marmite',
+      'Réfrigérateur',
+      'Ciseaux',
+      'Clé',
+      'Miroir',
+      'Oreiller',
+      'Moustiquaire',
+      'Seau',
+      'Balai',
+      'Fer à repasser',
+      'Télécommande',
+      'Montre',
+      'Lunettes',
+      'Sac à dos',
+      'Bougie',
+      'Chaise',
+      'Peigne',
+      'Savon',
+      'Allumettes',
+    ]),
+  },
+  {
+    id: 'test-sports',
+    nameKey: 'sports',
+    accent: 'palm',
+    icon: 'sports',
+    cards: cards(4000, [
+      'Football',
+      'Basketball',
+      'Handball',
+      'Volleyball',
+      'Tennis',
+      'Boxe',
+      'Natation',
+      'Cyclisme',
+      'Lutte',
+      'Judo',
+      'Marathon',
+      'Saut en hauteur',
+      'Lancer de javelot',
+      'Rugby',
+      'Ping-pong',
+      'Course de relais',
+      'Haltérophilie',
+      'Golf',
+      'Ski',
+      'Karaté',
+      'Skateboard',
+      'Baseball',
+      'Escalade',
+      'Aviron',
+    ]),
+  },
+  {
+    id: 'test-metiers',
+    nameKey: 'jobs',
+    accent: 'plum',
+    icon: 'metiers',
+    cards: cards(5000, [
+      'Médecin',
+      'Enseignant',
+      'Boulanger',
+      'Pompier',
+      'Policier',
+      'Coiffeur',
+      'Mécanicien',
+      'Chauffeur de taxi',
+      'Couturier',
+      'Agriculteur',
+      'Pilote',
+      'Cuisinier',
+      'Journaliste',
+      'Avocat',
+      'Infirmier',
+      'Maçon',
+      'Électricien',
+      'Photographe',
+      'Footballeur',
+      'Chanteur',
+      'Pêcheur',
+      'Vendeur',
+      'Architecte',
+      'Dentiste',
+    ]),
+  },
+];
+
+export function findTestCategory(id: string | null): TestCategory | undefined {
+  return testCategories.find((category) => category.id === id);
+}
