@@ -12,6 +12,20 @@ module.exports = defineConfig([
   {
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
+      // Metro n'élimine pas le code mort : l'import racine embarquerait les 1 512 icônes.
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: [
+            {
+              name: 'phosphor-react-native',
+              message:
+                "Importer chaque icône seule : import { PlayIcon } from 'phosphor-react-native/src/icons/Play'.",
+              allowTypeImports: true,
+            },
+          ],
+        },
+      ],
     },
   },
 ]);

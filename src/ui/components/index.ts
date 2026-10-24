@@ -8,3 +8,4 @@ export { Screen } from './screen';
 export { SegmentedControl } from './segmented-control';
 export { SurfaceContext, useSurface } from './surface';
 export { Text } from './text';
+export { Icon } from './icon';
