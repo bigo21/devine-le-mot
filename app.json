@@ -41,11 +41,24 @@
         "expo-build-properties",
         {
           "android": {
-            "buildArchs": ["armeabi-v7a", "arm64-v8a"]
+            "buildArchs": [
+              "armeabi-v7a",
+              "arm64-v8a"
+            ]
           }
         }
       ],
-      "./plugins/with-gradle-build-limits"
+      "./plugins/with-gradle-build-limits",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false,
+          "enableBackgroundRecording": false
+        }
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,

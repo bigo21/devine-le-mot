@@ -10,6 +10,8 @@ export type RoundDuration = 30 | 60 | 90 | 120;
 export type Settings = {
   language: LanguagePreference;
   sound: boolean;
+  /** Volume des sons du jeu, de 0 à 1. */
+  volume: number;
   haptics: boolean;
   sensitivity: Sensitivity;
   tapMode: boolean;
@@ -25,6 +27,7 @@ type SettingsStore = Settings & {
 export const defaultSettings: Settings = {
   language: 'system',
   sound: true,
+  volume: 1,
   haptics: true,
   sensitivity: 'normal',
   tapMode: false,

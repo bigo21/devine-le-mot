@@ -1,6 +1,9 @@
-// Tokens de docs/DESIGN.md §2. Socle minimal de la phase 0 ; le design system complet arrive en 0.3.
+// Tokens de docs/DESIGN.md §2. Toute couleur, taille, rayon ou espacement de l'app passe par ici.
+import type { TextStyle } from 'react-native';
 
-export const colors = {
+const ink = '#120E1F';
+
+const dark = {
   bg: '#120E1F',
   bgElevated: '#1C1730',
   bgSunken: '#0B0814',
@@ -19,19 +22,64 @@ export const colors = {
   teal: '#00BBA7',
 
   // Texte posé sur une couleur vive : ratios ≥ 4,5:1 (DESIGN.md §2).
-  onMango: '#120E1F',
-  onHibiscus: '#120E1F',
-  onPalm: '#120E1F',
-  onSun: '#120E1F',
-  onLagoon: '#120E1F',
-  onPass: '#120E1F',
-  onDanger: '#120E1F',
-  onPlum: '#120E1F',
-  onClay: '#120E1F',
-  onTeal: '#120E1F',
+  onMango: ink,
+  onHibiscus: ink,
+  onPalm: ink,
+  onSun: ink,
+  onLagoon: ink,
+  onPass: ink,
+  onDanger: ink,
+  onPlum: ink,
+  onClay: ink,
+  onTeal: ink,
+
+  // Dérivés translucides (jamais sous du texte sans recalcul de contraste).
+  hairline: 'rgba(247, 243, 234, 0.08)', // bordures fines, séparateurs
+  highlight: 'rgba(255, 255, 255, 0.22)', // reflet subtil en haut des surfaces colorées
+  scrim: 'rgba(11, 8, 20, 0.72)', // voile derrière une sheet (bgSunken)
+  shadow: 'rgba(5, 3, 10, 0.55)', // ombre douce
 } as const;
 
-export type ColorToken = keyof typeof colors;
+export type Palette = { readonly [K in keyof typeof dark]: string };
+
+// Thème clair : prévu par DESIGN.md, secondaire pour le lancement. Il reprend le sombre tant
+// qu'il n'est pas dessiné, pour que la structure light/dark existe dès maintenant.
+export const themes: { dark: Palette; light: Palette } = { dark, light: dark };
+
+export const colors = themes.dark;
+
+export type ColorToken = keyof Palette;
+
+/** Couleurs vives attribuables à une catégorie (et au feedback de jeu). */
+export const accentColors = [
+  'mango',
+  'hibiscus',
+  'palm',
+  'sun',
+  'lagoon',
+  'plum',
+  'clay',
+  'teal',
+] as const;
+export type AccentColor = (typeof accentColors)[number] | 'pass' | 'danger';
+
+const onColorKey = {
+  mango: 'onMango',
+  hibiscus: 'onHibiscus',
+  palm: 'onPalm',
+  sun: 'onSun',
+  lagoon: 'onLagoon',
+  plum: 'onPlum',
+  clay: 'onClay',
+  teal: 'onTeal',
+  pass: 'onPass',
+  danger: 'onDanger',
+} as const satisfies Record<AccentColor, ColorToken>;
+
+/** Couleur du texte et des icônes posés sur une couleur vive. */
+export function onColor(accent: AccentColor): string {
+  return colors[onColorKey[accent]];
+}
 
 export const fonts = {
   display: 'Unbounded_800ExtraBold',
@@ -45,6 +93,40 @@ export const fonts = {
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 44, 64] as const;
 
+/**
+ * Rôles typographiques : les écrans choisissent un rôle, jamais une taille.
+ * Unbounded est très large : on resserre légèrement les titres et on garde des interlignes courts.
+ */
+export const typography = {
+  hero: { fontFamily: fonts.displayBlack, fontSize: 44, lineHeight: 48, letterSpacing: -0.88 },
+  display: { fontFamily: fonts.display, fontSize: 32, lineHeight: 38, letterSpacing: -0.64 },
+  title: { fontFamily: fonts.displayBold, fontSize: 24, lineHeight: 30, letterSpacing: -0.24 },
+  heading: { fontFamily: fonts.displayBold, fontSize: 20, lineHeight: 26 },
+  bodyLarge: { fontFamily: fonts.bodyMedium, fontSize: 20, lineHeight: 28 },
+  body: { fontFamily: fonts.body, fontSize: 16, lineHeight: 24 },
+  bodyStrong: { fontFamily: fonts.bodySemiBold, fontSize: 16, lineHeight: 24 },
+  label: { fontFamily: fonts.bodyBold, fontSize: 16, lineHeight: 20 },
+  labelSmall: { fontFamily: fonts.bodySemiBold, fontSize: 14, lineHeight: 18 },
+  caption: { fontFamily: fonts.bodyMedium, fontSize: 12, lineHeight: 16 },
+} as const satisfies Record<string, TextStyle>;
+
+export type TypographyRole = keyof typeof typography;
+
+/** Plafond d'agrandissement de la police système (DESIGN.md §7). */
+export const maxFontScale = 1.6;
+
 export const spacing = { xs: 4, sm: 8, md: 12, lg: 16, xl: 24, xxl: 32, xxxl: 48 } as const;
 
 export const radii = { sm: 12, card: 20, lg: 32, pill: 999 } as const;
+
+/** Taille minimale d'une cible tactile (DESIGN.md §7). */
+export const touchTarget = 48;
+
+/** Ombres douces (décalage + flou), jamais d'ombre dure. */
+export const shadows = {
+  soft: `0px 6px 18px ${dark.shadow}`,
+  lifted: `0px 14px 32px ${dark.shadow}`,
+} as const;
+
+/** Opacité des motifs en filigrane (4–8 %, DESIGN.md §1). */
+export const patternOpacity = { screen: 0.05, card: 0.08 } as const;
