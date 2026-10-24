@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "devine-pack-v1",
+  "title": "Paquet de catégories (Devine le mot)",
+  "description": "Limites non exprimables en JSON Schema, vérifiées par la validation zod (src/features/packs/schema.ts) : 20 000 mots max au total par paquet ; fichier importé ≤ 2 Mo. Règles propres au contenu intégré (vérifiées par les tests du seed) : exactement 3 mots interdits par mot ; les catégories de personnalités déclarent \"imitation\" dans variants.",
+  "type": "object",
+  "required": ["format", "formatVersion", "pack"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "devine-pack" },
+    "formatVersion": { "const": 1 },
+    "pack": {
+      "type": "object",
+      "required": ["id", "name", "version", "categories"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]{3,64}$" },
+        "name": { "$ref": "#/$defs/localizedText" },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "region": {
+          "description": "Région du pack, héritée par toutes ses catégories (pas de région au niveau de la catégorie).",
+          "enum": ["cm", "africa", "fr", "us", "world", "party", "custom"]
+        },
+        "language": {
+          "description": "Langue du contenu (mots). Au lancement, tout le contenu intégré est en \"fr\".",
+          "type": "string",
+          "pattern": "^[a-z]{2}$",
+          "default": "fr"
+        },
+        "author": { "type": "string", "maxLength": 60 },
+        "version": { "type": "integer", "minimum": 1 },
+        "categories": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "items": { "$ref": "#/$defs/category" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["fr"],
+      "additionalProperties": false,
+      "properties": {
+        "fr": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "en": { "type": "string", "minLength": 1, "maxLength": 80 }
+      }
+    },
+    "category": {
+      "type": "object",
+      "required": ["id", "name", "words"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]{3,64}$" },
+        "name": { "$ref": "#/$defs/localizedText" },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "emoji": { "type": "string", "maxLength": 8 },
+        "color": { "enum": ["mango", "hibiscus", "palm", "sun", "lagoon", "plum", "clay", "teal"] },
+        "tags": { "type": "array", "items": { "type": "string", "maxLength": 30 }, "maxItems": 10 },
+        "variants": {
+          "description": "Variantes compatibles, définies au niveau de la catégorie (fait foi). Absent = toutes sauf \"imitation\", qui doit être déclarée explicitement. \"forbidden\" n'est proposée que si la catégorie compte au moins 20 mots éligibles (au moins 3 mots interdits chacun), qu'elle soit déclarée ou non.",
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": { "enum": ["classic", "mime", "sounds", "one-word", "sing", "forbidden", "air-draw", "imitation", "mix"] }
+        },
+        "words": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 5000,
+          "items": {
+            "oneOf": [
+              { "type": "string", "minLength": 1, "maxLength": 60 },
+              {
+                "type": "object",
+                "required": ["text"],
+                "additionalProperties": false,
+                "properties": {
+                  "text": { "type": "string", "minLength": 1, "maxLength": 60 },
+                  "hint": { "type": "string", "maxLength": 120 },
+                  "difficulty": { "enum": [1, 2, 3] },
+                  "forbidden": {
+                    "description": "Mots interdits (variante \"forbidden\"). Le mot n'est tiré dans cette variante que s'il en a au moins 3.",
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": { "type": "string", "minLength": 1, "maxLength": 40 },
+                    "maxItems": 5
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
