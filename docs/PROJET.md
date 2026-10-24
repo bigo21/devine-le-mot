@@ -21,7 +21,7 @@ Le meilleur jeu de devinettes de soirée **gratuit**, pensé d'abord pour le Cam
 | Build | **Development build** (`expo-dev-client`) + **EAS Build** | Expo Go ne suffira pas (Skia, 3D) |
 | Animations | **react-native-reanimated** + **react-native-gesture-handler** | toutes les animations UI |
 | Effets graphiques | **@shopify/react-native-skia** | dégradés animés, particules, confettis, flou |
-| Animations illustrées | **Lottie** (`lottie-react-native`) | mascotte, icônes animées. Rive retiré de la stack de base : à réévaluer plus tard, après prototype, uniquement pour une mascotte interactive |
+| Animations illustrées | **Lottie** (`lottie-react-native`) | icônes animées des variantes, animation « téléphone sur le front ». La mascotte démarre en code (Reanimated/Skia, ASSETS.md §2 option A) ; version illustrée en Lottie possible plus tard. Rive retiré de la stack de base |
 | 3D (tutoriel) | **@react-three/fiber v9** (`@react-three/fiber/native`) + **three** + **expo-gl** | **sans drei** : modèles construits avec des primitives. Fps mesurés dès le prototype de la Phase 4.1 ; voir DESIGN.md §6 |
 | Capteurs | **expo-sensors** (DeviceMotion) | détection d'inclinaison |
 | Orientation / écran | **expo-screen-orientation**, **expo-keep-awake** | paysage forcé en partie, écran allumé |
@@ -110,7 +110,7 @@ src/
 **Phase 1 — Cœur du jeu (MVP jouable)** : détection d'inclinaison fiable, écran de partie, timer, sons/vibrations, résultats. 5 à 10 catégories de test.
 **Phase 2 — Catégories** : explorateur (régions, recherche, favoris), 40+ catégories intégrées, création/édition, import/export JSON.
 **Phase 3 — Variantes** : toutes les variantes de GAMEPLAY.md, mode équipes, mode « Mix ».
-**Phase 4 — Finition visuelle** : animations de transition, confettis, mascotte (Lottie), tutoriel 3D (prototype + mesure des fps d'abord), onboarding.
+**Phase 4 — Finition visuelle** : animations de transition, confettis, mascotte (géométrique en code, ASSETS.md §2), tutoriel 3D (prototype + mesure des fps d'abord), onboarding.
 **Phase 5 — Publication** : icône, splash, captures Play Store, fiche en FR/EN, build AAB via EAS, tests sur 3+ téléphones réels (dont un entrée de gamme).
 
 **Plus tard** : enregistrement vidéo des joueurs, iOS, partage de paquets par QR code / lien, statistiques avancées, packs de contenu en anglais (le champ `language` est déjà géré), mascotte interactive en Rive (après prototype).

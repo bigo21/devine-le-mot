@@ -15,6 +15,7 @@ Jeu de soirée type Heads Up! / Charades : un joueur pose le téléphone sur son
 - @docs/UX.md — contexte d'usage, parcours, cas limites, ton des textes, tests utilisateurs
 - @docs/ASSETS.md — icônes, illustrations 2D/3D, mascotte, sons, licences
 - `docs/pack.schema.json` — format des paquets de catégories
+- `PRODUCT.md` — fiche produit lue par la skill impeccable (résumé de PROJET/GAMEPLAY/UX ; ces docs font foi)
 
 ## Skills du projet
 
