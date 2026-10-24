@@ -7,6 +7,7 @@
     "@expo-google-fonts/unbounded": "^0.4.1",
     "@shopify/react-native-skia": "2.14.0",
     "expo": "~58.0.19",
+    "expo-build-properties": "~58.0.11",
     "expo-constants": "~58.0.13",
     "expo-dev-client": "~58.0.15",
     "expo-font": "~58.0.10",
