@@ -15,9 +15,10 @@
 
 ## 2. Détection d'inclinaison (`src/features/game/tilt.ts`)
 
-- Source : `DeviceMotion` d'expo-sensors (`rotation` en radians), intervalle ~50 ms.
-- En paysage, l'axe pertinent dépend du sens de rotation (paysage gauche / droit) : le gérer via l'orientation courante d'expo-screen-orientation.
-- **Calibration** : angle de référence mesuré au départ (le front n'est jamais parfaitement vertical).
+- Source : `DeviceMotion` d'expo-sensors, intervalle ~50 ms. L'angle de l'écran est calculé à partir du **vecteur de gravité** (`accelerationIncludingGravity`) plutôt que des angles d'Euler : robuste dans tous les sens de tenue, sans saut près de ±90°.
+- En paysage, l'axe pertinent dépend du sens de rotation (paysage gauche / droit) : il est lu dans le champ `orientation` de chaque mesure DeviceMotion, et le sens de l'axe est fixé à la calibration. (`expo-screen-orientation` sert seulement à forcer le paysage pendant la partie.)
+- Le signe « écran vers le sol » (`SCREEN_DOWN_SIGN` dans `tilt.ts`) est à confirmer sur appareil avec l'écran `/dev/tilt` (étape 1.2).
+- **Calibration** : angle de référence mesuré au départ (le front n'est jamais parfaitement vertical), quand l'angle lissé varie de moins de 6° pendant 0,8 s **et** que les mesures brutes restent dans 15° (sinon une oscillation rapide passerait pour de la stabilité).
 - **Seuils** (réglables, valeurs de départ) : déclenchement à ±40° par rapport à la référence ; réarmement quand on revient à moins de ±20°. Hystérésis indispensable.
 - **Anti-rebond** : ignorer tout geste pendant 400 ms après un déclenchement.
 - **Lissage** : moyenne mobile ou filtre passe-bas sur 3–5 mesures pour éviter les faux positifs dus aux tremblements.
