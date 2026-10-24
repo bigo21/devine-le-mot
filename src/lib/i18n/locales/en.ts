@@ -27,6 +27,7 @@ export const en: Translation = {
   devUi: {
     intro: 'Every component and motion, for review on a phone.',
     sections: {
+      mascot: 'Mascot',
       colors: 'Colors',
       type: 'Typography',
       buttons: 'Buttons',
@@ -43,6 +44,14 @@ export const en: Translation = {
       expressive: 'Expressive',
       readable: 'Readable',
       instruction: 'Describe the word without saying it',
+    },
+    mascot: {
+      rest: 'Idle',
+      wave: 'Hello',
+      attention: 'Attention',
+      celebrate: 'Celebrate',
+      pout: 'Pout',
+      think: 'Thinking',
     },
     typeSample: 'Ndolé, soya and makossa',
     buttons: {

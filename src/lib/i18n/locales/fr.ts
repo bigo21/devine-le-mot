@@ -26,6 +26,7 @@ export const fr = {
   devUi: {
     intro: 'Tous les composants et mouvements, pour validation sur téléphone.',
     sections: {
+      mascot: 'Mascotte',
       colors: 'Couleurs',
       type: 'Typographie',
       buttons: 'Boutons',
@@ -42,6 +43,14 @@ export const fr = {
       expressive: 'Expressive',
       readable: 'Lisible',
       instruction: 'Décris le mot sans le prononcer',
+    },
+    mascot: {
+      rest: 'Repos',
+      wave: 'Salut',
+      attention: 'Attention',
+      celebrate: 'Célèbre',
+      pout: 'Moue',
+      think: 'Réfléchit',
     },
     typeSample: 'Ndolé, soya et makossa',
     buttons: {

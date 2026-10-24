@@ -16,6 +16,7 @@ import {
   SegmentedControl,
   Text,
 } from '@/ui/components';
+import { Mascot, type MascotState, mascotStates } from '@/ui/mascot';
 import {
   pop,
   rise,
@@ -70,6 +71,7 @@ export default function DevUiScreen() {
   const [riseKey, setRiseKey] = useState(0);
   const [breathing, setBreathing] = useState(true);
   const [score, setScore] = useState(12);
+  const [mascotState, setMascotState] = useState<MascotState>('rest');
 
   const breatheStyle = useBreathe(breathing, reduced);
   const shake = useShake(reduced);
@@ -96,6 +98,22 @@ export default function DevUiScreen() {
           {t('screens.devUi')}
         </Text>
         <Text muted>{t('devUi.intro')}</Text>
+
+        <Section title={t('devUi.sections.mascot')}>
+          <View style={styles.mascot}>
+            <Mascot state={mascotState} size={160} />
+          </View>
+          <View style={styles.wrap}>
+            {mascotStates.map((state) => (
+              <Chip
+                key={state}
+                label={t(`devUi.mascot.${state}`)}
+                selected={mascotState === state}
+                onPress={() => setMascotState(state)}
+              />
+            ))}
+          </View>
+        </Section>
 
         <Section title={t('devUi.sections.colors')}>
           <View style={styles.wrap}>
@@ -389,6 +407,7 @@ const styles = StyleSheet.create({
   neutral: { borderWidth: 1, borderColor: colors.hairline },
   typeRow: { gap: spacing.xs },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+  mascot: { alignItems: 'center' },
   wordCard: { minHeight: 200, justifyContent: 'center' },
   wordSample: { fontSize: 56, lineHeight: 64 },
   // Deux colonnes qui suivent la largeur de l'écran (la largeur vit sur le conteneur extérieur).
