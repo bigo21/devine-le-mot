@@ -1,16 +1,44 @@
 import * as Haptics from 'expo-haptics';
-import { Platform } from 'react-native';
+import { Platform, Vibration } from 'react-native';
 
 // Correspondances de docs/DESIGN.md §5 : light (taps), success (trouvé), warning (passer), heavy (fin).
-// Sur Android, les retours d'interface passent par le moteur haptique du système (discret, respecte
-// le réglage « vibration au toucher ») ; les retours de jeu passent par le vibreur, assez fort pour
-// être senti avec le téléphone sur le front.
+// Sur Android :
+// - les retours d'interface passent par le moteur haptique du système (discret, respecte le réglage
+//   « vibration au toucher ») ;
+// - les retours de jeu jouent des rythmes distincts sur le vibreur, à l'intensité par défaut de
+//   l'appareil. Les motifs d'expo-haptics y sont trop faibles (≈ 20 % de l'amplitude) et presque
+//   identiques entre « trouvé » et « passer » : indiscernables téléphone sur le front.
 export type HapticKind =
   'tap' | 'select' | 'success' | 'warning' | 'error' | 'light' | 'medium' | 'heavy';
+
+type GameHaptic = Exclude<HapticKind, 'tap' | 'select'>;
+
+/**
+ * Rythmes Android (ms) au format de `Vibration.vibrate` : [attente, vibration, attente, vibration…].
+ * Chaque retour se reconnaît au rythme, pas à la force.
+ */
+export const androidPatterns: Record<GameHaptic, number[]> = {
+  /** Trouvé : « ta-tam », deux impulsions rapprochées, la seconde plus longue. */
+  success: [0, 45, 70, 110],
+  /** Passer : un seul « bzz » plat et long. */
+  warning: [0, 220],
+  /** Erreur : trois coups secs. */
+  error: [0, 40, 60, 40, 60, 40],
+  /** Tic (compte à rebours, 10 dernières secondes) : très bref. */
+  light: [0, 25],
+  /** C'est parti : bref et franc. */
+  medium: [0, 70],
+  /** Fin de manche : longue vibration. */
+  heavy: [0, 600],
+};
 
 const isAndroid = Platform.OS === 'android';
 
 export function triggerHaptic(kind: HapticKind): void {
+  if (isAndroid && kind !== 'tap' && kind !== 'select') {
+    Vibration.vibrate(androidPatterns[kind]);
+    return;
+  }
   void run(kind).catch(() => undefined);
 }
 
