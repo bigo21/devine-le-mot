@@ -37,11 +37,9 @@ Puis dans une session Claude Code (`claude` dans le terminal ou le panneau VS Co
 # Bonnes pratiques React Native / performance (Callstack)
 /plugin marketplace add callstackincubator/agent-skills
 /plugin install react-native-best-practices@callstack-agent-skills
-
-# Design d'interface soigné, non générique (Anthropic)
-/plugin
-   → chercher "frontend-design" et l'installer
 ```
+
+Design d'interface : le projet utilise la skill **impeccable**, installée globalement sur la machine (étapes 0.3 et 4.2 de `docs/PROMPTS.md`).
 
 Optionnel, depuis la racine du projet :
 

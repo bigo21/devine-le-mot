@@ -19,7 +19,7 @@ Ensuite mets en place les fondations (Phase 0 de docs/PROJET.md) : expo-dev-clie
 
 **0.3 Design system**
 ```
-Utilise la skill frontend-design. Crée le design system décrit dans docs/DESIGN.md : src/ui/tokens.ts, les presets de mouvement Reanimated, et les composants de base (Button avec retour haptique et animation de pression, Card, Chip/Pill, SegmentedControl, BottomSheet, Screen avec fond à motif en filigrane). Crée aussi le vocabulaire de mouvement de docs/MOTION.md §2 (press, pop, rise, breathe, shake, count, flash), le hook useFeedback() et useReducedMotion(), en suivant la skill animer. Ajoute un écran caché /dev/ui qui affiche tous les composants et joue chaque mouvement, pour que je les valide visuellement.
+Utilise la skill impeccable. Crée le design system décrit dans docs/DESIGN.md : src/ui/tokens.ts, les presets de mouvement Reanimated, et les composants de base (Button avec retour haptique et animation de pression, Card, Chip/Pill, SegmentedControl, BottomSheet, Screen avec fond à motif en filigrane). Crée aussi le vocabulaire de mouvement de docs/MOTION.md §2 (press, pop, rise, breathe, shake, count, flash), le hook useFeedback() et useReducedMotion(), en suivant la skill animer. Ajoute un écran caché /dev/ui qui affiche tous les composants et joue chaque mouvement, pour que je les valide visuellement.
 ```
 
 **0.4 Assets de base**
@@ -70,7 +70,7 @@ Fais d'abord un prototype minimal : une scène @react-three/fiber/native + expo-
 
 **4.2 Polish**
 ```
-Lance la skill revue-ux sur toute l'app, puis corrige avec les skills frontend-design et animer : transitions entre écrans, éléments partagés, entrées en cascade, confettis Skia sur les résultats, mascotte, états vides, onboarding au premier lancement, support de "réduire les animations". Liste ce que tu changes, écran par écran.
+Lance la skill revue-ux sur toute l'app, puis corrige avec les skills impeccable et animer : transitions entre écrans, éléments partagés, entrées en cascade, confettis Skia sur les résultats, mascotte, états vides, onboarding au premier lancement, support de "réduire les animations". Liste ce que tu changes, écran par écran.
 ```
 
 **4.3 Tests utilisateurs**
