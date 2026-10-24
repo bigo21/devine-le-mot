@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware';
 
 import type { LanguagePreference } from '@/lib/i18n';
 import { persistStorage } from '@/lib/storage';
+import type { WordFont } from '@/ui/tokens';
 
 export type Sensitivity = 'low' | 'normal' | 'high';
 export type RoundDuration = 30 | 60 | 90 | 120;
@@ -17,6 +18,8 @@ export type Settings = {
   tapMode: boolean;
   defaultDuration: RoundDuration;
   reduceMotion: boolean;
+  /** Police du mot affiché pendant la partie. */
+  wordFont: WordFont;
   hasSeenOnboarding: boolean;
 };
 
@@ -33,6 +36,7 @@ export const defaultSettings: Settings = {
   tapMode: false,
   defaultDuration: 60,
   reduceMotion: false,
+  wordFont: 'expressive',
   hasSeenOnboarding: false,
 };
 

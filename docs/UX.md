@@ -67,7 +67,7 @@ Tous les textes sont dans les fichiers i18n, relus pour le ton (§2.6). Pas de p
 
 ## 7. Réglages (minimalistes)
 
-Son · Vibrations · Sensibilité de détection (faible / normale / forte, avec zone de test intégrée) · Mode tap · Durée par défaut · Langue · Réduire les animations (en plus du réglage système) · Revoir le tutoriel · À propos / crédits / contact.
+Son (et volume) · Vibrations · Police du mot (Expressive / Lisible, avec aperçu) · Sensibilité de détection (faible / normale / forte, avec zone de test intégrée) · Mode tap · Durée par défaut · Langue · Réduire les animations (en plus du réglage système) · Revoir le tutoriel · À propos / crédits / contact.
 
 ## 8. Mesurer sans collecter
 

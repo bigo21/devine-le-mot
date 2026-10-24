@@ -77,8 +77,9 @@ export function usePress(reduced: boolean) {
 
   const style = useAnimatedStyle(() => {
     const p = pressed.get();
-    if (reduced) return { opacity: 1 - p * 0.2 };
-    return { transform: [{ scale: 1 - p * (1 - motion.pressScale) }] };
+    // Toujours les deux propriétés : basculer de mode ne doit pas laisser un reste de l'autre.
+    if (reduced) return { opacity: 1 - p * 0.2, transform: [{ scale: 1 }] };
+    return { opacity: 1, transform: [{ scale: 1 - p * (1 - motion.pressScale) }] };
   });
 
   const onPressIn = useCallback(() => {

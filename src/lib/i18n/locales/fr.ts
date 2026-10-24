@@ -32,9 +32,16 @@ export const fr = {
       chips: 'Pilules',
       segmented: 'Choix segmenté',
       cards: 'Cartes',
+      word: 'Mot en jeu',
       sheet: 'Feuille du bas',
       motion: 'Mouvements',
       feedback: 'Retours (vibrations)',
+    },
+    word: {
+      label: 'Police du mot',
+      expressive: 'Expressive',
+      readable: 'Lisible',
+      instruction: 'Décris le mot sans le prononcer',
     },
     typeSample: 'Ndolé, soya et makossa',
     buttons: {

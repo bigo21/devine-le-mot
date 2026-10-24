@@ -4,6 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { useSettings } from '@/features/settings/store';
+import { useWordFont } from '@/features/settings/use-word-font';
 import { useFeedback } from '@/lib/use-feedback';
 import {
   BottomSheet,
@@ -33,6 +34,7 @@ import {
   spacing,
   typography,
   type TypographyRole,
+  type WordFont,
 } from '@/ui/tokens';
 
 // Écran caché de validation du design system (docs/PROMPTS.md, étape 0.3).
@@ -48,6 +50,7 @@ const CATEGORY_CARDS = [
 ] as const;
 // Contenu de démonstration (mots du paquet d'exemple), pas des textes d'interface.
 const PREVIEW_WORDS = ['Ndolé', 'Eru', 'Poulet DG', 'Koki', 'Achu'];
+const SAMPLE_WORD = 'Poulet DG';
 const SWATCHES: readonly AccentColor[] = [...accentColors, 'pass', 'danger'];
 
 export default function DevUiScreen() {
@@ -56,6 +59,8 @@ export default function DevUiScreen() {
   const reduced = useReducedMotion();
   const appReduceMotion = useSettings((s) => s.reduceMotion);
   const updateSettings = useSettings((s) => s.update);
+  const wordFontSetting = useSettings((s) => s.wordFont);
+  const wordFont = useWordFont();
 
   const [region, setRegion] = useState<(typeof REGIONS)[number]>('cm');
   const [duration, setDuration] = useState<(typeof DURATIONS)[number]>(60);
@@ -69,6 +74,15 @@ export default function DevUiScreen() {
   const breatheStyle = useBreathe(breathing, reduced);
   const shake = useShake(reduced);
   const flash = useFlash(reduced);
+
+  const wordFontOptions = useMemo(
+    () =>
+      (['expressive', 'readable'] as const).map((value) => ({
+        value,
+        label: t(`devUi.word.${value}`),
+      })),
+    [t],
+  );
 
   const durationOptions = useMemo(
     () => DURATIONS.map((value) => ({ value, label: t('devUi.seconds', { count: value }) })),
@@ -169,6 +183,28 @@ export default function DevUiScreen() {
             value={duration}
             onChange={setDuration}
             accessibilityLabel={t('devUi.durationLabel')}
+          />
+        </Section>
+
+        <Section title={t('devUi.sections.word')}>
+          <Card accent="mango" size="lg" style={styles.wordCard}>
+            <Text
+              align="center"
+              style={[styles.wordSample, wordFont]}
+              adjustsFontSizeToFit
+              numberOfLines={2}
+            >
+              {SAMPLE_WORD}
+            </Text>
+            <Text variant="labelSmall" align="center">
+              {t('devUi.word.instruction')}
+            </Text>
+          </Card>
+          <SegmentedControl<WordFont>
+            options={wordFontOptions}
+            value={wordFontSetting}
+            onChange={(value) => updateSettings({ wordFont: value })}
+            accessibilityLabel={t('devUi.word.label')}
           />
         </Section>
 
@@ -346,6 +382,8 @@ const styles = StyleSheet.create({
   neutral: { borderWidth: 1, borderColor: colors.hairline },
   typeRow: { gap: spacing.xs },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+  wordCard: { minHeight: 200, justifyContent: 'center' },
+  wordSample: { fontSize: 56, lineHeight: 64 },
   categoryCard: { width: 156, minHeight: 120, justifyContent: 'flex-end' },
   demoRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg },
   badge: {

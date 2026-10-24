@@ -89,7 +89,17 @@ export const fonts = {
   bodyMedium: 'PlusJakartaSans_500Medium',
   bodySemiBold: 'PlusJakartaSans_600SemiBold',
   bodyBold: 'PlusJakartaSans_700Bold',
+  /** Police lisible proposée pour le mot en jeu (réglage « Police du mot »). */
+  readable: 'AtkinsonHyperlegibleNext_800ExtraBold',
 } as const;
+
+/** Polices possibles pour le mot en jeu : Unbounded par défaut, Atkinson Hyperlegible en option. */
+export const wordFonts = {
+  expressive: { fontFamily: fonts.display, letterSpacing: -0.5 },
+  readable: { fontFamily: fonts.readable, letterSpacing: 0 },
+} as const satisfies Record<string, TextStyle>;
+
+export type WordFont = keyof typeof wordFonts;
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 44, 64] as const;
 

@@ -58,13 +58,46 @@ Toutes les couleurs vives passent avec le texte foncé ; aucune ne passe avec le
 - Les couleurs vives utilisées **comme couleur de texte** sur `bg` restent ≥ 4,5:1, sauf `plum` sur `bgElevated` (4,19) : réserver `plum` aux fonds, pas au petit texte sur les cartes.
 - `text` sur `bg` : 17,1:1 ; `textMuted` sur `bg` / `bgElevated` / `bgSunken` : 7,5 / 6,9 / 7,9:1.
 - Un flash ou un fond semi-transparent posé sur une couleur doit être recalculé avant d'y mettre du texte.
+- Ces ratios sont vérifiés par un test (`src/ui/__tests__/tokens.test.ts`) : modifier une teinte qui casse le contraste fait échouer les tests.
+
+**Dérivés translucides** (jamais sous du texte sans recalcul de contraste)
+| Token | Valeur | Usage |
+|---|---|---|
+| `hairline` | `rgba(247, 243, 234, 0.08)` | bordures fines, séparateurs, contour des surfaces sombres |
+| `highlight` | `rgba(255, 255, 255, 0.22)` | reflet subtil en haut des surfaces colorées (ombre interne de 1 px) |
+| `scrim` | `rgba(11, 8, 20, 0.72)` | voile derrière une feuille du bas (`bgSunken` translucide) |
+| `shadow` | `rgba(5, 3, 10, 0.55)` | couleur des ombres douces |
+
+**Ombres** (décalage + flou, jamais d'ombre dure) : `soft` = `0 6px 18px shadow` (boutons, cartes) ; `lifted` = `0 14px 32px shadow` (éléments flottants). Les surfaces colorées ajoutent l'ombre interne `highlight` pour le reflet. Pas d'ombre sur un grand élément animé (coût de rendu sur Android).
+
+**Filigrane** : opacité `patternOpacity.screen` = 5 % sur les fonds d'écran, `patternOpacity.card` = 8 % dans les cartes colorées.
 
 **Typographie** (Google Fonts via `@expo-google-fonts/*`)
 - Titres et **mot à deviner** : **Unbounded** (700–900), large, joueuse, très lisible de loin.
 - Texte courant : **Plus Jakarta Sans** (400–700).
+- **Police lisible du mot** : **Atkinson Hyperlegible Next** (800), conçue pour la lisibilité (lettres impossibles à confondre : I/l/1, O/0). Réglage « Police du mot » : Expressive (Unbounded, par défaut) ou Lisible (Atkinson). Il ne change **que le mot affiché en partie** ; titres et interface gardent Unbounded. Tokens `wordFonts.expressive` / `wordFonts.readable`, hook `useWordFont()`.
 - Échelle : 12 / 14 / 16 / 20 / 24 / 32 / 44 / 64. Le mot en jeu s'ajuste automatiquement (auto-fit) pour remplir ~80 % de la largeur sur une ou deux lignes.
+- **Rôles** (`typography` dans les tokens) : les écrans choisissent un rôle, jamais une taille.
 
-**Espacements** : base 4 (4, 8, 12, 16, 24, 32, 48). **Rayons** : 12 (petits), 20 (cartes), 32 (grandes cartes), 999 (pilules).
+| Rôle | Police | Taille / interligne |
+|---|---|---|
+| `hero` | Unbounded 900 | 44 / 48 |
+| `display` | Unbounded 800 | 32 / 38 |
+| `title` | Unbounded 700 | 24 / 30 |
+| `heading` | Unbounded 700 | 20 / 26 |
+| `bodyLarge` | Plus Jakarta Sans 500 | 20 / 28 |
+| `body` | Plus Jakarta Sans 400 | 16 / 24 |
+| `bodyStrong` | Plus Jakarta Sans 600 | 16 / 24 |
+| `label` | Plus Jakarta Sans 700 | 16 / 20 |
+| `labelSmall` | Plus Jakarta Sans 600 | 14 / 18 |
+| `caption` | Plus Jakarta Sans 500 | 12 / 16 |
+
+- Unbounded étant très large, les titres sont légèrement resserrés (−2 % sur `hero` et `display`).
+- Taille de police système respectée jusqu'à **×1,6** (`maxFontScale`).
+
+**Espacements** : base 4 (4, 8, 12, 16, 24, 32, 48). **Rayons** : 12 (petits), 20 (cartes), 32 (grandes cartes), 999 (pilules). **Cible tactile** : 48 dp minimum (`touchTarget`) ; un élément visuellement plus petit (pilule de 40 dp) compense avec une zone de toucher élargie.
+
+**États des composants** : une pilule sélectionnée et l'indicateur du choix segmenté sont en `text` (blanc cassé) avec texte `bg` (17:1) ; le `mango` reste réservé à l'action principale de l'écran. Un élément désactivé passe à 40 % d'opacité.
 
 ## 3. Mouvement (`src/ui/motion/`)
 

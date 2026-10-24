@@ -1,6 +1,13 @@
 import { type ReactNode, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { type LayoutChangeEvent, Modal, Pressable, StyleSheet, View } from 'react-native';
+import {
+  type LayoutChangeEvent,
+  Modal,
+  Pressable,
+  StyleSheet,
+  useWindowDimensions,
+  View,
+} from 'react-native';
 import {
   GestureDetector,
   GestureHandlerRootView,
@@ -20,7 +27,7 @@ import { scheduleOnRN } from 'react-native-worklets';
 import { useFeedback } from '@/lib/use-feedback';
 import { spring, timing, useReducedMotion } from '@/ui/motion';
 import { project, rubberband } from '@/ui/motion/physics';
-import { colors, radii, shadows, spacing } from '@/ui/tokens';
+import { colors, radii, spacing } from '@/ui/tokens';
 
 import { Text } from './text';
 
@@ -43,42 +50,38 @@ export function BottomSheet({ visible, onClose, title, children }: Props) {
   const reduced = useReducedMotion();
   const feedback = useFeedback();
   const insets = useSafeAreaInsets();
+  const window = useWindowDimensions();
 
   const [mounted, setMounted] = useState(visible);
-  const [measured, setMeasured] = useState(false);
-  const height = useSharedValue(1);
+  // Hauteur de la sheet. Avant la mesure, la hauteur de l'écran (toujours plus grande) la garde
+  // hors champ : l'ouverture démarre tout de suite, sans attendre un aller-retour React.
+  const height = useSharedValue(window.height);
   // 0 = ouverte, 1 = cachée.
   const position = useSharedValue(1);
   const dragStart = useSharedValue(0);
 
-  // État dérivé pendant le rendu : monter à l'ouverture, démonter si fermée avant d'être mesurée.
   if (visible && !mounted) setMounted(true);
-  if (!visible && mounted && !measured) setMounted(false);
 
   useEffect(() => {
-    if (!mounted || !measured) return;
+    if (!mounted) return;
     if (visible) {
       position.set(reduced ? withTiming(0, timing.fast) : withSpring(0, spring.gentle));
       return;
     }
-    const unmount = () => {
-      setMounted(false);
-      setMeasured(false);
-    };
     const done = (finished?: boolean) => {
       'worklet';
-      if (finished) scheduleOnRN(unmount);
+      if (finished) scheduleOnRN(setMounted, false);
     };
     position.set(
       reduced
         ? withTiming(1, timing.fast, done)
         : withSpring(1, { ...spring.gentle, overshootClamping: true }, done),
     );
-  }, [visible, mounted, measured, reduced, position]);
+  }, [visible, mounted, reduced, position]);
 
+  // La mesure ne sert qu'au geste (convertir les pixels du doigt en fraction de la hauteur).
   const onLayout = (e: LayoutChangeEvent) => {
     height.set(Math.max(1, e.nativeEvent.layout.height));
-    if (!measured) setMeasured(true);
   };
 
   const pan = usePanGesture({
@@ -107,8 +110,14 @@ export function BottomSheet({ visible, onClose, title, children }: Props) {
 
   const sheetStyle = useAnimatedStyle(() => {
     const p = position.get();
-    if (reduced) return { opacity: interpolate(p, [0, 1], [1, 0], Extrapolation.CLAMP) };
-    return { transform: [{ translateY: p * height.get() }] };
+    // Toujours les deux propriétés : basculer de mode ne doit pas laisser un reste de l'autre.
+    if (reduced) {
+      return {
+        opacity: interpolate(p, [0, 1], [1, 0], Extrapolation.CLAMP),
+        transform: [{ translateY: 0 }],
+      };
+    }
+    return { opacity: 1, transform: [{ translateY: p * height.get() }] };
   });
 
   const scrimStyle = useAnimatedStyle(() => ({
@@ -139,12 +148,7 @@ export function BottomSheet({ visible, onClose, title, children }: Props) {
           <Animated.View
             onLayout={onLayout}
             accessibilityViewIsModal
-            style={[
-              styles.sheet,
-              { paddingBottom: insets.bottom + spacing.xl },
-              !measured && styles.unmeasured,
-              sheetStyle,
-            ]}
+            style={[styles.sheet, { paddingBottom: insets.bottom + spacing.xl }, sheetStyle]}
           >
             <View style={styles.handle} />
             {title ? (
@@ -177,10 +181,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderBottomWidth: 0,
     borderColor: colors.hairline,
-    boxShadow: shadows.lifted,
   },
-  // Avant la première mesure, la sheet est invisible pour ne pas clignoter en place.
-  unmeasured: { opacity: 0 },
   handle: {
     alignSelf: 'center',
     width: 40,

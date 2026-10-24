@@ -33,9 +33,16 @@ export const en: Translation = {
       chips: 'Pills',
       segmented: 'Segmented control',
       cards: 'Cards',
+      word: 'Word in play',
       sheet: 'Bottom sheet',
       motion: 'Motion',
       feedback: 'Feedback (haptics)',
+    },
+    word: {
+      label: 'Word font',
+      expressive: 'Expressive',
+      readable: 'Readable',
+      instruction: 'Describe the word without saying it',
     },
     typeSample: 'Ndolé, soya and makossa',
     buttons: {

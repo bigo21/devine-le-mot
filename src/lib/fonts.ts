@@ -1,3 +1,4 @@
+import { AtkinsonHyperlegibleNext_800ExtraBold } from '@expo-google-fonts/atkinson-hyperlegible-next';
 import {
   PlusJakartaSans_400Regular,
   PlusJakartaSans_500Medium,
@@ -21,4 +22,5 @@ export const fontAssets: Record<(typeof fonts)[keyof typeof fonts], number> = {
   PlusJakartaSans_500Medium,
   PlusJakartaSans_600SemiBold,
   PlusJakartaSans_700Bold,
+  AtkinsonHyperlegibleNext_800ExtraBold,
 };
