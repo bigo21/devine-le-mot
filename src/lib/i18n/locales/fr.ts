@@ -19,6 +19,11 @@ export const fr = {
     editor: 'Créer une catégorie',
     tutorial: 'Comment jouer',
     settings: 'Réglages',
+    devSkia: 'Test Skia (dev)',
+  },
+  dev: {
+    skiaHint:
+      'Si le dégradé s’affiche et que le disque respire, Skia et Reanimated fonctionnent dans ce build.',
   },
   errors: {
     unexpected: "Oups, quelque chose s'est mal passé. Redémarre l'app.",

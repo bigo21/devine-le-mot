@@ -20,6 +20,11 @@ export const en: Translation = {
     editor: 'Create a category',
     tutorial: 'How to play',
     settings: 'Settings',
+    devSkia: 'Skia test (dev)',
+  },
+  dev: {
+    skiaHint:
+      'If the gradient shows and the disc breathes, Skia and Reanimated work in this build.',
   },
   errors: {
     unexpected: 'Oops, something went wrong. Please restart the app.',
