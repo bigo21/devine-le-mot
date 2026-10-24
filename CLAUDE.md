@@ -20,7 +20,9 @@ Jeu de soirée type Heads Up! / Charades : un joueur pose le téléphone sur son
 ## Skills du projet
 
 - `animer` : à utiliser pour toute animation, transition, micro-interaction, retour haptique/sonore.
-- `revue-ux` : audit d'un écran ou d'un parcours ; à lancer après chaque écran terminé.
+- `revue-ux` : audit d'un écran ou d'un parcours. **Pas après chaque écran** : les revues (revue-ux et impeccable) se font une seule fois, quand tous les écrans sont créés (étape 4.2).
+
+**Revues** : une revue produit d'abord un **rapport** (problème, gravité, correction proposée) ; on ne corrige que les points que je valide. Les captures d'écran prises pour les revues ou les tests restent locales (`.impeccable/review/`, ignoré par git) et ne sont **jamais** commitées ni envoyées sur GitHub.
 
 ## Règles de travail
 

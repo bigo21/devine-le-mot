@@ -1,4 +1,24 @@
-import { androidPatterns } from '../haptics';
+import { androidPatterns, pickHaptic } from '../haptics';
+
+describe('pickHaptic (un seul retour par geste)', () => {
+  it('le retour de jeu l’emporte sur le tap du bouton qui l’a déclenché', () => {
+    expect(pickHaptic(['tap', 'warning'])).toBe('warning');
+    expect(pickHaptic(['warning', 'tap'])).toBe('warning');
+  });
+
+  it('sans retour de jeu, garde le dernier retour d’interface', () => {
+    expect(pickHaptic(['tap'])).toBe('tap');
+    expect(pickHaptic(['tap', 'select'])).toBe('select');
+  });
+
+  it('garde le dernier retour de jeu demandé', () => {
+    expect(pickHaptic(['success', 'heavy'])).toBe('heavy');
+  });
+
+  it('ne joue rien si rien n’est demandé', () => {
+    expect(pickHaptic([])).toBeUndefined();
+  });
+});
 
 const total = (pattern: number[]) => pattern.reduce((sum, ms) => sum + ms, 0);
 const pulses = (pattern: number[]) => pattern.filter((_, i) => i % 2 === 1);

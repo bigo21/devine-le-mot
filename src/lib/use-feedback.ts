@@ -35,7 +35,10 @@ const recipes: Record<FeedbackEvent, { haptic?: HapticKind; sound?: SoundName }>
 
 /**
  * Déclenche image, son et vibration sur la même frame (MOTION.md §1.4).
- * `visual` (optionnel) lance l'animation correspondante juste avant le son et l'haptique.
+ * `visual` (optionnel) lance l'animation ou l'action correspondante juste après le son et
+ * l'haptique : une action qui déclenche à son tour un retour (ex. bouton « Trouvé ») le joue
+ * en dernier, donc c'est lui qui reste. Dans l'ordre inverse, le tap du bouton annulait la
+ * vibration de jeu au bout de quelques millisecondes.
  */
 export function useFeedback() {
   const sound = useSettings((s) => s.sound);
@@ -44,10 +47,10 @@ export function useFeedback() {
 
   return useCallback(
     (event: FeedbackEvent, visual?: () => void) => {
-      visual?.();
       const recipe = recipes[event];
       if (sound && recipe.sound) playSound(recipe.sound, volume);
       if (haptics && recipe.haptic) triggerHaptic(recipe.haptic);
+      visual?.();
     },
     [sound, haptics, volume],
   );

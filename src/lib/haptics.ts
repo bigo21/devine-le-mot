@@ -34,8 +34,36 @@ export const androidPatterns: Record<GameHaptic, number[]> = {
 
 const isAndroid = Platform.OS === 'android';
 
+const isGameHaptic = (kind: HapticKind): kind is GameHaptic => kind !== 'tap' && kind !== 'select';
+
+/**
+ * Parmi les retours demandés pendant un même geste, garde celui à jouer : le dernier retour de
+ * jeu s'il y en a un, sinon le dernier retour d'interface.
+ */
+export function pickHaptic(requested: readonly HapticKind[]): HapticKind | undefined {
+  const game = requested.filter(isGameHaptic);
+  return game.at(-1) ?? requested.at(-1);
+}
+
+let pending: HapticKind[] = [];
+
+/**
+ * Un tap de bouton qui déclenche « Trouvé » demande deux retours dans le même geste. Joués tous
+ * les deux, le second annule le premier sur Android (et l'ordre d'arrivée n'est pas garanti entre
+ * modules natifs). On les regroupe donc jusqu'à la fin de la tâche en cours et on n'en joue qu'un.
+ */
 export function triggerHaptic(kind: HapticKind): void {
-  if (isAndroid && kind !== 'tap' && kind !== 'select') {
+  pending.push(kind);
+  if (pending.length > 1) return;
+  queueMicrotask(() => {
+    const chosen = pickHaptic(pending);
+    pending = [];
+    if (chosen) play(chosen);
+  });
+}
+
+function play(kind: HapticKind): void {
+  if (isAndroid && isGameHaptic(kind)) {
     Vibration.vibrate(androidPatterns[kind]);
     return;
   }

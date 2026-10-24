@@ -36,7 +36,7 @@ Implémente le moteur de jeu (src/features/game/engine.ts) et la détection d'in
 
 **1.2 Écrans de partie**
 ```
-Crée le parcours de partie : play/setup → play/ready (calibration) → compte à rebours → play/game → play/results, en suivant docs/DESIGN.md §4–5, docs/MOTION.md §3 et docs/UX.md §5 (flashs plein écran, timer en anneau, animations des mots, sons, vibrations, paysage forcé, écran allumé). Utilise 5 catégories de test temporaires. Ajoute un écran /dev/tilt qui affiche les angles en direct et les événements détectés, pour que je règle les seuils. Termine par la skill revue-ux sur ce parcours.
+Crée le parcours de partie : play/setup → play/ready (calibration) → compte à rebours → play/game → play/results, en suivant docs/DESIGN.md §4–5, docs/MOTION.md §3 et docs/UX.md §5 (flashs plein écran, timer en anneau, animations des mots, sons, vibrations, paysage forcé, écran allumé). Utilise 5 catégories de test temporaires. Ajoute un écran /dev/tilt qui affiche les angles en direct et les événements détectés, pour que je règle les seuils.
 ```
 
 ## Phase 2 — Catégories
@@ -70,7 +70,7 @@ Fais d'abord un prototype minimal : une scène @react-three/fiber/native + expo-
 
 **4.2 Polish**
 ```
-Lance la skill revue-ux sur toute l'app, puis corrige avec les skills impeccable et animer : transitions entre écrans, éléments partagés, entrées en cascade, confettis Skia sur les résultats, mascotte, états vides, onboarding au premier lancement, support de "réduire les animations". Liste ce que tu changes, écran par écran.
+Tous les écrans sont créés : lance les revues revue-ux et impeccable sur toute l'app (transitions entre écrans, éléments partagés, entrées en cascade, confettis Skia sur les résultats, mascotte, états vides, onboarding au premier lancement, support de "réduire les animations"). Commence par un rapport écran par écran (problème, gravité, correction proposée) sans rien modifier ; je te dirai quels points corriger, puis corrige-les avec les skills impeccable et animer. Les captures d'écran restent locales, jamais sur GitHub.
 ```
 
 **4.3 Tests utilisateurs**
