@@ -59,6 +59,20 @@ Mes catégories → « Importer » → explication courte (fichier reçu sur Wha
 | Batterie faible | Aucun traitement particulier, mais pas d'effet coûteux inutile (3D seulement dans le tutoriel). |
 | Police système agrandie | Mise en page qui s'adapte ; le mot en jeu garde son auto-fit. |
 
+### Zones système (zones sûres) et clavier
+
+Android dessine l'app **bord à bord** (obligatoire depuis Android 15) : l'écran passe sous la **barre d'état** (en haut : heure, batterie, réseau, notifications), sous la **barre de navigation** (en bas : boutons ou barre de gestes) et autour de l'**encoche** (caméra). Ces zones s'appellent les **zones sûres** (*safe areas* / *insets*).
+
+- **Rien d'utile sous les barres système** : textes, boutons, champs et le mot en jeu restent toujours dans les zones sûres. Seuls le fond (couleur, filigrane, flash plein écran) peut passer dessous. C'est le rôle du composant `Screen` et de la marge basse des feuilles du bas ; tout nouvel écran ou élément ancré en haut ou en bas les utilise.
+- **Paysage pendant la partie** : l'encoche et la barre de navigation passent sur les **côtés** ; le mot, la consigne et les libellés du mode tap respectent les marges gauche et droite.
+- **Icônes de la barre d'état** toujours lisibles sur le fond (claires sur `bg`, adaptées sur un fond de catégorie).
+- **Clavier** :
+  - le champ en cours de saisie, son message d'erreur et le bouton d'action qui le suit (« Ajouter », « Enregistrer ») restent **visibles au-dessus du clavier** ; une liste défile pour garder le champ actif en vue ;
+  - le clavier suit le mouvement réel du clavier système (pas de saut ni de décalage) ;
+  - toucher en dehors d'un champ ou faire défiler ferme le clavier ; la touche « Entrée » enchaîne (« Suivant », puis « Terminé ») ;
+  - dans l'éditeur de mots, **pas d'autocorrection** (elle transformerait « Ndolé » ou « Poulet DG ») ; majuscule automatique en début de mot seulement.
+- **À vérifier sur chaque écran** : navigation par boutons **et** par gestes, téléphone avec encoche, police système agrandie, clavier ouvert.
+
 ## 6. États vides et messages
 
 Chaque écran a un état vide pensé : « Mes catégories » vide (mascotte qui réfléchit + bouton Créer + bouton Importer), recherche sans résultat (proposition de créer la catégorie), aucun favori (explication de l'appui long ou de l'étoile).

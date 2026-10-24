@@ -15,6 +15,7 @@ Passe l'écran ou le parcours demandé (par défaut : tout ce qui a changé depu
 - Les cas limites de UX.md §5 qui concernent cet écran sont-ils tous gérés ?
 - États vides, erreurs, chargements : pensés, avec un message utile et dans le bon ton ?
 - Tous les textes sont-ils dans l'i18n, au tutoiement, courts ?
+- Zones sûres et clavier (UX.md §5) : rien d'utile sous la barre d'état, la barre de navigation ou l'encoche (portrait et paysage) ? Le champ actif, son erreur et son bouton restent-ils visibles clavier ouvert ?
 
 **Visuel (DESIGN.md, ASSETS.md)**
 - Uniquement des tokens (couleurs, typo, espacements, rayons) ? Texte sur couleur en `on<Couleur>` ?
