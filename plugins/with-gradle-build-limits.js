@@ -1,11 +1,14 @@
 // Limite le parallélisme de Gradle pendant la génération du projet Android (prebuild).
 // Sur les machines EAS gratuites (4 vCPU, ~15 Go), les compilations C++ lancées en parallèle
 // (Reanimated, worklets, Skia…) saturent la mémoire et le daemon Gradle est tué.
+// Une seule tâche à la fois : on peut donc donner plus de tas à Gradle (dex, Kotlin) sans risque.
 const { withGradleProperties } = require('expo/config-plugins');
 
 const limits = {
   'org.gradle.parallel': 'false',
-  'org.gradle.workers.max': '2',
+  'org.gradle.workers.max': '1',
+  'org.gradle.jvmargs': '-Xmx3072m -XX:MaxMetaspaceSize=768m',
+  'kotlin.daemon.jvmargs': '-Xmx1536m',
 };
 
 module.exports = function withGradleBuildLimits(config) {
