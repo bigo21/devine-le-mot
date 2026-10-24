@@ -42,9 +42,18 @@ describe('rythmes de vibration Android', () => {
     expect(total(androidPatterns.light)).toBe(Math.min(...durations));
   });
 
-  it('aucun retour ne dure plus de 600 ms (rien ne bloque, MOTION.md §1)', () => {
+  it('chaque impulsion est perceptible (≥ 60 ms) et chaque pause sépare vraiment (≥ 80 ms)', () => {
     for (const pattern of Object.values(androidPatterns)) {
-      expect(total(pattern)).toBeLessThanOrEqual(600);
+      pattern.forEach((ms, i) => {
+        if (i % 2 === 1) expect(ms).toBeGreaterThanOrEqual(60);
+        else if (i > 0) expect(ms).toBeGreaterThanOrEqual(80);
+      });
+    }
+  });
+
+  it('aucun retour ne s’éternise (≤ 1,3 s ; la vibration ne bloque jamais l’interaction)', () => {
+    for (const pattern of Object.values(androidPatterns)) {
+      expect(total(pattern)).toBeLessThanOrEqual(1300);
     }
   });
 });

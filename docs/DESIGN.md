@@ -145,7 +145,7 @@ Règles :
 
 - Sons courts, ronds, cohérents entre eux (une même « famille ») : départ, trouvé, passer, tic des 10 dernières secondes, fin, record. Formats légers (`.m4a`/`.ogg`), libres de droits.
 - Haptique : light (taps), success (trouvé), warning (passer), heavy (fin).
-- Sur Android, les retours de jeu sont des **rythmes** distincts joués par le vibreur (`androidPatterns` dans `src/lib/haptics.ts`), reconnaissables téléphone sur le front : trouvé = « ta-tam » (deux impulsions), passer = un « bzz » long, fin = longue vibration (600 ms), tic = très bref, erreur = trois coups secs. Les taps d'interface restent sur le retour haptique discret du système.
+- Sur Android, les retours de jeu sont des **rythmes** distincts joués par le vibreur (`androidPatterns` dans `src/lib/haptics.ts`), reconnaissables téléphone sur le front : trouvé = « ta-tam » (100 ms puis 180 ms), passer = un « bzz » de 350 ms, fin = deux longues impulsions (450 puis 650 ms), tic = 60 ms, erreur = trois coups de 90 ms. Seuils : impulsions ≥ 60 ms, pauses ≥ 80 ms (en dessous, on ne sent rien ou deux coups se fondent) ; pour « long », on répète plutôt que de prolonger une vibration continue, qui s'émousse. Un seul retour par geste : si un bouton déclenche un retour de jeu, son tap n'est pas joué. Les taps d'interface restent sur le retour haptique discret du système.
 - Réglages : son on/off, vibrations on/off, volume.
 
 ## 6. 3D dans le tutoriel
