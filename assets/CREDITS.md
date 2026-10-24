@@ -30,3 +30,9 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/region-party.webp | Microsoft Fluent Emoji 3D « party popper » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-24 |
 | src/assets/categories/region-mine.webp | Microsoft Fluent Emoji 3D « pencil » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-24 |
 | src/assets/flags/flags.ts | flag-icons 7.6.0 (cm, fr, us) | https://github.com/lipis/flag-icons | MIT | 2026-10-24 |
+| src/assets/sounds/tick.m4a | Kenney, Interface Sounds 1.0 : select_001 | https://kenney.nl/assets/interface-sounds | CC0 | 2026-10-24 |
+| src/assets/sounds/found.m4a | Kenney, Interface Sounds 1.0 : confirmation_001 | https://kenney.nl/assets/interface-sounds | CC0 | 2026-10-24 |
+| src/assets/sounds/pass.m4a | Kenney, Interface Sounds 1.0 : bong_001 | https://kenney.nl/assets/interface-sounds | CC0 | 2026-10-24 |
+| src/assets/sounds/start.m4a | Kenney, Music Jingles : STEEL09 | https://kenney.nl/assets/music-jingles | CC0 | 2026-10-24 |
+| src/assets/sounds/end.m4a | Kenney, Music Jingles : STEEL01 | https://kenney.nl/assets/music-jingles | CC0 | 2026-10-24 |
+| src/assets/sounds/record.m4a | Kenney, Music Jingles : STEEL12 | https://kenney.nl/assets/music-jingles | CC0 | 2026-10-24 |

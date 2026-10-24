@@ -5,17 +5,17 @@ import {
   setAudioModeAsync,
 } from 'expo-audio';
 
-// Famille de sons de docs/DESIGN.md §5. Les fichiers arrivent à l'étape 0.4 (docs/ASSETS.md) :
-// tant qu'une entrée vaut null, jouer ce son ne fait rien.
+// Famille de sons de docs/DESIGN.md §5 : sons Kenney (CC0), mono, normalisés à −14 LUFS,
+// choisis à l'oreille (voir assets/CREDITS.md). Une entrée à null ne joue rien.
 export type SoundName = 'start' | 'found' | 'pass' | 'tick' | 'end' | 'record';
 
 const sources: Record<SoundName, AudioSource> = {
-  start: null,
-  found: null,
-  pass: null,
-  tick: null,
-  end: null,
-  record: null,
+  start: require('@/assets/sounds/start.m4a') as number,
+  found: require('@/assets/sounds/found.m4a') as number,
+  pass: require('@/assets/sounds/pass.m4a') as number,
+  tick: require('@/assets/sounds/tick.m4a') as number,
+  end: require('@/assets/sounds/end.m4a') as number,
+  record: require('@/assets/sounds/record.m4a') as number,
 };
 
 const players = new Map<SoundName, AudioPlayer>();
