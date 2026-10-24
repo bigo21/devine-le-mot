@@ -1,0 +1,11 @@
+node_modules
+.expo
+dist
+android
+ios
+package-lock.json
+docs
+README.md
+CLAUDE.md
+AGENTS.md
+.claude
