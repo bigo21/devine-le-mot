@@ -167,7 +167,8 @@ export const fr = {
   },
   devTilt: {
     calibrating: 'Pose le téléphone sur ton front, écran vers les autres, et ne bouge plus.',
-    armed: 'Prêt ! Penche la tête vers l’avant (écran vers le sol) pour « Trouvé », vers l’arrière pour « Passer ».',
+    armed:
+      'Prêt ! Penche la tête vers l’avant (écran vers le sol) pour « Trouvé », vers l’arrière pour « Passer ».',
     waitingNeutral: 'Reviens bien droit pour le geste suivant.',
     noSensor: 'Ce téléphone n’a pas de capteur de mouvement.',
     lastGesture: 'Dernier geste',
@@ -180,7 +181,8 @@ export const fr = {
     sensitivityHelp: 'Faible : il faut pencher davantage. Forte : un petit geste suffit.',
     sensitivities: { low: 'Faible', normal: 'Normale', high: 'Forte' },
     restart: 'Recommencer',
-    details: 'Détails techniques : angle {{angle}}, référence {{reference}}, écart {{delta}}, orientation {{orientation}}',
+    details:
+      'Détails techniques : angle {{angle}}, référence {{reference}}, écart {{delta}}, orientation {{orientation}}',
   },
   dev: {
     skiaHint:

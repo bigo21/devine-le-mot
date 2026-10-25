@@ -21,6 +21,8 @@
 - **Calibration** : angle de référence mesuré au départ (le front n'est jamais parfaitement vertical), quand l'angle lissé varie de moins de 6° pendant 0,8 s **et** que les mesures brutes restent dans 15° (sinon une oscillation rapide passerait pour de la stabilité).
 - **Seuils** (réglables, valeurs de départ) : déclenchement à ±40° par rapport à la référence ; réarmement quand on revient à moins de ±20°. Hystérésis indispensable.
 - **Anti-rebond** : ignorer tout geste pendant 400 ms après un déclenchement.
+- **Geste maintenu** : l'inclinaison doit rester au-delà du seuil au moins **100 ms** pour compter (une secousse, un rire ou un hochement ne valident rien).
+- **Retour à l'équilibre obligatoire** : après un geste, il faut revenir sous le seuil de réarmement et **y rester 300 ms** avant que le geste suivant soit pris en compte. Le rebond de la tête après un « trouvé » ne peut donc pas déclencher un « passer » (retour terrain du 25/10/2026 : des mots étaient sautés sans être vus).
 - **Lissage** : moyenne mobile ou filtre passe-bas sur 3–5 mesures pour éviter les faux positifs dus aux tremblements.
 - La logique (angles → événements) est une **fonction pure** testable sans capteur ; le hook `useTilt` ne fait que brancher le capteur dessus.
 - Réglage « Sensibilité » (faible / normale / forte) qui ajuste les seuils.

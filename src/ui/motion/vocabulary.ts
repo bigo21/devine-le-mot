@@ -183,5 +183,6 @@ export function useFlash(reduced: boolean) {
     backgroundColor: color.get(),
   }));
 
-  return { style, flash };
+  // `opacity` : pour synchroniser un élément avec le flash (il apparaît et disparaît avec lui).
+  return { style, flash, opacity };
 }

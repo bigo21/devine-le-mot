@@ -135,6 +135,41 @@ describe('robustesse', () => {
   });
 });
 
+describe('pas de mot sauté par inadvertance', () => {
+  it('le rebond de la tête après un « trouvé » ne déclenche pas de « passer »', () => {
+    const { state, end } = calibrated();
+    // Trouvé, retour bref au neutre (150 ms), puis rebond en arrière au-delà du seuil.
+    const sequence = [...hold(70, 400), ...hold(12, 150), ...hold(-45, 400)];
+    expect(types(run(sequence, normal, state, end).events)).toEqual(['correct']);
+  });
+
+  it('après un retour à l’équilibre tenu 300 ms, le geste suivant compte', () => {
+    const { state, end } = calibrated();
+    const sequence = [...hold(70, 400), ...hold(12, 400), ...hold(-45, 400)];
+    expect(types(run(sequence, normal, state, end).events)).toEqual(['correct', 'pass']);
+  });
+
+  it('un retour à l’équilibre interrompu ne réarme pas', () => {
+    const { state, end } = calibrated();
+    // Neutre 200 ms, nouveau dépassement, neutre 200 ms : jamais 300 ms d'affilée.
+    const sequence = [
+      ...hold(70, 400),
+      ...hold(12, 200),
+      ...hold(50, 150),
+      ...hold(12, 200),
+      ...hold(70, 400),
+    ];
+    expect(types(run(sequence, normal, state, end).events)).toEqual(['correct']);
+  });
+
+  it('une secousse plus courte que 100 ms au-delà du seuil ne compte pas', () => {
+    const raw = { ...normal, smoothing: 1 };
+    const { state, end } = calibrated(raw);
+    expect(run([12, 12, 70, 12, 12, 12], raw, state, end).events).toEqual([]);
+    expect(types(run([12, 70, 70, 70, 12], raw, state, end).events)).toEqual(['correct']);
+  });
+});
+
 describe('sensibilité', () => {
   const nudge = [...hold(47, 400), ...hold(12, 400)]; // 35° d'écart
 

@@ -181,7 +181,8 @@ export const en: Translation = {
     sensitivityHelp: 'Low: tilt further. High: a small gesture is enough.',
     sensitivities: { low: 'Low', normal: 'Normal', high: 'High' },
     restart: 'Start over',
-    details: 'Technical details: angle {{angle}}, reference {{reference}}, offset {{delta}}, orientation {{orientation}}',
+    details:
+      'Technical details: angle {{angle}}, reference {{reference}}, offset {{delta}}, orientation {{orientation}}',
   },
   dev: {
     skiaHint:

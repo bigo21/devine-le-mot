@@ -89,7 +89,8 @@ export default function PlayGameScreen() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [reshuffled, setReshuffled] = useState(false);
   /** Confirmation au centre (icône + libellé) : jamais la couleur seule (DESIGN.md §7). */
-  const [burst, setBurst] = useState<{ result: CardResult; id: number } | null>(null);
+  // Le libellé suit l'opacité du flash : ils apparaissent et disparaissent ensemble.
+  const [burst, setBurst] = useState<CardResult | null>(null);
   const busy = useRef(false);
   const lastSecond = useRef<number | null>(null);
 
@@ -173,11 +174,8 @@ export default function PlayGameScreen() {
       busy.current = true;
       const at = Date.now();
       const found = result === 'found';
-      feedback(found ? 'found' : 'pass', () => {
-        flash.flash(found ? colors.palm : colors.pass);
-        setBurst({ result, id: at });
-      });
-      setTimeout(() => setBurst(null), motion.flashDuration);
+      setBurst(result);
+      feedback(found ? 'found' : 'pass', () => flash.flash(found ? colors.palm : colors.pass));
       if (found) {
         scoreScale.set(
           withSequence(
@@ -347,6 +345,14 @@ export default function PlayGameScreen() {
   }));
   const scoreStyle = useAnimatedStyle(() => ({ transform: [{ scale: scoreScale.get() }] }));
   const endStyle = useAnimatedStyle(() => ({ opacity: endFade.get() }));
+  // Même courbe que le flash ; léger « pop » (0,85 → 1) en mode normal.
+  const burstStyle = useAnimatedStyle(() => {
+    const visible = Math.min(1, flash.opacity.get() / motion.flashPeak);
+    return {
+      opacity: visible,
+      transform: [{ scale: reduced ? 1 : 0.85 + 0.15 * visible }],
+    };
+  });
 
   if (!round || !category) return null;
 
@@ -441,19 +447,14 @@ export default function PlayGameScreen() {
 
       {burst ? (
         <View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.burstWrap]}>
-          <Animated.View
-            key={burst.id}
-            entering={pop({ reduced })}
-            exiting={fadeOut}
-            style={styles.burst}
-          >
+          <Animated.View style={[styles.burst, burstStyle]}>
             <Icon
-              icon={burst.result === 'found' ? CheckIcon : SkipForwardIcon}
+              icon={burst === 'found' ? CheckIcon : SkipForwardIcon}
               size={88}
-              color={burst.result === 'found' ? colors.onPalm : colors.onPass}
+              color={burst === 'found' ? colors.onPalm : colors.onPass}
             />
-            <Text variant="hero" color={burst.result === 'found' ? colors.onPalm : colors.onPass}>
-              {burst.result === 'found' ? t('game.found') : t('game.passed')}
+            <Text variant="hero" color={burst === 'found' ? colors.onPalm : colors.onPass}>
+              {burst === 'found' ? t('game.found') : t('game.passed')}
             </Text>
           </Animated.View>
         </View>

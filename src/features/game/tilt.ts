@@ -51,9 +51,22 @@ export type TiltConfig = {
   calibrationMs: number;
   /** Variation maximale tolérée pendant la calibration (°). */
   stabilityTolerance: number;
+  /** Durée pendant laquelle l'inclinaison doit dépasser le seuil pour compter (ms). */
+  triggerHoldMs: number;
+  /** Durée de retour à l'équilibre exigée avant le geste suivant (ms). */
+  neutralHoldMs: number;
 };
 
-const base = { debounceMs: 400, smoothing: 4, calibrationMs: 800, stabilityTolerance: 6 };
+const base = {
+  debounceMs: 400,
+  smoothing: 4,
+  calibrationMs: 800,
+  stabilityTolerance: 6,
+  // Un geste se maintient ; une secousse (rire, hochement) non.
+  triggerHoldMs: 100,
+  // Après un geste, revenir droit et y rester : le rebond de la tête ne déclenche rien.
+  neutralHoldMs: 300,
+};
 
 /** Seuils par sensibilité (réglage « Sensibilité de détection »). */
 export const tiltConfigs: Record<Sensitivity, TiltConfig> = {
@@ -76,6 +89,10 @@ export type TiltState = {
   /** Angle de référence (position neutre), fixé à la calibration. */
   reference: number | null;
   lastTriggerAt: number;
+  /** Geste en cours de maintien au-delà du seuil (sens et début), avant validation. */
+  pending: { direction: 1 | -1; since: number } | null;
+  /** Début du retour à l'équilibre après un geste (réarmement après `neutralHoldMs`). */
+  neutralSince: number | null;
   /** Dernier angle lissé (affichage de réglage). */
   smoothed: number | null;
 };
@@ -87,6 +104,8 @@ export function initialTiltState(): TiltState {
     calibration: null,
     reference: null,
     lastTriggerAt: Number.NEGATIVE_INFINITY,
+    pending: null,
+    neutralSince: null,
     smoothed: null,
   };
 }
@@ -152,20 +171,42 @@ export function stepTilt(
   const delta = smoothed - (state.reference ?? 0);
 
   if (state.phase === 'waitingNeutral') {
+    // Réarmement seulement après un vrai retour à l'équilibre, tenu `neutralHoldMs`.
+    if (Math.abs(delta) > config.rearm) {
+      return { state: { ...next, neutralSince: null }, events: [] };
+    }
+    const since = state.neutralSince ?? now;
+    const rearmed = now - since >= config.neutralHoldMs;
     return {
-      state: Math.abs(delta) <= config.rearm ? { ...next, phase: 'armed' } : next,
+      state: rearmed
+        ? { ...next, phase: 'armed', neutralSince: null, pending: null }
+        : { ...next, neutralSince: since },
       events: [],
     };
   }
 
-  if (now - state.lastTriggerAt < config.debounceMs || Math.abs(delta) < config.trigger) {
-    return { state: next, events: [] };
+  if (Math.abs(delta) < config.trigger) {
+    return { state: { ...next, pending: null }, events: [] };
   }
 
   // Écran vers le sol = trouvé ; vers le plafond = passer (GAMEPLAY.md §1).
-  const type = delta > 0 ? 'correct' : 'pass';
+  const direction: 1 | -1 = delta > 0 ? 1 : -1;
+  const pending =
+    state.pending?.direction === direction ? state.pending : { direction, since: now };
+  const held = now - pending.since >= config.triggerHoldMs;
+  if (!held || now - state.lastTriggerAt < config.debounceMs) {
+    return { state: { ...next, pending }, events: [] };
+  }
+
+  const type = direction > 0 ? 'correct' : 'pass';
   return {
-    state: { ...next, phase: 'waitingNeutral', lastTriggerAt: now },
+    state: {
+      ...next,
+      phase: 'waitingNeutral',
+      lastTriggerAt: now,
+      pending: null,
+      neutralSince: null,
+    },
     events: [{ type, at: now }],
   };
 }
