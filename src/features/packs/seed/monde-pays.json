@@ -1,0 +1,1139 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-pays",
+    "name": {
+      "fr": "Pays du monde",
+      "en": "Countries of the world"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "pays",
+        "name": {
+          "fr": "Pays du monde",
+          "en": "Countries of the world"
+        },
+        "emoji": "🧭",
+        "color": "lagoon",
+        "tags": [
+          "universel",
+          "geographie"
+        ],
+        "words": [
+          {
+            "text": "France",
+            "difficulty": 1,
+            "forbidden": [
+              "Paris",
+              "tour Eiffel",
+              "baguette"
+            ]
+          },
+          {
+            "text": "Cameroun",
+            "difficulty": 1,
+            "forbidden": [
+              "Yaoundé",
+              "Lions Indomptables",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Nigeria",
+            "difficulty": 1,
+            "forbidden": [
+              "Abuja",
+              "Lagos",
+              "Super Eagles"
+            ]
+          },
+          {
+            "text": "Sénégal",
+            "difficulty": 1,
+            "forbidden": [
+              "Dakar",
+              "teranga",
+              "Lions"
+            ]
+          },
+          {
+            "text": "Côte d'Ivoire",
+            "difficulty": 1,
+            "forbidden": [
+              "Abidjan",
+              "éléphants",
+              "attiéké"
+            ]
+          },
+          {
+            "text": "Maroc",
+            "difficulty": 1,
+            "forbidden": [
+              "Rabat",
+              "Marrakech",
+              "Atlas"
+            ]
+          },
+          {
+            "text": "Algérie",
+            "difficulty": 1,
+            "forbidden": [
+              "Alger",
+              "Sahara",
+              "Fennecs"
+            ]
+          },
+          {
+            "text": "Tunisie",
+            "difficulty": 1,
+            "forbidden": [
+              "Tunis",
+              "Carthage",
+              "jasmin"
+            ]
+          },
+          {
+            "text": "Égypte",
+            "difficulty": 1,
+            "forbidden": [
+              "Le Caire",
+              "pyramides",
+              "Nil"
+            ]
+          },
+          {
+            "text": "Afrique du Sud",
+            "difficulty": 1,
+            "forbidden": [
+              "Pretoria",
+              "Mandela",
+              "Springboks"
+            ]
+          },
+          {
+            "text": "Ghana",
+            "difficulty": 1,
+            "forbidden": [
+              "Accra",
+              "Black Stars",
+              "cacao"
+            ]
+          },
+          {
+            "text": "Kenya",
+            "difficulty": 1,
+            "forbidden": [
+              "Nairobi",
+              "safari",
+              "marathon"
+            ]
+          },
+          {
+            "text": "Éthiopie",
+            "difficulty": 1,
+            "forbidden": [
+              "Addis-Abeba",
+              "café",
+              "Lucy"
+            ]
+          },
+          {
+            "text": "République démocratique du Congo",
+            "difficulty": 1,
+            "forbidden": [
+              "Kinshasa",
+              "RDC",
+              "rumba"
+            ]
+          },
+          {
+            "text": "Gabon",
+            "difficulty": 1,
+            "forbidden": [
+              "Libreville",
+              "Panthères",
+              "forêt"
+            ]
+          },
+          {
+            "text": "Mali",
+            "difficulty": 1,
+            "forbidden": [
+              "Bamako",
+              "Tombouctou",
+              "fleuve Niger"
+            ]
+          },
+          {
+            "text": "Madagascar",
+            "difficulty": 1,
+            "forbidden": [
+              "Antananarivo",
+              "lémuriens",
+              "île"
+            ]
+          },
+          {
+            "text": "Rwanda",
+            "difficulty": 2,
+            "forbidden": [
+              "Kigali",
+              "mille collines",
+              "gorilles"
+            ]
+          },
+          {
+            "text": "États-Unis",
+            "difficulty": 1,
+            "forbidden": [
+              "Washington",
+              "New York",
+              "drapeau étoilé"
+            ]
+          },
+          {
+            "text": "Canada",
+            "difficulty": 1,
+            "forbidden": [
+              "Ottawa",
+              "feuille d'érable",
+              "Québec"
+            ]
+          },
+          {
+            "text": "Mexique",
+            "difficulty": 1,
+            "forbidden": [
+              "Mexico",
+              "sombrero",
+              "tacos"
+            ]
+          },
+          {
+            "text": "Brésil",
+            "difficulty": 1,
+            "forbidden": [
+              "Brasilia",
+              "samba",
+              "carnaval"
+            ]
+          },
+          {
+            "text": "Argentine",
+            "difficulty": 1,
+            "forbidden": [
+              "Buenos Aires",
+              "tango",
+              "Messi"
+            ]
+          },
+          {
+            "text": "Colombie",
+            "difficulty": 2,
+            "forbidden": [
+              "Bogota",
+              "café",
+              "Shakira"
+            ]
+          },
+          {
+            "text": "Chili",
+            "difficulty": 2,
+            "forbidden": [
+              "Santiago",
+              "Andes",
+              "long et étroit"
+            ]
+          },
+          {
+            "text": "Pérou",
+            "difficulty": 2,
+            "forbidden": [
+              "Lima",
+              "Machu Picchu",
+              "lamas"
+            ]
+          },
+          {
+            "text": "Cuba",
+            "difficulty": 2,
+            "forbidden": [
+              "La Havane",
+              "cigares",
+              "île"
+            ]
+          },
+          {
+            "text": "Jamaïque",
+            "difficulty": 1,
+            "forbidden": [
+              "Kingston",
+              "reggae",
+              "Bob Marley"
+            ]
+          },
+          {
+            "text": "Haïti",
+            "difficulty": 2,
+            "forbidden": [
+              "Port-au-Prince",
+              "créole",
+              "Caraïbes"
+            ]
+          },
+          {
+            "text": "Venezuela",
+            "difficulty": 3,
+            "forbidden": [
+              "Caracas",
+              "pétrole",
+              "Amérique du Sud"
+            ]
+          },
+          {
+            "text": "Royaume-Uni",
+            "difficulty": 1,
+            "forbidden": [
+              "Londres",
+              "reine",
+              "Big Ben"
+            ]
+          },
+          {
+            "text": "Irlande",
+            "difficulty": 2,
+            "forbidden": [
+              "Dublin",
+              "trèfle",
+              "Saint-Patrick"
+            ]
+          },
+          {
+            "text": "Allemagne",
+            "difficulty": 1,
+            "forbidden": [
+              "Berlin",
+              "Mannschaft",
+              "bière"
+            ]
+          },
+          {
+            "text": "Espagne",
+            "difficulty": 1,
+            "forbidden": [
+              "Madrid",
+              "flamenco",
+              "paella"
+            ]
+          },
+          {
+            "text": "Portugal",
+            "difficulty": 1,
+            "forbidden": [
+              "Lisbonne",
+              "Cristiano Ronaldo",
+              "fado"
+            ]
+          },
+          {
+            "text": "Italie",
+            "difficulty": 1,
+            "forbidden": [
+              "Rome",
+              "pizza",
+              "botte"
+            ]
+          },
+          {
+            "text": "Suisse",
+            "difficulty": 1,
+            "forbidden": [
+              "Berne",
+              "chocolat",
+              "montres"
+            ]
+          },
+          {
+            "text": "Belgique",
+            "difficulty": 1,
+            "forbidden": [
+              "Bruxelles",
+              "frites",
+              "Diables rouges"
+            ]
+          },
+          {
+            "text": "Pays-Bas",
+            "difficulty": 1,
+            "forbidden": [
+              "Amsterdam",
+              "tulipes",
+              "moulins"
+            ]
+          },
+          {
+            "text": "Grèce",
+            "difficulty": 1,
+            "forbidden": [
+              "Athènes",
+              "Acropole",
+              "Jeux olympiques"
+            ]
+          },
+          {
+            "text": "Russie",
+            "difficulty": 1,
+            "forbidden": [
+              "Moscou",
+              "Kremlin",
+              "poupées russes"
+            ]
+          },
+          {
+            "text": "Ukraine",
+            "difficulty": 2,
+            "forbidden": [
+              "Kiev",
+              "Europe de l'Est",
+              "tournesols"
+            ]
+          },
+          {
+            "text": "Pologne",
+            "difficulty": 2,
+            "forbidden": [
+              "Varsovie",
+              "Europe de l'Est",
+              "Chopin"
+            ]
+          },
+          {
+            "text": "Suède",
+            "difficulty": 2,
+            "forbidden": [
+              "Stockholm",
+              "IKEA",
+              "Scandinavie"
+            ]
+          },
+          {
+            "text": "Norvège",
+            "difficulty": 2,
+            "forbidden": [
+              "Oslo",
+              "fjords",
+              "Scandinavie"
+            ]
+          },
+          {
+            "text": "Danemark",
+            "difficulty": 2,
+            "forbidden": [
+              "Copenhague",
+              "Lego",
+              "Scandinavie"
+            ]
+          },
+          {
+            "text": "Finlande",
+            "difficulty": 3,
+            "forbidden": [
+              "Helsinki",
+              "Père Noël",
+              "sauna"
+            ]
+          },
+          {
+            "text": "Islande",
+            "difficulty": 3,
+            "forbidden": [
+              "Reykjavik",
+              "volcans",
+              "geysers"
+            ]
+          },
+          {
+            "text": "Autriche",
+            "difficulty": 3,
+            "forbidden": [
+              "Vienne",
+              "Mozart",
+              "valse"
+            ]
+          },
+          {
+            "text": "Croatie",
+            "difficulty": 2,
+            "forbidden": [
+              "Zagreb",
+              "damier",
+              "Adriatique"
+            ]
+          },
+          {
+            "text": "Turquie",
+            "difficulty": 1,
+            "forbidden": [
+              "Ankara",
+              "Istanbul",
+              "kebab"
+            ]
+          },
+          {
+            "text": "Chine",
+            "difficulty": 1,
+            "forbidden": [
+              "Pékin",
+              "muraille",
+              "panda"
+            ]
+          },
+          {
+            "text": "Japon",
+            "difficulty": 1,
+            "forbidden": [
+              "Tokyo",
+              "sushi",
+              "samouraï"
+            ]
+          },
+          {
+            "text": "Corée du Sud",
+            "difficulty": 1,
+            "forbidden": [
+              "Séoul",
+              "K-pop",
+              "Samsung"
+            ]
+          },
+          {
+            "text": "Corée du Nord",
+            "difficulty": 2,
+            "forbidden": [
+              "Pyongyang",
+              "dictature",
+              "péninsule"
+            ]
+          },
+          {
+            "text": "Inde",
+            "difficulty": 1,
+            "forbidden": [
+              "New Delhi",
+              "Taj Mahal",
+              "Bollywood"
+            ]
+          },
+          {
+            "text": "Pakistan",
+            "difficulty": 2,
+            "forbidden": [
+              "Islamabad",
+              "cricket",
+              "Asie du Sud"
+            ]
+          },
+          {
+            "text": "Bangladesh",
+            "difficulty": 3,
+            "forbidden": [
+              "Dacca",
+              "Asie du Sud",
+              "Gange"
+            ]
+          },
+          {
+            "text": "Thaïlande",
+            "difficulty": 2,
+            "forbidden": [
+              "Bangkok",
+              "éléphants",
+              "Asie du Sud-Est"
+            ]
+          },
+          {
+            "text": "Vietnam",
+            "difficulty": 2,
+            "forbidden": [
+              "Hanoï",
+              "pho",
+              "Asie du Sud-Est"
+            ]
+          },
+          {
+            "text": "Indonésie",
+            "difficulty": 2,
+            "forbidden": [
+              "Jakarta",
+              "Bali",
+              "archipel"
+            ]
+          },
+          {
+            "text": "Philippines",
+            "difficulty": 2,
+            "forbidden": [
+              "Manille",
+              "archipel",
+              "Asie du Sud-Est"
+            ]
+          },
+          {
+            "text": "Malaisie",
+            "difficulty": 3,
+            "forbidden": [
+              "Kuala Lumpur",
+              "tours Petronas",
+              "Asie du Sud-Est"
+            ]
+          },
+          {
+            "text": "Singapour",
+            "difficulty": 2,
+            "forbidden": [
+              "cité-État",
+              "Asie",
+              "gratte-ciel"
+            ]
+          },
+          {
+            "text": "Arabie saoudite",
+            "difficulty": 1,
+            "forbidden": [
+              "Riyad",
+              "La Mecque",
+              "pétrole"
+            ]
+          },
+          {
+            "text": "Émirats arabes unis",
+            "difficulty": 1,
+            "forbidden": [
+              "Abu Dhabi",
+              "Dubaï",
+              "Burj Khalifa"
+            ]
+          },
+          {
+            "text": "Qatar",
+            "difficulty": 2,
+            "forbidden": [
+              "Doha",
+              "Coupe du monde 2022",
+              "pétrole"
+            ]
+          },
+          {
+            "text": "Iran",
+            "difficulty": 2,
+            "forbidden": [
+              "Téhéran",
+              "Perse",
+              "tapis"
+            ]
+          },
+          {
+            "text": "Irak",
+            "difficulty": 3,
+            "forbidden": [
+              "Bagdad",
+              "Mésopotamie",
+              "Tigre"
+            ]
+          },
+          {
+            "text": "Israël",
+            "difficulty": 2,
+            "forbidden": [
+              "Jérusalem",
+              "Tel-Aviv",
+              "Moyen-Orient"
+            ]
+          },
+          {
+            "text": "Liban",
+            "difficulty": 2,
+            "forbidden": [
+              "Beyrouth",
+              "cèdre",
+              "Moyen-Orient"
+            ]
+          },
+          {
+            "text": "Australie",
+            "difficulty": 1,
+            "forbidden": [
+              "Canberra",
+              "kangourou",
+              "Sydney"
+            ]
+          },
+          {
+            "text": "Nouvelle-Zélande",
+            "difficulty": 2,
+            "forbidden": [
+              "Wellington",
+              "All Blacks",
+              "haka"
+            ]
+          },
+          {
+            "text": "Mongolie",
+            "difficulty": 3,
+            "forbidden": [
+              "Oulan-Bator",
+              "steppe",
+              "yourte"
+            ]
+          },
+          {
+            "text": "Népal",
+            "difficulty": 3,
+            "forbidden": [
+              "Katmandou",
+              "Everest",
+              "Himalaya"
+            ]
+          },
+          {
+            "text": "Afghanistan",
+            "difficulty": 3,
+            "forbidden": [
+              "Kaboul",
+              "montagnes",
+              "Asie centrale"
+            ]
+          },
+          {
+            "text": "Sri Lanka",
+            "difficulty": 3,
+            "forbidden": [
+              "Colombo",
+              "thé",
+              "île"
+            ]
+          },
+          {
+            "text": "Kazakhstan",
+            "difficulty": 3,
+            "forbidden": [
+              "Astana",
+              "steppe",
+              "Asie centrale"
+            ]
+          },
+          {
+            "text": "Monaco",
+            "difficulty": 2,
+            "forbidden": [
+              "Monte-Carlo",
+              "principauté",
+              "casino"
+            ]
+          },
+          {
+            "text": "Luxembourg",
+            "difficulty": 3,
+            "forbidden": [
+              "petit pays",
+              "banques",
+              "Benelux"
+            ]
+          },
+          {
+            "text": "Vatican",
+            "difficulty": 2,
+            "forbidden": [
+              "pape",
+              "Rome",
+              "plus petit pays"
+            ]
+          },
+          {
+            "text": "Hongrie",
+            "difficulty": 3,
+            "forbidden": [
+              "Budapest",
+              "Danube",
+              "goulash"
+            ]
+          },
+          {
+            "text": "République tchèque",
+            "difficulty": 3,
+            "forbidden": [
+              "Prague",
+              "bière",
+              "Europe centrale"
+            ]
+          },
+          {
+            "text": "Roumanie",
+            "difficulty": 3,
+            "forbidden": [
+              "Bucarest",
+              "Dracula",
+              "Carpates"
+            ]
+          },
+          {
+            "text": "Serbie",
+            "difficulty": 3,
+            "forbidden": [
+              "Belgrade",
+              "Balkans",
+              "Djokovic"
+            ]
+          },
+          {
+            "text": "Écosse",
+            "difficulty": 2,
+            "forbidden": [
+              "Édimbourg",
+              "kilt",
+              "cornemuse"
+            ]
+          },
+          {
+            "text": "Tchad",
+            "difficulty": 2,
+            "forbidden": [
+              "N'Djamena",
+              "lac",
+              "Sahel"
+            ]
+          },
+          {
+            "text": "Centrafrique",
+            "difficulty": 2,
+            "forbidden": [
+              "Bangui",
+              "Oubangui",
+              "Afrique centrale"
+            ]
+          },
+          {
+            "text": "Congo",
+            "difficulty": 2,
+            "forbidden": [
+              "Brazzaville",
+              "fleuve",
+              "Diables rouges"
+            ]
+          },
+          {
+            "text": "Guinée équatoriale",
+            "difficulty": 2,
+            "forbidden": [
+              "Malabo",
+              "hispanophone",
+              "Bioko"
+            ]
+          },
+          {
+            "text": "Burkina Faso",
+            "difficulty": 1,
+            "forbidden": [
+              "Ouagadougou",
+              "Étalons",
+              "FESPACO"
+            ]
+          },
+          {
+            "text": "Niger",
+            "difficulty": 2,
+            "forbidden": [
+              "Niamey",
+              "Sahel",
+              "fleuve"
+            ]
+          },
+          {
+            "text": "Guinée",
+            "difficulty": 2,
+            "forbidden": [
+              "Conakry",
+              "Syli national",
+              "bauxite"
+            ]
+          },
+          {
+            "text": "Togo",
+            "difficulty": 2,
+            "forbidden": [
+              "Lomé",
+              "Éperviers",
+              "Afrique de l'Ouest"
+            ]
+          },
+          {
+            "text": "Bénin",
+            "difficulty": 2,
+            "forbidden": [
+              "Porto-Novo",
+              "Cotonou",
+              "vaudou"
+            ]
+          },
+          {
+            "text": "Angola",
+            "difficulty": 2,
+            "forbidden": [
+              "Luanda",
+              "lusophone",
+              "pétrole"
+            ]
+          },
+          {
+            "text": "Mozambique",
+            "difficulty": 3,
+            "forbidden": [
+              "Maputo",
+              "lusophone",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Tanzanie",
+            "difficulty": 2,
+            "forbidden": [
+              "Dodoma",
+              "Kilimandjaro",
+              "Zanzibar"
+            ]
+          },
+          {
+            "text": "Ouganda",
+            "difficulty": 3,
+            "forbidden": [
+              "Kampala",
+              "lac Victoria",
+              "Afrique de l'Est"
+            ]
+          },
+          {
+            "text": "Zimbabwe",
+            "difficulty": 3,
+            "forbidden": [
+              "Harare",
+              "chutes Victoria",
+              "Afrique australe"
+            ]
+          },
+          {
+            "text": "Zambie",
+            "difficulty": 3,
+            "forbidden": [
+              "Lusaka",
+              "chutes Victoria",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Namibie",
+            "difficulty": 3,
+            "forbidden": [
+              "Windhoek",
+              "désert",
+              "dunes"
+            ]
+          },
+          {
+            "text": "Libye",
+            "difficulty": 3,
+            "forbidden": [
+              "Tripoli",
+              "désert",
+              "Méditerranée"
+            ]
+          },
+          {
+            "text": "Soudan",
+            "difficulty": 3,
+            "forbidden": [
+              "Khartoum",
+              "Nil",
+              "désert"
+            ]
+          },
+          {
+            "text": "Cap-Vert",
+            "difficulty": 3,
+            "forbidden": [
+              "Praia",
+              "îles",
+              "Cesária Évora"
+            ]
+          },
+          {
+            "text": "Maurice",
+            "difficulty": 3,
+            "forbidden": [
+              "Port-Louis",
+              "île",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Seychelles",
+            "difficulty": 3,
+            "forbidden": [
+              "Victoria",
+              "plages",
+              "îles"
+            ]
+          },
+          {
+            "text": "Drapeau",
+            "difficulty": 1,
+            "forbidden": [
+              "tissu",
+              "couleurs",
+              "hisser"
+            ]
+          },
+          {
+            "text": "Hymne national",
+            "difficulty": 2,
+            "forbidden": [
+              "chanson",
+              "patrie",
+              "stade"
+            ]
+          },
+          {
+            "text": "Capitale",
+            "difficulty": 1,
+            "forbidden": [
+              "ville principale",
+              "gouvernement",
+              "pays"
+            ]
+          },
+          {
+            "text": "Continent",
+            "difficulty": 1,
+            "forbidden": [
+              "Afrique",
+              "Europe",
+              "Asie"
+            ]
+          },
+          {
+            "text": "Frontière",
+            "difficulty": 2,
+            "forbidden": [
+              "douane",
+              "limite",
+              "passeport"
+            ]
+          },
+          {
+            "text": "Passeport",
+            "difficulty": 1,
+            "forbidden": [
+              "voyage",
+              "tampon",
+              "visa"
+            ]
+          },
+          {
+            "text": "Équateur",
+            "difficulty": 2,
+            "forbidden": [
+              "Quito",
+              "ligne",
+              "Amérique du Sud"
+            ]
+          },
+          {
+            "text": "Bolivie",
+            "difficulty": 3,
+            "forbidden": [
+              "Sucre",
+              "La Paz",
+              "Andes"
+            ]
+          },
+          {
+            "text": "Paraguay",
+            "difficulty": 3,
+            "forbidden": [
+              "Asuncion",
+              "Amérique du Sud",
+              "Guarani"
+            ]
+          },
+          {
+            "text": "Uruguay",
+            "difficulty": 3,
+            "forbidden": [
+              "Montevideo",
+              "Celeste",
+              "football"
+            ]
+          },
+          {
+            "text": "Costa Rica",
+            "difficulty": 3,
+            "forbidden": [
+              "San José",
+              "Amérique centrale",
+              "forêt tropicale"
+            ]
+          },
+          {
+            "text": "Panama",
+            "difficulty": 2,
+            "forbidden": [
+              "canal",
+              "chapeau",
+              "Amérique centrale"
+            ]
+          },
+          {
+            "text": "Porto Rico",
+            "difficulty": 3,
+            "forbidden": [
+              "San Juan",
+              "Caraïbes",
+              "reggaeton"
+            ]
+          },
+          {
+            "text": "Trinité-et-Tobago",
+            "difficulty": 3,
+            "forbidden": [
+              "Port-d'Espagne",
+              "Caraïbes",
+              "calypso"
+            ]
+          },
+          {
+            "text": "Arménie",
+            "difficulty": 3,
+            "forbidden": [
+              "Erevan",
+              "Caucase",
+              "Aznavour"
+            ]
+          },
+          {
+            "text": "Géorgie",
+            "difficulty": 3,
+            "forbidden": [
+              "Tbilissi",
+              "Caucase",
+              "vin"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -60,3 +60,11 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/basket.webp | Microsoft Fluent Emoji 3D « basketball » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/sacs-shopping.webp | Microsoft Fluent Emoji 3D « shopping bags » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/souris.webp | Microsoft Fluent Emoji 3D « mouse face » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/boussole.webp | Microsoft Fluent Emoji 3D « compass » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/trompette.webp | Microsoft Fluent Emoji 3D « trumpet » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/roue-acrobatique.webp | Microsoft Fluent Emoji 3D « person cartwheeling » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/masques-theatre.webp | Microsoft Fluent Emoji 3D « performing arts » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/statue-liberte.webp | Microsoft Fluent Emoji 3D « Statue of Liberty » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/manette.webp | Microsoft Fluent Emoji 3D « video game » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/telephone-portable.webp | Microsoft Fluent Emoji 3D « mobile phone » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/nounours.webp | Microsoft Fluent Emoji 3D « teddy bear » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |

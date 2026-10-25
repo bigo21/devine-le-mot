@@ -1,0 +1,1130 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-instruments",
+    "name": {
+      "fr": "Instruments de musique",
+      "en": "Musical instruments"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "instruments",
+        "name": {
+          "fr": "Instruments de musique",
+          "en": "Musical instruments"
+        },
+        "emoji": "🎺",
+        "color": "orchid",
+        "tags": [
+          "universel",
+          "musique"
+        ],
+        "words": [
+          {
+            "text": "Guitare",
+            "difficulty": 1,
+            "forbidden": [
+              "cordes",
+              "gratter",
+              "rock"
+            ]
+          },
+          {
+            "text": "Guitare électrique",
+            "difficulty": 1,
+            "forbidden": [
+              "ampli",
+              "rock",
+              "solo"
+            ]
+          },
+          {
+            "text": "Basse",
+            "difficulty": 2,
+            "forbidden": [
+              "guitare",
+              "grave",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Piano",
+            "difficulty": 1,
+            "forbidden": [
+              "touches",
+              "noir et blanc",
+              "queue"
+            ]
+          },
+          {
+            "text": "Synthétiseur",
+            "difficulty": 2,
+            "forbidden": [
+              "clavier",
+              "électronique",
+              "sons"
+            ]
+          },
+          {
+            "text": "Orgue",
+            "difficulty": 2,
+            "forbidden": [
+              "église",
+              "tuyaux",
+              "clavier"
+            ]
+          },
+          {
+            "text": "Accordéon",
+            "difficulty": 1,
+            "forbidden": [
+              "soufflet",
+              "bal musette",
+              "clavier"
+            ]
+          },
+          {
+            "text": "Harmonica",
+            "difficulty": 2,
+            "forbidden": [
+              "bouche",
+              "souffler",
+              "blues"
+            ]
+          },
+          {
+            "text": "Violon",
+            "difficulty": 1,
+            "forbidden": [
+              "archet",
+              "cordes",
+              "menton"
+            ]
+          },
+          {
+            "text": "Alto",
+            "difficulty": 3,
+            "forbidden": [
+              "violon",
+              "archet",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Violoncelle",
+            "difficulty": 2,
+            "forbidden": [
+              "archet",
+              "cordes",
+              "entre les jambes"
+            ]
+          },
+          {
+            "text": "Contrebasse",
+            "difficulty": 2,
+            "forbidden": [
+              "cordes",
+              "jazz",
+              "grand"
+            ]
+          },
+          {
+            "text": "Harpe",
+            "difficulty": 2,
+            "forbidden": [
+              "cordes",
+              "ange",
+              "pincer"
+            ]
+          },
+          {
+            "text": "Ukulélé",
+            "difficulty": 2,
+            "forbidden": [
+              "petite guitare",
+              "Hawaï",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Banjo",
+            "difficulty": 2,
+            "forbidden": [
+              "country",
+              "cordes",
+              "rond"
+            ]
+          },
+          {
+            "text": "Mandoline",
+            "difficulty": 3,
+            "forbidden": [
+              "cordes",
+              "Italie",
+              "médiator"
+            ]
+          },
+          {
+            "text": "Luth",
+            "difficulty": 3,
+            "forbidden": [
+              "Moyen Âge",
+              "cordes",
+              "troubadour"
+            ]
+          },
+          {
+            "text": "Sitar",
+            "difficulty": 3,
+            "forbidden": [
+              "Inde",
+              "cordes",
+              "Ravi Shankar"
+            ]
+          },
+          {
+            "text": "Kora",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique de l'Ouest",
+              "calebasse",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Balafon",
+            "difficulty": 2,
+            "forbidden": [
+              "xylophone",
+              "calebasses",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "Djembé",
+            "difficulty": 1,
+            "forbidden": [
+              "tambour",
+              "Afrique",
+              "mains"
+            ]
+          },
+          {
+            "text": "Tam-tam",
+            "difficulty": 1,
+            "forbidden": [
+              "tambour",
+              "Afrique",
+              "taper"
+            ]
+          },
+          {
+            "text": "Tambour",
+            "difficulty": 1,
+            "forbidden": [
+              "taper",
+              "baguettes",
+              "peau"
+            ]
+          },
+          {
+            "text": "Batterie",
+            "difficulty": 1,
+            "forbidden": [
+              "cymbales",
+              "baguettes",
+              "grosse caisse"
+            ]
+          },
+          {
+            "text": "Grosse caisse",
+            "difficulty": 2,
+            "forbidden": [
+              "pédale",
+              "batterie",
+              "boum"
+            ]
+          },
+          {
+            "text": "Caisse claire",
+            "difficulty": 3,
+            "forbidden": [
+              "batterie",
+              "baguettes",
+              "roulement"
+            ]
+          },
+          {
+            "text": "Cymbale",
+            "difficulty": 2,
+            "forbidden": [
+              "métal",
+              "batterie",
+              "crash"
+            ]
+          },
+          {
+            "text": "Gong",
+            "difficulty": 2,
+            "forbidden": [
+              "métal",
+              "frapper",
+              "Asie"
+            ]
+          },
+          {
+            "text": "Triangle",
+            "difficulty": 1,
+            "forbidden": [
+              "métal",
+              "tinter",
+              "baguette"
+            ]
+          },
+          {
+            "text": "Maracas",
+            "difficulty": 1,
+            "forbidden": [
+              "secouer",
+              "graines",
+              "Amérique latine"
+            ]
+          },
+          {
+            "text": "Tambourin",
+            "difficulty": 2,
+            "forbidden": [
+              "grelots",
+              "secouer",
+              "taper"
+            ]
+          },
+          {
+            "text": "Castagnettes",
+            "difficulty": 2,
+            "forbidden": [
+              "Espagne",
+              "flamenco",
+              "claquer"
+            ]
+          },
+          {
+            "text": "Xylophone",
+            "difficulty": 1,
+            "forbidden": [
+              "lames",
+              "baguettes",
+              "notes"
+            ]
+          },
+          {
+            "text": "Glockenspiel",
+            "difficulty": 3,
+            "forbidden": [
+              "lames métalliques",
+              "baguettes",
+              "tinter"
+            ]
+          },
+          {
+            "text": "Marimba",
+            "difficulty": 3,
+            "forbidden": [
+              "lames",
+              "baguettes",
+              "bois"
+            ]
+          },
+          {
+            "text": "Bongo",
+            "difficulty": 2,
+            "forbidden": [
+              "tambours",
+              "paire",
+              "Cuba"
+            ]
+          },
+          {
+            "text": "Conga",
+            "difficulty": 3,
+            "forbidden": [
+              "tambour",
+              "Cuba",
+              "salsa"
+            ]
+          },
+          {
+            "text": "Timbales",
+            "difficulty": 3,
+            "forbidden": [
+              "orchestre",
+              "tambours",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Tablâ",
+            "difficulty": 3,
+            "forbidden": [
+              "Inde",
+              "tambours",
+              "mains"
+            ]
+          },
+          {
+            "text": "Mvet",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "cordes",
+              "épopée"
+            ]
+          },
+          {
+            "text": "Sanza",
+            "difficulty": 2,
+            "forbidden": [
+              "lamelles",
+              "pouces",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "Ngoni",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "cordes",
+              "luth"
+            ]
+          },
+          {
+            "text": "Tama",
+            "difficulty": 3,
+            "forbidden": [
+              "tambour d'aisselle",
+              "Sénégal",
+              "parlant"
+            ]
+          },
+          {
+            "text": "Sabar",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "tambour",
+              "mbalax"
+            ]
+          },
+          {
+            "text": "Trompette",
+            "difficulty": 1,
+            "forbidden": [
+              "cuivre",
+              "souffler",
+              "pistons"
+            ]
+          },
+          {
+            "text": "Trombone",
+            "difficulty": 2,
+            "forbidden": [
+              "coulisse",
+              "cuivre",
+              "jazz"
+            ]
+          },
+          {
+            "text": "Tuba",
+            "difficulty": 2,
+            "forbidden": [
+              "cuivre",
+              "grave",
+              "fanfare"
+            ]
+          },
+          {
+            "text": "Cor",
+            "difficulty": 3,
+            "forbidden": [
+              "cuivre",
+              "rond",
+              "orchestre"
+            ]
+          },
+          {
+            "text": "Clairon",
+            "difficulty": 2,
+            "forbidden": [
+              "armée",
+              "réveil",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Saxophone",
+            "difficulty": 1,
+            "forbidden": [
+              "jazz",
+              "anche",
+              "Manu Dibango"
+            ]
+          },
+          {
+            "text": "Clarinette",
+            "difficulty": 2,
+            "forbidden": [
+              "anche",
+              "bois",
+              "noire"
+            ]
+          },
+          {
+            "text": "Flûte",
+            "difficulty": 1,
+            "forbidden": [
+              "souffler",
+              "trous",
+              "bec"
+            ]
+          },
+          {
+            "text": "Flûte traversière",
+            "difficulty": 2,
+            "forbidden": [
+              "côté",
+              "argentée",
+              "souffler"
+            ]
+          },
+          {
+            "text": "Flûte de Pan",
+            "difficulty": 2,
+            "forbidden": [
+              "tubes",
+              "Andes",
+              "souffler"
+            ]
+          },
+          {
+            "text": "Hautbois",
+            "difficulty": 3,
+            "forbidden": [
+              "anche double",
+              "orchestre",
+              "bois"
+            ]
+          },
+          {
+            "text": "Basson",
+            "difficulty": 3,
+            "forbidden": [
+              "anche double",
+              "grave",
+              "orchestre"
+            ]
+          },
+          {
+            "text": "Cornemuse",
+            "difficulty": 2,
+            "forbidden": [
+              "Écosse",
+              "sac",
+              "kilt"
+            ]
+          },
+          {
+            "text": "Didgeridoo",
+            "difficulty": 3,
+            "forbidden": [
+              "Australie",
+              "aborigènes",
+              "bois"
+            ]
+          },
+          {
+            "text": "Kazoo",
+            "difficulty": 3,
+            "forbidden": [
+              "bourdonner",
+              "bouche",
+              "jouet"
+            ]
+          },
+          {
+            "text": "Sifflet",
+            "difficulty": 1,
+            "forbidden": [
+              "arbitre",
+              "souffler",
+              "stridant"
+            ]
+          },
+          {
+            "text": "Ocarina",
+            "difficulty": 3,
+            "forbidden": [
+              "argile",
+              "souffler",
+              "Zelda"
+            ]
+          },
+          {
+            "text": "Orchestre",
+            "difficulty": 1,
+            "forbidden": [
+              "chef",
+              "musiciens",
+              "symphonie"
+            ]
+          },
+          {
+            "text": "Chef d'orchestre",
+            "difficulty": 1,
+            "forbidden": [
+              "baguette",
+              "diriger",
+              "musiciens"
+            ]
+          },
+          {
+            "text": "Fanfare",
+            "difficulty": 2,
+            "forbidden": [
+              "cuivres",
+              "défilé",
+              "tambours"
+            ]
+          },
+          {
+            "text": "Chorale",
+            "difficulty": 2,
+            "forbidden": [
+              "chanter",
+              "groupe",
+              "voix"
+            ]
+          },
+          {
+            "text": "Partition",
+            "difficulty": 1,
+            "forbidden": [
+              "notes",
+              "portée",
+              "lire"
+            ]
+          },
+          {
+            "text": "Métronome",
+            "difficulty": 2,
+            "forbidden": [
+              "tempo",
+              "tic-tac",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Diapason",
+            "difficulty": 3,
+            "forbidden": [
+              "accorder",
+              "la",
+              "vibrer"
+            ]
+          },
+          {
+            "text": "Micro",
+            "difficulty": 1,
+            "forbidden": [
+              "chanter",
+              "amplifier",
+              "scène"
+            ]
+          },
+          {
+            "text": "Amplificateur",
+            "difficulty": 2,
+            "forbidden": [
+              "ampli",
+              "son",
+              "guitare électrique"
+            ]
+          },
+          {
+            "text": "Platines",
+            "difficulty": 2,
+            "forbidden": [
+              "DJ",
+              "vinyles",
+              "scratcher"
+            ]
+          },
+          {
+            "text": "Table de mixage",
+            "difficulty": 3,
+            "forbidden": [
+              "DJ",
+              "boutons",
+              "son"
+            ]
+          },
+          {
+            "text": "Archet",
+            "difficulty": 2,
+            "forbidden": [
+              "violon",
+              "crins",
+              "frotter"
+            ]
+          },
+          {
+            "text": "Médiator",
+            "difficulty": 3,
+            "forbidden": [
+              "guitare",
+              "plastique",
+              "gratter"
+            ]
+          },
+          {
+            "text": "Baguettes",
+            "difficulty": 2,
+            "forbidden": [
+              "batterie",
+              "taper",
+              "bois"
+            ]
+          },
+          {
+            "text": "Note de musique",
+            "difficulty": 1,
+            "forbidden": [
+              "do",
+              "ré",
+              "mi"
+            ]
+          },
+          {
+            "text": "Solfège",
+            "difficulty": 2,
+            "forbidden": [
+              "do ré mi",
+              "notes",
+              "apprendre"
+            ]
+          },
+          {
+            "text": "Clé de sol",
+            "difficulty": 2,
+            "forbidden": [
+              "portée",
+              "partition",
+              "symbole"
+            ]
+          },
+          {
+            "text": "Boîte à musique",
+            "difficulty": 2,
+            "forbidden": [
+              "manivelle",
+              "ballerine",
+              "mélodie"
+            ]
+          },
+          {
+            "text": "Carillon",
+            "difficulty": 3,
+            "forbidden": [
+              "cloches",
+              "église",
+              "mélodie"
+            ]
+          },
+          {
+            "text": "Cloche",
+            "difficulty": 1,
+            "forbidden": [
+              "église",
+              "sonner",
+              "ding dong"
+            ]
+          },
+          {
+            "text": "Grelot",
+            "difficulty": 2,
+            "forbidden": [
+              "clochette",
+              "Noël",
+              "tinter"
+            ]
+          },
+          {
+            "text": "Klaxon",
+            "difficulty": 1,
+            "forbidden": [
+              "voiture",
+              "bruit",
+              "tut tut"
+            ]
+          },
+          {
+            "text": "Beatbox",
+            "difficulty": 2,
+            "forbidden": [
+              "bouche",
+              "rythme",
+              "sons"
+            ]
+          },
+          {
+            "text": "Vuvuzela",
+            "difficulty": 2,
+            "forbidden": [
+              "Coupe du monde 2010",
+              "Afrique du Sud",
+              "trompette"
+            ]
+          },
+          {
+            "text": "Steel drum",
+            "difficulty": 3,
+            "forbidden": [
+              "Trinidad",
+              "bidon",
+              "Caraïbes"
+            ]
+          },
+          {
+            "text": "Kalimba",
+            "difficulty": 3,
+            "forbidden": [
+              "lamelles",
+              "pouces",
+              "sanza"
+            ]
+          },
+          {
+            "text": "Cajón",
+            "difficulty": 3,
+            "forbidden": [
+              "caisse",
+              "s'asseoir",
+              "Pérou"
+            ]
+          },
+          {
+            "text": "Clavecin",
+            "difficulty": 3,
+            "forbidden": [
+              "baroque",
+              "clavier",
+              "cordes pincées"
+            ]
+          },
+          {
+            "text": "Harmonium",
+            "difficulty": 3,
+            "forbidden": [
+              "clavier",
+              "soufflerie",
+              "indien"
+            ]
+          },
+          {
+            "text": "Thérémine",
+            "difficulty": 3,
+            "forbidden": [
+              "électronique",
+              "sans toucher",
+              "mains"
+            ]
+          },
+          {
+            "text": "Guimbarde",
+            "difficulty": 3,
+            "forbidden": [
+              "bouche",
+              "vibrer",
+              "lamelle"
+            ]
+          },
+          {
+            "text": "Shamisen",
+            "difficulty": 3,
+            "forbidden": [
+              "Japon",
+              "cordes",
+              "trois"
+            ]
+          },
+          {
+            "text": "Erhu",
+            "difficulty": 3,
+            "forbidden": [
+              "Chine",
+              "archet",
+              "deux cordes"
+            ]
+          },
+          {
+            "text": "Bouzouki",
+            "difficulty": 3,
+            "forbidden": [
+              "Grèce",
+              "cordes",
+              "luth"
+            ]
+          },
+          {
+            "text": "Balalaïka",
+            "difficulty": 3,
+            "forbidden": [
+              "Russie",
+              "triangle",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Charango",
+            "difficulty": 3,
+            "forbidden": [
+              "Andes",
+              "petite guitare",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Cuica",
+            "difficulty": 3,
+            "forbidden": [
+              "Brésil",
+              "frotter",
+              "samba"
+            ]
+          },
+          {
+            "text": "Agogo",
+            "difficulty": 3,
+            "forbidden": [
+              "cloches",
+              "Brésil",
+              "samba"
+            ]
+          },
+          {
+            "text": "Shekere",
+            "difficulty": 3,
+            "forbidden": [
+              "calebasse",
+              "perles",
+              "secouer"
+            ]
+          },
+          {
+            "text": "Washboard",
+            "difficulty": 3,
+            "forbidden": [
+              "planche à laver",
+              "dés à coudre",
+              "zydeco"
+            ]
+          },
+          {
+            "text": "Flûte à bec",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "souffler",
+              "doigts"
+            ]
+          },
+          {
+            "text": "Piano à queue",
+            "difficulty": 2,
+            "forbidden": [
+              "concert",
+              "grand",
+              "touches"
+            ]
+          },
+          {
+            "text": "Clavier",
+            "difficulty": 1,
+            "forbidden": [
+              "touches",
+              "électronique",
+              "synthé"
+            ]
+          },
+          {
+            "text": "Guitare acoustique",
+            "difficulty": 2,
+            "forbidden": [
+              "bois",
+              "cordes",
+              "feu de camp"
+            ]
+          },
+          {
+            "text": "Tambour d'aisselle",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique",
+              "parlant",
+              "serrer"
+            ]
+          },
+          {
+            "text": "Bendir",
+            "difficulty": 3,
+            "forbidden": [
+              "Maghreb",
+              "tambour",
+              "cadre"
+            ]
+          },
+          {
+            "text": "Darbouka",
+            "difficulty": 3,
+            "forbidden": [
+              "Maghreb",
+              "tambour",
+              "mains"
+            ]
+          },
+          {
+            "text": "Oud",
+            "difficulty": 3,
+            "forbidden": [
+              "luth",
+              "Moyen-Orient",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Hang",
+            "difficulty": 3,
+            "forbidden": [
+              "soucoupe",
+              "métal",
+              "mains"
+            ]
+          },
+          {
+            "text": "Concert",
+            "difficulty": 1,
+            "forbidden": [
+              "scène",
+              "public",
+              "musiciens"
+            ]
+          },
+          {
+            "text": "Duo",
+            "difficulty": 2,
+            "forbidden": [
+              "deux",
+              "chanter",
+              "ensemble"
+            ]
+          },
+          {
+            "text": "Quatuor",
+            "difficulty": 3,
+            "forbidden": [
+              "quatre",
+              "cordes",
+              "musiciens"
+            ]
+          },
+          {
+            "text": "Groupe de rock",
+            "difficulty": 1,
+            "forbidden": [
+              "guitares",
+              "batterie",
+              "concert"
+            ]
+          },
+          {
+            "text": "Karaoké",
+            "difficulty": 1,
+            "forbidden": [
+              "chanter",
+              "paroles",
+              "micro"
+            ]
+          },
+          {
+            "text": "Casque audio",
+            "difficulty": 1,
+            "forbidden": [
+              "oreilles",
+              "écouter",
+              "musique"
+            ]
+          },
+          {
+            "text": "Enceinte",
+            "difficulty": 1,
+            "forbidden": [
+              "son",
+              "haut-parleur",
+              "Bluetooth"
+            ]
+          },
+          {
+            "text": "Vinyle",
+            "difficulty": 2,
+            "forbidden": [
+              "disque",
+              "tourne-disque",
+              "sillons"
+            ]
+          },
+          {
+            "text": "Cassette",
+            "difficulty": 2,
+            "forbidden": [
+              "bande",
+              "walkman",
+              "rembobiner"
+            ]
+          },
+          {
+            "text": "Cithare",
+            "difficulty": 3,
+            "forbidden": [
+              "cordes",
+              "Autriche",
+              "pincer"
+            ]
+          },
+          {
+            "text": "Vielle à roue",
+            "difficulty": 3,
+            "forbidden": [
+              "manivelle",
+              "Moyen Âge",
+              "cordes"
+            ]
+          },
+          {
+            "text": "Mélodica",
+            "difficulty": 3,
+            "forbidden": [
+              "clavier",
+              "souffler",
+              "école"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1139 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-enfants",
+    "name": {
+      "fr": "Enfants (mots simples)",
+      "en": "Kids (simple words)"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "enfants",
+        "name": {
+          "fr": "Enfants (mots simples)",
+          "en": "Kids (simple words)"
+        },
+        "emoji": "🧸",
+        "color": "lilac",
+        "tags": [
+          "universel",
+          "enfants"
+        ],
+        "words": [
+          {
+            "text": "Chat",
+            "difficulty": 1,
+            "forbidden": [
+              "miaou",
+              "moustaches",
+              "animal"
+            ]
+          },
+          {
+            "text": "Chien",
+            "difficulty": 1,
+            "forbidden": [
+              "ouaf",
+              "aboyer",
+              "os"
+            ]
+          },
+          {
+            "text": "Vache",
+            "difficulty": 1,
+            "forbidden": [
+              "lait",
+              "meuh",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Cochon",
+            "difficulty": 1,
+            "forbidden": [
+              "rose",
+              "groin",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Poule",
+            "difficulty": 1,
+            "forbidden": [
+              "œuf",
+              "cot cot",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Canard",
+            "difficulty": 1,
+            "forbidden": [
+              "coin coin",
+              "eau",
+              "bec"
+            ]
+          },
+          {
+            "text": "Lapin",
+            "difficulty": 1,
+            "forbidden": [
+              "carotte",
+              "oreilles",
+              "sauter"
+            ]
+          },
+          {
+            "text": "Cheval",
+            "difficulty": 1,
+            "forbidden": [
+              "galoper",
+              "crinière",
+              "hennir"
+            ]
+          },
+          {
+            "text": "Mouton",
+            "difficulty": 1,
+            "forbidden": [
+              "laine",
+              "bêê",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Lion",
+            "difficulty": 1,
+            "forbidden": [
+              "roi",
+              "crinière",
+              "rugir"
+            ]
+          },
+          {
+            "text": "Éléphant",
+            "difficulty": 1,
+            "forbidden": [
+              "trompe",
+              "gros",
+              "défenses"
+            ]
+          },
+          {
+            "text": "Girafe",
+            "difficulty": 1,
+            "forbidden": [
+              "long cou",
+              "taches",
+              "grand"
+            ]
+          },
+          {
+            "text": "Singe",
+            "difficulty": 1,
+            "forbidden": [
+              "banane",
+              "arbre",
+              "grimace"
+            ]
+          },
+          {
+            "text": "Poisson",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "nager",
+              "nageoires"
+            ]
+          },
+          {
+            "text": "Oiseau",
+            "difficulty": 1,
+            "forbidden": [
+              "voler",
+              "plumes",
+              "nid"
+            ]
+          },
+          {
+            "text": "Papillon",
+            "difficulty": 1,
+            "forbidden": [
+              "ailes",
+              "fleurs",
+              "chenille"
+            ]
+          },
+          {
+            "text": "Escargot",
+            "difficulty": 1,
+            "forbidden": [
+              "coquille",
+              "lent",
+              "bave"
+            ]
+          },
+          {
+            "text": "Serpent",
+            "difficulty": 1,
+            "forbidden": [
+              "ramper",
+              "siffler",
+              "long"
+            ]
+          },
+          {
+            "text": "Tortue",
+            "difficulty": 1,
+            "forbidden": [
+              "carapace",
+              "lente",
+              "vieille"
+            ]
+          },
+          {
+            "text": "Crocodile",
+            "difficulty": 1,
+            "forbidden": [
+              "dents",
+              "rivière",
+              "vert"
+            ]
+          },
+          {
+            "text": "Grenouille",
+            "difficulty": 1,
+            "forbidden": [
+              "mare",
+              "sauter",
+              "coâ"
+            ]
+          },
+          {
+            "text": "Abeille",
+            "difficulty": 1,
+            "forbidden": [
+              "miel",
+              "piquer",
+              "bzz"
+            ]
+          },
+          {
+            "text": "Fourmi",
+            "difficulty": 1,
+            "forbidden": [
+              "petite",
+              "travailleuse",
+              "fourmilière"
+            ]
+          },
+          {
+            "text": "Souris",
+            "difficulty": 1,
+            "forbidden": [
+              "fromage",
+              "petite",
+              "couiner"
+            ]
+          },
+          {
+            "text": "Ours",
+            "difficulty": 1,
+            "forbidden": [
+              "forêt",
+              "miel",
+              "nounours"
+            ]
+          },
+          {
+            "text": "Pomme",
+            "difficulty": 1,
+            "forbidden": [
+              "fruit",
+              "rouge",
+              "croquer"
+            ]
+          },
+          {
+            "text": "Banane",
+            "difficulty": 1,
+            "forbidden": [
+              "jaune",
+              "éplucher",
+              "singe"
+            ]
+          },
+          {
+            "text": "Orange",
+            "difficulty": 1,
+            "forbidden": [
+              "fruit",
+              "jus",
+              "agrume"
+            ]
+          },
+          {
+            "text": "Mangue",
+            "difficulty": 1,
+            "forbidden": [
+              "fruit",
+              "jaune",
+              "noyau"
+            ]
+          },
+          {
+            "text": "Ananas",
+            "difficulty": 1,
+            "forbidden": [
+              "fruit",
+              "couronne",
+              "piquant"
+            ]
+          },
+          {
+            "text": "Fraise",
+            "difficulty": 1,
+            "forbidden": [
+              "fruit",
+              "rouge",
+              "petite"
+            ]
+          },
+          {
+            "text": "Pastèque",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "rouge",
+              "pépins"
+            ]
+          },
+          {
+            "text": "Carotte",
+            "difficulty": 1,
+            "forbidden": [
+              "orange",
+              "lapin",
+              "légume"
+            ]
+          },
+          {
+            "text": "Gâteau",
+            "difficulty": 1,
+            "forbidden": [
+              "anniversaire",
+              "bougies",
+              "sucré"
+            ]
+          },
+          {
+            "text": "Bonbon",
+            "difficulty": 1,
+            "forbidden": [
+              "sucré",
+              "sachet",
+              "dents"
+            ]
+          },
+          {
+            "text": "Glace",
+            "difficulty": 1,
+            "forbidden": [
+              "froid",
+              "cornet",
+              "parfum"
+            ]
+          },
+          {
+            "text": "Chocolat",
+            "difficulty": 1,
+            "forbidden": [
+              "cacao",
+              "sucré",
+              "marron"
+            ]
+          },
+          {
+            "text": "Pain",
+            "difficulty": 1,
+            "forbidden": [
+              "boulangerie",
+              "baguette",
+              "tartine"
+            ]
+          },
+          {
+            "text": "Lait",
+            "difficulty": 1,
+            "forbidden": [
+              "blanc",
+              "vache",
+              "biberon"
+            ]
+          },
+          {
+            "text": "Œuf",
+            "difficulty": 1,
+            "forbidden": [
+              "poule",
+              "coquille",
+              "jaune"
+            ]
+          },
+          {
+            "text": "Pizza",
+            "difficulty": 1,
+            "forbidden": [
+              "fromage",
+              "tomate",
+              "parts"
+            ]
+          },
+          {
+            "text": "Frites",
+            "difficulty": 1,
+            "forbidden": [
+              "pommes de terre",
+              "ketchup",
+              "frire"
+            ]
+          },
+          {
+            "text": "Ballon",
+            "difficulty": 1,
+            "forbidden": [
+              "jouer",
+              "rond",
+              "taper"
+            ]
+          },
+          {
+            "text": "Poupée",
+            "difficulty": 1,
+            "forbidden": [
+              "jouet",
+              "fille",
+              "habiller"
+            ]
+          },
+          {
+            "text": "Voiture",
+            "difficulty": 1,
+            "forbidden": [
+              "roues",
+              "rouler",
+              "conduire"
+            ]
+          },
+          {
+            "text": "Vélo",
+            "difficulty": 1,
+            "forbidden": [
+              "pédaler",
+              "deux roues",
+              "guidon"
+            ]
+          },
+          {
+            "text": "Train",
+            "difficulty": 1,
+            "forbidden": [
+              "rails",
+              "tchou tchou",
+              "wagons"
+            ]
+          },
+          {
+            "text": "Avion",
+            "difficulty": 1,
+            "forbidden": [
+              "voler",
+              "ciel",
+              "aéroport"
+            ]
+          },
+          {
+            "text": "Bateau",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "naviguer",
+              "voile"
+            ]
+          },
+          {
+            "text": "Fusée",
+            "difficulty": 1,
+            "forbidden": [
+              "espace",
+              "lune",
+              "décollage"
+            ]
+          },
+          {
+            "text": "Toboggan",
+            "difficulty": 1,
+            "forbidden": [
+              "glisser",
+              "parc",
+              "descendre"
+            ]
+          },
+          {
+            "text": "Balançoire",
+            "difficulty": 1,
+            "forbidden": [
+              "parc",
+              "pousser",
+              "se balancer"
+            ]
+          },
+          {
+            "text": "Trampoline",
+            "difficulty": 1,
+            "forbidden": [
+              "sauter",
+              "rebondir",
+              "jardin"
+            ]
+          },
+          {
+            "text": "Doudou",
+            "difficulty": 1,
+            "forbidden": [
+              "câlin",
+              "dormir",
+              "peluche"
+            ]
+          },
+          {
+            "text": "Peluche",
+            "difficulty": 1,
+            "forbidden": [
+              "nounours",
+              "doux",
+              "câlin"
+            ]
+          },
+          {
+            "text": "Cubes",
+            "difficulty": 1,
+            "forbidden": [
+              "construire",
+              "empiler",
+              "jouet"
+            ]
+          },
+          {
+            "text": "Puzzle",
+            "difficulty": 1,
+            "forbidden": [
+              "pièces",
+              "assembler",
+              "image"
+            ]
+          },
+          {
+            "text": "Crayon",
+            "difficulty": 1,
+            "forbidden": [
+              "dessiner",
+              "colorier",
+              "mine"
+            ]
+          },
+          {
+            "text": "Livre",
+            "difficulty": 1,
+            "forbidden": [
+              "lire",
+              "pages",
+              "histoire"
+            ]
+          },
+          {
+            "text": "École",
+            "difficulty": 1,
+            "forbidden": [
+              "maîtresse",
+              "classe",
+              "cartable"
+            ]
+          },
+          {
+            "text": "Cartable",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "dos",
+              "cahiers"
+            ]
+          },
+          {
+            "text": "Maîtresse",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "classe",
+              "enseigner"
+            ]
+          },
+          {
+            "text": "Tableau",
+            "difficulty": 1,
+            "forbidden": [
+              "craie",
+              "école",
+              "écrire"
+            ]
+          },
+          {
+            "text": "Maison",
+            "difficulty": 1,
+            "forbidden": [
+              "toit",
+              "porte",
+              "habiter"
+            ]
+          },
+          {
+            "text": "Lit",
+            "difficulty": 1,
+            "forbidden": [
+              "dormir",
+              "nuit",
+              "oreiller"
+            ]
+          },
+          {
+            "text": "Chaussure",
+            "difficulty": 1,
+            "forbidden": [
+              "pied",
+              "lacets",
+              "marcher"
+            ]
+          },
+          {
+            "text": "Chapeau",
+            "difficulty": 1,
+            "forbidden": [
+              "tête",
+              "soleil",
+              "porter"
+            ]
+          },
+          {
+            "text": "Lunettes",
+            "difficulty": 1,
+            "forbidden": [
+              "yeux",
+              "voir",
+              "nez"
+            ]
+          },
+          {
+            "text": "Parapluie",
+            "difficulty": 1,
+            "forbidden": [
+              "pluie",
+              "ouvrir",
+              "mouillé"
+            ]
+          },
+          {
+            "text": "Soleil",
+            "difficulty": 1,
+            "forbidden": [
+              "chaud",
+              "jaune",
+              "jour"
+            ]
+          },
+          {
+            "text": "Lune",
+            "difficulty": 1,
+            "forbidden": [
+              "nuit",
+              "ciel",
+              "croissant"
+            ]
+          },
+          {
+            "text": "Étoile",
+            "difficulty": 1,
+            "forbidden": [
+              "ciel",
+              "nuit",
+              "briller"
+            ]
+          },
+          {
+            "text": "Nuage",
+            "difficulty": 1,
+            "forbidden": [
+              "ciel",
+              "blanc",
+              "pluie"
+            ]
+          },
+          {
+            "text": "Pluie",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "tomber",
+              "parapluie"
+            ]
+          },
+          {
+            "text": "Arc-en-ciel",
+            "difficulty": 1,
+            "forbidden": [
+              "couleurs",
+              "pluie",
+              "soleil"
+            ]
+          },
+          {
+            "text": "Neige",
+            "difficulty": 1,
+            "forbidden": [
+              "blanc",
+              "froid",
+              "bonhomme"
+            ]
+          },
+          {
+            "text": "Arbre",
+            "difficulty": 1,
+            "forbidden": [
+              "feuilles",
+              "tronc",
+              "branches"
+            ]
+          },
+          {
+            "text": "Fleur",
+            "difficulty": 1,
+            "forbidden": [
+              "pétales",
+              "sentir",
+              "jardin"
+            ]
+          },
+          {
+            "text": "Mer",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "vagues",
+              "plage"
+            ]
+          },
+          {
+            "text": "Plage",
+            "difficulty": 1,
+            "forbidden": [
+              "sable",
+              "mer",
+              "vacances"
+            ]
+          },
+          {
+            "text": "Château de sable",
+            "difficulty": 1,
+            "forbidden": [
+              "seau",
+              "pelle",
+              "plage"
+            ]
+          },
+          {
+            "text": "Montagne",
+            "difficulty": 1,
+            "forbidden": [
+              "haut",
+              "grimper",
+              "sommet"
+            ]
+          },
+          {
+            "text": "Feu",
+            "difficulty": 1,
+            "forbidden": [
+              "chaud",
+              "flammes",
+              "brûler"
+            ]
+          },
+          {
+            "text": "Pompier",
+            "difficulty": 1,
+            "forbidden": [
+              "feu",
+              "camion rouge",
+              "sauver"
+            ]
+          },
+          {
+            "text": "Policier",
+            "difficulty": 1,
+            "forbidden": [
+              "uniforme",
+              "voleur",
+              "sifflet"
+            ]
+          },
+          {
+            "text": "Docteur",
+            "difficulty": 1,
+            "forbidden": [
+              "malade",
+              "soigner",
+              "stéthoscope"
+            ]
+          },
+          {
+            "text": "Princesse",
+            "difficulty": 1,
+            "forbidden": [
+              "couronne",
+              "château",
+              "robe"
+            ]
+          },
+          {
+            "text": "Roi",
+            "difficulty": 1,
+            "forbidden": [
+              "couronne",
+              "trône",
+              "royaume"
+            ]
+          },
+          {
+            "text": "Sorcière",
+            "difficulty": 1,
+            "forbidden": [
+              "balai",
+              "chapeau pointu",
+              "magie"
+            ]
+          },
+          {
+            "text": "Fantôme",
+            "difficulty": 1,
+            "forbidden": [
+              "drap blanc",
+              "bouh",
+              "peur"
+            ]
+          },
+          {
+            "text": "Dragon",
+            "difficulty": 1,
+            "forbidden": [
+              "feu",
+              "ailes",
+              "monstre"
+            ]
+          },
+          {
+            "text": "Pirate",
+            "difficulty": 1,
+            "forbidden": [
+              "bateau",
+              "trésor",
+              "bandeau"
+            ]
+          },
+          {
+            "text": "Robot",
+            "difficulty": 1,
+            "forbidden": [
+              "machine",
+              "métal",
+              "bip bip"
+            ]
+          },
+          {
+            "text": "Clown",
+            "difficulty": 1,
+            "forbidden": [
+              "nez rouge",
+              "cirque",
+              "rire"
+            ]
+          },
+          {
+            "text": "Père Noël",
+            "difficulty": 1,
+            "forbidden": [
+              "cadeaux",
+              "barbe blanche",
+              "traîneau"
+            ]
+          },
+          {
+            "text": "Anniversaire",
+            "difficulty": 1,
+            "forbidden": [
+              "gâteau",
+              "bougies",
+              "cadeaux"
+            ]
+          },
+          {
+            "text": "Cadeau",
+            "difficulty": 1,
+            "forbidden": [
+              "paquet",
+              "surprise",
+              "offrir"
+            ]
+          },
+          {
+            "text": "Bougie",
+            "difficulty": 1,
+            "forbidden": [
+              "souffler",
+              "flamme",
+              "gâteau"
+            ]
+          },
+          {
+            "text": "Bulle de savon",
+            "difficulty": 1,
+            "forbidden": [
+              "souffler",
+              "éclater",
+              "rondes"
+            ]
+          },
+          {
+            "text": "Cerf-volant",
+            "difficulty": 1,
+            "forbidden": [
+              "vent",
+              "ciel",
+              "ficelle"
+            ]
+          },
+          {
+            "text": "Dent",
+            "difficulty": 1,
+            "forbidden": [
+              "bouche",
+              "brosser",
+              "petite souris"
+            ]
+          },
+          {
+            "text": "Main",
+            "difficulty": 1,
+            "forbidden": [
+              "doigts",
+              "cinq",
+              "applaudir"
+            ]
+          },
+          {
+            "text": "Pied",
+            "difficulty": 1,
+            "forbidden": [
+              "orteils",
+              "marcher",
+              "chaussure"
+            ]
+          },
+          {
+            "text": "Nez",
+            "difficulty": 1,
+            "forbidden": [
+              "sentir",
+              "visage",
+              "moucher"
+            ]
+          },
+          {
+            "text": "Oreille",
+            "difficulty": 1,
+            "forbidden": [
+              "entendre",
+              "tête",
+              "deux"
+            ]
+          },
+          {
+            "text": "Œil",
+            "difficulty": 1,
+            "forbidden": [
+              "voir",
+              "regarder",
+              "deux"
+            ]
+          },
+          {
+            "text": "Bébé",
+            "difficulty": 1,
+            "forbidden": [
+              "biberon",
+              "pleurer",
+              "couche"
+            ]
+          },
+          {
+            "text": "Maman",
+            "difficulty": 1,
+            "forbidden": [
+              "mère",
+              "famille",
+              "bisou"
+            ]
+          },
+          {
+            "text": "Papa",
+            "difficulty": 1,
+            "forbidden": [
+              "père",
+              "famille",
+              "câlin"
+            ]
+          },
+          {
+            "text": "Grand-mère",
+            "difficulty": 1,
+            "forbidden": [
+              "mamie",
+              "famille",
+              "âgée"
+            ]
+          },
+          {
+            "text": "Bisou",
+            "difficulty": 1,
+            "forbidden": [
+              "embrasser",
+              "joue",
+              "lèvres"
+            ]
+          },
+          {
+            "text": "Câlin",
+            "difficulty": 1,
+            "forbidden": [
+              "bras",
+              "serrer",
+              "tendresse"
+            ]
+          },
+          {
+            "text": "Brosse à dents",
+            "difficulty": 1,
+            "forbidden": [
+              "dentifrice",
+              "poils",
+              "matin"
+            ]
+          },
+          {
+            "text": "Bain",
+            "difficulty": 1,
+            "forbidden": [
+              "baignoire",
+              "eau",
+              "mousse"
+            ]
+          },
+          {
+            "text": "Téléphone",
+            "difficulty": 1,
+            "forbidden": [
+              "appeler",
+              "sonner",
+              "écran"
+            ]
+          },
+          {
+            "text": "Télévision",
+            "difficulty": 1,
+            "forbidden": [
+              "dessins animés",
+              "écran",
+              "regarder"
+            ]
+          },
+          {
+            "text": "Musique",
+            "difficulty": 1,
+            "forbidden": [
+              "chanter",
+              "écouter",
+              "danser"
+            ]
+          },
+          {
+            "text": "Tambour",
+            "difficulty": 1,
+            "forbidden": [
+              "taper",
+              "boum",
+              "baguettes"
+            ]
+          },
+          {
+            "text": "Cache-cache",
+            "difficulty": 1,
+            "forbidden": [
+              "se cacher",
+              "compter",
+              "trouver"
+            ]
+          },
+          {
+            "text": "Football",
+            "difficulty": 1,
+            "forbidden": [
+              "ballon",
+              "but",
+              "pieds"
+            ]
+          },
+          {
+            "text": "Cirque",
+            "difficulty": 1,
+            "forbidden": [
+              "clown",
+              "chapiteau",
+              "acrobates"
+            ]
+          },
+          {
+            "text": "Zoo",
+            "difficulty": 1,
+            "forbidden": [
+              "animaux",
+              "cages",
+              "visiter"
+            ]
+          },
+          {
+            "text": "Ferme",
+            "difficulty": 1,
+            "forbidden": [
+              "animaux",
+              "tracteur",
+              "fermier"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

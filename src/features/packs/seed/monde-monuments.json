@@ -1,0 +1,1130 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-monuments",
+    "name": {
+      "fr": "Monuments et lieux du monde",
+      "en": "World landmarks"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "monuments",
+        "name": {
+          "fr": "Monuments et lieux du monde",
+          "en": "World landmarks"
+        },
+        "emoji": "🗽",
+        "color": "slate",
+        "tags": [
+          "universel",
+          "lieux"
+        ],
+        "words": [
+          {
+            "text": "Tour Eiffel",
+            "difficulty": 1,
+            "forbidden": [
+              "Paris",
+              "fer",
+              "dame"
+            ]
+          },
+          {
+            "text": "Statue de la Liberté",
+            "difficulty": 1,
+            "forbidden": [
+              "New York",
+              "torche",
+              "verte"
+            ]
+          },
+          {
+            "text": "Pyramides de Gizeh",
+            "difficulty": 1,
+            "forbidden": [
+              "Égypte",
+              "pharaons",
+              "désert"
+            ]
+          },
+          {
+            "text": "Sphinx",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "lion",
+              "pyramides"
+            ]
+          },
+          {
+            "text": "Grande Muraille de Chine",
+            "difficulty": 1,
+            "forbidden": [
+              "longue",
+              "Pékin",
+              "mur"
+            ]
+          },
+          {
+            "text": "Taj Mahal",
+            "difficulty": 1,
+            "forbidden": [
+              "Inde",
+              "blanc",
+              "mausolée"
+            ]
+          },
+          {
+            "text": "Colisée",
+            "difficulty": 1,
+            "forbidden": [
+              "Rome",
+              "gladiateurs",
+              "arène"
+            ]
+          },
+          {
+            "text": "Tour de Pise",
+            "difficulty": 1,
+            "forbidden": [
+              "penchée",
+              "Italie",
+              "campanile"
+            ]
+          },
+          {
+            "text": "Big Ben",
+            "difficulty": 1,
+            "forbidden": [
+              "Londres",
+              "horloge",
+              "tour"
+            ]
+          },
+          {
+            "text": "Christ Rédempteur",
+            "difficulty": 1,
+            "forbidden": [
+              "Rio",
+              "bras ouverts",
+              "statue"
+            ]
+          },
+          {
+            "text": "Machu Picchu",
+            "difficulty": 1,
+            "forbidden": [
+              "Pérou",
+              "Incas",
+              "montagne"
+            ]
+          },
+          {
+            "text": "Petra",
+            "difficulty": 2,
+            "forbidden": [
+              "Jordanie",
+              "rose",
+              "rocher"
+            ]
+          },
+          {
+            "text": "Acropole",
+            "difficulty": 2,
+            "forbidden": [
+              "Athènes",
+              "Parthénon",
+              "colline"
+            ]
+          },
+          {
+            "text": "Parthénon",
+            "difficulty": 2,
+            "forbidden": [
+              "Athènes",
+              "temple",
+              "colonnes"
+            ]
+          },
+          {
+            "text": "Sagrada Familia",
+            "difficulty": 2,
+            "forbidden": [
+              "Barcelone",
+              "Gaudí",
+              "basilique"
+            ]
+          },
+          {
+            "text": "Arc de triomphe",
+            "difficulty": 1,
+            "forbidden": [
+              "Paris",
+              "Champs-Élysées",
+              "Napoléon"
+            ]
+          },
+          {
+            "text": "Notre-Dame de Paris",
+            "difficulty": 1,
+            "forbidden": [
+              "cathédrale",
+              "Quasimodo",
+              "incendie"
+            ]
+          },
+          {
+            "text": "Mont-Saint-Michel",
+            "difficulty": 1,
+            "forbidden": [
+              "abbaye",
+              "marée",
+              "Normandie"
+            ]
+          },
+          {
+            "text": "Château de Versailles",
+            "difficulty": 1,
+            "forbidden": [
+              "Louis XIV",
+              "galerie des Glaces",
+              "jardins"
+            ]
+          },
+          {
+            "text": "Louvre",
+            "difficulty": 1,
+            "forbidden": [
+              "pyramide",
+              "Joconde",
+              "musée"
+            ]
+          },
+          {
+            "text": "Burj Khalifa",
+            "difficulty": 1,
+            "forbidden": [
+              "Dubaï",
+              "plus haute tour",
+              "gratte-ciel"
+            ]
+          },
+          {
+            "text": "Opéra de Sydney",
+            "difficulty": 1,
+            "forbidden": [
+              "Australie",
+              "voiles",
+              "port"
+            ]
+          },
+          {
+            "text": "Golden Gate",
+            "difficulty": 1,
+            "forbidden": [
+              "San Francisco",
+              "pont",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Mont Rushmore",
+            "difficulty": 2,
+            "forbidden": [
+              "présidents",
+              "visages",
+              "montagne"
+            ]
+          },
+          {
+            "text": "Maison Blanche",
+            "difficulty": 1,
+            "forbidden": [
+              "Washington",
+              "président",
+              "américain"
+            ]
+          },
+          {
+            "text": "Empire State Building",
+            "difficulty": 2,
+            "forbidden": [
+              "New York",
+              "gratte-ciel",
+              "King Kong"
+            ]
+          },
+          {
+            "text": "Times Square",
+            "difficulty": 2,
+            "forbidden": [
+              "New York",
+              "écrans",
+              "Nouvel An"
+            ]
+          },
+          {
+            "text": "Hollywood",
+            "difficulty": 1,
+            "forbidden": [
+              "lettres",
+              "cinéma",
+              "Los Angeles"
+            ]
+          },
+          {
+            "text": "Kremlin",
+            "difficulty": 2,
+            "forbidden": [
+              "Moscou",
+              "Russie",
+              "forteresse"
+            ]
+          },
+          {
+            "text": "Place Rouge",
+            "difficulty": 2,
+            "forbidden": [
+              "Moscou",
+              "Kremlin",
+              "Saint-Basile"
+            ]
+          },
+          {
+            "text": "Cathédrale Saint-Basile",
+            "difficulty": 3,
+            "forbidden": [
+              "Moscou",
+              "coupoles",
+              "Place Rouge"
+            ]
+          },
+          {
+            "text": "Buckingham Palace",
+            "difficulty": 2,
+            "forbidden": [
+              "Londres",
+              "reine",
+              "gardes"
+            ]
+          },
+          {
+            "text": "Tower Bridge",
+            "difficulty": 2,
+            "forbidden": [
+              "Londres",
+              "Tamise",
+              "pont-levis"
+            ]
+          },
+          {
+            "text": "London Eye",
+            "difficulty": 2,
+            "forbidden": [
+              "grande roue",
+              "Londres",
+              "Tamise"
+            ]
+          },
+          {
+            "text": "Stonehenge",
+            "difficulty": 2,
+            "forbidden": [
+              "pierres",
+              "cercle",
+              "Angleterre"
+            ]
+          },
+          {
+            "text": "Vatican",
+            "difficulty": 2,
+            "forbidden": [
+              "pape",
+              "Rome",
+              "Saint-Pierre"
+            ]
+          },
+          {
+            "text": "Basilique Saint-Pierre",
+            "difficulty": 3,
+            "forbidden": [
+              "Vatican",
+              "pape",
+              "dôme"
+            ]
+          },
+          {
+            "text": "Fontaine de Trevi",
+            "difficulty": 2,
+            "forbidden": [
+              "Rome",
+              "pièces",
+              "vœu"
+            ]
+          },
+          {
+            "text": "Venise",
+            "difficulty": 1,
+            "forbidden": [
+              "gondoles",
+              "canaux",
+              "Italie"
+            ]
+          },
+          {
+            "text": "Alhambra",
+            "difficulty": 3,
+            "forbidden": [
+              "Grenade",
+              "Espagne",
+              "palais"
+            ]
+          },
+          {
+            "text": "Porte de Brandebourg",
+            "difficulty": 2,
+            "forbidden": [
+              "Berlin",
+              "colonnes",
+              "Allemagne"
+            ]
+          },
+          {
+            "text": "Mur de Berlin",
+            "difficulty": 2,
+            "forbidden": [
+              "Allemagne",
+              "chute",
+              "1989"
+            ]
+          },
+          {
+            "text": "Atomium",
+            "difficulty": 2,
+            "forbidden": [
+              "Bruxelles",
+              "boules",
+              "atome"
+            ]
+          },
+          {
+            "text": "Manneken-Pis",
+            "difficulty": 2,
+            "forbidden": [
+              "Bruxelles",
+              "statue",
+              "garçon"
+            ]
+          },
+          {
+            "text": "Angkor Vat",
+            "difficulty": 3,
+            "forbidden": [
+              "Cambodge",
+              "temple",
+              "jungle"
+            ]
+          },
+          {
+            "text": "Cité interdite",
+            "difficulty": 2,
+            "forbidden": [
+              "Pékin",
+              "empereur",
+              "palais"
+            ]
+          },
+          {
+            "text": "Mont Fuji",
+            "difficulty": 1,
+            "forbidden": [
+              "Japon",
+              "volcan",
+              "neige"
+            ]
+          },
+          {
+            "text": "Temple d'or",
+            "difficulty": 3,
+            "forbidden": [
+              "Kyoto",
+              "Japon",
+              "pavillon"
+            ]
+          },
+          {
+            "text": "Tours Petronas",
+            "difficulty": 3,
+            "forbidden": [
+              "Kuala Lumpur",
+              "jumelles",
+              "Malaisie"
+            ]
+          },
+          {
+            "text": "Marina Bay Sands",
+            "difficulty": 3,
+            "forbidden": [
+              "Singapour",
+              "piscine",
+              "hôtel"
+            ]
+          },
+          {
+            "text": "Burj al-Arab",
+            "difficulty": 2,
+            "forbidden": [
+              "Dubaï",
+              "voile",
+              "hôtel"
+            ]
+          },
+          {
+            "text": "Grande Mosquée de La Mecque",
+            "difficulty": 2,
+            "forbidden": [
+              "Kaaba",
+              "pèlerinage",
+              "Arabie saoudite"
+            ]
+          },
+          {
+            "text": "Mosquée Hassan II",
+            "difficulty": 2,
+            "forbidden": [
+              "Casablanca",
+              "minaret",
+              "océan"
+            ]
+          },
+          {
+            "text": "Grande Mosquée de Djenné",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "terre",
+              "banco"
+            ]
+          },
+          {
+            "text": "Basilique Notre-Dame de la Paix",
+            "difficulty": 3,
+            "forbidden": [
+              "Yamoussoukro",
+              "Côte d'Ivoire",
+              "dôme"
+            ]
+          },
+          {
+            "text": "Monument de la Renaissance africaine",
+            "difficulty": 2,
+            "forbidden": [
+              "Dakar",
+              "statue",
+              "colline"
+            ]
+          },
+          {
+            "text": "Île de Gorée",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "esclavage",
+              "Porte du voyage sans retour"
+            ]
+          },
+          {
+            "text": "Robben Island",
+            "difficulty": 3,
+            "forbidden": [
+              "Mandela",
+              "prison",
+              "Le Cap"
+            ]
+          },
+          {
+            "text": "Montagne de la Table",
+            "difficulty": 2,
+            "forbidden": [
+              "Le Cap",
+              "plate",
+              "Afrique du Sud"
+            ]
+          },
+          {
+            "text": "Chutes Victoria",
+            "difficulty": 2,
+            "forbidden": [
+              "Zambie",
+              "Zimbabwe",
+              "cascade"
+            ]
+          },
+          {
+            "text": "Kilimandjaro",
+            "difficulty": 1,
+            "forbidden": [
+              "Tanzanie",
+              "neiges",
+              "plus haute montagne d'Afrique"
+            ]
+          },
+          {
+            "text": "Mont Cameroun",
+            "difficulty": 1,
+            "forbidden": [
+              "volcan",
+              "Buéa",
+              "course"
+            ]
+          },
+          {
+            "text": "Monument de la Réunification",
+            "difficulty": 2,
+            "forbidden": [
+              "Yaoundé",
+              "spirale",
+              "Cameroun"
+            ]
+          },
+          {
+            "text": "Abou Simbel",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "Ramsès II",
+              "temple"
+            ]
+          },
+          {
+            "text": "Vallée des Rois",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "tombeaux",
+              "Louxor"
+            ]
+          },
+          {
+            "text": "Carthage",
+            "difficulty": 2,
+            "forbidden": [
+              "Tunisie",
+              "ruines",
+              "Hannibal"
+            ]
+          },
+          {
+            "text": "Église de Lalibela",
+            "difficulty": 3,
+            "forbidden": [
+              "Éthiopie",
+              "rocher",
+              "monolithe"
+            ]
+          },
+          {
+            "text": "Chutes du Niagara",
+            "difficulty": 1,
+            "forbidden": [
+              "cascade",
+              "Canada",
+              "États-Unis"
+            ]
+          },
+          {
+            "text": "Grand Canyon",
+            "difficulty": 1,
+            "forbidden": [
+              "Arizona",
+              "gorge",
+              "Colorado"
+            ]
+          },
+          {
+            "text": "Las Vegas Strip",
+            "difficulty": 2,
+            "forbidden": [
+              "casinos",
+              "néons",
+              "Nevada"
+            ]
+          },
+          {
+            "text": "Statue de Lincoln",
+            "difficulty": 3,
+            "forbidden": [
+              "Washington",
+              "président",
+              "assis"
+            ]
+          },
+          {
+            "text": "Pyramide de Chichén Itzá",
+            "difficulty": 2,
+            "forbidden": [
+              "Mexique",
+              "Mayas",
+              "escaliers"
+            ]
+          },
+          {
+            "text": "Teotihuacán",
+            "difficulty": 3,
+            "forbidden": [
+              "Mexique",
+              "pyramides",
+              "Aztèques"
+            ]
+          },
+          {
+            "text": "Île de Pâques",
+            "difficulty": 2,
+            "forbidden": [
+              "statues",
+              "moaï",
+              "Chili"
+            ]
+          },
+          {
+            "text": "Copacabana",
+            "difficulty": 2,
+            "forbidden": [
+              "Rio",
+              "plage",
+              "Brésil"
+            ]
+          },
+          {
+            "text": "Pain de Sucre",
+            "difficulty": 2,
+            "forbidden": [
+              "Rio",
+              "téléphérique",
+              "rocher"
+            ]
+          },
+          {
+            "text": "Tour CN",
+            "difficulty": 3,
+            "forbidden": [
+              "Toronto",
+              "Canada",
+              "Ontario"
+            ]
+          },
+          {
+            "text": "Space Needle",
+            "difficulty": 3,
+            "forbidden": [
+              "Seattle",
+              "soucoupe",
+              "tour"
+            ]
+          },
+          {
+            "text": "Pont du Gard",
+            "difficulty": 3,
+            "forbidden": [
+              "aqueduc",
+              "romain",
+              "Nîmes"
+            ]
+          },
+          {
+            "text": "Arènes de Nîmes",
+            "difficulty": 3,
+            "forbidden": [
+              "romaines",
+              "corridas",
+              "Gard"
+            ]
+          },
+          {
+            "text": "Château de Chambord",
+            "difficulty": 3,
+            "forbidden": [
+              "Loire",
+              "François Ier",
+              "escalier"
+            ]
+          },
+          {
+            "text": "Sacré-Cœur",
+            "difficulty": 2,
+            "forbidden": [
+              "Montmartre",
+              "basilique",
+              "blanc"
+            ]
+          },
+          {
+            "text": "Moulin Rouge",
+            "difficulty": 1,
+            "forbidden": [
+              "cabaret",
+              "French cancan",
+              "Pigalle"
+            ]
+          },
+          {
+            "text": "Champs-Élysées",
+            "difficulty": 1,
+            "forbidden": [
+              "avenue",
+              "Paris",
+              "Arc de triomphe"
+            ]
+          },
+          {
+            "text": "Disneyland",
+            "difficulty": 1,
+            "forbidden": [
+              "château",
+              "Mickey",
+              "manèges"
+            ]
+          },
+          {
+            "text": "Neuschwanstein",
+            "difficulty": 3,
+            "forbidden": [
+              "château",
+              "Bavière",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Tour de Londres",
+            "difficulty": 3,
+            "forbidden": [
+              "joyaux de la couronne",
+              "corbeaux",
+              "Tamise"
+            ]
+          },
+          {
+            "text": "Westminster",
+            "difficulty": 3,
+            "forbidden": [
+              "abbaye",
+              "Londres",
+              "couronnement"
+            ]
+          },
+          {
+            "text": "Kaaba",
+            "difficulty": 2,
+            "forbidden": [
+              "La Mecque",
+              "cube noir",
+              "pèlerinage"
+            ]
+          },
+          {
+            "text": "Mur des Lamentations",
+            "difficulty": 2,
+            "forbidden": [
+              "Jérusalem",
+              "prière",
+              "pierres"
+            ]
+          },
+          {
+            "text": "Dôme du Rocher",
+            "difficulty": 3,
+            "forbidden": [
+              "Jérusalem",
+              "coupole dorée",
+              "mosquée"
+            ]
+          },
+          {
+            "text": "Persépolis",
+            "difficulty": 3,
+            "forbidden": [
+              "Iran",
+              "ruines",
+              "Perse"
+            ]
+          },
+          {
+            "text": "Bouddha de Leshan",
+            "difficulty": 3,
+            "forbidden": [
+              "Chine",
+              "géant",
+              "falaise"
+            ]
+          },
+          {
+            "text": "Armée de terre cuite",
+            "difficulty": 2,
+            "forbidden": [
+              "Chine",
+              "soldats",
+              "Xi'an"
+            ]
+          },
+          {
+            "text": "Opéra Garnier",
+            "difficulty": 3,
+            "forbidden": [
+              "Paris",
+              "fantôme",
+              "danse"
+            ]
+          },
+          {
+            "text": "Panthéon",
+            "difficulty": 3,
+            "forbidden": [
+              "Paris",
+              "grands hommes",
+              "dôme"
+            ]
+          },
+          {
+            "text": "Tour Montparnasse",
+            "difficulty": 3,
+            "forbidden": [
+              "Paris",
+              "gratte-ciel",
+              "noire"
+            ]
+          },
+          {
+            "text": "Pont-Neuf",
+            "difficulty": 3,
+            "forbidden": [
+              "Paris",
+              "Seine",
+              "plus vieux"
+            ]
+          },
+          {
+            "text": "Pont de Brooklyn",
+            "difficulty": 2,
+            "forbidden": [
+              "New York",
+              "suspendu",
+              "East River"
+            ]
+          },
+          {
+            "text": "Central Park",
+            "difficulty": 2,
+            "forbidden": [
+              "New York",
+              "jardin",
+              "poumon vert"
+            ]
+          },
+          {
+            "text": "Wall Street",
+            "difficulty": 2,
+            "forbidden": [
+              "bourse",
+              "New York",
+              "taureau"
+            ]
+          },
+          {
+            "text": "Pentagone",
+            "difficulty": 2,
+            "forbidden": [
+              "cinq côtés",
+              "armée",
+              "Washington"
+            ]
+          },
+          {
+            "text": "Capitole",
+            "difficulty": 3,
+            "forbidden": [
+              "Washington",
+              "Congrès",
+              "dôme"
+            ]
+          },
+          {
+            "text": "Alcatraz",
+            "difficulty": 2,
+            "forbidden": [
+              "prison",
+              "île",
+              "San Francisco"
+            ]
+          },
+          {
+            "text": "Route 66",
+            "difficulty": 2,
+            "forbidden": [
+              "États-Unis",
+              "Chicago",
+              "mythique"
+            ]
+          },
+          {
+            "text": "Grand Bazar d'Istanbul",
+            "difficulty": 3,
+            "forbidden": [
+              "Turquie",
+              "marché",
+              "couvert"
+            ]
+          },
+          {
+            "text": "Sainte-Sophie",
+            "difficulty": 3,
+            "forbidden": [
+              "Istanbul",
+              "basilique",
+              "mosquée"
+            ]
+          },
+          {
+            "text": "Mosquée bleue",
+            "difficulty": 3,
+            "forbidden": [
+              "Istanbul",
+              "minarets",
+              "Turquie"
+            ]
+          },
+          {
+            "text": "Dubaï Mall",
+            "difficulty": 3,
+            "forbidden": [
+              "centre commercial",
+              "Émirats",
+              "aquarium"
+            ]
+          },
+          {
+            "text": "Lac Victoria",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique",
+              "Ouganda",
+              "grand lac"
+            ]
+          },
+          {
+            "text": "Désert du Sahara",
+            "difficulty": 1,
+            "forbidden": [
+              "sable",
+              "dunes",
+              "chameaux"
+            ]
+          },
+          {
+            "text": "Mont Everest",
+            "difficulty": 1,
+            "forbidden": [
+              "Himalaya",
+              "plus haut sommet",
+              "Népal"
+            ]
+          },
+          {
+            "text": "Amazonie",
+            "difficulty": 1,
+            "forbidden": [
+              "forêt",
+              "Brésil",
+              "poumon"
+            ]
+          },
+          {
+            "text": "Grande Barrière de corail",
+            "difficulty": 2,
+            "forbidden": [
+              "Australie",
+              "récif",
+              "plongée"
+            ]
+          },
+          {
+            "text": "Uluru",
+            "difficulty": 3,
+            "forbidden": [
+              "Australie",
+              "rocher rouge",
+              "aborigènes"
+            ]
+          },
+          {
+            "text": "Tour Hassan",
+            "difficulty": 3,
+            "forbidden": [
+              "Rabat",
+              "minaret",
+              "inachevé"
+            ]
+          },
+          {
+            "text": "Jemaa el-Fna",
+            "difficulty": 2,
+            "forbidden": [
+              "Marrakech",
+              "place",
+              "charmeurs de serpents"
+            ]
+          },
+          {
+            "text": "Médina de Fès",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "tanneries",
+              "ruelles"
+            ]
+          },
+          {
+            "text": "Pyramides de Méroé",
+            "difficulty": 3,
+            "forbidden": [
+              "Soudan",
+              "Nubie",
+              "Koush"
+            ]
+          },
+          {
+            "text": "Tour de Belém",
+            "difficulty": 3,
+            "forbidden": [
+              "Lisbonne",
+              "Portugal",
+              "Tage"
+            ]
+          },
+          {
+            "text": "Pont du Wouri",
+            "difficulty": 2,
+            "forbidden": [
+              "Douala",
+              "Cameroun",
+              "fleuve"
+            ]
+          },
+          {
+            "text": "Basilique Marie-Reine-des-Apôtres",
+            "difficulty": 3,
+            "forbidden": [
+              "Yaoundé",
+              "Mvolyé",
+              "église"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

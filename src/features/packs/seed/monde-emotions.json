@@ -1,0 +1,1129 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-emotions",
+    "name": {
+      "fr": "Émotions et sentiments",
+      "en": "Emotions and feelings"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "emotions",
+        "name": {
+          "fr": "Émotions et sentiments",
+          "en": "Emotions and feelings"
+        },
+        "emoji": "🎭",
+        "color": "plum",
+        "tags": [
+          "universel"
+        ],
+        "words": [
+          {
+            "text": "Joie",
+            "difficulty": 1,
+            "forbidden": [
+              "heureux",
+              "sourire",
+              "content"
+            ]
+          },
+          {
+            "text": "Tristesse",
+            "difficulty": 1,
+            "forbidden": [
+              "pleurer",
+              "triste",
+              "larmes"
+            ]
+          },
+          {
+            "text": "Colère",
+            "difficulty": 1,
+            "forbidden": [
+              "énervé",
+              "fâché",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Peur",
+            "difficulty": 1,
+            "forbidden": [
+              "effrayé",
+              "trembler",
+              "frayeur"
+            ]
+          },
+          {
+            "text": "Surprise",
+            "difficulty": 1,
+            "forbidden": [
+              "étonné",
+              "inattendu",
+              "oh"
+            ]
+          },
+          {
+            "text": "Dégoût",
+            "difficulty": 1,
+            "forbidden": [
+              "beurk",
+              "écœuré",
+              "répugnant"
+            ]
+          },
+          {
+            "text": "Amour",
+            "difficulty": 1,
+            "forbidden": [
+              "cœur",
+              "aimer",
+              "tendresse"
+            ]
+          },
+          {
+            "text": "Jalousie",
+            "difficulty": 1,
+            "forbidden": [
+              "envie",
+              "jaloux",
+              "possessif"
+            ]
+          },
+          {
+            "text": "Fierté",
+            "difficulty": 2,
+            "forbidden": [
+              "fier",
+              "réussite",
+              "orgueil"
+            ]
+          },
+          {
+            "text": "Honte",
+            "difficulty": 2,
+            "forbidden": [
+              "gêne",
+              "rougir",
+              "cacher"
+            ]
+          },
+          {
+            "text": "Timidité",
+            "difficulty": 2,
+            "forbidden": [
+              "timide",
+              "réservé",
+              "rougir"
+            ]
+          },
+          {
+            "text": "Ennui",
+            "difficulty": 1,
+            "forbidden": [
+              "s'ennuyer",
+              "bâiller",
+              "rien à faire"
+            ]
+          },
+          {
+            "text": "Fatigue",
+            "difficulty": 1,
+            "forbidden": [
+              "épuisé",
+              "sommeil",
+              "bâiller"
+            ]
+          },
+          {
+            "text": "Stress",
+            "difficulty": 1,
+            "forbidden": [
+              "anxiété",
+              "nerveux",
+              "pression"
+            ]
+          },
+          {
+            "text": "Angoisse",
+            "difficulty": 2,
+            "forbidden": [
+              "peur",
+              "anxiété",
+              "oppression"
+            ]
+          },
+          {
+            "text": "Panique",
+            "difficulty": 2,
+            "forbidden": [
+              "affolement",
+              "peur",
+              "crise"
+            ]
+          },
+          {
+            "text": "Nostalgie",
+            "difficulty": 2,
+            "forbidden": [
+              "passé",
+              "souvenir",
+              "mélancolie"
+            ]
+          },
+          {
+            "text": "Mélancolie",
+            "difficulty": 3,
+            "forbidden": [
+              "tristesse",
+              "vague à l'âme",
+              "songeur"
+            ]
+          },
+          {
+            "text": "Espoir",
+            "difficulty": 2,
+            "forbidden": [
+              "espérer",
+              "avenir",
+              "optimisme"
+            ]
+          },
+          {
+            "text": "Déception",
+            "difficulty": 2,
+            "forbidden": [
+              "déçu",
+              "attente",
+              "dommage"
+            ]
+          },
+          {
+            "text": "Soulagement",
+            "difficulty": 2,
+            "forbidden": [
+              "ouf",
+              "détendu",
+              "enfin"
+            ]
+          },
+          {
+            "text": "Gratitude",
+            "difficulty": 2,
+            "forbidden": [
+              "merci",
+              "reconnaissant",
+              "remercier"
+            ]
+          },
+          {
+            "text": "Confiance",
+            "difficulty": 2,
+            "forbidden": [
+              "sûr de soi",
+              "croire",
+              "assurance"
+            ]
+          },
+          {
+            "text": "Méfiance",
+            "difficulty": 3,
+            "forbidden": [
+              "soupçon",
+              "doute",
+              "prudence"
+            ]
+          },
+          {
+            "text": "Curiosité",
+            "difficulty": 2,
+            "forbidden": [
+              "curieux",
+              "savoir",
+              "fouiner"
+            ]
+          },
+          {
+            "text": "Impatience",
+            "difficulty": 2,
+            "forbidden": [
+              "attendre",
+              "pressé",
+              "vite"
+            ]
+          },
+          {
+            "text": "Patience",
+            "difficulty": 2,
+            "forbidden": [
+              "attendre",
+              "calme",
+              "zen"
+            ]
+          },
+          {
+            "text": "Calme",
+            "difficulty": 1,
+            "forbidden": [
+              "tranquille",
+              "serein",
+              "zen"
+            ]
+          },
+          {
+            "text": "Excitation",
+            "difficulty": 2,
+            "forbidden": [
+              "impatient",
+              "agité",
+              "enthousiaste"
+            ]
+          },
+          {
+            "text": "Enthousiasme",
+            "difficulty": 2,
+            "forbidden": [
+              "motivé",
+              "énergie",
+              "passion"
+            ]
+          },
+          {
+            "text": "Gêne",
+            "difficulty": 2,
+            "forbidden": [
+              "malaise",
+              "embarras",
+              "rougir"
+            ]
+          },
+          {
+            "text": "Embarras",
+            "difficulty": 3,
+            "forbidden": [
+              "gêne",
+              "malaise",
+              "situation"
+            ]
+          },
+          {
+            "text": "Culpabilité",
+            "difficulty": 3,
+            "forbidden": [
+              "coupable",
+              "remords",
+              "faute"
+            ]
+          },
+          {
+            "text": "Remords",
+            "difficulty": 3,
+            "forbidden": [
+              "regret",
+              "faute",
+              "culpabilité"
+            ]
+          },
+          {
+            "text": "Regret",
+            "difficulty": 2,
+            "forbidden": [
+              "dommage",
+              "passé",
+              "aurait dû"
+            ]
+          },
+          {
+            "text": "Solitude",
+            "difficulty": 2,
+            "forbidden": [
+              "seul",
+              "isolé",
+              "personne"
+            ]
+          },
+          {
+            "text": "Ennui d'amour",
+            "difficulty": 3,
+            "forbidden": [
+              "chagrin",
+              "cœur brisé",
+              "amoureux"
+            ]
+          },
+          {
+            "text": "Chagrin",
+            "difficulty": 2,
+            "forbidden": [
+              "peine",
+              "tristesse",
+              "larmes"
+            ]
+          },
+          {
+            "text": "Bonheur",
+            "difficulty": 1,
+            "forbidden": [
+              "heureux",
+              "joie",
+              "sourire"
+            ]
+          },
+          {
+            "text": "Euphorie",
+            "difficulty": 3,
+            "forbidden": [
+              "extase",
+              "joie",
+              "planer"
+            ]
+          },
+          {
+            "text": "Admiration",
+            "difficulty": 2,
+            "forbidden": [
+              "admirer",
+              "idole",
+              "respect"
+            ]
+          },
+          {
+            "text": "Compassion",
+            "difficulty": 3,
+            "forbidden": [
+              "pitié",
+              "empathie",
+              "souffrance"
+            ]
+          },
+          {
+            "text": "Empathie",
+            "difficulty": 3,
+            "forbidden": [
+              "ressentir",
+              "comprendre",
+              "autres"
+            ]
+          },
+          {
+            "text": "Pitié",
+            "difficulty": 2,
+            "forbidden": [
+              "compassion",
+              "malheureux",
+              "pauvre"
+            ]
+          },
+          {
+            "text": "Mépris",
+            "difficulty": 3,
+            "forbidden": [
+              "dédain",
+              "regard",
+              "supérieur"
+            ]
+          },
+          {
+            "text": "Haine",
+            "difficulty": 2,
+            "forbidden": [
+              "détester",
+              "ennemi",
+              "colère"
+            ]
+          },
+          {
+            "text": "Rancune",
+            "difficulty": 3,
+            "forbidden": [
+              "pardon",
+              "rancœur",
+              "garder"
+            ]
+          },
+          {
+            "text": "Vengeance",
+            "difficulty": 2,
+            "forbidden": [
+              "revanche",
+              "venger",
+              "punir"
+            ]
+          },
+          {
+            "text": "Courage",
+            "difficulty": 1,
+            "forbidden": [
+              "brave",
+              "oser",
+              "héros"
+            ]
+          },
+          {
+            "text": "Lâcheté",
+            "difficulty": 3,
+            "forbidden": [
+              "peureux",
+              "fuir",
+              "poule mouillée"
+            ]
+          },
+          {
+            "text": "Fou rire",
+            "difficulty": 1,
+            "forbidden": [
+              "rigoler",
+              "incontrôlable",
+              "larmes"
+            ]
+          },
+          {
+            "text": "Coup de foudre",
+            "difficulty": 1,
+            "forbidden": [
+              "amour",
+              "premier regard",
+              "éclair"
+            ]
+          },
+          {
+            "text": "Cœur brisé",
+            "difficulty": 2,
+            "forbidden": [
+              "rupture",
+              "chagrin",
+              "amour"
+            ]
+          },
+          {
+            "text": "Paresse",
+            "difficulty": 1,
+            "forbidden": [
+              "flemme",
+              "fainéant",
+              "canapé"
+            ]
+          },
+          {
+            "text": "Flemme",
+            "difficulty": 1,
+            "forbidden": [
+              "paresse",
+              "pas envie",
+              "canapé"
+            ]
+          },
+          {
+            "text": "Gourmandise",
+            "difficulty": 1,
+            "forbidden": [
+              "manger",
+              "sucreries",
+              "gourmand"
+            ]
+          },
+          {
+            "text": "Faim",
+            "difficulty": 1,
+            "forbidden": [
+              "ventre",
+              "manger",
+              "affamé"
+            ]
+          },
+          {
+            "text": "Soif",
+            "difficulty": 1,
+            "forbidden": [
+              "boire",
+              "eau",
+              "gorge sèche"
+            ]
+          },
+          {
+            "text": "Douleur",
+            "difficulty": 1,
+            "forbidden": [
+              "mal",
+              "aïe",
+              "souffrir"
+            ]
+          },
+          {
+            "text": "Froid",
+            "difficulty": 1,
+            "forbidden": [
+              "grelotter",
+              "frissons",
+              "hiver"
+            ]
+          },
+          {
+            "text": "Chaud",
+            "difficulty": 1,
+            "forbidden": [
+              "transpirer",
+              "soleil",
+              "sueur"
+            ]
+          },
+          {
+            "text": "Vertige",
+            "difficulty": 2,
+            "forbidden": [
+              "hauteur",
+              "tourner",
+              "tomber"
+            ]
+          },
+          {
+            "text": "Mal de mer",
+            "difficulty": 2,
+            "forbidden": [
+              "bateau",
+              "nausée",
+              "vagues"
+            ]
+          },
+          {
+            "text": "Hoquet",
+            "difficulty": 1,
+            "forbidden": [
+              "hic",
+              "respiration",
+              "diaphragme"
+            ]
+          },
+          {
+            "text": "Chatouilles",
+            "difficulty": 1,
+            "forbidden": [
+              "rire",
+              "pieds",
+              "aisselles"
+            ]
+          },
+          {
+            "text": "Frisson",
+            "difficulty": 2,
+            "forbidden": [
+              "chair de poule",
+              "froid",
+              "trembler"
+            ]
+          },
+          {
+            "text": "Nervosité",
+            "difficulty": 2,
+            "forbidden": [
+              "stress",
+              "ongles",
+              "tic"
+            ]
+          },
+          {
+            "text": "Agacement",
+            "difficulty": 2,
+            "forbidden": [
+              "énervé",
+              "irrité",
+              "pénible"
+            ]
+          },
+          {
+            "text": "Frustration",
+            "difficulty": 2,
+            "forbidden": [
+              "énervé",
+              "échec",
+              "impuissant"
+            ]
+          },
+          {
+            "text": "Satisfaction",
+            "difficulty": 2,
+            "forbidden": [
+              "content",
+              "réussi",
+              "satisfait"
+            ]
+          },
+          {
+            "text": "Émerveillement",
+            "difficulty": 3,
+            "forbidden": [
+              "magique",
+              "admirer",
+              "wow"
+            ]
+          },
+          {
+            "text": "Choc",
+            "difficulty": 2,
+            "forbidden": [
+              "surprise",
+              "bouche bée",
+              "stupeur"
+            ]
+          },
+          {
+            "text": "Confusion",
+            "difficulty": 2,
+            "forbidden": [
+              "perdu",
+              "comprendre",
+              "mélanger"
+            ]
+          },
+          {
+            "text": "Doute",
+            "difficulty": 2,
+            "forbidden": [
+              "hésiter",
+              "incertain",
+              "peut-être"
+            ]
+          },
+          {
+            "text": "Hésitation",
+            "difficulty": 2,
+            "forbidden": [
+              "choisir",
+              "indécis",
+              "euh"
+            ]
+          },
+          {
+            "text": "Détermination",
+            "difficulty": 3,
+            "forbidden": [
+              "volonté",
+              "objectif",
+              "persévérance"
+            ]
+          },
+          {
+            "text": "Motivation",
+            "difficulty": 2,
+            "forbidden": [
+              "envie",
+              "énergie",
+              "objectif"
+            ]
+          },
+          {
+            "text": "Inquiétude",
+            "difficulty": 2,
+            "forbidden": [
+              "souci",
+              "angoisse",
+              "s'inquiéter"
+            ]
+          },
+          {
+            "text": "Sérénité",
+            "difficulty": 3,
+            "forbidden": [
+              "calme",
+              "paix",
+              "zen"
+            ]
+          },
+          {
+            "text": "Tendresse",
+            "difficulty": 2,
+            "forbidden": [
+              "câlin",
+              "douceur",
+              "affection"
+            ]
+          },
+          {
+            "text": "Affection",
+            "difficulty": 3,
+            "forbidden": [
+              "tendresse",
+              "aimer",
+              "attachement"
+            ]
+          },
+          {
+            "text": "Amitié",
+            "difficulty": 1,
+            "forbidden": [
+              "ami",
+              "copain",
+              "confiance"
+            ]
+          },
+          {
+            "text": "Rire nerveux",
+            "difficulty": 2,
+            "forbidden": [
+              "stress",
+              "gêne",
+              "malaise"
+            ]
+          },
+          {
+            "text": "Bouderie",
+            "difficulty": 1,
+            "forbidden": [
+              "bouder",
+              "moue",
+              "fâché"
+            ]
+          },
+          {
+            "text": "Caprice",
+            "difficulty": 1,
+            "forbidden": [
+              "enfant",
+              "crise",
+              "vouloir"
+            ]
+          },
+          {
+            "text": "Crise de colère",
+            "difficulty": 1,
+            "forbidden": [
+              "hurler",
+              "taper du pied",
+              "enfant"
+            ]
+          },
+          {
+            "text": "Rage",
+            "difficulty": 2,
+            "forbidden": [
+              "furieux",
+              "colère",
+              "exploser"
+            ]
+          },
+          {
+            "text": "Terreur",
+            "difficulty": 2,
+            "forbidden": [
+              "peur",
+              "cauchemar",
+              "horreur"
+            ]
+          },
+          {
+            "text": "Sommeil",
+            "difficulty": 1,
+            "forbidden": [
+              "dormir",
+              "bâiller",
+              "fatigue"
+            ]
+          },
+          {
+            "text": "Ivresse",
+            "difficulty": 2,
+            "forbidden": [
+              "alcool",
+              "tituber",
+              "soûl"
+            ]
+          },
+          {
+            "text": "Gueule de bois",
+            "difficulty": 2,
+            "forbidden": [
+              "lendemain",
+              "alcool",
+              "mal de tête"
+            ]
+          },
+          {
+            "text": "Cauchemar",
+            "difficulty": 1,
+            "forbidden": [
+              "rêve",
+              "peur",
+              "nuit"
+            ]
+          },
+          {
+            "text": "Rêverie",
+            "difficulty": 3,
+            "forbidden": [
+              "songer",
+              "distrait",
+              "nuages"
+            ]
+          },
+          {
+            "text": "Mauvaise humeur",
+            "difficulty": 1,
+            "forbidden": [
+              "grognon",
+              "pied gauche",
+              "ronchon"
+            ]
+          },
+          {
+            "text": "Bonne humeur",
+            "difficulty": 1,
+            "forbidden": [
+              "sourire",
+              "joyeux",
+              "matin"
+            ]
+          },
+          {
+            "text": "Fou amoureux",
+            "difficulty": 2,
+            "forbidden": [
+              "passion",
+              "cœur",
+              "papillons dans le ventre"
+            ]
+          },
+          {
+            "text": "Triomphe",
+            "difficulty": 2,
+            "forbidden": [
+              "victoire",
+              "gagner",
+              "champion"
+            ]
+          },
+          {
+            "text": "Défaite",
+            "difficulty": 2,
+            "forbidden": [
+              "perdre",
+              "échec",
+              "déçu"
+            ]
+          },
+          {
+            "text": "Stupeur",
+            "difficulty": 3,
+            "forbidden": [
+              "bouche bée",
+              "choc",
+              "figé"
+            ]
+          },
+          {
+            "text": "Arrogance",
+            "difficulty": 3,
+            "forbidden": [
+              "prétentieux",
+              "supérieur",
+              "hautain"
+            ]
+          },
+          {
+            "text": "Modestie",
+            "difficulty": 3,
+            "forbidden": [
+              "humble",
+              "discret",
+              "simple"
+            ]
+          },
+          {
+            "text": "Indifférence",
+            "difficulty": 3,
+            "forbidden": [
+              "s'en fiche",
+              "bof",
+              "neutre"
+            ]
+          },
+          {
+            "text": "Exaspération",
+            "difficulty": 3,
+            "forbidden": [
+              "bout",
+              "agacé",
+              "soupir"
+            ]
+          },
+          {
+            "text": "Fringale",
+            "difficulty": 2,
+            "forbidden": [
+              "faim",
+              "soudaine",
+              "grignoter"
+            ]
+          },
+          {
+            "text": "Coup de barre",
+            "difficulty": 2,
+            "forbidden": [
+              "fatigue",
+              "sommeil",
+              "épuisé"
+            ]
+          },
+          {
+            "text": "Trac",
+            "difficulty": 2,
+            "forbidden": [
+              "scène",
+              "stress",
+              "avant"
+            ]
+          },
+          {
+            "text": "Mal du pays",
+            "difficulty": 2,
+            "forbidden": [
+              "nostalgie",
+              "loin",
+              "maison"
+            ]
+          },
+          {
+            "text": "Envie",
+            "difficulty": 2,
+            "forbidden": [
+              "vouloir",
+              "désir",
+              "jaloux"
+            ]
+          },
+          {
+            "text": "Désespoir",
+            "difficulty": 3,
+            "forbidden": [
+              "plus d'espoir",
+              "abattu",
+              "perdu"
+            ]
+          },
+          {
+            "text": "Sursaut",
+            "difficulty": 2,
+            "forbidden": [
+              "sursauter",
+              "surprise",
+              "bond"
+            ]
+          },
+          {
+            "text": "Grimace",
+            "difficulty": 1,
+            "forbidden": [
+              "visage",
+              "moue",
+              "tirer la langue"
+            ]
+          },
+          {
+            "text": "Sourire",
+            "difficulty": 1,
+            "forbidden": [
+              "bouche",
+              "dents",
+              "content"
+            ]
+          },
+          {
+            "text": "Clin d'œil complice",
+            "difficulty": 2,
+            "forbidden": [
+              "œil",
+              "secret",
+              "cligner"
+            ]
+          },
+          {
+            "text": "Larmes de joie",
+            "difficulty": 2,
+            "forbidden": [
+              "pleurer",
+              "heureux",
+              "émotion"
+            ]
+          },
+          {
+            "text": "Chair de poule",
+            "difficulty": 1,
+            "forbidden": [
+              "frisson",
+              "bras",
+              "froid"
+            ]
+          },
+          {
+            "text": "Peine",
+            "difficulty": 2,
+            "forbidden": [
+              "chagrin",
+              "tristesse",
+              "mal"
+            ]
+          },
+          {
+            "text": "Jubilation",
+            "difficulty": 3,
+            "forbidden": [
+              "joie",
+              "exulter",
+              "victoire"
+            ]
+          },
+          {
+            "text": "Anxiété",
+            "difficulty": 2,
+            "forbidden": [
+              "stress",
+              "inquiet",
+              "angoisse"
+            ]
+          },
+          {
+            "text": "Rancœur",
+            "difficulty": 3,
+            "forbidden": [
+              "amertume",
+              "rancune",
+              "garder"
+            ]
+          },
+          {
+            "text": "Allégresse",
+            "difficulty": 3,
+            "forbidden": [
+              "joie",
+              "fête",
+              "gaieté"
+            ]
+          },
+          {
+            "text": "Agitation",
+            "difficulty": 2,
+            "forbidden": [
+              "nerveux",
+              "bouger",
+              "stress"
+            ]
+          },
+          {
+            "text": "Plaisir",
+            "difficulty": 1,
+            "forbidden": [
+              "aimer",
+              "kiffer",
+              "agréable"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1129 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-jeux-video",
+    "name": {
+      "fr": "Jeux vidéo",
+      "en": "Video games"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "jeux-video",
+        "name": {
+          "fr": "Jeux vidéo",
+          "en": "Video games"
+        },
+        "emoji": "🎮",
+        "color": "lilac",
+        "tags": [
+          "universel"
+        ],
+        "words": [
+          {
+            "text": "Mario",
+            "difficulty": 1,
+            "forbidden": [
+              "Nintendo",
+              "plombier",
+              "moustache"
+            ]
+          },
+          {
+            "text": "Super Mario Bros",
+            "difficulty": 1,
+            "forbidden": [
+              "Nintendo",
+              "champignon",
+              "Princesse Peach"
+            ]
+          },
+          {
+            "text": "Mario Kart",
+            "difficulty": 1,
+            "forbidden": [
+              "course",
+              "carapace",
+              "Nintendo"
+            ]
+          },
+          {
+            "text": "Luigi",
+            "difficulty": 2,
+            "forbidden": [
+              "Mario",
+              "vert",
+              "frère"
+            ]
+          },
+          {
+            "text": "Princesse Peach",
+            "difficulty": 2,
+            "forbidden": [
+              "Mario",
+              "château",
+              "Bowser"
+            ]
+          },
+          {
+            "text": "Bowser",
+            "difficulty": 2,
+            "forbidden": [
+              "Mario",
+              "tortue",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Yoshi",
+            "difficulty": 2,
+            "forbidden": [
+              "dinosaure vert",
+              "Mario",
+              "langue"
+            ]
+          },
+          {
+            "text": "Donkey Kong",
+            "difficulty": 2,
+            "forbidden": [
+              "gorille",
+              "bananes",
+              "Nintendo"
+            ]
+          },
+          {
+            "text": "The Legend of Zelda",
+            "difficulty": 2,
+            "forbidden": [
+              "Link",
+              "Hyrule",
+              "épée"
+            ]
+          },
+          {
+            "text": "Link",
+            "difficulty": 2,
+            "forbidden": [
+              "Zelda",
+              "bonnet vert",
+              "épée"
+            ]
+          },
+          {
+            "text": "Pokémon",
+            "difficulty": 1,
+            "forbidden": [
+              "Pikachu",
+              "dresseur",
+              "attraper"
+            ]
+          },
+          {
+            "text": "Pac-Man",
+            "difficulty": 1,
+            "forbidden": [
+              "fantômes",
+              "jaune",
+              "pastilles"
+            ]
+          },
+          {
+            "text": "Tetris",
+            "difficulty": 1,
+            "forbidden": [
+              "blocs",
+              "lignes",
+              "tomber"
+            ]
+          },
+          {
+            "text": "Space Invaders",
+            "difficulty": 3,
+            "forbidden": [
+              "aliens",
+              "arcade",
+              "tirer"
+            ]
+          },
+          {
+            "text": "Street Fighter",
+            "difficulty": 2,
+            "forbidden": [
+              "Ryu",
+              "Hadouken",
+              "combat"
+            ]
+          },
+          {
+            "text": "Mortal Kombat",
+            "difficulty": 2,
+            "forbidden": [
+              "Fatality",
+              "combat",
+              "Scorpion"
+            ]
+          },
+          {
+            "text": "Tekken",
+            "difficulty": 3,
+            "forbidden": [
+              "combat",
+              "Namco",
+              "Eddy"
+            ]
+          },
+          {
+            "text": "Sonic",
+            "difficulty": 1,
+            "forbidden": [
+              "hérisson",
+              "Sega",
+              "anneaux"
+            ]
+          },
+          {
+            "text": "Crash Bandicoot",
+            "difficulty": 2,
+            "forbidden": [
+              "marsupial",
+              "caisses",
+              "PlayStation"
+            ]
+          },
+          {
+            "text": "Spyro",
+            "difficulty": 3,
+            "forbidden": [
+              "dragon violet",
+              "PlayStation",
+              "flammes"
+            ]
+          },
+          {
+            "text": "Rayman",
+            "difficulty": 3,
+            "forbidden": [
+              "Ubisoft",
+              "sans bras",
+              "Lapins Crétins"
+            ]
+          },
+          {
+            "text": "Lara Croft",
+            "difficulty": 2,
+            "forbidden": [
+              "Tomb Raider",
+              "aventurière",
+              "tresse"
+            ]
+          },
+          {
+            "text": "Tomb Raider",
+            "difficulty": 2,
+            "forbidden": [
+              "Lara Croft",
+              "tombeaux",
+              "aventure"
+            ]
+          },
+          {
+            "text": "Minecraft",
+            "difficulty": 1,
+            "forbidden": [
+              "cubes",
+              "Creeper",
+              "construire"
+            ]
+          },
+          {
+            "text": "Fortnite",
+            "difficulty": 1,
+            "forbidden": [
+              "Battle Royale",
+              "danses",
+              "bus"
+            ]
+          },
+          {
+            "text": "Roblox",
+            "difficulty": 1,
+            "forbidden": [
+              "jeux",
+              "enfants",
+              "avatars"
+            ]
+          },
+          {
+            "text": "Among Us",
+            "difficulty": 1,
+            "forbidden": [
+              "imposteur",
+              "vaisseau",
+              "vote"
+            ]
+          },
+          {
+            "text": "FIFA",
+            "difficulty": 1,
+            "forbidden": [
+              "football",
+              "EA Sports",
+              "Ultimate Team"
+            ]
+          },
+          {
+            "text": "EA Sports FC",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "FIFA",
+              "Ultimate Team"
+            ]
+          },
+          {
+            "text": "PES",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "Konami",
+              "eFootball"
+            ]
+          },
+          {
+            "text": "Call of Duty",
+            "difficulty": 1,
+            "forbidden": [
+              "guerre",
+              "soldats",
+              "tir"
+            ]
+          },
+          {
+            "text": "GTA",
+            "difficulty": 1,
+            "forbidden": [
+              "Grand Theft Auto",
+              "voitures",
+              "Los Santos"
+            ]
+          },
+          {
+            "text": "Red Dead Redemption",
+            "difficulty": 2,
+            "forbidden": [
+              "cow-boy",
+              "Arthur Morgan",
+              "Far West"
+            ]
+          },
+          {
+            "text": "The Sims",
+            "difficulty": 2,
+            "forbidden": [
+              "vie",
+              "simulation",
+              "Simlish"
+            ]
+          },
+          {
+            "text": "Les Sims",
+            "difficulty": 1,
+            "forbidden": [
+              "simulation",
+              "maison",
+              "Simlish"
+            ]
+          },
+          {
+            "text": "Candy Crush",
+            "difficulty": 1,
+            "forbidden": [
+              "bonbons",
+              "aligner",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Angry Birds",
+            "difficulty": 1,
+            "forbidden": [
+              "oiseaux",
+              "cochons",
+              "lance-pierre"
+            ]
+          },
+          {
+            "text": "Subway Surfers",
+            "difficulty": 1,
+            "forbidden": [
+              "courir",
+              "train",
+              "pièces"
+            ]
+          },
+          {
+            "text": "Temple Run",
+            "difficulty": 2,
+            "forbidden": [
+              "courir",
+              "idole",
+              "singes"
+            ]
+          },
+          {
+            "text": "Clash of Clans",
+            "difficulty": 2,
+            "forbidden": [
+              "village",
+              "barbares",
+              "Supercell"
+            ]
+          },
+          {
+            "text": "Clash Royale",
+            "difficulty": 2,
+            "forbidden": [
+              "cartes",
+              "tours",
+              "Supercell"
+            ]
+          },
+          {
+            "text": "Brawl Stars",
+            "difficulty": 2,
+            "forbidden": [
+              "Supercell",
+              "brawlers",
+              "combats"
+            ]
+          },
+          {
+            "text": "PUBG",
+            "difficulty": 2,
+            "forbidden": [
+              "Battle Royale",
+              "poêle",
+              "parachute"
+            ]
+          },
+          {
+            "text": "Free Fire",
+            "difficulty": 1,
+            "forbidden": [
+              "Battle Royale",
+              "téléphone",
+              "Garena"
+            ]
+          },
+          {
+            "text": "Fruit Ninja",
+            "difficulty": 2,
+            "forbidden": [
+              "couper",
+              "fruits",
+              "doigt"
+            ]
+          },
+          {
+            "text": "Flappy Bird",
+            "difficulty": 2,
+            "forbidden": [
+              "oiseau",
+              "tuyaux",
+              "difficile"
+            ]
+          },
+          {
+            "text": "Pou",
+            "difficulty": 3,
+            "forbidden": [
+              "animal virtuel",
+              "nourrir",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Talking Tom",
+            "difficulty": 2,
+            "forbidden": [
+              "chat",
+              "répète",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "League of Legends",
+            "difficulty": 2,
+            "forbidden": [
+              "LoL",
+              "champions",
+              "MOBA"
+            ]
+          },
+          {
+            "text": "Dota 2",
+            "difficulty": 3,
+            "forbidden": [
+              "MOBA",
+              "Valve",
+              "héros"
+            ]
+          },
+          {
+            "text": "Counter-Strike",
+            "difficulty": 2,
+            "forbidden": [
+              "terroristes",
+              "bombe",
+              "CS"
+            ]
+          },
+          {
+            "text": "Valorant",
+            "difficulty": 3,
+            "forbidden": [
+              "Riot",
+              "agents",
+              "tir"
+            ]
+          },
+          {
+            "text": "Overwatch",
+            "difficulty": 3,
+            "forbidden": [
+              "héros",
+              "Blizzard",
+              "équipe"
+            ]
+          },
+          {
+            "text": "World of Warcraft",
+            "difficulty": 2,
+            "forbidden": [
+              "WoW",
+              "Azeroth",
+              "MMO"
+            ]
+          },
+          {
+            "text": "Diablo",
+            "difficulty": 3,
+            "forbidden": [
+              "Blizzard",
+              "démons",
+              "donjons"
+            ]
+          },
+          {
+            "text": "Starcraft",
+            "difficulty": 3,
+            "forbidden": [
+              "Blizzard",
+              "stratégie",
+              "Zergs"
+            ]
+          },
+          {
+            "text": "Age of Empires",
+            "difficulty": 3,
+            "forbidden": [
+              "stratégie",
+              "civilisations",
+              "villageois"
+            ]
+          },
+          {
+            "text": "Assassin's Creed",
+            "difficulty": 2,
+            "forbidden": [
+              "capuche",
+              "Ubisoft",
+              "lame secrète"
+            ]
+          },
+          {
+            "text": "Far Cry",
+            "difficulty": 3,
+            "forbidden": [
+              "Ubisoft",
+              "île",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Just Dance",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "Ubisoft",
+              "chorégraphie"
+            ]
+          },
+          {
+            "text": "Guitar Hero",
+            "difficulty": 2,
+            "forbidden": [
+              "guitare",
+              "notes",
+              "rock"
+            ]
+          },
+          {
+            "text": "Wii Sports",
+            "difficulty": 2,
+            "forbidden": [
+              "bowling",
+              "tennis",
+              "Nintendo"
+            ]
+          },
+          {
+            "text": "Animal Crossing",
+            "difficulty": 2,
+            "forbidden": [
+              "île",
+              "Tom Nook",
+              "villageois"
+            ]
+          },
+          {
+            "text": "Splatoon",
+            "difficulty": 3,
+            "forbidden": [
+              "encre",
+              "Nintendo",
+              "calamars"
+            ]
+          },
+          {
+            "text": "Kirby",
+            "difficulty": 2,
+            "forbidden": [
+              "boule rose",
+              "aspirer",
+              "Nintendo"
+            ]
+          },
+          {
+            "text": "Metroid",
+            "difficulty": 3,
+            "forbidden": [
+              "Samus",
+              "Nintendo",
+              "espace"
+            ]
+          },
+          {
+            "text": "Super Smash Bros",
+            "difficulty": 2,
+            "forbidden": [
+              "combat",
+              "Nintendo",
+              "personnages"
+            ]
+          },
+          {
+            "text": "Pokémon Go",
+            "difficulty": 1,
+            "forbidden": [
+              "réalité augmentée",
+              "marcher",
+              "attraper"
+            ]
+          },
+          {
+            "text": "Halo",
+            "difficulty": 3,
+            "forbidden": [
+              "Master Chief",
+              "Xbox",
+              "spartan"
+            ]
+          },
+          {
+            "text": "God of War",
+            "difficulty": 2,
+            "forbidden": [
+              "Kratos",
+              "dieux grecs",
+              "PlayStation"
+            ]
+          },
+          {
+            "text": "The Last of Us",
+            "difficulty": 2,
+            "forbidden": [
+              "Joel",
+              "Ellie",
+              "champignons"
+            ]
+          },
+          {
+            "text": "Uncharted",
+            "difficulty": 3,
+            "forbidden": [
+              "Nathan Drake",
+              "trésor",
+              "PlayStation"
+            ]
+          },
+          {
+            "text": "Resident Evil",
+            "difficulty": 2,
+            "forbidden": [
+              "zombies",
+              "Capcom",
+              "Umbrella"
+            ]
+          },
+          {
+            "text": "Silent Hill",
+            "difficulty": 3,
+            "forbidden": [
+              "brouillard",
+              "horreur",
+              "Pyramid Head"
+            ]
+          },
+          {
+            "text": "Final Fantasy",
+            "difficulty": 2,
+            "forbidden": [
+              "Square Enix",
+              "Cloud",
+              "chocobo"
+            ]
+          },
+          {
+            "text": "Elden Ring",
+            "difficulty": 3,
+            "forbidden": [
+              "FromSoftware",
+              "difficile",
+              "Terres intermédiaires"
+            ]
+          },
+          {
+            "text": "Dark Souls",
+            "difficulty": 3,
+            "forbidden": [
+              "difficile",
+              "mourir",
+              "FromSoftware"
+            ]
+          },
+          {
+            "text": "Skyrim",
+            "difficulty": 3,
+            "forbidden": [
+              "dragons",
+              "Elder Scrolls",
+              "Fus Ro Dah"
+            ]
+          },
+          {
+            "text": "The Witcher 3",
+            "difficulty": 3,
+            "forbidden": [
+              "Geralt",
+              "sorceleur",
+              "Ciri"
+            ]
+          },
+          {
+            "text": "Cyberpunk 2077",
+            "difficulty": 3,
+            "forbidden": [
+              "Night City",
+              "futur",
+              "Keanu Reeves"
+            ]
+          },
+          {
+            "text": "Fall Guys",
+            "difficulty": 2,
+            "forbidden": [
+              "haricots",
+              "obstacles",
+              "couronne"
+            ]
+          },
+          {
+            "text": "Rocket League",
+            "difficulty": 2,
+            "forbidden": [
+              "voitures",
+              "football",
+              "ballon géant"
+            ]
+          },
+          {
+            "text": "Cuphead",
+            "difficulty": 3,
+            "forbidden": [
+              "tasse",
+              "difficile",
+              "années 30"
+            ]
+          },
+          {
+            "text": "Geometry Dash",
+            "difficulty": 2,
+            "forbidden": [
+              "cube",
+              "sauter",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Plants vs. Zombies",
+            "difficulty": 2,
+            "forbidden": [
+              "plantes",
+              "pois",
+              "tournesol"
+            ]
+          },
+          {
+            "text": "Doodle Jump",
+            "difficulty": 3,
+            "forbidden": [
+              "sauter",
+              "plateformes",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Ludo King",
+            "difficulty": 1,
+            "forbidden": [
+              "petits chevaux",
+              "dés",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Solitaire",
+            "difficulty": 1,
+            "forbidden": [
+              "cartes",
+              "Windows",
+              "seul"
+            ]
+          },
+          {
+            "text": "Démineur",
+            "difficulty": 2,
+            "forbidden": [
+              "mines",
+              "Windows",
+              "drapeau"
+            ]
+          },
+          {
+            "text": "Snake",
+            "difficulty": 1,
+            "forbidden": [
+              "serpent",
+              "Nokia",
+              "pommes"
+            ]
+          },
+          {
+            "text": "Pong",
+            "difficulty": 3,
+            "forbidden": [
+              "raquettes",
+              "arcade",
+              "balle"
+            ]
+          },
+          {
+            "text": "Frogger",
+            "difficulty": 3,
+            "forbidden": [
+              "grenouille",
+              "route",
+              "arcade"
+            ]
+          },
+          {
+            "text": "PlayStation",
+            "difficulty": 1,
+            "forbidden": [
+              "Sony",
+              "console",
+              "manette"
+            ]
+          },
+          {
+            "text": "Xbox",
+            "difficulty": 2,
+            "forbidden": [
+              "Microsoft",
+              "console",
+              "manette"
+            ]
+          },
+          {
+            "text": "Nintendo Switch",
+            "difficulty": 1,
+            "forbidden": [
+              "console",
+              "portable",
+              "Joy-Con"
+            ]
+          },
+          {
+            "text": "Game Boy",
+            "difficulty": 2,
+            "forbidden": [
+              "Nintendo",
+              "portable",
+              "Tetris"
+            ]
+          },
+          {
+            "text": "Nintendo DS",
+            "difficulty": 2,
+            "forbidden": [
+              "double écran",
+              "stylet",
+              "portable"
+            ]
+          },
+          {
+            "text": "PSP",
+            "difficulty": 3,
+            "forbidden": [
+              "Sony",
+              "portable",
+              "console"
+            ]
+          },
+          {
+            "text": "Wii",
+            "difficulty": 2,
+            "forbidden": [
+              "Nintendo",
+              "télécommande",
+              "bouger"
+            ]
+          },
+          {
+            "text": "Manette",
+            "difficulty": 1,
+            "forbidden": [
+              "console",
+              "boutons",
+              "joystick"
+            ]
+          },
+          {
+            "text": "Joystick",
+            "difficulty": 2,
+            "forbidden": [
+              "manette",
+              "arcade",
+              "levier"
+            ]
+          },
+          {
+            "text": "Borne d'arcade",
+            "difficulty": 2,
+            "forbidden": [
+              "pièces",
+              "salle",
+              "jeux"
+            ]
+          },
+          {
+            "text": "Casque VR",
+            "difficulty": 2,
+            "forbidden": [
+              "réalité virtuelle",
+              "lunettes",
+              "immersion"
+            ]
+          },
+          {
+            "text": "Game over",
+            "difficulty": 1,
+            "forbidden": [
+              "perdu",
+              "fin",
+              "écran"
+            ]
+          },
+          {
+            "text": "Boss final",
+            "difficulty": 2,
+            "forbidden": [
+              "dernier",
+              "méchant",
+              "niveau"
+            ]
+          },
+          {
+            "text": "Niveau",
+            "difficulty": 1,
+            "forbidden": [
+              "level",
+              "passer",
+              "suivant"
+            ]
+          },
+          {
+            "text": "Points de vie",
+            "difficulty": 2,
+            "forbidden": [
+              "barre",
+              "santé",
+              "cœurs"
+            ]
+          },
+          {
+            "text": "Sauvegarde",
+            "difficulty": 2,
+            "forbidden": [
+              "enregistrer",
+              "partie",
+              "reprendre"
+            ]
+          },
+          {
+            "text": "Streamer",
+            "difficulty": 2,
+            "forbidden": [
+              "Twitch",
+              "direct",
+              "jouer"
+            ]
+          },
+          {
+            "text": "Twitch",
+            "difficulty": 2,
+            "forbidden": [
+              "streaming",
+              "violet",
+              "direct"
+            ]
+          },
+          {
+            "text": "E-sport",
+            "difficulty": 2,
+            "forbidden": [
+              "compétition",
+              "jeux vidéo",
+              "équipes"
+            ]
+          },
+          {
+            "text": "Speedrun",
+            "difficulty": 3,
+            "forbidden": [
+              "vite",
+              "record",
+              "terminer"
+            ]
+          },
+          {
+            "text": "Easter egg",
+            "difficulty": 3,
+            "forbidden": [
+              "secret",
+              "caché",
+              "développeurs"
+            ]
+          },
+          {
+            "text": "Creeper",
+            "difficulty": 2,
+            "forbidden": [
+              "Minecraft",
+              "vert",
+              "exploser"
+            ]
+          },
+          {
+            "text": "Pikachu",
+            "difficulty": 1,
+            "forbidden": [
+              "Pokémon",
+              "jaune",
+              "éclair"
+            ]
+          },
+          {
+            "text": "Master Chief",
+            "difficulty": 3,
+            "forbidden": [
+              "Halo",
+              "casque",
+              "Xbox"
+            ]
+          },
+          {
+            "text": "Kratos",
+            "difficulty": 3,
+            "forbidden": [
+              "God of War",
+              "crâne",
+              "spartiate"
+            ]
+          },
+          {
+            "text": "Steve (Minecraft)",
+            "difficulty": 3,
+            "forbidden": [
+              "pioche",
+              "cubes",
+              "personnage"
+            ]
+          },
+          {
+            "text": "Battle Royale",
+            "difficulty": 2,
+            "forbidden": [
+              "dernier survivant",
+              "Fortnite",
+              "zone"
+            ]
+          },
+          {
+            "text": "Ghost of Tsushima",
+            "difficulty": 3,
+            "forbidden": [
+              "samouraï",
+              "Japon",
+              "PlayStation"
+            ]
+          },
+          {
+            "text": "Stardew Valley",
+            "difficulty": 3,
+            "forbidden": [
+              "ferme",
+              "pixel",
+              "agriculture"
+            ]
+          },
+          {
+            "text": "Hogwarts Legacy",
+            "difficulty": 3,
+            "forbidden": [
+              "Harry Potter",
+              "sorcier",
+              "Poudlard"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

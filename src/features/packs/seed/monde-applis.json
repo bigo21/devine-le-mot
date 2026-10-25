@@ -1,0 +1,1138 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-applis",
+    "name": {
+      "fr": "Applis et réseaux sociaux",
+      "en": "Apps and social media"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "applis",
+        "name": {
+          "fr": "Applis et réseaux sociaux",
+          "en": "Apps and social media"
+        },
+        "emoji": "📱",
+        "color": "lagoon",
+        "tags": [
+          "universel"
+        ],
+        "words": [
+          {
+            "text": "WhatsApp",
+            "difficulty": 1,
+            "forbidden": [
+              "messages",
+              "vert",
+              "groupes"
+            ]
+          },
+          {
+            "text": "Facebook",
+            "difficulty": 1,
+            "forbidden": [
+              "Mark Zuckerberg",
+              "réseau social",
+              "like"
+            ]
+          },
+          {
+            "text": "Instagram",
+            "difficulty": 1,
+            "forbidden": [
+              "photos",
+              "stories",
+              "filtres"
+            ]
+          },
+          {
+            "text": "TikTok",
+            "difficulty": 1,
+            "forbidden": [
+              "vidéos courtes",
+              "danses",
+              "tendances"
+            ]
+          },
+          {
+            "text": "YouTube",
+            "difficulty": 1,
+            "forbidden": [
+              "vidéos",
+              "abonnés",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Snapchat",
+            "difficulty": 1,
+            "forbidden": [
+              "fantôme",
+              "jaune",
+              "filtres"
+            ]
+          },
+          {
+            "text": "X",
+            "difficulty": 2,
+            "forbidden": [
+              "Twitter",
+              "oiseau",
+              "tweet"
+            ]
+          },
+          {
+            "text": "Twitter",
+            "difficulty": 1,
+            "forbidden": [
+              "tweet",
+              "oiseau bleu",
+              "Elon Musk"
+            ]
+          },
+          {
+            "text": "Telegram",
+            "difficulty": 2,
+            "forbidden": [
+              "messages",
+              "avion en papier",
+              "canaux"
+            ]
+          },
+          {
+            "text": "Messenger",
+            "difficulty": 2,
+            "forbidden": [
+              "Facebook",
+              "messages",
+              "bleu"
+            ]
+          },
+          {
+            "text": "LinkedIn",
+            "difficulty": 2,
+            "forbidden": [
+              "professionnel",
+              "CV",
+              "réseau"
+            ]
+          },
+          {
+            "text": "Pinterest",
+            "difficulty": 3,
+            "forbidden": [
+              "épingles",
+              "idées",
+              "images"
+            ]
+          },
+          {
+            "text": "Reddit",
+            "difficulty": 3,
+            "forbidden": [
+              "forums",
+              "Alien",
+              "votes"
+            ]
+          },
+          {
+            "text": "Discord",
+            "difficulty": 2,
+            "forbidden": [
+              "serveurs",
+              "gamers",
+              "vocal"
+            ]
+          },
+          {
+            "text": "Twitch",
+            "difficulty": 2,
+            "forbidden": [
+              "streaming",
+              "violet",
+              "direct"
+            ]
+          },
+          {
+            "text": "Netflix",
+            "difficulty": 1,
+            "forbidden": [
+              "séries",
+              "films",
+              "abonnement"
+            ]
+          },
+          {
+            "text": "Spotify",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "playlists",
+              "vert"
+            ]
+          },
+          {
+            "text": "Deezer",
+            "difficulty": 2,
+            "forbidden": [
+              "musique",
+              "streaming",
+              "France"
+            ]
+          },
+          {
+            "text": "Boomplay",
+            "difficulty": 2,
+            "forbidden": [
+              "musique",
+              "Afrique",
+              "streaming"
+            ]
+          },
+          {
+            "text": "Audiomack",
+            "difficulty": 3,
+            "forbidden": [
+              "musique",
+              "streaming",
+              "gratuit"
+            ]
+          },
+          {
+            "text": "Shazam",
+            "difficulty": 2,
+            "forbidden": [
+              "reconnaître",
+              "chanson",
+              "écouter"
+            ]
+          },
+          {
+            "text": "Google Maps",
+            "difficulty": 1,
+            "forbidden": [
+              "carte",
+              "itinéraire",
+              "GPS"
+            ]
+          },
+          {
+            "text": "Waze",
+            "difficulty": 3,
+            "forbidden": [
+              "GPS",
+              "embouteillages",
+              "trajet"
+            ]
+          },
+          {
+            "text": "Uber",
+            "difficulty": 2,
+            "forbidden": [
+              "chauffeur",
+              "VTC",
+              "course"
+            ]
+          },
+          {
+            "text": "Yango",
+            "difficulty": 2,
+            "forbidden": [
+              "taxi",
+              "VTC",
+              "application"
+            ]
+          },
+          {
+            "text": "Gozem",
+            "difficulty": 3,
+            "forbidden": [
+              "moto",
+              "taxi",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "Bolt",
+            "difficulty": 3,
+            "forbidden": [
+              "VTC",
+              "trottinette",
+              "course"
+            ]
+          },
+          {
+            "text": "Airbnb",
+            "difficulty": 2,
+            "forbidden": [
+              "logement",
+              "location",
+              "voyage"
+            ]
+          },
+          {
+            "text": "Booking",
+            "difficulty": 3,
+            "forbidden": [
+              "hôtel",
+              "réservation",
+              "voyage"
+            ]
+          },
+          {
+            "text": "Amazon",
+            "difficulty": 1,
+            "forbidden": [
+              "colis",
+              "achats",
+              "livraison"
+            ]
+          },
+          {
+            "text": "Jumia",
+            "difficulty": 2,
+            "forbidden": [
+              "achats en ligne",
+              "Afrique",
+              "livraison"
+            ]
+          },
+          {
+            "text": "AliExpress",
+            "difficulty": 2,
+            "forbidden": [
+              "Chine",
+              "commande",
+              "pas cher"
+            ]
+          },
+          {
+            "text": "Shein",
+            "difficulty": 2,
+            "forbidden": [
+              "vêtements",
+              "Chine",
+              "pas cher"
+            ]
+          },
+          {
+            "text": "Temu",
+            "difficulty": 2,
+            "forbidden": [
+              "achats",
+              "pas cher",
+              "Chine"
+            ]
+          },
+          {
+            "text": "eBay",
+            "difficulty": 3,
+            "forbidden": [
+              "enchères",
+              "vente",
+              "occasion"
+            ]
+          },
+          {
+            "text": "Leboncoin",
+            "difficulty": 3,
+            "forbidden": [
+              "petites annonces",
+              "France",
+              "occasion"
+            ]
+          },
+          {
+            "text": "Orange Money",
+            "difficulty": 1,
+            "forbidden": [
+              "transfert",
+              "paiement",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "MTN Mobile Money",
+            "difficulty": 1,
+            "forbidden": [
+              "transfert",
+              "jaune",
+              "paiement"
+            ]
+          },
+          {
+            "text": "Wave",
+            "difficulty": 2,
+            "forbidden": [
+              "transfert",
+              "bleu",
+              "pingouin"
+            ]
+          },
+          {
+            "text": "PayPal",
+            "difficulty": 2,
+            "forbidden": [
+              "paiement en ligne",
+              "bleu",
+              "argent"
+            ]
+          },
+          {
+            "text": "Google",
+            "difficulty": 1,
+            "forbidden": [
+              "recherche",
+              "moteur",
+              "navigateur"
+            ]
+          },
+          {
+            "text": "Gmail",
+            "difficulty": 1,
+            "forbidden": [
+              "e-mail",
+              "Google",
+              "boîte de réception"
+            ]
+          },
+          {
+            "text": "Chrome",
+            "difficulty": 2,
+            "forbidden": [
+              "navigateur",
+              "Google",
+              "internet"
+            ]
+          },
+          {
+            "text": "Safari",
+            "difficulty": 3,
+            "forbidden": [
+              "navigateur",
+              "Apple",
+              "boussole"
+            ]
+          },
+          {
+            "text": "Wikipédia",
+            "difficulty": 1,
+            "forbidden": [
+              "encyclopédie",
+              "articles",
+              "libre"
+            ]
+          },
+          {
+            "text": "ChatGPT",
+            "difficulty": 1,
+            "forbidden": [
+              "intelligence artificielle",
+              "questions",
+              "OpenAI"
+            ]
+          },
+          {
+            "text": "Claude",
+            "difficulty": 3,
+            "forbidden": [
+              "intelligence artificielle",
+              "Anthropic",
+              "assistant"
+            ]
+          },
+          {
+            "text": "Google Traduction",
+            "difficulty": 1,
+            "forbidden": [
+              "traduire",
+              "langues",
+              "phrases"
+            ]
+          },
+          {
+            "text": "Duolingo",
+            "difficulty": 2,
+            "forbidden": [
+              "langues",
+              "hibou vert",
+              "leçons"
+            ]
+          },
+          {
+            "text": "Zoom",
+            "difficulty": 2,
+            "forbidden": [
+              "visioconférence",
+              "réunion",
+              "caméra"
+            ]
+          },
+          {
+            "text": "Google Meet",
+            "difficulty": 3,
+            "forbidden": [
+              "visioconférence",
+              "lien de réunion",
+              "réunion"
+            ]
+          },
+          {
+            "text": "Teams",
+            "difficulty": 3,
+            "forbidden": [
+              "Microsoft",
+              "réunions",
+              "travail"
+            ]
+          },
+          {
+            "text": "Skype",
+            "difficulty": 3,
+            "forbidden": [
+              "appels vidéo",
+              "Microsoft",
+              "bleu"
+            ]
+          },
+          {
+            "text": "CapCut",
+            "difficulty": 2,
+            "forbidden": [
+              "montage vidéo",
+              "TikTok",
+              "effets"
+            ]
+          },
+          {
+            "text": "Canva",
+            "difficulty": 2,
+            "forbidden": [
+              "graphisme",
+              "affiches",
+              "modèles"
+            ]
+          },
+          {
+            "text": "Photoshop",
+            "difficulty": 2,
+            "forbidden": [
+              "retouche",
+              "Adobe",
+              "photos"
+            ]
+          },
+          {
+            "text": "Tinder",
+            "difficulty": 2,
+            "forbidden": [
+              "rencontres",
+              "swiper",
+              "match"
+            ]
+          },
+          {
+            "text": "Truecaller",
+            "difficulty": 2,
+            "forbidden": [
+              "identifier appel",
+              "numéro",
+              "spam"
+            ]
+          },
+          {
+            "text": "Shareit",
+            "difficulty": 3,
+            "forbidden": [
+              "partager fichiers",
+              "sans internet",
+              "transfert"
+            ]
+          },
+          {
+            "text": "Xender",
+            "difficulty": 3,
+            "forbidden": [
+              "partager fichiers",
+              "transfert",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Calculatrice",
+            "difficulty": 1,
+            "forbidden": [
+              "calcul",
+              "chiffres",
+              "additionner"
+            ]
+          },
+          {
+            "text": "Réveil",
+            "difficulty": 1,
+            "forbidden": [
+              "alarme",
+              "sonner",
+              "matin"
+            ]
+          },
+          {
+            "text": "Appareil photo",
+            "difficulty": 1,
+            "forbidden": [
+              "déclencheur",
+              "objectif",
+              "clic"
+            ]
+          },
+          {
+            "text": "Galerie",
+            "difficulty": 1,
+            "forbidden": [
+              "photos",
+              "album",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Lampe torche",
+            "difficulty": 1,
+            "forbidden": [
+              "lumière",
+              "nuit",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Calendrier",
+            "difficulty": 1,
+            "forbidden": [
+              "dates",
+              "rendez-vous",
+              "mois"
+            ]
+          },
+          {
+            "text": "Météo",
+            "difficulty": 1,
+            "forbidden": [
+              "temps",
+              "pluie",
+              "soleil"
+            ]
+          },
+          {
+            "text": "Selfie",
+            "difficulty": 1,
+            "forbidden": [
+              "photo",
+              "soi-même",
+              "bras tendu"
+            ]
+          },
+          {
+            "text": "Story",
+            "difficulty": 1,
+            "forbidden": [
+              "24 heures",
+              "Instagram",
+              "éphémère"
+            ]
+          },
+          {
+            "text": "Statut WhatsApp",
+            "difficulty": 1,
+            "forbidden": [
+              "24 heures",
+              "vues",
+              "photo"
+            ]
+          },
+          {
+            "text": "Like",
+            "difficulty": 1,
+            "forbidden": [
+              "j'aime",
+              "pouce",
+              "cœur"
+            ]
+          },
+          {
+            "text": "Commentaire",
+            "difficulty": 1,
+            "forbidden": [
+              "réagir",
+              "écrire",
+              "publication"
+            ]
+          },
+          {
+            "text": "Partager",
+            "difficulty": 1,
+            "forbidden": [
+              "envoyer",
+              "republier",
+              "transférer"
+            ]
+          },
+          {
+            "text": "Abonnés",
+            "difficulty": 1,
+            "forbidden": [
+              "followers",
+              "suivre",
+              "compte"
+            ]
+          },
+          {
+            "text": "Hashtag",
+            "difficulty": 1,
+            "forbidden": [
+              "dièse",
+              "mot-clé",
+              "tendance"
+            ]
+          },
+          {
+            "text": "Emoji",
+            "difficulty": 1,
+            "forbidden": [
+              "smiley",
+              "visage",
+              "icône"
+            ]
+          },
+          {
+            "text": "Mème",
+            "difficulty": 2,
+            "forbidden": [
+              "image drôle",
+              "internet",
+              "viral"
+            ]
+          },
+          {
+            "text": "GIF",
+            "difficulty": 2,
+            "forbidden": [
+              "image animée",
+              "boucle",
+              "réaction"
+            ]
+          },
+          {
+            "text": "Live",
+            "difficulty": 1,
+            "forbidden": [
+              "direct",
+              "vidéo",
+              "en ce moment"
+            ]
+          },
+          {
+            "text": "Influenceur",
+            "difficulty": 1,
+            "forbidden": [
+              "abonnés",
+              "sponsor",
+              "réseaux sociaux"
+            ]
+          },
+          {
+            "text": "Youtubeur",
+            "difficulty": 1,
+            "forbidden": [
+              "vidéos",
+              "chaîne",
+              "abonnés"
+            ]
+          },
+          {
+            "text": "Viral",
+            "difficulty": 2,
+            "forbidden": [
+              "partagé",
+              "buzz",
+              "millions de vues"
+            ]
+          },
+          {
+            "text": "Buzz",
+            "difficulty": 2,
+            "forbidden": [
+              "viral",
+              "tout le monde en parle",
+              "succès"
+            ]
+          },
+          {
+            "text": "Filtre",
+            "difficulty": 1,
+            "forbidden": [
+              "photo",
+              "effet",
+              "oreilles de chien"
+            ]
+          },
+          {
+            "text": "Notification",
+            "difficulty": 1,
+            "forbidden": [
+              "alerte",
+              "sonnerie",
+              "écran"
+            ]
+          },
+          {
+            "text": "Mot de passe",
+            "difficulty": 1,
+            "forbidden": [
+              "secret",
+              "connexion",
+              "sécurité"
+            ]
+          },
+          {
+            "text": "Wi-Fi",
+            "difficulty": 1,
+            "forbidden": [
+              "internet",
+              "sans fil",
+              "réseau"
+            ]
+          },
+          {
+            "text": "Forfait internet",
+            "difficulty": 1,
+            "forbidden": [
+              "data",
+              "mégas",
+              "crédit"
+            ]
+          },
+          {
+            "text": "Data",
+            "difficulty": 2,
+            "forbidden": [
+              "mégas",
+              "internet",
+              "forfait"
+            ]
+          },
+          {
+            "text": "Batterie faible",
+            "difficulty": 1,
+            "forbidden": [
+              "recharger",
+              "chargeur",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Chargeur",
+            "difficulty": 1,
+            "forbidden": [
+              "câble",
+              "batterie",
+              "prise"
+            ]
+          },
+          {
+            "text": "Capture d'écran",
+            "difficulty": 1,
+            "forbidden": [
+              "image",
+              "screenshot",
+              "boutons"
+            ]
+          },
+          {
+            "text": "Bluetooth",
+            "difficulty": 2,
+            "forbidden": [
+              "sans fil",
+              "écouteurs",
+              "connecter"
+            ]
+          },
+          {
+            "text": "Mode avion",
+            "difficulty": 2,
+            "forbidden": [
+              "vol",
+              "réseau coupé",
+              "réglages"
+            ]
+          },
+          {
+            "text": "Application",
+            "difficulty": 1,
+            "forbidden": [
+              "télécharger",
+              "téléphone",
+              "icône"
+            ]
+          },
+          {
+            "text": "Play Store",
+            "difficulty": 1,
+            "forbidden": [
+              "Android",
+              "télécharger",
+              "applications"
+            ]
+          },
+          {
+            "text": "App Store",
+            "difficulty": 2,
+            "forbidden": [
+              "Apple",
+              "télécharger",
+              "iPhone"
+            ]
+          },
+          {
+            "text": "Mise à jour",
+            "difficulty": 2,
+            "forbidden": [
+              "nouvelle version",
+              "installer",
+              "télécharger"
+            ]
+          },
+          {
+            "text": "Spam",
+            "difficulty": 2,
+            "forbidden": [
+              "indésirable",
+              "publicité",
+              "messages"
+            ]
+          },
+          {
+            "text": "Pirate informatique",
+            "difficulty": 2,
+            "forbidden": [
+              "hacker",
+              "virus",
+              "mot de passe"
+            ]
+          },
+          {
+            "text": "Virus informatique",
+            "difficulty": 2,
+            "forbidden": [
+              "ordinateur",
+              "antivirus",
+              "infecté"
+            ]
+          },
+          {
+            "text": "Cookie",
+            "difficulty": 3,
+            "forbidden": [
+              "navigateur",
+              "accepter",
+              "site"
+            ]
+          },
+          {
+            "text": "Clic",
+            "difficulty": 1,
+            "forbidden": [
+              "souris",
+              "bouton",
+              "appuyer"
+            ]
+          },
+          {
+            "text": "Swiper",
+            "difficulty": 2,
+            "forbidden": [
+              "glisser",
+              "doigt",
+              "écran"
+            ]
+          },
+          {
+            "text": "Zoomer",
+            "difficulty": 2,
+            "forbidden": [
+              "agrandir",
+              "doigts",
+              "écran"
+            ]
+          },
+          {
+            "text": "Télécharger",
+            "difficulty": 1,
+            "forbidden": [
+              "download",
+              "fichier",
+              "installer"
+            ]
+          },
+          {
+            "text": "Bloquer quelqu'un",
+            "difficulty": 2,
+            "forbidden": [
+              "contact",
+              "réseau social",
+              "plus de messages"
+            ]
+          },
+          {
+            "text": "Vu à",
+            "difficulty": 2,
+            "forbidden": [
+              "lu",
+              "message",
+              "sans réponse"
+            ]
+          },
+          {
+            "text": "Double coche bleue",
+            "difficulty": 2,
+            "forbidden": [
+              "WhatsApp",
+              "lu",
+              "message"
+            ]
+          },
+          {
+            "text": "Message vocal",
+            "difficulty": 1,
+            "forbidden": [
+              "enregistrer",
+              "voix",
+              "WhatsApp"
+            ]
+          },
+          {
+            "text": "Appel vidéo",
+            "difficulty": 1,
+            "forbidden": [
+              "caméra",
+              "voir",
+              "parler"
+            ]
+          },
+          {
+            "text": "Groupe WhatsApp",
+            "difficulty": 1,
+            "forbidden": [
+              "famille",
+              "discussion",
+              "membres"
+            ]
+          },
+          {
+            "text": "Followers",
+            "difficulty": 2,
+            "forbidden": [
+              "abonnés",
+              "suivre",
+              "nombre"
+            ]
+          },
+          {
+            "text": "Fake news",
+            "difficulty": 2,
+            "forbidden": [
+              "fausse information",
+              "rumeur",
+              "intox"
+            ]
+          },
+          {
+            "text": "Algorithme",
+            "difficulty": 3,
+            "forbidden": [
+              "recommandations",
+              "fil",
+              "calcul"
+            ]
+          },
+          {
+            "text": "Fil d'actualité",
+            "difficulty": 2,
+            "forbidden": [
+              "défiler",
+              "publications",
+              "réseau social"
+            ]
+          },
+          {
+            "text": "Avatar",
+            "difficulty": 2,
+            "forbidden": [
+              "profil",
+              "image",
+              "personnage"
+            ]
+          },
+          {
+            "text": "Photo de profil",
+            "difficulty": 1,
+            "forbidden": [
+              "image",
+              "compte",
+              "visage"
+            ]
+          },
+          {
+            "text": "Pseudo",
+            "difficulty": 1,
+            "forbidden": [
+              "nom",
+              "compte",
+              "surnom"
+            ]
+          },
+          {
+            "text": "Tutoriel",
+            "difficulty": 2,
+            "forbidden": [
+              "apprendre",
+              "vidéo",
+              "étapes"
+            ]
+          },
+          {
+            "text": "Unboxing",
+            "difficulty": 3,
+            "forbidden": [
+              "déballer",
+              "colis",
+              "vidéo"
+            ]
+          },
+          {
+            "text": "Challenge TikTok",
+            "difficulty": 1,
+            "forbidden": [
+              "défi",
+              "danse",
+              "tendance"
+            ]
+          },
+          {
+            "text": "Réalité augmentée",
+            "difficulty": 3,
+            "forbidden": [
+              "filtre",
+              "Pokémon Go",
+              "virtuel"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1165 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-actions",
+    "name": {
+      "fr": "Actions à mimer",
+      "en": "Actions to mime"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "actions",
+        "name": {
+          "fr": "Actions à mimer",
+          "en": "Actions to mime"
+        },
+        "emoji": "🤸",
+        "color": "indigo",
+        "tags": [
+          "universel"
+        ],
+        "words": [
+          {
+            "text": "Nager",
+            "difficulty": 1,
+            "forbidden": [
+              "piscine",
+              "eau",
+              "brasse"
+            ]
+          },
+          {
+            "text": "Courir",
+            "difficulty": 1,
+            "forbidden": [
+              "vite",
+              "jambes",
+              "sprint"
+            ]
+          },
+          {
+            "text": "Sauter",
+            "difficulty": 1,
+            "forbidden": [
+              "bond",
+              "haut",
+              "jambes"
+            ]
+          },
+          {
+            "text": "Danser",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "bouger",
+              "piste"
+            ]
+          },
+          {
+            "text": "Chanter",
+            "difficulty": 1,
+            "forbidden": [
+              "voix",
+              "chanson",
+              "micro"
+            ]
+          },
+          {
+            "text": "Dormir",
+            "difficulty": 1,
+            "forbidden": [
+              "lit",
+              "ronfler",
+              "nuit"
+            ]
+          },
+          {
+            "text": "Ronfler",
+            "difficulty": 1,
+            "forbidden": [
+              "dormir",
+              "bruit",
+              "nez"
+            ]
+          },
+          {
+            "text": "Bâiller",
+            "difficulty": 1,
+            "forbidden": [
+              "fatigue",
+              "bouche",
+              "sommeil"
+            ]
+          },
+          {
+            "text": "Éternuer",
+            "difficulty": 1,
+            "forbidden": [
+              "atchoum",
+              "nez",
+              "rhume"
+            ]
+          },
+          {
+            "text": "Tousser",
+            "difficulty": 1,
+            "forbidden": [
+              "gorge",
+              "rhume",
+              "kof kof"
+            ]
+          },
+          {
+            "text": "Pleurer",
+            "difficulty": 1,
+            "forbidden": [
+              "larmes",
+              "triste",
+              "yeux"
+            ]
+          },
+          {
+            "text": "Rire",
+            "difficulty": 1,
+            "forbidden": [
+              "blague",
+              "drôle",
+              "ha ha"
+            ]
+          },
+          {
+            "text": "Applaudir",
+            "difficulty": 1,
+            "forbidden": [
+              "mains",
+              "bravo",
+              "taper"
+            ]
+          },
+          {
+            "text": "Siffler",
+            "difficulty": 2,
+            "forbidden": [
+              "lèvres",
+              "air",
+              "oiseau"
+            ]
+          },
+          {
+            "text": "Se brosser les dents",
+            "difficulty": 1,
+            "forbidden": [
+              "dentifrice",
+              "matin",
+              "brosse"
+            ]
+          },
+          {
+            "text": "Se laver les mains",
+            "difficulty": 1,
+            "forbidden": [
+              "savon",
+              "eau",
+              "lavabo"
+            ]
+          },
+          {
+            "text": "Prendre une douche",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "savon",
+              "salle de bain"
+            ]
+          },
+          {
+            "text": "Se coiffer",
+            "difficulty": 1,
+            "forbidden": [
+              "peigne",
+              "cheveux",
+              "miroir"
+            ]
+          },
+          {
+            "text": "Se maquiller",
+            "difficulty": 2,
+            "forbidden": [
+              "rouge à lèvres",
+              "miroir",
+              "mascara"
+            ]
+          },
+          {
+            "text": "Se raser",
+            "difficulty": 2,
+            "forbidden": [
+              "barbe",
+              "rasoir",
+              "mousse"
+            ]
+          },
+          {
+            "text": "S'habiller",
+            "difficulty": 1,
+            "forbidden": [
+              "vêtements",
+              "enfiler",
+              "matin"
+            ]
+          },
+          {
+            "text": "Lacer ses chaussures",
+            "difficulty": 2,
+            "forbidden": [
+              "lacets",
+              "nœud",
+              "pieds"
+            ]
+          },
+          {
+            "text": "Manger",
+            "difficulty": 1,
+            "forbidden": [
+              "nourriture",
+              "bouche",
+              "fourchette"
+            ]
+          },
+          {
+            "text": "Boire",
+            "difficulty": 1,
+            "forbidden": [
+              "verre",
+              "eau",
+              "soif"
+            ]
+          },
+          {
+            "text": "Cuisiner",
+            "difficulty": 1,
+            "forbidden": [
+              "poêle",
+              "recette",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Couper des oignons",
+            "difficulty": 2,
+            "forbidden": [
+              "pleurer",
+              "couteau",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Piler",
+            "difficulty": 1,
+            "forbidden": [
+              "mortier",
+              "pilon",
+              "foufou"
+            ]
+          },
+          {
+            "text": "Éplucher",
+            "difficulty": 2,
+            "forbidden": [
+              "légumes",
+              "couteau",
+              "peau"
+            ]
+          },
+          {
+            "text": "Faire la vaisselle",
+            "difficulty": 1,
+            "forbidden": [
+              "assiettes",
+              "évier",
+              "éponge"
+            ]
+          },
+          {
+            "text": "Balayer",
+            "difficulty": 1,
+            "forbidden": [
+              "balai",
+              "poussière",
+              "sol"
+            ]
+          },
+          {
+            "text": "Repasser",
+            "difficulty": 2,
+            "forbidden": [
+              "fer",
+              "vêtements",
+              "plis"
+            ]
+          },
+          {
+            "text": "Laver le linge",
+            "difficulty": 2,
+            "forbidden": [
+              "machine",
+              "vêtements",
+              "lessive"
+            ]
+          },
+          {
+            "text": "Étendre le linge",
+            "difficulty": 2,
+            "forbidden": [
+              "corde",
+              "pinces",
+              "sécher"
+            ]
+          },
+          {
+            "text": "Conduire",
+            "difficulty": 1,
+            "forbidden": [
+              "voiture",
+              "volant",
+              "route"
+            ]
+          },
+          {
+            "text": "Faire du vélo",
+            "difficulty": 1,
+            "forbidden": [
+              "pédaler",
+              "bicyclette",
+              "guidon"
+            ]
+          },
+          {
+            "text": "Faire de la moto",
+            "difficulty": 2,
+            "forbidden": [
+              "casque",
+              "guidon",
+              "vroum"
+            ]
+          },
+          {
+            "text": "Prendre un taxi",
+            "difficulty": 2,
+            "forbidden": [
+              "lever le bras",
+              "chauffeur",
+              "payer"
+            ]
+          },
+          {
+            "text": "Pêcher",
+            "difficulty": 1,
+            "forbidden": [
+              "canne",
+              "poisson",
+              "hameçon"
+            ]
+          },
+          {
+            "text": "Ramer",
+            "difficulty": 2,
+            "forbidden": [
+              "barque",
+              "rames",
+              "eau"
+            ]
+          },
+          {
+            "text": "Escalader",
+            "difficulty": 2,
+            "forbidden": [
+              "grimper",
+              "montagne",
+              "corde"
+            ]
+          },
+          {
+            "text": "Grimper à un arbre",
+            "difficulty": 2,
+            "forbidden": [
+              "branches",
+              "monter",
+              "tronc"
+            ]
+          },
+          {
+            "text": "Jardiner",
+            "difficulty": 2,
+            "forbidden": [
+              "plantes",
+              "arroser",
+              "pelle"
+            ]
+          },
+          {
+            "text": "Arroser les plantes",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "arrosoir",
+              "fleurs"
+            ]
+          },
+          {
+            "text": "Planter un arbre",
+            "difficulty": 2,
+            "forbidden": [
+              "trou",
+              "pelle",
+              "graine"
+            ]
+          },
+          {
+            "text": "Peindre",
+            "difficulty": 1,
+            "forbidden": [
+              "pinceau",
+              "couleurs",
+              "toile"
+            ]
+          },
+          {
+            "text": "Dessiner",
+            "difficulty": 1,
+            "forbidden": [
+              "crayon",
+              "feuille",
+              "croquis"
+            ]
+          },
+          {
+            "text": "Écrire",
+            "difficulty": 1,
+            "forbidden": [
+              "stylo",
+              "lettre",
+              "papier"
+            ]
+          },
+          {
+            "text": "Lire",
+            "difficulty": 1,
+            "forbidden": [
+              "livre",
+              "pages",
+              "yeux"
+            ]
+          },
+          {
+            "text": "Téléphoner",
+            "difficulty": 1,
+            "forbidden": [
+              "appeler",
+              "allô",
+              "portable"
+            ]
+          },
+          {
+            "text": "Envoyer un SMS",
+            "difficulty": 1,
+            "forbidden": [
+              "taper",
+              "message",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Prendre un selfie",
+            "difficulty": 1,
+            "forbidden": [
+              "photo",
+              "bras tendu",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Photographier",
+            "difficulty": 2,
+            "forbidden": [
+              "appareil",
+              "clic",
+              "photo"
+            ]
+          },
+          {
+            "text": "Jongler",
+            "difficulty": 2,
+            "forbidden": [
+              "balles",
+              "cirque",
+              "lancer"
+            ]
+          },
+          {
+            "text": "Faire du yoga",
+            "difficulty": 2,
+            "forbidden": [
+              "posture",
+              "respirer",
+              "tapis"
+            ]
+          },
+          {
+            "text": "Faire des pompes",
+            "difficulty": 1,
+            "forbidden": [
+              "bras",
+              "sol",
+              "sport"
+            ]
+          },
+          {
+            "text": "Soulever des haltères",
+            "difficulty": 2,
+            "forbidden": [
+              "musculation",
+              "bras",
+              "lourd"
+            ]
+          },
+          {
+            "text": "Boxer",
+            "difficulty": 2,
+            "forbidden": [
+              "gants",
+              "coups de poing",
+              "ring"
+            ]
+          },
+          {
+            "text": "Tirer au but",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "penalty",
+              "gardien"
+            ]
+          },
+          {
+            "text": "Dribbler",
+            "difficulty": 2,
+            "forbidden": [
+              "ballon",
+              "football",
+              "feinte"
+            ]
+          },
+          {
+            "text": "Marquer un panier",
+            "difficulty": 2,
+            "forbidden": [
+              "basket",
+              "ballon",
+              "dunk"
+            ]
+          },
+          {
+            "text": "Jouer au tennis",
+            "difficulty": 2,
+            "forbidden": [
+              "raquette",
+              "balle",
+              "filet"
+            ]
+          },
+          {
+            "text": "Faire du ski",
+            "difficulty": 2,
+            "forbidden": [
+              "neige",
+              "bâtons",
+              "montagne"
+            ]
+          },
+          {
+            "text": "Patiner",
+            "difficulty": 2,
+            "forbidden": [
+              "glace",
+              "patins",
+              "glisser"
+            ]
+          },
+          {
+            "text": "Faire du skateboard",
+            "difficulty": 2,
+            "forbidden": [
+              "planche",
+              "roulettes",
+              "figure"
+            ]
+          },
+          {
+            "text": "Surfer",
+            "difficulty": 2,
+            "forbidden": [
+              "vague",
+              "planche",
+              "mer"
+            ]
+          },
+          {
+            "text": "Plonger",
+            "difficulty": 2,
+            "forbidden": [
+              "piscine",
+              "tête la première",
+              "eau"
+            ]
+          },
+          {
+            "text": "Jouer de la guitare",
+            "difficulty": 1,
+            "forbidden": [
+              "cordes",
+              "gratter",
+              "musique"
+            ]
+          },
+          {
+            "text": "Jouer du piano",
+            "difficulty": 1,
+            "forbidden": [
+              "touches",
+              "clavier",
+              "musique"
+            ]
+          },
+          {
+            "text": "Jouer du tam-tam",
+            "difficulty": 1,
+            "forbidden": [
+              "taper",
+              "tambour",
+              "mains"
+            ]
+          },
+          {
+            "text": "Diriger un orchestre",
+            "difficulty": 2,
+            "forbidden": [
+              "baguette",
+              "musiciens",
+              "chef"
+            ]
+          },
+          {
+            "text": "Faire un câlin",
+            "difficulty": 1,
+            "forbidden": [
+              "bras",
+              "serrer",
+              "tendresse"
+            ]
+          },
+          {
+            "text": "Faire un bisou",
+            "difficulty": 1,
+            "forbidden": [
+              "lèvres",
+              "embrasser",
+              "joue"
+            ]
+          },
+          {
+            "text": "Saluer",
+            "difficulty": 1,
+            "forbidden": [
+              "main",
+              "bonjour",
+              "agiter"
+            ]
+          },
+          {
+            "text": "Serrer la main",
+            "difficulty": 1,
+            "forbidden": [
+              "bonjour",
+              "poignée",
+              "rencontrer"
+            ]
+          },
+          {
+            "text": "Faire un clin d'œil",
+            "difficulty": 1,
+            "forbidden": [
+              "œil",
+              "fermer",
+              "complice"
+            ]
+          },
+          {
+            "text": "Hausser les épaules",
+            "difficulty": 2,
+            "forbidden": [
+              "je ne sais pas",
+              "indifférence",
+              "bof"
+            ]
+          },
+          {
+            "text": "Montrer du doigt",
+            "difficulty": 1,
+            "forbidden": [
+              "index",
+              "désigner",
+              "pointer"
+            ]
+          },
+          {
+            "text": "Chuchoter",
+            "difficulty": 2,
+            "forbidden": [
+              "voix basse",
+              "oreille",
+              "secret"
+            ]
+          },
+          {
+            "text": "Crier",
+            "difficulty": 1,
+            "forbidden": [
+              "fort",
+              "voix",
+              "hurler"
+            ]
+          },
+          {
+            "text": "Se cacher",
+            "difficulty": 1,
+            "forbidden": [
+              "cache-cache",
+              "disparaître",
+              "trouver"
+            ]
+          },
+          {
+            "text": "Chercher quelque chose",
+            "difficulty": 1,
+            "forbidden": [
+              "trouver",
+              "fouiller",
+              "perdu"
+            ]
+          },
+          {
+            "text": "Ouvrir une porte",
+            "difficulty": 1,
+            "forbidden": [
+              "poignée",
+              "clé",
+              "entrer"
+            ]
+          },
+          {
+            "text": "Frapper à la porte",
+            "difficulty": 1,
+            "forbidden": [
+              "toc toc",
+              "entrer",
+              "poing"
+            ]
+          },
+          {
+            "text": "Monter les escaliers",
+            "difficulty": 1,
+            "forbidden": [
+              "marches",
+              "étage",
+              "grimper"
+            ]
+          },
+          {
+            "text": "Prendre l'ascenseur",
+            "difficulty": 2,
+            "forbidden": [
+              "bouton",
+              "étage",
+              "monter"
+            ]
+          },
+          {
+            "text": "Tomber",
+            "difficulty": 1,
+            "forbidden": [
+              "chute",
+              "par terre",
+              "glisser"
+            ]
+          },
+          {
+            "text": "Glisser sur une peau de banane",
+            "difficulty": 1,
+            "forbidden": [
+              "tomber",
+              "fruit",
+              "chute"
+            ]
+          },
+          {
+            "text": "Marcher sur la pointe des pieds",
+            "difficulty": 2,
+            "forbidden": [
+              "discret",
+              "silencieux",
+              "orteils"
+            ]
+          },
+          {
+            "text": "Faire du stop",
+            "difficulty": 2,
+            "forbidden": [
+              "pouce",
+              "route",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Attendre le bus",
+            "difficulty": 2,
+            "forbidden": [
+              "arrêt",
+              "montre",
+              "transport"
+            ]
+          },
+          {
+            "text": "Se réveiller",
+            "difficulty": 1,
+            "forbidden": [
+              "réveil",
+              "matin",
+              "lit"
+            ]
+          },
+          {
+            "text": "Mettre le réveil",
+            "difficulty": 2,
+            "forbidden": [
+              "sonner",
+              "heure",
+              "matin"
+            ]
+          },
+          {
+            "text": "Regarder la télé",
+            "difficulty": 1,
+            "forbidden": [
+              "télécommande",
+              "canapé",
+              "écran"
+            ]
+          },
+          {
+            "text": "Zapper",
+            "difficulty": 2,
+            "forbidden": [
+              "télécommande",
+              "chaînes",
+              "télé"
+            ]
+          },
+          {
+            "text": "Jouer aux jeux vidéo",
+            "difficulty": 1,
+            "forbidden": [
+              "manette",
+              "console",
+              "écran"
+            ]
+          },
+          {
+            "text": "Jouer aux cartes",
+            "difficulty": 1,
+            "forbidden": [
+              "distribuer",
+              "jeu",
+              "as"
+            ]
+          },
+          {
+            "text": "Lancer les dés",
+            "difficulty": 1,
+            "forbidden": [
+              "jeu",
+              "six",
+              "rouler"
+            ]
+          },
+          {
+            "text": "Faire un gâteau",
+            "difficulty": 1,
+            "forbidden": [
+              "four",
+              "farine",
+              "œufs"
+            ]
+          },
+          {
+            "text": "Souffler les bougies",
+            "difficulty": 1,
+            "forbidden": [
+              "anniversaire",
+              "gâteau",
+              "vœu"
+            ]
+          },
+          {
+            "text": "Ouvrir un cadeau",
+            "difficulty": 1,
+            "forbidden": [
+              "papier",
+              "surprise",
+              "anniversaire"
+            ]
+          },
+          {
+            "text": "Emballer un cadeau",
+            "difficulty": 2,
+            "forbidden": [
+              "papier",
+              "ruban",
+              "scotch"
+            ]
+          },
+          {
+            "text": "Promener le chien",
+            "difficulty": 1,
+            "forbidden": [
+              "laisse",
+              "balade",
+              "aboyer"
+            ]
+          },
+          {
+            "text": "Traire une vache",
+            "difficulty": 2,
+            "forbidden": [
+              "lait",
+              "seau",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Nourrir les poules",
+            "difficulty": 2,
+            "forbidden": [
+              "graines",
+              "ferme",
+              "cot cot"
+            ]
+          },
+          {
+            "text": "Faire du feu",
+            "difficulty": 2,
+            "forbidden": [
+              "allumettes",
+              "bois",
+              "flammes"
+            ]
+          },
+          {
+            "text": "Monter une tente",
+            "difficulty": 2,
+            "forbidden": [
+              "camping",
+              "piquets",
+              "toile"
+            ]
+          },
+          {
+            "text": "Faire ses valises",
+            "difficulty": 2,
+            "forbidden": [
+              "voyage",
+              "vêtements",
+              "fermer"
+            ]
+          },
+          {
+            "text": "Prendre l'avion",
+            "difficulty": 1,
+            "forbidden": [
+              "aéroport",
+              "décoller",
+              "voler"
+            ]
+          },
+          {
+            "text": "Dire au revoir",
+            "difficulty": 1,
+            "forbidden": [
+              "main",
+              "partir",
+              "adieu"
+            ]
+          },
+          {
+            "text": "Se moucher",
+            "difficulty": 1,
+            "forbidden": [
+              "mouchoir",
+              "nez",
+              "rhume"
+            ]
+          },
+          {
+            "text": "Se gratter",
+            "difficulty": 1,
+            "forbidden": [
+              "démangeaison",
+              "ongles",
+              "piqûre"
+            ]
+          },
+          {
+            "text": "Écraser un moustique",
+            "difficulty": 1,
+            "forbidden": [
+              "piqûre",
+              "taper",
+              "insecte"
+            ]
+          },
+          {
+            "text": "Chasser une mouche",
+            "difficulty": 1,
+            "forbidden": [
+              "insecte",
+              "main",
+              "agacer"
+            ]
+          },
+          {
+            "text": "Mâcher un chewing-gum",
+            "difficulty": 2,
+            "forbidden": [
+              "bouche",
+              "bulle",
+              "mâchoire"
+            ]
+          },
+          {
+            "text": "Faire une bulle de chewing-gum",
+            "difficulty": 2,
+            "forbidden": [
+              "gonfler",
+              "éclater",
+              "rose"
+            ]
+          },
+          {
+            "text": "Jouer à la corde à sauter",
+            "difficulty": 2,
+            "forbidden": [
+              "récréation",
+              "enfants",
+              "tourner"
+            ]
+          },
+          {
+            "text": "Jouer à cache-cache",
+            "difficulty": 1,
+            "forbidden": [
+              "compter",
+              "trouver",
+              "se cacher"
+            ]
+          },
+          {
+            "text": "Pousser une voiture",
+            "difficulty": 2,
+            "forbidden": [
+              "panne",
+              "effort",
+              "derrière"
+            ]
+          },
+          {
+            "text": "Changer une roue",
+            "difficulty": 2,
+            "forbidden": [
+              "cric",
+              "pneu",
+              "crevaison"
+            ]
+          },
+          {
+            "text": "Faire un selfie de groupe",
+            "difficulty": 2,
+            "forbidden": [
+              "photo",
+              "amis",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Faire la queue",
+            "difficulty": 2,
+            "forbidden": [
+              "attendre",
+              "file",
+              "guichet"
+            ]
+          },
+          {
+            "text": "Danser le ndombolo",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "Congo",
+              "hanches"
+            ]
+          },
+          {
+            "text": "Danser la salsa",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "couple",
+              "Cuba"
+            ]
+          },
+          {
+            "text": "Faire un discours",
+            "difficulty": 2,
+            "forbidden": [
+              "parler",
+              "public",
+              "micro"
+            ]
+          },
+          {
+            "text": "Mimer un robot",
+            "difficulty": 1,
+            "forbidden": [
+              "machine",
+              "saccadé",
+              "métal"
+            ]
+          },
+          {
+            "text": "Mimer un zombie",
+            "difficulty": 1,
+            "forbidden": [
+              "mort-vivant",
+              "bras tendus",
+              "marcher"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
