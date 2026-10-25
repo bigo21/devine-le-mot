@@ -93,6 +93,12 @@ CREATE INDEX idx_rounds_match ON rounds (match_id);
 CREATE INDEX idx_seen_words_last_seen ON seen_words (last_seen_at);
 `,
   },
+  {
+    // Mode équipes : réglages de la partie (catégories, variante, durée) pour la reprendre si
+    // l'app a été fermée (GAMEPLAY.md §3).
+    version: 2,
+    sql: `ALTER TABLE matches ADD COLUMN settings TEXT NOT NULL DEFAULT '{}';`,
+  },
 ];
 
 export const latestVersion = migrations.reduce((max, m) => Math.max(max, m.version), 0);

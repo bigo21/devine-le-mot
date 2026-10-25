@@ -92,7 +92,7 @@ src/
 - `packs` : id, nom (fr/en), description, région, langue, auteur, emoji/icône, couleur, source (`builtin` | `user` | `imported`), version, créé/modifié le.
 - `categories` : id, pack_id, nom (fr/en), description, tags, couleur, icône, variantes compatibles (liste, `NULL` = défaut, voir GAMEPLAY.md §3), `duplicated_from` (id de la catégorie intégrée d'origine, optionnel), `is_favorite`, `is_hidden`. La **région est celle du pack** (pas de colonne région ni de difficulté par défaut sur la catégorie).
 - `words` : id, category_id, texte, indice optionnel, difficulté (1–3), mots interdits (liste, données propres à la variante « Mots interdits »). Pas de liste de variantes au niveau du mot.
-- `matches` (parties en équipes, multi-manches) : id, date de début / fin, nombre de manches prévu, équipes (nom, couleur, ordre), statut (`in_progress` | `finished`).
+- `matches` (parties en équipes, multi-manches) : id, date de début / fin, nombre de manches prévu (par équipe), équipes (nom, couleur, ordre), statut (`in_progress` | `finished`), réglages (`settings` : catégories, variante, durée ; migration v2, pour reprendre une partie si l'app est fermée). Une seule partie en cours à la fois.
 - `rounds` (historique local) : date, catégorie(s), variante, durée, score, mots trouvés / passés, `match_id` et équipe (optionnels, mode équipes).
 - `seen_words` (mots vus récemment) : word_id, dernière date de tirage. Sert à éviter de reproposer les mêmes mots ; purgé automatiquement au-delà d'une ancienneté ou d'un volume.
 

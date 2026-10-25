@@ -1,13 +1,24 @@
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
 import { InfoIcon } from 'phosphor-react-native/src/icons/Info';
+import { UsersThreeIcon } from 'phosphor-react-native/src/icons/UsersThree';
 import { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { VariantIcon } from '@/features/game/components/variant-icon';
+import {
+  cleanTeamName,
+  createMatch,
+  currentRound,
+  MAX_TEAMS,
+  MIN_TEAMS,
+  nextTeamIndex,
+  resizeTeams,
+  type Team,
+  type TeamColor,
+} from '@/features/game/match';
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import {
@@ -19,18 +30,26 @@ import {
 import { CategoryCard } from '@/features/packs/components/category-card';
 import {
   type CategorySummary,
+  createMatchRecord,
+  finishMatch,
   getCategoryCards,
+  inProgressMatch,
   listCategories,
   recentlySeenWords,
+  type StoredMatch,
 } from '@/features/packs/repository';
 import { type RoundDuration, useSettings } from '@/features/settings/store';
 import { useFeedback } from '@/lib/use-feedback';
-import { Button, Icon, Screen, SegmentedControl, Text } from '@/ui/components';
+import { Button, Icon, KeyboardScreen, SegmentedControl, Text, TextField } from '@/ui/components';
 import { rise, staggerDelay, useReducedMotion } from '@/ui/motion';
 import { colors, radii, spacing } from '@/ui/tokens';
 
+type Mode = 'solo' | 'teams';
+
 const DURATIONS: readonly RoundDuration[] = [30, 60, 90, 120];
 const VARIANT_CARD_WIDTH = 148;
+const TEAM_COUNTS = Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS);
+const ROUND_COUNTS = [1, 2, 3, 5] as const;
 
 /**
  * Préparation : variante → durée → catégories (une ou plusieurs, mélangées) → « C'est parti »
@@ -42,13 +61,13 @@ export default function PlaySetupScreen() {
   const db = useSQLiteContext();
   const reduced = useReducedMotion();
   const feedback = useFeedback();
-  const insets = useSafeAreaInsets();
   const params = useLocalSearchParams<{ category?: string }>();
   const defaultDuration = useSettings((s) => s.defaultDuration);
   const lastVariant = useSettings((s) => s.lastVariant);
   const updateSettings = useSettings((s) => s.update);
   const lastCategories = useGameSession((s) => s.categories);
   const prepare = useGameSession((s) => s.prepare);
+  const setMatch = useGameSession((s) => s.setMatch);
 
   const [categories, setCategories] = useState<CategorySummary[]>([]);
   // Catégorie venue de l'écran Catégories, sinon celles de la dernière manche (UX.md §3).
@@ -58,12 +77,24 @@ export default function PlaySetupScreen() {
   const [variantChoice, setVariantChoice] = useState<VariantId | null>(null);
   const [duration, setDuration] = useState<RoundDuration>(defaultDuration);
   const [starting, setStarting] = useState(false);
+  const [mode, setMode] = useState<Mode>('solo');
+  const [roundsPlanned, setRoundsPlanned] = useState<number>(2);
+  const teamName = useCallback(
+    (color: TeamColor) => t('teams.defaultName', { color: t(`teams.colors.${color}`) }),
+    [t],
+  );
+  const [teams, setTeams] = useState<Team[]>(() => resizeTeams([], MIN_TEAMS, teamName));
+  /** Partie en équipes restée en cours (app fermée) : proposée à la reprise. */
+  const [pending, setPending] = useState<StoredMatch | null>(null);
 
   useFocusEffect(
     useCallback(() => {
       let active = true;
       void listCategories(db, i18n.language).then((list) => {
         if (active) setCategories(list);
+      });
+      void inProgressMatch(db).then((match) => {
+        if (active) setPending(match);
       });
       return () => {
         active = false;
@@ -96,6 +127,9 @@ export default function PlaySetupScreen() {
     [t],
   );
 
+  const teamCountOptions = TEAM_COUNTS.map((value) => ({ value, label: String(value) }));
+  const roundOptions = ROUND_COUNTS.map((value) => ({ value, label: String(value) }));
+
   const toggle = (id: number) => {
     feedback('select');
     setSelectedIds((ids) => (ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]));
@@ -120,18 +154,196 @@ export default function PlaySetupScreen() {
         available,
         recentlySeen,
       });
-      router.push('/play/ready');
+      if (mode === 'solo') {
+        setMatch(null);
+        router.push('/play/ready');
+        return;
+      }
+      const named = teams.map((team) => ({
+        ...team,
+        name: cleanTeamName(team.name, teamName(team.color)),
+      }));
+      const id = await createMatchRecord(db, {
+        teams: named,
+        roundsPlanned,
+        settings: { categoryIds: ids, variant, durationS: duration },
+      });
+      setMatch({ id, state: createMatch(named, roundsPlanned) });
+      setPending(null);
+      router.push('/play/turn');
     } finally {
       setStarting(false);
     }
   };
 
+  /** Reprise d'une partie en équipes laissée en cours (UX.md §5, app fermée). */
+  const resumeMatch = async (stored: StoredMatch) => {
+    setStarting(true);
+    try {
+      const chosen = categories.filter((c) => stored.settings.categoryIds.includes(c.id));
+      if (chosen.length === 0) {
+        await finishMatch(db, stored.id);
+        setPending(null);
+        return;
+      }
+      const ids = chosen.map((c) => c.id);
+      const [cards, recentlySeen] = await Promise.all([
+        getCategoryCards(db, ids),
+        recentlySeenWords(db, ids),
+      ]);
+      prepare({
+        categories: chosen,
+        cards,
+        durationMs: stored.settings.durationS * 1000,
+        variant: stored.settings.variant,
+        available: availableVariants(chosen),
+        recentlySeen,
+      });
+      setMatch({
+        id: stored.id,
+        state: { teams: stored.teams, roundsPlanned: stored.roundsPlanned, turns: stored.turns },
+      });
+      setPending(null);
+      router.push('/play/turn');
+    } finally {
+      setStarting(false);
+    }
+  };
+
+  const abandonMatch = async (stored: StoredMatch) => {
+    await finishMatch(db, stored.id);
+    setPending(null);
+  };
+
+  const pendingState = pending
+    ? { teams: pending.teams, roundsPlanned: pending.roundsPlanned, turns: pending.turns }
+    : null;
+  const pendingTeam = pendingState ? nextTeamIndex(pendingState) : null;
+
   return (
     <View style={styles.fill}>
-      <Screen scroll>
+      <KeyboardScreen
+        footer={
+          <>
+            {selected.length === 0 ? (
+              <Text variant="labelSmall" muted>
+                {t('setup.noCategory')}
+              </Text>
+            ) : (
+              <Text variant="labelSmall" accessibilityLiveRegion="polite">
+                {t('setup.selected', { count: selected.length, words: totalWords })}
+              </Text>
+            )}
+            {tooFew ? (
+              <View style={styles.warning} accessibilityLiveRegion="polite">
+                <Icon icon={InfoIcon} size={18} color={colors.sun} />
+                <Text variant="caption" style={styles.flex}>
+                  {t('setup.tooFewWords')}
+                </Text>
+              </View>
+            ) : null}
+            <Button
+              label={t('setup.start')}
+              size="lg"
+              block
+              loading={starting}
+              disabled={selected.length === 0}
+              onPress={() => void start()}
+            />
+          </>
+        }
+      >
         <Text variant="display" accessibilityRole="header">
           {t('screens.playSetup')}
         </Text>
+
+        {pending && pendingState && pendingTeam !== null ? (
+          <View style={styles.resume} accessibilityLiveRegion="polite">
+            <View style={styles.resumeTitle}>
+              <Icon icon={UsersThreeIcon} emphasis />
+              <Text variant="heading" style={styles.flex}>
+                {t('teams.resumeTitle')}
+              </Text>
+            </View>
+            <Text muted>
+              {t('teams.resumeBody', {
+                team: pending.teams[pendingTeam]?.name ?? '',
+                round: currentRound(pendingState),
+                total: pending.roundsPlanned,
+              })}
+            </Text>
+            <Button
+              label={t('teams.resume')}
+              block
+              loading={starting}
+              onPress={() => void resumeMatch(pending)}
+            />
+            <Button
+              label={t('teams.abandon')}
+              variant="ghost"
+              block
+              onPress={() => void abandonMatch(pending)}
+            />
+          </View>
+        ) : null}
+
+        <View style={styles.section}>
+          <Text variant="heading" accessibilityRole="header">
+            {t('teams.mode')}
+          </Text>
+          <SegmentedControl
+            options={[
+              { value: 'solo' as Mode, label: t('teams.solo') },
+              { value: 'teams' as Mode, label: t('teams.teams') },
+            ]}
+            value={mode}
+            onChange={setMode}
+            accessibilityLabel={t('teams.mode')}
+          />
+          {mode === 'teams' ? (
+            <>
+              <Text variant="labelSmall" muted>
+                {t('teams.count')}
+              </Text>
+              <SegmentedControl
+                options={teamCountOptions}
+                value={teams.length}
+                onChange={(count) => setTeams((current) => resizeTeams(current, count, teamName))}
+                accessibilityLabel={t('teams.count')}
+              />
+              <Text variant="labelSmall" muted>
+                {t('teams.rounds')}
+              </Text>
+              <SegmentedControl
+                options={roundOptions}
+                value={roundsPlanned}
+                onChange={setRoundsPlanned}
+                accessibilityLabel={t('teams.rounds')}
+              />
+              <Text variant="labelSmall" muted>
+                {t('teams.names')}
+              </Text>
+              {teams.map((team, index) => (
+                <View key={team.color} style={styles.teamRow}>
+                  <View style={[styles.teamDot, { backgroundColor: colors[team.color] }]} />
+                  <TextField
+                    value={team.name}
+                    onChangeText={(name) =>
+                      setTeams((current) =>
+                        current.map((t2, i) => (i === index ? { ...t2, name } : t2)),
+                      )
+                    }
+                    placeholder={teamName(team.color)}
+                    accessibilityLabel={t('teams.nameLabel', { index: index + 1 })}
+                    maxLength={24}
+                    autoCorrect={false}
+                    returnKeyType="done"
+                  />
+                </View>
+              ))}
+            </>
+          ) : null}
+        </View>
 
         <View style={styles.section}>
           <Text variant="heading" accessibilityRole="header">
@@ -216,36 +428,7 @@ export default function PlaySetupScreen() {
             })}
           </View>
         </View>
-      </Screen>
-
-      {/* Pied fixe : le départ reste à portée, quelle que soit la longueur de la grille. */}
-      <View style={[styles.footer, { paddingBottom: insets.bottom + spacing.lg }]}>
-        {selected.length === 0 ? (
-          <Text variant="labelSmall" muted>
-            {t('setup.noCategory')}
-          </Text>
-        ) : (
-          <Text variant="labelSmall" accessibilityLiveRegion="polite">
-            {t('setup.selected', { count: selected.length, words: totalWords })}
-          </Text>
-        )}
-        {tooFew ? (
-          <View style={styles.warning} accessibilityLiveRegion="polite">
-            <Icon icon={InfoIcon} size={18} color={colors.sun} />
-            <Text variant="caption" style={styles.flex}>
-              {t('setup.tooFewWords')}
-            </Text>
-          </View>
-        ) : null}
-        <Button
-          label={t('setup.start')}
-          size="lg"
-          block
-          loading={starting}
-          disabled={selected.length === 0}
-          onPress={() => void start()}
-        />
-      </View>
+      </KeyboardScreen>
     </View>
   );
 }
@@ -272,13 +455,16 @@ const styles = StyleSheet.create({
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
   gridItem: { width: '48%', borderRadius: radii.card + 4, padding: 2 },
   selected: { backgroundColor: colors.text },
-  footer: {
+  teamRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+  teamDot: { width: 24, height: 24, borderRadius: radii.pill },
+  resume: {
     gap: spacing.sm,
-    paddingHorizontal: spacing.xl,
-    paddingTop: spacing.md,
-    backgroundColor: colors.bg,
-    borderTopWidth: 1,
-    borderTopColor: colors.hairline,
+    padding: spacing.lg,
+    borderRadius: radii.card,
+    backgroundColor: colors.bgElevated,
+    borderWidth: 2,
+    borderColor: colors.hibiscus,
   },
+  resumeTitle: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   warning: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
 });

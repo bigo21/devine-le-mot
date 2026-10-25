@@ -90,6 +90,7 @@ export default function PlayGameScreen() {
   const setRound = useGameSession((s) => s.setRound);
   const again = useGameSession((s) => s.again);
   const category = categories[0] ?? null;
+  const inMatch = useGameSession((s) => s.match !== null);
 
   // Variante jouée pour la première fois : sa consigne s'affiche d'abord en grand (UX.md §4).
   const [phase, setPhase] = useState<Phase>(() =>
@@ -603,6 +604,11 @@ export default function PlayGameScreen() {
         <Button label={t('pause.resume')} size="lg" block onPress={resumeGame} />
         <Button label={t('pause.restart')} variant="secondary" block onPress={restartGame} />
         <Button label={t('pause.quit')} variant="ghost" block onPress={quitGame} />
+        {inMatch ? (
+          <Text variant="caption" muted>
+            {t('teams.quitMatch')}
+          </Text>
+        ) : null}
       </BottomSheet>
     </View>
   );

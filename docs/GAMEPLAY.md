@@ -57,7 +57,7 @@ Chaque variante a : un nom, une icône animée, une consigne courte affichée so
 
 **Mix : temps de lecture** : à chaque nouveau mot, le chrono s'arrête **3 s** le temps de lire la consigne (« Chrono en pause : lisez la consigne ») ; la durée choisie reste du temps de jeu effectif. Un mot trouvé ou passé pendant la lecture relance aussitôt le chrono (retour terrain du 25/10/2026).
 
-**Mode équipes** : 2 à 6 équipes nommées (noms et couleurs auto, modifiables), manches à tour de rôle, tableau des scores animé, nombre de manches au choix. Une partie en équipes est enregistrée dans `matches` (reprise possible si l'app est fermée).
+**Mode équipes** : 2 à 6 équipes nommées (noms et couleurs auto : « Équipe Hibiscus », « Équipe Lagon »…, modifiables), manches à tour de rôle (1, 2, 3 ou 5 manches par équipe), tableau des scores animé, podium final. Couleurs d'équipe : hibiscus, lagoon, sun, teal, orchid, mango (écran de passage et tableau des scores ; le fond de la partie garde la couleur de la catégorie). Une partie en équipes est enregistrée dans `matches` : si l'app est fermée ou si l'on quitte une manche, l'écran de préparation propose « Reprendre » ou « Abandonner ».
 
 ## 4. Catégories
 

@@ -2,6 +2,7 @@
 import type { SQLiteDatabase } from 'expo-sqlite';
 
 import type { Card } from '@/features/game/engine';
+import type { Team, Turn } from '@/features/game/match';
 import { type CategoryColor, categoryColors } from '@/ui/tokens';
 
 import { type CategoryDraft, draftToPackFile, newPackId, slugify } from './editor';
@@ -312,20 +313,26 @@ export type RoundRecord = {
   durationS: number;
   score: number;
   words: { id: number; text: string; result: 'found' | 'passed' }[];
+  /** Mode équipes : partie et équipe qui a joué la manche. */
+  matchId?: number;
+  teamIndex?: number;
 };
 
 /** Enregistre une manche terminée et marque ses mots comme vus. */
 export async function recordRound(db: SQLiteDatabase, round: RoundRecord): Promise<void> {
   await db.withExclusiveTransactionAsync(async (txn) => {
     await txn.runAsync(
-      `INSERT INTO rounds (played_at, category_ids, variant, duration_s, score, words)
-       VALUES (?, ?, ?, ?, ?, ?)`,
+      `INSERT INTO rounds (played_at, category_ids, variant, duration_s, score, words, match_id,
+         team_index)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
       round.playedAt,
       json(round.categoryIds),
       round.variant,
       round.durationS,
       round.score,
       json(round.words),
+      round.matchId ?? null,
+      round.teamIndex ?? null,
     );
     for (const word of round.words) {
       await txn.runAsync(
@@ -664,4 +671,74 @@ export async function exportPackOf(
   // Validation : on n'exporte jamais un fichier que l'import refuserait.
   const parsed = packFileSchema.safeParse(exported);
   return parsed.success ? parsed.data : null;
+}
+
+// --- Parties en équipes (table `matches`) -------------------------------------------------------
+
+export type MatchSettings = {
+  categoryIds: number[];
+  variant: VariantId;
+  durationS: number;
+};
+
+export type StoredMatch = {
+  id: number;
+  teams: Team[];
+  roundsPlanned: number;
+  settings: MatchSettings;
+  /** Manches déjà jouées, dans l'ordre. */
+  turns: Turn[];
+};
+
+export async function createMatchRecord(
+  db: SQLiteDatabase,
+  match: { teams: readonly Team[]; roundsPlanned: number; settings: MatchSettings },
+  now = Date.now(),
+): Promise<number> {
+  // Une seule partie en cours à la fois : une nouvelle partie clôt l'ancienne.
+  await db.runAsync(
+    "UPDATE matches SET status = 'finished', finished_at = ? WHERE status = 'in_progress'",
+    now,
+  );
+  const result = await db.runAsync(
+    'INSERT INTO matches (started_at, rounds_planned, teams, settings) VALUES (?, ?, ?, ?)',
+    now,
+    match.roundsPlanned,
+    json(match.teams),
+    json(match.settings),
+  );
+  return result.lastInsertRowId;
+}
+
+export async function finishMatch(db: SQLiteDatabase, id: number, now = Date.now()) {
+  await db.runAsync(
+    "UPDATE matches SET status = 'finished', finished_at = ? WHERE id = ?",
+    now,
+    id,
+  );
+}
+
+/** Partie en équipes non terminée (l'app a été fermée en cours de route), ou `null`. */
+export async function inProgressMatch(db: SQLiteDatabase): Promise<StoredMatch | null> {
+  const row = await db.getFirstAsync<{
+    id: number;
+    teams: string;
+    rounds_planned: number;
+    settings: string;
+  }>(
+    `SELECT id, teams, rounds_planned, settings FROM matches WHERE status = 'in_progress'
+     ORDER BY started_at DESC LIMIT 1`,
+  );
+  if (!row) return null;
+  const turns = await db.getAllAsync<{ team_index: number; score: number }>(
+    'SELECT team_index, score FROM rounds WHERE match_id = ? ORDER BY played_at, id',
+    row.id,
+  );
+  return {
+    id: row.id,
+    teams: JSON.parse(row.teams) as Team[],
+    roundsPlanned: row.rounds_planned,
+    settings: JSON.parse(row.settings) as MatchSettings,
+    turns: turns.map((t) => ({ teamIndex: t.team_index, score: t.score })),
+  };
 }

@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import type { CategorySummary } from '@/features/packs/repository';
 
 import { type Card, createRound, type Random, type RoundState } from './engine';
+import type { MatchState } from './match';
 import { cardsForVariant, type VariantId } from './variants';
 
 /** Partie en cours, partagée entre les écrans du parcours (non persistée). */
@@ -18,6 +19,9 @@ type GameSession = {
   round: RoundState | null;
   /** La manche terminée a-t-elle été enregistrée (historique, mots vus) ? */
   recorded: boolean;
+  /** Partie en équipes en cours (`null` en solo). */
+  match: { id: number; state: MatchState } | null;
+  setMatch: (match: { id: number; state: MatchState } | null) => void;
   /** Prépare une manche (mots non vus récemment d'abord). */
   prepare: (options: {
     categories: readonly CategorySummary[];
@@ -42,6 +46,8 @@ export const useGameSession = create<GameSession>()((set, get) => ({
   available: ['classic'],
   round: null,
   recorded: false,
+  match: null,
+  setMatch: (match) => set({ match }),
   prepare: ({ recentlySeen, random = Math.random, ...options }) =>
     set({
       ...options,
