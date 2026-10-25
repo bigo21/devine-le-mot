@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
+import type { VariantId } from '@/features/packs/schema';
 import type { LanguagePreference } from '@/lib/i18n';
 import { persistStorage } from '@/lib/storage';
 import type { WordFont } from '@/ui/tokens';
@@ -21,6 +22,10 @@ export type Settings = {
   /** Police du mot affiché pendant la partie. */
   wordFont: WordFont;
   hasSeenOnboarding: boolean;
+  /** Variante pré-sélectionnée à la préparation (la dernière jouée, UX.md §2). */
+  lastVariant: VariantId;
+  /** Variantes déjà jouées : la première fois, la consigne s'affiche en grand (UX.md §4). */
+  seenVariants: VariantId[];
 };
 
 type SettingsStore = Settings & {
@@ -38,6 +43,8 @@ export const defaultSettings: Settings = {
   reduceMotion: false,
   wordFont: 'expressive',
   hasSeenOnboarding: false,
+  lastVariant: 'classic',
+  seenVariants: [],
 };
 
 export const useSettings = create<SettingsStore>()(

@@ -3,7 +3,7 @@
 import { type CategoryColor } from '@/ui/tokens';
 
 import { foldText } from './filter';
-import { type PackFile, packLimits } from './schema';
+import { type PackFile, packLimits, type VariantId } from './schema';
 
 /** Seuils de l'éditeur (GAMEPLAY.md §3 et §5). */
 export const editorLimits = {
@@ -28,6 +28,9 @@ export type CategoryDraft = {
   color: CategoryColor;
   description: string;
   words: DraftWord[];
+  /** Conservés d'une catégorie dupliquée (Imitation des personnalités, étiquettes de recherche). */
+  variants?: VariantId[] | null;
+  tags?: string[];
 };
 
 export const emptyDraft = (emoji: string, color: CategoryColor): CategoryDraft => ({
@@ -193,6 +196,8 @@ export function draftToPackFile(
           ...(description ? { description } : {}),
           emoji: draft.emoji,
           color: draft.color,
+          ...(draft.tags && draft.tags.length > 0 ? { tags: draft.tags } : {}),
+          ...(draft.variants && draft.variants.length > 0 ? { variants: draft.variants } : {}),
           words: draft.words.map((w) => {
             const forbidden = cleanForbidden(w.text, w.forbidden);
             return forbidden.length > 0 ? { text: w.text, forbidden } : w.text;

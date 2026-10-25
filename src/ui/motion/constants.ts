@@ -25,6 +25,10 @@ export const motion = {
   /** Liste des mots sur l'écran des résultats (MOTION.md §3) : 25 ms par ligne, 15 lignes animées. */
   resultsStagger: 25,
   resultsMaxStaggered: 15,
+  /** Boucle de l'icône animée d'une variante (aller-retour). */
+  variantIconLoop: 700,
+  /** Consigne d'une variante jouée pour la première fois, avant le compte à rebours (UX.md §4). */
+  variantIntro: 2000,
 } as const;
 
 /** Délai d'un élément de liste en cascade ; `undefined` au-delà du plafond (apparition directe). */

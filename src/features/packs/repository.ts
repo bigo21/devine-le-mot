@@ -6,7 +6,13 @@ import { type CategoryColor, categoryColors } from '@/ui/tokens';
 
 import { type CategoryDraft, draftToPackFile, newPackId, slugify } from './editor';
 import { type ExistingSource } from './import';
-import { normalizeWord, type PackFile, packFileSchema, type Region } from './schema';
+import {
+  normalizeWord,
+  type PackFile,
+  packFileSchema,
+  type Region,
+  type VariantId,
+} from './schema';
 import { builtinPackFiles } from './seed';
 import { needsUpdate, planWords } from './seed-plan';
 
@@ -158,6 +164,10 @@ export type CategorySummary = {
   wordCount: number;
   favorite: boolean;
   tags: string[];
+  /** Variantes déclarées (`null` = variantes par défaut, GAMEPLAY.md §3). */
+  variants: VariantId[] | null;
+  /** Mots ayant au moins 3 mots interdits (variante « Mots interdits »). */
+  forbiddenEligible: number;
 };
 
 type CategoryRow = {
@@ -171,6 +181,8 @@ type CategoryRow = {
   word_count: number;
   is_favorite: number;
   tags: string;
+  variants: string | null;
+  forbidden_eligible: number;
 };
 
 const isCategoryColor = (value: string | null): value is CategoryColor =>
@@ -188,12 +200,17 @@ function toSummary(row: CategoryRow, language: string): CategorySummary {
     wordCount: row.word_count,
     favorite: row.is_favorite === 1,
     tags: JSON.parse(row.tags) as string[],
+    variants: row.variants ? (JSON.parse(row.variants) as VariantId[]) : null,
+    forbiddenEligible: row.forbidden_eligible,
   };
 }
 
 const SUMMARY_SELECT = `
-  SELECT c.id, c.name_fr, c.name_en, c.emoji, c.color, c.is_favorite, c.tags, p.region, p.source,
-    (SELECT COUNT(*) FROM words w WHERE w.category_id = c.id) AS word_count
+  SELECT c.id, c.name_fr, c.name_en, c.emoji, c.color, c.is_favorite, c.tags, c.variants,
+    p.region, p.source,
+    (SELECT COUNT(*) FROM words w WHERE w.category_id = c.id) AS word_count,
+    (SELECT COUNT(*) FROM words w
+      WHERE w.category_id = c.id AND json_array_length(w.forbidden) >= 3) AS forbidden_eligible
   FROM categories c JOIN packs p ON p.id = c.pack_id`;
 
 /** Catégories visibles, favoris en tête (DESIGN.md §4). */
@@ -217,16 +234,29 @@ export async function getCategory(
   return row ? toSummary(row, language) : null;
 }
 
-/** Cartes jouables d'une catégorie. */
-export async function getCategoryCards(db: SQLiteDatabase, categoryId: number): Promise<Card[]> {
-  const rows = await db.getAllAsync<{ id: number; text: string; forbidden: string }>(
-    'SELECT id, text, forbidden FROM words WHERE category_id = ?',
-    categoryId,
+const placeholders = (ids: readonly number[]) => ids.map(() => '?').join(', ');
+
+/** Cartes jouables d'une ou plusieurs catégories (mélangées par le moteur). */
+export async function getCategoryCards(
+  db: SQLiteDatabase,
+  categoryIds: number | readonly number[],
+): Promise<Card[]> {
+  const ids = typeof categoryIds === 'number' ? [categoryIds] : categoryIds;
+  if (ids.length === 0) return [];
+  const rows = await db.getAllAsync<{
+    id: number;
+    text: string;
+    forbidden: string;
+    category_id: number;
+  }>(
+    `SELECT id, text, forbidden, category_id FROM words WHERE category_id IN (${placeholders(ids)})`,
+    ...ids,
   );
   return rows.map((row) => ({
     id: row.id,
     text: row.text,
     forbidden: JSON.parse(row.forbidden) as string[],
+    categoryId: row.category_id,
   }));
 }
 
@@ -258,16 +288,18 @@ export async function setFavorite(
 
 // --- Historique ---------------------------------------------------------------------------------
 
-/** Mots de la catégorie vus ces deux dernières semaines. */
+/** Mots des catégories vus ces deux dernières semaines. */
 export async function recentlySeenWords(
   db: SQLiteDatabase,
-  categoryId: number,
+  categoryIds: number | readonly number[],
   now = Date.now(),
 ): Promise<Set<number>> {
+  const ids = typeof categoryIds === 'number' ? [categoryIds] : categoryIds;
+  if (ids.length === 0) return new Set();
   const rows = await db.getAllAsync<{ word_id: number }>(
     `SELECT s.word_id FROM seen_words s JOIN words w ON w.id = s.word_id
-     WHERE w.category_id = ? AND s.last_seen_at >= ?`,
-    categoryId,
+     WHERE w.category_id IN (${placeholders(ids)}) AND s.last_seen_at >= ?`,
+    ...ids,
     now - RECENTLY_SEEN_MS,
   );
   return new Set(rows.map((row) => row.word_id));
@@ -275,7 +307,7 @@ export async function recentlySeenWords(
 
 export type RoundRecord = {
   playedAt: number;
-  categoryId: number;
+  categoryIds: readonly number[];
   variant: string;
   durationS: number;
   score: number;
@@ -289,7 +321,7 @@ export async function recordRound(db: SQLiteDatabase, round: RoundRecord): Promi
       `INSERT INTO rounds (played_at, category_ids, variant, duration_s, score, words)
        VALUES (?, ?, ?, ?, ?, ?)`,
       round.playedAt,
-      json([round.categoryId]),
+      json(round.categoryIds),
       round.variant,
       round.durationS,
       round.score,
@@ -333,9 +365,11 @@ export async function getEditableCategory(
     description_fr: string | null;
     emoji: string | null;
     color: string | null;
+    tags: string;
+    variants: string | null;
     siblings: number;
   }>(
-    `SELECT c.pack_id, p.source, c.name_fr, c.description_fr, c.emoji, c.color,
+    `SELECT c.pack_id, p.source, c.name_fr, c.description_fr, c.emoji, c.color, c.tags, c.variants,
        (SELECT COUNT(*) FROM categories s WHERE s.pack_id = c.pack_id) AS siblings
      FROM categories c JOIN packs p ON p.id = c.pack_id WHERE c.id = ?`,
     categoryId,
@@ -355,6 +389,8 @@ export async function getEditableCategory(
       emoji: row.emoji ?? '',
       color: isCategoryColor(row.color) ? row.color : 'lagoon',
       words: words.map((w) => ({ text: w.text, forbidden: JSON.parse(w.forbidden) as string[] })),
+      tags: JSON.parse(row.tags) as string[],
+      variants: row.variants ? (JSON.parse(row.variants) as VariantId[]) : null,
     },
   };
 }

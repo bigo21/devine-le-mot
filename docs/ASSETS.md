@@ -10,7 +10,7 @@ Principe : **une seule famille visuelle par type d'élément**, des licences pro
 | Icônes des catégories | **Microsoft Fluent Emoji, style 3D** (licence MIT). Script `node scripts/fluent-emoji.mjs 🍲 nom-en-kebab`, composant `CategoryIcon` | Claude Code (sélection + intégration) | PNG → WebP 256 px, embarqués |
 | Drapeaux (filtres de région, catégorie pays) | **flag-icons** (MIT), format carré. Vérifié le 2026-10-24 : Fluent Emoji n'a aucun drapeau de pays. Script `node scripts/flags.mjs cm fr us`, composant `Flag` | Claude Code | SVG (dans `src/assets/flags/flags.ts`) |
 | Icônes de catégories propres au Cameroun / à l'Afrique sans équivalent emoji (ndolé, makossa, bend skin…) | Illustrations sur mesure **dans le style Fluent 3D** | Humain : illustrateur, ou génération par IA puis retouche | PNG → WebP 256 px |
-| Icônes animées des variantes (mime, onomatopées, chant…) | Lottie | Lottie simples faites sur mesure (LottieFiles Creator, Jitter) ou Lottie libres de droits vérifiés | `.lottie` / `.json` |
+| Icônes animées des variantes (mime, onomatopées, chant…) | **En code** (décision du 25/10/2026) : icône Phosphor duotone sur une pastille de la couleur d'accent, petit geste en boucle en Reanimated (composant `VariantIcon`). Remplaçables plus tard par des Lottie sans changer les écrans | Claude Code | code |
 | Mascotte | Voir §2 | Humain ou Claude Code selon l'option | Lottie ou composant Skia |
 | Motifs Ndop en filigrane | Tuiles géométriques générées en code (Skia / react-native-svg) | Claude Code | code |
 | 3D du tutoriel | Primitives three.js (tête, téléphone) | Claude Code | code |

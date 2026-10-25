@@ -145,6 +145,8 @@ export default function EditorScreen() {
     wordCount: draft.words.length,
     favorite: false,
     tags: [],
+    variants: null,
+    forbiddenEligible: 0,
   };
 
   const update = (patch: Partial<CategoryDraft>) => {

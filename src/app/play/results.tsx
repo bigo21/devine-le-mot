@@ -27,7 +27,7 @@ export default function PlayResultsScreen() {
   const feedback = useFeedback();
   const round = useGameSession((s) => s.round);
   const setRound = useGameSession((s) => s.setRound);
-  const prepare = useGameSession((s) => s.prepare);
+  const again = useGameSession((s) => s.again);
   const db = useSQLiteContext();
 
   useEffect(() => {
@@ -37,13 +37,15 @@ export default function PlayResultsScreen() {
   // Enregistrée en quittant l'écran, pour garder les corrections (une seule fois par manche).
   const record = useCallback(async () => {
     const session = useGameSession.getState();
-    const { round: played, category } = session;
-    if (session.recorded || !played || !category || played.status !== 'finished') return;
+    const { round: played, categories, variant } = session;
+    if (session.recorded || !played || categories.length === 0 || played.status !== 'finished') {
+      return;
+    }
     session.markRecorded();
     await recordRound(db, {
       playedAt: Date.now(),
-      categoryId: category.id,
-      variant: 'classic',
+      categoryIds: categories.map((c) => c.id),
+      variant,
       durationS: Math.round(played.durationMs / 1000),
       score: score(played),
       words: played.results.map((entry) => ({
@@ -66,11 +68,14 @@ export default function PlayResultsScreen() {
 
   const replay = async () => {
     await record();
-    const { category, cards, durationMs } = useGameSession.getState();
-    if (!category) return;
+    const { categories } = useGameSession.getState();
+    if (categories.length === 0) return;
     // Mêmes réglages, mots différents : les mots vus passent en dernier (UX.md §3).
-    const recentlySeen = await recentlySeenWords(db, category.id);
-    prepare({ category, cards, durationMs, recentlySeen });
+    const recentlySeen = await recentlySeenWords(
+      db,
+      categories.map((c) => c.id),
+    );
+    again({ recentlySeen });
     router.replace('/play/ready');
   };
 

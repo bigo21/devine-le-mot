@@ -51,6 +51,10 @@ Chaque variante a : un nom, une icône animée, une consigne courte affichée so
 - **Mix** tire au hasard parmi les variantes compatibles de la carte en cours (même règles d'éligibilité).
 - Au niveau du mot, on ne stocke que les données propres à une variante (mots interdits), jamais de liste de variantes.
 
+**Mélange de catégories** (décision du 25/10/2026) : plusieurs catégories peuvent être choisies pour une manche ; une variante n'est proposée que si elle convient à toutes, et les 20 mots éligibles de « Mots interdits » se comptent sur l'ensemble. Une catégorie est jugée trop petite pour la durée sous un mot toutes les 3 s.
+
+**Première fois dans une variante** : sa consigne s'affiche en grand 2 s avant le compte à rebours (UX.md §4).
+
 **Mode équipes** : 2 à 6 équipes nommées (noms et couleurs auto, modifiables), manches à tour de rôle, tableau des scores animé, nombre de manches au choix. Une partie en équipes est enregistrée dans `matches` (reprise possible si l'app est fermée).
 
 ## 4. Catégories

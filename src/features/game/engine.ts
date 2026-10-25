@@ -6,6 +6,8 @@ export type Card = {
   id: number;
   text: string;
   forbidden?: readonly string[];
+  /** Catégorie d'origine (plusieurs catégories peuvent être mélangées). */
+  categoryId?: number;
 };
 
 export type CardResult = 'found' | 'passed';

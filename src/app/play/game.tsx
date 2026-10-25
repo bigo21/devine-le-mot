@@ -19,6 +19,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { scheduleOnRN } from 'react-native-worklets';
 
 import { TimerRing } from '@/features/game/components/timer-ring';
+import { VariantIcon } from '@/features/game/components/variant-icon';
 import {
   answer as answerCard,
   type Card,
@@ -35,6 +36,12 @@ import {
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import { useTilt } from '@/features/game/use-tilt';
+import {
+  declaredVariants,
+  SHOWN_FORBIDDEN,
+  type VariantId,
+  variantForCard,
+} from '@/features/game/variants';
 import { useSettings } from '@/features/settings/store';
 import { useWordFont } from '@/features/settings/use-word-font';
 import { useFeedback } from '@/lib/use-feedback';
@@ -51,7 +58,7 @@ import {
 } from '@/ui/motion';
 import { colors, onColor, spacing } from '@/ui/tokens';
 
-type Phase = 'countdown' | 'playing' | 'paused' | 'ended';
+type Phase = 'intro' | 'countdown' | 'playing' | 'paused' | 'ended';
 
 const COUNTDOWN_STEP_MS = 1000;
 const GO_MS = 600;
@@ -74,14 +81,22 @@ export default function PlayGameScreen() {
   const feedback = useFeedback();
   const wordFont = useWordFont();
   const tapMode = useSettings((s) => s.tapMode);
+  const seenVariants = useSettings((s) => s.seenVariants);
+  const updateSettings = useSettings((s) => s.update);
   const round = useGameSession((s) => s.round);
-  const category = useGameSession((s) => s.category);
-  const cards = useGameSession((s) => s.cards);
-  const durationMs = useGameSession((s) => s.durationMs);
+  const categories = useGameSession((s) => s.categories);
+  const variant = useGameSession((s) => s.variant);
+  const available = useGameSession((s) => s.available);
   const setRound = useGameSession((s) => s.setRound);
-  const prepare = useGameSession((s) => s.prepare);
+  const again = useGameSession((s) => s.again);
+  const category = categories[0] ?? null;
 
-  const [phase, setPhase] = useState<Phase>('countdown');
+  // Variante jouée pour la première fois : sa consigne s'affiche d'abord en grand (UX.md §4).
+  const [phase, setPhase] = useState<Phase>(() =>
+    seenVariants.includes(variant) ? 'countdown' : 'intro',
+  );
+  /** Variante de la carte affichée (change à chaque carte en Mix). */
+  const [cardVariant, setCardVariant] = useState<VariantId>(variant);
   const [count, setCount] = useState<number | 'go'>(3);
   const [displayed, setDisplayed] = useState<Card | null>(null);
   const [danger, setDanger] = useState(false);
@@ -105,6 +120,22 @@ export default function PlayGameScreen() {
   useEffect(() => {
     if (!round || !category) router.replace('/play/setup');
   }, [round, category]);
+
+  useEffect(() => {
+    if (phase !== 'intro') return;
+    const timer = setTimeout(() => {
+      const seen = useSettings.getState().seenVariants;
+      if (!seen.includes(variant)) updateSettings({ seenVariants: [...seen, variant] });
+      setPhase('countdown');
+    }, motion.variantIntro);
+    return () => clearTimeout(timer);
+  }, [phase, updateSettings, variant]);
+
+  // Variantes déclarées par catégorie, pour le tirage du Mix carte par carte.
+  const declaredById = useRef(new Map<number, VariantId[]>());
+  useEffect(() => {
+    declaredById.current = new Map(categories.map((c) => [c.id, declaredVariants(c.variants)]));
+  }, [categories]);
 
   // --- Minuteur -----------------------------------------------------------------------------
 
@@ -131,6 +162,18 @@ export default function PlayGameScreen() {
   const showCard = useCallback(
     (card: Card | null) => {
       setDisplayed(card);
+      if (card) {
+        setCardVariant((previous) =>
+          variantForCard(variant, card, {
+            available,
+            declared:
+              (card.categoryId !== undefined && declaredById.current.get(card.categoryId)) ||
+              declaredVariants(null),
+            previous,
+            random: Math.random,
+          }),
+        );
+      }
       if (reduced) {
         wordY.set(0);
         wordScale.set(1);
@@ -145,7 +188,7 @@ export default function PlayGameScreen() {
       }
       busy.current = false;
     },
-    [reduced, wordOpacity, wordScale, wordY],
+    [available, reduced, variant, wordOpacity, wordScale, wordY],
   );
 
   const advance = useCallback(
@@ -319,8 +362,8 @@ export default function PlayGameScreen() {
 
   const restartGame = () => {
     if (!category) return;
-    // Nouveau tirage sur les mêmes mots (les mots de la manche abandonnée passent en dernier).
-    prepare({ category, cards, durationMs });
+    // Nouveau tirage sur les mêmes mots et les mêmes réglages.
+    again();
     setDisplayed(null);
     setDanger(false);
     lastSecond.current = null;
@@ -386,6 +429,19 @@ export default function PlayGameScreen() {
             <Text variant="title">{found}</Text>
           </Animated.View>
 
+          {phase === 'intro' ? (
+            <Animated.View entering={pop({ reduced })} style={styles.intro}>
+              <VariantIcon variant={variant} size={96} active />
+              <Text variant="labelSmall">{t('game.introHint')}</Text>
+              <Text variant="display" align="center">
+                {t(`variants.${variant}.name`)}
+              </Text>
+              <Text variant="title" align="center" accessibilityLiveRegion="polite">
+                {t(`variants.${variant}.instruction`)}
+              </Text>
+            </Animated.View>
+          ) : null}
+
           {phase === 'countdown' ? (
             <Animated.View key={String(count)} entering={pop({ reduced })} exiting={fadeOut}>
               <Text variant="hero" style={styles.countdown} accessibilityLiveRegion="polite">
@@ -398,7 +454,13 @@ export default function PlayGameScreen() {
             <Animated.View style={[styles.wordBox, wordStyle]}>
               <Text
                 align="center"
-                style={[styles.word, wordFont]}
+                // Mots interdits affichés dessous : mot plus petit au départ (l'auto-fit ne réduit
+                // qu'en largeur), pour que tout tienne dans la hauteur de l'écran.
+                style={[
+                  styles.word,
+                  cardVariant === 'forbidden' && styles.wordCompact,
+                  wordFont,
+                ]}
                 adjustsFontSizeToFit
                 minimumFontScale={0.2}
                 numberOfLines={2}
@@ -406,9 +468,29 @@ export default function PlayGameScreen() {
               >
                 {displayed?.text ?? ''}
               </Text>
-              <Text variant="bodyLarge" align="center">
-                {t('variants.classic.instruction')}
-              </Text>
+              {cardVariant === 'forbidden' && displayed?.forbidden ? (
+                <View
+                  style={styles.forbidden}
+                  accessible
+                  accessibilityLabel={`${t('game.forbiddenLabel')} : ${displayed.forbidden
+                    .slice(0, SHOWN_FORBIDDEN)
+                    .join(', ')}`}
+                >
+                  {displayed.forbidden.slice(0, SHOWN_FORBIDDEN).map((word) => (
+                    <View key={word} style={[styles.forbiddenWord, { borderColor: foreground }]}>
+                      <Text variant="label">{word}</Text>
+                    </View>
+                  ))}
+                </View>
+              ) : null}
+              <View style={styles.instruction}>
+                {variant === 'mix' ? <VariantIcon variant={cardVariant} size={32} /> : null}
+                <Text variant="bodyLarge" align="center">
+                  {variant === 'mix'
+                    ? `${t(`variants.${cardVariant}.name`)} · ${t(`variants.${cardVariant}.instruction`)}`
+                    : t(`variants.${cardVariant}.instruction`)}
+                </Text>
+              </View>
             </Animated.View>
           ) : null}
 
@@ -522,7 +604,17 @@ const styles = StyleSheet.create({
   },
   countdown: { fontSize: 120, lineHeight: 132 },
   wordBox: { width: '80%', alignItems: 'center', gap: spacing.md },
+  intro: { width: '80%', alignItems: 'center', gap: spacing.md },
+  instruction: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  forbidden: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: spacing.sm },
+  forbiddenWord: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: 999,
+    borderWidth: 2,
+  },
   word: { width: '100%', fontSize: 120, lineHeight: 132 },
+  wordCompact: { fontSize: 80, lineHeight: 90 },
   toast: {
     position: 'absolute',
     bottom: spacing.xl,

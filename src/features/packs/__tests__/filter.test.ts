@@ -10,6 +10,8 @@ const category = (overrides: Partial<CategorySummary>): CategorySummary => ({
   source: 'builtin',
   wordCount: 20,
   favorite: false,
+  variants: null,
+  forbiddenEligible: 0,
   tags: [],
   ...overrides,
 });

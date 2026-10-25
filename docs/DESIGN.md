@@ -129,7 +129,7 @@ Règles :
 
 **Catégories** : filtres en pilules par région (🇨🇲 🌍 🇫🇷 🇺🇸 🌐 🎉 Soirée), plus une pilule ✏️ Mes catégories (créées, dupliquées ou importées), recherche, grille de cartes colorées (icône/emoji, nom, nombre de mots, motif en filigrane). Appui long → aperçu de quelques mots. Favoris en tête.
 
-**Préparation de la partie** : sélection de la variante en carrousel horizontal de cartes animées (chaque carte montre l'icône animée de la variante), durée en segmented control, bouton « C'est parti ».
+**Préparation de la partie** : sélection de la variante en carrousel horizontal de cartes animées (chaque carte montre l'icône animée de la variante, seule l'icône de la variante choisie bouge), durée en segmented control, grille de catégories à sélection multiple (mélange), bouton « C'est parti » dans un pied fixe avec le nombre de mots et l'avertissement « peu de mots pour cette durée ».
 
 **Écran « Pose le téléphone sur ton front »** : animation (Lottie) d'un téléphone qui monte sur un front ; jauge circulaire de stabilisation pendant la calibration.
 

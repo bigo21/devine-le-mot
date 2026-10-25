@@ -129,6 +129,24 @@ describe('brouillon → paquet', () => {
   });
 });
 
+describe('duplication d’une catégorie du jeu', () => {
+  it('garde les variantes et les étiquettes (Imitation des personnalités)', () => {
+    const draft = {
+      ...draftWith(12),
+      variants: ['classic', 'imitation', 'mix'] as ('classic' | 'imitation' | 'mix')[],
+      tags: ['personnalites'],
+    };
+    const category = draftToPackFile(draft, 'perso-copie-abc123', 1).pack.categories[0]!;
+    expect(category.variants).toEqual(['classic', 'imitation', 'mix']);
+    expect(category.tags).toEqual(['personnalites']);
+  });
+
+  it('sans variantes déclarées, le champ reste absent (variantes par défaut)', () => {
+    const category = draftToPackFile(draftWith(12), 'perso-x-abc123', 1).pack.categories[0]!;
+    expect(category.variants).toBeUndefined();
+  });
+});
+
 describe('lecture d’un fichier importé', () => {
   const valid = () => draftToPackFile(draftWith(12), 'perso-test-abc123', 1);
 
