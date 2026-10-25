@@ -1,7 +1,8 @@
 import { router } from 'expo-router';
 import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
 import { SkipForwardIcon } from 'phosphor-react-native/src/icons/SkipForward';
-import { useEffect } from 'react';
+import { useSQLiteContext } from 'expo-sqlite';
+import { useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
@@ -9,6 +10,7 @@ import Animated from 'react-native-reanimated';
 import { score, toggleResult } from '@/features/game/engine';
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
+import { recentlySeenWords, recordRound } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
 import { Button, CountText, Icon, Screen, Text } from '@/ui/components';
 import { motion, rise, useReducedMotion } from '@/ui/motion';
@@ -24,14 +26,35 @@ export default function PlayResultsScreen() {
   const reduced = useReducedMotion();
   const feedback = useFeedback();
   const round = useGameSession((s) => s.round);
-  const categoryId = useGameSession((s) => s.categoryId);
-  const durationMs = useGameSession((s) => s.durationMs);
   const setRound = useGameSession((s) => s.setRound);
   const prepare = useGameSession((s) => s.prepare);
+  const db = useSQLiteContext();
 
   useEffect(() => {
     if (!round) router.replace('/play/setup');
   }, [round]);
+
+  // Enregistrée en quittant l'écran, pour garder les corrections (une seule fois par manche).
+  const record = useCallback(async () => {
+    const session = useGameSession.getState();
+    const { round: played, category } = session;
+    if (session.recorded || !played || !category || played.status !== 'finished') return;
+    session.markRecorded();
+    await recordRound(db, {
+      playedAt: Date.now(),
+      categoryId: category.id,
+      variant: 'classic',
+      durationS: Math.round(played.durationMs / 1000),
+      score: score(played),
+      words: played.results.map((entry) => ({
+        id: entry.card.id,
+        text: entry.card.text,
+        result: entry.result,
+      })),
+    }).catch(() => undefined);
+  }, [db]);
+
+  useEffect(() => () => void record(), [record]);
 
   if (!round) return null;
 
@@ -41,10 +64,19 @@ export default function PlayResultsScreen() {
   const buttonsAt =
     LIST_AT + Math.min(results.length, motion.resultsMaxStaggered) * motion.resultsStagger + 100;
 
-  const replay = () => {
-    if (!categoryId) return;
-    prepare({ categoryId, durationMs });
+  const replay = async () => {
+    await record();
+    const { category, cards, durationMs } = useGameSession.getState();
+    if (!category) return;
+    // Mêmes réglages, mots différents : les mots vus passent en dernier (UX.md §3).
+    const recentlySeen = await recentlySeenWords(db, category.id);
+    prepare({ category, cards, durationMs, recentlySeen });
     router.replace('/play/ready');
+  };
+
+  const changeCategory = async () => {
+    await record();
+    router.replace('/play/setup');
   };
 
   return (
@@ -102,12 +134,12 @@ export default function PlayResultsScreen() {
       )}
 
       <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.actions}>
-        <Button label={t('results.replay')} size="lg" block onPress={replay} />
+        <Button label={t('results.replay')} size="lg" block onPress={() => void replay()} />
         <Button
           label={t('results.changeCategory')}
           variant="secondary"
           block
-          onPress={() => router.replace('/play/setup')}
+          onPress={() => void changeCategory()}
         />
       </Animated.View>
     </Screen>

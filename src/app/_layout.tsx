@@ -1,13 +1,14 @@
 import { useFonts } from 'expo-font';
 import { Stack, type ErrorBoundaryProps } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { SQLiteProvider } from 'expo-sqlite';
+import { type SQLiteDatabase, SQLiteProvider } from 'expo-sqlite';
 import { StatusBar } from 'expo-status-bar';
 import { Suspense, useEffect } from 'react';
 import { I18nextProvider, useTranslation } from 'react-i18next';
 import { StyleSheet, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { seedBuiltinPacks } from '@/features/packs/repository';
 import { DATABASE_NAME, initDatabase } from '@/lib/db';
 import { fontAssets } from '@/lib/fonts';
 import i18n from '@/lib/i18n';
@@ -15,6 +16,12 @@ import { useLanguageSync } from '@/lib/i18n/use-language-sync';
 import { colors, fonts, spacing } from '@/ui/tokens';
 
 void SplashScreen.preventAutoHideAsync();
+
+/** Base prête : migrations, puis paquets intégrés (insérés ou mis à jour selon leur version). */
+async function prepareDatabase(db: SQLiteDatabase) {
+  await initDatabase(db);
+  await seedBuiltinPacks(db);
+}
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts(fontAssets);
@@ -28,7 +35,7 @@ export default function RootLayout() {
       <I18nextProvider i18n={i18n}>
         <StatusBar style="light" />
         <Suspense fallback={<View style={styles.root} />}>
-          <SQLiteProvider databaseName={DATABASE_NAME} onInit={initDatabase} useSuspense>
+          <SQLiteProvider databaseName={DATABASE_NAME} onInit={prepareDatabase} useSuspense>
             <HideSplashWhenReady />
             <Stack
               screenOptions={{

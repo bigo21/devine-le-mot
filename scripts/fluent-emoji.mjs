@@ -116,6 +116,12 @@ execFileSync('ffmpeg', [
   out,
 ]);
 
+// Manifeste nom → emoji : l'emoji d'une catégorie (pack.schema.json) désigne son icône.
+const MANIFEST = join(OUT_DIR, 'manifest.json');
+const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
+manifest[name] = normalize(emoji);
+writeFileSync(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`);
+
 // Index des icônes (Metro n'accepte que des require statiques).
 const names = readdirSync(OUT_DIR)
   .filter((file) => file.endsWith('.webp'))
@@ -126,7 +132,14 @@ writeFileSync(
   `// Fichier généré par scripts/fluent-emoji.mjs : icônes Fluent Emoji 3D (MIT), WebP ${SIZE} px.\n` +
     `export const categoryIcons = {\n` +
     names.map((icon) => `  '${icon}': require('./${icon}.webp') as number,`).join('\n') +
-    `\n};\n\nexport type CategoryIconName = keyof typeof categoryIcons;\n`,
+    `\n};\n\nexport type CategoryIconName = keyof typeof categoryIcons;\n\n` +
+    `/** Emoji (sans sélecteur de variante U+FE0F) → icône Fluent correspondante. */\n` +
+    `export const emojiIcons: Record<string, CategoryIconName> = {\n` +
+    names
+      .filter((icon) => manifest[icon])
+      .map((icon) => `  ${JSON.stringify(manifest[icon])}: '${icon}',`)
+      .join('\n') +
+    `\n};\n`,
 );
 
 const credit = `| src/assets/categories/${name}.webp | Microsoft Fluent Emoji 3D « ${entry.cldr} » | https://github.com/${REPO} | MIT | ${new Date().toISOString().slice(0, 10)} |`;

@@ -1,13 +1,19 @@
-import { router } from 'expo-router';
+import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
+import { useSQLiteContext } from 'expo-sqlite';
 import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { useGameSession } from '@/features/game/session-store';
-import { testCategories } from '@/features/game/test-categories';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
+import {
+  type CategorySummary,
+  getCategoryCards,
+  listCategories,
+  recentlySeenWords,
+} from '@/features/packs/repository';
 import { type RoundDuration, useSettings } from '@/features/settings/store';
 import { Button, Card, CategoryIcon, Icon, Screen, SegmentedControl, Text } from '@/ui/components';
 import { rise, staggerDelay, useReducedMotion } from '@/ui/motion';
@@ -18,28 +24,56 @@ const DURATIONS: readonly RoundDuration[] = [30, 60, 90, 120];
 /** Préparation : catégorie → durée → « C'est parti » (3 taps depuis l'accueil, UX.md §2). */
 export default function PlaySetupScreen() {
   useOrientationLock('portrait');
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const db = useSQLiteContext();
   const reduced = useReducedMotion();
+  const params = useLocalSearchParams<{ category?: string }>();
   const defaultDuration = useSettings((s) => s.defaultDuration);
   const updateSettings = useSettings((s) => s.update);
-  const lastCategoryId = useGameSession((s) => s.categoryId);
+  const lastCategory = useGameSession((s) => s.category);
   const prepare = useGameSession((s) => s.prepare);
 
-  // La dernière catégorie jouée est présélectionnée.
-  const [categoryId, setCategoryId] = useState<string | null>(lastCategoryId);
+  const [categories, setCategories] = useState<CategorySummary[]>([]);
+  // Catégorie venue de l'écran Catégories, sinon la dernière jouée (UX.md §3).
+  const [categoryId, setCategoryId] = useState<number | null>(
+    params.category ? Number(params.category) : (lastCategory?.id ?? null),
+  );
   const [duration, setDuration] = useState<RoundDuration>(defaultDuration);
+  const [starting, setStarting] = useState(false);
+
+  useFocusEffect(
+    useCallback(() => {
+      let active = true;
+      void listCategories(db, i18n.language).then((list) => {
+        if (active) setCategories(list);
+      });
+      return () => {
+        active = false;
+      };
+    }, [db, i18n.language]),
+  );
 
   const durationOptions = useMemo(
     () => DURATIONS.map((value) => ({ value, label: t('setup.seconds', { count: value }) })),
     [t],
   );
 
-  const start = () => {
-    if (!categoryId) return;
-    // La durée choisie devient la durée par défaut (variante et durée mémorisées, UX.md §3).
-    updateSettings({ defaultDuration: duration });
-    prepare({ categoryId, durationMs: duration * 1000 });
-    router.push('/play/ready');
+  const start = async () => {
+    const category = categories.find((c) => c.id === categoryId);
+    if (!category) return;
+    setStarting(true);
+    try {
+      const [cards, recentlySeen] = await Promise.all([
+        getCategoryCards(db, category.id),
+        recentlySeenWords(db, category.id),
+      ]);
+      // La durée choisie devient la durée par défaut (variante et durée mémorisées, UX.md §3).
+      updateSettings({ defaultDuration: duration });
+      prepare({ category, cards, durationMs: duration * 1000, recentlySeen });
+      router.push('/play/ready');
+    } finally {
+      setStarting(false);
+    }
   };
 
   return (
@@ -52,9 +86,8 @@ export default function PlaySetupScreen() {
         {t('setup.category')}
       </Text>
       <View style={styles.grid}>
-        {testCategories.map((category, index) => {
+        {categories.map((category, index) => {
           const selected = category.id === categoryId;
-          const name = t(`testCategories.${category.nameKey}`);
           return (
             <Animated.View
               key={category.id}
@@ -63,21 +96,19 @@ export default function PlaySetupScreen() {
               accessibilityState={{ selected }}
             >
               <Card
-                accent={category.accent}
+                accent={category.color}
                 style={styles.card}
                 onPress={() => setCategoryId(category.id)}
-                accessibilityLabel={name}
+                accessibilityLabel={category.name}
               >
                 <View style={styles.cardTop}>
-                  <CategoryIcon name={category.icon} size={40} />
+                  <CategoryIcon emoji={category.emoji} size={40} />
                   {selected ? <Icon icon={CheckIcon} size={22} /> : null}
                 </View>
                 <Text variant="subheading" android_hyphenationFrequency="normal">
-                  {name}
+                  {category.name}
                 </Text>
-                <Text variant="labelSmall">
-                  {t('setup.words', { count: category.cards.length })}
-                </Text>
+                <Text variant="labelSmall">{t('setup.words', { count: category.wordCount })}</Text>
               </Card>
             </Animated.View>
           );
@@ -102,7 +133,14 @@ export default function PlaySetupScreen() {
         <Text muted>{t('variants.classic.instruction')}</Text>
       </View>
 
-      <Button label={t('setup.start')} size="lg" block disabled={!categoryId} onPress={start} />
+      <Button
+        label={t('setup.start')}
+        size="lg"
+        block
+        loading={starting}
+        disabled={!categories.some((c) => c.id === categoryId)}
+        onPress={() => void start()}
+      />
     </Screen>
   );
 }

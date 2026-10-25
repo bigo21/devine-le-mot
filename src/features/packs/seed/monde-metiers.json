@@ -1,0 +1,149 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-metiers",
+    "name": {
+      "fr": "Métiers",
+      "en": "Jobs"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "metiers",
+        "name": {
+          "fr": "Métiers",
+          "en": "Jobs"
+        },
+        "emoji": "👷",
+        "color": "plum",
+        "tags": ["universel"],
+        "words": [
+          {
+            "text": "Médecin",
+            "difficulty": 1,
+            "forbidden": ["malade", "hôpital", "soigner"]
+          },
+          {
+            "text": "Enseignant",
+            "difficulty": 1,
+            "forbidden": ["école", "élèves", "classe"]
+          },
+          {
+            "text": "Boulanger",
+            "difficulty": 1,
+            "forbidden": ["pain", "four", "baguette"]
+          },
+          {
+            "text": "Pompier",
+            "difficulty": 1,
+            "forbidden": ["feu", "camion", "éteindre"]
+          },
+          {
+            "text": "Policier",
+            "difficulty": 1,
+            "forbidden": ["voleur", "uniforme", "sifflet"]
+          },
+          {
+            "text": "Coiffeur",
+            "difficulty": 1,
+            "forbidden": ["cheveux", "ciseaux", "salon"]
+          },
+          {
+            "text": "Mécanicien",
+            "difficulty": 1,
+            "forbidden": ["voiture", "garage", "réparer"]
+          },
+          {
+            "text": "Chauffeur de taxi",
+            "difficulty": 1,
+            "forbidden": ["voiture", "client", "conduire"]
+          },
+          {
+            "text": "Couturier",
+            "difficulty": 1,
+            "forbidden": ["tissu", "aiguille", "habits"]
+          },
+          {
+            "text": "Agriculteur",
+            "difficulty": 1,
+            "forbidden": ["champ", "récolte", "planter"]
+          },
+          {
+            "text": "Pilote",
+            "difficulty": 1,
+            "forbidden": ["avion", "ciel", "voler"]
+          },
+          {
+            "text": "Cuisinier",
+            "difficulty": 1,
+            "forbidden": ["cuisine", "recette", "plats"]
+          },
+          {
+            "text": "Journaliste",
+            "difficulty": 1,
+            "forbidden": ["informations", "micro", "journal"]
+          },
+          {
+            "text": "Avocat",
+            "difficulty": 2,
+            "forbidden": ["tribunal", "juge", "défendre"]
+          },
+          {
+            "text": "Infirmier",
+            "difficulty": 1,
+            "forbidden": ["hôpital", "piqûre", "soins"]
+          },
+          {
+            "text": "Maçon",
+            "difficulty": 2,
+            "forbidden": ["briques", "ciment", "construire"]
+          },
+          {
+            "text": "Électricien",
+            "difficulty": 2,
+            "forbidden": ["courant", "fils", "ampoule"]
+          },
+          {
+            "text": "Photographe",
+            "difficulty": 1,
+            "forbidden": ["appareil", "photo", "flash"]
+          },
+          {
+            "text": "Footballeur",
+            "difficulty": 1,
+            "forbidden": ["ballon", "match", "but"]
+          },
+          {
+            "text": "Chanteur",
+            "difficulty": 1,
+            "forbidden": ["chanson", "micro", "voix"]
+          },
+          {
+            "text": "Pêcheur",
+            "difficulty": 1,
+            "forbidden": ["poisson", "filet", "pirogue"]
+          },
+          {
+            "text": "Vendeur",
+            "difficulty": 1,
+            "forbidden": ["marché", "vendre", "client"]
+          },
+          {
+            "text": "Architecte",
+            "difficulty": 2,
+            "forbidden": ["plans", "maison", "dessiner"]
+          },
+          {
+            "text": "Dentiste",
+            "difficulty": 1,
+            "forbidden": ["dents", "carie", "bouche"]
+          }
+        ]
+      }
+    ]
+  }
+}

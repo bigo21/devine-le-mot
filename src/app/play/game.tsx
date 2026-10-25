@@ -33,7 +33,6 @@ import {
   tick,
 } from '@/features/game/engine';
 import { useGameSession } from '@/features/game/session-store';
-import { findTestCategory } from '@/features/game/test-categories';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import { useTilt } from '@/features/game/use-tilt';
 import { useSettings } from '@/features/settings/store';
@@ -76,11 +75,11 @@ export default function PlayGameScreen() {
   const wordFont = useWordFont();
   const tapMode = useSettings((s) => s.tapMode);
   const round = useGameSession((s) => s.round);
-  const categoryId = useGameSession((s) => s.categoryId);
+  const category = useGameSession((s) => s.category);
+  const cards = useGameSession((s) => s.cards);
   const durationMs = useGameSession((s) => s.durationMs);
   const setRound = useGameSession((s) => s.setRound);
   const prepare = useGameSession((s) => s.prepare);
-  const category = findTestCategory(categoryId);
 
   const [phase, setPhase] = useState<Phase>('countdown');
   const [count, setCount] = useState<number | 'go'>(3);
@@ -319,8 +318,9 @@ export default function PlayGameScreen() {
   };
 
   const restartGame = () => {
-    if (!categoryId) return;
-    prepare({ categoryId, durationMs });
+    if (!category) return;
+    // Nouveau tirage sur les mêmes mots (les mots de la manche abandonnée passent en dernier).
+    prepare({ category, cards, durationMs });
     setDisplayed(null);
     setDanger(false);
     lastSecond.current = null;
@@ -356,8 +356,8 @@ export default function PlayGameScreen() {
 
   if (!round || !category) return null;
 
-  const background = colors[category.accent];
-  const foreground = onColor(category.accent);
+  const background = colors[category.color];
+  const foreground = onColor(category.color);
   const found = score(round);
 
   return (

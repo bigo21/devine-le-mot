@@ -15,3 +15,19 @@ export const categoryIcons = {
 };
 
 export type CategoryIconName = keyof typeof categoryIcons;
+
+/** Emoji (sans sélecteur de variante U+FE0F) → icône Fluent correspondante. */
+export const emojiIcons: Record<string, CategoryIconName> = {
+  '🦁': 'animaux',
+  '🎤': 'artistes-africains',
+  '⚽': 'footballeurs',
+  '👷': 'metiers',
+  '🧰': 'objets-du-quotidien',
+  '🍲': 'plats-camerounais',
+  '🌍': 'region-africa',
+  '✏': 'region-mine',
+  '🎉': 'region-party',
+  '🌐': 'region-world',
+  '😬': 'situations-genantes',
+  '🏅': 'sports',
+};

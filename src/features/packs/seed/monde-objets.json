@@ -1,0 +1,149 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-objets",
+    "name": {
+      "fr": "Objets du quotidien",
+      "en": "Everyday objects"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "objets-du-quotidien",
+        "name": {
+          "fr": "Objets du quotidien",
+          "en": "Everyday objects"
+        },
+        "emoji": "🧰",
+        "color": "slate",
+        "tags": ["universel"],
+        "words": [
+          {
+            "text": "Parapluie",
+            "difficulty": 1,
+            "forbidden": ["pluie", "ouvrir", "mouillé"]
+          },
+          {
+            "text": "Brosse à dents",
+            "difficulty": 1,
+            "forbidden": ["dents", "dentifrice", "matin"]
+          },
+          {
+            "text": "Téléphone",
+            "difficulty": 1,
+            "forbidden": ["appeler", "écran", "sonner"]
+          },
+          {
+            "text": "Lampe torche",
+            "difficulty": 1,
+            "forbidden": ["lumière", "piles", "nuit"]
+          },
+          {
+            "text": "Ventilateur",
+            "difficulty": 1,
+            "forbidden": ["air", "chaleur", "tourner"]
+          },
+          {
+            "text": "Marmite",
+            "difficulty": 1,
+            "forbidden": ["cuisiner", "feu", "couvercle"]
+          },
+          {
+            "text": "Réfrigérateur",
+            "difficulty": 1,
+            "forbidden": ["froid", "cuisine", "glace"]
+          },
+          {
+            "text": "Ciseaux",
+            "difficulty": 1,
+            "forbidden": ["couper", "papier", "lames"]
+          },
+          {
+            "text": "Clé",
+            "difficulty": 1,
+            "forbidden": ["porte", "serrure", "ouvrir"]
+          },
+          {
+            "text": "Miroir",
+            "difficulty": 1,
+            "forbidden": ["reflet", "visage", "regarder"]
+          },
+          {
+            "text": "Oreiller",
+            "difficulty": 1,
+            "forbidden": ["lit", "tête", "dormir"]
+          },
+          {
+            "text": "Moustiquaire",
+            "difficulty": 2,
+            "forbidden": ["moustiques", "lit", "filet"]
+          },
+          {
+            "text": "Seau",
+            "difficulty": 1,
+            "forbidden": ["eau", "porter", "anse"]
+          },
+          {
+            "text": "Balai",
+            "difficulty": 1,
+            "forbidden": ["balayer", "sol", "poussière"]
+          },
+          {
+            "text": "Fer à repasser",
+            "difficulty": 2,
+            "forbidden": ["vêtements", "plis", "chaud"]
+          },
+          {
+            "text": "Télécommande",
+            "difficulty": 1,
+            "forbidden": ["télévision", "boutons", "chaîne"]
+          },
+          {
+            "text": "Montre",
+            "difficulty": 1,
+            "forbidden": ["heure", "poignet", "temps"]
+          },
+          {
+            "text": "Lunettes",
+            "difficulty": 1,
+            "forbidden": ["yeux", "voir", "verres"]
+          },
+          {
+            "text": "Sac à dos",
+            "difficulty": 1,
+            "forbidden": ["épaules", "école", "porter"]
+          },
+          {
+            "text": "Bougie",
+            "difficulty": 1,
+            "forbidden": ["flamme", "cire", "lumière"]
+          },
+          {
+            "text": "Chaise",
+            "difficulty": 1,
+            "forbidden": ["s'asseoir", "pieds", "table"]
+          },
+          {
+            "text": "Peigne",
+            "difficulty": 1,
+            "forbidden": ["cheveux", "coiffer", "dents"]
+          },
+          {
+            "text": "Savon",
+            "difficulty": 1,
+            "forbidden": ["laver", "mousse", "mains"]
+          },
+          {
+            "text": "Allumettes",
+            "difficulty": 1,
+            "forbidden": ["feu", "boîte", "frotter"]
+          }
+        ]
+      }
+    ]
+  }
+}

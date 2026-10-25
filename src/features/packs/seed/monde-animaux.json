@@ -1,0 +1,149 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-animaux",
+    "name": {
+      "fr": "Animaux",
+      "en": "Animals"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "animaux",
+        "name": {
+          "fr": "Animaux",
+          "en": "Animals"
+        },
+        "emoji": "🦁",
+        "color": "lagoon",
+        "tags": ["universel"],
+        "words": [
+          {
+            "text": "Lion",
+            "difficulty": 1,
+            "forbidden": ["crinière", "roi", "savane"]
+          },
+          {
+            "text": "Éléphant",
+            "difficulty": 1,
+            "forbidden": ["trompe", "défenses", "oreilles"]
+          },
+          {
+            "text": "Girafe",
+            "difficulty": 1,
+            "forbidden": ["cou", "taches", "grande"]
+          },
+          {
+            "text": "Crocodile",
+            "difficulty": 1,
+            "forbidden": ["rivière", "dents", "reptile"]
+          },
+          {
+            "text": "Gorille",
+            "difficulty": 1,
+            "forbidden": ["singe", "forêt", "poitrine"]
+          },
+          {
+            "text": "Chimpanzé",
+            "difficulty": 2,
+            "forbidden": ["singe", "banane", "primate"]
+          },
+          {
+            "text": "Hippopotame",
+            "difficulty": 1,
+            "forbidden": ["eau", "gros", "bouche"]
+          },
+          {
+            "text": "Zèbre",
+            "difficulty": 1,
+            "forbidden": ["rayures", "cheval", "noir et blanc"]
+          },
+          {
+            "text": "Panthère",
+            "difficulty": 2,
+            "forbidden": ["félin", "taches", "chasse"]
+          },
+          {
+            "text": "Perroquet",
+            "difficulty": 1,
+            "forbidden": ["oiseau", "parler", "plumes"]
+          },
+          {
+            "text": "Serpent",
+            "difficulty": 1,
+            "forbidden": ["ramper", "venin", "siffler"]
+          },
+          {
+            "text": "Tortue",
+            "difficulty": 1,
+            "forbidden": ["carapace", "lenteur", "œufs"]
+          },
+          {
+            "text": "Hérisson",
+            "difficulty": 2,
+            "forbidden": ["piquants", "petit", "boule"]
+          },
+          {
+            "text": "Chameau",
+            "difficulty": 1,
+            "forbidden": ["désert", "bosse", "sable"]
+          },
+          {
+            "text": "Pingouin",
+            "difficulty": 1,
+            "forbidden": ["glace", "froid", "oiseau"]
+          },
+          {
+            "text": "Requin",
+            "difficulty": 1,
+            "forbidden": ["mer", "dents", "nageoire"]
+          },
+          {
+            "text": "Dauphin",
+            "difficulty": 1,
+            "forbidden": ["mer", "intelligent", "sauter"]
+          },
+          {
+            "text": "Abeille",
+            "difficulty": 1,
+            "forbidden": ["miel", "piquer", "ruche"]
+          },
+          {
+            "text": "Papillon",
+            "difficulty": 1,
+            "forbidden": ["ailes", "chenille", "fleur"]
+          },
+          {
+            "text": "Coq",
+            "difficulty": 1,
+            "forbidden": ["matin", "chanter", "poule"]
+          },
+          {
+            "text": "Chèvre",
+            "difficulty": 1,
+            "forbidden": ["lait", "cornes", "bêler"]
+          },
+          {
+            "text": "Mouton",
+            "difficulty": 1,
+            "forbidden": ["laine", "bêler", "troupeau"]
+          },
+          {
+            "text": "Chat",
+            "difficulty": 1,
+            "forbidden": ["miauler", "souris", "moustaches"]
+          },
+          {
+            "text": "Chien",
+            "difficulty": 1,
+            "forbidden": ["aboyer", "os", "fidèle"]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,32 +1,43 @@
 import { create } from 'zustand';
 
-import { type Random, type RoundState, createRound } from './engine';
-import { findTestCategory } from './test-categories';
+import type { CategorySummary } from '@/features/packs/repository';
+
+import { type Card, createRound, type Random, type RoundState } from './engine';
 
 /** Partie en cours, partagée entre les écrans du parcours (non persistée). */
 type GameSession = {
-  categoryId: string | null;
+  category: CategorySummary | null;
+  cards: readonly Card[];
   durationMs: number;
   round: RoundState | null;
-  /** Prépare une nouvelle manche (mots différents grâce au tirage). */
-  prepare: (options: { categoryId: string; durationMs: number; random?: Random }) => void;
+  /** La manche terminée a-t-elle été enregistrée (historique, mots vus) ? */
+  recorded: boolean;
+  /** Prépare une manche (mots non vus récemment d'abord). */
+  prepare: (options: {
+    category: CategorySummary;
+    cards: readonly Card[];
+    durationMs: number;
+    recentlySeen?: ReadonlySet<number>;
+    random?: Random;
+  }) => void;
   setRound: (round: RoundState) => void;
-  clear: () => void;
+  markRecorded: () => void;
 };
 
 export const useGameSession = create<GameSession>()((set) => ({
-  categoryId: null,
+  category: null,
+  cards: [],
   durationMs: 60_000,
   round: null,
-  prepare: ({ categoryId, durationMs, random = Math.random }) => {
-    const category = findTestCategory(categoryId);
-    if (!category) return;
+  recorded: false,
+  prepare: ({ category, cards, durationMs, recentlySeen, random = Math.random }) =>
     set({
-      categoryId,
+      category,
+      cards,
       durationMs,
-      round: createRound({ cards: category.cards, durationMs, random }),
-    });
-  },
+      recorded: false,
+      round: createRound({ cards, durationMs, recentlySeen, random }),
+    }),
   setRound: (round) => set({ round }),
-  clear: () => set({ round: null }),
+  markRecorded: () => set({ recorded: true }),
 }));
