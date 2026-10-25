@@ -1,0 +1,1204 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-artistes",
+    "name": {
+      "fr": "Artistes africains",
+      "en": "African artists"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "artistes",
+        "name": {
+          "fr": "Artistes africains",
+          "en": "African artists"
+        },
+        "emoji": "🎶",
+        "color": "orchid",
+        "tags": [
+          "personnalites",
+          "musique"
+        ],
+        "words": [
+          {
+            "text": "Fela Kuti",
+            "difficulty": 1,
+            "forbidden": [
+              "afrobeat",
+              "Nigeria",
+              "saxophone"
+            ]
+          },
+          {
+            "text": "Burna Boy",
+            "difficulty": 1,
+            "forbidden": [
+              "afrobeats",
+              "Nigeria",
+              "Grammy"
+            ]
+          },
+          {
+            "text": "Wizkid",
+            "difficulty": 1,
+            "forbidden": [
+              "afrobeats",
+              "Nigeria",
+              "Essence"
+            ]
+          },
+          {
+            "text": "Davido",
+            "difficulty": 1,
+            "forbidden": [
+              "afrobeats",
+              "Nigeria",
+              "Fall"
+            ]
+          },
+          {
+            "text": "Tiwa Savage",
+            "difficulty": 2,
+            "forbidden": [
+              "afrobeats",
+              "Nigeria",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Yemi Alade",
+            "difficulty": 1,
+            "forbidden": [
+              "Johnny",
+              "Nigeria",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Rema",
+            "difficulty": 1,
+            "forbidden": [
+              "Calm Down",
+              "Nigeria",
+              "afrobeats"
+            ]
+          },
+          {
+            "text": "Tems",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "chanteuse",
+              "Grammy"
+            ]
+          },
+          {
+            "text": "Asake",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "afrobeats",
+              "amapiano"
+            ]
+          },
+          {
+            "text": "Ayra Starr",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "chanteuse",
+              "Rush"
+            ]
+          },
+          {
+            "text": "CKay",
+            "difficulty": 2,
+            "forbidden": [
+              "Love Nwantiti",
+              "Nigeria",
+              "TikTok"
+            ]
+          },
+          {
+            "text": "P-Square",
+            "difficulty": 1,
+            "forbidden": [
+              "jumeaux",
+              "Nigeria",
+              "duo"
+            ]
+          },
+          {
+            "text": "2Baba",
+            "difficulty": 2,
+            "forbidden": [
+              "African Queen",
+              "Nigeria",
+              "2Face"
+            ]
+          },
+          {
+            "text": "D'banj",
+            "difficulty": 2,
+            "forbidden": [
+              "Oliver Twist",
+              "Nigeria",
+              "Koko Master"
+            ]
+          },
+          {
+            "text": "Mr Eazi",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Ghana",
+              "banku music"
+            ]
+          },
+          {
+            "text": "Olamide",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "rap",
+              "yoruba"
+            ]
+          },
+          {
+            "text": "Kizz Daniel",
+            "difficulty": 2,
+            "forbidden": [
+              "Buga",
+              "Nigeria",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Flavour",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "highlife",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Patoranking",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "reggae",
+              "dancehall"
+            ]
+          },
+          {
+            "text": "Femi Kuti",
+            "difficulty": 2,
+            "forbidden": [
+              "Fela",
+              "afrobeat",
+              "fils"
+            ]
+          },
+          {
+            "text": "King Sunny Adé",
+            "difficulty": 3,
+            "forbidden": [
+              "jùjú",
+              "Nigeria",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Angélique Kidjo",
+            "difficulty": 1,
+            "forbidden": [
+              "Bénin",
+              "Grammy",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Youssou N'Dour",
+            "difficulty": 1,
+            "forbidden": [
+              "Sénégal",
+              "mbalax",
+              "7 Seconds"
+            ]
+          },
+          {
+            "text": "Salif Keita",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "voix d'or",
+              "albinos"
+            ]
+          },
+          {
+            "text": "Oumou Sangaré",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "Wassoulou",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Amadou et Mariam",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "duo",
+              "aveugles"
+            ]
+          },
+          {
+            "text": "Ali Farka Touré",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "guitare",
+              "blues"
+            ]
+          },
+          {
+            "text": "Toumani Diabaté",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "kora",
+              "virtuose"
+            ]
+          },
+          {
+            "text": "Sidiki Diabaté",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "kora",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Miriam Makeba",
+            "difficulty": 1,
+            "forbidden": [
+              "Mama Africa",
+              "Afrique du Sud",
+              "Pata Pata"
+            ]
+          },
+          {
+            "text": "Hugh Masekela",
+            "difficulty": 3,
+            "forbidden": [
+              "trompette",
+              "Afrique du Sud",
+              "jazz"
+            ]
+          },
+          {
+            "text": "Lucky Dube",
+            "difficulty": 2,
+            "forbidden": [
+              "reggae",
+              "Afrique du Sud",
+              "Prisoner"
+            ]
+          },
+          {
+            "text": "Ladysmith Black Mambazo",
+            "difficulty": 3,
+            "forbidden": [
+              "chœur",
+              "Afrique du Sud",
+              "a cappella"
+            ]
+          },
+          {
+            "text": "Black Coffee",
+            "difficulty": 2,
+            "forbidden": [
+              "DJ",
+              "Afrique du Sud",
+              "house"
+            ]
+          },
+          {
+            "text": "Master KG",
+            "difficulty": 2,
+            "forbidden": [
+              "Jerusalema",
+              "Afrique du Sud",
+              "danse"
+            ]
+          },
+          {
+            "text": "Brenda Fassie",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "chanteuse",
+              "Weekend Special"
+            ]
+          },
+          {
+            "text": "Yvonne Chaka Chaka",
+            "difficulty": 2,
+            "forbidden": [
+              "Umqombothi",
+              "Afrique du Sud",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Nasty C",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "rappeur",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Papa Wemba",
+            "difficulty": 1,
+            "forbidden": [
+              "rumba",
+              "RDC",
+              "sapeur"
+            ]
+          },
+          {
+            "text": "Koffi Olomidé",
+            "difficulty": 1,
+            "forbidden": [
+              "rumba",
+              "RDC",
+              "Mopao"
+            ]
+          },
+          {
+            "text": "Fally Ipupa",
+            "difficulty": 1,
+            "forbidden": [
+              "rumba",
+              "RDC",
+              "Eloko Oyo"
+            ]
+          },
+          {
+            "text": "Werrason",
+            "difficulty": 2,
+            "forbidden": [
+              "Wenge Musica",
+              "RDC",
+              "roi de la forêt"
+            ]
+          },
+          {
+            "text": "JB Mpiana",
+            "difficulty": 2,
+            "forbidden": [
+              "Wenge Musica",
+              "RDC",
+              "Souverain"
+            ]
+          },
+          {
+            "text": "Ferre Gola",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "rumba",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Franco Luambo",
+            "difficulty": 2,
+            "forbidden": [
+              "OK Jazz",
+              "RDC",
+              "rumba"
+            ]
+          },
+          {
+            "text": "Tabu Ley Rochereau",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "rumba",
+              "Seigneur"
+            ]
+          },
+          {
+            "text": "Awilo Longomba",
+            "difficulty": 2,
+            "forbidden": [
+              "Coupé bibamba",
+              "RDC",
+              "ndombolo"
+            ]
+          },
+          {
+            "text": "Innoss'B",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "Yo Pe",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Alpha Blondy",
+            "difficulty": 1,
+            "forbidden": [
+              "reggae",
+              "Côte d'Ivoire",
+              "Jerusalem"
+            ]
+          },
+          {
+            "text": "Tiken Jah Fakoly",
+            "difficulty": 1,
+            "forbidden": [
+              "reggae",
+              "Côte d'Ivoire",
+              "engagé"
+            ]
+          },
+          {
+            "text": "Magic System",
+            "difficulty": 1,
+            "forbidden": [
+              "Premier Gaou",
+              "Côte d'Ivoire",
+              "zouglou"
+            ]
+          },
+          {
+            "text": "DJ Arafat",
+            "difficulty": 1,
+            "forbidden": [
+              "coupé-décalé",
+              "Côte d'Ivoire",
+              "Yorobo"
+            ]
+          },
+          {
+            "text": "Serge Beynaud",
+            "difficulty": 2,
+            "forbidden": [
+              "coupé-décalé",
+              "Côte d'Ivoire",
+              "danse"
+            ]
+          },
+          {
+            "text": "Debordo Leekunfa",
+            "difficulty": 3,
+            "forbidden": [
+              "coupé-décalé",
+              "Côte d'Ivoire",
+              "danse"
+            ]
+          },
+          {
+            "text": "Josey",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "chanteuse",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Didi B",
+            "difficulty": 2,
+            "forbidden": [
+              "Kiff No Beat",
+              "Côte d'Ivoire",
+              "rappeur"
+            ]
+          },
+          {
+            "text": "Suspect 95",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "rappeur",
+              "rap ivoire"
+            ]
+          },
+          {
+            "text": "Kiff No Beat",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "rap",
+              "groupe"
+            ]
+          },
+          {
+            "text": "Bebi Philip",
+            "difficulty": 3,
+            "forbidden": [
+              "coupé-décalé",
+              "Côte d'Ivoire",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Ariel Sheney",
+            "difficulty": 3,
+            "forbidden": [
+              "coupé-décalé",
+              "Côte d'Ivoire",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Diamond Platnumz",
+            "difficulty": 1,
+            "forbidden": [
+              "bongo flava",
+              "Tanzanie",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Ali Kiba",
+            "difficulty": 3,
+            "forbidden": [
+              "Tanzanie",
+              "bongo flava",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Harmonize",
+            "difficulty": 3,
+            "forbidden": [
+              "Tanzanie",
+              "bongo flava",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Zuchu",
+            "difficulty": 3,
+            "forbidden": [
+              "Tanzanie",
+              "chanteuse",
+              "bongo flava"
+            ]
+          },
+          {
+            "text": "Sauti Sol",
+            "difficulty": 2,
+            "forbidden": [
+              "Kenya",
+              "groupe",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Eddy Kenzo",
+            "difficulty": 2,
+            "forbidden": [
+              "Ouganda",
+              "Sitya Loss",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Bobi Wine",
+            "difficulty": 2,
+            "forbidden": [
+              "Ouganda",
+              "chanteur",
+              "politique"
+            ]
+          },
+          {
+            "text": "Khaled",
+            "difficulty": 1,
+            "forbidden": [
+              "raï",
+              "Algérie",
+              "Aïcha"
+            ]
+          },
+          {
+            "text": "Cheb Mami",
+            "difficulty": 2,
+            "forbidden": [
+              "raï",
+              "Algérie",
+              "prince"
+            ]
+          },
+          {
+            "text": "Soolking",
+            "difficulty": 1,
+            "forbidden": [
+              "Algérie",
+              "Liberté",
+              "rappeur"
+            ]
+          },
+          {
+            "text": "Saad Lamjarred",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "Lm3allem",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Amr Diab",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "Habibi",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Oum Kalthoum",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "chanteuse",
+              "légende"
+            ]
+          },
+          {
+            "text": "Wally Seck",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "mbalax",
+              "Thione"
+            ]
+          },
+          {
+            "text": "Viviane Chidid",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "mbalax",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Baaba Maal",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "Podor",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Ismaël Lô",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "harmonica",
+              "Tajabone"
+            ]
+          },
+          {
+            "text": "Akon",
+            "difficulty": 1,
+            "forbidden": [
+              "Sénégal",
+              "Smack That",
+              "Lonely"
+            ]
+          },
+          {
+            "text": "Sarkodie",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "rap",
+              "twi"
+            ]
+          },
+          {
+            "text": "Shatta Wale",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "dancehall",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Stonebwoy",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "dancehall",
+              "reggae"
+            ]
+          },
+          {
+            "text": "Black Sherif",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Kwaku the Traveller",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Sona Jobarteh",
+            "difficulty": 3,
+            "forbidden": [
+              "Gambie",
+              "kora",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Fanicko",
+            "difficulty": 3,
+            "forbidden": [
+              "Bénin",
+              "chanteur",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Toofan",
+            "difficulty": 2,
+            "forbidden": [
+              "Togo",
+              "duo",
+              "Gweta"
+            ]
+          },
+          {
+            "text": "Safarel Obiang",
+            "difficulty": 3,
+            "forbidden": [
+              "Gabon",
+              "chanteur",
+              "danse"
+            ]
+          },
+          {
+            "text": "Shan'L",
+            "difficulty": 3,
+            "forbidden": [
+              "Gabon",
+              "chanteuse",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Cesária Évora",
+            "difficulty": 2,
+            "forbidden": [
+              "Cap-Vert",
+              "pieds nus",
+              "morna"
+            ]
+          },
+          {
+            "text": "Mory Kanté",
+            "difficulty": 2,
+            "forbidden": [
+              "Guinée",
+              "Yéké yéké",
+              "kora"
+            ]
+          },
+          {
+            "text": "Simi",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "chanteuse",
+              "Adekunle Gold"
+            ]
+          },
+          {
+            "text": "Adekunle Gold",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "chanteur",
+              "Simi"
+            ]
+          },
+          {
+            "text": "Omah Lay",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "afrobeats",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Fireboy DML",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Peru",
+              "afrobeats"
+            ]
+          },
+          {
+            "text": "Joeboy",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Baby",
+              "afrobeats"
+            ]
+          },
+          {
+            "text": "Teni",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "chanteuse",
+              "Case"
+            ]
+          },
+          {
+            "text": "Phyno",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "rap",
+              "igbo"
+            ]
+          },
+          {
+            "text": "Wande Coal",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Mavin",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Don Jazzy",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "producteur",
+              "Mavin"
+            ]
+          },
+          {
+            "text": "Timaya",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "dancehall",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Seun Kuti",
+            "difficulty": 3,
+            "forbidden": [
+              "Fela",
+              "afrobeat",
+              "Egypt 80"
+            ]
+          },
+          {
+            "text": "KiDi",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "Touch It",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "King Promise",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "chanteur",
+              "afrobeats"
+            ]
+          },
+          {
+            "text": "Kuami Eugene",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "chanteur",
+              "highlife"
+            ]
+          },
+          {
+            "text": "Héritier Watanabe",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "rumba",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Lokua Kanza",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "guitare",
+              "voix douce"
+            ]
+          },
+          {
+            "text": "Mbilia Bel",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "rumba",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Tshala Muana",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "mutuashi",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Pépé Kallé",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "rumba",
+              "géant"
+            ]
+          },
+          {
+            "text": "Meiway",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "zoblazo",
+              "mouchoir blanc"
+            ]
+          },
+          {
+            "text": "Aïcha Koné",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "chanteuse",
+              "Mandingue"
+            ]
+          },
+          {
+            "text": "Ernesto Djédjé",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "ziglibithy",
+              "légende"
+            ]
+          },
+          {
+            "text": "Douk Saga",
+            "difficulty": 2,
+            "forbidden": [
+              "coupé-décalé",
+              "Jet Set",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Coumba Gawlo",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "chanteuse",
+              "Pata Pata"
+            ]
+          },
+          {
+            "text": "Fatoumata Diawara",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "chanteuse",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Habib Koité",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "guitare",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Rokia Traoré",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "chanteuse",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Tinariwen",
+            "difficulty": 3,
+            "forbidden": [
+              "Touaregs",
+              "Mali",
+              "blues du désert"
+            ]
+          },
+          {
+            "text": "Bombino",
+            "difficulty": 3,
+            "forbidden": [
+              "Niger",
+              "Touareg",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Tyla",
+            "difficulty": 1,
+            "forbidden": [
+              "Afrique du Sud",
+              "Water",
+              "Grammy"
+            ]
+          },
+          {
+            "text": "Kabza De Small",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "amapiano",
+              "DJ"
+            ]
+          },
+          {
+            "text": "Zahara",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "guitare",
+              "Loliwe"
+            ]
+          },
+          {
+            "text": "Cheb Hasni",
+            "difficulty": 2,
+            "forbidden": [
+              "raï",
+              "Algérie",
+              "sentimental"
+            ]
+          },
+          {
+            "text": "Rachid Taha",
+            "difficulty": 3,
+            "forbidden": [
+              "Ya Rayah",
+              "Algérie",
+              "rock"
+            ]
+          },
+          {
+            "text": "Souad Massi",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "guitare",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "King Mensah",
+            "difficulty": 3,
+            "forbidden": [
+              "Togo",
+              "chanteur",
+              "roi"
+            ]
+          },
+          {
+            "text": "Oliver Mtukudzi",
+            "difficulty": 3,
+            "forbidden": [
+              "Zimbabwe",
+              "Tuku",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Bonga",
+            "difficulty": 3,
+            "forbidden": [
+              "Angola",
+              "semba",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Orchestra Baobab",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "salsa",
+              "orchestre"
+            ]
+          },
+          {
+            "text": "Daara J",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "rap",
+              "groupe"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

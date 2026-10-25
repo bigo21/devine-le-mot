@@ -43,3 +43,7 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/villes-quartiers.webp | Microsoft Fluent Emoji 3D « cityscape » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/expressions.webp | Microsoft Fluent Emoji 3D « speech balloon » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/musique.webp | Microsoft Fluent Emoji 3D « drum » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/notes-musique.webp | Microsoft Fluent Emoji 3D « musical notes » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/plats-africains.webp | Microsoft Fluent Emoji 3D « curry rice » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/trophee.webp | Microsoft Fluent Emoji 3D « trophy » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/parchemin.webp | Microsoft Fluent Emoji 3D « scroll » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |

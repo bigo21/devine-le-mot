@@ -1,0 +1,1267 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-footballeurs",
+    "name": {
+      "fr": "Footballeurs africains",
+      "en": "African footballers"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "footballeurs",
+        "name": {
+          "fr": "Footballeurs africains",
+          "en": "African footballers"
+        },
+        "emoji": "🏆",
+        "color": "indigo",
+        "tags": [
+          "personnalites",
+          "sport"
+        ],
+        "words": [
+          {
+            "text": "Didier Drogba",
+            "difficulty": 1,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Chelsea",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Yaya Touré",
+            "difficulty": 1,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Manchester City",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Kolo Touré",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Arsenal",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Sadio Mané",
+            "difficulty": 1,
+            "forbidden": [
+              "Sénégal",
+              "Liverpool",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Mohamed Salah",
+            "difficulty": 1,
+            "forbidden": [
+              "Égypte",
+              "Liverpool",
+              "pharaon"
+            ]
+          },
+          {
+            "text": "Riyad Mahrez",
+            "difficulty": 1,
+            "forbidden": [
+              "Algérie",
+              "Manchester City",
+              "ailier"
+            ]
+          },
+          {
+            "text": "George Weah",
+            "difficulty": 1,
+            "forbidden": [
+              "Liberia",
+              "Ballon d'or",
+              "président"
+            ]
+          },
+          {
+            "text": "Abedi Pelé",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Marseille",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Jay-Jay Okocha",
+            "difficulty": 1,
+            "forbidden": [
+              "Nigeria",
+              "dribbleur",
+              "PSG"
+            ]
+          },
+          {
+            "text": "Nwankwo Kanu",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Arsenal",
+              "JO 1996"
+            ]
+          },
+          {
+            "text": "Michael Essien",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Chelsea",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Asamoah Gyan",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "attaquant",
+              "buteur"
+            ]
+          },
+          {
+            "text": "Sulley Muntari",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "Inter",
+              "milieu"
+            ]
+          },
+          {
+            "text": "El Hadji Diouf",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "2002",
+              "Liverpool"
+            ]
+          },
+          {
+            "text": "Kalidou Koulibaly",
+            "difficulty": 1,
+            "forbidden": [
+              "Sénégal",
+              "Naples",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Édouard Mendy",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "gardien",
+              "Chelsea"
+            ]
+          },
+          {
+            "text": "Achraf Hakimi",
+            "difficulty": 1,
+            "forbidden": [
+              "Maroc",
+              "PSG",
+              "latéral"
+            ]
+          },
+          {
+            "text": "Hakim Ziyech",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "Chelsea",
+              "gaucher"
+            ]
+          },
+          {
+            "text": "Yassine Bounou",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "gardien",
+              "Bono"
+            ]
+          },
+          {
+            "text": "Sofiane Boufal",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "dribbleur",
+              "Angers"
+            ]
+          },
+          {
+            "text": "Youssef En-Nesyri",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "Séville",
+              "tête"
+            ]
+          },
+          {
+            "text": "Victor Osimhen",
+            "difficulty": 1,
+            "forbidden": [
+              "Nigeria",
+              "Naples",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Ademola Lookman",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Atalanta",
+              "Ballon d'or africain"
+            ]
+          },
+          {
+            "text": "Wilfred Ndidi",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Leicester",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Alex Iwobi",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Arsenal",
+              "Okocha"
+            ]
+          },
+          {
+            "text": "Vincent Enyeama",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "gardien",
+              "Lille"
+            ]
+          },
+          {
+            "text": "Mikel John Obi",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Chelsea",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Emmanuel Adebayor",
+            "difficulty": 1,
+            "forbidden": [
+              "Togo",
+              "Arsenal",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Frédéric Kanouté",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "Séville",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Seydou Keita",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "Barcelone",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Mahamadou Diarra",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "Real Madrid",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Salomon Kalou",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Chelsea",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Gervinho",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Arsenal",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Wilfried Zaha",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Crystal Palace",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Sébastien Haller",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "finale CAN 2023",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Franck Kessié",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Milan",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Serge Aurier",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "latéral",
+              "PSG"
+            ]
+          },
+          {
+            "text": "Nicolas Pépé",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Arsenal",
+              "Lille"
+            ]
+          },
+          {
+            "text": "Seko Fofana",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Lens",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Pierre-Emerick Aubameyang",
+            "difficulty": 1,
+            "forbidden": [
+              "Gabon",
+              "Arsenal",
+              "Dortmund"
+            ]
+          },
+          {
+            "text": "Mohamed Aboutrika",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "Al Ahly",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Ahmed Hassan",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "capitaine",
+              "records"
+            ]
+          },
+          {
+            "text": "Essam El-Hadary",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "gardien",
+              "45 ans"
+            ]
+          },
+          {
+            "text": "Hossam Hassan",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "attaquant",
+              "jumeau"
+            ]
+          },
+          {
+            "text": "Mohamed Elneny",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "Arsenal",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Omar Marmoush",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "Manchester City",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Naby Keïta",
+            "difficulty": 2,
+            "forbidden": [
+              "Guinée",
+              "Liverpool",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Serhou Guirassy",
+            "difficulty": 2,
+            "forbidden": [
+              "Guinée",
+              "Dortmund",
+              "buteur"
+            ]
+          },
+          {
+            "text": "Ismaïla Sarr",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "Watford",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Idrissa Gueye",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "Everton",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Nicolas Jackson",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "Chelsea",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Pape Matar Sarr",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "Tottenham",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Aliou Cissé",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "sélectionneur",
+              "CAN 2021"
+            ]
+          },
+          {
+            "text": "Benni McCarthy",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "Porto",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Lucas Radebe",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "Leeds",
+              "capitaine"
+            ]
+          },
+          {
+            "text": "Steven Pienaar",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "Everton",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Rabah Madjer",
+            "difficulty": 2,
+            "forbidden": [
+              "Algérie",
+              "Porto",
+              "talonnade"
+            ]
+          },
+          {
+            "text": "Lakhdar Belloumi",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "1982",
+              "meneur"
+            ]
+          },
+          {
+            "text": "Islam Slimani",
+            "difficulty": 2,
+            "forbidden": [
+              "Algérie",
+              "Sporting",
+              "buteur"
+            ]
+          },
+          {
+            "text": "Ismaël Bennacer",
+            "difficulty": 2,
+            "forbidden": [
+              "Algérie",
+              "Milan",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Wahbi Khazri",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "Saint-Étienne",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Youssef Msakni",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "Qatar",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Obafemi Martins",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Inter",
+              "salto"
+            ]
+          },
+          {
+            "text": "Yakubu",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Everton",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Daniel Amokachi",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Everton",
+              "1994"
+            ]
+          },
+          {
+            "text": "Rashidi Yekini",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "1994",
+              "filets"
+            ]
+          },
+          {
+            "text": "Finidi George",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Ajax",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Sunday Oliseh",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "1996",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Taribo West",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Inter",
+              "tresses"
+            ]
+          },
+          {
+            "text": "Kevin-Prince Boateng",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Milan",
+              "milieu"
+            ]
+          },
+          {
+            "text": "André Ayew",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Marseille",
+              "Abedi Pelé"
+            ]
+          },
+          {
+            "text": "Jordan Ayew",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "Crystal Palace",
+              "Abedi Pelé"
+            ]
+          },
+          {
+            "text": "Thomas Partey",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Arsenal",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Mohammed Kudus",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "West Ham",
+              "Ajax"
+            ]
+          },
+          {
+            "text": "Tony Yeboah",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "Leeds",
+              "frappes"
+            ]
+          },
+          {
+            "text": "Emmanuel Amunike",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "1996",
+              "Barcelone"
+            ]
+          },
+          {
+            "text": "Walid Regragui",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "sélectionneur",
+              "Coupe du monde 2022"
+            ]
+          },
+          {
+            "text": "Kalusha Bwalya",
+            "difficulty": 3,
+            "forbidden": [
+              "Zambie",
+              "capitaine",
+              "légende"
+            ]
+          },
+          {
+            "text": "Christopher Katongo",
+            "difficulty": 3,
+            "forbidden": [
+              "Zambie",
+              "CAN 2012",
+              "capitaine"
+            ]
+          },
+          {
+            "text": "Patson Daka",
+            "difficulty": 3,
+            "forbidden": [
+              "Zambie",
+              "Leicester",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Peter Ndlovu",
+            "difficulty": 3,
+            "forbidden": [
+              "Zimbabwe",
+              "Coventry",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Mbwana Samatta",
+            "difficulty": 3,
+            "forbidden": [
+              "Tanzanie",
+              "Aston Villa",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Victor Wanyama",
+            "difficulty": 3,
+            "forbidden": [
+              "Kenya",
+              "Tottenham",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Bertrand Traoré",
+            "difficulty": 3,
+            "forbidden": [
+              "Burkina Faso",
+              "Lyon",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Jonathan Pitroipa",
+            "difficulty": 3,
+            "forbidden": [
+              "Burkina Faso",
+              "Rennes",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Brahim Díaz",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "Real Madrid",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Amad Diallo",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Manchester United",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Wilfried Bony",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Swansea",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Max Gradel",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Saint-Étienne",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Jean-Michaël Seri",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Nice",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Simon Adingra",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "CAN 2023",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Eric Bailly",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Manchester United",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Cheick Tioté",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Newcastle",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Papiss Cissé",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "Newcastle",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Demba Ba",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "Chelsea",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Mamadou Niang",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "Marseille",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Khalilou Fadiga",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "2002",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Henri Camara",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "2002",
+              "Suède"
+            ]
+          },
+          {
+            "text": "Cheikhou Kouyaté",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "West Ham",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Iliman Ndiaye",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "Everton",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Yves Bissouma",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "Tottenham",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Amadou Haidara",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "Leipzig",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Pascal Feindouno",
+            "difficulty": 3,
+            "forbidden": [
+              "Guinée",
+              "Saint-Étienne",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Ahmed Musa",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "capitaine",
+              "Leicester"
+            ]
+          },
+          {
+            "text": "Samuel Chukwueze",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Villarreal",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Kelechi Iheanacho",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Leicester",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Odion Ighalo",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Manchester United",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Victor Moses",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Chelsea",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Joseph Yobo",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Everton",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Iñaki Williams",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Bilbao",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Stephen Appiah",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "Juventus",
+              "capitaine"
+            ]
+          },
+          {
+            "text": "Samuel Kuffour",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Bayern",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Antoine Semenyo",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghana",
+              "Bournemouth",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Mido",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "Ajax",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Mahmoud Trézéguet",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "Aston Villa",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Noussair Mazraoui",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "Bayern",
+              "latéral"
+            ]
+          },
+          {
+            "text": "Sofyan Amrabat",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "Fiorentina",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Mehdi Benatia",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "Juventus",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Mustapha Hadji",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "Coventry",
+              "Ballon d'or africain"
+            ]
+          },
+          {
+            "text": "Nayef Aguerd",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "West Ham",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Azzedine Ounahi",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "Marseille",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Sofiane Feghouli",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "Valence",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Yacine Brahimi",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "Porto",
+              "dribbleur"
+            ]
+          },
+          {
+            "text": "Baghdad Bounedjah",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "CAN 2019",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Raïs M'Bolhi",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "gardien",
+              "2014"
+            ]
+          },
+          {
+            "text": "Ellyes Skhiri",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "Francfort",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Hannibal Mejbri",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "Manchester United",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Denis Bouanga",
+            "difficulty": 3,
+            "forbidden": [
+              "Gabon",
+              "Los Angeles",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Mario Lemina",
+            "difficulty": 3,
+            "forbidden": [
+              "Gabon",
+              "Southampton",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Edmond Tapsoba",
+            "difficulty": 3,
+            "forbidden": [
+              "Burkina Faso",
+              "Leverkusen",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Chancel Mbemba",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "Marseille",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Cédric Bakambu",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "Villarreal",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Yoane Wissa",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "Brentford",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Dieumerci Mbokani",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "Anderlecht",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Percy Tau",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "Al Ahly",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Steve Mounié",
+            "difficulty": 3,
+            "forbidden": [
+              "Bénin",
+              "Brest",
+              "attaquant"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

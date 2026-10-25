@@ -1,5 +1,10 @@
 // Paquets intégrés à l'app (un fichier par catégorie, format docs/pack.schema.json).
 // Insérés en base au premier lancement et à chaque nouvelle version (voir seed.ts).
+import afArtistes from './af-artistes.json';
+import afFootballeurs from './af-footballeurs.json';
+import afHistoriques from './af-historiques.json';
+import afPaysCapitales from './af-pays-capitales.json';
+import afPlats from './af-plats.json';
 import camerounCuisine from './cameroun-cuisine.json';
 import cmArtistes from './cm-artistes.json';
 import cmExpressions from './cm-expressions.json';
@@ -20,6 +25,11 @@ export const builtinPackFiles: readonly unknown[] = [
   cmVillesQuartiers,
   cmExpressions,
   cmMusique,
+  afPaysCapitales,
+  afArtistes,
+  afPlats,
+  afFootballeurs,
+  afHistoriques,
   mondeAnimaux,
   mondeObjets,
   mondeSports,

@@ -1,0 +1,1138 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-pays-capitales",
+    "name": {
+      "fr": "Pays et capitales d'Afrique",
+      "en": "African countries and capitals"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "pays-capitales",
+        "name": {
+          "fr": "Pays et capitales d'Afrique",
+          "en": "African countries and capitals"
+        },
+        "emoji": "🌍",
+        "color": "lagoon",
+        "tags": [
+          "geographie"
+        ],
+        "words": [
+          {
+            "text": "Algérie",
+            "difficulty": 1,
+            "forbidden": [
+              "Alger",
+              "Maghreb",
+              "Sahara"
+            ]
+          },
+          {
+            "text": "Alger",
+            "difficulty": 2,
+            "forbidden": [
+              "Algérie",
+              "capitale",
+              "Casbah"
+            ]
+          },
+          {
+            "text": "Angola",
+            "difficulty": 2,
+            "forbidden": [
+              "Luanda",
+              "lusophone",
+              "pétrole"
+            ]
+          },
+          {
+            "text": "Luanda",
+            "difficulty": 3,
+            "forbidden": [
+              "Angola",
+              "capitale",
+              "lusophone"
+            ]
+          },
+          {
+            "text": "Bénin",
+            "difficulty": 1,
+            "forbidden": [
+              "Porto-Novo",
+              "Cotonou",
+              "vaudou"
+            ]
+          },
+          {
+            "text": "Porto-Novo",
+            "difficulty": 3,
+            "forbidden": [
+              "Bénin",
+              "capitale",
+              "lagune"
+            ]
+          },
+          {
+            "text": "Cotonou",
+            "difficulty": 2,
+            "forbidden": [
+              "Bénin",
+              "port",
+              "Dantokpa"
+            ]
+          },
+          {
+            "text": "Botswana",
+            "difficulty": 2,
+            "forbidden": [
+              "Gaborone",
+              "diamants",
+              "Kalahari"
+            ]
+          },
+          {
+            "text": "Gaborone",
+            "difficulty": 3,
+            "forbidden": [
+              "Botswana",
+              "capitale",
+              "Afrique australe"
+            ]
+          },
+          {
+            "text": "Burkina Faso",
+            "difficulty": 1,
+            "forbidden": [
+              "Ouagadougou",
+              "Sankara",
+              "FESPACO"
+            ]
+          },
+          {
+            "text": "Ouagadougou",
+            "difficulty": 1,
+            "forbidden": [
+              "Burkina",
+              "capitale",
+              "FESPACO"
+            ]
+          },
+          {
+            "text": "Burundi",
+            "difficulty": 2,
+            "forbidden": [
+              "Gitega",
+              "Bujumbura",
+              "lac Tanganyika"
+            ]
+          },
+          {
+            "text": "Bujumbura",
+            "difficulty": 3,
+            "forbidden": [
+              "Burundi",
+              "lac Tanganyika",
+              "ville"
+            ]
+          },
+          {
+            "text": "Cap-Vert",
+            "difficulty": 2,
+            "forbidden": [
+              "Praia",
+              "îles",
+              "Cesária Évora"
+            ]
+          },
+          {
+            "text": "Praia",
+            "difficulty": 3,
+            "forbidden": [
+              "Cap-Vert",
+              "capitale",
+              "île"
+            ]
+          },
+          {
+            "text": "Centrafrique",
+            "difficulty": 1,
+            "forbidden": [
+              "Bangui",
+              "Oubangui",
+              "pays"
+            ]
+          },
+          {
+            "text": "Bangui",
+            "difficulty": 2,
+            "forbidden": [
+              "Centrafrique",
+              "capitale",
+              "Oubangui"
+            ]
+          },
+          {
+            "text": "Comores",
+            "difficulty": 2,
+            "forbidden": [
+              "Moroni",
+              "archipel",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Moroni",
+            "difficulty": 3,
+            "forbidden": [
+              "Comores",
+              "capitale",
+              "île"
+            ]
+          },
+          {
+            "text": "Congo-Brazzaville",
+            "difficulty": 1,
+            "forbidden": [
+              "capitale",
+              "fleuve Congo",
+              "Pointe-Noire"
+            ]
+          },
+          {
+            "text": "Brazzaville",
+            "difficulty": 1,
+            "forbidden": [
+              "Congo",
+              "capitale",
+              "fleuve"
+            ]
+          },
+          {
+            "text": "Pointe-Noire",
+            "difficulty": 2,
+            "forbidden": [
+              "Congo",
+              "port",
+              "océan"
+            ]
+          },
+          {
+            "text": "République démocratique du Congo",
+            "difficulty": 1,
+            "forbidden": [
+              "Kinshasa",
+              "RDC",
+              "fleuve"
+            ]
+          },
+          {
+            "text": "Kinshasa",
+            "difficulty": 1,
+            "forbidden": [
+              "RDC",
+              "capitale",
+              "Kin la belle"
+            ]
+          },
+          {
+            "text": "Lubumbashi",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "Katanga",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Côte d'Ivoire",
+            "difficulty": 1,
+            "forbidden": [
+              "Abidjan",
+              "Yamoussoukro",
+              "éléphants"
+            ]
+          },
+          {
+            "text": "Abidjan",
+            "difficulty": 1,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "lagune",
+              "Plateau"
+            ]
+          },
+          {
+            "text": "Yamoussoukro",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "basilique",
+              "capitale"
+            ]
+          },
+          {
+            "text": "Djibouti",
+            "difficulty": 2,
+            "forbidden": [
+              "Corne de l'Afrique",
+              "port",
+              "mer Rouge"
+            ]
+          },
+          {
+            "text": "Égypte",
+            "difficulty": 1,
+            "forbidden": [
+              "Le Caire",
+              "pyramides",
+              "Nil"
+            ]
+          },
+          {
+            "text": "Le Caire",
+            "difficulty": 1,
+            "forbidden": [
+              "Égypte",
+              "capitale",
+              "Nil"
+            ]
+          },
+          {
+            "text": "Alexandrie",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "phare",
+              "Méditerranée"
+            ]
+          },
+          {
+            "text": "Érythrée",
+            "difficulty": 3,
+            "forbidden": [
+              "Asmara",
+              "mer Rouge",
+              "Corne"
+            ]
+          },
+          {
+            "text": "Asmara",
+            "difficulty": 3,
+            "forbidden": [
+              "Érythrée",
+              "capitale",
+              "Corne de l'Afrique"
+            ]
+          },
+          {
+            "text": "Eswatini",
+            "difficulty": 3,
+            "forbidden": [
+              "Mbabane",
+              "Swaziland",
+              "royaume"
+            ]
+          },
+          {
+            "text": "Éthiopie",
+            "difficulty": 1,
+            "forbidden": [
+              "Addis-Abeba",
+              "café",
+              "Lucy"
+            ]
+          },
+          {
+            "text": "Addis-Abeba",
+            "difficulty": 2,
+            "forbidden": [
+              "Éthiopie",
+              "capitale",
+              "Union africaine"
+            ]
+          },
+          {
+            "text": "Gabon",
+            "difficulty": 1,
+            "forbidden": [
+              "Libreville",
+              "forêt",
+              "Panthères"
+            ]
+          },
+          {
+            "text": "Libreville",
+            "difficulty": 1,
+            "forbidden": [
+              "Gabon",
+              "capitale",
+              "océan"
+            ]
+          },
+          {
+            "text": "Gambie",
+            "difficulty": 2,
+            "forbidden": [
+              "Banjul",
+              "fleuve",
+              "petit pays"
+            ]
+          },
+          {
+            "text": "Banjul",
+            "difficulty": 3,
+            "forbidden": [
+              "Gambie",
+              "capitale",
+              "fleuve"
+            ]
+          },
+          {
+            "text": "Ghana",
+            "difficulty": 1,
+            "forbidden": [
+              "Accra",
+              "Black Stars",
+              "cacao"
+            ]
+          },
+          {
+            "text": "Accra",
+            "difficulty": 1,
+            "forbidden": [
+              "Ghana",
+              "capitale",
+              "océan"
+            ]
+          },
+          {
+            "text": "Kumasi",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "Ashanti",
+              "ville"
+            ]
+          },
+          {
+            "text": "Guinée",
+            "difficulty": 1,
+            "forbidden": [
+              "Conakry",
+              "Syli",
+              "bauxite"
+            ]
+          },
+          {
+            "text": "Conakry",
+            "difficulty": 1,
+            "forbidden": [
+              "Guinée",
+              "capitale",
+              "océan"
+            ]
+          },
+          {
+            "text": "Guinée-Bissau",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique de l'Ouest",
+              "lusophone",
+              "cajou"
+            ]
+          },
+          {
+            "text": "Bissau",
+            "difficulty": 3,
+            "forbidden": [
+              "Guinée-Bissau",
+              "capitale",
+              "lusophone"
+            ]
+          },
+          {
+            "text": "Guinée équatoriale",
+            "difficulty": 2,
+            "forbidden": [
+              "Malabo",
+              "Bioko",
+              "hispanophone"
+            ]
+          },
+          {
+            "text": "Malabo",
+            "difficulty": 2,
+            "forbidden": [
+              "Guinée équatoriale",
+              "île",
+              "capitale"
+            ]
+          },
+          {
+            "text": "Kenya",
+            "difficulty": 1,
+            "forbidden": [
+              "Nairobi",
+              "safari",
+              "marathon"
+            ]
+          },
+          {
+            "text": "Nairobi",
+            "difficulty": 1,
+            "forbidden": [
+              "Kenya",
+              "capitale",
+              "safari"
+            ]
+          },
+          {
+            "text": "Mombasa",
+            "difficulty": 2,
+            "forbidden": [
+              "Kenya",
+              "port",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Lesotho",
+            "difficulty": 3,
+            "forbidden": [
+              "Maseru",
+              "montagnes",
+              "enclavé"
+            ]
+          },
+          {
+            "text": "Maseru",
+            "difficulty": 3,
+            "forbidden": [
+              "Lesotho",
+              "capitale",
+              "montagnes"
+            ]
+          },
+          {
+            "text": "Liberia",
+            "difficulty": 2,
+            "forbidden": [
+              "Monrovia",
+              "George Weah",
+              "anglophone"
+            ]
+          },
+          {
+            "text": "Monrovia",
+            "difficulty": 2,
+            "forbidden": [
+              "Liberia",
+              "capitale",
+              "océan"
+            ]
+          },
+          {
+            "text": "Libye",
+            "difficulty": 2,
+            "forbidden": [
+              "Tripoli",
+              "désert",
+              "Méditerranée"
+            ]
+          },
+          {
+            "text": "Tripoli",
+            "difficulty": 2,
+            "forbidden": [
+              "Libye",
+              "capitale",
+              "Méditerranée"
+            ]
+          },
+          {
+            "text": "Madagascar",
+            "difficulty": 1,
+            "forbidden": [
+              "Antananarivo",
+              "île",
+              "lémuriens"
+            ]
+          },
+          {
+            "text": "Antananarivo",
+            "difficulty": 2,
+            "forbidden": [
+              "Madagascar",
+              "capitale",
+              "Tana"
+            ]
+          },
+          {
+            "text": "Malawi",
+            "difficulty": 2,
+            "forbidden": [
+              "Lilongwe",
+              "lac",
+              "Afrique australe"
+            ]
+          },
+          {
+            "text": "Lilongwe",
+            "difficulty": 3,
+            "forbidden": [
+              "Malawi",
+              "capitale",
+              "lac"
+            ]
+          },
+          {
+            "text": "Mali",
+            "difficulty": 1,
+            "forbidden": [
+              "Bamako",
+              "Tombouctou",
+              "fleuve Niger"
+            ]
+          },
+          {
+            "text": "Bamako",
+            "difficulty": 1,
+            "forbidden": [
+              "Mali",
+              "capitale",
+              "fleuve Niger"
+            ]
+          },
+          {
+            "text": "Tombouctou",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "désert",
+              "manuscrits"
+            ]
+          },
+          {
+            "text": "Maroc",
+            "difficulty": 1,
+            "forbidden": [
+              "Rabat",
+              "Lions de l'Atlas",
+              "Marrakech"
+            ]
+          },
+          {
+            "text": "Rabat",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "capitale",
+              "Atlantique"
+            ]
+          },
+          {
+            "text": "Casablanca",
+            "difficulty": 1,
+            "forbidden": [
+              "Maroc",
+              "mosquée Hassan II",
+              "port"
+            ]
+          },
+          {
+            "text": "Marrakech",
+            "difficulty": 1,
+            "forbidden": [
+              "Maroc",
+              "place Jemaa el-Fna",
+              "ocre"
+            ]
+          },
+          {
+            "text": "Maurice",
+            "difficulty": 2,
+            "forbidden": [
+              "Port-Louis",
+              "île",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Port-Louis",
+            "difficulty": 3,
+            "forbidden": [
+              "Maurice",
+              "capitale",
+              "île"
+            ]
+          },
+          {
+            "text": "Mauritanie",
+            "difficulty": 2,
+            "forbidden": [
+              "Nouakchott",
+              "désert",
+              "Sahara"
+            ]
+          },
+          {
+            "text": "Nouakchott",
+            "difficulty": 2,
+            "forbidden": [
+              "Mauritanie",
+              "capitale",
+              "désert"
+            ]
+          },
+          {
+            "text": "Mozambique",
+            "difficulty": 2,
+            "forbidden": [
+              "Maputo",
+              "lusophone",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Maputo",
+            "difficulty": 3,
+            "forbidden": [
+              "Mozambique",
+              "capitale",
+              "lusophone"
+            ]
+          },
+          {
+            "text": "Namibie",
+            "difficulty": 2,
+            "forbidden": [
+              "Windhoek",
+              "désert",
+              "dunes"
+            ]
+          },
+          {
+            "text": "Windhoek",
+            "difficulty": 3,
+            "forbidden": [
+              "Namibie",
+              "capitale",
+              "désert"
+            ]
+          },
+          {
+            "text": "Niger",
+            "difficulty": 1,
+            "forbidden": [
+              "Niamey",
+              "fleuve",
+              "Sahel"
+            ]
+          },
+          {
+            "text": "Niamey",
+            "difficulty": 2,
+            "forbidden": [
+              "Niger",
+              "capitale",
+              "fleuve"
+            ]
+          },
+          {
+            "text": "Nigeria",
+            "difficulty": 1,
+            "forbidden": [
+              "Abuja",
+              "Lagos",
+              "Super Eagles"
+            ]
+          },
+          {
+            "text": "Abuja",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "capitale",
+              "Super Eagles"
+            ]
+          },
+          {
+            "text": "Lagos",
+            "difficulty": 1,
+            "forbidden": [
+              "Nigeria",
+              "mégapole",
+              "Nollywood"
+            ]
+          },
+          {
+            "text": "Ouganda",
+            "difficulty": 2,
+            "forbidden": [
+              "Kampala",
+              "lac Victoria",
+              "gorilles"
+            ]
+          },
+          {
+            "text": "Kampala",
+            "difficulty": 2,
+            "forbidden": [
+              "Ouganda",
+              "capitale",
+              "lac Victoria"
+            ]
+          },
+          {
+            "text": "Rwanda",
+            "difficulty": 1,
+            "forbidden": [
+              "Kigali",
+              "mille collines",
+              "gorilles"
+            ]
+          },
+          {
+            "text": "Kigali",
+            "difficulty": 2,
+            "forbidden": [
+              "Rwanda",
+              "capitale",
+              "collines"
+            ]
+          },
+          {
+            "text": "Sao Tomé-et-Principe",
+            "difficulty": 3,
+            "forbidden": [
+              "îles",
+              "cacao",
+              "lusophone"
+            ]
+          },
+          {
+            "text": "Sénégal",
+            "difficulty": 1,
+            "forbidden": [
+              "Dakar",
+              "Lions de la Teranga",
+              "teranga"
+            ]
+          },
+          {
+            "text": "Dakar",
+            "difficulty": 1,
+            "forbidden": [
+              "Sénégal",
+              "capitale",
+              "île de Gorée"
+            ]
+          },
+          {
+            "text": "Île de Gorée",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "esclavage",
+              "Dakar"
+            ]
+          },
+          {
+            "text": "Seychelles",
+            "difficulty": 2,
+            "forbidden": [
+              "Victoria",
+              "îles",
+              "plages"
+            ]
+          },
+          {
+            "text": "Sierra Leone",
+            "difficulty": 2,
+            "forbidden": [
+              "Freetown",
+              "diamants",
+              "Afrique de l'Ouest"
+            ]
+          },
+          {
+            "text": "Freetown",
+            "difficulty": 3,
+            "forbidden": [
+              "Sierra Leone",
+              "capitale",
+              "océan"
+            ]
+          },
+          {
+            "text": "Somalie",
+            "difficulty": 2,
+            "forbidden": [
+              "Mogadiscio",
+              "Corne de l'Afrique",
+              "océan"
+            ]
+          },
+          {
+            "text": "Mogadiscio",
+            "difficulty": 3,
+            "forbidden": [
+              "Somalie",
+              "capitale",
+              "océan"
+            ]
+          },
+          {
+            "text": "Soudan",
+            "difficulty": 2,
+            "forbidden": [
+              "Khartoum",
+              "Nil",
+              "désert"
+            ]
+          },
+          {
+            "text": "Khartoum",
+            "difficulty": 3,
+            "forbidden": [
+              "Soudan",
+              "capitale",
+              "Nil"
+            ]
+          },
+          {
+            "text": "Soudan du Sud",
+            "difficulty": 3,
+            "forbidden": [
+              "Djouba",
+              "jeune pays",
+              "Nil"
+            ]
+          },
+          {
+            "text": "Tanzanie",
+            "difficulty": 1,
+            "forbidden": [
+              "Dodoma",
+              "Kilimandjaro",
+              "Zanzibar"
+            ]
+          },
+          {
+            "text": "Dar es Salam",
+            "difficulty": 2,
+            "forbidden": [
+              "Tanzanie",
+              "port",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Zanzibar",
+            "difficulty": 2,
+            "forbidden": [
+              "Tanzanie",
+              "île",
+              "épices"
+            ]
+          },
+          {
+            "text": "Tchad",
+            "difficulty": 1,
+            "forbidden": [
+              "N'Djamena",
+              "lac",
+              "Sahel"
+            ]
+          },
+          {
+            "text": "N'Djamena",
+            "difficulty": 2,
+            "forbidden": [
+              "Tchad",
+              "capitale",
+              "Chari"
+            ]
+          },
+          {
+            "text": "Togo",
+            "difficulty": 1,
+            "forbidden": [
+              "Lomé",
+              "Éperviers",
+              "petit pays"
+            ]
+          },
+          {
+            "text": "Lomé",
+            "difficulty": 1,
+            "forbidden": [
+              "Togo",
+              "capitale",
+              "port"
+            ]
+          },
+          {
+            "text": "Tunisie",
+            "difficulty": 1,
+            "forbidden": [
+              "Carthage",
+              "jasmin",
+              "Méditerranée"
+            ]
+          },
+          {
+            "text": "Tunis",
+            "difficulty": 2,
+            "forbidden": [
+              "capitale",
+              "Carthage",
+              "médina"
+            ]
+          },
+          {
+            "text": "Zambie",
+            "difficulty": 2,
+            "forbidden": [
+              "Lusaka",
+              "chutes Victoria",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Lusaka",
+            "difficulty": 3,
+            "forbidden": [
+              "Zambie",
+              "capitale",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Zimbabwe",
+            "difficulty": 2,
+            "forbidden": [
+              "Harare",
+              "chutes Victoria",
+              "Afrique australe"
+            ]
+          },
+          {
+            "text": "Harare",
+            "difficulty": 3,
+            "forbidden": [
+              "Zimbabwe",
+              "capitale",
+              "Afrique australe"
+            ]
+          },
+          {
+            "text": "Afrique du Sud",
+            "difficulty": 1,
+            "forbidden": [
+              "Pretoria",
+              "Mandela",
+              "Springboks"
+            ]
+          },
+          {
+            "text": "Pretoria",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "capitale",
+              "Union Buildings"
+            ]
+          },
+          {
+            "text": "Johannesburg",
+            "difficulty": 1,
+            "forbidden": [
+              "Afrique du Sud",
+              "Soweto",
+              "Jo'burg"
+            ]
+          },
+          {
+            "text": "Le Cap",
+            "difficulty": 1,
+            "forbidden": [
+              "Afrique du Sud",
+              "montagne de la Table",
+              "Cape Town"
+            ]
+          },
+          {
+            "text": "Soweto",
+            "difficulty": 2,
+            "forbidden": [
+              "Johannesburg",
+              "township",
+              "Mandela"
+            ]
+          },
+          {
+            "text": "Kilimandjaro",
+            "difficulty": 1,
+            "forbidden": [
+              "montagne",
+              "Tanzanie",
+              "neiges"
+            ]
+          },
+          {
+            "text": "Sahara",
+            "difficulty": 1,
+            "forbidden": [
+              "désert",
+              "sable",
+              "dunes"
+            ]
+          },
+          {
+            "text": "Fleuve Congo",
+            "difficulty": 2,
+            "forbidden": [
+              "Kinshasa",
+              "Brazzaville",
+              "Afrique centrale"
+            ]
+          },
+          {
+            "text": "Nil",
+            "difficulty": 1,
+            "forbidden": [
+              "fleuve",
+              "Égypte",
+              "long"
+            ]
+          },
+          {
+            "text": "Chutes Victoria",
+            "difficulty": 2,
+            "forbidden": [
+              "Zambie",
+              "Zimbabwe",
+              "cascade"
+            ]
+          },
+          {
+            "text": "Lac Victoria",
+            "difficulty": 2,
+            "forbidden": [
+              "Ouganda",
+              "Kenya",
+              "Tanzanie"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

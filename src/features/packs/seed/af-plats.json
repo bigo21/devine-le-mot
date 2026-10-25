@@ -1,0 +1,1174 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-plats",
+    "name": {
+      "fr": "Plats africains",
+      "en": "African dishes"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "plats",
+        "name": {
+          "fr": "Plats africains",
+          "en": "African dishes"
+        },
+        "emoji": "🍛",
+        "color": "plum",
+        "tags": [
+          "cuisine"
+        ],
+        "words": [
+          {
+            "text": "Attiéké",
+            "difficulty": 1,
+            "forbidden": [
+              "manioc",
+              "Côte d'Ivoire",
+              "poisson"
+            ]
+          },
+          {
+            "text": "Alloco",
+            "difficulty": 1,
+            "forbidden": [
+              "banane plantain",
+              "frite",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Garba",
+            "difficulty": 1,
+            "forbidden": [
+              "attiéké",
+              "thon",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Foutou",
+            "difficulty": 2,
+            "forbidden": [
+              "banane",
+              "pilé",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Kedjenou",
+            "difficulty": 2,
+            "forbidden": [
+              "poulet",
+              "canari",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Placali",
+            "difficulty": 3,
+            "forbidden": [
+              "manioc",
+              "pâte",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Thiéboudienne",
+            "difficulty": 1,
+            "forbidden": [
+              "riz",
+              "poisson",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Yassa",
+            "difficulty": 1,
+            "forbidden": [
+              "oignons",
+              "citron",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Mafé",
+            "difficulty": 1,
+            "forbidden": [
+              "arachide",
+              "sauce",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Thiakry",
+            "difficulty": 2,
+            "forbidden": [
+              "dessert",
+              "lait caillé",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Pastels",
+            "difficulty": 2,
+            "forbidden": [
+              "beignets",
+              "poisson",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Bissap",
+            "difficulty": 1,
+            "forbidden": [
+              "hibiscus",
+              "jus",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Jus de gingembre",
+            "difficulty": 1,
+            "forbidden": [
+              "piquant",
+              "boisson",
+              "racine"
+            ]
+          },
+          {
+            "text": "Couscous",
+            "difficulty": 1,
+            "forbidden": [
+              "semoule",
+              "Maghreb",
+              "légumes"
+            ]
+          },
+          {
+            "text": "Tajine",
+            "difficulty": 1,
+            "forbidden": [
+              "Maroc",
+              "plat en terre",
+              "mijoté"
+            ]
+          },
+          {
+            "text": "Pastilla",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "feuilleté",
+              "pigeon"
+            ]
+          },
+          {
+            "text": "Harira",
+            "difficulty": 2,
+            "forbidden": [
+              "soupe",
+              "Ramadan",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Chakchouka",
+            "difficulty": 2,
+            "forbidden": [
+              "œufs",
+              "tomates",
+              "poivrons"
+            ]
+          },
+          {
+            "text": "Brik",
+            "difficulty": 2,
+            "forbidden": [
+              "Tunisie",
+              "feuille",
+              "œuf"
+            ]
+          },
+          {
+            "text": "Méchoui",
+            "difficulty": 2,
+            "forbidden": [
+              "mouton",
+              "rôti",
+              "Maghreb"
+            ]
+          },
+          {
+            "text": "Msemen",
+            "difficulty": 3,
+            "forbidden": [
+              "crêpe",
+              "Maroc",
+              "feuilletée"
+            ]
+          },
+          {
+            "text": "Baghrir",
+            "difficulty": 3,
+            "forbidden": [
+              "crêpe",
+              "mille trous",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Lablabi",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "pois chiches",
+              "soupe"
+            ]
+          },
+          {
+            "text": "Chorba",
+            "difficulty": 2,
+            "forbidden": [
+              "soupe",
+              "Algérie",
+              "Ramadan"
+            ]
+          },
+          {
+            "text": "Jollof rice",
+            "difficulty": 1,
+            "forbidden": [
+              "riz",
+              "tomate",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Fufu",
+            "difficulty": 1,
+            "forbidden": [
+              "pâte",
+              "igname",
+              "manioc"
+            ]
+          },
+          {
+            "text": "Egusi soup",
+            "difficulty": 2,
+            "forbidden": [
+              "graines",
+              "Nigeria",
+              "soupe"
+            ]
+          },
+          {
+            "text": "Suya",
+            "difficulty": 1,
+            "forbidden": [
+              "brochette",
+              "épices",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Puff-puff",
+            "difficulty": 1,
+            "forbidden": [
+              "beignets",
+              "sucré",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Moi moi",
+            "difficulty": 2,
+            "forbidden": [
+              "haricots",
+              "vapeur",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Pounded yam",
+            "difficulty": 2,
+            "forbidden": [
+              "igname",
+              "pilée",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Akara",
+            "difficulty": 2,
+            "forbidden": [
+              "beignets",
+              "haricots",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Chin chin",
+            "difficulty": 3,
+            "forbidden": [
+              "biscuit",
+              "croquant",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Ofada rice",
+            "difficulty": 3,
+            "forbidden": [
+              "riz",
+              "Nigeria",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Banku",
+            "difficulty": 2,
+            "forbidden": [
+              "maïs",
+              "Ghana",
+              "pâte"
+            ]
+          },
+          {
+            "text": "Kenkey",
+            "difficulty": 3,
+            "forbidden": [
+              "maïs",
+              "Ghana",
+              "fermenté"
+            ]
+          },
+          {
+            "text": "Kelewele",
+            "difficulty": 3,
+            "forbidden": [
+              "plantain",
+              "épicé",
+              "Ghana"
+            ]
+          },
+          {
+            "text": "Waakye",
+            "difficulty": 3,
+            "forbidden": [
+              "riz",
+              "haricots",
+              "Ghana"
+            ]
+          },
+          {
+            "text": "Red red",
+            "difficulty": 3,
+            "forbidden": [
+              "haricots",
+              "huile rouge",
+              "Ghana"
+            ]
+          },
+          {
+            "text": "Injera",
+            "difficulty": 1,
+            "forbidden": [
+              "galette",
+              "Éthiopie",
+              "teff"
+            ]
+          },
+          {
+            "text": "Doro wat",
+            "difficulty": 2,
+            "forbidden": [
+              "poulet",
+              "Éthiopie",
+              "épicé"
+            ]
+          },
+          {
+            "text": "Kitfo",
+            "difficulty": 3,
+            "forbidden": [
+              "viande crue",
+              "Éthiopie",
+              "épices"
+            ]
+          },
+          {
+            "text": "Ugali",
+            "difficulty": 2,
+            "forbidden": [
+              "maïs",
+              "Kenya",
+              "pâte"
+            ]
+          },
+          {
+            "text": "Nyama choma",
+            "difficulty": 2,
+            "forbidden": [
+              "viande grillée",
+              "Kenya",
+              "barbecue"
+            ]
+          },
+          {
+            "text": "Chapati",
+            "difficulty": 1,
+            "forbidden": [
+              "galette",
+              "Afrique de l'Est",
+              "pain"
+            ]
+          },
+          {
+            "text": "Sukuma wiki",
+            "difficulty": 3,
+            "forbidden": [
+              "chou",
+              "Kenya",
+              "légume"
+            ]
+          },
+          {
+            "text": "Samoussa",
+            "difficulty": 1,
+            "forbidden": [
+              "triangle",
+              "frit",
+              "farci"
+            ]
+          },
+          {
+            "text": "Bobotie",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "viande",
+              "œuf"
+            ]
+          },
+          {
+            "text": "Braai",
+            "difficulty": 2,
+            "forbidden": [
+              "barbecue",
+              "Afrique du Sud",
+              "grillade"
+            ]
+          },
+          {
+            "text": "Bunny chow",
+            "difficulty": 3,
+            "forbidden": [
+              "pain",
+              "curry",
+              "Afrique du Sud"
+            ]
+          },
+          {
+            "text": "Biltong",
+            "difficulty": 2,
+            "forbidden": [
+              "viande séchée",
+              "Afrique du Sud",
+              "snack"
+            ]
+          },
+          {
+            "text": "Pap",
+            "difficulty": 2,
+            "forbidden": [
+              "maïs",
+              "Afrique du Sud",
+              "bouillie"
+            ]
+          },
+          {
+            "text": "Sadza",
+            "difficulty": 3,
+            "forbidden": [
+              "maïs",
+              "Zimbabwe",
+              "pâte"
+            ]
+          },
+          {
+            "text": "Saka-saka",
+            "difficulty": 2,
+            "forbidden": [
+              "feuilles de manioc",
+              "Congo",
+              "pilé"
+            ]
+          },
+          {
+            "text": "Pondu",
+            "difficulty": 2,
+            "forbidden": [
+              "feuilles de manioc",
+              "RDC",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Poulet moambé",
+            "difficulty": 2,
+            "forbidden": [
+              "noix de palme",
+              "Congo",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Liboké",
+            "difficulty": 2,
+            "forbidden": [
+              "feuilles",
+              "poisson",
+              "Congo"
+            ]
+          },
+          {
+            "text": "Chikwangue",
+            "difficulty": 2,
+            "forbidden": [
+              "manioc",
+              "bâton",
+              "Congo"
+            ]
+          },
+          {
+            "text": "Fumbwa",
+            "difficulty": 3,
+            "forbidden": [
+              "feuilles",
+              "RDC",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Dibi",
+            "difficulty": 2,
+            "forbidden": [
+              "mouton grillé",
+              "Sénégal",
+              "oignons"
+            ]
+          },
+          {
+            "text": "Tô",
+            "difficulty": 2,
+            "forbidden": [
+              "mil",
+              "Burkina",
+              "pâte"
+            ]
+          },
+          {
+            "text": "Riz gras",
+            "difficulty": 2,
+            "forbidden": [
+              "tomate",
+              "viande",
+              "Burkina"
+            ]
+          },
+          {
+            "text": "Fonio",
+            "difficulty": 3,
+            "forbidden": [
+              "céréale",
+              "Afrique de l'Ouest",
+              "petits grains"
+            ]
+          },
+          {
+            "text": "Akassa",
+            "difficulty": 3,
+            "forbidden": [
+              "maïs",
+              "Bénin",
+              "pâte fermentée"
+            ]
+          },
+          {
+            "text": "Ablo",
+            "difficulty": 3,
+            "forbidden": [
+              "riz",
+              "Togo",
+              "vapeur"
+            ]
+          },
+          {
+            "text": "Pâte rouge",
+            "difficulty": 3,
+            "forbidden": [
+              "maïs",
+              "Bénin",
+              "tomate"
+            ]
+          },
+          {
+            "text": "Koshari",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "lentilles",
+              "pâtes"
+            ]
+          },
+          {
+            "text": "Ful medames",
+            "difficulty": 3,
+            "forbidden": [
+              "fèves",
+              "Égypte",
+              "petit-déjeuner"
+            ]
+          },
+          {
+            "text": "Falafel",
+            "difficulty": 1,
+            "forbidden": [
+              "pois chiches",
+              "boulettes",
+              "frit"
+            ]
+          },
+          {
+            "text": "Molokheya",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "feuilles",
+              "soupe verte"
+            ]
+          },
+          {
+            "text": "Romazava",
+            "difficulty": 3,
+            "forbidden": [
+              "Madagascar",
+              "bouillon",
+              "brèdes"
+            ]
+          },
+          {
+            "text": "Ravitoto",
+            "difficulty": 3,
+            "forbidden": [
+              "Madagascar",
+              "feuilles de manioc",
+              "porc"
+            ]
+          },
+          {
+            "text": "Dholl puri",
+            "difficulty": 3,
+            "forbidden": [
+              "Maurice",
+              "galette",
+              "pois cassés"
+            ]
+          },
+          {
+            "text": "Plantain braisé",
+            "difficulty": 1,
+            "forbidden": [
+              "banane",
+              "banane mûre",
+              "grillé"
+            ]
+          },
+          {
+            "text": "Poulet braisé",
+            "difficulty": 1,
+            "forbidden": [
+              "grillé",
+              "volaille",
+              "épices"
+            ]
+          },
+          {
+            "text": "Poisson braisé",
+            "difficulty": 1,
+            "forbidden": [
+              "grillé",
+              "tilapia",
+              "piment"
+            ]
+          },
+          {
+            "text": "Mangue séchée",
+            "difficulty": 2,
+            "forbidden": [
+              "fruit",
+              "séché",
+              "sucré"
+            ]
+          },
+          {
+            "text": "Gâteau de mil",
+            "difficulty": 3,
+            "forbidden": [
+              "céréale",
+              "Sahel",
+              "dessert"
+            ]
+          },
+          {
+            "text": "Thé à la menthe",
+            "difficulty": 1,
+            "forbidden": [
+              "Maghreb",
+              "sucré",
+              "verres"
+            ]
+          },
+          {
+            "text": "Café Touba",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "épices",
+              "poivre de Selim"
+            ]
+          },
+          {
+            "text": "Lait caillé",
+            "difficulty": 2,
+            "forbidden": [
+              "fermenté",
+              "Sahel",
+              "boisson"
+            ]
+          },
+          {
+            "text": "Zobo",
+            "difficulty": 2,
+            "forbidden": [
+              "hibiscus",
+              "Nigeria",
+              "boisson"
+            ]
+          },
+          {
+            "text": "Kachumbari",
+            "difficulty": 3,
+            "forbidden": [
+              "salade",
+              "tomates",
+              "Kenya"
+            ]
+          },
+          {
+            "text": "Mandazi",
+            "difficulty": 2,
+            "forbidden": [
+              "beignets",
+              "Afrique de l'Est",
+              "sucré"
+            ]
+          },
+          {
+            "text": "Pilau",
+            "difficulty": 2,
+            "forbidden": [
+              "riz",
+              "épices",
+              "Afrique de l'Est"
+            ]
+          },
+          {
+            "text": "Matoke",
+            "difficulty": 3,
+            "forbidden": [
+              "banane plantain",
+              "Ouganda",
+              "purée"
+            ]
+          },
+          {
+            "text": "Rolex ougandais",
+            "difficulty": 3,
+            "forbidden": [
+              "chapati",
+              "omelette",
+              "Ouganda"
+            ]
+          },
+          {
+            "text": "Chakalaka",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "haricots",
+              "épicé"
+            ]
+          },
+          {
+            "text": "Boerewors",
+            "difficulty": 3,
+            "forbidden": [
+              "saucisse",
+              "Afrique du Sud",
+              "spirale"
+            ]
+          },
+          {
+            "text": "Koeksister",
+            "difficulty": 3,
+            "forbidden": [
+              "beignet tressé",
+              "sirop",
+              "Afrique du Sud"
+            ]
+          },
+          {
+            "text": "Malva pudding",
+            "difficulty": 3,
+            "forbidden": [
+              "dessert",
+              "Afrique du Sud",
+              "abricot"
+            ]
+          },
+          {
+            "text": "Zaalouk",
+            "difficulty": 3,
+            "forbidden": [
+              "aubergine",
+              "Maroc",
+              "salade"
+            ]
+          },
+          {
+            "text": "Rfissa",
+            "difficulty": 3,
+            "forbidden": [
+              "Maroc",
+              "poulet",
+              "lentilles"
+            ]
+          },
+          {
+            "text": "Seffa",
+            "difficulty": 3,
+            "forbidden": [
+              "vermicelles",
+              "sucre",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Briouates",
+            "difficulty": 2,
+            "forbidden": [
+              "triangles",
+              "feuilletés",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Cornes de gazelle",
+            "difficulty": 2,
+            "forbidden": [
+              "amandes",
+              "Maroc",
+              "croissant"
+            ]
+          },
+          {
+            "text": "Kefta",
+            "difficulty": 2,
+            "forbidden": [
+              "viande hachée",
+              "boulettes",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Chebakia",
+            "difficulty": 3,
+            "forbidden": [
+              "Ramadan",
+              "miel",
+              "sésame"
+            ]
+          },
+          {
+            "text": "Harissa",
+            "difficulty": 1,
+            "forbidden": [
+              "piment",
+              "pâte",
+              "Tunisie"
+            ]
+          },
+          {
+            "text": "Ojja",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "œufs",
+              "merguez"
+            ]
+          },
+          {
+            "text": "Bambalouni",
+            "difficulty": 3,
+            "forbidden": [
+              "beignet",
+              "Tunisie",
+              "Sidi Bou Saïd"
+            ]
+          },
+          {
+            "text": "Makroud",
+            "difficulty": 3,
+            "forbidden": [
+              "semoule",
+              "dattes",
+              "losange"
+            ]
+          },
+          {
+            "text": "Rechta",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "nouilles",
+              "poulet"
+            ]
+          },
+          {
+            "text": "Karantika",
+            "difficulty": 3,
+            "forbidden": [
+              "pois chiches",
+              "Oran",
+              "flan"
+            ]
+          },
+          {
+            "text": "Bourek",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "feuille",
+              "viande"
+            ]
+          },
+          {
+            "text": "Kesra",
+            "difficulty": 3,
+            "forbidden": [
+              "galette",
+              "semoule",
+              "Algérie"
+            ]
+          },
+          {
+            "text": "Om Ali",
+            "difficulty": 3,
+            "forbidden": [
+              "dessert",
+              "Égypte",
+              "pâte feuilletée"
+            ]
+          },
+          {
+            "text": "Basbousa",
+            "difficulty": 2,
+            "forbidden": [
+              "semoule",
+              "sirop",
+              "gâteau"
+            ]
+          },
+          {
+            "text": "Mahshi",
+            "difficulty": 3,
+            "forbidden": [
+              "légumes farcis",
+              "Égypte",
+              "riz"
+            ]
+          },
+          {
+            "text": "Sauce gombo",
+            "difficulty": 1,
+            "forbidden": [
+              "gluant",
+              "légume vert",
+              "okra"
+            ]
+          },
+          {
+            "text": "Sauce graine",
+            "difficulty": 2,
+            "forbidden": [
+              "noix de palme",
+              "Côte d'Ivoire",
+              "palmier"
+            ]
+          },
+          {
+            "text": "Claclo",
+            "difficulty": 3,
+            "forbidden": [
+              "banane",
+              "beignets",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Ogbono soup",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "gluante",
+              "graines"
+            ]
+          },
+          {
+            "text": "Efo riro",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "épinards",
+              "yoruba"
+            ]
+          },
+          {
+            "text": "Pepper soup",
+            "difficulty": 2,
+            "forbidden": [
+              "piment",
+              "bouillon",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Banga soup",
+            "difficulty": 3,
+            "forbidden": [
+              "noix de palme",
+              "Nigeria",
+              "delta"
+            ]
+          },
+          {
+            "text": "Kunu",
+            "difficulty": 3,
+            "forbidden": [
+              "boisson",
+              "mil",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Shito",
+            "difficulty": 3,
+            "forbidden": [
+              "piment",
+              "Ghana",
+              "sauce noire"
+            ]
+          },
+          {
+            "text": "Tibs",
+            "difficulty": 3,
+            "forbidden": [
+              "Éthiopie",
+              "viande sautée",
+              "oignons"
+            ]
+          },
+          {
+            "text": "Shiro",
+            "difficulty": 3,
+            "forbidden": [
+              "Éthiopie",
+              "pois chiches",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Mikate",
+            "difficulty": 2,
+            "forbidden": [
+              "beignets",
+              "Congo",
+              "boules"
+            ]
+          },
+          {
+            "text": "Makayabu",
+            "difficulty": 3,
+            "forbidden": [
+              "poisson salé",
+              "Congo",
+              "morue"
+            ]
+          },
+          {
+            "text": "Pili-pili",
+            "difficulty": 1,
+            "forbidden": [
+              "piment",
+              "fort",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Mofo gasy",
+            "difficulty": 3,
+            "forbidden": [
+              "Madagascar",
+              "galette de riz",
+              "petit-déjeuner"
+            ]
+          },
+          {
+            "text": "Mishkaki",
+            "difficulty": 3,
+            "forbidden": [
+              "brochettes",
+              "Tanzanie",
+              "grillé"
+            ]
+          },
+          {
+            "text": "Ngalakh",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "Pâques",
+              "dessert"
+            ]
+          },
+          {
+            "text": "Soupe kandia",
+            "difficulty": 3,
+            "forbidden": [
+              "gombo",
+              "Sénégal",
+              "huile de palme"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

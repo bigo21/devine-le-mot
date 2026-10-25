@@ -1,0 +1,1132 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-historiques",
+    "name": {
+      "fr": "Personnalités historiques africaines",
+      "en": "African historical figures"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "personnalites-historiques",
+        "name": {
+          "fr": "Personnalités historiques africaines",
+          "en": "African historical figures"
+        },
+        "emoji": "📜",
+        "color": "slate",
+        "tags": [
+          "personnalites",
+          "histoire"
+        ],
+        "words": [
+          {
+            "text": "Nelson Mandela",
+            "difficulty": 1,
+            "forbidden": [
+              "Afrique du Sud",
+              "prison",
+              "président"
+            ]
+          },
+          {
+            "text": "Desmond Tutu",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "archevêque",
+              "Nobel de la paix"
+            ]
+          },
+          {
+            "text": "Thomas Sankara",
+            "difficulty": 1,
+            "forbidden": [
+              "Burkina Faso",
+              "révolution",
+              "capitaine"
+            ]
+          },
+          {
+            "text": "Patrice Lumumba",
+            "difficulty": 1,
+            "forbidden": [
+              "Congo",
+              "indépendance",
+              "Premier ministre"
+            ]
+          },
+          {
+            "text": "Kwame Nkrumah",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghana",
+              "indépendance",
+              "panafricanisme"
+            ]
+          },
+          {
+            "text": "Julius Nyerere",
+            "difficulty": 2,
+            "forbidden": [
+              "Tanzanie",
+              "Mwalimu",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Jomo Kenyatta",
+            "difficulty": 2,
+            "forbidden": [
+              "Kenya",
+              "indépendance",
+              "président"
+            ]
+          },
+          {
+            "text": "Léopold Sédar Senghor",
+            "difficulty": 1,
+            "forbidden": [
+              "Sénégal",
+              "poète",
+              "négritude"
+            ]
+          },
+          {
+            "text": "Cheikh Anta Diop",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "historien",
+              "Égypte noire"
+            ]
+          },
+          {
+            "text": "Félix Houphouët-Boigny",
+            "difficulty": 2,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "président",
+              "Yamoussoukro"
+            ]
+          },
+          {
+            "text": "Haïlé Sélassié",
+            "difficulty": 2,
+            "forbidden": [
+              "Éthiopie",
+              "empereur",
+              "rastas"
+            ]
+          },
+          {
+            "text": "Soundjata Keïta",
+            "difficulty": 2,
+            "forbidden": [
+              "empire du Mali",
+              "lion",
+              "fondateur"
+            ]
+          },
+          {
+            "text": "Mansa Moussa",
+            "difficulty": 1,
+            "forbidden": [
+              "empire du Mali",
+              "or",
+              "plus riche"
+            ]
+          },
+          {
+            "text": "Chaka Zoulou",
+            "difficulty": 2,
+            "forbidden": [
+              "Zoulous",
+              "guerrier",
+              "roi"
+            ]
+          },
+          {
+            "text": "Samory Touré",
+            "difficulty": 2,
+            "forbidden": [
+              "résistance",
+              "Guinée",
+              "almamy"
+            ]
+          },
+          {
+            "text": "El Hadj Oumar Tall",
+            "difficulty": 3,
+            "forbidden": [
+              "Toucouleur",
+              "résistance",
+              "marabout"
+            ]
+          },
+          {
+            "text": "Lat Dior",
+            "difficulty": 3,
+            "forbidden": [
+              "Cayor",
+              "résistance",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Béhanzin",
+            "difficulty": 2,
+            "forbidden": [
+              "Dahomey",
+              "roi",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Gamal Abdel Nasser",
+            "difficulty": 2,
+            "forbidden": [
+              "Égypte",
+              "président",
+              "canal de Suez"
+            ]
+          },
+          {
+            "text": "Anouar el-Sadate",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "président",
+              "paix"
+            ]
+          },
+          {
+            "text": "Hannibal",
+            "difficulty": 1,
+            "forbidden": [
+              "Carthage",
+              "éléphants",
+              "Alpes"
+            ]
+          },
+          {
+            "text": "Cléopâtre",
+            "difficulty": 1,
+            "forbidden": [
+              "Égypte",
+              "reine",
+              "César"
+            ]
+          },
+          {
+            "text": "Toutânkhamon",
+            "difficulty": 1,
+            "forbidden": [
+              "pharaon",
+              "tombeau",
+              "masque d'or"
+            ]
+          },
+          {
+            "text": "Ramsès II",
+            "difficulty": 2,
+            "forbidden": [
+              "pharaon",
+              "Égypte",
+              "Abou Simbel"
+            ]
+          },
+          {
+            "text": "Néfertiti",
+            "difficulty": 2,
+            "forbidden": [
+              "reine",
+              "Égypte",
+              "buste"
+            ]
+          },
+          {
+            "text": "Akhenaton",
+            "difficulty": 3,
+            "forbidden": [
+              "pharaon",
+              "Aton",
+              "soleil"
+            ]
+          },
+          {
+            "text": "Kenneth Kaunda",
+            "difficulty": 3,
+            "forbidden": [
+              "Zambie",
+              "indépendance",
+              "président"
+            ]
+          },
+          {
+            "text": "Sam Nujoma",
+            "difficulty": 3,
+            "forbidden": [
+              "Namibie",
+              "indépendance",
+              "président"
+            ]
+          },
+          {
+            "text": "Amílcar Cabral",
+            "difficulty": 3,
+            "forbidden": [
+              "Guinée-Bissau",
+              "Cap-Vert",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Samora Machel",
+            "difficulty": 3,
+            "forbidden": [
+              "Mozambique",
+              "indépendance",
+              "président"
+            ]
+          },
+          {
+            "text": "Agostinho Neto",
+            "difficulty": 3,
+            "forbidden": [
+              "Angola",
+              "poète",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Ahmed Sékou Touré",
+            "difficulty": 3,
+            "forbidden": [
+              "Guinée",
+              "non",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Modibo Keïta",
+            "difficulty": 3,
+            "forbidden": [
+              "Mali",
+              "indépendance",
+              "président"
+            ]
+          },
+          {
+            "text": "Sylvanus Olympio",
+            "difficulty": 3,
+            "forbidden": [
+              "Togo",
+              "indépendance",
+              "président"
+            ]
+          },
+          {
+            "text": "Steve Biko",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "conscience noire",
+              "apartheid"
+            ]
+          },
+          {
+            "text": "Winnie Mandela",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "Nelson",
+              "militante"
+            ]
+          },
+          {
+            "text": "Wangari Maathai",
+            "difficulty": 2,
+            "forbidden": [
+              "Kenya",
+              "arbres",
+              "Nobel de la paix"
+            ]
+          },
+          {
+            "text": "Kofi Annan",
+            "difficulty": 1,
+            "forbidden": [
+              "Ghana",
+              "ONU",
+              "secrétaire général"
+            ]
+          },
+          {
+            "text": "Albert Luthuli",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "Nobel de la paix",
+              "ANC"
+            ]
+          },
+          {
+            "text": "Ruben Um Nyobè",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "UPC",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Rudolf Douala Manga Bell",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "roi",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Ahmadou Ahidjo",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "premier président",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Martin-Paul Samba",
+            "difficulty": 3,
+            "forbidden": [
+              "Cameroun",
+              "résistance",
+              "Ebolowa"
+            ]
+          },
+          {
+            "text": "Félix-Roland Moumié",
+            "difficulty": 3,
+            "forbidden": [
+              "Cameroun",
+              "UPC",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Ernest Ouandié",
+            "difficulty": 3,
+            "forbidden": [
+              "Cameroun",
+              "UPC",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Reine Pokou",
+            "difficulty": 2,
+            "forbidden": [
+              "Baoulé",
+              "sacrifice",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Yaa Asantewaa",
+            "difficulty": 3,
+            "forbidden": [
+              "Ashanti",
+              "reine",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Reine Nzinga",
+            "difficulty": 2,
+            "forbidden": [
+              "Angola",
+              "Ndongo",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Kimpa Vita",
+            "difficulty": 3,
+            "forbidden": [
+              "Kongo",
+              "prophétesse",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Mohammed V",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "roi",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Hassan II",
+            "difficulty": 2,
+            "forbidden": [
+              "Maroc",
+              "roi",
+              "Marche verte"
+            ]
+          },
+          {
+            "text": "Habib Bourguiba",
+            "difficulty": 2,
+            "forbidden": [
+              "Tunisie",
+              "président",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Émir Abdelkader",
+            "difficulty": 2,
+            "forbidden": [
+              "Algérie",
+              "résistance",
+              "Mascara"
+            ]
+          },
+          {
+            "text": "Ahmed Ben Bella",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "premier président",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Houari Boumédiène",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "président",
+              "colonel"
+            ]
+          },
+          {
+            "text": "Mariama Bâ",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "écrivaine",
+              "Une si longue lettre"
+            ]
+          },
+          {
+            "text": "Chinua Achebe",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "écrivain",
+              "Le monde s'effondre"
+            ]
+          },
+          {
+            "text": "Wole Soyinka",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "Nobel de littérature",
+              "écrivain"
+            ]
+          },
+          {
+            "text": "Ngugi wa Thiong'o",
+            "difficulty": 3,
+            "forbidden": [
+              "Kenya",
+              "écrivain",
+              "kikuyu"
+            ]
+          },
+          {
+            "text": "Naguib Mahfouz",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "Nobel de littérature",
+              "Le Caire"
+            ]
+          },
+          {
+            "text": "Ousmane Sembène",
+            "difficulty": 2,
+            "forbidden": [
+              "Sénégal",
+              "cinéaste",
+              "écrivain"
+            ]
+          },
+          {
+            "text": "Mongo Beti",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "écrivain",
+              "Ville cruelle"
+            ]
+          },
+          {
+            "text": "Ferdinand Oyono",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "écrivain",
+              "Une vie de boy"
+            ]
+          },
+          {
+            "text": "Camara Laye",
+            "difficulty": 2,
+            "forbidden": [
+              "Guinée",
+              "écrivain",
+              "L'Enfant noir"
+            ]
+          },
+          {
+            "text": "Amadou Hampâté Bâ",
+            "difficulty": 2,
+            "forbidden": [
+              "Mali",
+              "bibliothèque qui brûle",
+              "écrivain"
+            ]
+          },
+          {
+            "text": "Birago Diop",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "contes",
+              "Amadou Koumba"
+            ]
+          },
+          {
+            "text": "Ken Saro-Wiwa",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "écrivain",
+              "Ogoni"
+            ]
+          },
+          {
+            "text": "Lucy",
+            "difficulty": 2,
+            "forbidden": [
+              "fossile",
+              "Éthiopie",
+              "australopithèque"
+            ]
+          },
+          {
+            "text": "Imhotep",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "architecte",
+              "pyramide"
+            ]
+          },
+          {
+            "text": "Khéops",
+            "difficulty": 2,
+            "forbidden": [
+              "pharaon",
+              "grande pyramide",
+              "Gizeh"
+            ]
+          },
+          {
+            "text": "Hatchepsout",
+            "difficulty": 3,
+            "forbidden": [
+              "reine",
+              "pharaon",
+              "Égypte"
+            ]
+          },
+          {
+            "text": "Reine de Saba",
+            "difficulty": 2,
+            "forbidden": [
+              "Salomon",
+              "Éthiopie",
+              "Bible"
+            ]
+          },
+          {
+            "text": "Saint Augustin",
+            "difficulty": 3,
+            "forbidden": [
+              "Hippone",
+              "Confessions",
+              "évêque"
+            ]
+          },
+          {
+            "text": "Jugurtha",
+            "difficulty": 3,
+            "forbidden": [
+              "Numidie",
+              "Rome",
+              "roi"
+            ]
+          },
+          {
+            "text": "Massinissa",
+            "difficulty": 3,
+            "forbidden": [
+              "Numidie",
+              "roi",
+              "Carthage"
+            ]
+          },
+          {
+            "text": "Kahina",
+            "difficulty": 3,
+            "forbidden": [
+              "Berbères",
+              "reine",
+              "Aurès"
+            ]
+          },
+          {
+            "text": "Tariq ibn Ziyad",
+            "difficulty": 3,
+            "forbidden": [
+              "Gibraltar",
+              "Espagne",
+              "conquête"
+            ]
+          },
+          {
+            "text": "Ibn Battuta",
+            "difficulty": 2,
+            "forbidden": [
+              "voyageur",
+              "Tanger",
+              "récit"
+            ]
+          },
+          {
+            "text": "Ibn Khaldoun",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunis",
+              "historien",
+              "Muqaddima"
+            ]
+          },
+          {
+            "text": "Sonni Ali Ber",
+            "difficulty": 3,
+            "forbidden": [
+              "Songhaï",
+              "empire",
+              "Gao"
+            ]
+          },
+          {
+            "text": "Askia Mohammed",
+            "difficulty": 3,
+            "forbidden": [
+              "Songhaï",
+              "Gao",
+              "empereur"
+            ]
+          },
+          {
+            "text": "Ahmed Baba",
+            "difficulty": 3,
+            "forbidden": [
+              "Tombouctou",
+              "savant",
+              "manuscrits"
+            ]
+          },
+          {
+            "text": "Ménélik II",
+            "difficulty": 3,
+            "forbidden": [
+              "Éthiopie",
+              "Adoua",
+              "empereur"
+            ]
+          },
+          {
+            "text": "Moshoeshoe",
+            "difficulty": 3,
+            "forbidden": [
+              "Lesotho",
+              "roi",
+              "fondateur"
+            ]
+          },
+          {
+            "text": "Cetshwayo",
+            "difficulty": 3,
+            "forbidden": [
+              "Zoulous",
+              "roi",
+              "Isandlwana"
+            ]
+          },
+          {
+            "text": "Reine Ranavalona",
+            "difficulty": 3,
+            "forbidden": [
+              "Madagascar",
+              "souveraine",
+              "Merina"
+            ]
+          },
+          {
+            "text": "Ghézo",
+            "difficulty": 3,
+            "forbidden": [
+              "Dahomey",
+              "roi",
+              "Abomey"
+            ]
+          },
+          {
+            "text": "Amazones du Dahomey",
+            "difficulty": 2,
+            "forbidden": [
+              "guerrières",
+              "Abomey",
+              "Bénin"
+            ]
+          },
+          {
+            "text": "Reine Amina",
+            "difficulty": 3,
+            "forbidden": [
+              "Zazzau",
+              "Nigeria",
+              "guerrière"
+            ]
+          },
+          {
+            "text": "Usman dan Fodio",
+            "difficulty": 3,
+            "forbidden": [
+              "Sokoto",
+              "califat",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Cheikh Ahmadou Bamba",
+            "difficulty": 2,
+            "forbidden": [
+              "Touba",
+              "mourides",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Aline Sitoé Diatta",
+            "difficulty": 3,
+            "forbidden": [
+              "Casamance",
+              "résistante",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Blaise Diagne",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "député",
+              "Assemblée"
+            ]
+          },
+          {
+            "text": "Mamadou Dia",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "président du Conseil",
+              "Senghor"
+            ]
+          },
+          {
+            "text": "Funmilayo Ransome-Kuti",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "militante",
+              "Fela"
+            ]
+          },
+          {
+            "text": "Nnamdi Azikiwe",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "premier président",
+              "Zik"
+            ]
+          },
+          {
+            "text": "Oliver Tambo",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "ANC",
+              "aéroport"
+            ]
+          },
+          {
+            "text": "Walter Sisulu",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "ANC",
+              "Robben Island"
+            ]
+          },
+          {
+            "text": "Chris Hani",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "ANC",
+              "communiste"
+            ]
+          },
+          {
+            "text": "Seretse Khama",
+            "difficulty": 3,
+            "forbidden": [
+              "Botswana",
+              "premier président",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Eduardo Mondlane",
+            "difficulty": 3,
+            "forbidden": [
+              "Mozambique",
+              "FRELIMO",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Barthélemy Boganda",
+            "difficulty": 3,
+            "forbidden": [
+              "Centrafrique",
+              "fondateur",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Simon Kimbangu",
+            "difficulty": 2,
+            "forbidden": [
+              "Congo",
+              "prophète",
+              "Nkamba"
+            ]
+          },
+          {
+            "text": "Joseph Kasa-Vubu",
+            "difficulty": 3,
+            "forbidden": [
+              "Congo",
+              "premier président",
+              "indépendance"
+            ]
+          },
+          {
+            "text": "Marien Ngouabi",
+            "difficulty": 3,
+            "forbidden": [
+              "Congo-Brazzaville",
+              "président",
+              "Brazzaville"
+            ]
+          },
+          {
+            "text": "Abdelkrim el-Khattabi",
+            "difficulty": 3,
+            "forbidden": [
+              "Rif",
+              "résistance",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Lalla Fatma N'Soumer",
+            "difficulty": 3,
+            "forbidden": [
+              "Kabylie",
+              "résistante",
+              "Algérie"
+            ]
+          },
+          {
+            "text": "Larbi Ben M'hidi",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "FLN",
+              "révolution"
+            ]
+          },
+          {
+            "text": "Farhat Hached",
+            "difficulty": 3,
+            "forbidden": [
+              "Tunisie",
+              "syndicaliste",
+              "UGTT"
+            ]
+          },
+          {
+            "text": "Saad Zaghloul",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "révolution de 1919",
+              "Wafd"
+            ]
+          },
+          {
+            "text": "Méhémet Ali",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "pacha",
+              "modernisation"
+            ]
+          },
+          {
+            "text": "Dedan Kimathi",
+            "difficulty": 3,
+            "forbidden": [
+              "Kenya",
+              "Mau Mau",
+              "résistance"
+            ]
+          },
+          {
+            "text": "Kateb Yacine",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "écrivain",
+              "Nedjma"
+            ]
+          },
+          {
+            "text": "Assia Djebar",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "écrivaine",
+              "Académie française"
+            ]
+          },
+          {
+            "text": "Ahmadou Kourouma",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "écrivain",
+              "Les Soleils des indépendances"
+            ]
+          },
+          {
+            "text": "Bernard Dadié",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "écrivain",
+              "Climbié"
+            ]
+          },
+          {
+            "text": "Sony Labou Tansi",
+            "difficulty": 3,
+            "forbidden": [
+              "Congo",
+              "écrivain",
+              "théâtre"
+            ]
+          },
+          {
+            "text": "Chimamanda Ngozi Adichie",
+            "difficulty": 2,
+            "forbidden": [
+              "Nigeria",
+              "écrivaine",
+              "féminisme"
+            ]
+          },
+          {
+            "text": "Nadine Gordimer",
+            "difficulty": 3,
+            "forbidden": [
+              "Afrique du Sud",
+              "Nobel de littérature",
+              "écrivaine"
+            ]
+          },
+          {
+            "text": "Abdulrazak Gurnah",
+            "difficulty": 3,
+            "forbidden": [
+              "Zanzibar",
+              "Nobel de littérature",
+              "écrivain"
+            ]
+          },
+          {
+            "text": "Alioune Diop",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "Présence africaine",
+              "éditeur"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

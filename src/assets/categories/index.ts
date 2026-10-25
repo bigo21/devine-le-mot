@@ -7,7 +7,10 @@ export const categoryIcons = {
   'fruits-et-legumes': require('./fruits-et-legumes.webp') as number,
   'metiers': require('./metiers.webp') as number,
   'musique': require('./musique.webp') as number,
+  'notes-musique': require('./notes-musique.webp') as number,
   'objets-du-quotidien': require('./objets-du-quotidien.webp') as number,
+  'parchemin': require('./parchemin.webp') as number,
+  'plats-africains': require('./plats-africains.webp') as number,
   'plats-camerounais': require('./plats-camerounais.webp') as number,
   'region-africa': require('./region-africa.webp') as number,
   'region-mine': require('./region-mine.webp') as number,
@@ -15,6 +18,7 @@ export const categoryIcons = {
   'region-world': require('./region-world.webp') as number,
   'situations-genantes': require('./situations-genantes.webp') as number,
   'sports': require('./sports.webp') as number,
+  'trophee': require('./trophee.webp') as number,
   'villes-quartiers': require('./villes-quartiers.webp') as number,
 };
 
@@ -29,7 +33,10 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🥭": 'fruits-et-legumes',
   "👷": 'metiers',
   "🥁": 'musique',
+  "🎶": 'notes-musique',
   "🧰": 'objets-du-quotidien',
+  "📜": 'parchemin',
+  "🍛": 'plats-africains',
   "🍲": 'plats-camerounais',
   "🌍": 'region-africa',
   "✏": 'region-mine',
@@ -37,5 +44,6 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🌐": 'region-world',
   "😬": 'situations-genantes',
   "🏅": 'sports',
+  "🏆": 'trophee',
   "🏙": 'villes-quartiers',
 };
