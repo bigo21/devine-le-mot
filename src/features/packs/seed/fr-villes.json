@@ -1,0 +1,1138 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "fr-villes",
+    "name": {
+      "fr": "Villes de France",
+      "en": "French cities"
+    },
+    "region": "fr",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "villes",
+        "name": {
+          "fr": "Villes de France",
+          "en": "French cities"
+        },
+        "emoji": "🗺️",
+        "color": "lagoon",
+        "tags": [
+          "lieux"
+        ],
+        "words": [
+          {
+            "text": "Paris",
+            "difficulty": 1,
+            "forbidden": [
+              "capitale",
+              "tour Eiffel",
+              "Seine"
+            ]
+          },
+          {
+            "text": "Marseille",
+            "difficulty": 1,
+            "forbidden": [
+              "OM",
+              "Vieux-Port",
+              "Bonne Mère"
+            ]
+          },
+          {
+            "text": "Lyon",
+            "difficulty": 1,
+            "forbidden": [
+              "bouchon",
+              "Rhône",
+              "gones"
+            ]
+          },
+          {
+            "text": "Toulouse",
+            "difficulty": 1,
+            "forbidden": [
+              "ville rose",
+              "Airbus",
+              "rugby"
+            ]
+          },
+          {
+            "text": "Nice",
+            "difficulty": 1,
+            "forbidden": [
+              "Promenade des Anglais",
+              "Côte d'Azur",
+              "Riviera"
+            ]
+          },
+          {
+            "text": "Nantes",
+            "difficulty": 1,
+            "forbidden": [
+              "Loire",
+              "château des ducs",
+              "éléphant"
+            ]
+          },
+          {
+            "text": "Strasbourg",
+            "difficulty": 1,
+            "forbidden": [
+              "Alsace",
+              "Parlement européen",
+              "cathédrale"
+            ]
+          },
+          {
+            "text": "Montpellier",
+            "difficulty": 2,
+            "forbidden": [
+              "Hérault",
+              "étudiants",
+              "place de la Comédie"
+            ]
+          },
+          {
+            "text": "Bordeaux",
+            "difficulty": 1,
+            "forbidden": [
+              "vin",
+              "Garonne",
+              "Girondins"
+            ]
+          },
+          {
+            "text": "Lille",
+            "difficulty": 1,
+            "forbidden": [
+              "Nord",
+              "braderie",
+              "Ch'ti"
+            ]
+          },
+          {
+            "text": "Rennes",
+            "difficulty": 2,
+            "forbidden": [
+              "Bretagne",
+              "galette-saucisse",
+              "parlement"
+            ]
+          },
+          {
+            "text": "Reims",
+            "difficulty": 2,
+            "forbidden": [
+              "champagne",
+              "sacre",
+              "cathédrale"
+            ]
+          },
+          {
+            "text": "Le Havre",
+            "difficulty": 2,
+            "forbidden": [
+              "port",
+              "Normandie",
+              "béton"
+            ]
+          },
+          {
+            "text": "Saint-Étienne",
+            "difficulty": 2,
+            "forbidden": [
+              "Verts",
+              "Geoffroy-Guichard",
+              "mine"
+            ]
+          },
+          {
+            "text": "Toulon",
+            "difficulty": 2,
+            "forbidden": [
+              "rade",
+              "Marine nationale",
+              "RCT"
+            ]
+          },
+          {
+            "text": "Grenoble",
+            "difficulty": 2,
+            "forbidden": [
+              "Alpes",
+              "Bastille",
+              "Isère"
+            ]
+          },
+          {
+            "text": "Dijon",
+            "difficulty": 2,
+            "forbidden": [
+              "moutarde",
+              "Bourgogne",
+              "pain d'épices"
+            ]
+          },
+          {
+            "text": "Angers",
+            "difficulty": 2,
+            "forbidden": [
+              "château",
+              "Anjou",
+              "Loire"
+            ]
+          },
+          {
+            "text": "Nîmes",
+            "difficulty": 2,
+            "forbidden": [
+              "arènes",
+              "Gard",
+              "Maison carrée"
+            ]
+          },
+          {
+            "text": "Clermont-Ferrand",
+            "difficulty": 2,
+            "forbidden": [
+              "Auvergne",
+              "Michelin",
+              "volcans"
+            ]
+          },
+          {
+            "text": "Le Mans",
+            "difficulty": 2,
+            "forbidden": [
+              "24 Heures",
+              "rillettes",
+              "circuit"
+            ]
+          },
+          {
+            "text": "Aix-en-Provence",
+            "difficulty": 2,
+            "forbidden": [
+              "Cézanne",
+              "fontaines",
+              "calissons"
+            ]
+          },
+          {
+            "text": "Brest",
+            "difficulty": 2,
+            "forbidden": [
+              "Bretagne",
+              "port",
+              "Marine nationale"
+            ]
+          },
+          {
+            "text": "Tours",
+            "difficulty": 2,
+            "forbidden": [
+              "Loire",
+              "Touraine",
+              "châteaux"
+            ]
+          },
+          {
+            "text": "Amiens",
+            "difficulty": 2,
+            "forbidden": [
+              "cathédrale",
+              "Somme",
+              "hortillonnages"
+            ]
+          },
+          {
+            "text": "Limoges",
+            "difficulty": 2,
+            "forbidden": [
+              "porcelaine",
+              "Limousin",
+              "CSP"
+            ]
+          },
+          {
+            "text": "Annecy",
+            "difficulty": 2,
+            "forbidden": [
+              "lac",
+              "Haute-Savoie",
+              "Venise des Alpes"
+            ]
+          },
+          {
+            "text": "Perpignan",
+            "difficulty": 2,
+            "forbidden": [
+              "catalane",
+              "Castillet",
+              "rugby"
+            ]
+          },
+          {
+            "text": "Metz",
+            "difficulty": 2,
+            "forbidden": [
+              "Lorraine",
+              "Centre Pompidou",
+              "Moselle"
+            ]
+          },
+          {
+            "text": "Besançon",
+            "difficulty": 3,
+            "forbidden": [
+              "Doubs",
+              "citadelle",
+              "Victor Hugo"
+            ]
+          },
+          {
+            "text": "Orléans",
+            "difficulty": 2,
+            "forbidden": [
+              "Jeanne d'Arc",
+              "Loire",
+              "pucelle"
+            ]
+          },
+          {
+            "text": "Rouen",
+            "difficulty": 2,
+            "forbidden": [
+              "Normandie",
+              "Jeanne d'Arc",
+              "Gros-Horloge"
+            ]
+          },
+          {
+            "text": "Caen",
+            "difficulty": 2,
+            "forbidden": [
+              "Normandie",
+              "Mémorial",
+              "Guillaume le Conquérant"
+            ]
+          },
+          {
+            "text": "Mulhouse",
+            "difficulty": 3,
+            "forbidden": [
+              "Alsace",
+              "Cité de l'automobile",
+              "Suisse"
+            ]
+          },
+          {
+            "text": "Nancy",
+            "difficulty": 2,
+            "forbidden": [
+              "place Stanislas",
+              "Lorraine",
+              "bergamote"
+            ]
+          },
+          {
+            "text": "Avignon",
+            "difficulty": 2,
+            "forbidden": [
+              "pont",
+              "papes",
+              "festival"
+            ]
+          },
+          {
+            "text": "Cannes",
+            "difficulty": 1,
+            "forbidden": [
+              "festival",
+              "Croisette",
+              "Palme d'or"
+            ]
+          },
+          {
+            "text": "Saint-Tropez",
+            "difficulty": 1,
+            "forbidden": [
+              "gendarme",
+              "yachts",
+              "Côte d'Azur"
+            ]
+          },
+          {
+            "text": "Biarritz",
+            "difficulty": 2,
+            "forbidden": [
+              "surf",
+              "Pays basque",
+              "plage"
+            ]
+          },
+          {
+            "text": "Bayonne",
+            "difficulty": 2,
+            "forbidden": [
+              "jambon",
+              "Pays basque",
+              "fêtes"
+            ]
+          },
+          {
+            "text": "Pau",
+            "difficulty": 3,
+            "forbidden": [
+              "Béarn",
+              "Henri IV",
+              "Pyrénées"
+            ]
+          },
+          {
+            "text": "Lourdes",
+            "difficulty": 2,
+            "forbidden": [
+              "grotte",
+              "pèlerinage",
+              "Vierge"
+            ]
+          },
+          {
+            "text": "Carcassonne",
+            "difficulty": 2,
+            "forbidden": [
+              "cité médiévale",
+              "remparts",
+              "Aude"
+            ]
+          },
+          {
+            "text": "Arles",
+            "difficulty": 3,
+            "forbidden": [
+              "Van Gogh",
+              "arènes",
+              "Camargue"
+            ]
+          },
+          {
+            "text": "La Rochelle",
+            "difficulty": 2,
+            "forbidden": [
+              "port",
+              "tours",
+              "Francofolies"
+            ]
+          },
+          {
+            "text": "Chamonix",
+            "difficulty": 2,
+            "forbidden": [
+              "Mont-Blanc",
+              "ski",
+              "aiguille du Midi"
+            ]
+          },
+          {
+            "text": "Versailles",
+            "difficulty": 1,
+            "forbidden": [
+              "château",
+              "Louis XIV",
+              "galerie des Glaces"
+            ]
+          },
+          {
+            "text": "Saint-Malo",
+            "difficulty": 2,
+            "forbidden": [
+              "corsaires",
+              "remparts",
+              "Bretagne"
+            ]
+          },
+          {
+            "text": "Mont-Saint-Michel",
+            "difficulty": 1,
+            "forbidden": [
+              "abbaye",
+              "marée",
+              "Normandie"
+            ]
+          },
+          {
+            "text": "Ajaccio",
+            "difficulty": 2,
+            "forbidden": [
+              "Corse",
+              "Napoléon",
+              "préfecture"
+            ]
+          },
+          {
+            "text": "Bastia",
+            "difficulty": 3,
+            "forbidden": [
+              "Corse",
+              "port",
+              "Sporting"
+            ]
+          },
+          {
+            "text": "Calais",
+            "difficulty": 2,
+            "forbidden": [
+              "tunnel sous la Manche",
+              "port",
+              "Angleterre"
+            ]
+          },
+          {
+            "text": "Dunkerque",
+            "difficulty": 2,
+            "forbidden": [
+              "carnaval",
+              "Nord",
+              "port"
+            ]
+          },
+          {
+            "text": "Boulogne-sur-Mer",
+            "difficulty": 3,
+            "forbidden": [
+              "port",
+              "Nausicaá",
+              "pêche"
+            ]
+          },
+          {
+            "text": "Cherbourg",
+            "difficulty": 3,
+            "forbidden": [
+              "parapluies",
+              "Cotentin",
+              "port"
+            ]
+          },
+          {
+            "text": "Deauville",
+            "difficulty": 2,
+            "forbidden": [
+              "planches",
+              "Normandie",
+              "festival américain"
+            ]
+          },
+          {
+            "text": "Étretat",
+            "difficulty": 3,
+            "forbidden": [
+              "falaises",
+              "aiguille",
+              "Normandie"
+            ]
+          },
+          {
+            "text": "Colmar",
+            "difficulty": 3,
+            "forbidden": [
+              "Alsace",
+              "Petite Venise",
+              "colombages"
+            ]
+          },
+          {
+            "text": "Évian-les-Bains",
+            "difficulty": 3,
+            "forbidden": [
+              "eau minérale",
+              "lac Léman",
+              "Haute-Savoie"
+            ]
+          },
+          {
+            "text": "Vichy",
+            "difficulty": 3,
+            "forbidden": [
+              "eau",
+              "Allier",
+              "pastilles"
+            ]
+          },
+          {
+            "text": "Chartres",
+            "difficulty": 3,
+            "forbidden": [
+              "cathédrale",
+              "vitraux",
+              "Eure-et-Loir"
+            ]
+          },
+          {
+            "text": "Poitiers",
+            "difficulty": 3,
+            "forbidden": [
+              "Futuroscope",
+              "Vienne",
+              "Charles Martel"
+            ]
+          },
+          {
+            "text": "Troyes",
+            "difficulty": 3,
+            "forbidden": [
+              "Champagne",
+              "andouillette",
+              "Aube"
+            ]
+          },
+          {
+            "text": "Montélimar",
+            "difficulty": 3,
+            "forbidden": [
+              "nougat",
+              "Drôme",
+              "autoroute"
+            ]
+          },
+          {
+            "text": "Sète",
+            "difficulty": 3,
+            "forbidden": [
+              "Hérault",
+              "canaux",
+              "Brassens"
+            ]
+          },
+          {
+            "text": "Narbonne",
+            "difficulty": 3,
+            "forbidden": [
+              "Aude",
+              "romains",
+              "Via Domitia"
+            ]
+          },
+          {
+            "text": "Béziers",
+            "difficulty": 3,
+            "forbidden": [
+              "Hérault",
+              "rugby",
+              "canal du Midi"
+            ]
+          },
+          {
+            "text": "Antibes",
+            "difficulty": 3,
+            "forbidden": [
+              "Côte d'Azur",
+              "Juan-les-Pins",
+              "Picasso"
+            ]
+          },
+          {
+            "text": "Menton",
+            "difficulty": 3,
+            "forbidden": [
+              "citrons",
+              "Côte d'Azur",
+              "Italie"
+            ]
+          },
+          {
+            "text": "Grasse",
+            "difficulty": 3,
+            "forbidden": [
+              "parfum",
+              "Côte d'Azur",
+              "fleurs"
+            ]
+          },
+          {
+            "text": "Saint-Denis",
+            "difficulty": 2,
+            "forbidden": [
+              "Stade de France",
+              "basilique",
+              "93"
+            ]
+          },
+          {
+            "text": "Créteil",
+            "difficulty": 3,
+            "forbidden": [
+              "Val-de-Marne",
+              "préfecture",
+              "lac"
+            ]
+          },
+          {
+            "text": "Boulogne-Billancourt",
+            "difficulty": 3,
+            "forbidden": [
+              "Hauts-de-Seine",
+              "Renault",
+              "banlieue"
+            ]
+          },
+          {
+            "text": "Nanterre",
+            "difficulty": 3,
+            "forbidden": [
+              "Hauts-de-Seine",
+              "préfecture",
+              "La Défense"
+            ]
+          },
+          {
+            "text": "Argenteuil",
+            "difficulty": 3,
+            "forbidden": [
+              "Val-d'Oise",
+              "Monet",
+              "Seine"
+            ]
+          },
+          {
+            "text": "Montreuil",
+            "difficulty": 3,
+            "forbidden": [
+              "Seine-Saint-Denis",
+              "murs à pêches",
+              "métro"
+            ]
+          },
+          {
+            "text": "Sarcelles",
+            "difficulty": 3,
+            "forbidden": [
+              "Val-d'Oise",
+              "banlieue",
+              "rap"
+            ]
+          },
+          {
+            "text": "Marne-la-Vallée",
+            "difficulty": 2,
+            "forbidden": [
+              "Disneyland",
+              "Seine-et-Marne",
+              "RER A"
+            ]
+          },
+          {
+            "text": "Fontainebleau",
+            "difficulty": 3,
+            "forbidden": [
+              "château",
+              "forêt",
+              "Napoléon"
+            ]
+          },
+          {
+            "text": "Chantilly",
+            "difficulty": 3,
+            "forbidden": [
+              "crème",
+              "château",
+              "chevaux"
+            ]
+          },
+          {
+            "text": "Giverny",
+            "difficulty": 3,
+            "forbidden": [
+              "Monet",
+              "nymphéas",
+              "jardin"
+            ]
+          },
+          {
+            "text": "Pointe-à-Pitre",
+            "difficulty": 2,
+            "forbidden": [
+              "Guadeloupe",
+              "Antilles",
+              "port"
+            ]
+          },
+          {
+            "text": "Fort-de-France",
+            "difficulty": 2,
+            "forbidden": [
+              "Martinique",
+              "Antilles",
+              "Joséphine"
+            ]
+          },
+          {
+            "text": "Cayenne",
+            "difficulty": 2,
+            "forbidden": [
+              "Guyane",
+              "Amazonie",
+              "bagne"
+            ]
+          },
+          {
+            "text": "Kourou",
+            "difficulty": 3,
+            "forbidden": [
+              "Guyane",
+              "fusée",
+              "Ariane"
+            ]
+          },
+          {
+            "text": "Mamoudzou",
+            "difficulty": 3,
+            "forbidden": [
+              "Mayotte",
+              "lagon",
+              "océan Indien"
+            ]
+          },
+          {
+            "text": "Nouméa",
+            "difficulty": 3,
+            "forbidden": [
+              "Nouvelle-Calédonie",
+              "Pacifique",
+              "lagon"
+            ]
+          },
+          {
+            "text": "Papeete",
+            "difficulty": 3,
+            "forbidden": [
+              "Tahiti",
+              "Polynésie",
+              "Pacifique"
+            ]
+          },
+          {
+            "text": "Lens",
+            "difficulty": 2,
+            "forbidden": [
+              "Sang et Or",
+              "Nord",
+              "Bollaert"
+            ]
+          },
+          {
+            "text": "Auxerre",
+            "difficulty": 3,
+            "forbidden": [
+              "Bourgogne",
+              "AJA",
+              "Yonne"
+            ]
+          },
+          {
+            "text": "Lorient",
+            "difficulty": 3,
+            "forbidden": [
+              "Bretagne",
+              "festival interceltique",
+              "port"
+            ]
+          },
+          {
+            "text": "Quimper",
+            "difficulty": 3,
+            "forbidden": [
+              "Bretagne",
+              "faïence",
+              "Finistère"
+            ]
+          },
+          {
+            "text": "Vannes",
+            "difficulty": 3,
+            "forbidden": [
+              "Bretagne",
+              "golfe du Morbihan",
+              "remparts"
+            ]
+          },
+          {
+            "text": "Saint-Nazaire",
+            "difficulty": 3,
+            "forbidden": [
+              "chantiers navals",
+              "paquebots",
+              "estuaire"
+            ]
+          },
+          {
+            "text": "Angoulême",
+            "difficulty": 3,
+            "forbidden": [
+              "bande dessinée",
+              "festival",
+              "Charente"
+            ]
+          },
+          {
+            "text": "Bourges",
+            "difficulty": 3,
+            "forbidden": [
+              "Printemps",
+              "cathédrale",
+              "Berry"
+            ]
+          },
+          {
+            "text": "Albi",
+            "difficulty": 3,
+            "forbidden": [
+              "Toulouse-Lautrec",
+              "cathédrale",
+              "Tarn"
+            ]
+          },
+          {
+            "text": "Montauban",
+            "difficulty": 3,
+            "forbidden": [
+              "Tarn-et-Garonne",
+              "Ingres",
+              "brique"
+            ]
+          },
+          {
+            "text": "Agen",
+            "difficulty": 3,
+            "forbidden": [
+              "pruneaux",
+              "Lot-et-Garonne",
+              "rugby"
+            ]
+          },
+          {
+            "text": "Arcachon",
+            "difficulty": 2,
+            "forbidden": [
+              "bassin",
+              "dune du Pilat",
+              "huîtres"
+            ]
+          },
+          {
+            "text": "Les Sables-d'Olonne",
+            "difficulty": 3,
+            "forbidden": [
+              "Vendée Globe",
+              "plage",
+              "Vendée"
+            ]
+          },
+          {
+            "text": "Roubaix",
+            "difficulty": 3,
+            "forbidden": [
+              "Paris-Roubaix",
+              "vélodrome",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Valenciennes",
+            "difficulty": 3,
+            "forbidden": [
+              "Nord",
+              "Hainaut",
+              "football"
+            ]
+          },
+          {
+            "text": "Belfort",
+            "difficulty": 3,
+            "forbidden": [
+              "lion",
+              "Franche-Comté",
+              "Eurockéennes"
+            ]
+          },
+          {
+            "text": "Chambéry",
+            "difficulty": 3,
+            "forbidden": [
+              "Savoie",
+              "éléphants",
+              "ducs"
+            ]
+          },
+          {
+            "text": "Aurillac",
+            "difficulty": 3,
+            "forbidden": [
+              "Cantal",
+              "théâtre de rue",
+              "parapluies"
+            ]
+          },
+          {
+            "text": "Sedan",
+            "difficulty": 3,
+            "forbidden": [
+              "château fort",
+              "Ardennes",
+              "bataille"
+            ]
+          },
+          {
+            "text": "Charleville-Mézières",
+            "difficulty": 3,
+            "forbidden": [
+              "Rimbaud",
+              "marionnettes",
+              "Ardennes"
+            ]
+          },
+          {
+            "text": "Épernay",
+            "difficulty": 3,
+            "forbidden": [
+              "champagne",
+              "avenue",
+              "Marne"
+            ]
+          },
+          {
+            "text": "Beaune",
+            "difficulty": 3,
+            "forbidden": [
+              "hospices",
+              "vin",
+              "Bourgogne"
+            ]
+          },
+          {
+            "text": "Rodez",
+            "difficulty": 3,
+            "forbidden": [
+              "Aveyron",
+              "Soulages",
+              "Rouergue"
+            ]
+          },
+          {
+            "text": "Niort",
+            "difficulty": 3,
+            "forbidden": [
+              "Deux-Sèvres",
+              "Marais poitevin",
+              "assurances"
+            ]
+          },
+          {
+            "text": "Quiberon",
+            "difficulty": 3,
+            "forbidden": [
+              "presqu'île",
+              "Bretagne",
+              "plage"
+            ]
+          },
+          {
+            "text": "Saint-Jean-de-Luz",
+            "difficulty": 3,
+            "forbidden": [
+              "Pays basque",
+              "port",
+              "Louis XIV"
+            ]
+          },
+          {
+            "text": "Vienne",
+            "difficulty": 3,
+            "forbidden": [
+              "Isère",
+              "Rhône",
+              "jazz"
+            ]
+          },
+          {
+            "text": "Courchevel",
+            "difficulty": 3,
+            "forbidden": [
+              "ski",
+              "station",
+              "luxe"
+            ]
+          },
+          {
+            "text": "Val-d'Isère",
+            "difficulty": 3,
+            "forbidden": [
+              "ski",
+              "station",
+              "Savoie"
+            ]
+          },
+          {
+            "text": "Saint-Raphaël",
+            "difficulty": 3,
+            "forbidden": [
+              "Var",
+              "Côte d'Azur",
+              "Fréjus"
+            ]
+          },
+          {
+            "text": "Hyères",
+            "difficulty": 3,
+            "forbidden": [
+              "Var",
+              "îles",
+              "palmiers"
+            ]
+          },
+          {
+            "text": "Gap",
+            "difficulty": 3,
+            "forbidden": [
+              "Hautes-Alpes",
+              "montagne",
+              "préfecture"
+            ]
+          },
+          {
+            "text": "Bergerac",
+            "difficulty": 3,
+            "forbidden": [
+              "Dordogne",
+              "Cyrano",
+              "vin"
+            ]
+          },
+          {
+            "text": "Sarlat",
+            "difficulty": 3,
+            "forbidden": [
+              "Périgord",
+              "foie gras",
+              "médiéval"
+            ]
+          },
+          {
+            "text": "Rocamadour",
+            "difficulty": 3,
+            "forbidden": [
+              "sanctuaire",
+              "falaise",
+              "Lot"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

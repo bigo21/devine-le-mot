@@ -1,0 +1,1138 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "fr-expressions",
+    "name": {
+      "fr": "Expressions françaises",
+      "en": "French expressions"
+    },
+    "region": "fr",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "expressions",
+        "name": {
+          "fr": "Expressions françaises",
+          "en": "French expressions"
+        },
+        "emoji": "🗣️",
+        "color": "lilac",
+        "tags": [
+          "langage"
+        ],
+        "words": [
+          {
+            "text": "Avoir le cafard",
+            "difficulty": 2,
+            "forbidden": [
+              "déprime",
+              "tristesse",
+              "insecte"
+            ]
+          },
+          {
+            "text": "Poser un lapin",
+            "difficulty": 1,
+            "forbidden": [
+              "rendez-vous",
+              "absent",
+              "attendre"
+            ]
+          },
+          {
+            "text": "Coûter les yeux de la tête",
+            "difficulty": 1,
+            "forbidden": [
+              "cher",
+              "prix",
+              "argent"
+            ]
+          },
+          {
+            "text": "Avoir un poil dans la main",
+            "difficulty": 1,
+            "forbidden": [
+              "paresseux",
+              "fainéant",
+              "travail"
+            ]
+          },
+          {
+            "text": "Tomber dans les pommes",
+            "difficulty": 1,
+            "forbidden": [
+              "évanouir",
+              "malaise",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Mettre les pieds dans le plat",
+            "difficulty": 2,
+            "forbidden": [
+              "gaffe",
+              "maladresse",
+              "sujet"
+            ]
+          },
+          {
+            "text": "Avoir la tête dans les nuages",
+            "difficulty": 1,
+            "forbidden": [
+              "rêveur",
+              "distrait",
+              "ciel"
+            ]
+          },
+          {
+            "text": "Casser les pieds",
+            "difficulty": 1,
+            "forbidden": [
+              "ennuyer",
+              "agacer",
+              "embêter"
+            ]
+          },
+          {
+            "text": "Avoir le cœur sur la main",
+            "difficulty": 2,
+            "forbidden": [
+              "généreux",
+              "gentil",
+              "donner"
+            ]
+          },
+          {
+            "text": "Donner sa langue au chat",
+            "difficulty": 1,
+            "forbidden": [
+              "abandonner",
+              "deviner",
+              "réponse"
+            ]
+          },
+          {
+            "text": "Il pleut des cordes",
+            "difficulty": 1,
+            "forbidden": [
+              "averse",
+              "pluie",
+              "mouillé"
+            ]
+          },
+          {
+            "text": "Être dans la lune",
+            "difficulty": 1,
+            "forbidden": [
+              "distrait",
+              "rêveur",
+              "ailleurs"
+            ]
+          },
+          {
+            "text": "Faire la grasse matinée",
+            "difficulty": 1,
+            "forbidden": [
+              "dormir",
+              "tard",
+              "lit"
+            ]
+          },
+          {
+            "text": "Avoir la chair de poule",
+            "difficulty": 1,
+            "forbidden": [
+              "frisson",
+              "froid",
+              "peur"
+            ]
+          },
+          {
+            "text": "Appeler un chat un chat",
+            "difficulty": 2,
+            "forbidden": [
+              "franchise",
+              "direct",
+              "dire"
+            ]
+          },
+          {
+            "text": "Raconter des salades",
+            "difficulty": 2,
+            "forbidden": [
+              "mentir",
+              "histoires",
+              "bobards"
+            ]
+          },
+          {
+            "text": "Mettre la main à la pâte",
+            "difficulty": 2,
+            "forbidden": [
+              "aider",
+              "participer",
+              "travail"
+            ]
+          },
+          {
+            "text": "Prendre ses jambes à son cou",
+            "difficulty": 2,
+            "forbidden": [
+              "fuir",
+              "courir",
+              "vite"
+            ]
+          },
+          {
+            "text": "Avoir un chat dans la gorge",
+            "difficulty": 2,
+            "forbidden": [
+              "voix",
+              "enroué",
+              "tousser"
+            ]
+          },
+          {
+            "text": "Être sur son trente-et-un",
+            "difficulty": 2,
+            "forbidden": [
+              "élégant",
+              "habillé",
+              "chic"
+            ]
+          },
+          {
+            "text": "Faire d'une pierre deux coups",
+            "difficulty": 2,
+            "forbidden": [
+              "double",
+              "efficace",
+              "à la fois"
+            ]
+          },
+          {
+            "text": "Les doigts dans le nez",
+            "difficulty": 1,
+            "forbidden": [
+              "facile",
+              "simple",
+              "sans effort"
+            ]
+          },
+          {
+            "text": "Avoir la pêche",
+            "difficulty": 1,
+            "forbidden": [
+              "énergie",
+              "forme",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Avoir la frite",
+            "difficulty": 3,
+            "forbidden": [
+              "forme",
+              "énergie",
+              "pomme de terre"
+            ]
+          },
+          {
+            "text": "Tirer les vers du nez",
+            "difficulty": 2,
+            "forbidden": [
+              "secret",
+              "interroger",
+              "avouer"
+            ]
+          },
+          {
+            "text": "Se faire rouler dans la farine",
+            "difficulty": 2,
+            "forbidden": [
+              "tromper",
+              "arnaque",
+              "dupe"
+            ]
+          },
+          {
+            "text": "Mettre son grain de sel",
+            "difficulty": 2,
+            "forbidden": [
+              "intervenir",
+              "avis",
+              "donner"
+            ]
+          },
+          {
+            "text": "Avoir les yeux plus gros que le ventre",
+            "difficulty": 2,
+            "forbidden": [
+              "gourmand",
+              "trop",
+              "assiette"
+            ]
+          },
+          {
+            "text": "C'est la fin des haricots",
+            "difficulty": 2,
+            "forbidden": [
+              "catastrophe",
+              "foutu",
+              "dernier"
+            ]
+          },
+          {
+            "text": "Tourner autour du pot",
+            "difficulty": 2,
+            "forbidden": [
+              "hésiter",
+              "détour",
+              "direct"
+            ]
+          },
+          {
+            "text": "Prendre la mouche",
+            "difficulty": 3,
+            "forbidden": [
+              "vexé",
+              "fâcher",
+              "susceptible"
+            ]
+          },
+          {
+            "text": "Avoir une mémoire de poisson rouge",
+            "difficulty": 2,
+            "forbidden": [
+              "oublier",
+              "souvenir",
+              "bocal"
+            ]
+          },
+          {
+            "text": "Être têtu comme une mule",
+            "difficulty": 2,
+            "forbidden": [
+              "obstiné",
+              "borné",
+              "âne"
+            ]
+          },
+          {
+            "text": "Rire jaune",
+            "difficulty": 2,
+            "forbidden": [
+              "gêne",
+              "forcé",
+              "sourire"
+            ]
+          },
+          {
+            "text": "Voir la vie en rose",
+            "difficulty": 2,
+            "forbidden": [
+              "optimiste",
+              "heureux",
+              "Piaf"
+            ]
+          },
+          {
+            "text": "Avoir le bras long",
+            "difficulty": 3,
+            "forbidden": [
+              "influence",
+              "relations",
+              "pouvoir"
+            ]
+          },
+          {
+            "text": "Casser sa pipe",
+            "difficulty": 2,
+            "forbidden": [
+              "mourir",
+              "décès",
+              "fumer"
+            ]
+          },
+          {
+            "text": "Mettre la charrue avant les bœufs",
+            "difficulty": 3,
+            "forbidden": [
+              "ordre",
+              "précipiter",
+              "étapes"
+            ]
+          },
+          {
+            "text": "Revenir à ses moutons",
+            "difficulty": 3,
+            "forbidden": [
+              "sujet",
+              "reprendre",
+              "digression"
+            ]
+          },
+          {
+            "text": "Avoir du pain sur la planche",
+            "difficulty": 2,
+            "forbidden": [
+              "travail",
+              "beaucoup",
+              "tâches"
+            ]
+          },
+          {
+            "text": "Ce n'est pas la mer à boire",
+            "difficulty": 2,
+            "forbidden": [
+              "facile",
+              "difficile",
+              "exagérer"
+            ]
+          },
+          {
+            "text": "Être dans de beaux draps",
+            "difficulty": 2,
+            "forbidden": [
+              "problème",
+              "situation",
+              "ennuis"
+            ]
+          },
+          {
+            "text": "Tomber des nues",
+            "difficulty": 3,
+            "forbidden": [
+              "surprise",
+              "étonné",
+              "ciel"
+            ]
+          },
+          {
+            "text": "Avoir le melon",
+            "difficulty": 2,
+            "forbidden": [
+              "prétentieux",
+              "orgueil",
+              "tête"
+            ]
+          },
+          {
+            "text": "Péter les plombs",
+            "difficulty": 1,
+            "forbidden": [
+              "craquer",
+              "énerver",
+              "fusible"
+            ]
+          },
+          {
+            "text": "Monter sur ses grands chevaux",
+            "difficulty": 3,
+            "forbidden": [
+              "colère",
+              "s'emporter",
+              "fâcher"
+            ]
+          },
+          {
+            "text": "Coup de foudre",
+            "difficulty": 1,
+            "forbidden": [
+              "amour",
+              "premier regard",
+              "éclair"
+            ]
+          },
+          {
+            "text": "Faire chou blanc",
+            "difficulty": 3,
+            "forbidden": [
+              "échouer",
+              "rater",
+              "rien"
+            ]
+          },
+          {
+            "text": "Être fauché comme les blés",
+            "difficulty": 2,
+            "forbidden": [
+              "pauvre",
+              "argent",
+              "ruiné"
+            ]
+          },
+          {
+            "text": "Avoir un cœur d'artichaut",
+            "difficulty": 3,
+            "forbidden": [
+              "amoureux",
+              "facile",
+              "légume"
+            ]
+          },
+          {
+            "text": "Parler français comme une vache espagnole",
+            "difficulty": 3,
+            "forbidden": [
+              "langue",
+              "mal",
+              "étranger"
+            ]
+          },
+          {
+            "text": "Ne pas avoir sa langue dans sa poche",
+            "difficulty": 2,
+            "forbidden": [
+              "bavard",
+              "répartie",
+              "parler"
+            ]
+          },
+          {
+            "text": "Être une poule mouillée",
+            "difficulty": 1,
+            "forbidden": [
+              "peureux",
+              "lâche",
+              "froussard"
+            ]
+          },
+          {
+            "text": "Avoir des fourmis dans les jambes",
+            "difficulty": 2,
+            "forbidden": [
+              "engourdi",
+              "picotements",
+              "bouger"
+            ]
+          },
+          {
+            "text": "Se lever du pied gauche",
+            "difficulty": 1,
+            "forbidden": [
+              "mauvaise humeur",
+              "matin",
+              "grognon"
+            ]
+          },
+          {
+            "text": "Avoir la langue de bois",
+            "difficulty": 2,
+            "forbidden": [
+              "politique",
+              "éviter",
+              "discours"
+            ]
+          },
+          {
+            "text": "Avoir le compas dans l'œil",
+            "difficulty": 3,
+            "forbidden": [
+              "précis",
+              "mesurer",
+              "exact"
+            ]
+          },
+          {
+            "text": "Mettre sa main au feu",
+            "difficulty": 3,
+            "forbidden": [
+              "certain",
+              "garantir",
+              "sûr"
+            ]
+          },
+          {
+            "text": "Jeter l'éponge",
+            "difficulty": 2,
+            "forbidden": [
+              "abandonner",
+              "boxe",
+              "renoncer"
+            ]
+          },
+          {
+            "text": "Tenir la chandelle",
+            "difficulty": 3,
+            "forbidden": [
+              "couple",
+              "de trop",
+              "amoureux"
+            ]
+          },
+          {
+            "text": "Faire la tête",
+            "difficulty": 1,
+            "forbidden": [
+              "bouder",
+              "fâché",
+              "moue"
+            ]
+          },
+          {
+            "text": "Faire la sourde oreille",
+            "difficulty": 2,
+            "forbidden": [
+              "ignorer",
+              "entendre",
+              "écouter"
+            ]
+          },
+          {
+            "text": "Couper la poire en deux",
+            "difficulty": 2,
+            "forbidden": [
+              "compromis",
+              "partager",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Être né de la dernière pluie",
+            "difficulty": 2,
+            "forbidden": [
+              "naïf",
+              "crédule",
+              "expérience"
+            ]
+          },
+          {
+            "text": "Pédaler dans la semoule",
+            "difficulty": 2,
+            "forbidden": [
+              "patauger",
+              "difficulté",
+              "inefficace"
+            ]
+          },
+          {
+            "text": "Être au bout du rouleau",
+            "difficulty": 2,
+            "forbidden": [
+              "épuisé",
+              "fatigué",
+              "limite"
+            ]
+          },
+          {
+            "text": "Il y a anguille sous roche",
+            "difficulty": 3,
+            "forbidden": [
+              "louche",
+              "secret",
+              "soupçon"
+            ]
+          },
+          {
+            "text": "Mener quelqu'un en bateau",
+            "difficulty": 2,
+            "forbidden": [
+              "tromper",
+              "mentir",
+              "embobiner"
+            ]
+          },
+          {
+            "text": "Faire un tabac",
+            "difficulty": 2,
+            "forbidden": [
+              "succès",
+              "triomphe",
+              "cartonner"
+            ]
+          },
+          {
+            "text": "Se serrer la ceinture",
+            "difficulty": 2,
+            "forbidden": [
+              "économies",
+              "restrictions",
+              "argent"
+            ]
+          },
+          {
+            "text": "Avoir une faim de loup",
+            "difficulty": 1,
+            "forbidden": [
+              "affamé",
+              "manger",
+              "gros appétit"
+            ]
+          },
+          {
+            "text": "Dormir comme un loir",
+            "difficulty": 2,
+            "forbidden": [
+              "sommeil",
+              "profondément",
+              "marmotte"
+            ]
+          },
+          {
+            "text": "Haut comme trois pommes",
+            "difficulty": 1,
+            "forbidden": [
+              "petit",
+              "enfant",
+              "taille"
+            ]
+          },
+          {
+            "text": "Rouge comme une tomate",
+            "difficulty": 1,
+            "forbidden": [
+              "gêne",
+              "rougir",
+              "honte"
+            ]
+          },
+          {
+            "text": "Muet comme une carpe",
+            "difficulty": 2,
+            "forbidden": [
+              "silence",
+              "taire",
+              "poisson"
+            ]
+          },
+          {
+            "text": "Malin comme un singe",
+            "difficulty": 2,
+            "forbidden": [
+              "rusé",
+              "astucieux",
+              "intelligent"
+            ]
+          },
+          {
+            "text": "Bavard comme une pie",
+            "difficulty": 2,
+            "forbidden": [
+              "parler",
+              "oiseau",
+              "pipelette"
+            ]
+          },
+          {
+            "text": "Fier comme un paon",
+            "difficulty": 2,
+            "forbidden": [
+              "orgueil",
+              "plumes",
+              "vaniteux"
+            ]
+          },
+          {
+            "text": "Rapide comme l'éclair",
+            "difficulty": 1,
+            "forbidden": [
+              "vite",
+              "foudre",
+              "vitesse"
+            ]
+          },
+          {
+            "text": "Doux comme un agneau",
+            "difficulty": 2,
+            "forbidden": [
+              "gentil",
+              "calme",
+              "mouton"
+            ]
+          },
+          {
+            "text": "Sourd comme un pot",
+            "difficulty": 2,
+            "forbidden": [
+              "entendre",
+              "oreilles",
+              "n'entend rien"
+            ]
+          },
+          {
+            "text": "Pleurer comme une madeleine",
+            "difficulty": 2,
+            "forbidden": [
+              "larmes",
+              "sanglots",
+              "gâteau"
+            ]
+          },
+          {
+            "text": "Mettre les voiles",
+            "difficulty": 2,
+            "forbidden": [
+              "partir",
+              "bateau",
+              "s'en aller"
+            ]
+          },
+          {
+            "text": "Avoir le dernier mot",
+            "difficulty": 2,
+            "forbidden": [
+              "discussion",
+              "gagner",
+              "répondre"
+            ]
+          },
+          {
+            "text": "Boire comme un trou",
+            "difficulty": 2,
+            "forbidden": [
+              "alcool",
+              "ivrogne",
+              "beaucoup"
+            ]
+          },
+          {
+            "text": "Ça ne casse pas trois pattes à un canard",
+            "difficulty": 3,
+            "forbidden": [
+              "banal",
+              "ordinaire",
+              "bof"
+            ]
+          },
+          {
+            "text": "Un froid de canard",
+            "difficulty": 1,
+            "forbidden": [
+              "glacial",
+              "hiver",
+              "geler"
+            ]
+          },
+          {
+            "text": "Faire la fine bouche",
+            "difficulty": 2,
+            "forbidden": [
+              "difficile",
+              "manger",
+              "dédaigner"
+            ]
+          },
+          {
+            "text": "Se creuser la tête",
+            "difficulty": 1,
+            "forbidden": [
+              "réfléchir",
+              "chercher",
+              "cerveau"
+            ]
+          },
+          {
+            "text": "Avoir le nez creux",
+            "difficulty": 3,
+            "forbidden": [
+              "flair",
+              "intuition",
+              "deviner"
+            ]
+          },
+          {
+            "text": "Être sur la paille",
+            "difficulty": 3,
+            "forbidden": [
+              "pauvre",
+              "ruiné",
+              "argent"
+            ]
+          },
+          {
+            "text": "L'habit ne fait pas le moine",
+            "difficulty": 2,
+            "forbidden": [
+              "apparence",
+              "proverbe",
+              "vêtement"
+            ]
+          },
+          {
+            "text": "Qui vivra verra",
+            "difficulty": 3,
+            "forbidden": [
+              "avenir",
+              "proverbe",
+              "attendre"
+            ]
+          },
+          {
+            "text": "Petit à petit, l'oiseau fait son nid",
+            "difficulty": 2,
+            "forbidden": [
+              "proverbe",
+              "patience",
+              "lentement"
+            ]
+          },
+          {
+            "text": "Pierre qui roule n'amasse pas mousse",
+            "difficulty": 3,
+            "forbidden": [
+              "proverbe",
+              "bouger",
+              "stable"
+            ]
+          },
+          {
+            "text": "Après la pluie, le beau temps",
+            "difficulty": 2,
+            "forbidden": [
+              "proverbe",
+              "soleil",
+              "espoir"
+            ]
+          },
+          {
+            "text": "Chat échaudé craint l'eau froide",
+            "difficulty": 3,
+            "forbidden": [
+              "proverbe",
+              "expérience",
+              "prudence"
+            ]
+          },
+          {
+            "text": "Quand le chat n'est pas là, les souris dansent",
+            "difficulty": 1,
+            "forbidden": [
+              "proverbe",
+              "absence",
+              "profiter"
+            ]
+          },
+          {
+            "text": "Vendre la peau de l'ours",
+            "difficulty": 2,
+            "forbidden": [
+              "proverbe",
+              "trop tôt",
+              "certitude"
+            ]
+          },
+          {
+            "text": "La nuit porte conseil",
+            "difficulty": 2,
+            "forbidden": [
+              "proverbe",
+              "dormir",
+              "décision"
+            ]
+          },
+          {
+            "text": "Tel père, tel fils",
+            "difficulty": 1,
+            "forbidden": [
+              "ressemblance",
+              "famille",
+              "proverbe"
+            ]
+          },
+          {
+            "text": "Mieux vaut tard que jamais",
+            "difficulty": 1,
+            "forbidden": [
+              "retard",
+              "proverbe",
+              "enfin"
+            ]
+          },
+          {
+            "text": "Loin des yeux, loin du cœur",
+            "difficulty": 2,
+            "forbidden": [
+              "proverbe",
+              "distance",
+              "oublier"
+            ]
+          },
+          {
+            "text": "Rira bien qui rira le dernier",
+            "difficulty": 2,
+            "forbidden": [
+              "proverbe",
+              "vengeance",
+              "fin"
+            ]
+          },
+          {
+            "text": "Les murs ont des oreilles",
+            "difficulty": 2,
+            "forbidden": [
+              "écouter",
+              "secret",
+              "espionner"
+            ]
+          },
+          {
+            "text": "Chercher une aiguille dans une botte de foin",
+            "difficulty": 2,
+            "forbidden": [
+              "impossible",
+              "trouver",
+              "difficile"
+            ]
+          },
+          {
+            "text": "Avoir la main verte",
+            "difficulty": 2,
+            "forbidden": [
+              "jardinage",
+              "plantes",
+              "doué"
+            ]
+          },
+          {
+            "text": "Être aux anges",
+            "difficulty": 2,
+            "forbidden": [
+              "heureux",
+              "ravi",
+              "paradis"
+            ]
+          },
+          {
+            "text": "Battre le fer tant qu'il est chaud",
+            "difficulty": 3,
+            "forbidden": [
+              "proverbe",
+              "occasion",
+              "forgeron"
+            ]
+          },
+          {
+            "text": "Faire un pied de nez",
+            "difficulty": 3,
+            "forbidden": [
+              "moquer",
+              "narguer",
+              "geste"
+            ]
+          },
+          {
+            "text": "Donner un coup de main",
+            "difficulty": 1,
+            "forbidden": [
+              "aider",
+              "service",
+              "pouce"
+            ]
+          },
+          {
+            "text": "Poser une colle",
+            "difficulty": 3,
+            "forbidden": [
+              "question",
+              "difficile",
+              "piège"
+            ]
+          },
+          {
+            "text": "Avoir les dents longues",
+            "difficulty": 3,
+            "forbidden": [
+              "ambitieux",
+              "carrière",
+              "réussir"
+            ]
+          },
+          {
+            "text": "Prendre son pied",
+            "difficulty": 2,
+            "forbidden": [
+              "plaisir",
+              "kiffer",
+              "adorer"
+            ]
+          },
+          {
+            "text": "Il n'y a pas le feu au lac",
+            "difficulty": 3,
+            "forbidden": [
+              "pas pressé",
+              "calme",
+              "Suisse"
+            ]
+          },
+          {
+            "text": "Ça coule de source",
+            "difficulty": 2,
+            "forbidden": [
+              "évident",
+              "logique",
+              "naturel"
+            ]
+          },
+          {
+            "text": "Se noyer dans un verre d'eau",
+            "difficulty": 2,
+            "forbidden": [
+              "panique",
+              "petit problème",
+              "débordé"
+            ]
+          },
+          {
+            "text": "Passer du coq à l'âne",
+            "difficulty": 2,
+            "forbidden": [
+              "changer de sujet",
+              "discussion",
+              "sauter"
+            ]
+          },
+          {
+            "text": "Avoir un coup de barre",
+            "difficulty": 2,
+            "forbidden": [
+              "fatigue",
+              "épuisé",
+              "sommeil"
+            ]
+          },
+          {
+            "text": "Faire le pont",
+            "difficulty": 2,
+            "forbidden": [
+              "vacances",
+              "jour férié",
+              "week-end"
+            ]
+          },
+          {
+            "text": "Être à l'ouest",
+            "difficulty": 2,
+            "forbidden": [
+              "perdu",
+              "confus",
+              "déboussolé"
+            ]
+          },
+          {
+            "text": "Avoir la gueule de bois",
+            "difficulty": 1,
+            "forbidden": [
+              "lendemain",
+              "alcool",
+              "mal de tête"
+            ]
+          },
+          {
+            "text": "Faire la bise",
+            "difficulty": 1,
+            "forbidden": [
+              "joues",
+              "bisou",
+              "saluer"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

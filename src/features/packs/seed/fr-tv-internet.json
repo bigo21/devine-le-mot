@@ -1,0 +1,1141 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "fr-tv-internet",
+    "name": {
+      "fr": "Personnalités TV et internet",
+      "en": "TV and internet personalities"
+    },
+    "region": "fr",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "tv-internet",
+        "name": {
+          "fr": "Personnalités TV et internet",
+          "en": "TV and internet personalities"
+        },
+        "emoji": "📺",
+        "color": "slate",
+        "tags": [
+          "personnalites",
+          "tele"
+        ],
+        "words": [
+          {
+            "text": "Squeezie",
+            "difficulty": 1,
+            "forbidden": [
+              "YouTube",
+              "Lucas",
+              "GP Explorer"
+            ]
+          },
+          {
+            "text": "Cyprien",
+            "difficulty": 1,
+            "forbidden": [
+              "YouTube",
+              "sketchs",
+              "humour"
+            ]
+          },
+          {
+            "text": "Norman",
+            "difficulty": 2,
+            "forbidden": [
+              "YouTube",
+              "fait des vidéos",
+              "humour"
+            ]
+          },
+          {
+            "text": "Mcfly et Carlito",
+            "difficulty": 1,
+            "forbidden": [
+              "duo",
+              "YouTube",
+              "Élysée"
+            ]
+          },
+          {
+            "text": "Natoo",
+            "difficulty": 2,
+            "forbidden": [
+              "YouTube",
+              "humoriste",
+              "sketchs"
+            ]
+          },
+          {
+            "text": "Amixem",
+            "difficulty": 2,
+            "forbidden": [
+              "YouTube",
+              "défis",
+              "voyages"
+            ]
+          },
+          {
+            "text": "Inoxtag",
+            "difficulty": 1,
+            "forbidden": [
+              "YouTube",
+              "Everest",
+              "Kaizen"
+            ]
+          },
+          {
+            "text": "Michou",
+            "difficulty": 2,
+            "forbidden": [
+              "YouTube",
+              "Inoxtag",
+              "Belgique"
+            ]
+          },
+          {
+            "text": "Tibo InShape",
+            "difficulty": 1,
+            "forbidden": [
+              "musculation",
+              "YouTube",
+              "salle de sport"
+            ]
+          },
+          {
+            "text": "Léna Situations",
+            "difficulty": 2,
+            "forbidden": [
+              "vlog",
+              "mode",
+              "Instagram"
+            ]
+          },
+          {
+            "text": "Joyca",
+            "difficulty": 3,
+            "forbidden": [
+              "YouTube",
+              "réactions",
+              "challenges"
+            ]
+          },
+          {
+            "text": "Seb la Frite",
+            "difficulty": 2,
+            "forbidden": [
+              "Sébastien",
+              "YouTube",
+              "humour"
+            ]
+          },
+          {
+            "text": "Mister V",
+            "difficulty": 2,
+            "forbidden": [
+              "YouTube",
+              "rap",
+              "Yvick"
+            ]
+          },
+          {
+            "text": "EnjoyPhoenix",
+            "difficulty": 3,
+            "forbidden": [
+              "beauté",
+              "YouTube",
+              "maquillage"
+            ]
+          },
+          {
+            "text": "Hugo Décrypte",
+            "difficulty": 1,
+            "forbidden": [
+              "actualité",
+              "YouTube",
+              "jeunes"
+            ]
+          },
+          {
+            "text": "ZeratoR",
+            "difficulty": 2,
+            "forbidden": [
+              "Twitch",
+              "ZEvent",
+              "streamer"
+            ]
+          },
+          {
+            "text": "Gotaga",
+            "difficulty": 2,
+            "forbidden": [
+              "Twitch",
+              "Call of Duty",
+              "Vitality"
+            ]
+          },
+          {
+            "text": "Kameto",
+            "difficulty": 2,
+            "forbidden": [
+              "Karmine Corp",
+              "Twitch",
+              "streamer"
+            ]
+          },
+          {
+            "text": "Domingo",
+            "difficulty": 3,
+            "forbidden": [
+              "Twitch",
+              "Popcorn",
+              "streamer"
+            ]
+          },
+          {
+            "text": "Ponce",
+            "difficulty": 3,
+            "forbidden": [
+              "Twitch",
+              "streamer",
+              "Montpellier"
+            ]
+          },
+          {
+            "text": "Aminematue",
+            "difficulty": 3,
+            "forbidden": [
+              "Twitch",
+              "humour",
+              "streamer"
+            ]
+          },
+          {
+            "text": "Baghera Jones",
+            "difficulty": 3,
+            "forbidden": [
+              "Twitch",
+              "streameuse",
+              "ZEvent"
+            ]
+          },
+          {
+            "text": "Antoine Daniel",
+            "difficulty": 3,
+            "forbidden": [
+              "YouTube",
+              "What the Cut",
+              "Twitch"
+            ]
+          },
+          {
+            "text": "Joueur du Grenier",
+            "difficulty": 2,
+            "forbidden": [
+              "jeux rétro",
+              "YouTube",
+              "Fred"
+            ]
+          },
+          {
+            "text": "Mastu",
+            "difficulty": 3,
+            "forbidden": [
+              "YouTube",
+              "Twitch",
+              "jeux"
+            ]
+          },
+          {
+            "text": "Lebouseuh",
+            "difficulty": 3,
+            "forbidden": [
+              "YouTube",
+              "Twitch",
+              "humour"
+            ]
+          },
+          {
+            "text": "Sardoche",
+            "difficulty": 3,
+            "forbidden": [
+              "Twitch",
+              "League of Legends",
+              "streamer"
+            ]
+          },
+          {
+            "text": "Le Rire jaune",
+            "difficulty": 2,
+            "forbidden": [
+              "frères",
+              "YouTube",
+              "Kevin"
+            ]
+          },
+          {
+            "text": "Juju Fitcats",
+            "difficulty": 3,
+            "forbidden": [
+              "fitness",
+              "YouTube",
+              "sport"
+            ]
+          },
+          {
+            "text": "Fabien Olicard",
+            "difficulty": 3,
+            "forbidden": [
+              "mentaliste",
+              "YouTube",
+              "spectacle"
+            ]
+          },
+          {
+            "text": "Dr Nozman",
+            "difficulty": 3,
+            "forbidden": [
+              "science",
+              "YouTube",
+              "expériences"
+            ]
+          },
+          {
+            "text": "Golden Moustache",
+            "difficulty": 3,
+            "forbidden": [
+              "YouTube",
+              "sketchs",
+              "humour"
+            ]
+          },
+          {
+            "text": "Studio Bagel",
+            "difficulty": 3,
+            "forbidden": [
+              "YouTube",
+              "sketchs",
+              "Canal+"
+            ]
+          },
+          {
+            "text": "Konbini",
+            "difficulty": 3,
+            "forbidden": [
+              "média",
+              "interview",
+              "Fast & Curious"
+            ]
+          },
+          {
+            "text": "Le Palmashow",
+            "difficulty": 2,
+            "forbidden": [
+              "duo",
+              "sketchs",
+              "humour"
+            ]
+          },
+          {
+            "text": "Bref",
+            "difficulty": 2,
+            "forbidden": [
+              "Kyan Khojandi",
+              "série",
+              "Canal+"
+            ]
+          },
+          {
+            "text": "Jamel Debbouze",
+            "difficulty": 1,
+            "forbidden": [
+              "Comedy Club",
+              "humoriste",
+              "Astérix"
+            ]
+          },
+          {
+            "text": "Gad Elmaleh",
+            "difficulty": 1,
+            "forbidden": [
+              "humoriste",
+              "Chouchou",
+              "spectacle"
+            ]
+          },
+          {
+            "text": "Florence Foresti",
+            "difficulty": 1,
+            "forbidden": [
+              "humoriste",
+              "spectacle",
+              "Lyon"
+            ]
+          },
+          {
+            "text": "Kev Adams",
+            "difficulty": 1,
+            "forbidden": [
+              "Soda",
+              "humoriste",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Omar Sy",
+            "difficulty": 1,
+            "forbidden": [
+              "Intouchables",
+              "Lupin",
+              "Fred Testot"
+            ]
+          },
+          {
+            "text": "Blanche Gardin",
+            "difficulty": 3,
+            "forbidden": [
+              "humoriste",
+              "stand-up",
+              "Molière"
+            ]
+          },
+          {
+            "text": "Fary",
+            "difficulty": 3,
+            "forbidden": [
+              "humoriste",
+              "stand-up",
+              "Hexagone"
+            ]
+          },
+          {
+            "text": "Ahmed Sylla",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Nantes",
+              "spectacle"
+            ]
+          },
+          {
+            "text": "Malik Bentalha",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Comedy Club",
+              "Taxi 5"
+            ]
+          },
+          {
+            "text": "Thomas Ngijol",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Cameroun",
+              "Case départ"
+            ]
+          },
+          {
+            "text": "Fabrice Éboué",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Case départ",
+              "Ngijol"
+            ]
+          },
+          {
+            "text": "Haroun",
+            "difficulty": 3,
+            "forbidden": [
+              "humoriste",
+              "stand-up",
+              "lunettes"
+            ]
+          },
+          {
+            "text": "Paul Mirabel",
+            "difficulty": 3,
+            "forbidden": [
+              "humoriste",
+              "grand",
+              "timide"
+            ]
+          },
+          {
+            "text": "Inès Reg",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Danse avec les stars",
+              "Kévin"
+            ]
+          },
+          {
+            "text": "Élie Semoun",
+            "difficulty": 2,
+            "forbidden": [
+              "Petites Annonces",
+              "humoriste",
+              "sketchs"
+            ]
+          },
+          {
+            "text": "Kad Merad",
+            "difficulty": 2,
+            "forbidden": [
+              "Olivier Baroux",
+              "Bienvenue chez les Ch'tis",
+              "acteur"
+            ]
+          },
+          {
+            "text": "Dany Boon",
+            "difficulty": 1,
+            "forbidden": [
+              "Ch'tis",
+              "humoriste",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Franck Dubosc",
+            "difficulty": 2,
+            "forbidden": [
+              "Camping",
+              "humoriste",
+              "Patrick Chirac"
+            ]
+          },
+          {
+            "text": "Michel Drucker",
+            "difficulty": 1,
+            "forbidden": [
+              "Vivement dimanche",
+              "canapé rouge",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Cyril Hanouna",
+            "difficulty": 1,
+            "forbidden": [
+              "TPMP",
+              "Baba",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Nagui",
+            "difficulty": 1,
+            "forbidden": [
+              "N'oubliez pas les paroles",
+              "Taratata",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Jean-Pierre Foucault",
+            "difficulty": 2,
+            "forbidden": [
+              "Qui veut gagner des millions",
+              "Miss France",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Laurent Ruquier",
+            "difficulty": 2,
+            "forbidden": [
+              "On n'est pas couché",
+              "présentateur",
+              "Les Grosses Têtes"
+            ]
+          },
+          {
+            "text": "Arthur",
+            "difficulty": 2,
+            "forbidden": [
+              "Les Enfants de la télé",
+              "présentateur",
+              "Endemol"
+            ]
+          },
+          {
+            "text": "Karine Le Marchand",
+            "difficulty": 2,
+            "forbidden": [
+              "L'amour est dans le pré",
+              "présentatrice",
+              "agriculteurs"
+            ]
+          },
+          {
+            "text": "Philippe Etchebest",
+            "difficulty": 1,
+            "forbidden": [
+              "Cauchemar en cuisine",
+              "Top Chef",
+              "cuisinier"
+            ]
+          },
+          {
+            "text": "Cyril Lignac",
+            "difficulty": 2,
+            "forbidden": [
+              "cuisinier",
+              "Tous en cuisine",
+              "pâtissier"
+            ]
+          },
+          {
+            "text": "Julien Lepers",
+            "difficulty": 2,
+            "forbidden": [
+              "Questions pour un champion",
+              "présentateur",
+              "Top"
+            ]
+          },
+          {
+            "text": "Patrick Sébastien",
+            "difficulty": 2,
+            "forbidden": [
+              "Le Plus Grand Cabaret du monde",
+              "Les Sardines",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Thierry Ardisson",
+            "difficulty": 3,
+            "forbidden": [
+              "Tout le monde en parle",
+              "noir",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Denis Brogniart",
+            "difficulty": 1,
+            "forbidden": [
+              "Koh-Lanta",
+              "aventuriers",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Cyril Féraud",
+            "difficulty": 2,
+            "forbidden": [
+              "Slam",
+              "présentateur",
+              "France 3"
+            ]
+          },
+          {
+            "text": "Anne-Claire Coudray",
+            "difficulty": 3,
+            "forbidden": [
+              "journal",
+              "TF1",
+              "présentatrice"
+            ]
+          },
+          {
+            "text": "Gilles Bouleau",
+            "difficulty": 3,
+            "forbidden": [
+              "journal de 20 h",
+              "TF1",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Jean-Pierre Pernaut",
+            "difficulty": 2,
+            "forbidden": [
+              "journal de 13 h",
+              "TF1",
+              "régions"
+            ]
+          },
+          {
+            "text": "Léa Salamé",
+            "difficulty": 3,
+            "forbidden": [
+              "journaliste",
+              "France Inter",
+              "Quelle époque"
+            ]
+          },
+          {
+            "text": "Yann Barthès",
+            "difficulty": 2,
+            "forbidden": [
+              "Quotidien",
+              "TMC",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Mouloud Achour",
+            "difficulty": 3,
+            "forbidden": [
+              "Clique",
+              "Canal+",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Sophie Davant",
+            "difficulty": 3,
+            "forbidden": [
+              "Affaire conclue",
+              "présentatrice",
+              "brocante"
+            ]
+          },
+          {
+            "text": "Jean-Luc Reichmann",
+            "difficulty": 1,
+            "forbidden": [
+              "Les 12 Coups de midi",
+              "Léo Mattéi",
+              "tache"
+            ]
+          },
+          {
+            "text": "Christophe Beaugrand",
+            "difficulty": 3,
+            "forbidden": [
+              "Secret Story",
+              "présentateur",
+              "TF1"
+            ]
+          },
+          {
+            "text": "Nikos Aliagas",
+            "difficulty": 2,
+            "forbidden": [
+              "Star Academy",
+              "The Voice",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Benjamin Castaldi",
+            "difficulty": 3,
+            "forbidden": [
+              "Loft Story",
+              "Secret Story",
+              "présentateur"
+            ]
+          },
+          {
+            "text": "Faustine Bollaert",
+            "difficulty": 3,
+            "forbidden": [
+              "Ça commence aujourd'hui",
+              "présentatrice",
+              "France 2"
+            ]
+          },
+          {
+            "text": "Laurence Boccolini",
+            "difficulty": 3,
+            "forbidden": [
+              "Le Maillon faible",
+              "présentatrice",
+              "Mot de passe"
+            ]
+          },
+          {
+            "text": "Vincent Lagaf'",
+            "difficulty": 2,
+            "forbidden": [
+              "Le Juste Prix",
+              "présentateur",
+              "humoriste"
+            ]
+          },
+          {
+            "text": "Jamy Gourmaud",
+            "difficulty": 2,
+            "forbidden": [
+              "C'est pas sorcier",
+              "camion",
+              "science"
+            ]
+          },
+          {
+            "text": "Miss France",
+            "difficulty": 1,
+            "forbidden": [
+              "concours",
+              "écharpe",
+              "couronne"
+            ]
+          },
+          {
+            "text": "Les Guignols de l'info",
+            "difficulty": 2,
+            "forbidden": [
+              "marionnettes",
+              "Canal+",
+              "satire"
+            ]
+          },
+          {
+            "text": "Kaamelott",
+            "difficulty": 1,
+            "forbidden": [
+              "Alexandre Astier",
+              "roi Arthur",
+              "Perceval"
+            ]
+          },
+          {
+            "text": "Caméra Café",
+            "difficulty": 2,
+            "forbidden": [
+              "Bruno Solo",
+              "bureau",
+              "machine"
+            ]
+          },
+          {
+            "text": "Scènes de ménages",
+            "difficulty": 2,
+            "forbidden": [
+              "couples",
+              "M6",
+              "sketchs"
+            ]
+          },
+          {
+            "text": "Plus belle la vie",
+            "difficulty": 2,
+            "forbidden": [
+              "Marseille",
+              "Mistral",
+              "feuilleton"
+            ]
+          },
+          {
+            "text": "Fort Boyard",
+            "difficulty": 1,
+            "forbidden": [
+              "Père Fouras",
+              "clés",
+              "Passe-Partout"
+            ]
+          },
+          {
+            "text": "Koh-Lanta",
+            "difficulty": 1,
+            "forbidden": [
+              "aventuriers",
+              "île",
+              "Denis Brogniart"
+            ]
+          },
+          {
+            "text": "Les Marseillais",
+            "difficulty": 2,
+            "forbidden": [
+              "téléréalité",
+              "Dubaï",
+              "W9"
+            ]
+          },
+          {
+            "text": "L'amour est dans le pré",
+            "difficulty": 2,
+            "forbidden": [
+              "agriculteurs",
+              "Karine Le Marchand",
+              "prétendants"
+            ]
+          },
+          {
+            "text": "Top Chef",
+            "difficulty": 1,
+            "forbidden": [
+              "cuisine",
+              "M6",
+              "cuisiniers"
+            ]
+          },
+          {
+            "text": "Pékin Express",
+            "difficulty": 2,
+            "forbidden": [
+              "voyage",
+              "M6",
+              "sac à dos"
+            ]
+          },
+          {
+            "text": "Questions pour un champion",
+            "difficulty": 2,
+            "forbidden": [
+              "Julien Lepers",
+              "quiz",
+              "buzzer"
+            ]
+          },
+          {
+            "text": "Des chiffres et des lettres",
+            "difficulty": 3,
+            "forbidden": [
+              "quiz",
+              "mots",
+              "calcul"
+            ]
+          },
+          {
+            "text": "Le Juste Prix",
+            "difficulty": 2,
+            "forbidden": [
+              "TF1",
+              "Vincent Lagaf'",
+              "vitrine"
+            ]
+          },
+          {
+            "text": "Qui veut gagner des millions ?",
+            "difficulty": 1,
+            "forbidden": [
+              "Jean-Pierre Foucault",
+              "appel à un ami",
+              "50/50"
+            ]
+          },
+          {
+            "text": "N'oubliez pas les paroles",
+            "difficulty": 1,
+            "forbidden": [
+              "Nagui",
+              "chanter",
+              "karaoké"
+            ]
+          },
+          {
+            "text": "Le Maillon faible",
+            "difficulty": 2,
+            "forbidden": [
+              "Laurence Boccolini",
+              "au revoir",
+              "quiz"
+            ]
+          },
+          {
+            "text": "Secret Story",
+            "difficulty": 2,
+            "forbidden": [
+              "voix",
+              "maison",
+              "téléréalité"
+            ]
+          },
+          {
+            "text": "Loft Story",
+            "difficulty": 2,
+            "forbidden": [
+              "téléréalité",
+              "piscine",
+              "Loana"
+            ]
+          },
+          {
+            "text": "Star Academy",
+            "difficulty": 1,
+            "forbidden": [
+              "château",
+              "élèves",
+              "Nikos"
+            ]
+          },
+          {
+            "text": "The Voice",
+            "difficulty": 1,
+            "forbidden": [
+              "fauteuils",
+              "coachs",
+              "chant"
+            ]
+          },
+          {
+            "text": "Danse avec les stars",
+            "difficulty": 1,
+            "forbidden": [
+              "couple",
+              "jury",
+              "TF1"
+            ]
+          },
+          {
+            "text": "La France a un incroyable talent",
+            "difficulty": 2,
+            "forbidden": [
+              "M6",
+              "jury",
+              "numéros"
+            ]
+          },
+          {
+            "text": "C'est pas sorcier",
+            "difficulty": 2,
+            "forbidden": [
+              "Fred et Jamy",
+              "camion",
+              "science"
+            ]
+          },
+          {
+            "text": "Les 12 Coups de midi",
+            "difficulty": 2,
+            "forbidden": [
+              "Jean-Luc Reichmann",
+              "étoile mystérieuse",
+              "TF1"
+            ]
+          },
+          {
+            "text": "Cauchemar en cuisine",
+            "difficulty": 2,
+            "forbidden": [
+              "Philippe Etchebest",
+              "restaurant",
+              "M6"
+            ]
+          },
+          {
+            "text": "Quotidien",
+            "difficulty": 2,
+            "forbidden": [
+              "Yann Barthès",
+              "TMC",
+              "talk-show"
+            ]
+          },
+          {
+            "text": "Touche pas à mon poste",
+            "difficulty": 2,
+            "forbidden": [
+              "Cyril Hanouna",
+              "chroniqueurs",
+              "C8"
+            ]
+          },
+          {
+            "text": "Taratata",
+            "difficulty": 3,
+            "forbidden": [
+              "Nagui",
+              "live",
+              "musique"
+            ]
+          },
+          {
+            "text": "Vivement dimanche",
+            "difficulty": 3,
+            "forbidden": [
+              "Michel Drucker",
+              "canapé rouge",
+              "France 2"
+            ]
+          },
+          {
+            "text": "Le Grand Concours",
+            "difficulty": 3,
+            "forbidden": [
+              "TF1",
+              "quiz",
+              "animateurs"
+            ]
+          },
+          {
+            "text": "Lupin",
+            "difficulty": 2,
+            "forbidden": [
+              "Omar Sy",
+              "Netflix",
+              "gentleman cambrioleur"
+            ]
+          },
+          {
+            "text": "Dix pour cent",
+            "difficulty": 3,
+            "forbidden": [
+              "agents",
+              "acteurs",
+              "série"
+            ]
+          },
+          {
+            "text": "Hélène et les Garçons",
+            "difficulty": 3,
+            "forbidden": [
+              "sitcom",
+              "AB Productions",
+              "années 90"
+            ]
+          },
+          {
+            "text": "Le Bureau des légendes",
+            "difficulty": 3,
+            "forbidden": [
+              "espions",
+              "DGSE",
+              "Mathieu Kassovitz"
+            ]
+          },
+          {
+            "text": "Laurent Gerra",
+            "difficulty": 3,
+            "forbidden": [
+              "imitateur",
+              "humoriste",
+              "Lyon"
+            ]
+          },
+          {
+            "text": "Les Inconnus",
+            "difficulty": 2,
+            "forbidden": [
+              "Didier Bourdon",
+              "Bernard Campan",
+              "Pascal Légitimus"
+            ]
+          },
+          {
+            "text": "Le Grand Journal",
+            "difficulty": 3,
+            "forbidden": [
+              "Canal+",
+              "Michel Denisot",
+              "talk-show"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

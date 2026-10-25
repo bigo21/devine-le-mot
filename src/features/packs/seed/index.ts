@@ -11,6 +11,12 @@ import cmExpressions from './cm-expressions.json';
 import cmFootballeurs from './cm-footballeurs.json';
 import cmMusique from './cm-musique.json';
 import cmVillesQuartiers from './cm-villes-quartiers.json';
+import frChanteurs from './fr-chanteurs.json';
+import frExpressions from './fr-expressions.json';
+import frFilms from './fr-films.json';
+import frPlats from './fr-plats.json';
+import frTvInternet from './fr-tv-internet.json';
+import frVilles from './fr-villes.json';
 import mondeAnimaux from './monde-animaux.json';
 import mondeFruitsLegumes from './monde-fruits-legumes.json';
 import mondeMetiers from './monde-metiers.json';
@@ -30,6 +36,12 @@ export const builtinPackFiles: readonly unknown[] = [
   afPlats,
   afFootballeurs,
   afHistoriques,
+  frChanteurs,
+  frFilms,
+  frPlats,
+  frVilles,
+  frExpressions,
+  frTvInternet,
   mondeAnimaux,
   mondeObjets,
   mondeSports,

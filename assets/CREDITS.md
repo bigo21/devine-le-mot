@@ -47,3 +47,9 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/plats-africains.webp | Microsoft Fluent Emoji 3D « curry rice » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/trophee.webp | Microsoft Fluent Emoji 3D « trophy » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/parchemin.webp | Microsoft Fluent Emoji 3D « scroll » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/micro-studio.webp | Microsoft Fluent Emoji 3D « studio microphone » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/clap-cinema.webp | Microsoft Fluent Emoji 3D « clapper board » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/croissant.webp | Microsoft Fluent Emoji 3D « croissant » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/carte-monde.webp | Microsoft Fluent Emoji 3D « world map » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/tete-qui-parle.webp | Microsoft Fluent Emoji 3D « speaking head » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/television.webp | Microsoft Fluent Emoji 3D « television » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |

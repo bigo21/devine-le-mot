@@ -1,0 +1,1141 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "fr-chanteurs",
+    "name": {
+      "fr": "Chanteurs et rappeurs francophones",
+      "en": "French-speaking singers and rappers"
+    },
+    "region": "fr",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "chanteurs",
+        "name": {
+          "fr": "Chanteurs et rappeurs francophones",
+          "en": "French-speaking singers and rappers"
+        },
+        "emoji": "🎙️",
+        "color": "orchid",
+        "tags": [
+          "personnalites",
+          "musique"
+        ],
+        "words": [
+          {
+            "text": "Édith Piaf",
+            "difficulty": 1,
+            "forbidden": [
+              "môme",
+              "La Vie en rose",
+              "moineau"
+            ]
+          },
+          {
+            "text": "Jacques Brel",
+            "difficulty": 1,
+            "forbidden": [
+              "Belgique",
+              "Ne me quitte pas",
+              "Amsterdam"
+            ]
+          },
+          {
+            "text": "Serge Gainsbourg",
+            "difficulty": 1,
+            "forbidden": [
+              "Jane Birkin",
+              "cigarette",
+              "Je t'aime moi non plus"
+            ]
+          },
+          {
+            "text": "Charles Aznavour",
+            "difficulty": 1,
+            "forbidden": [
+              "La Bohème",
+              "Arménie",
+              "Emmenez-moi"
+            ]
+          },
+          {
+            "text": "Johnny Hallyday",
+            "difficulty": 1,
+            "forbidden": [
+              "rock",
+              "Allumer le feu",
+              "idole des jeunes"
+            ]
+          },
+          {
+            "text": "Michel Sardou",
+            "difficulty": 2,
+            "forbidden": [
+              "Les Lacs du Connemara",
+              "chanteur",
+              "Femme des années 80"
+            ]
+          },
+          {
+            "text": "Jean-Jacques Goldman",
+            "difficulty": 1,
+            "forbidden": [
+              "Je te donne",
+              "Restos du cœur",
+              "Envole-moi"
+            ]
+          },
+          {
+            "text": "Céline Dion",
+            "difficulty": 1,
+            "forbidden": [
+              "Québec",
+              "Titanic",
+              "My Heart Will Go On"
+            ]
+          },
+          {
+            "text": "Mylène Farmer",
+            "difficulty": 2,
+            "forbidden": [
+              "Désenchantée",
+              "rousse",
+              "Libertine"
+            ]
+          },
+          {
+            "text": "Stromae",
+            "difficulty": 1,
+            "forbidden": [
+              "Belgique",
+              "Alors on danse",
+              "Papaoutai"
+            ]
+          },
+          {
+            "text": "Angèle",
+            "difficulty": 1,
+            "forbidden": [
+              "Belgique",
+              "Balance ton quoi",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Indila",
+            "difficulty": 2,
+            "forbidden": [
+              "Dernière danse",
+              "chanteuse",
+              "Tourner dans le vide"
+            ]
+          },
+          {
+            "text": "Zaz",
+            "difficulty": 2,
+            "forbidden": [
+              "Je veux",
+              "chanteuse",
+              "voix éraillée"
+            ]
+          },
+          {
+            "text": "Christophe Maé",
+            "difficulty": 2,
+            "forbidden": [
+              "Il est où le bonheur",
+              "harmonica",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Vianney",
+            "difficulty": 2,
+            "forbidden": [
+              "Je m'en vais",
+              "guitare",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Kendji Girac",
+            "difficulty": 1,
+            "forbidden": [
+              "Andalouse",
+              "gitan",
+              "The Voice"
+            ]
+          },
+          {
+            "text": "Louane",
+            "difficulty": 2,
+            "forbidden": [
+              "Avenir",
+              "La Famille Bélier",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Slimane",
+            "difficulty": 2,
+            "forbidden": [
+              "Viens on s'aime",
+              "The Voice",
+              "Eurovision"
+            ]
+          },
+          {
+            "text": "Amir",
+            "difficulty": 2,
+            "forbidden": [
+              "J'ai cherché",
+              "Eurovision",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Calogero",
+            "difficulty": 2,
+            "forbidden": [
+              "En apesanteur",
+              "chanteur",
+              "Si seulement je pouvais lui manquer"
+            ]
+          },
+          {
+            "text": "Patrick Bruel",
+            "difficulty": 2,
+            "forbidden": [
+              "Casser la voix",
+              "Place des grands hommes",
+              "poker"
+            ]
+          },
+          {
+            "text": "Renaud",
+            "difficulty": 2,
+            "forbidden": [
+              "Mistral gagnant",
+              "bandana",
+              "Hexagone"
+            ]
+          },
+          {
+            "text": "Francis Cabrel",
+            "difficulty": 2,
+            "forbidden": [
+              "Je l'aime à mourir",
+              "moustache",
+              "Agen"
+            ]
+          },
+          {
+            "text": "Daniel Balavoine",
+            "difficulty": 2,
+            "forbidden": [
+              "Le Chanteur",
+              "SOS d'un terrien en détresse",
+              "années 80"
+            ]
+          },
+          {
+            "text": "France Gall",
+            "difficulty": 2,
+            "forbidden": [
+              "Ella, elle l'a",
+              "Michel Berger",
+              "Poupée de cire"
+            ]
+          },
+          {
+            "text": "Dalida",
+            "difficulty": 1,
+            "forbidden": [
+              "Paroles paroles",
+              "Gigi l'amoroso",
+              "Égypte"
+            ]
+          },
+          {
+            "text": "Claude François",
+            "difficulty": 1,
+            "forbidden": [
+              "Alexandrie Alexandra",
+              "Clodettes",
+              "Comme d'habitude"
+            ]
+          },
+          {
+            "text": "Joe Dassin",
+            "difficulty": 1,
+            "forbidden": [
+              "Les Champs-Élysées",
+              "L'Été indien",
+              "costume blanc"
+            ]
+          },
+          {
+            "text": "Sylvie Vartan",
+            "difficulty": 3,
+            "forbidden": [
+              "yéyé",
+              "La Maritza",
+              "Johnny"
+            ]
+          },
+          {
+            "text": "Françoise Hardy",
+            "difficulty": 2,
+            "forbidden": [
+              "Tous les garçons et les filles",
+              "yéyé",
+              "Dutronc"
+            ]
+          },
+          {
+            "text": "Jacques Dutronc",
+            "difficulty": 3,
+            "forbidden": [
+              "Il est cinq heures",
+              "lunettes",
+              "cigare"
+            ]
+          },
+          {
+            "text": "Alain Souchon",
+            "difficulty": 3,
+            "forbidden": [
+              "Foule sentimentale",
+              "Voulzy",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Laurent Voulzy",
+            "difficulty": 3,
+            "forbidden": [
+              "Rockollection",
+              "Souchon",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Vanessa Paradis",
+            "difficulty": 2,
+            "forbidden": [
+              "Joe le taxi",
+              "dents du bonheur",
+              "Johnny Depp"
+            ]
+          },
+          {
+            "text": "Jenifer",
+            "difficulty": 2,
+            "forbidden": [
+              "Star Academy",
+              "The Voice",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Nolwenn Leroy",
+            "difficulty": 3,
+            "forbidden": [
+              "Bretonne",
+              "Star Academy",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Grégory Lemarchal",
+            "difficulty": 3,
+            "forbidden": [
+              "Écris l'histoire",
+              "Star Academy",
+              "voix"
+            ]
+          },
+          {
+            "text": "M. Pokora",
+            "difficulty": 2,
+            "forbidden": [
+              "Les planètes",
+              "danseur",
+              "Matt"
+            ]
+          },
+          {
+            "text": "Christine and the Queens",
+            "difficulty": 2,
+            "forbidden": [
+              "Tilted",
+              "Héloïse",
+              "danse"
+            ]
+          },
+          {
+            "text": "Julien Doré",
+            "difficulty": 2,
+            "forbidden": [
+              "Paris-Seychelles",
+              "Nouvelle Star",
+              "cheveux longs"
+            ]
+          },
+          {
+            "text": "Pomme",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "folk",
+              "Victoires"
+            ]
+          },
+          {
+            "text": "Clara Luciani",
+            "difficulty": 2,
+            "forbidden": [
+              "La Grenade",
+              "frange",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Juliette Armanet",
+            "difficulty": 3,
+            "forbidden": [
+              "piano",
+              "Le Dernier Jour du disco",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Matthieu Chedid",
+            "difficulty": 2,
+            "forbidden": [
+              "-M-",
+              "guitare",
+              "lunettes"
+            ]
+          },
+          {
+            "text": "Bénabar",
+            "difficulty": 3,
+            "forbidden": [
+              "Le Dîner",
+              "chanteur",
+              "humour"
+            ]
+          },
+          {
+            "text": "Raphaël",
+            "difficulty": 3,
+            "forbidden": [
+              "Caravane",
+              "chanteur",
+              "voix"
+            ]
+          },
+          {
+            "text": "Tryo",
+            "difficulty": 3,
+            "forbidden": [
+              "reggae",
+              "groupe",
+              "L'Hymne de nos campagnes"
+            ]
+          },
+          {
+            "text": "Indochine",
+            "difficulty": 2,
+            "forbidden": [
+              "L'Aventurier",
+              "Nicola Sirkis",
+              "groupe rock"
+            ]
+          },
+          {
+            "text": "Téléphone",
+            "difficulty": 3,
+            "forbidden": [
+              "groupe rock",
+              "Un autre monde",
+              "Aubert"
+            ]
+          },
+          {
+            "text": "Daft Punk",
+            "difficulty": 1,
+            "forbidden": [
+              "casques",
+              "électro",
+              "Get Lucky"
+            ]
+          },
+          {
+            "text": "David Guetta",
+            "difficulty": 1,
+            "forbidden": [
+              "DJ",
+              "Titanium",
+              "Ibiza"
+            ]
+          },
+          {
+            "text": "Jul",
+            "difficulty": 1,
+            "forbidden": [
+              "Marseille",
+              "rap",
+              "Tchikita"
+            ]
+          },
+          {
+            "text": "Booba",
+            "difficulty": 1,
+            "forbidden": [
+              "rap",
+              "Boulogne",
+              "Kopp"
+            ]
+          },
+          {
+            "text": "Ninho",
+            "difficulty": 1,
+            "forbidden": [
+              "rap",
+              "Jefe",
+              "Lettre à une femme"
+            ]
+          },
+          {
+            "text": "Gims",
+            "difficulty": 1,
+            "forbidden": [
+              "Sapés comme jamais",
+              "lunettes noires",
+              "Sexion d'Assaut"
+            ]
+          },
+          {
+            "text": "Dadju",
+            "difficulty": 1,
+            "forbidden": [
+              "Reine",
+              "Gims",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Aya Nakamura",
+            "difficulty": 1,
+            "forbidden": [
+              "Djadja",
+              "Pookie",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "PNL",
+            "difficulty": 1,
+            "forbidden": [
+              "frères",
+              "Au DD",
+              "Corbeil"
+            ]
+          },
+          {
+            "text": "Nekfeu",
+            "difficulty": 2,
+            "forbidden": [
+              "rap",
+              "1995",
+              "Les Étoiles vagabondes"
+            ]
+          },
+          {
+            "text": "Orelsan",
+            "difficulty": 1,
+            "forbidden": [
+              "Caen",
+              "Basique",
+              "rap"
+            ]
+          },
+          {
+            "text": "SCH",
+            "difficulty": 2,
+            "forbidden": [
+              "Marseille",
+              "rap",
+              "JVLIVS"
+            ]
+          },
+          {
+            "text": "Damso",
+            "difficulty": 2,
+            "forbidden": [
+              "Belgique",
+              "rap",
+              "Macarena"
+            ]
+          },
+          {
+            "text": "Niska",
+            "difficulty": 2,
+            "forbidden": [
+              "Réseaux",
+              "Charo",
+              "rap"
+            ]
+          },
+          {
+            "text": "Soprano",
+            "difficulty": 1,
+            "forbidden": [
+              "Marseille",
+              "Psy 4 de la Rime",
+              "Cosmo"
+            ]
+          },
+          {
+            "text": "Kery James",
+            "difficulty": 3,
+            "forbidden": [
+              "rap",
+              "engagé",
+              "Banlieusards"
+            ]
+          },
+          {
+            "text": "IAM",
+            "difficulty": 2,
+            "forbidden": [
+              "Marseille",
+              "Akhenaton",
+              "L'École du micro d'argent"
+            ]
+          },
+          {
+            "text": "NTM",
+            "difficulty": 2,
+            "forbidden": [
+              "JoeyStarr",
+              "Kool Shen",
+              "Seine-Saint-Denis"
+            ]
+          },
+          {
+            "text": "MC Solaar",
+            "difficulty": 2,
+            "forbidden": [
+              "rap",
+              "Caroline",
+              "Bouge de là"
+            ]
+          },
+          {
+            "text": "Diam's",
+            "difficulty": 2,
+            "forbidden": [
+              "rap",
+              "La Boulette",
+              "DJ"
+            ]
+          },
+          {
+            "text": "Sexion d'Assaut",
+            "difficulty": 2,
+            "forbidden": [
+              "groupe rap",
+              "Gims",
+              "Désolé"
+            ]
+          },
+          {
+            "text": "Lomepal",
+            "difficulty": 3,
+            "forbidden": [
+              "rap",
+              "skate",
+              "Yeux disent"
+            ]
+          },
+          {
+            "text": "Bigflo et Oli",
+            "difficulty": 1,
+            "forbidden": [
+              "frères",
+              "Toulouse",
+              "rap"
+            ]
+          },
+          {
+            "text": "Vald",
+            "difficulty": 2,
+            "forbidden": [
+              "rap",
+              "Désaccordé",
+              "Aulnay"
+            ]
+          },
+          {
+            "text": "Gazo",
+            "difficulty": 2,
+            "forbidden": [
+              "drill",
+              "rap",
+              "Die"
+            ]
+          },
+          {
+            "text": "Tiakola",
+            "difficulty": 3,
+            "forbidden": [
+              "rap",
+              "chanteur",
+              "Meuda"
+            ]
+          },
+          {
+            "text": "Naps",
+            "difficulty": 3,
+            "forbidden": [
+              "Marseille",
+              "rap",
+              "La Kiffance"
+            ]
+          },
+          {
+            "text": "Heuss l'Enfoiré",
+            "difficulty": 3,
+            "forbidden": [
+              "rap",
+              "Khapta",
+              "Moulaga"
+            ]
+          },
+          {
+            "text": "Alonzo",
+            "difficulty": 3,
+            "forbidden": [
+              "Marseille",
+              "rap",
+              "Psy 4 de la Rime"
+            ]
+          },
+          {
+            "text": "Rohff",
+            "difficulty": 3,
+            "forbidden": [
+              "rap",
+              "Vitry",
+              "Qui est l'exemple"
+            ]
+          },
+          {
+            "text": "Lartiste",
+            "difficulty": 3,
+            "forbidden": [
+              "Chocolat",
+              "rap",
+              "Maroc"
+            ]
+          },
+          {
+            "text": "Black M",
+            "difficulty": 2,
+            "forbidden": [
+              "Sur ma route",
+              "Sexion d'Assaut",
+              "rap"
+            ]
+          },
+          {
+            "text": "Imen Es",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "Gims",
+              "Dadju"
+            ]
+          },
+          {
+            "text": "Wejdene",
+            "difficulty": 2,
+            "forbidden": [
+              "Anissa",
+              "TikTok",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Hoshi",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "Ta marinière",
+              "Victoires"
+            ]
+          },
+          {
+            "text": "Kenza Farah",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "R'n'B",
+              "Marseille"
+            ]
+          },
+          {
+            "text": "Amel Bent",
+            "difficulty": 2,
+            "forbidden": [
+              "Ma philosophie",
+              "chanteuse",
+              "The Voice"
+            ]
+          },
+          {
+            "text": "Shy'm",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "Danse avec les stars",
+              "Femme de couleur"
+            ]
+          },
+          {
+            "text": "Lorie",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "Près de moi",
+              "années 2000"
+            ]
+          },
+          {
+            "text": "Alizée",
+            "difficulty": 2,
+            "forbidden": [
+              "Moi... Lolita",
+              "Corse",
+              "Mylène Farmer"
+            ]
+          },
+          {
+            "text": "Garou",
+            "difficulty": 2,
+            "forbidden": [
+              "Québec",
+              "Belle",
+              "Notre-Dame de Paris"
+            ]
+          },
+          {
+            "text": "Corneille",
+            "difficulty": 3,
+            "forbidden": [
+              "Parce qu'on vient de loin",
+              "chanteur",
+              "Québec"
+            ]
+          },
+          {
+            "text": "Gilbert Bécaud",
+            "difficulty": 3,
+            "forbidden": [
+              "Et maintenant",
+              "Monsieur 100 000 volts",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Georges Brassens",
+            "difficulty": 2,
+            "forbidden": [
+              "guitare",
+              "moustache",
+              "pipe"
+            ]
+          },
+          {
+            "text": "Barbara",
+            "difficulty": 3,
+            "forbidden": [
+              "L'Aigle noir",
+              "piano",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Léo Ferré",
+            "difficulty": 3,
+            "forbidden": [
+              "Avec le temps",
+              "poète",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Boris Vian",
+            "difficulty": 3,
+            "forbidden": [
+              "Le Déserteur",
+              "trompette",
+              "écrivain"
+            ]
+          },
+          {
+            "text": "Yves Montand",
+            "difficulty": 3,
+            "forbidden": [
+              "Les Feuilles mortes",
+              "acteur",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Henri Salvador",
+            "difficulty": 3,
+            "forbidden": [
+              "Jardin d'hiver",
+              "chanteur",
+              "rire"
+            ]
+          },
+          {
+            "text": "Mireille Mathieu",
+            "difficulty": 3,
+            "forbidden": [
+              "Avignon",
+              "coupe au carré",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Enrico Macias",
+            "difficulty": 3,
+            "forbidden": [
+              "Algérie",
+              "Les Gens du Nord",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Pierre Bachelet",
+            "difficulty": 3,
+            "forbidden": [
+              "Les Corons",
+              "chanteur",
+              "Elle est d'ailleurs"
+            ]
+          },
+          {
+            "text": "Jean Ferrat",
+            "difficulty": 3,
+            "forbidden": [
+              "La Montagne",
+              "chanteur",
+              "Aragon"
+            ]
+          },
+          {
+            "text": "Michel Polnareff",
+            "difficulty": 2,
+            "forbidden": [
+              "lunettes blanches",
+              "On ira tous au paradis",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Florent Pagny",
+            "difficulty": 2,
+            "forbidden": [
+              "Savoir aimer",
+              "The Voice",
+              "Ma liberté de penser"
+            ]
+          },
+          {
+            "text": "Pascal Obispo",
+            "difficulty": 3,
+            "forbidden": [
+              "Lucie",
+              "chanteur",
+              "crâne rasé"
+            ]
+          },
+          {
+            "text": "Zazie",
+            "difficulty": 3,
+            "forbidden": [
+              "Je suis un homme",
+              "chanteuse",
+              "The Voice"
+            ]
+          },
+          {
+            "text": "Patricia Kaas",
+            "difficulty": 3,
+            "forbidden": [
+              "Mademoiselle chante le blues",
+              "chanteuse",
+              "Lorraine"
+            ]
+          },
+          {
+            "text": "Lara Fabian",
+            "difficulty": 3,
+            "forbidden": [
+              "Je t'aime",
+              "Belgique",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Hélène Ségara",
+            "difficulty": 3,
+            "forbidden": [
+              "Il y a trop de gens qui t'aiment",
+              "chanteuse",
+              "Notre-Dame de Paris"
+            ]
+          },
+          {
+            "text": "Tal",
+            "difficulty": 3,
+            "forbidden": [
+              "Le Sens de la vie",
+              "chanteuse",
+              "Danse avec les stars"
+            ]
+          },
+          {
+            "text": "Vitaa",
+            "difficulty": 2,
+            "forbidden": [
+              "Ça va ça vient",
+              "Slimane",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Keen'V",
+            "difficulty": 3,
+            "forbidden": [
+              "J'aimerais trop",
+              "chanteur",
+              "Rien qu'une fois"
+            ]
+          },
+          {
+            "text": "Mika",
+            "difficulty": 2,
+            "forbidden": [
+              "Grace Kelly",
+              "The Voice",
+              "Liban"
+            ]
+          },
+          {
+            "text": "Kids United",
+            "difficulty": 2,
+            "forbidden": [
+              "enfants",
+              "On écrit sur les murs",
+              "groupe"
+            ]
+          },
+          {
+            "text": "Louise Attaque",
+            "difficulty": 3,
+            "forbidden": [
+              "J't'emmène au vent",
+              "violon",
+              "groupe"
+            ]
+          },
+          {
+            "text": "Noir Désir",
+            "difficulty": 3,
+            "forbidden": [
+              "Le vent nous portera",
+              "rock",
+              "Bordeaux"
+            ]
+          },
+          {
+            "text": "Les Enfoirés",
+            "difficulty": 1,
+            "forbidden": [
+              "Restos du cœur",
+              "concert",
+              "troupe"
+            ]
+          },
+          {
+            "text": "Patrick Fiori",
+            "difficulty": 3,
+            "forbidden": [
+              "Corse",
+              "Notre-Dame de Paris",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Yannick Noah",
+            "difficulty": 2,
+            "forbidden": [
+              "Saga Africa",
+              "tennis",
+              "dreadlocks"
+            ]
+          },
+          {
+            "text": "Hugues Aufray",
+            "difficulty": 3,
+            "forbidden": [
+              "Santiano",
+              "chanteur",
+              "Céline"
+            ]
+          },
+          {
+            "text": "Tayc",
+            "difficulty": 2,
+            "forbidden": [
+              "N'y pense plus",
+              "chanteur",
+              "afrolove"
+            ]
+          },
+          {
+            "text": "Boulevard des Airs",
+            "difficulty": 3,
+            "forbidden": [
+              "groupe",
+              "Emmène-moi",
+              "Tarbes"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

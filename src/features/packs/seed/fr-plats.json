@@ -1,0 +1,1138 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "fr-plats",
+    "name": {
+      "fr": "Plats français",
+      "en": "French dishes"
+    },
+    "region": "fr",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "plats",
+        "name": {
+          "fr": "Plats français",
+          "en": "French dishes"
+        },
+        "emoji": "🥐",
+        "color": "plum",
+        "tags": [
+          "cuisine"
+        ],
+        "words": [
+          {
+            "text": "Croissant",
+            "difficulty": 1,
+            "forbidden": [
+              "viennoiserie",
+              "beurre",
+              "petit-déjeuner"
+            ]
+          },
+          {
+            "text": "Baguette",
+            "difficulty": 1,
+            "forbidden": [
+              "pain",
+              "boulangerie",
+              "croûte"
+            ]
+          },
+          {
+            "text": "Pain au chocolat",
+            "difficulty": 1,
+            "forbidden": [
+              "chocolatine",
+              "viennoiserie",
+              "goûter"
+            ]
+          },
+          {
+            "text": "Crêpe",
+            "difficulty": 1,
+            "forbidden": [
+              "Bretagne",
+              "Chandeleur",
+              "galette"
+            ]
+          },
+          {
+            "text": "Galette des rois",
+            "difficulty": 1,
+            "forbidden": [
+              "fève",
+              "couronne",
+              "Épiphanie"
+            ]
+          },
+          {
+            "text": "Bœuf bourguignon",
+            "difficulty": 1,
+            "forbidden": [
+              "vin rouge",
+              "mijoté",
+              "Bourgogne"
+            ]
+          },
+          {
+            "text": "Coq au vin",
+            "difficulty": 2,
+            "forbidden": [
+              "poulet",
+              "vin rouge",
+              "mijoté"
+            ]
+          },
+          {
+            "text": "Ratatouille",
+            "difficulty": 1,
+            "forbidden": [
+              "courgette",
+              "aubergine",
+              "Provence"
+            ]
+          },
+          {
+            "text": "Bouillabaisse",
+            "difficulty": 1,
+            "forbidden": [
+              "Marseille",
+              "poisson",
+              "soupe"
+            ]
+          },
+          {
+            "text": "Quiche lorraine",
+            "difficulty": 1,
+            "forbidden": [
+              "lardons",
+              "œufs",
+              "tarte"
+            ]
+          },
+          {
+            "text": "Croque-monsieur",
+            "difficulty": 1,
+            "forbidden": [
+              "jambon",
+              "fromage",
+              "pain de mie"
+            ]
+          },
+          {
+            "text": "Croque-madame",
+            "difficulty": 2,
+            "forbidden": [
+              "œuf",
+              "jambon",
+              "fromage"
+            ]
+          },
+          {
+            "text": "Cassoulet",
+            "difficulty": 1,
+            "forbidden": [
+              "haricots",
+              "Toulouse",
+              "confit"
+            ]
+          },
+          {
+            "text": "Choucroute",
+            "difficulty": 2,
+            "forbidden": [
+              "chou",
+              "Alsace",
+              "saucisses"
+            ]
+          },
+          {
+            "text": "Tartiflette",
+            "difficulty": 1,
+            "forbidden": [
+              "reblochon",
+              "pommes de terre",
+              "Savoie"
+            ]
+          },
+          {
+            "text": "Raclette",
+            "difficulty": 1,
+            "forbidden": [
+              "fromage fondu",
+              "pommes de terre",
+              "appareil"
+            ]
+          },
+          {
+            "text": "Fondue savoyarde",
+            "difficulty": 2,
+            "forbidden": [
+              "fromage",
+              "caquelon",
+              "pain"
+            ]
+          },
+          {
+            "text": "Pot-au-feu",
+            "difficulty": 2,
+            "forbidden": [
+              "bœuf",
+              "légumes",
+              "bouillon"
+            ]
+          },
+          {
+            "text": "Blanquette de veau",
+            "difficulty": 2,
+            "forbidden": [
+              "sauce blanche",
+              "crème",
+              "mijoté"
+            ]
+          },
+          {
+            "text": "Steak frites",
+            "difficulty": 1,
+            "forbidden": [
+              "viande",
+              "pommes de terre",
+              "bistrot"
+            ]
+          },
+          {
+            "text": "Hachis parmentier",
+            "difficulty": 2,
+            "forbidden": [
+              "purée",
+              "viande hachée",
+              "gratin"
+            ]
+          },
+          {
+            "text": "Gratin dauphinois",
+            "difficulty": 2,
+            "forbidden": [
+              "pommes de terre",
+              "crème",
+              "four"
+            ]
+          },
+          {
+            "text": "Soupe à l'oignon",
+            "difficulty": 2,
+            "forbidden": [
+              "gratinée",
+              "fromage",
+              "bouillon"
+            ]
+          },
+          {
+            "text": "Escargots",
+            "difficulty": 2,
+            "forbidden": [
+              "beurre persillé",
+              "Bourgogne",
+              "coquille"
+            ]
+          },
+          {
+            "text": "Cuisses de grenouille",
+            "difficulty": 2,
+            "forbidden": [
+              "batracien",
+              "ail",
+              "persil"
+            ]
+          },
+          {
+            "text": "Foie gras",
+            "difficulty": 2,
+            "forbidden": [
+              "canard",
+              "oie",
+              "Noël"
+            ]
+          },
+          {
+            "text": "Confit de canard",
+            "difficulty": 2,
+            "forbidden": [
+              "Sud-Ouest",
+              "graisse",
+              "cuisse"
+            ]
+          },
+          {
+            "text": "Magret de canard",
+            "difficulty": 2,
+            "forbidden": [
+              "Sud-Ouest",
+              "rosé",
+              "filet"
+            ]
+          },
+          {
+            "text": "Moules-frites",
+            "difficulty": 1,
+            "forbidden": [
+              "Belgique",
+              "marinière",
+              "fruits de mer"
+            ]
+          },
+          {
+            "text": "Huîtres",
+            "difficulty": 2,
+            "forbidden": [
+              "coquillage",
+              "citron",
+              "fruits de mer"
+            ]
+          },
+          {
+            "text": "Plateau de fruits de mer",
+            "difficulty": 2,
+            "forbidden": [
+              "huîtres",
+              "crevettes",
+              "homard"
+            ]
+          },
+          {
+            "text": "Salade niçoise",
+            "difficulty": 2,
+            "forbidden": [
+              "thon",
+              "olives",
+              "Nice"
+            ]
+          },
+          {
+            "text": "Pan bagnat",
+            "difficulty": 3,
+            "forbidden": [
+              "Nice",
+              "sandwich",
+              "thon"
+            ]
+          },
+          {
+            "text": "Socca",
+            "difficulty": 3,
+            "forbidden": [
+              "Nice",
+              "pois chiches",
+              "galette"
+            ]
+          },
+          {
+            "text": "Pissaladière",
+            "difficulty": 3,
+            "forbidden": [
+              "Nice",
+              "oignons",
+              "anchois"
+            ]
+          },
+          {
+            "text": "Tapenade",
+            "difficulty": 2,
+            "forbidden": [
+              "olives",
+              "Provence",
+              "pâte"
+            ]
+          },
+          {
+            "text": "Aïoli",
+            "difficulty": 2,
+            "forbidden": [
+              "ail",
+              "huile d'olive",
+              "Provence"
+            ]
+          },
+          {
+            "text": "Brandade de morue",
+            "difficulty": 3,
+            "forbidden": [
+              "Nîmes",
+              "poisson",
+              "purée"
+            ]
+          },
+          {
+            "text": "Quenelles",
+            "difficulty": 3,
+            "forbidden": [
+              "Lyon",
+              "sauce Nantua",
+              "brochet"
+            ]
+          },
+          {
+            "text": "Andouillette",
+            "difficulty": 3,
+            "forbidden": [
+              "tripes",
+              "Troyes",
+              "saucisse"
+            ]
+          },
+          {
+            "text": "Saucisson",
+            "difficulty": 1,
+            "forbidden": [
+              "apéro",
+              "charcuterie",
+              "sec"
+            ]
+          },
+          {
+            "text": "Jambon-beurre",
+            "difficulty": 1,
+            "forbidden": [
+              "sandwich",
+              "baguette",
+              "Paris"
+            ]
+          },
+          {
+            "text": "Pâté",
+            "difficulty": 2,
+            "forbidden": [
+              "terrine",
+              "charcuterie",
+              "tartine"
+            ]
+          },
+          {
+            "text": "Rillettes",
+            "difficulty": 3,
+            "forbidden": [
+              "Le Mans",
+              "porc",
+              "tartiner"
+            ]
+          },
+          {
+            "text": "Camembert",
+            "difficulty": 1,
+            "forbidden": [
+              "Normandie",
+              "fromage",
+              "boîte"
+            ]
+          },
+          {
+            "text": "Roquefort",
+            "difficulty": 2,
+            "forbidden": [
+              "bleu",
+              "brebis",
+              "Aveyron"
+            ]
+          },
+          {
+            "text": "Comté",
+            "difficulty": 2,
+            "forbidden": [
+              "Jura",
+              "fromage",
+              "affiné"
+            ]
+          },
+          {
+            "text": "Brie",
+            "difficulty": 2,
+            "forbidden": [
+              "fromage",
+              "Meaux",
+              "croûte"
+            ]
+          },
+          {
+            "text": "Reblochon",
+            "difficulty": 2,
+            "forbidden": [
+              "Savoie",
+              "tartiflette",
+              "fromage"
+            ]
+          },
+          {
+            "text": "Chèvre chaud",
+            "difficulty": 2,
+            "forbidden": [
+              "salade",
+              "fromage",
+              "toast"
+            ]
+          },
+          {
+            "text": "Crème brûlée",
+            "difficulty": 1,
+            "forbidden": [
+              "dessert",
+              "caramel",
+              "chalumeau"
+            ]
+          },
+          {
+            "text": "Mousse au chocolat",
+            "difficulty": 1,
+            "forbidden": [
+              "dessert",
+              "œufs",
+              "cacao"
+            ]
+          },
+          {
+            "text": "Tarte Tatin",
+            "difficulty": 2,
+            "forbidden": [
+              "pommes",
+              "renversée",
+              "caramel"
+            ]
+          },
+          {
+            "text": "Éclair",
+            "difficulty": 1,
+            "forbidden": [
+              "pâte à choux",
+              "chocolat",
+              "café"
+            ]
+          },
+          {
+            "text": "Macaron",
+            "difficulty": 1,
+            "forbidden": [
+              "Ladurée",
+              "amande",
+              "coloré"
+            ]
+          },
+          {
+            "text": "Profiteroles",
+            "difficulty": 2,
+            "forbidden": [
+              "choux",
+              "chocolat chaud",
+              "glace"
+            ]
+          },
+          {
+            "text": "Paris-Brest",
+            "difficulty": 2,
+            "forbidden": [
+              "praliné",
+              "pâte à choux",
+              "roue"
+            ]
+          },
+          {
+            "text": "Mille-feuille",
+            "difficulty": 2,
+            "forbidden": [
+              "pâte feuilletée",
+              "crème pâtissière",
+              "glaçage"
+            ]
+          },
+          {
+            "text": "Madeleine",
+            "difficulty": 1,
+            "forbidden": [
+              "Proust",
+              "Commercy",
+              "bosse"
+            ]
+          },
+          {
+            "text": "Financier",
+            "difficulty": 3,
+            "forbidden": [
+              "amande",
+              "beurre noisette",
+              "lingot"
+            ]
+          },
+          {
+            "text": "Canelé",
+            "difficulty": 2,
+            "forbidden": [
+              "Bordeaux",
+              "rhum",
+              "caramélisé"
+            ]
+          },
+          {
+            "text": "Kouign-amann",
+            "difficulty": 3,
+            "forbidden": [
+              "Bretagne",
+              "beurre",
+              "sucre"
+            ]
+          },
+          {
+            "text": "Far breton",
+            "difficulty": 3,
+            "forbidden": [
+              "pruneaux",
+              "Bretagne",
+              "flan"
+            ]
+          },
+          {
+            "text": "Clafoutis",
+            "difficulty": 2,
+            "forbidden": [
+              "cerises",
+              "Limousin",
+              "flan"
+            ]
+          },
+          {
+            "text": "Tarte au citron",
+            "difficulty": 1,
+            "forbidden": [
+              "meringue",
+              "dessert",
+              "acide"
+            ]
+          },
+          {
+            "text": "Île flottante",
+            "difficulty": 2,
+            "forbidden": [
+              "blancs d'œufs",
+              "crème anglaise",
+              "caramel"
+            ]
+          },
+          {
+            "text": "Baba au rhum",
+            "difficulty": 2,
+            "forbidden": [
+              "alcool",
+              "savarin",
+              "sirop"
+            ]
+          },
+          {
+            "text": "Fraisier",
+            "difficulty": 3,
+            "forbidden": [
+              "gâteau",
+              "crème mousseline",
+              "fruits rouges"
+            ]
+          },
+          {
+            "text": "Opéra",
+            "difficulty": 3,
+            "forbidden": [
+              "gâteau",
+              "café",
+              "chocolat"
+            ]
+          },
+          {
+            "text": "Bûche de Noël",
+            "difficulty": 1,
+            "forbidden": [
+              "gâteau",
+              "fêtes",
+              "roulé"
+            ]
+          },
+          {
+            "text": "Chouquette",
+            "difficulty": 2,
+            "forbidden": [
+              "sucre perlé",
+              "choux",
+              "boulangerie"
+            ]
+          },
+          {
+            "text": "Pain perdu",
+            "difficulty": 2,
+            "forbidden": [
+              "œuf",
+              "lait",
+              "rassis"
+            ]
+          },
+          {
+            "text": "Crêpe Suzette",
+            "difficulty": 3,
+            "forbidden": [
+              "Grand Marnier",
+              "flambée",
+              "orange"
+            ]
+          },
+          {
+            "text": "Gaufre",
+            "difficulty": 1,
+            "forbidden": [
+              "Liège",
+              "quadrillé",
+              "sucre"
+            ]
+          },
+          {
+            "text": "Calisson",
+            "difficulty": 3,
+            "forbidden": [
+              "Aix-en-Provence",
+              "amande",
+              "losange"
+            ]
+          },
+          {
+            "text": "Nougat",
+            "difficulty": 2,
+            "forbidden": [
+              "Montélimar",
+              "amandes",
+              "miel"
+            ]
+          },
+          {
+            "text": "Bêtises de Cambrai",
+            "difficulty": 3,
+            "forbidden": [
+              "bonbon",
+              "menthe",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Dragées",
+            "difficulty": 3,
+            "forbidden": [
+              "baptême",
+              "amande",
+              "mariage"
+            ]
+          },
+          {
+            "text": "Tarte flambée",
+            "difficulty": 3,
+            "forbidden": [
+              "Alsace",
+              "flammekueche",
+              "lardons"
+            ]
+          },
+          {
+            "text": "Baeckeoffe",
+            "difficulty": 3,
+            "forbidden": [
+              "Alsace",
+              "terrine",
+              "marinade"
+            ]
+          },
+          {
+            "text": "Kouglof",
+            "difficulty": 3,
+            "forbidden": [
+              "Alsace",
+              "brioche",
+              "moule"
+            ]
+          },
+          {
+            "text": "Bretzel",
+            "difficulty": 3,
+            "forbidden": [
+              "Alsace",
+              "nœud",
+              "sel"
+            ]
+          },
+          {
+            "text": "Piperade",
+            "difficulty": 3,
+            "forbidden": [
+              "Pays basque",
+              "poivrons",
+              "tomates"
+            ]
+          },
+          {
+            "text": "Gâteau basque",
+            "difficulty": 3,
+            "forbidden": [
+              "cerises",
+              "crème",
+              "Pays basque"
+            ]
+          },
+          {
+            "text": "Axoa",
+            "difficulty": 3,
+            "forbidden": [
+              "Pays basque",
+              "veau",
+              "piment d'Espelette"
+            ]
+          },
+          {
+            "text": "Garbure",
+            "difficulty": 3,
+            "forbidden": [
+              "soupe",
+              "Béarn",
+              "chou"
+            ]
+          },
+          {
+            "text": "Aligot",
+            "difficulty": 2,
+            "forbidden": [
+              "Aveyron",
+              "fromage",
+              "purée filante"
+            ]
+          },
+          {
+            "text": "Truffade",
+            "difficulty": 3,
+            "forbidden": [
+              "Auvergne",
+              "pommes de terre",
+              "cantal"
+            ]
+          },
+          {
+            "text": "Potée",
+            "difficulty": 3,
+            "forbidden": [
+              "chou",
+              "lard",
+              "Auvergne"
+            ]
+          },
+          {
+            "text": "Tripes à la mode de Caen",
+            "difficulty": 3,
+            "forbidden": [
+              "Normandie",
+              "abats",
+              "cidre"
+            ]
+          },
+          {
+            "text": "Teurgoule",
+            "difficulty": 3,
+            "forbidden": [
+              "riz au lait",
+              "Normandie",
+              "cannelle"
+            ]
+          },
+          {
+            "text": "Cidre",
+            "difficulty": 2,
+            "forbidden": [
+              "pommes",
+              "Normandie",
+              "bolée"
+            ]
+          },
+          {
+            "text": "Champagne",
+            "difficulty": 1,
+            "forbidden": [
+              "bulles",
+              "Reims",
+              "fête"
+            ]
+          },
+          {
+            "text": "Pastis",
+            "difficulty": 2,
+            "forbidden": [
+              "Marseille",
+              "anis",
+              "apéro"
+            ]
+          },
+          {
+            "text": "Calvados",
+            "difficulty": 3,
+            "forbidden": [
+              "Normandie",
+              "pomme",
+              "eau-de-vie"
+            ]
+          },
+          {
+            "text": "Cognac",
+            "difficulty": 2,
+            "forbidden": [
+              "eau-de-vie",
+              "Charente",
+              "brandy"
+            ]
+          },
+          {
+            "text": "Beaujolais nouveau",
+            "difficulty": 3,
+            "forbidden": [
+              "vin",
+              "novembre",
+              "Lyon"
+            ]
+          },
+          {
+            "text": "Kir",
+            "difficulty": 3,
+            "forbidden": [
+              "cassis",
+              "vin blanc",
+              "Dijon"
+            ]
+          },
+          {
+            "text": "Moutarde de Dijon",
+            "difficulty": 2,
+            "forbidden": [
+              "condiment",
+              "graines",
+              "piquante"
+            ]
+          },
+          {
+            "text": "Vinaigrette",
+            "difficulty": 2,
+            "forbidden": [
+              "huile",
+              "vinaigre",
+              "salade"
+            ]
+          },
+          {
+            "text": "Sauce béarnaise",
+            "difficulty": 3,
+            "forbidden": [
+              "estragon",
+              "steak",
+              "beurre"
+            ]
+          },
+          {
+            "text": "Sauce hollandaise",
+            "difficulty": 3,
+            "forbidden": [
+              "œufs",
+              "citron",
+              "beurre"
+            ]
+          },
+          {
+            "text": "Béchamel",
+            "difficulty": 2,
+            "forbidden": [
+              "lait",
+              "farine",
+              "sauce blanche"
+            ]
+          },
+          {
+            "text": "Omelette",
+            "difficulty": 1,
+            "forbidden": [
+              "œufs",
+              "poêle",
+              "baveuse"
+            ]
+          },
+          {
+            "text": "Œufs mimosa",
+            "difficulty": 2,
+            "forbidden": [
+              "mayonnaise",
+              "jaune",
+              "entrée"
+            ]
+          },
+          {
+            "text": "Céleri rémoulade",
+            "difficulty": 3,
+            "forbidden": [
+              "entrée",
+              "mayonnaise",
+              "râpé"
+            ]
+          },
+          {
+            "text": "Carottes râpées",
+            "difficulty": 2,
+            "forbidden": [
+              "entrée",
+              "cantine",
+              "vinaigrette"
+            ]
+          },
+          {
+            "text": "Purée",
+            "difficulty": 1,
+            "forbidden": [
+              "pommes de terre",
+              "écrasée",
+              "beurre"
+            ]
+          },
+          {
+            "text": "Frites",
+            "difficulty": 1,
+            "forbidden": [
+              "pommes de terre",
+              "friteuse",
+              "Belgique"
+            ]
+          },
+          {
+            "text": "Tartine",
+            "difficulty": 1,
+            "forbidden": [
+              "pain",
+              "confiture",
+              "beurre"
+            ]
+          },
+          {
+            "text": "Brioche",
+            "difficulty": 1,
+            "forbidden": [
+              "viennoiserie",
+              "beurre",
+              "tressée"
+            ]
+          },
+          {
+            "text": "Pain d'épices",
+            "difficulty": 2,
+            "forbidden": [
+              "Dijon",
+              "miel",
+              "cannelle"
+            ]
+          },
+          {
+            "text": "Chausson aux pommes",
+            "difficulty": 2,
+            "forbidden": [
+              "viennoiserie",
+              "compote",
+              "feuilleté"
+            ]
+          },
+          {
+            "text": "Salade lyonnaise",
+            "difficulty": 3,
+            "forbidden": [
+              "lardons",
+              "œuf poché",
+              "croûtons"
+            ]
+          },
+          {
+            "text": "Bouchée à la reine",
+            "difficulty": 3,
+            "forbidden": [
+              "vol-au-vent",
+              "sauce",
+              "feuilleté"
+            ]
+          },
+          {
+            "text": "Navarin d'agneau",
+            "difficulty": 3,
+            "forbidden": [
+              "ragoût",
+              "printemps",
+              "mouton"
+            ]
+          },
+          {
+            "text": "Lapin à la moutarde",
+            "difficulty": 3,
+            "forbidden": [
+              "sauce",
+              "mijoté",
+              "Dijon"
+            ]
+          },
+          {
+            "text": "Sole meunière",
+            "difficulty": 3,
+            "forbidden": [
+              "poisson",
+              "beurre",
+              "citron"
+            ]
+          },
+          {
+            "text": "Tarte aux fraises",
+            "difficulty": 1,
+            "forbidden": [
+              "fruits rouges",
+              "dessert",
+              "crème"
+            ]
+          },
+          {
+            "text": "Chou à la crème",
+            "difficulty": 2,
+            "forbidden": [
+              "pâte à choux",
+              "chantilly",
+              "pâtisserie"
+            ]
+          },
+          {
+            "text": "Crème caramel",
+            "difficulty": 2,
+            "forbidden": [
+              "flan",
+              "dessert",
+              "moule"
+            ]
+          },
+          {
+            "text": "Riz au lait",
+            "difficulty": 1,
+            "forbidden": [
+              "dessert",
+              "vanille",
+              "crémeux"
+            ]
+          },
+          {
+            "text": "Galette bretonne",
+            "difficulty": 2,
+            "forbidden": [
+              "sarrasin",
+              "complète",
+              "crêperie"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

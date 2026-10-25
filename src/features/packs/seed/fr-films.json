@@ -1,0 +1,1138 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "fr-films",
+    "name": {
+      "fr": "Films français",
+      "en": "French films"
+    },
+    "region": "fr",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "films",
+        "name": {
+          "fr": "Films français",
+          "en": "French films"
+        },
+        "emoji": "🎬",
+        "color": "indigo",
+        "tags": [
+          "cinema"
+        ],
+        "words": [
+          {
+            "text": "Intouchables",
+            "difficulty": 1,
+            "forbidden": [
+              "Omar Sy",
+              "fauteuil roulant",
+              "amitié"
+            ]
+          },
+          {
+            "text": "Bienvenue chez les Ch'tis",
+            "difficulty": 1,
+            "forbidden": [
+              "Dany Boon",
+              "Nord",
+              "Bergues"
+            ]
+          },
+          {
+            "text": "Le Dîner de cons",
+            "difficulty": 1,
+            "forbidden": [
+              "Jacques Villeret",
+              "François Pignon",
+              "Lhermitte"
+            ]
+          },
+          {
+            "text": "Les Visiteurs",
+            "difficulty": 1,
+            "forbidden": [
+              "Jacquouille",
+              "Okay",
+              "Moyen Âge"
+            ]
+          },
+          {
+            "text": "La Grande Vadrouille",
+            "difficulty": 2,
+            "forbidden": [
+              "Bourvil",
+              "de Funès",
+              "guerre"
+            ]
+          },
+          {
+            "text": "Le Fabuleux Destin d'Amélie Poulain",
+            "difficulty": 1,
+            "forbidden": [
+              "Audrey Tautou",
+              "Montmartre",
+              "nain de jardin"
+            ]
+          },
+          {
+            "text": "Astérix et Obélix : Mission Cléopâtre",
+            "difficulty": 1,
+            "forbidden": [
+              "Chabat",
+              "Égypte",
+              "Jamel"
+            ]
+          },
+          {
+            "text": "Astérix et Obélix contre César",
+            "difficulty": 2,
+            "forbidden": [
+              "Depardieu",
+              "Clavier",
+              "Gaulois"
+            ]
+          },
+          {
+            "text": "Astérix aux Jeux olympiques",
+            "difficulty": 3,
+            "forbidden": [
+              "Gaulois",
+              "Poelvoorde",
+              "Brutus"
+            ]
+          },
+          {
+            "text": "Taxi",
+            "difficulty": 1,
+            "forbidden": [
+              "Marseille",
+              "Peugeot",
+              "Samy Naceri"
+            ]
+          },
+          {
+            "text": "Les Bronzés",
+            "difficulty": 2,
+            "forbidden": [
+              "Club Med",
+              "Splendid",
+              "vacances"
+            ]
+          },
+          {
+            "text": "Les Bronzés font du ski",
+            "difficulty": 2,
+            "forbidden": [
+              "Splendid",
+              "montagne",
+              "Jean-Claude Dusse"
+            ]
+          },
+          {
+            "text": "Le Père Noël est une ordure",
+            "difficulty": 2,
+            "forbidden": [
+              "Splendid",
+              "réveillon",
+              "SOS Détresse"
+            ]
+          },
+          {
+            "text": "La Haine",
+            "difficulty": 2,
+            "forbidden": [
+              "Kassovitz",
+              "banlieue",
+              "noir et blanc"
+            ]
+          },
+          {
+            "text": "Les Choristes",
+            "difficulty": 1,
+            "forbidden": [
+              "chorale",
+              "internat",
+              "Jugnot"
+            ]
+          },
+          {
+            "text": "Le Grand Bleu",
+            "difficulty": 2,
+            "forbidden": [
+              "apnée",
+              "dauphins",
+              "Besson"
+            ]
+          },
+          {
+            "text": "Léon",
+            "difficulty": 2,
+            "forbidden": [
+              "tueur",
+              "Natalie Portman",
+              "Besson"
+            ]
+          },
+          {
+            "text": "Le Cinquième Élément",
+            "difficulty": 2,
+            "forbidden": [
+              "Besson",
+              "Bruce Willis",
+              "Leeloo"
+            ]
+          },
+          {
+            "text": "Nikita",
+            "difficulty": 3,
+            "forbidden": [
+              "Besson",
+              "tueuse",
+              "Anne Parillaud"
+            ]
+          },
+          {
+            "text": "Lucy",
+            "difficulty": 2,
+            "forbidden": [
+              "Scarlett Johansson",
+              "Besson",
+              "cerveau"
+            ]
+          },
+          {
+            "text": "Taken",
+            "difficulty": 2,
+            "forbidden": [
+              "Liam Neeson",
+              "Besson",
+              "enlèvement"
+            ]
+          },
+          {
+            "text": "Le Transporteur",
+            "difficulty": 3,
+            "forbidden": [
+              "Jason Statham",
+              "Audi",
+              "Besson"
+            ]
+          },
+          {
+            "text": "Arthur et les Minimoys",
+            "difficulty": 3,
+            "forbidden": [
+              "Besson",
+              "minuscules",
+              "jardin"
+            ]
+          },
+          {
+            "text": "Les Petits Mouchoirs",
+            "difficulty": 3,
+            "forbidden": [
+              "Canet",
+              "vacances",
+              "Cap-Ferret"
+            ]
+          },
+          {
+            "text": "Qu'est-ce qu'on a fait au Bon Dieu ?",
+            "difficulty": 1,
+            "forbidden": [
+              "Christian Clavier",
+              "gendres",
+              "mariages"
+            ]
+          },
+          {
+            "text": "Camping",
+            "difficulty": 2,
+            "forbidden": [
+              "Franck Dubosc",
+              "Patrick Chirac",
+              "dunes"
+            ]
+          },
+          {
+            "text": "Brice de Nice",
+            "difficulty": 2,
+            "forbidden": [
+              "Jean Dujardin",
+              "surf",
+              "casser"
+            ]
+          },
+          {
+            "text": "OSS 117",
+            "difficulty": 2,
+            "forbidden": [
+              "Dujardin",
+              "espion",
+              "Le Caire"
+            ]
+          },
+          {
+            "text": "The Artist",
+            "difficulty": 2,
+            "forbidden": [
+              "muet",
+              "Dujardin",
+              "Oscar"
+            ]
+          },
+          {
+            "text": "La Môme",
+            "difficulty": 2,
+            "forbidden": [
+              "Piaf",
+              "Marion Cotillard",
+              "Oscar"
+            ]
+          },
+          {
+            "text": "Les Tuche",
+            "difficulty": 2,
+            "forbidden": [
+              "Jean-Paul Rouve",
+              "loto",
+              "frites"
+            ]
+          },
+          {
+            "text": "Babysitting",
+            "difficulty": 3,
+            "forbidden": [
+              "Philippe Lacheau",
+              "anniversaire",
+              "caméra"
+            ]
+          },
+          {
+            "text": "Alibi.com",
+            "difficulty": 3,
+            "forbidden": [
+              "Lacheau",
+              "agence",
+              "mensonges"
+            ]
+          },
+          {
+            "text": "Le Prénom",
+            "difficulty": 3,
+            "forbidden": [
+              "dîner",
+              "Adolphe",
+              "Patrick Bruel"
+            ]
+          },
+          {
+            "text": "Les Misérables",
+            "difficulty": 2,
+            "forbidden": [
+              "Victor Hugo",
+              "Jean Valjean",
+              "Cosette"
+            ]
+          },
+          {
+            "text": "Germinal",
+            "difficulty": 3,
+            "forbidden": [
+              "Zola",
+              "mine",
+              "Renaud"
+            ]
+          },
+          {
+            "text": "Cyrano de Bergerac",
+            "difficulty": 2,
+            "forbidden": [
+              "nez",
+              "Depardieu",
+              "Roxane"
+            ]
+          },
+          {
+            "text": "Jean de Florette",
+            "difficulty": 3,
+            "forbidden": [
+              "Provence",
+              "source",
+              "Yves Montand"
+            ]
+          },
+          {
+            "text": "Manon des sources",
+            "difficulty": 3,
+            "forbidden": [
+              "Provence",
+              "Pagnol",
+              "Emmanuelle Béart"
+            ]
+          },
+          {
+            "text": "La Gloire de mon père",
+            "difficulty": 3,
+            "forbidden": [
+              "Pagnol",
+              "Provence",
+              "enfance"
+            ]
+          },
+          {
+            "text": "Le Gendarme de Saint-Tropez",
+            "difficulty": 1,
+            "forbidden": [
+              "Louis de Funès",
+              "Cruchot",
+              "plage"
+            ]
+          },
+          {
+            "text": "La Cité de la peur",
+            "difficulty": 2,
+            "forbidden": [
+              "Les Nuls",
+              "Cannes",
+              "Carioca"
+            ]
+          },
+          {
+            "text": "Le Corniaud",
+            "difficulty": 3,
+            "forbidden": [
+              "Bourvil",
+              "Cadillac",
+              "de Funès"
+            ]
+          },
+          {
+            "text": "La Folie des grandeurs",
+            "difficulty": 3,
+            "forbidden": [
+              "de Funès",
+              "Yves Montand",
+              "Espagne"
+            ]
+          },
+          {
+            "text": "Les Aventures de Rabbi Jacob",
+            "difficulty": 2,
+            "forbidden": [
+              "de Funès",
+              "déguisement",
+              "chewing-gum"
+            ]
+          },
+          {
+            "text": "Fantômas",
+            "difficulty": 3,
+            "forbidden": [
+              "de Funès",
+              "Jean Marais",
+              "masque bleu"
+            ]
+          },
+          {
+            "text": "Les Tontons flingueurs",
+            "difficulty": 2,
+            "forbidden": [
+              "Lino Ventura",
+              "Audiard",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "À bout de souffle",
+            "difficulty": 3,
+            "forbidden": [
+              "Godard",
+              "Belmondo",
+              "Nouvelle Vague"
+            ]
+          },
+          {
+            "text": "Les 400 Coups",
+            "difficulty": 3,
+            "forbidden": [
+              "Truffaut",
+              "Antoine Doinel",
+              "Nouvelle Vague"
+            ]
+          },
+          {
+            "text": "Les Parapluies de Cherbourg",
+            "difficulty": 3,
+            "forbidden": [
+              "Demy",
+              "Catherine Deneuve",
+              "chanté"
+            ]
+          },
+          {
+            "text": "Les Demoiselles de Rochefort",
+            "difficulty": 3,
+            "forbidden": [
+              "Demy",
+              "jumelles",
+              "comédie musicale"
+            ]
+          },
+          {
+            "text": "Le Pacte des loups",
+            "difficulty": 3,
+            "forbidden": [
+              "bête du Gévaudan",
+              "Samuel Le Bihan",
+              "Moyen Âge"
+            ]
+          },
+          {
+            "text": "Banlieue 13",
+            "difficulty": 3,
+            "forbidden": [
+              "parkour",
+              "David Belle",
+              "cité"
+            ]
+          },
+          {
+            "text": "Les Rivières pourpres",
+            "difficulty": 3,
+            "forbidden": [
+              "Jean Reno",
+              "Vincent Cassel",
+              "Alpes"
+            ]
+          },
+          {
+            "text": "Mesrine",
+            "difficulty": 3,
+            "forbidden": [
+              "Vincent Cassel",
+              "gangster",
+              "ennemi public"
+            ]
+          },
+          {
+            "text": "Le Bossu",
+            "difficulty": 3,
+            "forbidden": [
+              "Daniel Auteuil",
+              "Lagardère",
+              "cape et épée"
+            ]
+          },
+          {
+            "text": "Les Trois Frères",
+            "difficulty": 2,
+            "forbidden": [
+              "Les Inconnus",
+              "héritage",
+              "Didier Bourdon"
+            ]
+          },
+          {
+            "text": "Le Placard",
+            "difficulty": 3,
+            "forbidden": [
+              "Daniel Auteuil",
+              "Depardieu",
+              "Pignon"
+            ]
+          },
+          {
+            "text": "L'Auberge espagnole",
+            "difficulty": 3,
+            "forbidden": [
+              "Erasmus",
+              "Barcelone",
+              "Romain Duris"
+            ]
+          },
+          {
+            "text": "Les Profs",
+            "difficulty": 3,
+            "forbidden": [
+              "lycée",
+              "Kev Adams",
+              "bac"
+            ]
+          },
+          {
+            "text": "Les Kaïra",
+            "difficulty": 3,
+            "forbidden": [
+              "Franck Gastambide",
+              "banlieue",
+              "cité"
+            ]
+          },
+          {
+            "text": "Neuilly sa mère !",
+            "difficulty": 3,
+            "forbidden": [
+              "Sami",
+              "banlieue",
+              "riche"
+            ]
+          },
+          {
+            "text": "La Famille Bélier",
+            "difficulty": 2,
+            "forbidden": [
+              "sourds",
+              "Louane",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Le Petit Nicolas",
+            "difficulty": 2,
+            "forbidden": [
+              "Sempé",
+              "Goscinny",
+              "écolier"
+            ]
+          },
+          {
+            "text": "Les Bodin's",
+            "difficulty": 3,
+            "forbidden": [
+              "Maria",
+              "campagne",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Supercondriaque",
+            "difficulty": 3,
+            "forbidden": [
+              "Dany Boon",
+              "microbes",
+              "hypocondriaque"
+            ]
+          },
+          {
+            "text": "Rien à déclarer",
+            "difficulty": 3,
+            "forbidden": [
+              "Dany Boon",
+              "douane",
+              "Belgique"
+            ]
+          },
+          {
+            "text": "Le Grand Bain",
+            "difficulty": 3,
+            "forbidden": [
+              "natation synchronisée",
+              "Gilles Lellouche",
+              "piscine"
+            ]
+          },
+          {
+            "text": "Hors normes",
+            "difficulty": 3,
+            "forbidden": [
+              "autisme",
+              "Vincent Cassel",
+              "Reda Kateb"
+            ]
+          },
+          {
+            "text": "Polisse",
+            "difficulty": 3,
+            "forbidden": [
+              "Maïwenn",
+              "police",
+              "mineurs"
+            ]
+          },
+          {
+            "text": "Un prophète",
+            "difficulty": 3,
+            "forbidden": [
+              "prison",
+              "Tahar Rahim",
+              "Audiard"
+            ]
+          },
+          {
+            "text": "Jeux d'enfants",
+            "difficulty": 3,
+            "forbidden": [
+              "Cap ou pas cap",
+              "Guillaume Canet",
+              "Marion Cotillard"
+            ]
+          },
+          {
+            "text": "Kirikou et la Sorcière",
+            "difficulty": 1,
+            "forbidden": [
+              "Karaba",
+              "village",
+              "enfant"
+            ]
+          },
+          {
+            "text": "Les Triplettes de Belleville",
+            "difficulty": 3,
+            "forbidden": [
+              "vélo",
+              "dessin animé",
+              "Tour de France"
+            ]
+          },
+          {
+            "text": "Le Petit Prince",
+            "difficulty": 2,
+            "forbidden": [
+              "Saint-Exupéry",
+              "rose",
+              "renard"
+            ]
+          },
+          {
+            "text": "Valérian",
+            "difficulty": 3,
+            "forbidden": [
+              "Besson",
+              "espace",
+              "Cara Delevingne"
+            ]
+          },
+          {
+            "text": "La Boum",
+            "difficulty": 2,
+            "forbidden": [
+              "Sophie Marceau",
+              "fête",
+              "slow"
+            ]
+          },
+          {
+            "text": "Trois hommes et un couffin",
+            "difficulty": 3,
+            "forbidden": [
+              "bébé",
+              "Coline Serreau",
+              "célibataires"
+            ]
+          },
+          {
+            "text": "L'Arnacœur",
+            "difficulty": 3,
+            "forbidden": [
+              "Romain Duris",
+              "Vanessa Paradis",
+              "Monaco"
+            ]
+          },
+          {
+            "text": "Coco avant Chanel",
+            "difficulty": 3,
+            "forbidden": [
+              "Audrey Tautou",
+              "couturière",
+              "mode"
+            ]
+          },
+          {
+            "text": "Le Concert",
+            "difficulty": 3,
+            "forbidden": [
+              "orchestre",
+              "Bolchoï",
+              "Mélanie Laurent"
+            ]
+          },
+          {
+            "text": "De rouille et d'os",
+            "difficulty": 3,
+            "forbidden": [
+              "orques",
+              "Marion Cotillard",
+              "Audiard"
+            ]
+          },
+          {
+            "text": "Chocolat",
+            "difficulty": 3,
+            "forbidden": [
+              "Omar Sy",
+              "clown",
+              "Footit"
+            ]
+          },
+          {
+            "text": "RRRrrrr!!!",
+            "difficulty": 3,
+            "forbidden": [
+              "préhistoire",
+              "Les Robins des Bois",
+              "shampooing"
+            ]
+          },
+          {
+            "text": "Podium",
+            "difficulty": 3,
+            "forbidden": [
+              "Benoît Poelvoorde",
+              "Claude François",
+              "sosie"
+            ]
+          },
+          {
+            "text": "Les Seigneurs",
+            "difficulty": 3,
+            "forbidden": [
+              "football",
+              "Omar Sy",
+              "Bretagne"
+            ]
+          },
+          {
+            "text": "La Chèvre",
+            "difficulty": 3,
+            "forbidden": [
+              "Pierre Richard",
+              "Depardieu",
+              "Mexique"
+            ]
+          },
+          {
+            "text": "Les Compères",
+            "difficulty": 3,
+            "forbidden": [
+              "Pierre Richard",
+              "Depardieu",
+              "fils"
+            ]
+          },
+          {
+            "text": "Le Grand Blond avec une chaussure noire",
+            "difficulty": 3,
+            "forbidden": [
+              "Pierre Richard",
+              "espion",
+              "distrait"
+            ]
+          },
+          {
+            "text": "L'As des as",
+            "difficulty": 3,
+            "forbidden": [
+              "Belmondo",
+              "boxeur",
+              "JO 1936"
+            ]
+          },
+          {
+            "text": "Le Magnifique",
+            "difficulty": 3,
+            "forbidden": [
+              "Belmondo",
+              "écrivain",
+              "espion"
+            ]
+          },
+          {
+            "text": "Borsalino",
+            "difficulty": 3,
+            "forbidden": [
+              "Delon",
+              "Belmondo",
+              "Marseille"
+            ]
+          },
+          {
+            "text": "Le Samouraï",
+            "difficulty": 3,
+            "forbidden": [
+              "Alain Delon",
+              "tueur",
+              "Melville"
+            ]
+          },
+          {
+            "text": "La Piscine",
+            "difficulty": 3,
+            "forbidden": [
+              "Delon",
+              "Romy Schneider",
+              "Saint-Tropez"
+            ]
+          },
+          {
+            "text": "Les Valseuses",
+            "difficulty": 3,
+            "forbidden": [
+              "Depardieu",
+              "Dewaere",
+              "Miou-Miou"
+            ]
+          },
+          {
+            "text": "Le Mépris",
+            "difficulty": 3,
+            "forbidden": [
+              "Godard",
+              "Bardot",
+              "Capri"
+            ]
+          },
+          {
+            "text": "Et Dieu… créa la femme",
+            "difficulty": 3,
+            "forbidden": [
+              "Bardot",
+              "Saint-Tropez",
+              "Vadim"
+            ]
+          },
+          {
+            "text": "Bis",
+            "difficulty": 3,
+            "forbidden": [
+              "Kad Merad",
+              "Franck Dubosc",
+              "années 80"
+            ]
+          },
+          {
+            "text": "Mais qui a tué Pamela Rose ?",
+            "difficulty": 3,
+            "forbidden": [
+              "Kad et Olivier",
+              "enquête",
+              "FBI"
+            ]
+          },
+          {
+            "text": "Les Trois Mousquetaires",
+            "difficulty": 2,
+            "forbidden": [
+              "d'Artagnan",
+              "Dumas",
+              "épée"
+            ]
+          },
+          {
+            "text": "Le Comte de Monte-Cristo",
+            "difficulty": 2,
+            "forbidden": [
+              "Dumas",
+              "Edmond Dantès",
+              "vengeance"
+            ]
+          },
+          {
+            "text": "Entre les murs",
+            "difficulty": 3,
+            "forbidden": [
+              "collège",
+              "professeur",
+              "Palme d'or"
+            ]
+          },
+          {
+            "text": "La Vie d'Adèle",
+            "difficulty": 3,
+            "forbidden": [
+              "Palme d'or",
+              "Kechiche",
+              "Léa Seydoux"
+            ]
+          },
+          {
+            "text": "Titane",
+            "difficulty": 3,
+            "forbidden": [
+              "Palme d'or",
+              "Julia Ducournau",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Anatomie d'une chute",
+            "difficulty": 3,
+            "forbidden": [
+              "Palme d'or",
+              "procès",
+              "Sandra Hüller"
+            ]
+          },
+          {
+            "text": "Ballerina",
+            "difficulty": 3,
+            "forbidden": [
+              "danse",
+              "Paris",
+              "orpheline"
+            ]
+          },
+          {
+            "text": "Ernest et Célestine",
+            "difficulty": 3,
+            "forbidden": [
+              "ours",
+              "souris",
+              "dessin animé"
+            ]
+          },
+          {
+            "text": "Le Dernier Métro",
+            "difficulty": 3,
+            "forbidden": [
+              "Truffaut",
+              "Deneuve",
+              "théâtre"
+            ]
+          },
+          {
+            "text": "La Cage aux folles",
+            "difficulty": 2,
+            "forbidden": [
+              "Michel Serrault",
+              "cabaret",
+              "Saint-Tropez"
+            ]
+          },
+          {
+            "text": "L'Aile ou la Cuisse",
+            "difficulty": 2,
+            "forbidden": [
+              "de Funès",
+              "Coluche",
+              "guide gastronomique"
+            ]
+          },
+          {
+            "text": "Les Sous-doués",
+            "difficulty": 3,
+            "forbidden": [
+              "bac",
+              "cancres",
+              "Daniel Auteuil"
+            ]
+          },
+          {
+            "text": "Le Professionnel",
+            "difficulty": 3,
+            "forbidden": [
+              "Belmondo",
+              "Morricone",
+              "agent secret"
+            ]
+          },
+          {
+            "text": "La Reine Margot",
+            "difficulty": 3,
+            "forbidden": [
+              "Isabelle Adjani",
+              "Saint-Barthélemy",
+              "Chéreau"
+            ]
+          },
+          {
+            "text": "Le Gendarme et les Extra-terrestres",
+            "difficulty": 3,
+            "forbidden": [
+              "de Funès",
+              "soucoupe",
+              "Saint-Tropez"
+            ]
+          },
+          {
+            "text": "La Vérité si je mens !",
+            "difficulty": 2,
+            "forbidden": [
+              "Sentier",
+              "Richard Anconina",
+              "textile"
+            ]
+          },
+          {
+            "text": "Le Sens de la fête",
+            "difficulty": 3,
+            "forbidden": [
+              "mariage",
+              "Jean-Pierre Bacri",
+              "traiteur"
+            ]
+          },
+          {
+            "text": "Un air de famille",
+            "difficulty": 3,
+            "forbidden": [
+              "Bacri",
+              "Jaoui",
+              "café"
+            ]
+          },
+          {
+            "text": "Ma vie de Courgette",
+            "difficulty": 3,
+            "forbidden": [
+              "orphelinat",
+              "animation",
+              "pâte à modeler"
+            ]
+          },
+          {
+            "text": "Persépolis",
+            "difficulty": 3,
+            "forbidden": [
+              "Iran",
+              "Marjane Satrapi",
+              "dessin animé"
+            ]
+          },
+          {
+            "text": "Tout simplement noir",
+            "difficulty": 3,
+            "forbidden": [
+              "Jean-Pascal Zadi",
+              "marche",
+              "satire"
+            ]
+          },
+          {
+            "text": "BAC Nord",
+            "difficulty": 3,
+            "forbidden": [
+              "Marseille",
+              "police",
+              "Gilles Lellouche"
+            ]
+          },
+          {
+            "text": "Un p'tit truc en plus",
+            "difficulty": 2,
+            "forbidden": [
+              "Artus",
+              "colonie",
+              "handicap"
+            ]
+          },
+          {
+            "text": "La Ch'tite famille",
+            "difficulty": 3,
+            "forbidden": [
+              "Dany Boon",
+              "design",
+              "Nord"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
