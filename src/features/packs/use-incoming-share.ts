@@ -7,26 +7,32 @@ export type IncomingPayload =
   | { kind: 'text'; value: string }
   | { kind: 'file'; uri: string; mimeType?: string };
 
-/** Transmet le premier élément partagé une seule fois, puis vide la file des partages. */
+/**
+ * Transmet le premier élément partagé une seule fois, puis vide la file des partages. Pour un
+ * fichier, on lit la copie locale faite par expo-sharing (`contentUri`, dans le cache) : la
+ * permission sur l'URI `content://` d'origine peut expirer.
+ */
 export function useSharedPayloadsOnce(
   enabled: boolean,
   onPayload: (payload: IncomingPayload) => void,
 ): void {
-  const { sharedPayloads, clearSharedPayloads } = useIncomingShare();
+  const { resolvedSharedPayloads, isResolving, clearSharedPayloads } = useIncomingShare();
   const handled = useRef(false);
   const deliver = useEffectEvent(onPayload);
 
   useEffect(() => {
-    if (!enabled || handled.current) return;
-    const first = sharedPayloads[0];
-    if (!first?.value) return;
+    if (!enabled || handled.current || isResolving) return;
+    const first = resolvedSharedPayloads[0];
+    if (!first) return;
+    const isText = first.shareType === 'text' || first.shareType === 'url' || !first.contentUri;
+    const value = isText ? first.value : first.contentUri;
+    if (!value) return;
     handled.current = true;
     clearSharedPayloads();
-    const isText = !first.shareType || first.shareType === 'text' || first.shareType === 'url';
     deliver(
       isText
-        ? { kind: 'text', value: first.value }
-        : { kind: 'file', uri: first.value, mimeType: first.mimeType },
+        ? { kind: 'text', value }
+        : { kind: 'file', uri: value, mimeType: first.contentMimeType ?? first.mimeType },
     );
-  }, [enabled, sharedPayloads, clearSharedPayloads]);
+  }, [enabled, resolvedSharedPayloads, isResolving, clearSharedPayloads]);
 }

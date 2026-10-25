@@ -33,9 +33,8 @@ export default function RootLayout() {
 
   return (
     <GestureHandlerRootView style={styles.root}>
-      {/* Clavier suivi sur le thread UI (UX.md §5). L'app est bord à bord : barres translucides
-          déclarées, et le bord à bord est conservé même si le module est désactivé. */}
-      <KeyboardProvider statusBarTranslucent navigationBarTranslucent preserveEdgeToEdge>
+      {/* Clavier suivi sur le thread UI (UX.md §5). */}
+      <KeyboardProvider>
         <I18nextProvider i18n={i18n}>
           <StatusBar style="light" />
           <Suspense fallback={<View style={styles.root} />}>

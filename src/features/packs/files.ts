@@ -1,6 +1,6 @@
 // Fichiers de paquets : export vers la feuille de partage Android, lecture d'un fichier choisi ou
 // reçu (GAMEPLAY.md §5). Les fichiers exportés vont dans le cache de l'app : rien à nettoyer.
-import { File, Paths } from 'expo-file-system';
+import { Directory, File, Paths } from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
 
 import { exportFileName } from './editor';
@@ -15,7 +15,11 @@ export type ShareOutcome = 'shared' | 'unavailable';
 /** Écrit `nom-du-pack.devine.json` dans le cache et ouvre la feuille de partage. */
 export async function sharePackFile(file: PackFile, dialogTitle: string): Promise<ShareOutcome> {
   if (!(await Sharing.isAvailableAsync())) return 'unavailable';
-  const output = new File(Paths.cache, exportFileName(file.pack.name.fr));
+  // Sous-dossier dédié : à la réception, expo-sharing copie le fichier reçu à la racine du cache
+  // sous son nom d'origine ; partagé vers l'app elle-même, il écraserait la source en la lisant.
+  const folder = new Directory(Paths.cache, 'exports');
+  if (!folder.exists) folder.create({ intermediates: true });
+  const output = new File(folder, exportFileName(file.pack.name.fr));
   output.create({ overwrite: true });
   await output.write(JSON.stringify(file, null, 2));
   await Sharing.shareAsync(output.uri, { mimeType: 'application/json', dialogTitle });

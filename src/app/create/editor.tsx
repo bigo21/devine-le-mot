@@ -11,7 +11,7 @@ import { WarningIcon } from 'phosphor-react-native/src/icons/Warning';
 import { XIcon } from 'phosphor-react-native/src/icons/X';
 import { type ComponentRef, useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, ScrollView, StyleSheet, type TextInput, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, type TextInput, View } from 'react-native';
 
 import { emojiIcons } from '@/assets/categories';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
@@ -51,9 +51,15 @@ import {
 } from '@/ui/tokens';
 
 /** Icônes proposées : celles qui ont une image Fluent 3D (pas d'emoji système, ASSETS.md §3). */
-const EMOJIS = Object.keys(emojiIcons);
 const DEFAULT_EMOJI = '🎉';
+/** Icônes proposées, celle par défaut en tête pour qu'elle soit visible comme sélectionnée. */
+const EMOJIS = [DEFAULT_EMOJI, ...Object.keys(emojiIcons).filter((e) => e !== DEFAULT_EMOJI)];
 const FORBIDDEN_FIELDS = editorLimits.minForbidden;
+/** Mots affichés d'un coup (une catégorie importée peut en compter 5 000) : ouverture rapide. */
+const WORDS_PAGE = 20;
+const EMOJI_SIZE = 56;
+/** Largeur d'une icône de la rangée, espacement compris (liste virtualisée). */
+const EMOJI_STEP = EMOJI_SIZE + spacing.sm;
 
 type LeaveAction = Parameters<NonNullable<Parameters<typeof usePreventRemove>[1]>>[0]['data']['action'];
 
@@ -86,7 +92,10 @@ export default function EditorScreen() {
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState(false);
   const [leave, setLeave] = useState<LeaveAction | null>(null);
+  const [visibleWords, setVisibleWords] = useState(WORDS_PAGE);
   const entryRef = useRef<ComponentRef<typeof TextInput>>(null);
+  const nameRef = useRef<ComponentRef<typeof TextInput>>(null);
+  const forbiddenRefs = useRef<(ComponentRef<typeof TextInput> | null)[]>([]);
   const leaving = useRef(false);
 
   useEffect(() => {
@@ -121,11 +130,14 @@ export default function EditorScreen() {
     else setLeave(data.action);
   });
 
+  // Icône choisie hors écran (modification, duplication) : la rangée s'ouvre sur elle.
+  const selectedEmojiIndex = EMOJIS.indexOf(draft.emoji.replace(/️/g, ''));
+
   const status = draftStatus(draft);
   const shownWords = useMemo(() => [...draft.words].reverse(), [draft.words]);
   const preview: CategorySummary = {
     id: -1,
-    name: draft.name.trim() || t('editor.namePlaceholder'),
+    name: draft.name.trim() || t('editor.previewName'),
     emoji: draft.emoji,
     color: draft.color,
     region: 'custom',
@@ -154,9 +166,12 @@ export default function EditorScreen() {
       .join(' · ');
   };
 
-  const addEntry = () => {
-    if (!entry.trim()) return;
-    const next = addWords(draft.words, entry);
+  // À la validation, l'état peut ne pas avoir reçu les dernières lettres (saisie rapide) : on
+  // préfère le texte transmis par l'événement.
+  const addEntry = (submitted?: string) => {
+    const text = submitted ?? entry;
+    if (!text.trim()) return;
+    const next = addWords(draft.words, text);
     update({ words: next.words });
     setReport(describeAdd(next.result));
     setEntry('');
@@ -196,6 +211,7 @@ export default function EditorScreen() {
     if (!status.canSave) {
       setShowErrors(true);
       feedback('error');
+      if (status.nameMissing) nameRef.current?.focus();
       return;
     }
     setSaving(true);
@@ -299,6 +315,7 @@ export default function EditorScreen() {
         </View>
 
         <TextField
+          ref={nameRef}
           label={t('editor.name')}
           placeholder={t('editor.namePlaceholder')}
           value={draft.name}
@@ -322,18 +339,28 @@ export default function EditorScreen() {
           <Text variant="labelSmall" muted>
             {t('editor.icon')}
           </Text>
-          <ScrollView
+          {/* Liste virtualisée : seules les icônes visibles sont créées (une image chacune). */}
+          <FlatList
             horizontal
+            data={EMOJIS}
+            keyExtractor={(emoji) => emoji}
+            extraData={draft.emoji}
+            initialScrollIndex={Math.max(0, selectedEmojiIndex - 1)}
+            getItemLayout={(_, index) => ({
+              length: EMOJI_STEP,
+              offset: EMOJI_STEP * index,
+              index,
+            })}
+            initialNumToRender={8}
+            windowSize={3}
             showsHorizontalScrollIndicator={false}
             style={styles.bleed}
             contentContainerStyle={styles.emojis}
             keyboardShouldPersistTaps="handled"
-          >
-            {EMOJIS.map((emoji) => {
+            renderItem={({ item: emoji }) => {
               const selected = emoji === draft.emoji.replace(/️/g, '');
               return (
                 <Pressable
-                  key={emoji}
                   onPress={() => {
                     feedback('select');
                     update({ emoji });
@@ -346,8 +373,8 @@ export default function EditorScreen() {
                   <CategoryIcon emoji={emoji} size={36} />
                 </Pressable>
               );
-            })}
-          </ScrollView>
+            }}
+          />
         </View>
 
         <View style={styles.section}>
@@ -421,16 +448,21 @@ export default function EditorScreen() {
               spellCheck={false}
               returnKeyType="done"
               submitBehavior="submit"
-              onSubmitEditing={addEntry}
+              onSubmitEditing={(e) => addEntry(e.nativeEvent.text)}
             />
             <Button
               label={t('editor.add')}
               icon={<Icon icon={PlusIcon} />}
               variant="secondary"
               disabled={!entry.trim()}
-              onPress={addEntry}
+              onPress={() => addEntry()}
             />
           </View>
+          {report ? (
+            <Text variant="caption" muted accessibilityLiveRegion="polite">
+              {report}
+            </Text>
+          ) : null}
 
           {pasteOpen ? (
             <View style={styles.section}>
@@ -462,11 +494,6 @@ export default function EditorScreen() {
             />
           )}
 
-          {report ? (
-            <Text variant="caption" muted accessibilityLiveRegion="polite">
-              {report}
-            </Text>
-          ) : null}
         </View>
 
         <View style={styles.section}>
@@ -475,14 +502,14 @@ export default function EditorScreen() {
             {status.forbiddenVariant
               ? t('editor.forbiddenReady', { eligible: status.forbiddenEligible })
               : `${t('editor.forbiddenHint')} ${t('editor.forbiddenStatus', {
-                  eligible: status.forbiddenEligible,
+                  count: status.forbiddenEligible,
                   threshold: editorLimits.forbiddenThreshold,
                 })}`}
           </Text>
         </View>
 
         <View style={styles.list}>
-          {shownWords.map((word) => {
+          {shownWords.slice(0, visibleWords).map((word) => {
             const open = expanded === word.text;
             const filled = cleanForbidden(word.text, word.forbidden).length;
             const fields = Math.min(
@@ -520,6 +547,9 @@ export default function EditorScreen() {
                     {Array.from({ length: fields }, (_, index) => (
                       <TextField
                         key={index}
+                        ref={(input) => {
+                          forbiddenRefs.current[index] = input;
+                        }}
                         placeholder={t('editor.forbiddenPlaceholder', { index: index + 1 })}
                         accessibilityLabel={`${t('editor.editForbidden', { word: word.text })}, ${index + 1}`}
                         value={word.forbidden[index] ?? ''}
@@ -527,7 +557,10 @@ export default function EditorScreen() {
                         maxLength={editorLimits.maxForbiddenLength}
                         autoCorrect={false}
                         spellCheck={false}
+                        // « Entrée » enchaîne : Suivant, puis Terminé (UX.md §5).
                         returnKeyType={index === fields - 1 ? 'done' : 'next'}
+                        submitBehavior={index === fields - 1 ? 'blurAndSubmit' : 'submit'}
+                        onSubmitEditing={() => forbiddenRefs.current[index + 1]?.focus()}
                       />
                     ))}
                     <Button
@@ -540,6 +573,16 @@ export default function EditorScreen() {
               </View>
             );
           })}
+          {shownWords.length > visibleWords ? (
+            <Button
+              label={t('editor.showMore', {
+                count: Math.min(WORDS_PAGE, shownWords.length - visibleWords),
+              })}
+              variant="ghost"
+              block
+              onPress={() => setVisibleWords((n) => n + WORDS_PAGE)}
+            />
+          ) : null}
         </View>
       </KeyboardScreen>
 
@@ -575,17 +618,19 @@ export default function EditorScreen() {
 const SWATCH = touchTarget;
 
 const styles = StyleSheet.create({
-  fill: { flex: 1 },
+  // Fond explicite : évite l'aplatissement Fabric de la vue englobante (voir Mes catégories).
+  fill: { flex: 1, backgroundColor: colors.bg },
   flex: { flex: 1 },
   section: { gap: spacing.sm },
   preview: { alignItems: 'center' },
   previewCard: { width: '48%' },
   // La rangée d'icônes déborde volontairement des marges pour défiler jusqu'au bord.
   bleed: { marginHorizontal: -spacing.xl },
-  emojis: { gap: spacing.sm, paddingHorizontal: spacing.xl },
+  emojis: { paddingHorizontal: spacing.xl },
   emoji: {
-    width: 56,
-    height: 56,
+    width: EMOJI_SIZE,
+    height: EMOJI_SIZE,
+    marginRight: spacing.sm,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: radii.sm,
@@ -594,7 +639,7 @@ const styles = StyleSheet.create({
     borderColor: 'transparent',
   },
   emojiSelected: { borderColor: colors.text },
-  swatches: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+  swatches: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   swatch: {
     width: SWATCH,
     height: SWATCH,

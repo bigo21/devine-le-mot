@@ -53,6 +53,17 @@ export default function PlaySetupScreen() {
     }, [db, i18n.language]),
   );
 
+  // La catégorie demandée (« Jouer avec », dernière jouée) passe en tête : sinon elle peut être
+  // sélectionnée tout en bas de la grille, hors de vue. Ordre figé sur le choix initial.
+  const [initialId] = useState(categoryId);
+  const ordered = useMemo(
+    () => [
+      ...categories.filter((c) => c.id === initialId),
+      ...categories.filter((c) => c.id !== initialId),
+    ],
+    [categories, initialId],
+  );
+
   const durationOptions = useMemo(
     () => DURATIONS.map((value) => ({ value, label: t('setup.seconds', { count: value }) })),
     [t],
@@ -86,7 +97,7 @@ export default function PlaySetupScreen() {
         {t('setup.category')}
       </Text>
       <View style={styles.grid}>
-        {categories.map((category, index) => {
+        {ordered.map((category, index) => {
           const selected = category.id === categoryId;
           return (
             <Animated.View

@@ -25,7 +25,7 @@ import { useFeedback } from '@/lib/use-feedback';
 import { BottomSheet, Button, Icon, Screen, Text } from '@/ui/components';
 import { Mascot } from '@/ui/mascot';
 import { fadeOut, rise, staggerDelay, useReducedMotion } from '@/ui/motion';
-import { spacing } from '@/ui/tokens';
+import { colors, spacing } from '@/ui/tokens';
 
 type SheetState = { category: CategorySummary; confirmDelete: boolean } | null;
 
@@ -131,14 +131,17 @@ export default function MyCategoriesScreen() {
         </View>
 
         {empty ? (
-          <Animated.View entering={rise({ reduced })} style={styles.empty}>
+          // collapsable={false} : conteneurs jamais aplatis par Fabric. Sinon, quand la grille
+          // remplace l'état vide au retour sur l'écran, les animations d'entrée insèrent les cartes
+          // dans un parent natif qui n'existe plus (« View already has a parent »).
+          <Animated.View entering={rise({ reduced })} style={styles.empty} collapsable={false}>
             <Mascot state="think" size={120} />
             <Text align="center" muted>
               {t('myCategories.empty')}
             </Text>
           </Animated.View>
         ) : (
-          <View style={styles.grid}>
+          <View style={styles.grid} collapsable={false}>
             {(categories ?? []).map((category, index) => (
               <Animated.View
                 key={category.id}
@@ -233,7 +236,9 @@ export default function MyCategoriesScreen() {
 }
 
 const styles = StyleSheet.create({
-  fill: { flex: 1 },
+  // Fond explicite : une vue sans propriété visuelle est aplatie par Fabric, ce qui casse les
+  // animations d'entrée de la grille et les canvas Skia du filigrane.
+  fill: { flex: 1, backgroundColor: colors.bg },
   actions: { flexDirection: 'row', gap: spacing.md },
   action: { flex: 1 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
