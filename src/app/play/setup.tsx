@@ -2,7 +2,7 @@ import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
 import { InfoIcon } from 'phosphor-react-native/src/icons/Info';
 import { UsersThreeIcon } from 'phosphor-react-native/src/icons/UsersThree';
-import { useCallback, useMemo, useState } from 'react';
+import { type ComponentRef, useCallback, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
@@ -48,6 +48,8 @@ type Mode = 'solo' | 'teams';
 
 const DURATIONS: readonly RoundDuration[] = [30, 60, 90, 120];
 const VARIANT_CARD_WIDTH = 148;
+/** Pas du carrousel (carte + espacement), pour faire défiler jusqu'à la variante choisie. */
+const VARIANT_STEP = VARIANT_CARD_WIDTH + spacing.md;
 const TEAM_COUNTS = Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS);
 const ROUND_COUNTS = [1, 2, 3, 5] as const;
 
@@ -121,6 +123,18 @@ export default function PlaySetupScreen() {
   const variant = pickVariant(variantChoice ?? lastVariant, available);
   const totalWords = selected.reduce((sum, c) => sum + c.wordCount, 0);
   const tooFew = selected.length > 0 && tooFewWordsFor(totalWords, duration);
+
+  // La variante choisie (souvent la dernière jouée) peut être hors de vue en bout de carrousel :
+  // on la ramène à l'écran, sans animation, dès que le contenu du carrousel est mesuré.
+  const variantScroll = useRef<ComponentRef<typeof ScrollView>>(null);
+  const variantIndex = available.indexOf(variant);
+  const showSelectedVariant = () => {
+    if (variantIndex <= 0) return;
+    variantScroll.current?.scrollTo({
+      x: Math.max(0, variantIndex - 0.3) * VARIANT_STEP,
+      animated: false,
+    });
+  };
 
   const durationOptions = useMemo(
     () => DURATIONS.map((value) => ({ value, label: t('setup.seconds', { count: value }) })),
@@ -350,6 +364,8 @@ export default function PlaySetupScreen() {
             {t('setup.variant')}
           </Text>
           <ScrollView
+            ref={variantScroll}
+            onContentSizeChange={showSelectedVariant}
             horizontal
             showsHorizontalScrollIndicator={false}
             style={styles.bleed}

@@ -534,11 +534,20 @@ export default function PlayGameScreen() {
                     : t(`variants.${cardVariant}.instruction`)}
                 </Text>
               </View>
-              {reading ? (
-                <Text variant="labelSmall" align="center" accessibilityLiveRegion="polite">
-                  {t('game.reading')}
-                </Text>
-              ) : null}
+            </Animated.View>
+          ) : null}
+
+          {/* Hors du bloc du mot : un mot sur deux lignes occupe toute la hauteur. */}
+          {reading && phase === 'playing' ? (
+            <Animated.View
+              entering={pop({ reduced })}
+              exiting={fadeOut}
+              style={[styles.readingPill, { top: insets.top + spacing.lg }]}
+              accessibilityLiveRegion="polite"
+            >
+              <Text variant="labelSmall" color={colors.text}>
+                {t('game.reading')}
+              </Text>
             </Animated.View>
           ) : null}
 
@@ -668,6 +677,13 @@ const styles = StyleSheet.create({
   },
   word: { width: '100%', fontSize: 120, lineHeight: 132 },
   wordCompact: { fontSize: 80, lineHeight: 90 },
+  readingPill: {
+    position: 'absolute',
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    borderRadius: 999,
+    backgroundColor: colors.bg,
+  },
   toast: {
     position: 'absolute',
     bottom: spacing.xl,
