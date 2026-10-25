@@ -10,10 +10,11 @@ export type Gravity = { x: number; y: number; z: number };
 export type ScreenOrientation = 0 | 90 | -90 | 180;
 
 /**
- * Signe de Z quand l'écran regarde le sol. Sur Android, au repos écran vers le haut, la gravité
- * mesurée vaut z ≈ +9,8 ; écran vers le sol, z ≈ −9,8. À confirmer sur appareil (écran /dev/tilt).
+ * Signe de Z quand l'écran regarde le sol. Constaté sur appareil (Redmi, Android 15, 25/10/2026) :
+ * DeviceMotion renvoie la gravité elle-même, donc z ≈ +9,8 écran vers le sol (et −9,8 écran vers
+ * le plafond). La valeur −1 inversait trouvé et passer.
  */
-export const SCREEN_DOWN_SIGN = -1;
+export const SCREEN_DOWN_SIGN = 1;
 
 const RAD_TO_DEG = 180 / Math.PI;
 

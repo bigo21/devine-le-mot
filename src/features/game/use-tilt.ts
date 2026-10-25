@@ -53,6 +53,7 @@ export function useTilt({ enabled, onEvent, onSample }: Options) {
 
   const state = useRef<TiltState>(initialTiltState());
   const upSign = useRef<1 | -1 | null>(null);
+  const lastOrientation = useRef<ScreenOrientation | null>(null);
   // Fonctions stables qui lisent toujours les dernières callbacks, sans relancer l'abonnement.
   const emitEvent = useEffectEvent((event: TiltEvent) => onEvent?.(event));
   const emitSample = useEffectEvent((sample: TiltSample) => onSample?.(sample));
@@ -83,6 +84,13 @@ export function useTilt({ enabled, onEvent, onSample }: Options) {
       if (!gravity) return;
       const orientation = toOrientation(measurement.orientation);
       const now = Date.now();
+      // Retourner le téléphone (paysage gauche ↔ droit) inverse l'axe : on recalibre.
+      if (lastOrientation.current !== null && lastOrientation.current !== orientation) {
+        // État neuf : les mesures lissées de l'ancienne orientation n'ont plus de sens.
+        state.current = initialTiltState();
+        upSign.current = null;
+      }
+      lastOrientation.current = orientation;
       // Le sens de l'axe « haut de l'écran » est fixé pendant la calibration.
       if (state.current.phase === 'calibrating' || upSign.current === null) {
         upSign.current = upSignFor(gravity, orientation);

@@ -161,9 +161,9 @@ describe('screenPitch (gravité → angle de l’écran)', () => {
   const g = 9.81;
   // Téléphone en paysage, debout sur le front : la gravité suit l'axe X.
   const vertical: Gravity = { x: g, y: 0, z: 0 };
-  // Écran vers le sol : la gravité mesurée vaut z ≈ −g sur Android.
-  const screenDown: Gravity = { x: 0, y: 0, z: -g };
-  const screenUp: Gravity = { x: 0, y: 0, z: g };
+  // Écran vers le sol : DeviceMotion renvoie z ≈ +g (constaté sur appareil).
+  const screenDown: Gravity = { x: 0, y: 0, z: g };
+  const screenUp: Gravity = { x: 0, y: 0, z: -g };
 
   it('vertical = 0°, écran vers le sol = +90°, vers le plafond = −90°', () => {
     const up = upSignFor(vertical, 90);
@@ -180,7 +180,7 @@ describe('screenPitch (gravité → angle de l’écran)', () => {
     const tiltedDown: Gravity = {
       x: -g * Math.cos(Math.PI / 4),
       y: 0,
-      z: -g * Math.sin(Math.PI / 4),
+      z: g * Math.sin(Math.PI / 4),
     };
     expect(screenPitch(tiltedDown, -90, up)).toBeCloseTo(45);
   });
