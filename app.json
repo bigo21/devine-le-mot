@@ -58,7 +58,20 @@
           "enableBackgroundRecording": false
         }
       ],
-      "expo-asset"
+      "expo-asset",
+      [
+        "expo-sharing",
+        {
+          "android": {
+            "enabled": true,
+            "singleShareMimeTypes": [
+              "application/json",
+              "application/octet-stream",
+              "text/plain"
+            ]
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
