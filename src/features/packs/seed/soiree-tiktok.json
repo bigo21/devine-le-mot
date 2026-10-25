@@ -1,0 +1,1121 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "soiree-tiktok",
+    "name": {
+      "fr": "Tendances TikTok et réseaux",
+      "en": "TikTok and social trends"
+    },
+    "region": "party",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "tendances-tiktok",
+        "name": {
+          "fr": "Tendances TikTok et réseaux",
+          "en": "TikTok and social trends"
+        },
+        "emoji": "🔥",
+        "color": "lagoon",
+        "tags": [
+          "soiree",
+          "internet"
+        ],
+        "words": [
+          {
+            "text": "Challenge",
+            "difficulty": 1,
+            "forbidden": [
+              "défi",
+              "TikTok",
+              "vidéo"
+            ]
+          },
+          {
+            "text": "Pour toi",
+            "difficulty": 2,
+            "forbidden": [
+              "page",
+              "TikTok",
+              "fil"
+            ]
+          },
+          {
+            "text": "Duo",
+            "difficulty": 2,
+            "forbidden": [
+              "TikTok",
+              "vidéo côte à côte",
+              "réaction"
+            ]
+          },
+          {
+            "text": "Live TikTok",
+            "difficulty": 1,
+            "forbidden": [
+              "direct",
+              "cadeaux",
+              "abonnés"
+            ]
+          },
+          {
+            "text": "Filtre beauté",
+            "difficulty": 1,
+            "forbidden": [
+              "visage",
+              "embellir",
+              "caméra"
+            ]
+          },
+          {
+            "text": "Filtre vieillesse",
+            "difficulty": 2,
+            "forbidden": [
+              "visage",
+              "rides",
+              "âgé"
+            ]
+          },
+          {
+            "text": "Transition",
+            "difficulty": 2,
+            "forbidden": [
+              "vidéo",
+              "changement",
+              "tenue"
+            ]
+          },
+          {
+            "text": "Lip sync",
+            "difficulty": 2,
+            "forbidden": [
+              "playback",
+              "lèvres",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Story time",
+            "difficulty": 2,
+            "forbidden": [
+              "raconter",
+              "histoire",
+              "caméra"
+            ]
+          },
+          {
+            "text": "Get ready with me",
+            "difficulty": 2,
+            "forbidden": [
+              "préparer",
+              "maquillage",
+              "tenue"
+            ]
+          },
+          {
+            "text": "Unboxing",
+            "difficulty": 2,
+            "forbidden": [
+              "déballer",
+              "colis",
+              "cadeau"
+            ]
+          },
+          {
+            "text": "Haul",
+            "difficulty": 3,
+            "forbidden": [
+              "achats",
+              "montrer",
+              "vêtements"
+            ]
+          },
+          {
+            "text": "POV",
+            "difficulty": 2,
+            "forbidden": [
+              "point de vue",
+              "caméra",
+              "situation"
+            ]
+          },
+          {
+            "text": "Prank",
+            "difficulty": 1,
+            "forbidden": [
+              "farce",
+              "blague",
+              "caméra cachée"
+            ]
+          },
+          {
+            "text": "Mannequin challenge",
+            "difficulty": 1,
+            "forbidden": [
+              "immobile",
+              "figé",
+              "musique"
+            ]
+          },
+          {
+            "text": "Ice bucket challenge",
+            "difficulty": 1,
+            "forbidden": [
+              "seau d'eau glacée",
+              "défi",
+              "nommer"
+            ]
+          },
+          {
+            "text": "Jerusalema",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "Master KG",
+              "chorégraphie"
+            ]
+          },
+          {
+            "text": "Kiki challenge",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "danser",
+              "Drake"
+            ]
+          },
+          {
+            "text": "Bottle cap challenge",
+            "difficulty": 2,
+            "forbidden": [
+              "bouteille",
+              "bouchon",
+              "coup de pied"
+            ]
+          },
+          {
+            "text": "Harlem Shake",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "casque",
+              "folie"
+            ]
+          },
+          {
+            "text": "Gangnam Style",
+            "difficulty": 1,
+            "forbidden": [
+              "Psy",
+              "danse du cheval",
+              "Corée"
+            ]
+          },
+          {
+            "text": "Dab",
+            "difficulty": 1,
+            "forbidden": [
+              "bras",
+              "danse",
+              "coude"
+            ]
+          },
+          {
+            "text": "Floss",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "bras",
+              "hanches"
+            ]
+          },
+          {
+            "text": "Renegade",
+            "difficulty": 3,
+            "forbidden": [
+              "danse",
+              "TikTok",
+              "chorégraphie"
+            ]
+          },
+          {
+            "text": "Moonwalk",
+            "difficulty": 1,
+            "forbidden": [
+              "Michael Jackson",
+              "reculer",
+              "glisser"
+            ]
+          },
+          {
+            "text": "Buga",
+            "difficulty": 2,
+            "forbidden": [
+              "Kizz Daniel",
+              "danse",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Calm Down",
+            "difficulty": 1,
+            "forbidden": [
+              "Rema",
+              "Selena Gomez",
+              "afrobeats"
+            ]
+          },
+          {
+            "text": "Love Nwantiti",
+            "difficulty": 2,
+            "forbidden": [
+              "CKay",
+              "afrobeats",
+              "TikTok"
+            ]
+          },
+          {
+            "text": "Water",
+            "difficulty": 2,
+            "forbidden": [
+              "Tyla",
+              "danse",
+              "Afrique du Sud"
+            ]
+          },
+          {
+            "text": "Amapiano",
+            "difficulty": 2,
+            "forbidden": [
+              "Afrique du Sud",
+              "danse",
+              "musique"
+            ]
+          },
+          {
+            "text": "Gwara gwara",
+            "difficulty": 3,
+            "forbidden": [
+              "danse",
+              "Afrique du Sud",
+              "bras"
+            ]
+          },
+          {
+            "text": "Shaku shaku",
+            "difficulty": 3,
+            "forbidden": [
+              "danse",
+              "Nigeria",
+              "pieds"
+            ]
+          },
+          {
+            "text": "Zanku",
+            "difficulty": 3,
+            "forbidden": [
+              "danse",
+              "Nigeria",
+              "Zlatan"
+            ]
+          },
+          {
+            "text": "Mapouka",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "Côte d'Ivoire",
+              "hanches"
+            ]
+          },
+          {
+            "text": "Bend skin",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "Cameroun",
+              "moto-taxi"
+            ]
+          },
+          {
+            "text": "Ndombolo challenge",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "RDC",
+              "hanches"
+            ]
+          },
+          {
+            "text": "Coupé-décalé",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "Côte d'Ivoire",
+              "DJ Arafat"
+            ]
+          },
+          {
+            "text": "Danse de la pieuvre",
+            "difficulty": 3,
+            "forbidden": [
+              "tentacules",
+              "bras",
+              "ondulation"
+            ]
+          },
+          {
+            "text": "Danse du robot",
+            "difficulty": 1,
+            "forbidden": [
+              "saccadé",
+              "machine",
+              "bip bip"
+            ]
+          },
+          {
+            "text": "Air guitar",
+            "difficulty": 2,
+            "forbidden": [
+              "guitare imaginaire",
+              "rock",
+              "mimer"
+            ]
+          },
+          {
+            "text": "Selfie",
+            "difficulty": 1,
+            "forbidden": [
+              "photo",
+              "soi-même",
+              "bras tendu"
+            ]
+          },
+          {
+            "text": "Mème",
+            "difficulty": 1,
+            "forbidden": [
+              "image drôle",
+              "internet",
+              "viral"
+            ]
+          },
+          {
+            "text": "GIF",
+            "difficulty": 2,
+            "forbidden": [
+              "image animée",
+              "réaction",
+              "boucle"
+            ]
+          },
+          {
+            "text": "Emoji qui pleure de rire",
+            "difficulty": 1,
+            "forbidden": [
+              "smiley",
+              "larmes",
+              "mdr"
+            ]
+          },
+          {
+            "text": "Emoji crâne",
+            "difficulty": 2,
+            "forbidden": [
+              "mort de rire",
+              "tête de mort",
+              "smiley"
+            ]
+          },
+          {
+            "text": "Emoji feu",
+            "difficulty": 2,
+            "forbidden": [
+              "flamme",
+              "chaud",
+              "génial"
+            ]
+          },
+          {
+            "text": "Hashtag",
+            "difficulty": 1,
+            "forbidden": [
+              "dièse",
+              "mot-clé",
+              "tendance"
+            ]
+          },
+          {
+            "text": "Trend",
+            "difficulty": 2,
+            "forbidden": [
+              "tendance",
+              "mode",
+              "TikTok"
+            ]
+          },
+          {
+            "text": "Viral",
+            "difficulty": 1,
+            "forbidden": [
+              "partagé",
+              "buzz",
+              "millions de vues"
+            ]
+          },
+          {
+            "text": "Influenceur",
+            "difficulty": 1,
+            "forbidden": [
+              "abonnés",
+              "sponsor",
+              "réseaux sociaux"
+            ]
+          },
+          {
+            "text": "Followers",
+            "difficulty": 1,
+            "forbidden": [
+              "abonnés",
+              "suivre",
+              "compteur"
+            ]
+          },
+          {
+            "text": "Shadowban",
+            "difficulty": 3,
+            "forbidden": [
+              "caché",
+              "algorithme",
+              "visibilité"
+            ]
+          },
+          {
+            "text": "Algorithme",
+            "difficulty": 2,
+            "forbidden": [
+              "recommandation",
+              "fil",
+              "TikTok"
+            ]
+          },
+          {
+            "text": "Cringe",
+            "difficulty": 1,
+            "forbidden": [
+              "gênant",
+              "malaise",
+              "honte"
+            ]
+          },
+          {
+            "text": "Flex",
+            "difficulty": 2,
+            "forbidden": [
+              "frimer",
+              "montrer",
+              "riche"
+            ]
+          },
+          {
+            "text": "Swag",
+            "difficulty": 2,
+            "forbidden": [
+              "style",
+              "classe",
+              "frimer"
+            ]
+          },
+          {
+            "text": "Drip",
+            "difficulty": 3,
+            "forbidden": [
+              "tenue",
+              "style",
+              "classe"
+            ]
+          },
+          {
+            "text": "Slay",
+            "difficulty": 3,
+            "forbidden": [
+              "réussir",
+              "stylé",
+              "dominer"
+            ]
+          },
+          {
+            "text": "Rizz",
+            "difficulty": 3,
+            "forbidden": [
+              "charme",
+              "draguer",
+              "séduire"
+            ]
+          },
+          {
+            "text": "Crush",
+            "difficulty": 1,
+            "forbidden": [
+              "amoureux",
+              "béguin",
+              "cœur"
+            ]
+          },
+          {
+            "text": "Ghoster",
+            "difficulty": 2,
+            "forbidden": [
+              "disparaître",
+              "plus de réponse",
+              "ignorer"
+            ]
+          },
+          {
+            "text": "Red flag",
+            "difficulty": 2,
+            "forbidden": [
+              "drapeau rouge",
+              "danger",
+              "signe"
+            ]
+          },
+          {
+            "text": "Green flag",
+            "difficulty": 3,
+            "forbidden": [
+              "drapeau vert",
+              "bon signe",
+              "qualité"
+            ]
+          },
+          {
+            "text": "Situationship",
+            "difficulty": 3,
+            "forbidden": [
+              "relation floue",
+              "pas en couple",
+              "compliqué"
+            ]
+          },
+          {
+            "text": "Main character",
+            "difficulty": 3,
+            "forbidden": [
+              "personnage principal",
+              "film",
+              "héros"
+            ]
+          },
+          {
+            "text": "NPC",
+            "difficulty": 3,
+            "forbidden": [
+              "personnage non joueur",
+              "jeu vidéo",
+              "robot"
+            ]
+          },
+          {
+            "text": "Skibidi",
+            "difficulty": 3,
+            "forbidden": [
+              "toilettes",
+              "mème",
+              "enfants"
+            ]
+          },
+          {
+            "text": "Sigma",
+            "difficulty": 3,
+            "forbidden": [
+              "loup solitaire",
+              "mème",
+              "mâle"
+            ]
+          },
+          {
+            "text": "Aura",
+            "difficulty": 3,
+            "forbidden": [
+              "charisme",
+              "points",
+              "mème"
+            ]
+          },
+          {
+            "text": "Délulu",
+            "difficulty": 3,
+            "forbidden": [
+              "illusion",
+              "rêver",
+              "réalité"
+            ]
+          },
+          {
+            "text": "Ratio",
+            "difficulty": 3,
+            "forbidden": [
+              "commentaire",
+              "likes",
+              "humilier"
+            ]
+          },
+          {
+            "text": "OKLM",
+            "difficulty": 2,
+            "forbidden": [
+              "tranquille",
+              "au calme",
+              "expression"
+            ]
+          },
+          {
+            "text": "Wesh",
+            "difficulty": 1,
+            "forbidden": [
+              "salut",
+              "argot",
+              "bonjour"
+            ]
+          },
+          {
+            "text": "Frérot",
+            "difficulty": 1,
+            "forbidden": [
+              "frère",
+              "ami",
+              "pote"
+            ]
+          },
+          {
+            "text": "La go",
+            "difficulty": 1,
+            "forbidden": [
+              "fille",
+              "copine",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "Le gars",
+            "difficulty": 1,
+            "forbidden": [
+              "garçon",
+              "copain",
+              "mec"
+            ]
+          },
+          {
+            "text": "Ça me dépasse",
+            "difficulty": 2,
+            "forbidden": [
+              "incompréhensible",
+              "trop",
+              "expression"
+            ]
+          },
+          {
+            "text": "Tchip",
+            "difficulty": 1,
+            "forbidden": [
+              "bruit de bouche",
+              "mépris",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "On dit quoi ?",
+            "difficulty": 1,
+            "forbidden": [
+              "salut",
+              "Cameroun",
+              "nouvelles"
+            ]
+          },
+          {
+            "text": "Gombo",
+            "difficulty": 2,
+            "forbidden": [
+              "affaire",
+              "argent",
+              "Cameroun"
+            ]
+          },
+          {
+            "text": "Mbenguiste",
+            "difficulty": 2,
+            "forbidden": [
+              "Europe",
+              "Cameroun",
+              "voyager"
+            ]
+          },
+          {
+            "text": "Feymania",
+            "difficulty": 3,
+            "forbidden": [
+              "arnaque",
+              "Cameroun",
+              "escroc"
+            ]
+          },
+          {
+            "text": "Kongossa",
+            "difficulty": 2,
+            "forbidden": [
+              "ragots",
+              "commérages",
+              "Cameroun"
+            ]
+          },
+          {
+            "text": "Asso",
+            "difficulty": 2,
+            "forbidden": [
+              "ami",
+              "Cameroun",
+              "camarade"
+            ]
+          },
+          {
+            "text": "Ndem",
+            "difficulty": 3,
+            "forbidden": [
+              "échec",
+              "Cameroun",
+              "raté"
+            ]
+          },
+          {
+            "text": "Live de cuisine",
+            "difficulty": 2,
+            "forbidden": [
+              "recette",
+              "direct",
+              "plat"
+            ]
+          },
+          {
+            "text": "ASMR",
+            "difficulty": 3,
+            "forbidden": [
+              "chuchoter",
+              "sons",
+              "frissons"
+            ]
+          },
+          {
+            "text": "Satisfaisant",
+            "difficulty": 3,
+            "forbidden": [
+              "vidéo",
+              "apaisant",
+              "regarder"
+            ]
+          },
+          {
+            "text": "Mukbang",
+            "difficulty": 3,
+            "forbidden": [
+              "manger",
+              "caméra",
+              "Corée"
+            ]
+          },
+          {
+            "text": "Before / After",
+            "difficulty": 2,
+            "forbidden": [
+              "avant",
+              "après",
+              "transformation"
+            ]
+          },
+          {
+            "text": "Glow up",
+            "difficulty": 2,
+            "forbidden": [
+              "transformation",
+              "embellir",
+              "avant après"
+            ]
+          },
+          {
+            "text": "Tuto maquillage",
+            "difficulty": 2,
+            "forbidden": [
+              "tutoriel",
+              "beauté",
+              "étapes"
+            ]
+          },
+          {
+            "text": "Tuto coiffure",
+            "difficulty": 2,
+            "forbidden": [
+              "tutoriel",
+              "cheveux",
+              "tresses"
+            ]
+          },
+          {
+            "text": "Recette en 30 secondes",
+            "difficulty": 2,
+            "forbidden": [
+              "cuisine",
+              "vidéo courte",
+              "tutoriel"
+            ]
+          },
+          {
+            "text": "Lip combo",
+            "difficulty": 3,
+            "forbidden": [
+              "lèvres",
+              "maquillage",
+              "crayon"
+            ]
+          },
+          {
+            "text": "Tresses",
+            "difficulty": 1,
+            "forbidden": [
+              "coiffure",
+              "nattes",
+              "cheveux"
+            ]
+          },
+          {
+            "text": "Perruque",
+            "difficulty": 1,
+            "forbidden": [
+              "cheveux",
+              "lace",
+              "coiffure"
+            ]
+          },
+          {
+            "text": "Lace wig",
+            "difficulty": 3,
+            "forbidden": [
+              "perruque",
+              "cheveux",
+              "front"
+            ]
+          },
+          {
+            "text": "Nail art",
+            "difficulty": 2,
+            "forbidden": [
+              "ongles",
+              "décoration",
+              "vernis"
+            ]
+          },
+          {
+            "text": "Faux ongles",
+            "difficulty": 1,
+            "forbidden": [
+              "manucure",
+              "colle",
+              "longs"
+            ]
+          },
+          {
+            "text": "Ring light",
+            "difficulty": 2,
+            "forbidden": [
+              "lumière",
+              "cercle",
+              "vidéo"
+            ]
+          },
+          {
+            "text": "Perche à selfie",
+            "difficulty": 2,
+            "forbidden": [
+              "bâton",
+              "téléphone",
+              "photo"
+            ]
+          },
+          {
+            "text": "Trépied",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "support",
+              "vidéo"
+            ]
+          },
+          {
+            "text": "Écouteurs sans fil",
+            "difficulty": 1,
+            "forbidden": [
+              "AirPods",
+              "oreilles",
+              "Bluetooth"
+            ]
+          },
+          {
+            "text": "AirPods",
+            "difficulty": 2,
+            "forbidden": [
+              "Apple",
+              "écouteurs",
+              "blancs"
+            ]
+          },
+          {
+            "text": "Capcut",
+            "difficulty": 2,
+            "forbidden": [
+              "montage",
+              "vidéo",
+              "effets"
+            ]
+          },
+          {
+            "text": "Voix off",
+            "difficulty": 2,
+            "forbidden": [
+              "narration",
+              "vidéo",
+              "parler"
+            ]
+          },
+          {
+            "text": "Son original",
+            "difficulty": 3,
+            "forbidden": [
+              "audio",
+              "TikTok",
+              "créateur"
+            ]
+          },
+          {
+            "text": "Doublage",
+            "difficulty": 2,
+            "forbidden": [
+              "voix",
+              "film",
+              "synchroniser"
+            ]
+          },
+          {
+            "text": "Effet ralenti",
+            "difficulty": 2,
+            "forbidden": [
+              "lent",
+              "vidéo",
+              "slow motion"
+            ]
+          },
+          {
+            "text": "Cadeau TikTok",
+            "difficulty": 2,
+            "forbidden": [
+              "lion",
+              "live",
+              "diamants"
+            ]
+          },
+          {
+            "text": "Rose TikTok",
+            "difficulty": 3,
+            "forbidden": [
+              "cadeau",
+              "live",
+              "fleur"
+            ]
+          },
+          {
+            "text": "Battle TikTok",
+            "difficulty": 2,
+            "forbidden": [
+              "live",
+              "affrontement",
+              "cadeaux"
+            ]
+          },
+          {
+            "text": "Like sur Live",
+            "difficulty": 2,
+            "forbidden": [
+              "cœurs",
+              "taper",
+              "écran"
+            ]
+          },
+          {
+            "text": "Commentaire épinglé",
+            "difficulty": 3,
+            "forbidden": [
+              "haut",
+              "créateur",
+              "réponse"
+            ]
+          },
+          {
+            "text": "Répondre en vidéo",
+            "difficulty": 3,
+            "forbidden": [
+              "commentaire",
+              "TikTok",
+              "réaction"
+            ]
+          },
+          {
+            "text": "Stitch",
+            "difficulty": 3,
+            "forbidden": [
+              "TikTok",
+              "reprendre",
+              "vidéo"
+            ]
+          },
+          {
+            "text": "Booster ses vues",
+            "difficulty": 2,
+            "forbidden": [
+              "abonnés",
+              "algorithme",
+              "visibilité"
+            ]
+          },
+          {
+            "text": "Créateur de contenu",
+            "difficulty": 1,
+            "forbidden": [
+              "vidéos",
+              "réseaux sociaux",
+              "influenceur"
+            ]
+          },
+          {
+            "text": "Placement de produit",
+            "difficulty": 2,
+            "forbidden": [
+              "publicité",
+              "sponsor",
+              "marque"
+            ]
+          },
+          {
+            "text": "Code promo",
+            "difficulty": 1,
+            "forbidden": [
+              "réduction",
+              "influenceur",
+              "achats"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

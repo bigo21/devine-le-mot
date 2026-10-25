@@ -3,6 +3,7 @@ export const categoryIcons = {
   'animaux': require('./animaux.webp') as number,
   'artistes-africains': require('./artistes-africains.webp') as number,
   'basket': require('./basket.webp') as number,
+  'bipeur': require('./bipeur.webp') as number,
   'boussole': require('./boussole.webp') as number,
   'carte-monde': require('./carte-monde.webp') as number,
   'casque-audio': require('./casque-audio.webp') as number,
@@ -10,6 +11,7 @@ export const categoryIcons = {
   'clap-cinema': require('./clap-cinema.webp') as number,
   'croissant': require('./croissant.webp') as number,
   'expressions': require('./expressions.webp') as number,
+  'feu': require('./feu.webp') as number,
   'footballeurs': require('./footballeurs.webp') as number,
   'fruits-et-legumes': require('./fruits-et-legumes.webp') as number,
   'manette': require('./manette.webp') as number,
@@ -41,6 +43,7 @@ export const categoryIcons = {
   'trompette': require('./trompette.webp') as number,
   'trophee': require('./trophee.webp') as number,
   'villes-quartiers': require('./villes-quartiers.webp') as number,
+  'visage-fete': require('./visage-fete.webp') as number,
 };
 
 export type CategoryIconName = keyof typeof categoryIcons;
@@ -50,6 +53,7 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🦁": 'animaux',
   "🎤": 'artistes-africains',
   "🏀": 'basket',
+  "📟": 'bipeur',
   "🧭": 'boussole',
   "🗺": 'carte-monde',
   "🎧": 'casque-audio',
@@ -57,6 +61,7 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🎬": 'clap-cinema',
   "🥐": 'croissant',
   "💬": 'expressions',
+  "🔥": 'feu',
   "⚽": 'footballeurs',
   "🥭": 'fruits-et-legumes',
   "🎮": 'manette',
@@ -88,4 +93,5 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🎺": 'trompette',
   "🏆": 'trophee',
   "🏙": 'villes-quartiers',
+  "🥳": 'visage-fete',
 };

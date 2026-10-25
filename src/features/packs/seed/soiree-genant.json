@@ -1,0 +1,1129 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "soiree-genant",
+    "name": {
+      "fr": "Situations gênantes",
+      "en": "Awkward situations"
+    },
+    "region": "party",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "situations-genantes",
+        "name": {
+          "fr": "Situations gênantes",
+          "en": "Awkward situations"
+        },
+        "emoji": "😬",
+        "color": "plum",
+        "tags": [
+          "soiree"
+        ],
+        "words": [
+          {
+            "text": "Appeler la maîtresse « maman »",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "erreur",
+              "enseignante"
+            ]
+          },
+          {
+            "text": "Saluer quelqu'un qui saluait la personne derrière",
+            "difficulty": 1,
+            "forbidden": [
+              "main",
+              "erreur",
+              "coucou"
+            ]
+          },
+          {
+            "text": "Trébucher devant tout le monde",
+            "difficulty": 1,
+            "forbidden": [
+              "tomber",
+              "public",
+              "honte"
+            ]
+          },
+          {
+            "text": "Braguette ouverte",
+            "difficulty": 1,
+            "forbidden": [
+              "pantalon",
+              "zip",
+              "oublier"
+            ]
+          },
+          {
+            "text": "Ventre qui gargouille en réunion",
+            "difficulty": 1,
+            "forbidden": [
+              "faim",
+              "bruit",
+              "silence"
+            ]
+          },
+          {
+            "text": "Oublier le prénom de quelqu'un",
+            "difficulty": 1,
+            "forbidden": [
+              "nom",
+              "mémoire",
+              "rencontrer"
+            ]
+          },
+          {
+            "text": "Envoyer un message à la mauvaise personne",
+            "difficulty": 1,
+            "forbidden": [
+              "SMS",
+              "erreur",
+              "destinataire"
+            ]
+          },
+          {
+            "text": "Se tromper de toilettes",
+            "difficulty": 1,
+            "forbidden": [
+              "hommes",
+              "femmes",
+              "porte"
+            ]
+          },
+          {
+            "text": "Rire au mauvais moment",
+            "difficulty": 1,
+            "forbidden": [
+              "sérieux",
+              "pouffer",
+              "enterrement"
+            ]
+          },
+          {
+            "text": "Tomber de sa chaise",
+            "difficulty": 1,
+            "forbidden": [
+              "chute",
+              "assis",
+              "basculer"
+            ]
+          },
+          {
+            "text": "Pousser une porte marquée « Tirer »",
+            "difficulty": 1,
+            "forbidden": [
+              "panneau",
+              "poignée",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Chanter faux au karaoké",
+            "difficulty": 1,
+            "forbidden": [
+              "micro",
+              "voix",
+              "fausse note"
+            ]
+          },
+          {
+            "text": "Dents avec un bout de légume",
+            "difficulty": 1,
+            "forbidden": [
+              "sourire",
+              "épinard",
+              "manger"
+            ]
+          },
+          {
+            "text": "Papier toilette collé à la chaussure",
+            "difficulty": 1,
+            "forbidden": [
+              "toilettes",
+              "pied",
+              "traîner"
+            ]
+          },
+          {
+            "text": "Appel vidéo avec la caméra à l'envers",
+            "difficulty": 2,
+            "forbidden": [
+              "visage",
+              "téléphone",
+              "menton"
+            ]
+          },
+          {
+            "text": "Se faire griller en train de mentir",
+            "difficulty": 2,
+            "forbidden": [
+              "mensonge",
+              "démasqué",
+              "vérité"
+            ]
+          },
+          {
+            "text": "Croiser son ex avec son nouveau copain",
+            "difficulty": 2,
+            "forbidden": [
+              "rupture",
+              "ancien",
+              "rencontre"
+            ]
+          },
+          {
+            "text": "Arriver en avance à une fête",
+            "difficulty": 2,
+            "forbidden": [
+              "personne",
+              "hôte",
+              "trop tôt"
+            ]
+          },
+          {
+            "text": "Arriver en pyjama",
+            "difficulty": 2,
+            "forbidden": [
+              "nuit",
+              "vêtements",
+              "oublier"
+            ]
+          },
+          {
+            "text": "Même tenue que quelqu'un d'autre",
+            "difficulty": 2,
+            "forbidden": [
+              "habit",
+              "identique",
+              "soirée"
+            ]
+          },
+          {
+            "text": "Danser seul quand la musique s'arrête",
+            "difficulty": 2,
+            "forbidden": [
+              "silence",
+              "piste",
+              "regards"
+            ]
+          },
+          {
+            "text": "Rater une marche",
+            "difficulty": 2,
+            "forbidden": [
+              "escalier",
+              "tomber",
+              "pied"
+            ]
+          },
+          {
+            "text": "Applaudir au mauvais moment",
+            "difficulty": 2,
+            "forbidden": [
+              "mains",
+              "silence",
+              "concert"
+            ]
+          },
+          {
+            "text": "Faire tomber son téléphone dans les toilettes",
+            "difficulty": 2,
+            "forbidden": [
+              "eau",
+              "mouillé",
+              "écran"
+            ]
+          },
+          {
+            "text": "Écran cassé en public",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "chute",
+              "fissure"
+            ]
+          },
+          {
+            "text": "Dire « toi aussi » au serveur qui dit bon appétit",
+            "difficulty": 1,
+            "forbidden": [
+              "restaurant",
+              "réponse",
+              "manger"
+            ]
+          },
+          {
+            "text": "Parler tout seul dans la rue",
+            "difficulty": 2,
+            "forbidden": [
+              "écouteurs",
+              "passants",
+              "bizarre"
+            ]
+          },
+          {
+            "text": "Être surpris en train de danser seul",
+            "difficulty": 2,
+            "forbidden": [
+              "chambre",
+              "miroir",
+              "musique"
+            ]
+          },
+          {
+            "text": "Mal prononcer un mot devant tout le monde",
+            "difficulty": 2,
+            "forbidden": [
+              "parler",
+              "erreur",
+              "rire"
+            ]
+          },
+          {
+            "text": "Se tromper de nom en disant « je t'aime »",
+            "difficulty": 3,
+            "forbidden": [
+              "amoureux",
+              "prénom",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Sa maman qui raconte ses bêtises d'enfance",
+            "difficulty": 2,
+            "forbidden": [
+              "famille",
+              "honte",
+              "histoires"
+            ]
+          },
+          {
+            "text": "Photo de bébé montrée aux amis",
+            "difficulty": 2,
+            "forbidden": [
+              "album",
+              "parents",
+              "honte"
+            ]
+          },
+          {
+            "text": "Ronfler au cinéma",
+            "difficulty": 2,
+            "forbidden": [
+              "dormir",
+              "film",
+              "bruit"
+            ]
+          },
+          {
+            "text": "S'endormir en cours",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "professeur",
+              "dormir"
+            ]
+          },
+          {
+            "text": "Se faire appeler au tableau sans avoir révisé",
+            "difficulty": 2,
+            "forbidden": [
+              "école",
+              "professeur",
+              "leçon"
+            ]
+          },
+          {
+            "text": "Bras qui reste en l'air pour un check raté",
+            "difficulty": 1,
+            "forbidden": [
+              "main",
+              "taper",
+              "ignoré"
+            ]
+          },
+          {
+            "text": "Bisou raté au lieu d'une poignée de main",
+            "difficulty": 2,
+            "forbidden": [
+              "joue",
+              "saluer",
+              "confusion"
+            ]
+          },
+          {
+            "text": "Hoquet pendant un discours",
+            "difficulty": 2,
+            "forbidden": [
+              "hic",
+              "parler",
+              "public"
+            ]
+          },
+          {
+            "text": "Faire tomber son plateau à la cantine",
+            "difficulty": 2,
+            "forbidden": [
+              "repas",
+              "assiettes",
+              "bruit"
+            ]
+          },
+          {
+            "text": "Pantalon qui craque",
+            "difficulty": 2,
+            "forbidden": [
+              "couture",
+              "s'accroupir",
+              "bruit"
+            ]
+          },
+          {
+            "text": "Talon cassé",
+            "difficulty": 2,
+            "forbidden": [
+              "chaussure",
+              "femme",
+              "boiter"
+            ]
+          },
+          {
+            "text": "Perruque qui s'envole",
+            "difficulty": 3,
+            "forbidden": [
+              "cheveux",
+              "vent",
+              "tête"
+            ]
+          },
+          {
+            "text": "Pet en public",
+            "difficulty": 1,
+            "forbidden": [
+              "bruit",
+              "odeur",
+              "gêne"
+            ]
+          },
+          {
+            "text": "Rot à table",
+            "difficulty": 1,
+            "forbidden": [
+              "bruit",
+              "repas",
+              "malpoli"
+            ]
+          },
+          {
+            "text": "Sonnerie de téléphone à la messe",
+            "difficulty": 2,
+            "forbidden": [
+              "église",
+              "silence",
+              "portable"
+            ]
+          },
+          {
+            "text": "Sonnerie gênante en réunion",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "chanson",
+              "bureau"
+            ]
+          },
+          {
+            "text": "Faux sourire sur la photo",
+            "difficulty": 2,
+            "forbidden": [
+              "appareil",
+              "forcé",
+              "dents"
+            ]
+          },
+          {
+            "text": "Yeux fermés sur la photo de groupe",
+            "difficulty": 1,
+            "forbidden": [
+              "cligner",
+              "souriez",
+              "raté"
+            ]
+          },
+          {
+            "text": "Like une vieille photo en stalkant",
+            "difficulty": 2,
+            "forbidden": [
+              "Instagram",
+              "profil",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Message vocal envoyé par erreur",
+            "difficulty": 2,
+            "forbidden": [
+              "WhatsApp",
+              "enregistrer",
+              "oups"
+            ]
+          },
+          {
+            "text": "Mauvais groupe WhatsApp",
+            "difficulty": 1,
+            "forbidden": [
+              "message",
+              "famille",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Parent qui commente sur Facebook",
+            "difficulty": 2,
+            "forbidden": [
+              "maman",
+              "publication",
+              "honte"
+            ]
+          },
+          {
+            "text": "Se coincer dans un ascenseur",
+            "difficulty": 2,
+            "forbidden": [
+              "bloqué",
+              "étage",
+              "panne"
+            ]
+          },
+          {
+            "text": "Sortir des toilettes sans papier",
+            "difficulty": 3,
+            "forbidden": [
+              "gêne",
+              "rouleau",
+              "problème"
+            ]
+          },
+          {
+            "text": "Carte bancaire refusée à la caisse",
+            "difficulty": 2,
+            "forbidden": [
+              "paiement",
+              "supermarché",
+              "compte vide"
+            ]
+          },
+          {
+            "text": "Payer avec des pièces rouges",
+            "difficulty": 3,
+            "forbidden": [
+              "monnaie",
+              "caisse",
+              "compter"
+            ]
+          },
+          {
+            "text": "Oublier son portefeuille au restaurant",
+            "difficulty": 2,
+            "forbidden": [
+              "addition",
+              "payer",
+              "argent"
+            ]
+          },
+          {
+            "text": "Partir sans payer par erreur",
+            "difficulty": 3,
+            "forbidden": [
+              "restaurant",
+              "addition",
+              "oublier"
+            ]
+          },
+          {
+            "text": "Se perdre et faire semblant de savoir",
+            "difficulty": 2,
+            "forbidden": [
+              "chemin",
+              "GPS",
+              "orgueil"
+            ]
+          },
+          {
+            "text": "Raconter une blague qui ne fait rire personne",
+            "difficulty": 1,
+            "forbidden": [
+              "silence",
+              "humour",
+              "vent"
+            ]
+          },
+          {
+            "text": "Faire semblant d'avoir compris",
+            "difficulty": 2,
+            "forbidden": [
+              "hocher la tête",
+              "comprendre",
+              "euh"
+            ]
+          },
+          {
+            "text": "Répondre à une question qui ne vous était pas posée",
+            "difficulty": 2,
+            "forbidden": [
+              "parole",
+              "erreur",
+              "interrompre"
+            ]
+          },
+          {
+            "text": "Rater son selfie",
+            "difficulty": 1,
+            "forbidden": [
+              "photo",
+              "téléphone",
+              "moche"
+            ]
+          },
+          {
+            "text": "Chute en dansant le ndombolo",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "tomber",
+              "hanches"
+            ]
+          },
+          {
+            "text": "Voisin qui te voit en sous-vêtements",
+            "difficulty": 3,
+            "forbidden": [
+              "fenêtre",
+              "rideau",
+              "surprise"
+            ]
+          },
+          {
+            "text": "Belle-mère qui débarque à l'improviste",
+            "difficulty": 2,
+            "forbidden": [
+              "maison",
+              "surprise",
+              "famille"
+            ]
+          },
+          {
+            "text": "Plat raté pour les invités",
+            "difficulty": 2,
+            "forbidden": [
+              "cuisine",
+              "brûlé",
+              "dîner"
+            ]
+          },
+          {
+            "text": "Sel au lieu du sucre",
+            "difficulty": 2,
+            "forbidden": [
+              "café",
+              "goût",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Mettre ses vêtements à l'envers",
+            "difficulty": 2,
+            "forbidden": [
+              "t-shirt",
+              "étiquette",
+              "habiller"
+            ]
+          },
+          {
+            "text": "Chaussettes dépareillées",
+            "difficulty": 1,
+            "forbidden": [
+              "pieds",
+              "couleurs",
+              "différentes"
+            ]
+          },
+          {
+            "text": "Trou dans la chaussette",
+            "difficulty": 1,
+            "forbidden": [
+              "orteil",
+              "pied",
+              "troué"
+            ]
+          },
+          {
+            "text": "Mauvaise haleine",
+            "difficulty": 1,
+            "forbidden": [
+              "bouche",
+              "odeur",
+              "dentifrice"
+            ]
+          },
+          {
+            "text": "Sueur sous les bras",
+            "difficulty": 1,
+            "forbidden": [
+              "aisselles",
+              "transpiration",
+              "tache"
+            ]
+          },
+          {
+            "text": "Dire bonjour deux fois à la même personne",
+            "difficulty": 1,
+            "forbidden": [
+              "saluer",
+              "oublier",
+              "répéter"
+            ]
+          },
+          {
+            "text": "Silence gênant",
+            "difficulty": 1,
+            "forbidden": [
+              "personne ne parle",
+              "malaise",
+              "blanc"
+            ]
+          },
+          {
+            "text": "Croiser son prof au marché",
+            "difficulty": 2,
+            "forbidden": [
+              "école",
+              "rencontre",
+              "dehors"
+            ]
+          },
+          {
+            "text": "Se faire recaler à l'entrée",
+            "difficulty": 2,
+            "forbidden": [
+              "videur",
+              "boîte de nuit",
+              "refus"
+            ]
+          },
+          {
+            "text": "Rater le bus devant tout le monde",
+            "difficulty": 2,
+            "forbidden": [
+              "courir",
+              "arrêt",
+              "partir"
+            ]
+          },
+          {
+            "text": "Courir après un taxi qui ne s'arrête pas",
+            "difficulty": 2,
+            "forbidden": [
+              "course",
+              "rue",
+              "main levée"
+            ]
+          },
+          {
+            "text": "Tomber en panne d'essence",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "carburant",
+              "pousser"
+            ]
+          },
+          {
+            "text": "Gaffer devant le patron",
+            "difficulty": 2,
+            "forbidden": [
+              "chef",
+              "travail",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Discours de mariage raté",
+            "difficulty": 3,
+            "forbidden": [
+              "témoin",
+              "micro",
+              "mariés"
+            ]
+          },
+          {
+            "text": "Oublier l'anniversaire de son chéri",
+            "difficulty": 2,
+            "forbidden": [
+              "date",
+              "couple",
+              "oubli"
+            ]
+          },
+          {
+            "text": "Offrir un cadeau déjà offert",
+            "difficulty": 2,
+            "forbidden": [
+              "recyclé",
+              "même",
+              "doublon"
+            ]
+          },
+          {
+            "text": "Mauvaise réponse à « tu as grossi ? »",
+            "difficulty": 3,
+            "forbidden": [
+              "poids",
+              "question",
+              "vexer"
+            ]
+          },
+          {
+            "text": "Demander à une femme si elle est enceinte",
+            "difficulty": 3,
+            "forbidden": [
+              "ventre",
+              "bébé",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Appeler son patron « papa »",
+            "difficulty": 2,
+            "forbidden": [
+              "chef",
+              "erreur",
+              "lapsus"
+            ]
+          },
+          {
+            "text": "Lapsus",
+            "difficulty": 2,
+            "forbidden": [
+              "erreur",
+              "mot",
+              "langue qui fourche"
+            ]
+          },
+          {
+            "text": "Mal lire son texte en public",
+            "difficulty": 3,
+            "forbidden": [
+              "discours",
+              "bégayer",
+              "papier"
+            ]
+          },
+          {
+            "text": "Bégayer devant son crush",
+            "difficulty": 2,
+            "forbidden": [
+              "amoureux",
+              "parler",
+              "timide"
+            ]
+          },
+          {
+            "text": "Crush qui te surprend en train de le regarder",
+            "difficulty": 2,
+            "forbidden": [
+              "regard",
+              "amoureux",
+              "détourner"
+            ]
+          },
+          {
+            "text": "Écrire au crush à 3 h du matin",
+            "difficulty": 2,
+            "forbidden": [
+              "message",
+              "nuit",
+              "regretter"
+            ]
+          },
+          {
+            "text": "Se faire ghoster",
+            "difficulty": 2,
+            "forbidden": [
+              "plus de réponse",
+              "disparaître",
+              "message"
+            ]
+          },
+          {
+            "text": "Vu sans réponse",
+            "difficulty": 1,
+            "forbidden": [
+              "message",
+              "lu",
+              "ignoré"
+            ]
+          },
+          {
+            "text": "Dire « je t'aime » en premier sans réponse",
+            "difficulty": 3,
+            "forbidden": [
+              "amour",
+              "silence",
+              "couple"
+            ]
+          },
+          {
+            "text": "Rendez-vous où l'autre ne vient pas",
+            "difficulty": 2,
+            "forbidden": [
+              "lapin",
+              "attendre",
+              "seul"
+            ]
+          },
+          {
+            "text": "Fermeture éclair coincée",
+            "difficulty": 2,
+            "forbidden": [
+              "zip",
+              "robe",
+              "bloquée"
+            ]
+          },
+          {
+            "text": "Faire tomber son assiette au buffet",
+            "difficulty": 2,
+            "forbidden": [
+              "repas",
+              "fête",
+              "sol"
+            ]
+          },
+          {
+            "text": "Renverser son verre sur quelqu'un",
+            "difficulty": 1,
+            "forbidden": [
+              "boisson",
+              "tache",
+              "désolé"
+            ]
+          },
+          {
+            "text": "Tache sur la chemise blanche",
+            "difficulty": 2,
+            "forbidden": [
+              "sauce",
+              "vêtement",
+              "propre"
+            ]
+          },
+          {
+            "text": "Siège déjà occupé dans le car",
+            "difficulty": 3,
+            "forbidden": [
+              "place",
+              "voyage",
+              "billet"
+            ]
+          },
+          {
+            "text": "Prendre la mauvaise valise",
+            "difficulty": 3,
+            "forbidden": [
+              "aéroport",
+              "bagage",
+              "identique"
+            ]
+          },
+          {
+            "text": "Danse d'oncle en mariage",
+            "difficulty": 2,
+            "forbidden": [
+              "famille",
+              "piste",
+              "ringard"
+            ]
+          },
+          {
+            "text": "Photo floue de la soirée",
+            "difficulty": 1,
+            "forbidden": [
+              "appareil",
+              "bouger",
+              "raté"
+            ]
+          },
+          {
+            "text": "Rire comme un cochon",
+            "difficulty": 1,
+            "forbidden": [
+              "grogner",
+              "groin",
+              "nez"
+            ]
+          },
+          {
+            "text": "Pleurer devant un dessin animé",
+            "difficulty": 2,
+            "forbidden": [
+              "émotion",
+              "Disney",
+              "larmes"
+            ]
+          },
+          {
+            "text": "Mauvaise coupe de cheveux",
+            "difficulty": 1,
+            "forbidden": [
+              "coiffeur",
+              "raté",
+              "bonnet"
+            ]
+          },
+          {
+            "text": "Réveil qui sonne en classe",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "professeur",
+              "bruit"
+            ]
+          },
+          {
+            "text": "Faire un câlin à quelqu'un qui tendait la main",
+            "difficulty": 2,
+            "forbidden": [
+              "bras",
+              "saluer",
+              "confusion"
+            ]
+          },
+          {
+            "text": "Tomber nez à nez avec quelqu'un qu'on évite",
+            "difficulty": 2,
+            "forbidden": [
+              "rencontre",
+              "fuir",
+              "surprise"
+            ]
+          },
+          {
+            "text": "Faire semblant d'être au téléphone",
+            "difficulty": 2,
+            "forbidden": [
+              "éviter",
+              "parler",
+              "rien"
+            ]
+          },
+          {
+            "text": "Rater une conversation avec un « toi aussi »",
+            "difficulty": 2,
+            "forbidden": [
+              "réponse",
+              "erreur",
+              "automatique"
+            ]
+          },
+          {
+            "text": "Glousser nerveusement",
+            "difficulty": 2,
+            "forbidden": [
+              "rire",
+              "nervosité",
+              "gêne"
+            ]
+          },
+          {
+            "text": "Avoir oublié que c'était un déguisement",
+            "difficulty": 3,
+            "forbidden": [
+              "costume",
+              "soirée",
+              "seul"
+            ]
+          },
+          {
+            "text": "Seul déguisé à la fête",
+            "difficulty": 2,
+            "forbidden": [
+              "costume",
+              "soirée",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Se tromper de soirée",
+            "difficulty": 2,
+            "forbidden": [
+              "maison",
+              "inconnus",
+              "adresse"
+            ]
+          },
+          {
+            "text": "Klaxonner sans le vouloir",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "bruit",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Café renversé sur l'ordinateur",
+            "difficulty": 2,
+            "forbidden": [
+              "clavier",
+              "liquide",
+              "panique"
+            ]
+          },
+          {
+            "text": "Lire un message à voix haute par erreur",
+            "difficulty": 2,
+            "forbidden": [
+              "écran",
+              "public",
+              "privé"
+            ]
+          },
+          {
+            "text": "Se cogner contre une vitre",
+            "difficulty": 1,
+            "forbidden": [
+              "transparente",
+              "front",
+              "aïe"
+            ]
+          },
+          {
+            "text": "Entrer dans la mauvaise maison",
+            "difficulty": 2,
+            "forbidden": [
+              "porte",
+              "voisin",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Ne pas reconnaître un camarade de classe",
+            "difficulty": 2,
+            "forbidden": [
+              "souvenir",
+              "visage",
+              "école"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

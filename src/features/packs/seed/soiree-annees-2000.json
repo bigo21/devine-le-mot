@@ -1,0 +1,1139 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "soiree-annees-2000",
+    "name": {
+      "fr": "Années 2000",
+      "en": "The 2000s"
+    },
+    "region": "party",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "annees-2000",
+        "name": {
+          "fr": "Années 2000",
+          "en": "The 2000s"
+        },
+        "emoji": "📟",
+        "color": "indigo",
+        "tags": [
+          "soiree",
+          "nostalgie"
+        ],
+        "words": [
+          {
+            "text": "Nokia 3310",
+            "difficulty": 1,
+            "forbidden": [
+              "téléphone",
+              "indestructible",
+              "Snake"
+            ]
+          },
+          {
+            "text": "Tamagotchi",
+            "difficulty": 1,
+            "forbidden": [
+              "animal virtuel",
+              "œuf",
+              "nourrir"
+            ]
+          },
+          {
+            "text": "MSN Messenger",
+            "difficulty": 1,
+            "forbidden": [
+              "chat",
+              "wizz",
+              "bonhomme vert"
+            ]
+          },
+          {
+            "text": "Wizz",
+            "difficulty": 2,
+            "forbidden": [
+              "MSN",
+              "secouer",
+              "fenêtre"
+            ]
+          },
+          {
+            "text": "Skyblog",
+            "difficulty": 2,
+            "forbidden": [
+              "blog",
+              "ados",
+              "Skyrock"
+            ]
+          },
+          {
+            "text": "Myspace",
+            "difficulty": 2,
+            "forbidden": [
+              "réseau social",
+              "Tom",
+              "musique"
+            ]
+          },
+          {
+            "text": "Baladeur MP3",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "écouteurs",
+              "chansons"
+            ]
+          },
+          {
+            "text": "iPod",
+            "difficulty": 1,
+            "forbidden": [
+              "Apple",
+              "musique",
+              "molette"
+            ]
+          },
+          {
+            "text": "Walkman",
+            "difficulty": 2,
+            "forbidden": [
+              "cassette",
+              "Sony",
+              "écouteurs"
+            ]
+          },
+          {
+            "text": "Discman",
+            "difficulty": 2,
+            "forbidden": [
+              "CD",
+              "Sony",
+              "portable"
+            ]
+          },
+          {
+            "text": "Lecteur DVD",
+            "difficulty": 1,
+            "forbidden": [
+              "disque",
+              "films",
+              "salon"
+            ]
+          },
+          {
+            "text": "Graver un CD",
+            "difficulty": 2,
+            "forbidden": [
+              "disque",
+              "compilation",
+              "ordinateur"
+            ]
+          },
+          {
+            "text": "Clé USB",
+            "difficulty": 1,
+            "forbidden": [
+              "stockage",
+              "ordinateur",
+              "fichiers"
+            ]
+          },
+          {
+            "text": "Modem 56k",
+            "difficulty": 3,
+            "forbidden": [
+              "internet",
+              "bruit",
+              "connexion"
+            ]
+          },
+          {
+            "text": "Cybercafé",
+            "difficulty": 1,
+            "forbidden": [
+              "ordinateurs",
+              "internet",
+              "heure"
+            ]
+          },
+          {
+            "text": "Bip",
+            "difficulty": 2,
+            "forbidden": [
+              "appel manqué",
+              "crédit",
+              "rappelle-moi"
+            ]
+          },
+          {
+            "text": "Carte de recharge",
+            "difficulty": 1,
+            "forbidden": [
+              "crédit",
+              "gratter",
+              "opérateur"
+            ]
+          },
+          {
+            "text": "Téléphone à clapet",
+            "difficulty": 1,
+            "forbidden": [
+              "ouvrir",
+              "fermer",
+              "portable"
+            ]
+          },
+          {
+            "text": "Sonnerie polyphonique",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "mélodie",
+              "télécharger"
+            ]
+          },
+          {
+            "text": "Bluetooth",
+            "difficulty": 2,
+            "forbidden": [
+              "transfert",
+              "téléphone",
+              "sans fil"
+            ]
+          },
+          {
+            "text": "Infrarouge",
+            "difficulty": 3,
+            "forbidden": [
+              "transfert",
+              "téléphone",
+              "lent"
+            ]
+          },
+          {
+            "text": "BlackBerry",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "clavier",
+              "BBM"
+            ]
+          },
+          {
+            "text": "BBM",
+            "difficulty": 3,
+            "forbidden": [
+              "BlackBerry",
+              "messages",
+              "PIN"
+            ]
+          },
+          {
+            "text": "Game Boy Advance",
+            "difficulty": 2,
+            "forbidden": [
+              "Nintendo",
+              "console",
+              "portable"
+            ]
+          },
+          {
+            "text": "PlayStation 2",
+            "difficulty": 1,
+            "forbidden": [
+              "Sony",
+              "console",
+              "PS2"
+            ]
+          },
+          {
+            "text": "Nintendo DS",
+            "difficulty": 2,
+            "forbidden": [
+              "double écran",
+              "stylet",
+              "console"
+            ]
+          },
+          {
+            "text": "Wii",
+            "difficulty": 2,
+            "forbidden": [
+              "Nintendo",
+              "télécommande",
+              "bouger"
+            ]
+          },
+          {
+            "text": "Pokémon",
+            "difficulty": 1,
+            "forbidden": [
+              "cartes",
+              "Pikachu",
+              "attraper"
+            ]
+          },
+          {
+            "text": "Cartes Pokémon",
+            "difficulty": 1,
+            "forbidden": [
+              "collection",
+              "échanger",
+              "Pikachu"
+            ]
+          },
+          {
+            "text": "Yu-Gi-Oh!",
+            "difficulty": 2,
+            "forbidden": [
+              "cartes",
+              "duel",
+              "Japon"
+            ]
+          },
+          {
+            "text": "Beyblade",
+            "difficulty": 2,
+            "forbidden": [
+              "toupie",
+              "combat",
+              "arène"
+            ]
+          },
+          {
+            "text": "Bakugan",
+            "difficulty": 3,
+            "forbidden": [
+              "boules",
+              "cartes",
+              "transformer"
+            ]
+          },
+          {
+            "text": "Bratz",
+            "difficulty": 2,
+            "forbidden": [
+              "poupées",
+              "grosses lèvres",
+              "mode"
+            ]
+          },
+          {
+            "text": "Polly Pocket",
+            "difficulty": 3,
+            "forbidden": [
+              "petite poupée",
+              "boîtier",
+              "jouet"
+            ]
+          },
+          {
+            "text": "Diddl",
+            "difficulty": 3,
+            "forbidden": [
+              "souris",
+              "papeterie",
+              "collection"
+            ]
+          },
+          {
+            "text": "Crocs",
+            "difficulty": 2,
+            "forbidden": [
+              "chaussures",
+              "trous",
+              "plastique"
+            ]
+          },
+          {
+            "text": "Jean taille basse",
+            "difficulty": 2,
+            "forbidden": [
+              "pantalon",
+              "nombril",
+              "mode"
+            ]
+          },
+          {
+            "text": "Pantalon pattes d'éph",
+            "difficulty": 3,
+            "forbidden": [
+              "jean",
+              "évasé",
+              "mode"
+            ]
+          },
+          {
+            "text": "Casquette Von Dutch",
+            "difficulty": 3,
+            "forbidden": [
+              "logo",
+              "mode",
+              "filet"
+            ]
+          },
+          {
+            "text": "Lunettes papillon",
+            "difficulty": 3,
+            "forbidden": [
+              "soleil",
+              "mode",
+              "grandes"
+            ]
+          },
+          {
+            "text": "Star Academy",
+            "difficulty": 1,
+            "forbidden": [
+              "télé-crochet",
+              "château",
+              "élèves"
+            ]
+          },
+          {
+            "text": "Loft Story",
+            "difficulty": 2,
+            "forbidden": [
+              "téléréalité",
+              "piscine",
+              "Loana"
+            ]
+          },
+          {
+            "text": "Nouvelle Star",
+            "difficulty": 2,
+            "forbidden": [
+              "télé-crochet",
+              "M6",
+              "jury"
+            ]
+          },
+          {
+            "text": "Prison Break",
+            "difficulty": 2,
+            "forbidden": [
+              "série",
+              "évasion",
+              "tatouage"
+            ]
+          },
+          {
+            "text": "Lost",
+            "difficulty": 2,
+            "forbidden": [
+              "île",
+              "avion",
+              "série"
+            ]
+          },
+          {
+            "text": "Desperate Housewives",
+            "difficulty": 2,
+            "forbidden": [
+              "série",
+              "voisines",
+              "banlieue"
+            ]
+          },
+          {
+            "text": "Hannah Montana",
+            "difficulty": 2,
+            "forbidden": [
+              "Disney",
+              "Miley Cyrus",
+              "perruque"
+            ]
+          },
+          {
+            "text": "High School Musical",
+            "difficulty": 1,
+            "forbidden": [
+              "Disney",
+              "Troy",
+              "Gabriella"
+            ]
+          },
+          {
+            "text": "Lizzie McGuire",
+            "difficulty": 3,
+            "forbidden": [
+              "Disney",
+              "Hilary Duff",
+              "ado"
+            ]
+          },
+          {
+            "text": "Harry Potter",
+            "difficulty": 1,
+            "forbidden": [
+              "sorcier",
+              "Poudlard",
+              "livres"
+            ]
+          },
+          {
+            "text": "Le Seigneur des anneaux",
+            "difficulty": 1,
+            "forbidden": [
+              "Frodon",
+              "anneau",
+              "film"
+            ]
+          },
+          {
+            "text": "Shrek",
+            "difficulty": 1,
+            "forbidden": [
+              "ogre",
+              "âne",
+              "film"
+            ]
+          },
+          {
+            "text": "Pirates des Caraïbes",
+            "difficulty": 1,
+            "forbidden": [
+              "Jack Sparrow",
+              "film",
+              "bateau"
+            ]
+          },
+          {
+            "text": "Twilight",
+            "difficulty": 2,
+            "forbidden": [
+              "vampire",
+              "Edward",
+              "Bella"
+            ]
+          },
+          {
+            "text": "Avatar",
+            "difficulty": 2,
+            "forbidden": [
+              "bleus",
+              "Pandora",
+              "film"
+            ]
+          },
+          {
+            "text": "Matrix",
+            "difficulty": 2,
+            "forbidden": [
+              "Neo",
+              "pilule",
+              "film"
+            ]
+          },
+          {
+            "text": "Spider-Man de Tobey Maguire",
+            "difficulty": 2,
+            "forbidden": [
+              "araignée",
+              "film",
+              "Sam Raimi"
+            ]
+          },
+          {
+            "text": "Le Fabuleux Destin d'Amélie Poulain",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "Montmartre",
+              "Audrey Tautou"
+            ]
+          },
+          {
+            "text": "Bienvenue chez les Ch'tis",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "Nord",
+              "Dany Boon"
+            ]
+          },
+          {
+            "text": "Destiny's Child",
+            "difficulty": 2,
+            "forbidden": [
+              "groupe",
+              "Beyoncé",
+              "Survivor"
+            ]
+          },
+          {
+            "text": "Britney Spears",
+            "difficulty": 1,
+            "forbidden": [
+              "Toxic",
+              "pop",
+              "Oops"
+            ]
+          },
+          {
+            "text": "Avril Lavigne",
+            "difficulty": 2,
+            "forbidden": [
+              "punk",
+              "cravate",
+              "Complicated"
+            ]
+          },
+          {
+            "text": "Eminem",
+            "difficulty": 1,
+            "forbidden": [
+              "Slim Shady",
+              "rap",
+              "8 Mile"
+            ]
+          },
+          {
+            "text": "50 Cent",
+            "difficulty": 2,
+            "forbidden": [
+              "rap",
+              "In da Club",
+              "Get Rich"
+            ]
+          },
+          {
+            "text": "Akon",
+            "difficulty": 1,
+            "forbidden": [
+              "Lonely",
+              "Smack That",
+              "Sénégal"
+            ]
+          },
+          {
+            "text": "Sean Paul",
+            "difficulty": 2,
+            "forbidden": [
+              "Temperature",
+              "dancehall",
+              "Jamaïque"
+            ]
+          },
+          {
+            "text": "Shakira",
+            "difficulty": 1,
+            "forbidden": [
+              "Hips Don't Lie",
+              "Colombie",
+              "Waka Waka"
+            ]
+          },
+          {
+            "text": "Rihanna",
+            "difficulty": 1,
+            "forbidden": [
+              "Umbrella",
+              "Barbade",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Black Eyed Peas",
+            "difficulty": 2,
+            "forbidden": [
+              "I Gotta Feeling",
+              "Fergie",
+              "groupe"
+            ]
+          },
+          {
+            "text": "Usher",
+            "difficulty": 2,
+            "forbidden": [
+              "Yeah!",
+              "R'n'B",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Ne-Yo",
+            "difficulty": 3,
+            "forbidden": [
+              "R'n'B",
+              "chapeau",
+              "So Sick"
+            ]
+          },
+          {
+            "text": "Crazy Frog",
+            "difficulty": 1,
+            "forbidden": [
+              "grenouille",
+              "ring ding ding",
+              "sonnerie"
+            ]
+          },
+          {
+            "text": "Las Ketchup",
+            "difficulty": 3,
+            "forbidden": [
+              "Asereje",
+              "danse",
+              "Espagne"
+            ]
+          },
+          {
+            "text": "Dragostea din tei",
+            "difficulty": 2,
+            "forbidden": [
+              "Numa Numa",
+              "O-Zone",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Magic System",
+            "difficulty": 1,
+            "forbidden": [
+              "Premier Gaou",
+              "zouglou",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Coupé-décalé",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "Douk Saga",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Ndombolo",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "RDC",
+              "Koffi Olomidé"
+            ]
+          },
+          {
+            "text": "Petit Pays",
+            "difficulty": 1,
+            "forbidden": [
+              "Cameroun",
+              "chanteur",
+              "Les Kongossas"
+            ]
+          },
+          {
+            "text": "Lady Ponce",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "bikutsi",
+              "chanteuse"
+            ]
+          },
+          {
+            "text": "Samuel Eto'o au Barça",
+            "difficulty": 2,
+            "forbidden": [
+              "Barcelone",
+              "Lions",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Lions champions d'Afrique 2000",
+            "difficulty": 2,
+            "forbidden": [
+              "CAN",
+              "Cameroun",
+              "Ghana-Nigeria"
+            ]
+          },
+          {
+            "text": "Lions champions d'Afrique 2002",
+            "difficulty": 2,
+            "forbidden": [
+              "CAN",
+              "Mali",
+              "Cameroun"
+            ]
+          },
+          {
+            "text": "Rigobert Song",
+            "difficulty": 2,
+            "forbidden": [
+              "capitaine",
+              "Lions",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Coupe du monde 2006",
+            "difficulty": 2,
+            "forbidden": [
+              "Allemagne",
+              "Zidane",
+              "coup de tête"
+            ]
+          },
+          {
+            "text": "Coup de tête de Zidane",
+            "difficulty": 1,
+            "forbidden": [
+              "Materazzi",
+              "finale",
+              "carton rouge"
+            ]
+          },
+          {
+            "text": "Coupe du monde 2010",
+            "difficulty": 1,
+            "forbidden": [
+              "Afrique du Sud",
+              "vuvuzela",
+              "Waka Waka"
+            ]
+          },
+          {
+            "text": "Ronaldinho",
+            "difficulty": 1,
+            "forbidden": [
+              "Brésil",
+              "sourire",
+              "dribbles"
+            ]
+          },
+          {
+            "text": "Thierry Henry",
+            "difficulty": 2,
+            "forbidden": [
+              "Arsenal",
+              "France",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Didier Drogba",
+            "difficulty": 1,
+            "forbidden": [
+              "Côte d'Ivoire",
+              "Chelsea",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Usain Bolt à Pékin",
+            "difficulty": 2,
+            "forbidden": [
+              "JO 2008",
+              "100 mètres",
+              "Jamaïque"
+            ]
+          },
+          {
+            "text": "Michael Phelps",
+            "difficulty": 2,
+            "forbidden": [
+              "natation",
+              "huit médailles",
+              "Pékin"
+            ]
+          },
+          {
+            "text": "Obama élu",
+            "difficulty": 1,
+            "forbidden": [
+              "président",
+              "Yes We Can",
+              "2008"
+            ]
+          },
+          {
+            "text": "Yes We Can",
+            "difficulty": 1,
+            "forbidden": [
+              "Obama",
+              "slogan",
+              "2008"
+            ]
+          },
+          {
+            "text": "Passage à l'an 2000",
+            "difficulty": 1,
+            "forbidden": [
+              "bug",
+              "minuit",
+              "millénaire"
+            ]
+          },
+          {
+            "text": "Bug de l'an 2000",
+            "difficulty": 2,
+            "forbidden": [
+              "ordinateurs",
+              "panique",
+              "millénaire"
+            ]
+          },
+          {
+            "text": "Passage à l'euro",
+            "difficulty": 2,
+            "forbidden": [
+              "monnaie",
+              "France",
+              "2002"
+            ]
+          },
+          {
+            "text": "Facebook naît",
+            "difficulty": 2,
+            "forbidden": [
+              "Mark Zuckerberg",
+              "réseau social",
+              "2004"
+            ]
+          },
+          {
+            "text": "YouTube naît",
+            "difficulty": 2,
+            "forbidden": [
+              "vidéos",
+              "2005",
+              "plateforme"
+            ]
+          },
+          {
+            "text": "Premier iPhone",
+            "difficulty": 1,
+            "forbidden": [
+              "Apple",
+              "Steve Jobs",
+              "2007"
+            ]
+          },
+          {
+            "text": "Wikipédia",
+            "difficulty": 2,
+            "forbidden": [
+              "encyclopédie",
+              "2001",
+              "libre"
+            ]
+          },
+          {
+            "text": "Google Earth",
+            "difficulty": 2,
+            "forbidden": [
+              "planète",
+              "carte",
+              "satellite"
+            ]
+          },
+          {
+            "text": "Webcam",
+            "difficulty": 1,
+            "forbidden": [
+              "caméra",
+              "ordinateur",
+              "visio"
+            ]
+          },
+          {
+            "text": "Clavier Azerty",
+            "difficulty": 3,
+            "forbidden": [
+              "ordinateur",
+              "touches",
+              "lettres"
+            ]
+          },
+          {
+            "text": "Écran cathodique",
+            "difficulty": 2,
+            "forbidden": [
+              "télé",
+              "gros",
+              "bombé"
+            ]
+          },
+          {
+            "text": "Disquette",
+            "difficulty": 2,
+            "forbidden": [
+              "stockage",
+              "ordinateur",
+              "carré"
+            ]
+          },
+          {
+            "text": "Encyclopédie Encarta",
+            "difficulty": 3,
+            "forbidden": [
+              "CD-ROM",
+              "Microsoft",
+              "articles"
+            ]
+          },
+          {
+            "text": "Les Sims",
+            "difficulty": 1,
+            "forbidden": [
+              "jeu",
+              "simulation",
+              "Simlish"
+            ]
+          },
+          {
+            "text": "GTA San Andreas",
+            "difficulty": 2,
+            "forbidden": [
+              "jeu vidéo",
+              "CJ",
+              "Grove Street"
+            ]
+          },
+          {
+            "text": "Counter-Strike",
+            "difficulty": 2,
+            "forbidden": [
+              "jeu",
+              "LAN",
+              "terroristes"
+            ]
+          },
+          {
+            "text": "Need for Speed",
+            "difficulty": 2,
+            "forbidden": [
+              "course",
+              "voitures",
+              "jeu vidéo"
+            ]
+          },
+          {
+            "text": "FIFA 2005",
+            "difficulty": 3,
+            "forbidden": [
+              "jeu",
+              "football",
+              "EA Sports"
+            ]
+          },
+          {
+            "text": "PES 6",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "Konami",
+              "jeu"
+            ]
+          },
+          {
+            "text": "Pro Evolution Soccer",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "Konami",
+              "PES"
+            ]
+          },
+          {
+            "text": "Mario Kart DS",
+            "difficulty": 3,
+            "forbidden": [
+              "course",
+              "Nintendo",
+              "carapace"
+            ]
+          },
+          {
+            "text": "Dora l'exploratrice",
+            "difficulty": 1,
+            "forbidden": [
+              "dessin animé",
+              "sac à dos",
+              "Babouche"
+            ]
+          },
+          {
+            "text": "Bob l'éponge",
+            "difficulty": 1,
+            "forbidden": [
+              "dessin animé",
+              "Patrick",
+              "carré"
+            ]
+          },
+          {
+            "text": "Totally Spies",
+            "difficulty": 2,
+            "forbidden": [
+              "espionnes",
+              "dessin animé",
+              "Sam"
+            ]
+          },
+          {
+            "text": "Code Lyoko",
+            "difficulty": 3,
+            "forbidden": [
+              "dessin animé",
+              "Xana",
+              "virtuel"
+            ]
+          },
+          {
+            "text": "Kim Possible",
+            "difficulty": 3,
+            "forbidden": [
+              "dessin animé",
+              "Ron",
+              "espionne"
+            ]
+          },
+          {
+            "text": "Les Razmoket",
+            "difficulty": 2,
+            "forbidden": [
+              "bébés",
+              "dessin animé",
+              "Tommy"
+            ]
+          },
+          {
+            "text": "Lilo et Stitch",
+            "difficulty": 2,
+            "forbidden": [
+              "Disney",
+              "extraterrestre",
+              "Hawaï"
+            ]
+          },
+          {
+            "text": "Le Monde de Nemo",
+            "difficulty": 1,
+            "forbidden": [
+              "poisson-clown",
+              "Pixar",
+              "Dory"
+            ]
+          },
+          {
+            "text": "Les Indestructibles",
+            "difficulty": 2,
+            "forbidden": [
+              "Pixar",
+              "super-héros",
+              "famille"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

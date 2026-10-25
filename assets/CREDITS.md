@@ -68,3 +68,6 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/manette.webp | Microsoft Fluent Emoji 3D « video game » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/telephone-portable.webp | Microsoft Fluent Emoji 3D « mobile phone » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/nounours.webp | Microsoft Fluent Emoji 3D « teddy bear » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/visage-fete.webp | Microsoft Fluent Emoji 3D « partying face » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/bipeur.webp | Microsoft Fluent Emoji 3D « pager » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/feu.webp | Microsoft Fluent Emoji 3D « fire » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |

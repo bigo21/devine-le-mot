@@ -1,0 +1,1130 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "soiree-phrases",
+    "name": {
+      "fr": "Choses qu'on dit en soirée",
+      "en": "Things people say at parties"
+    },
+    "region": "party",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "phrases-soiree",
+        "name": {
+          "fr": "Choses qu'on dit en soirée",
+          "en": "Things people say at parties"
+        },
+        "emoji": "🥳",
+        "color": "orchid",
+        "tags": [
+          "soiree",
+          "langage"
+        ],
+        "words": [
+          {
+            "text": "On se capte plus tard",
+            "difficulty": 1,
+            "forbidden": [
+              "rendez-vous",
+              "bientôt",
+              "voir"
+            ]
+          },
+          {
+            "text": "J'arrive dans cinq minutes",
+            "difficulty": 1,
+            "forbidden": [
+              "retard",
+              "mensonge",
+              "bientôt"
+            ]
+          },
+          {
+            "text": "Je suis en route",
+            "difficulty": 1,
+            "forbidden": [
+              "chemin",
+              "arrive",
+              "retard"
+            ]
+          },
+          {
+            "text": "Encore un dernier verre",
+            "difficulty": 1,
+            "forbidden": [
+              "boire",
+              "partir",
+              "tournée"
+            ]
+          },
+          {
+            "text": "C'est ma chanson !",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "danser",
+              "préférée"
+            ]
+          },
+          {
+            "text": "Monte le son !",
+            "difficulty": 1,
+            "forbidden": [
+              "volume",
+              "musique",
+              "fort"
+            ]
+          },
+          {
+            "text": "Qui a la clé USB ?",
+            "difficulty": 2,
+            "forbidden": [
+              "musique",
+              "DJ",
+              "fichier"
+            ]
+          },
+          {
+            "text": "On prend une photo ?",
+            "difficulty": 1,
+            "forbidden": [
+              "selfie",
+              "groupe",
+              "souriez"
+            ]
+          },
+          {
+            "text": "Souriez !",
+            "difficulty": 1,
+            "forbidden": [
+              "photo",
+              "dents",
+              "cheese"
+            ]
+          },
+          {
+            "text": "Je ne bois plus jamais",
+            "difficulty": 1,
+            "forbidden": [
+              "alcool",
+              "lendemain",
+              "promesse"
+            ]
+          },
+          {
+            "text": "Tu me reconnais ?",
+            "difficulty": 2,
+            "forbidden": [
+              "rencontre",
+              "souvenir",
+              "visage"
+            ]
+          },
+          {
+            "text": "On s'est déjà vus quelque part",
+            "difficulty": 2,
+            "forbidden": [
+              "rencontre",
+              "visage",
+              "souvenir"
+            ]
+          },
+          {
+            "text": "C'est qui le DJ ?",
+            "difficulty": 2,
+            "forbidden": [
+              "musique",
+              "platines",
+              "ambiance"
+            ]
+          },
+          {
+            "text": "Mets du makossa",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "Cameroun",
+              "danser"
+            ]
+          },
+          {
+            "text": "Mets du coupé-décalé",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "Côte d'Ivoire",
+              "danser"
+            ]
+          },
+          {
+            "text": "On danse ?",
+            "difficulty": 1,
+            "forbidden": [
+              "piste",
+              "inviter",
+              "musique"
+            ]
+          },
+          {
+            "text": "Il fait trop chaud ici",
+            "difficulty": 1,
+            "forbidden": [
+              "température",
+              "transpirer",
+              "étouffer"
+            ]
+          },
+          {
+            "text": "Ouvrez les fenêtres",
+            "difficulty": 2,
+            "forbidden": [
+              "air",
+              "chaleur",
+              "respirer"
+            ]
+          },
+          {
+            "text": "Qui a mangé le dernier morceau ?",
+            "difficulty": 2,
+            "forbidden": [
+              "nourriture",
+              "plat",
+              "faim"
+            ]
+          },
+          {
+            "text": "Il reste du gâteau ?",
+            "difficulty": 1,
+            "forbidden": [
+              "dessert",
+              "part",
+              "anniversaire"
+            ]
+          },
+          {
+            "text": "Joyeux anniversaire !",
+            "difficulty": 1,
+            "forbidden": [
+              "bougies",
+              "gâteau",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Fais un vœu",
+            "difficulty": 1,
+            "forbidden": [
+              "bougies",
+              "souffler",
+              "souhait"
+            ]
+          },
+          {
+            "text": "Discours ! Discours !",
+            "difficulty": 2,
+            "forbidden": [
+              "parler",
+              "micro",
+              "applaudir"
+            ]
+          },
+          {
+            "text": "À la tienne !",
+            "difficulty": 1,
+            "forbidden": [
+              "trinquer",
+              "verre",
+              "santé"
+            ]
+          },
+          {
+            "text": "Santé !",
+            "difficulty": 1,
+            "forbidden": [
+              "trinquer",
+              "verre",
+              "boire"
+            ]
+          },
+          {
+            "text": "Cul sec !",
+            "difficulty": 2,
+            "forbidden": [
+              "boire",
+              "d'un coup",
+              "verre"
+            ]
+          },
+          {
+            "text": "Qui conduit ce soir ?",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "sobre",
+              "rentrer"
+            ]
+          },
+          {
+            "text": "On commande des pizzas ?",
+            "difficulty": 1,
+            "forbidden": [
+              "livraison",
+              "faim",
+              "manger"
+            ]
+          },
+          {
+            "text": "Qui veut du poulet ?",
+            "difficulty": 1,
+            "forbidden": [
+              "nourriture",
+              "braisé",
+              "manger"
+            ]
+          },
+          {
+            "text": "Le soya est prêt",
+            "difficulty": 2,
+            "forbidden": [
+              "brochettes",
+              "viande",
+              "grillé"
+            ]
+          },
+          {
+            "text": "Tu as vu sa tenue ?",
+            "difficulty": 2,
+            "forbidden": [
+              "vêtements",
+              "regarder",
+              "commérage"
+            ]
+          },
+          {
+            "text": "Elle est trop belle ce soir",
+            "difficulty": 2,
+            "forbidden": [
+              "compliment",
+              "jolie",
+              "tenue"
+            ]
+          },
+          {
+            "text": "Il est où l'hôte ?",
+            "difficulty": 2,
+            "forbidden": [
+              "maison",
+              "organisateur",
+              "chercher"
+            ]
+          },
+          {
+            "text": "Je connais personne ici",
+            "difficulty": 2,
+            "forbidden": [
+              "inconnu",
+              "seul",
+              "soirée"
+            ]
+          },
+          {
+            "text": "Tu viens d'où ?",
+            "difficulty": 1,
+            "forbidden": [
+              "origine",
+              "question",
+              "rencontre"
+            ]
+          },
+          {
+            "text": "Tu fais quoi dans la vie ?",
+            "difficulty": 1,
+            "forbidden": [
+              "métier",
+              "travail",
+              "question"
+            ]
+          },
+          {
+            "text": "Tu as un numéro ?",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "contact",
+              "draguer"
+            ]
+          },
+          {
+            "text": "On s'appelle",
+            "difficulty": 1,
+            "forbidden": [
+              "téléphone",
+              "bientôt",
+              "promesse"
+            ]
+          },
+          {
+            "text": "Ajoute-moi sur Insta",
+            "difficulty": 2,
+            "forbidden": [
+              "réseau social",
+              "compte",
+              "abonné"
+            ]
+          },
+          {
+            "text": "Envoie-moi les photos",
+            "difficulty": 1,
+            "forbidden": [
+              "partager",
+              "WhatsApp",
+              "souvenirs"
+            ]
+          },
+          {
+            "text": "Ne poste pas ça",
+            "difficulty": 2,
+            "forbidden": [
+              "photo",
+              "réseaux sociaux",
+              "interdit"
+            ]
+          },
+          {
+            "text": "Je suis pas filmable",
+            "difficulty": 3,
+            "forbidden": [
+              "vidéo",
+              "caméra",
+              "cacher"
+            ]
+          },
+          {
+            "text": "C'est quoi le wifi ?",
+            "difficulty": 1,
+            "forbidden": [
+              "mot de passe",
+              "internet",
+              "réseau"
+            ]
+          },
+          {
+            "text": "Tu as un chargeur ?",
+            "difficulty": 1,
+            "forbidden": [
+              "batterie",
+              "téléphone",
+              "câble"
+            ]
+          },
+          {
+            "text": "Ma batterie est morte",
+            "difficulty": 1,
+            "forbidden": [
+              "téléphone",
+              "charger",
+              "éteint"
+            ]
+          },
+          {
+            "text": "Où sont les toilettes ?",
+            "difficulty": 1,
+            "forbidden": [
+              "WC",
+              "question",
+              "chercher"
+            ]
+          },
+          {
+            "text": "Il y a la queue aux toilettes",
+            "difficulty": 2,
+            "forbidden": [
+              "attendre",
+              "WC",
+              "file"
+            ]
+          },
+          {
+            "text": "Qui a pris mon verre ?",
+            "difficulty": 2,
+            "forbidden": [
+              "boisson",
+              "voler",
+              "chercher"
+            ]
+          },
+          {
+            "text": "Ne touche pas à mon verre",
+            "difficulty": 2,
+            "forbidden": [
+              "boisson",
+              "garder",
+              "méfiance"
+            ]
+          },
+          {
+            "text": "Mon pied !",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "écraser",
+              "aïe"
+            ]
+          },
+          {
+            "text": "Pardon, pardon",
+            "difficulty": 1,
+            "forbidden": [
+              "excuse",
+              "passer",
+              "désolé"
+            ]
+          },
+          {
+            "text": "Ambiance !",
+            "difficulty": 1,
+            "forbidden": [
+              "fête",
+              "crier",
+              "énergie"
+            ]
+          },
+          {
+            "text": "On est ensemble !",
+            "difficulty": 1,
+            "forbidden": [
+              "solidarité",
+              "Cameroun",
+              "expression"
+            ]
+          },
+          {
+            "text": "C'est comment ?",
+            "difficulty": 1,
+            "forbidden": [
+              "salut",
+              "Cameroun",
+              "ça va"
+            ]
+          },
+          {
+            "text": "Ça va ou bien ?",
+            "difficulty": 1,
+            "forbidden": [
+              "salut",
+              "question",
+              "nouvelles"
+            ]
+          },
+          {
+            "text": "Dis donc !",
+            "difficulty": 2,
+            "forbidden": [
+              "surprise",
+              "exclamation",
+              "étonnement"
+            ]
+          },
+          {
+            "text": "Tu es sérieux ?",
+            "difficulty": 1,
+            "forbidden": [
+              "vraiment",
+              "étonné",
+              "question"
+            ]
+          },
+          {
+            "text": "Arrête de mentir",
+            "difficulty": 1,
+            "forbidden": [
+              "mensonge",
+              "vérité",
+              "blague"
+            ]
+          },
+          {
+            "text": "Je te jure",
+            "difficulty": 1,
+            "forbidden": [
+              "promesse",
+              "vérité",
+              "serment"
+            ]
+          },
+          {
+            "text": "C'est pas moi",
+            "difficulty": 1,
+            "forbidden": [
+              "innocent",
+              "accuser",
+              "coupable"
+            ]
+          },
+          {
+            "text": "Il m'a volé ma chaise",
+            "difficulty": 2,
+            "forbidden": [
+              "place",
+              "assis",
+              "partir"
+            ]
+          },
+          {
+            "text": "Garde-moi ma place",
+            "difficulty": 1,
+            "forbidden": [
+              "siège",
+              "retour",
+              "réserver"
+            ]
+          },
+          {
+            "text": "On rentre à quelle heure ?",
+            "difficulty": 1,
+            "forbidden": [
+              "partir",
+              "maison",
+              "tard"
+            ]
+          },
+          {
+            "text": "Encore cinq minutes",
+            "difficulty": 1,
+            "forbidden": [
+              "rester",
+              "partir",
+              "dernier"
+            ]
+          },
+          {
+            "text": "On bouge ?",
+            "difficulty": 1,
+            "forbidden": [
+              "partir",
+              "ailleurs",
+              "aller"
+            ]
+          },
+          {
+            "text": "L'after c'est chez qui ?",
+            "difficulty": 2,
+            "forbidden": [
+              "suite",
+              "fête",
+              "maison"
+            ]
+          },
+          {
+            "text": "Je suis trop fatigué",
+            "difficulty": 1,
+            "forbidden": [
+              "dormir",
+              "épuisé",
+              "rentrer"
+            ]
+          },
+          {
+            "text": "Mes pieds me font mal",
+            "difficulty": 1,
+            "forbidden": [
+              "chaussures",
+              "danser",
+              "talons"
+            ]
+          },
+          {
+            "text": "J'enlève mes chaussures",
+            "difficulty": 2,
+            "forbidden": [
+              "pieds",
+              "talons",
+              "danser"
+            ]
+          },
+          {
+            "text": "Qui a ramené le gâteau ?",
+            "difficulty": 2,
+            "forbidden": [
+              "dessert",
+              "apporter",
+              "anniversaire"
+            ]
+          },
+          {
+            "text": "C'est fait maison",
+            "difficulty": 2,
+            "forbidden": [
+              "cuisine",
+              "recette",
+              "moi-même"
+            ]
+          },
+          {
+            "text": "Donne la recette",
+            "difficulty": 2,
+            "forbidden": [
+              "cuisine",
+              "plat",
+              "comment"
+            ]
+          },
+          {
+            "text": "Elle a mis trop de piment",
+            "difficulty": 2,
+            "forbidden": [
+              "épicé",
+              "brûler",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Il y a encore à manger ?",
+            "difficulty": 1,
+            "forbidden": [
+              "nourriture",
+              "reste",
+              "faim"
+            ]
+          },
+          {
+            "text": "Je suis au régime",
+            "difficulty": 2,
+            "forbidden": [
+              "maigrir",
+              "manger",
+              "poids"
+            ]
+          },
+          {
+            "text": "Juste un petit morceau",
+            "difficulty": 1,
+            "forbidden": [
+              "part",
+              "gourmand",
+              "manger"
+            ]
+          },
+          {
+            "text": "On fait un jeu ?",
+            "difficulty": 1,
+            "forbidden": [
+              "jouer",
+              "soirée",
+              "activité"
+            ]
+          },
+          {
+            "text": "Action ou vérité ?",
+            "difficulty": 1,
+            "forbidden": [
+              "jeu",
+              "défi",
+              "question"
+            ]
+          },
+          {
+            "text": "Qui a mis cette chanson ?",
+            "difficulty": 2,
+            "forbidden": [
+              "musique",
+              "DJ",
+              "nulle"
+            ]
+          },
+          {
+            "text": "Change la musique",
+            "difficulty": 1,
+            "forbidden": [
+              "chanson",
+              "DJ",
+              "zapper"
+            ]
+          },
+          {
+            "text": "C'est le feu !",
+            "difficulty": 1,
+            "forbidden": [
+              "ambiance",
+              "génial",
+              "chaud"
+            ]
+          },
+          {
+            "text": "Ça chauffe !",
+            "difficulty": 1,
+            "forbidden": [
+              "ambiance",
+              "danse",
+              "feu"
+            ]
+          },
+          {
+            "text": "Personne ne danse ?",
+            "difficulty": 2,
+            "forbidden": [
+              "piste",
+              "vide",
+              "musique"
+            ]
+          },
+          {
+            "text": "Allez, tout le monde sur la piste",
+            "difficulty": 1,
+            "forbidden": [
+              "danser",
+              "inviter",
+              "soirée"
+            ]
+          },
+          {
+            "text": "Faites du bruit !",
+            "difficulty": 1,
+            "forbidden": [
+              "crier",
+              "applaudir",
+              "ambiance"
+            ]
+          },
+          {
+            "text": "Les mains en l'air",
+            "difficulty": 1,
+            "forbidden": [
+              "danser",
+              "lever",
+              "bras"
+            ]
+          },
+          {
+            "text": "Tu danses comme mon oncle",
+            "difficulty": 2,
+            "forbidden": [
+              "danse",
+              "ringard",
+              "famille"
+            ]
+          },
+          {
+            "text": "Tu as grossi",
+            "difficulty": 2,
+            "forbidden": [
+              "poids",
+              "remarque",
+              "vexer"
+            ]
+          },
+          {
+            "text": "Tu as maigri",
+            "difficulty": 2,
+            "forbidden": [
+              "poids",
+              "compliment",
+              "régime"
+            ]
+          },
+          {
+            "text": "Tu n'as pas changé",
+            "difficulty": 2,
+            "forbidden": [
+              "rencontre",
+              "compliment",
+              "même"
+            ]
+          },
+          {
+            "text": "Ça fait longtemps !",
+            "difficulty": 1,
+            "forbidden": [
+              "retrouvailles",
+              "temps",
+              "revoir"
+            ]
+          },
+          {
+            "text": "On se connaît d'où ?",
+            "difficulty": 2,
+            "forbidden": [
+              "souvenir",
+              "visage",
+              "rencontre"
+            ]
+          },
+          {
+            "text": "Raconte !",
+            "difficulty": 1,
+            "forbidden": [
+              "histoire",
+              "potins",
+              "dire"
+            ]
+          },
+          {
+            "text": "C'est une longue histoire",
+            "difficulty": 2,
+            "forbidden": [
+              "raconter",
+              "compliqué",
+              "plus tard"
+            ]
+          },
+          {
+            "text": "Je vais te dire un secret",
+            "difficulty": 2,
+            "forbidden": [
+              "chuchoter",
+              "confidence",
+              "personne"
+            ]
+          },
+          {
+            "text": "Promets que tu ne diras rien",
+            "difficulty": 2,
+            "forbidden": [
+              "secret",
+              "silence",
+              "jurer"
+            ]
+          },
+          {
+            "text": "Tout le monde le sait déjà",
+            "difficulty": 2,
+            "forbidden": [
+              "secret",
+              "rumeur",
+              "connu"
+            ]
+          },
+          {
+            "text": "Laisse tomber",
+            "difficulty": 1,
+            "forbidden": [
+              "abandonner",
+              "oublier",
+              "pas grave"
+            ]
+          },
+          {
+            "text": "C'est pas grave",
+            "difficulty": 1,
+            "forbidden": [
+              "excuse",
+              "pardon",
+              "oublie"
+            ]
+          },
+          {
+            "text": "On verra",
+            "difficulty": 1,
+            "forbidden": [
+              "peut-être",
+              "plus tard",
+              "décider"
+            ]
+          },
+          {
+            "text": "Demain je me lève tôt",
+            "difficulty": 2,
+            "forbidden": [
+              "réveil",
+              "dormir",
+              "excuse"
+            ]
+          },
+          {
+            "text": "J'ai travail demain",
+            "difficulty": 2,
+            "forbidden": [
+              "bureau",
+              "excuse",
+              "dormir"
+            ]
+          },
+          {
+            "text": "Appelle-moi un taxi",
+            "difficulty": 1,
+            "forbidden": [
+              "rentrer",
+              "transport",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Qui me dépose ?",
+            "difficulty": 1,
+            "forbidden": [
+              "voiture",
+              "rentrer",
+              "transport"
+            ]
+          },
+          {
+            "text": "Envoie-moi ta localisation",
+            "difficulty": 2,
+            "forbidden": [
+              "GPS",
+              "adresse",
+              "WhatsApp"
+            ]
+          },
+          {
+            "text": "Je suis devant le portail",
+            "difficulty": 1,
+            "forbidden": [
+              "arrivé",
+              "dehors",
+              "ouvrir"
+            ]
+          },
+          {
+            "text": "Ouvre-moi !",
+            "difficulty": 1,
+            "forbidden": [
+              "porte",
+              "frapper",
+              "dehors"
+            ]
+          },
+          {
+            "text": "Qui a invité celui-là ?",
+            "difficulty": 2,
+            "forbidden": [
+              "inconnu",
+              "soirée",
+              "intrus"
+            ]
+          },
+          {
+            "text": "Il n'était pas invité",
+            "difficulty": 2,
+            "forbidden": [
+              "intrus",
+              "soirée",
+              "liste"
+            ]
+          },
+          {
+            "text": "C'est mon jour !",
+            "difficulty": 1,
+            "forbidden": [
+              "anniversaire",
+              "fête",
+              "moi"
+            ]
+          },
+          {
+            "text": "On fait quoi samedi ?",
+            "difficulty": 1,
+            "forbidden": [
+              "week-end",
+              "programme",
+              "sortir"
+            ]
+          },
+          {
+            "text": "La prochaine fois chez moi",
+            "difficulty": 2,
+            "forbidden": [
+              "inviter",
+              "fête",
+              "maison"
+            ]
+          },
+          {
+            "text": "On remet ça quand ?",
+            "difficulty": 1,
+            "forbidden": [
+              "recommencer",
+              "prochaine fois",
+              "fête"
+            ]
+          },
+          {
+            "text": "Prends soin de toi",
+            "difficulty": 1,
+            "forbidden": [
+              "au revoir",
+              "santé",
+              "attention"
+            ]
+          },
+          {
+            "text": "Bien rentré ?",
+            "difficulty": 1,
+            "forbidden": [
+              "maison",
+              "message",
+              "arrivé"
+            ]
+          },
+          {
+            "text": "Envoie un message quand tu arrives",
+            "difficulty": 1,
+            "forbidden": [
+              "rentrer",
+              "sécurité",
+              "SMS"
+            ]
+          },
+          {
+            "text": "Quelle soirée !",
+            "difficulty": 1,
+            "forbidden": [
+              "fête",
+              "géniale",
+              "souvenir"
+            ]
+          },
+          {
+            "text": "Tu as vu l'heure ?",
+            "difficulty": 1,
+            "forbidden": [
+              "tard",
+              "montre",
+              "partir"
+            ]
+          },
+          {
+            "text": "Il fait un froid ici",
+            "difficulty": 2,
+            "forbidden": [
+              "clim",
+              "température",
+              "frissons"
+            ]
+          },
+          {
+            "text": "Baisse la clim",
+            "difficulty": 2,
+            "forbidden": [
+              "froid",
+              "climatiseur",
+              "télécommande"
+            ]
+          },
+          {
+            "text": "Qui veut danser avec moi ?",
+            "difficulty": 1,
+            "forbidden": [
+              "inviter",
+              "piste",
+              "danse"
+            ]
+          },
+          {
+            "text": "Prends encore, il y en a",
+            "difficulty": 2,
+            "forbidden": [
+              "nourriture",
+              "servir",
+              "reste"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

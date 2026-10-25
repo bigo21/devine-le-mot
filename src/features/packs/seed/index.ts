@@ -37,6 +37,10 @@ import mondeInstruments from './monde-instruments.json';
 import mondeJeuxVideo from './monde-jeux-video.json';
 import mondeMonuments from './monde-monuments.json';
 import mondePays from './monde-pays.json';
+import soireeAnnees2000 from './soiree-annees-2000.json';
+import soireeGenant from './soiree-genant.json';
+import soireePhrases from './soiree-phrases.json';
+import soireeTiktok from './soiree-tiktok.json';
 
 /** Contenu brut : validé par zod avant insertion (et par les tests). */
 export const builtinPackFiles: readonly unknown[] = [
@@ -77,4 +81,8 @@ export const builtinPackFiles: readonly unknown[] = [
   mondeJeuxVideo,
   mondeApplis,
   mondeEnfants,
+  soireeGenant,
+  soireePhrases,
+  soireeAnnees2000,
+  soireeTiktok,
 ];
