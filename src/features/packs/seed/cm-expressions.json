@@ -1,0 +1,436 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-expressions",
+    "name": {
+      "fr": "Expressions et camfranglais",
+      "en": "Sayings and Camfranglais"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "expressions",
+        "name": {
+          "fr": "Expressions et camfranglais",
+          "en": "Sayings and Camfranglais"
+        },
+        "emoji": "💬",
+        "color": "lilac",
+        "tags": [
+          "langage"
+        ],
+        "words": [
+          {
+            "text": "On dit quoi ?",
+            "difficulty": 1,
+            "forbidden": [
+              "salut",
+              "ça va",
+              "bonjour"
+            ]
+          },
+          {
+            "text": "Mbom",
+            "difficulty": 1,
+            "forbidden": [
+              "ami",
+              "gars",
+              "frère"
+            ]
+          },
+          {
+            "text": "Mola",
+            "difficulty": 1,
+            "forbidden": [
+              "ami",
+              "frère",
+              "gars"
+            ]
+          },
+          {
+            "text": "Ndolo",
+            "difficulty": 2,
+            "forbidden": [
+              "amour",
+              "chéri",
+              "aimer"
+            ]
+          },
+          {
+            "text": "Nga",
+            "difficulty": 1,
+            "forbidden": [
+              "petite amie",
+              "copine",
+              "chérie"
+            ]
+          },
+          {
+            "text": "Mbeng",
+            "difficulty": 1,
+            "forbidden": [
+              "Europe",
+              "France",
+              "étranger"
+            ]
+          },
+          {
+            "text": "Mbenguiste",
+            "difficulty": 1,
+            "forbidden": [
+              "diaspora",
+              "Europe",
+              "rentrer au pays"
+            ]
+          },
+          {
+            "text": "Bayam-sellam",
+            "difficulty": 1,
+            "forbidden": [
+              "revendeuse",
+              "marché",
+              "acheter-vendre"
+            ]
+          },
+          {
+            "text": "Sauveteur",
+            "difficulty": 2,
+            "forbidden": [
+              "vendeur ambulant",
+              "rue",
+              "marchandises"
+            ]
+          },
+          {
+            "text": "Benskineur",
+            "difficulty": 1,
+            "forbidden": [
+              "moto-taxi",
+              "moto",
+              "passager"
+            ]
+          },
+          {
+            "text": "Clando",
+            "difficulty": 2,
+            "forbidden": [
+              "taxi clandestin",
+              "voiture",
+              "transport"
+            ]
+          },
+          {
+            "text": "Taximan",
+            "difficulty": 1,
+            "forbidden": [
+              "taxi",
+              "chauffeur",
+              "jaune"
+            ]
+          },
+          {
+            "text": "Feyman",
+            "difficulty": 1,
+            "forbidden": [
+              "escroc",
+              "arnaque",
+              "argent"
+            ]
+          },
+          {
+            "text": "Tchoko",
+            "difficulty": 1,
+            "forbidden": [
+              "pot-de-vin",
+              "corruption",
+              "policier"
+            ]
+          },
+          {
+            "text": "Gombo",
+            "difficulty": 2,
+            "forbidden": [
+              "petit boulot",
+              "affaire",
+              "argent"
+            ]
+          },
+          {
+            "text": "Kongossa",
+            "difficulty": 1,
+            "forbidden": [
+              "ragots",
+              "rumeurs",
+              "potins"
+            ]
+          },
+          {
+            "text": "Njangui",
+            "difficulty": 1,
+            "forbidden": [
+              "tontine",
+              "cotisation",
+              "réunion"
+            ]
+          },
+          {
+            "text": "Je wanda",
+            "difficulty": 1,
+            "forbidden": [
+              "étonné",
+              "surpris",
+              "choqué"
+            ]
+          },
+          {
+            "text": "Tchop",
+            "difficulty": 1,
+            "forbidden": [
+              "manger",
+              "nourriture",
+              "repas"
+            ]
+          },
+          {
+            "text": "Nkap",
+            "difficulty": 2,
+            "forbidden": [
+              "argent",
+              "francs",
+              "payer"
+            ]
+          },
+          {
+            "text": "Rémé",
+            "difficulty": 1,
+            "forbidden": [
+              "maman",
+              "mère",
+              "parent"
+            ]
+          },
+          {
+            "text": "Répé",
+            "difficulty": 1,
+            "forbidden": [
+              "papa",
+              "père",
+              "parent"
+            ]
+          },
+          {
+            "text": "Chap chap",
+            "difficulty": 2,
+            "forbidden": [
+              "vite",
+              "rapidement",
+              "dépêche"
+            ]
+          },
+          {
+            "text": "Long crayon",
+            "difficulty": 2,
+            "forbidden": [
+              "intellectuel",
+              "diplômé",
+              "études"
+            ]
+          },
+          {
+            "text": "Mange-mille",
+            "difficulty": 2,
+            "forbidden": [
+              "policier",
+              "corrompu",
+              "mille francs"
+            ]
+          },
+          {
+            "text": "Mimbo",
+            "difficulty": 2,
+            "forbidden": [
+              "alcool",
+              "boire",
+              "bière"
+            ]
+          },
+          {
+            "text": "Mimbayeur",
+            "difficulty": 2,
+            "forbidden": [
+              "ivrogne",
+              "boire",
+              "alcool"
+            ]
+          },
+          {
+            "text": "Djo",
+            "difficulty": 1,
+            "forbidden": [
+              "gars",
+              "mec",
+              "ami"
+            ]
+          },
+          {
+            "text": "Ashia",
+            "difficulty": 1,
+            "forbidden": [
+              "courage",
+              "désolé",
+              "compassion"
+            ]
+          },
+          {
+            "text": "Abeg",
+            "difficulty": 1,
+            "forbidden": [
+              "s'il te plaît",
+              "pidgin",
+              "supplier"
+            ]
+          },
+          {
+            "text": "Wahala",
+            "difficulty": 2,
+            "forbidden": [
+              "problème",
+              "pidgin",
+              "histoires"
+            ]
+          },
+          {
+            "text": "How na ?",
+            "difficulty": 2,
+            "forbidden": [
+              "ça va",
+              "pidgin",
+              "salut"
+            ]
+          },
+          {
+            "text": "Na so",
+            "difficulty": 2,
+            "forbidden": [
+              "c'est comme ça",
+              "pidgin",
+              "accepter"
+            ]
+          },
+          {
+            "text": "Wuna",
+            "difficulty": 3,
+            "forbidden": [
+              "vous",
+              "pidgin",
+              "tous"
+            ]
+          },
+          {
+            "text": "Nyanga",
+            "difficulty": 2,
+            "forbidden": [
+              "coquetterie",
+              "beauté",
+              "se faire belle"
+            ]
+          },
+          {
+            "text": "Ndjoh",
+            "difficulty": 2,
+            "forbidden": [
+              "gratuit",
+              "cadeau",
+              "sans payer"
+            ]
+          },
+          {
+            "text": "Bao",
+            "difficulty": 2,
+            "forbidden": [
+              "chef",
+              "patron",
+              "riche"
+            ]
+          },
+          {
+            "text": "Ngomna",
+            "difficulty": 2,
+            "forbidden": [
+              "gouvernement",
+              "État",
+              "administration"
+            ]
+          },
+          {
+            "text": "Mbere",
+            "difficulty": 3,
+            "forbidden": [
+              "police",
+              "gendarme",
+              "uniforme"
+            ]
+          },
+          {
+            "text": "Tara",
+            "difficulty": 2,
+            "forbidden": [
+              "ami",
+              "copain",
+              "frère"
+            ]
+          },
+          {
+            "text": "Asso",
+            "difficulty": 2,
+            "forbidden": [
+              "associé",
+              "ami",
+              "affaires"
+            ]
+          },
+          {
+            "text": "Cameroun c'est le Cameroun",
+            "difficulty": 1,
+            "forbidden": [
+              "unique",
+              "dicton",
+              "pays"
+            ]
+          },
+          {
+            "text": "L'impossible n'est pas camerounais",
+            "difficulty": 1,
+            "forbidden": [
+              "devise",
+              "tout est possible",
+              "fierté"
+            ]
+          },
+          {
+            "text": "Ça va aller",
+            "difficulty": 1,
+            "forbidden": [
+              "rassurer",
+              "espoir",
+              "courage"
+            ]
+          },
+          {
+            "text": "On va faire comment ?",
+            "difficulty": 1,
+            "forbidden": [
+              "résignation",
+              "rien à faire",
+              "fatalité"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

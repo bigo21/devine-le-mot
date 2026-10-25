@@ -54,7 +54,7 @@ export function builtinRuleViolations(file: PackFile): string[] {
         );
       }
       // Un mot interdit qui fait partie du mot à deviner ne sert à rien (on ne le dira pas).
-      const tokens = new Set(foldText(word.text).split(/[\s'’-]+/));
+      const tokens = new Set(foldText(word.text).split(/[^a-z0-9]+/));
       for (const forbidden of word.forbidden) {
         const folded = foldText(forbidden);
         if (folded === foldText(word.text) || tokens.has(folded)) {

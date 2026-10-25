@@ -1,0 +1,301 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-musique",
+    "name": {
+      "fr": "Musique : rythmes, instruments et tubes",
+      "en": "Music: rhythms, instruments and hits"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "musique",
+        "name": {
+          "fr": "Musique : rythmes, instruments et tubes",
+          "en": "Music: rhythms, instruments and hits"
+        },
+        "emoji": "🥁",
+        "color": "lagoon",
+        "tags": [
+          "musique"
+        ],
+        "words": [
+          {
+            "text": "Makossa",
+            "difficulty": 1,
+            "forbidden": [
+              "Douala",
+              "danse",
+              "Manu Dibango"
+            ]
+          },
+          {
+            "text": "Bikutsi",
+            "difficulty": 1,
+            "forbidden": [
+              "rythme",
+              "Yaoundé",
+              "Centre"
+            ]
+          },
+          {
+            "text": "Bend skin",
+            "difficulty": 2,
+            "forbidden": [
+              "moto-taxi",
+              "rythme",
+              "André-Marie Talla"
+            ]
+          },
+          {
+            "text": "Assiko",
+            "difficulty": 2,
+            "forbidden": [
+              "rythme",
+              "guitare",
+              "bassa"
+            ]
+          },
+          {
+            "text": "Mangambeu",
+            "difficulty": 3,
+            "forbidden": [
+              "Ouest",
+              "rythme",
+              "Pierre Didy Tchakounté"
+            ]
+          },
+          {
+            "text": "Ambasse bey",
+            "difficulty": 3,
+            "forbidden": [
+              "rythme",
+              "Douala",
+              "ancien"
+            ]
+          },
+          {
+            "text": "Makassi",
+            "difficulty": 2,
+            "forbidden": [
+              "Sam Fan Thomas",
+              "rythme",
+              "makossa"
+            ]
+          },
+          {
+            "text": "Mbolé",
+            "difficulty": 2,
+            "forbidden": [
+              "rythme",
+              "Yaoundé",
+              "quartiers"
+            ]
+          },
+          {
+            "text": "Njang",
+            "difficulty": 3,
+            "forbidden": [
+              "Nord-Ouest",
+              "danse",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Balafon",
+            "difficulty": 1,
+            "forbidden": [
+              "xylophone",
+              "bois",
+              "baguettes"
+            ]
+          },
+          {
+            "text": "Mvet",
+            "difficulty": 2,
+            "forbidden": [
+              "harpe",
+              "conteur",
+              "épopée"
+            ]
+          },
+          {
+            "text": "Tam-tam",
+            "difficulty": 1,
+            "forbidden": [
+              "tambour",
+              "rythme",
+              "village"
+            ]
+          },
+          {
+            "text": "Sanza",
+            "difficulty": 2,
+            "forbidden": [
+              "pouces",
+              "lamelles",
+              "piano à pouces"
+            ]
+          },
+          {
+            "text": "Maracas",
+            "difficulty": 1,
+            "forbidden": [
+              "secouer",
+              "graines",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Grelots",
+            "difficulty": 2,
+            "forbidden": [
+              "cheville",
+              "danse",
+              "bruit"
+            ]
+          },
+          {
+            "text": "Saxophone",
+            "difficulty": 1,
+            "forbidden": [
+              "Manu Dibango",
+              "souffler",
+              "jazz"
+            ]
+          },
+          {
+            "text": "Guitare",
+            "difficulty": 1,
+            "forbidden": [
+              "cordes",
+              "jouer",
+              "musique"
+            ]
+          },
+          {
+            "text": "Tambour",
+            "difficulty": 1,
+            "forbidden": [
+              "taper",
+              "peau",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Soul Makossa",
+            "difficulty": 1,
+            "forbidden": [
+              "Manu Dibango",
+              "1972",
+              "Michael Jackson"
+            ]
+          },
+          {
+            "text": "Zangaléwa",
+            "difficulty": 1,
+            "forbidden": [
+              "Golden Sounds",
+              "Waka Waka",
+              "soldats"
+            ]
+          },
+          {
+            "text": "Waka Waka",
+            "difficulty": 1,
+            "forbidden": [
+              "Shakira",
+              "Coupe du monde 2010",
+              "Zangaléwa"
+            ]
+          },
+          {
+            "text": "Coller la petite",
+            "difficulty": 1,
+            "forbidden": [
+              "Franko",
+              "danse",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Ça sort comme ça sort",
+            "difficulty": 1,
+            "forbidden": [
+              "Maahlox",
+              "chanson",
+              "délire"
+            ]
+          },
+          {
+            "text": "Hein Père",
+            "difficulty": 1,
+            "forbidden": [
+              "Stanley Enow",
+              "chanson",
+              "rap"
+            ]
+          },
+          {
+            "text": "Do le dab",
+            "difficulty": 1,
+            "forbidden": [
+              "Tenor",
+              "danse",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Margot",
+            "difficulty": 2,
+            "forbidden": [
+              "Locko",
+              "chanson",
+              "amour"
+            ]
+          },
+          {
+            "text": "Pala Pala",
+            "difficulty": 2,
+            "forbidden": [
+              "Mani Bella",
+              "chanson",
+              "danse"
+            ]
+          },
+          {
+            "text": "Bobo",
+            "difficulty": 2,
+            "forbidden": [
+              "Ko-C",
+              "chanson",
+              "rap"
+            ]
+          },
+          {
+            "text": "Calée",
+            "difficulty": 2,
+            "forbidden": [
+              "Daphné",
+              "chanson",
+              "amour"
+            ]
+          },
+          {
+            "text": "Lettre au président",
+            "difficulty": 2,
+            "forbidden": [
+              "Valsero",
+              "rap",
+              "engagé"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-footballeurs",
+    "name": {
+      "fr": "Footballeurs camerounais",
+      "en": "Cameroonian footballers"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "footballeurs",
+        "name": {
+          "fr": "Footballeurs camerounais",
+          "en": "Cameroonian footballers"
+        },
+        "emoji": "⚽",
+        "color": "indigo",
+        "tags": [
+          "personnalites",
+          "sport"
+        ],
+        "words": [
+          {
+            "text": "Roger Milla",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "1990",
+              "poteau de corner"
+            ]
+          },
+          {
+            "text": "Samuel Eto'o",
+            "difficulty": 1,
+            "forbidden": [
+              "Barcelone",
+              "Inter",
+              "président de la fédération"
+            ]
+          },
+          {
+            "text": "Rigobert Song",
+            "difficulty": 1,
+            "forbidden": [
+              "capitaine",
+              "défenseur",
+              "sélectionneur"
+            ]
+          },
+          {
+            "text": "Patrick Mboma",
+            "difficulty": 1,
+            "forbidden": [
+              "attaquant",
+              "Ballon d'or africain",
+              "2000"
+            ]
+          },
+          {
+            "text": "Thomas N'Kono",
+            "difficulty": 2,
+            "forbidden": [
+              "gardien",
+              "Espanyol",
+              "1982"
+            ]
+          },
+          {
+            "text": "Joseph-Antoine Bell",
+            "difficulty": 2,
+            "forbidden": [
+              "gardien",
+              "Marseille",
+              "Jojo"
+            ]
+          },
+          {
+            "text": "Marc-Vivien Foé",
+            "difficulty": 1,
+            "forbidden": [
+              "milieu",
+              "2003",
+              "Lyon"
+            ]
+          },
+          {
+            "text": "Geremi Njitap",
+            "difficulty": 2,
+            "forbidden": [
+              "Real Madrid",
+              "Chelsea",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Lauren Etame",
+            "difficulty": 3,
+            "forbidden": [
+              "Arsenal",
+              "Invincibles",
+              "latéral"
+            ]
+          },
+          {
+            "text": "Alex Song",
+            "difficulty": 2,
+            "forbidden": [
+              "Arsenal",
+              "Barcelone",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Stéphane Mbia",
+            "difficulty": 2,
+            "forbidden": [
+              "Marseille",
+              "Séville",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Benoît Assou-Ekotto",
+            "difficulty": 2,
+            "forbidden": [
+              "Tottenham",
+              "latéral",
+              "Lens"
+            ]
+          },
+          {
+            "text": "Vincent Aboubakar",
+            "difficulty": 1,
+            "forbidden": [
+              "Porto",
+              "finale 2017",
+              "buteur"
+            ]
+          },
+          {
+            "text": "André Onana",
+            "difficulty": 1,
+            "forbidden": [
+              "gardien",
+              "Ajax",
+              "Manchester United"
+            ]
+          },
+          {
+            "text": "Eric Maxim Choupo-Moting",
+            "difficulty": 1,
+            "forbidden": [
+              "Bayern",
+              "attaquant",
+              "Paris"
+            ]
+          },
+          {
+            "text": "Karl Toko Ekambi",
+            "difficulty": 2,
+            "forbidden": [
+              "Lyon",
+              "attaquant",
+              "Angers"
+            ]
+          },
+          {
+            "text": "Bryan Mbeumo",
+            "difficulty": 2,
+            "forbidden": [
+              "Brentford",
+              "attaquant",
+              "Troyes"
+            ]
+          },
+          {
+            "text": "Carlos Kameni",
+            "difficulty": 2,
+            "forbidden": [
+              "gardien",
+              "Sydney 2000",
+              "Espanyol"
+            ]
+          },
+          {
+            "text": "Pierre Webó",
+            "difficulty": 3,
+            "forbidden": [
+              "attaquant",
+              "Majorque",
+              "Fenerbahçe"
+            ]
+          },
+          {
+            "text": "Achille Emana",
+            "difficulty": 3,
+            "forbidden": [
+              "Toulouse",
+              "Betis",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Jean Makoun",
+            "difficulty": 2,
+            "forbidden": [
+              "Lyon",
+              "Lille",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Nicolas Nkoulou",
+            "difficulty": 2,
+            "forbidden": [
+              "défenseur",
+              "Marseille",
+              "Torino"
+            ]
+          },
+          {
+            "text": "Joël Matip",
+            "difficulty": 1,
+            "forbidden": [
+              "Liverpool",
+              "défenseur",
+              "Schalke"
+            ]
+          },
+          {
+            "text": "Benjamin Moukandjo",
+            "difficulty": 2,
+            "forbidden": [
+              "capitaine",
+              "2017",
+              "Lorient"
+            ]
+          },
+          {
+            "text": "Michael Ngadeu",
+            "difficulty": 3,
+            "forbidden": [
+              "défenseur",
+              "Gand",
+              "2017"
+            ]
+          },
+          {
+            "text": "Jean-Pierre Nsame",
+            "difficulty": 3,
+            "forbidden": [
+              "Young Boys",
+              "buteur",
+              "Suisse"
+            ]
+          },
+          {
+            "text": "Collins Fai",
+            "difficulty": 3,
+            "forbidden": [
+              "latéral",
+              "Standard",
+              "2017"
+            ]
+          },
+          {
+            "text": "André-Frank Zambo Anguissa",
+            "difficulty": 1,
+            "forbidden": [
+              "Naples",
+              "Fulham",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Christian Bassogog",
+            "difficulty": 2,
+            "forbidden": [
+              "2017",
+              "meilleur joueur",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Fabrice Ondoa",
+            "difficulty": 3,
+            "forbidden": [
+              "gardien",
+              "2017",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Ambroise Oyongo",
+            "difficulty": 3,
+            "forbidden": [
+              "latéral",
+              "Montpellier",
+              "2017"
+            ]
+          },
+          {
+            "text": "Nicolas Moumi Ngamaleu",
+            "difficulty": 3,
+            "forbidden": [
+              "ailier",
+              "Young Boys",
+              "Coupe du monde 2022"
+            ]
+          },
+          {
+            "text": "Olivier Ntcham",
+            "difficulty": 3,
+            "forbidden": [
+              "milieu",
+              "Celtic",
+              "Marseille"
+            ]
+          },
+          {
+            "text": "Jean-Charles Castelletto",
+            "difficulty": 3,
+            "forbidden": [
+              "défenseur",
+              "Nantes",
+              "Brest"
+            ]
+          },
+          {
+            "text": "Georges Mandjeck",
+            "difficulty": 3,
+            "forbidden": [
+              "milieu",
+              "2017",
+              "Metz"
+            ]
+          },
+          {
+            "text": "Landry N'Guémo",
+            "difficulty": 3,
+            "forbidden": [
+              "milieu",
+              "Bordeaux",
+              "Nancy"
+            ]
+          },
+          {
+            "text": "François Omam-Biyik",
+            "difficulty": 1,
+            "forbidden": [
+              "1990",
+              "tête",
+              "Argentine"
+            ]
+          },
+          {
+            "text": "Emmanuel Kundé",
+            "difficulty": 2,
+            "forbidden": [
+              "1990",
+              "penalty",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Théophile Abega",
+            "difficulty": 2,
+            "forbidden": [
+              "capitaine",
+              "1984",
+              "Canon"
+            ]
+          },
+          {
+            "text": "Jacques Songo'o",
+            "difficulty": 2,
+            "forbidden": [
+              "gardien",
+              "La Corogne",
+              "1994"
+            ]
+          },
+          {
+            "text": "Stephen Tataw",
+            "difficulty": 3,
+            "forbidden": [
+              "capitaine",
+              "1990",
+              "Tonnerre"
+            ]
+          },
+          {
+            "text": "Cyrille Makanaky",
+            "difficulty": 3,
+            "forbidden": [
+              "1990",
+              "attaquant",
+              "Toulon"
+            ]
+          },
+          {
+            "text": "Louis-Paul Mfédé",
+            "difficulty": 3,
+            "forbidden": [
+              "1990",
+              "Canon",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Bertin Ebwellé",
+            "difficulty": 3,
+            "forbidden": [
+              "1990",
+              "milieu",
+              "Tonnerre"
+            ]
+          },
+          {
+            "text": "Benjamin Massing",
+            "difficulty": 3,
+            "forbidden": [
+              "1990",
+              "défenseur",
+              "Caniggia"
+            ]
+          },
+          {
+            "text": "André Kana-Biyik",
+            "difficulty": 3,
+            "forbidden": [
+              "1990",
+              "carton rouge",
+              "défenseur"
+            ]
+          },
+          {
+            "text": "Raymond Kalla",
+            "difficulty": 3,
+            "forbidden": [
+              "défenseur",
+              "Sydney",
+              "Bochum"
+            ]
+          },
+          {
+            "text": "Pierre Womé",
+            "difficulty": 2,
+            "forbidden": [
+              "penalty",
+              "Égypte",
+              "latéral"
+            ]
+          },
+          {
+            "text": "Salomon Olembe",
+            "difficulty": 3,
+            "forbidden": [
+              "Marseille",
+              "milieu",
+              "2000"
+            ]
+          },
+          {
+            "text": "Eric Djemba-Djemba",
+            "difficulty": 2,
+            "forbidden": [
+              "Manchester United",
+              "milieu",
+              "Nantes"
+            ]
+          },
+          {
+            "text": "Timothée Atouba",
+            "difficulty": 3,
+            "forbidden": [
+              "latéral",
+              "Tottenham",
+              "Hambourg"
+            ]
+          },
+          {
+            "text": "Henri Bedimo",
+            "difficulty": 3,
+            "forbidden": [
+              "latéral",
+              "Marseille",
+              "Lyon"
+            ]
+          },
+          {
+            "text": "Aurélien Chedjou",
+            "difficulty": 3,
+            "forbidden": [
+              "défenseur",
+              "Lille",
+              "Galatasaray"
+            ]
+          },
+          {
+            "text": "Sébastien Bassong",
+            "difficulty": 3,
+            "forbidden": [
+              "défenseur",
+              "Tottenham",
+              "Metz"
+            ]
+          },
+          {
+            "text": "Allan Nyom",
+            "difficulty": 3,
+            "forbidden": [
+              "latéral",
+              "Watford",
+              "Grenade"
+            ]
+          },
+          {
+            "text": "Edgar Salli",
+            "difficulty": 3,
+            "forbidden": [
+              "ailier",
+              "Monaco",
+              "Lens"
+            ]
+          },
+          {
+            "text": "Clinton N'Jie",
+            "difficulty": 2,
+            "forbidden": [
+              "Tottenham",
+              "Lyon",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Fabrice Olinga",
+            "difficulty": 3,
+            "forbidden": [
+              "Malaga",
+              "plus jeune buteur",
+              "attaquant"
+            ]
+          },
+          {
+            "text": "Stéphane Bahoken",
+            "difficulty": 3,
+            "forbidden": [
+              "attaquant",
+              "Angers",
+              "Strasbourg"
+            ]
+          },
+          {
+            "text": "Gaëtan Bong",
+            "difficulty": 3,
+            "forbidden": [
+              "latéral",
+              "Brighton",
+              "Valenciennes"
+            ]
+          },
+          {
+            "text": "Jacques Zoua",
+            "difficulty": 3,
+            "forbidden": [
+              "attaquant",
+              "Bâle",
+              "Hambourg"
+            ]
+          },
+          {
+            "text": "Joseph-Désiré Job",
+            "difficulty": 3,
+            "forbidden": [
+              "Lens",
+              "attaquant",
+              "Middlesbrough"
+            ]
+          },
+          {
+            "text": "Modeste Mbami",
+            "difficulty": 3,
+            "forbidden": [
+              "Paris",
+              "Marseille",
+              "milieu"
+            ]
+          },
+          {
+            "text": "Lucien Mettomo",
+            "difficulty": 3,
+            "forbidden": [
+              "défenseur",
+              "Saint-Étienne",
+              "Manchester City"
+            ]
+          },
+          {
+            "text": "Patrick Suffo",
+            "difficulty": 3,
+            "forbidden": [
+              "attaquant",
+              "Sydney",
+              "Nantes"
+            ]
+          },
+          {
+            "text": "Arnaud Djoum",
+            "difficulty": 3,
+            "forbidden": [
+              "milieu",
+              "Hearts",
+              "2017"
+            ]
+          },
+          {
+            "text": "Sébastien Siani",
+            "difficulty": 3,
+            "forbidden": [
+              "milieu",
+              "Ostende",
+              "2017"
+            ]
+          },
+          {
+            "text": "Ignatius Ganago",
+            "difficulty": 3,
+            "forbidden": [
+              "attaquant",
+              "Lens",
+              "Nantes"
+            ]
+          },
+          {
+            "text": "Georges-Kévin Nkoudou",
+            "difficulty": 3,
+            "forbidden": [
+              "ailier",
+              "Tottenham",
+              "Marseille"
+            ]
+          },
+          {
+            "text": "Idrissou Mohammadou",
+            "difficulty": 3,
+            "forbidden": [
+              "attaquant",
+              "Allemagne",
+              "Fribourg"
+            ]
+          },
+          {
+            "text": "Gaëlle Enganamouit",
+            "difficulty": 2,
+            "forbidden": [
+              "Lionnes",
+              "attaquante",
+              "2015"
+            ]
+          },
+          {
+            "text": "Gabrielle Onguéné",
+            "difficulty": 2,
+            "forbidden": [
+              "Lionnes",
+              "attaquante",
+              "CSKA Moscou"
+            ]
+          },
+          {
+            "text": "Ajara Nchout",
+            "difficulty": 2,
+            "forbidden": [
+              "Lionnes",
+              "but",
+              "2019"
+            ]
+          },
+          {
+            "text": "Christine Manie",
+            "difficulty": 2,
+            "forbidden": [
+              "Lionnes",
+              "capitaine",
+              "défenseure"
+            ]
+          },
+          {
+            "text": "Madeleine Ngono Mani",
+            "difficulty": 2,
+            "forbidden": [
+              "Lionnes",
+              "attaquante",
+              "Guingamp"
+            ]
+          },
+          {
+            "text": "Raissa Feudjio",
+            "difficulty": 3,
+            "forbidden": [
+              "Lionnes",
+              "milieu",
+              "Coupe du monde"
+            ]
+          },
+          {
+            "text": "Annette Ngo Ndom",
+            "difficulty": 2,
+            "forbidden": [
+              "Lionnes",
+              "gardienne",
+              "2015"
+            ]
+          },
+          {
+            "text": "Yvonne Leuko",
+            "difficulty": 3,
+            "forbidden": [
+              "Lionnes",
+              "défenseure",
+              "latérale"
+            ]
+          },
+          {
+            "text": "Augustine Ejangue",
+            "difficulty": 3,
+            "forbidden": [
+              "Lionnes",
+              "défenseure",
+              "2015"
+            ]
+          },
+          {
+            "text": "Estelle Johnson",
+            "difficulty": 3,
+            "forbidden": [
+              "Lionnes",
+              "défenseure",
+              "États-Unis"
+            ]
+          },
+          {
+            "text": "Claudine Meffometou",
+            "difficulty": 3,
+            "forbidden": [
+              "Lionnes",
+              "défenseure",
+              "2019"
+            ]
+          },
+          {
+            "text": "Lions Indomptables",
+            "difficulty": 1,
+            "forbidden": [
+              "équipe nationale",
+              "football",
+              "vert-rouge-jaune"
+            ]
+          },
+          {
+            "text": "Lionnes Indomptables",
+            "difficulty": 1,
+            "forbidden": [
+              "équipe nationale",
+              "football",
+              "femmes"
+            ]
+          },
+          {
+            "text": "FECAFOOT",
+            "difficulty": 2,
+            "forbidden": [
+              "fédération",
+              "football",
+              "Yaoundé"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

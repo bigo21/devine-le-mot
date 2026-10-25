@@ -1,0 +1,646 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-artistes",
+    "name": {
+      "fr": "Artistes camerounais",
+      "en": "Cameroonian artists"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "artistes",
+        "name": {
+          "fr": "Artistes camerounais",
+          "en": "Cameroonian artists"
+        },
+        "emoji": "🎤",
+        "color": "orchid",
+        "tags": [
+          "personnalites",
+          "musique"
+        ],
+        "words": [
+          {
+            "text": "Manu Dibango",
+            "difficulty": 1,
+            "forbidden": [
+              "saxophone",
+              "Soul Makossa",
+              "Papa Groove"
+            ]
+          },
+          {
+            "text": "Richard Bona",
+            "difficulty": 1,
+            "forbidden": [
+              "basse",
+              "jazz",
+              "voix"
+            ]
+          },
+          {
+            "text": "Petit Pays",
+            "difficulty": 1,
+            "forbidden": [
+              "makossa",
+              "Douala",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Charlotte Dipanda",
+            "difficulty": 1,
+            "forbidden": [
+              "chanteuse",
+              "voix",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Locko",
+            "difficulty": 1,
+            "forbidden": [
+              "Margot",
+              "chanteur",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Tenor",
+            "difficulty": 1,
+            "forbidden": [
+              "rappeur",
+              "Do le dab",
+              "danse"
+            ]
+          },
+          {
+            "text": "Stanley Enow",
+            "difficulty": 1,
+            "forbidden": [
+              "rappeur",
+              "Hein Père",
+              "anglophone"
+            ]
+          },
+          {
+            "text": "Mr Leo",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteur",
+              "afropop",
+              "voix"
+            ]
+          },
+          {
+            "text": "Daphné",
+            "difficulty": 1,
+            "forbidden": [
+              "chanteuse",
+              "Calée",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Ko-C",
+            "difficulty": 1,
+            "forbidden": [
+              "rappeur",
+              "Bobo",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Salatiel",
+            "difficulty": 1,
+            "forbidden": [
+              "producteur",
+              "Beyoncé",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Magasco",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteur",
+              "afropop",
+              "anglophone"
+            ]
+          },
+          {
+            "text": "Blanche Bailly",
+            "difficulty": 1,
+            "forbidden": [
+              "chanteuse",
+              "afropop",
+              "Bafang"
+            ]
+          },
+          {
+            "text": "Franko",
+            "difficulty": 1,
+            "forbidden": [
+              "Coller la petite",
+              "chanteur",
+              "danse"
+            ]
+          },
+          {
+            "text": "Lady Ponce",
+            "difficulty": 1,
+            "forbidden": [
+              "bikutsi",
+              "chanteuse",
+              "reine"
+            ]
+          },
+          {
+            "text": "Coco Argentée",
+            "difficulty": 1,
+            "forbidden": [
+              "bikutsi",
+              "chanteuse",
+              "scène"
+            ]
+          },
+          {
+            "text": "Ben Decca",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "Grace",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Grace Decca",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "chanteuse",
+              "Ben"
+            ]
+          },
+          {
+            "text": "Sam Fan Thomas",
+            "difficulty": 2,
+            "forbidden": [
+              "makassi",
+              "African Typic Collection",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Les Têtes Brûlées",
+            "difficulty": 2,
+            "forbidden": [
+              "bikutsi",
+              "groupe",
+              "crânes peints"
+            ]
+          },
+          {
+            "text": "Anne-Marie Nzié",
+            "difficulty": 2,
+            "forbidden": [
+              "bikutsi",
+              "reine",
+              "voix"
+            ]
+          },
+          {
+            "text": "Sally Nyolo",
+            "difficulty": 3,
+            "forbidden": [
+              "Zap Mama",
+              "chanteuse",
+              "Tribu"
+            ]
+          },
+          {
+            "text": "Longuè Longuè",
+            "difficulty": 1,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Mani Bella",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "Pala Pala",
+              "afropop"
+            ]
+          },
+          {
+            "text": "K-Tino",
+            "difficulty": 1,
+            "forbidden": [
+              "bikutsi",
+              "chanteuse",
+              "danse"
+            ]
+          },
+          {
+            "text": "Reniss",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "afropop",
+              "voix"
+            ]
+          },
+          {
+            "text": "Krotal",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "pionnier",
+              "hip-hop"
+            ]
+          },
+          {
+            "text": "Jovi",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "Le Monstre",
+              "New Bell"
+            ]
+          },
+          {
+            "text": "Maahlox le Vibeur",
+            "difficulty": 1,
+            "forbidden": [
+              "Ça sort comme ça sort",
+              "chanteur",
+              "délire"
+            ]
+          },
+          {
+            "text": "Valsero",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "engagé",
+              "Lettre au président"
+            ]
+          },
+          {
+            "text": "X-Maleya",
+            "difficulty": 1,
+            "forbidden": [
+              "groupe",
+              "trio",
+              "Yelele"
+            ]
+          },
+          {
+            "text": "Prince Eyango",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "années 80"
+            ]
+          },
+          {
+            "text": "Lapiro de Mbanga",
+            "difficulty": 2,
+            "forbidden": [
+              "Ndinga Man",
+              "engagé",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Eboa Lotin",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "guitare",
+              "pionnier"
+            ]
+          },
+          {
+            "text": "Francis Bebey",
+            "difficulty": 2,
+            "forbidden": [
+              "guitare",
+              "écrivain",
+              "musicien"
+            ]
+          },
+          {
+            "text": "André-Marie Talla",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteur",
+              "aveugle",
+              "bend skin"
+            ]
+          },
+          {
+            "text": "Ekambi Brillant",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Dina Bell",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "années 80"
+            ]
+          },
+          {
+            "text": "Messi Martin",
+            "difficulty": 2,
+            "forbidden": [
+              "bikutsi",
+              "guitare",
+              "pionnier"
+            ]
+          },
+          {
+            "text": "Zanzibar",
+            "difficulty": 3,
+            "forbidden": [
+              "Têtes Brûlées",
+              "guitariste",
+              "bikutsi"
+            ]
+          },
+          {
+            "text": "Nkotti François",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "compositeur",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Toto Guillaume",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "guitariste",
+              "arrangeur"
+            ]
+          },
+          {
+            "text": "Henri Dikongué",
+            "difficulty": 3,
+            "forbidden": [
+              "guitare",
+              "chanteur",
+              "Paris"
+            ]
+          },
+          {
+            "text": "Blick Bassy",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "bassa",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Sanzy Viany",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "afropop",
+              "voix"
+            ]
+          },
+          {
+            "text": "Wizboy",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteur",
+              "jeune",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Pit Baccardi",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "France",
+              "Première Classe"
+            ]
+          },
+          {
+            "text": "Tzy Panchak",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "jeune",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Ottou Marcellin",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "années 80"
+            ]
+          },
+          {
+            "text": "Mbarga Soukous",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "danse"
+            ]
+          },
+          {
+            "text": "Majoie Ayi",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "bikutsi",
+              "danse"
+            ]
+          },
+          {
+            "text": "Sergeo Polo",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Saint Désiré Atango",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "Yaoundé"
+            ]
+          },
+          {
+            "text": "Mama Ohandja",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteuse",
+              "reine"
+            ]
+          },
+          {
+            "text": "Chantal Ayissi",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteuse",
+              "danse"
+            ]
+          },
+          {
+            "text": "Nkodo Si-Tony",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "années 90"
+            ]
+          },
+          {
+            "text": "Annie Anzouer",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "afropop",
+              "tube"
+            ]
+          },
+          {
+            "text": "Kareyce Fotso",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "guitare",
+              "Ouest"
+            ]
+          },
+          {
+            "text": "Irma",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "I Know",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Yannick Noah",
+            "difficulty": 1,
+            "forbidden": [
+              "tennis",
+              "Roland-Garros",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Lydol",
+            "difficulty": 3,
+            "forbidden": [
+              "slameuse",
+              "Yaoundé",
+              "poésie"
+            ]
+          },
+          {
+            "text": "Elvis Kemayo",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "années 70",
+              "producteur"
+            ]
+          },
+          {
+            "text": "Bebe Manga",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "Amie",
+              "makossa"
+            ]
+          },
+          {
+            "text": "Wax Dey",
+            "difficulty": 3,
+            "forbidden": [
+              "rappeur",
+              "anglophone",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Michael Kiessou",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "afropop",
+              "danse"
+            ]
+          },
+          {
+            "text": "Rinyu",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "anglophone",
+              "afropop"
+            ]
+          },
+          {
+            "text": "Gasha",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "jeune",
+              "afropop"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}
