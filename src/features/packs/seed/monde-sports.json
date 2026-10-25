@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "sports",
@@ -20,127 +20,1098 @@
         },
         "emoji": "🏅",
         "color": "indigo",
-        "tags": ["universel"],
+        "tags": [
+          "universel"
+        ],
         "words": [
           {
             "text": "Football",
             "difficulty": 1,
-            "forbidden": ["ballon", "but", "pied"]
+            "forbidden": [
+              "ballon",
+              "but",
+              "pied"
+            ]
           },
           {
             "text": "Basketball",
             "difficulty": 1,
-            "forbidden": ["panier", "ballon", "NBA"]
+            "forbidden": [
+              "panier",
+              "ballon",
+              "NBA"
+            ]
           },
           {
             "text": "Handball",
             "difficulty": 2,
-            "forbidden": ["main", "but", "ballon"]
+            "forbidden": [
+              "main",
+              "but",
+              "ballon"
+            ]
           },
           {
             "text": "Volleyball",
             "difficulty": 1,
-            "forbidden": ["filet", "smash", "plage"]
+            "forbidden": [
+              "filet",
+              "smash",
+              "plage"
+            ]
           },
           {
             "text": "Tennis",
             "difficulty": 1,
-            "forbidden": ["raquette", "balle", "filet"]
+            "forbidden": [
+              "raquette",
+              "balle",
+              "filet"
+            ]
           },
           {
             "text": "Boxe",
             "difficulty": 1,
-            "forbidden": ["gants", "ring", "poings"]
+            "forbidden": [
+              "gants",
+              "ring",
+              "poings"
+            ]
           },
           {
             "text": "Natation",
             "difficulty": 1,
-            "forbidden": ["piscine", "nager", "eau"]
+            "forbidden": [
+              "piscine",
+              "nager",
+              "eau"
+            ]
           },
           {
             "text": "Cyclisme",
             "difficulty": 1,
-            "forbidden": ["vélo", "pédaler", "Tour de France"]
+            "forbidden": [
+              "vélo",
+              "pédaler",
+              "Tour de France"
+            ]
           },
           {
             "text": "Lutte",
             "difficulty": 2,
-            "forbidden": ["combat", "sol", "prise"]
+            "forbidden": [
+              "combat",
+              "sol",
+              "prise"
+            ]
           },
           {
             "text": "Judo",
             "difficulty": 2,
-            "forbidden": ["kimono", "ceinture", "Japon"]
+            "forbidden": [
+              "kimono",
+              "ceinture",
+              "Japon"
+            ]
           },
           {
             "text": "Marathon",
             "difficulty": 1,
-            "forbidden": ["courir", "kilomètres", "endurance"]
+            "forbidden": [
+              "courir",
+              "kilomètres",
+              "endurance"
+            ]
           },
           {
             "text": "Saut en hauteur",
             "difficulty": 2,
-            "forbidden": ["barre", "sauter", "matelas"]
+            "forbidden": [
+              "barre",
+              "sauter",
+              "matelas"
+            ]
           },
           {
             "text": "Lancer de javelot",
             "difficulty": 2,
-            "forbidden": ["lance", "bras", "distance"]
+            "forbidden": [
+              "lance",
+              "bras",
+              "distance"
+            ]
           },
           {
             "text": "Rugby",
             "difficulty": 1,
-            "forbidden": ["ballon ovale", "mêlée", "essai"]
+            "forbidden": [
+              "ballon ovale",
+              "mêlée",
+              "essai"
+            ]
           },
           {
             "text": "Ping-pong",
             "difficulty": 1,
-            "forbidden": ["raquette", "table", "balle"]
+            "forbidden": [
+              "raquette",
+              "table",
+              "balle"
+            ]
           },
           {
             "text": "Course de relais",
             "difficulty": 2,
-            "forbidden": ["témoin", "équipe", "piste"]
+            "forbidden": [
+              "témoin",
+              "équipe",
+              "piste"
+            ]
           },
           {
             "text": "Haltérophilie",
             "difficulty": 3,
-            "forbidden": ["poids", "soulever", "barre"]
+            "forbidden": [
+              "poids",
+              "soulever",
+              "barre"
+            ]
           },
           {
             "text": "Golf",
             "difficulty": 1,
-            "forbidden": ["trou", "club", "green"]
+            "forbidden": [
+              "trou",
+              "club",
+              "green"
+            ]
           },
           {
             "text": "Ski",
             "difficulty": 1,
-            "forbidden": ["neige", "montagne", "glisser"]
+            "forbidden": [
+              "neige",
+              "montagne",
+              "glisser"
+            ]
           },
           {
             "text": "Karaté",
             "difficulty": 1,
-            "forbidden": ["kimono", "coup de pied", "ceinture"]
+            "forbidden": [
+              "kimono",
+              "coup de pied",
+              "ceinture"
+            ]
           },
           {
             "text": "Skateboard",
             "difficulty": 2,
-            "forbidden": ["planche", "roues", "figure"]
+            "forbidden": [
+              "planche",
+              "roues",
+              "figure"
+            ]
           },
           {
             "text": "Baseball",
             "difficulty": 2,
-            "forbidden": ["batte", "balle", "Amérique"]
+            "forbidden": [
+              "batte",
+              "balle",
+              "Amérique"
+            ]
           },
           {
             "text": "Escalade",
             "difficulty": 2,
-            "forbidden": ["grimper", "mur", "corde"]
+            "forbidden": [
+              "grimper",
+              "mur",
+              "corde"
+            ]
           },
           {
             "text": "Aviron",
             "difficulty": 3,
-            "forbidden": ["rames", "bateau", "ramer"]
+            "forbidden": [
+              "rames",
+              "bateau",
+              "ramer"
+            ]
+          },
+          {
+            "text": "Athlétisme",
+            "difficulty": 2,
+            "forbidden": [
+              "course",
+              "stade",
+              "piste"
+            ]
+          },
+          {
+            "text": "Sprint",
+            "difficulty": 1,
+            "forbidden": [
+              "courir",
+              "vite",
+              "100 mètres"
+            ]
+          },
+          {
+            "text": "Saut en longueur",
+            "difficulty": 2,
+            "forbidden": [
+              "sable",
+              "sauter",
+              "élan"
+            ]
+          },
+          {
+            "text": "Triple saut",
+            "difficulty": 3,
+            "forbidden": [
+              "trois",
+              "sauter",
+              "sable"
+            ]
+          },
+          {
+            "text": "Lancer du poids",
+            "difficulty": 2,
+            "forbidden": [
+              "boule",
+              "force",
+              "bras"
+            ]
+          },
+          {
+            "text": "Lancer du disque",
+            "difficulty": 2,
+            "forbidden": [
+              "tourner",
+              "bras",
+              "plat"
+            ]
+          },
+          {
+            "text": "Saut à la perche",
+            "difficulty": 2,
+            "forbidden": [
+              "barre",
+              "sauter",
+              "bâton"
+            ]
+          },
+          {
+            "text": "Course de haies",
+            "difficulty": 2,
+            "forbidden": [
+              "barrières",
+              "courir",
+              "sauter"
+            ]
+          },
+          {
+            "text": "Décathlon",
+            "difficulty": 3,
+            "forbidden": [
+              "dix",
+              "épreuves",
+              "athlétisme"
+            ]
+          },
+          {
+            "text": "Gymnastique",
+            "difficulty": 1,
+            "forbidden": [
+              "souplesse",
+              "agrès",
+              "salto"
+            ]
+          },
+          {
+            "text": "Trampoline",
+            "difficulty": 1,
+            "forbidden": [
+              "sauter",
+              "rebondir",
+              "toile"
+            ]
+          },
+          {
+            "text": "Danse",
+            "difficulty": 1,
+            "forbidden": [
+              "musique",
+              "bouger",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Aérobic",
+            "difficulty": 2,
+            "forbidden": [
+              "musique",
+              "exercices",
+              "salle"
+            ]
+          },
+          {
+            "text": "Yoga",
+            "difficulty": 1,
+            "forbidden": [
+              "méditation",
+              "posture",
+              "souplesse"
+            ]
+          },
+          {
+            "text": "Musculation",
+            "difficulty": 1,
+            "forbidden": [
+              "poids",
+              "muscles",
+              "salle"
+            ]
+          },
+          {
+            "text": "Pompes",
+            "difficulty": 1,
+            "forbidden": [
+              "bras",
+              "sol",
+              "exercice"
+            ]
+          },
+          {
+            "text": "Abdominaux",
+            "difficulty": 2,
+            "forbidden": [
+              "ventre",
+              "exercice",
+              "muscles"
+            ]
+          },
+          {
+            "text": "Jogging",
+            "difficulty": 1,
+            "forbidden": [
+              "courir",
+              "matin",
+              "footing"
+            ]
+          },
+          {
+            "text": "Randonnée",
+            "difficulty": 1,
+            "forbidden": [
+              "marcher",
+              "montagne",
+              "sentier"
+            ]
+          },
+          {
+            "text": "Natation synchronisée",
+            "difficulty": 3,
+            "forbidden": [
+              "piscine",
+              "ensemble",
+              "musique"
+            ]
+          },
+          {
+            "text": "Plongeon",
+            "difficulty": 2,
+            "forbidden": [
+              "piscine",
+              "sauter",
+              "tremplin"
+            ]
+          },
+          {
+            "text": "Water-polo",
+            "difficulty": 3,
+            "forbidden": [
+              "piscine",
+              "ballon",
+              "buts"
+            ]
+          },
+          {
+            "text": "Surf",
+            "difficulty": 1,
+            "forbidden": [
+              "vagues",
+              "planche",
+              "mer"
+            ]
+          },
+          {
+            "text": "Planche à voile",
+            "difficulty": 2,
+            "forbidden": [
+              "vent",
+              "mer",
+              "surf"
+            ]
+          },
+          {
+            "text": "Kitesurf",
+            "difficulty": 3,
+            "forbidden": [
+              "cerf-volant",
+              "vent",
+              "mer"
+            ]
+          },
+          {
+            "text": "Canoë",
+            "difficulty": 2,
+            "forbidden": [
+              "pagaie",
+              "rivière",
+              "bateau"
+            ]
+          },
+          {
+            "text": "Voile",
+            "difficulty": 2,
+            "forbidden": [
+              "bateau",
+              "vent",
+              "mer"
+            ]
+          },
+          {
+            "text": "Patinage",
+            "difficulty": 2,
+            "forbidden": [
+              "glace",
+              "patins",
+              "glisser"
+            ]
+          },
+          {
+            "text": "Hockey sur glace",
+            "difficulty": 2,
+            "forbidden": [
+              "crosse",
+              "palet",
+              "patins"
+            ]
+          },
+          {
+            "text": "Snowboard",
+            "difficulty": 2,
+            "forbidden": [
+              "neige",
+              "planche",
+              "glisser"
+            ]
+          },
+          {
+            "text": "Luge",
+            "difficulty": 2,
+            "forbidden": [
+              "neige",
+              "glisser",
+              "descendre"
+            ]
+          },
+          {
+            "text": "Curling",
+            "difficulty": 3,
+            "forbidden": [
+              "glace",
+              "pierre",
+              "balai"
+            ]
+          },
+          {
+            "text": "Escrime",
+            "difficulty": 2,
+            "forbidden": [
+              "épée",
+              "masque",
+              "touche"
+            ]
+          },
+          {
+            "text": "Tir à l'arc",
+            "difficulty": 2,
+            "forbidden": [
+              "flèche",
+              "cible",
+              "viser"
+            ]
+          },
+          {
+            "text": "Équitation",
+            "difficulty": 1,
+            "forbidden": [
+              "cheval",
+              "cavalier",
+              "galop"
+            ]
+          },
+          {
+            "text": "Course hippique",
+            "difficulty": 2,
+            "forbidden": [
+              "chevaux",
+              "jockey",
+              "paris"
+            ]
+          },
+          {
+            "text": "Formule 1",
+            "difficulty": 1,
+            "forbidden": [
+              "voiture",
+              "circuit",
+              "pilote"
+            ]
+          },
+          {
+            "text": "Rallye",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "piste",
+              "copilote"
+            ]
+          },
+          {
+            "text": "Motocross",
+            "difficulty": 2,
+            "forbidden": [
+              "moto",
+              "boue",
+              "sauts"
+            ]
+          },
+          {
+            "text": "Karting",
+            "difficulty": 2,
+            "forbidden": [
+              "petite voiture",
+              "circuit",
+              "piste"
+            ]
+          },
+          {
+            "text": "VTT",
+            "difficulty": 2,
+            "forbidden": [
+              "vélo",
+              "montagne",
+              "chemin"
+            ]
+          },
+          {
+            "text": "BMX",
+            "difficulty": 2,
+            "forbidden": [
+              "vélo",
+              "figures",
+              "sauts"
+            ]
+          },
+          {
+            "text": "Roller",
+            "difficulty": 1,
+            "forbidden": [
+              "patins",
+              "roues",
+              "glisser"
+            ]
+          },
+          {
+            "text": "Badminton",
+            "difficulty": 1,
+            "forbidden": [
+              "volant",
+              "raquette",
+              "filet"
+            ]
+          },
+          {
+            "text": "Squash",
+            "difficulty": 3,
+            "forbidden": [
+              "mur",
+              "raquette",
+              "balle"
+            ]
+          },
+          {
+            "text": "Pétanque",
+            "difficulty": 1,
+            "forbidden": [
+              "boules",
+              "cochonnet",
+              "lancer"
+            ]
+          },
+          {
+            "text": "Bowling",
+            "difficulty": 1,
+            "forbidden": [
+              "quilles",
+              "boule",
+              "strike"
+            ]
+          },
+          {
+            "text": "Billard",
+            "difficulty": 1,
+            "forbidden": [
+              "queue",
+              "boules",
+              "table"
+            ]
+          },
+          {
+            "text": "Fléchettes",
+            "difficulty": 2,
+            "forbidden": [
+              "cible",
+              "lancer",
+              "bar"
+            ]
+          },
+          {
+            "text": "Échecs",
+            "difficulty": 1,
+            "forbidden": [
+              "roi",
+              "reine",
+              "échiquier"
+            ]
+          },
+          {
+            "text": "Jeu de dames",
+            "difficulty": 1,
+            "forbidden": [
+              "pions",
+              "damier",
+              "plateau"
+            ]
+          },
+          {
+            "text": "Songo",
+            "difficulty": 2,
+            "forbidden": [
+              "graines",
+              "trous",
+              "plateau"
+            ]
+          },
+          {
+            "text": "Sumo",
+            "difficulty": 2,
+            "forbidden": [
+              "Japon",
+              "gros",
+              "lutteurs"
+            ]
+          },
+          {
+            "text": "Taekwondo",
+            "difficulty": 2,
+            "forbidden": [
+              "coup de pied",
+              "Corée",
+              "ceinture"
+            ]
+          },
+          {
+            "text": "Kung-fu",
+            "difficulty": 1,
+            "forbidden": [
+              "Chine",
+              "arts martiaux",
+              "Bruce Lee"
+            ]
+          },
+          {
+            "text": "Capoeira",
+            "difficulty": 3,
+            "forbidden": [
+              "Brésil",
+              "danse",
+              "combat"
+            ]
+          },
+          {
+            "text": "Kick-boxing",
+            "difficulty": 2,
+            "forbidden": [
+              "pieds",
+              "poings",
+              "ring"
+            ]
+          },
+          {
+            "text": "MMA",
+            "difficulty": 2,
+            "forbidden": [
+              "cage",
+              "combat",
+              "UFC"
+            ]
+          },
+          {
+            "text": "Catch",
+            "difficulty": 1,
+            "forbidden": [
+              "ring",
+              "combat",
+              "spectacle"
+            ]
+          },
+          {
+            "text": "Football américain",
+            "difficulty": 2,
+            "forbidden": [
+              "casque",
+              "ballon ovale",
+              "touchdown"
+            ]
+          },
+          {
+            "text": "Beach-volley",
+            "difficulty": 2,
+            "forbidden": [
+              "sable",
+              "plage",
+              "filet"
+            ]
+          },
+          {
+            "text": "Futsal",
+            "difficulty": 2,
+            "forbidden": [
+              "salle",
+              "ballon",
+              "petit terrain"
+            ]
+          },
+          {
+            "text": "Penalty",
+            "difficulty": 1,
+            "forbidden": [
+              "tir",
+              "gardien",
+              "but"
+            ]
+          },
+          {
+            "text": "Coup franc",
+            "difficulty": 2,
+            "forbidden": [
+              "mur",
+              "tir",
+              "faute"
+            ]
+          },
+          {
+            "text": "Corner",
+            "difficulty": 2,
+            "forbidden": [
+              "coin",
+              "tir",
+              "terrain"
+            ]
+          },
+          {
+            "text": "Hors-jeu",
+            "difficulty": 2,
+            "forbidden": [
+              "arbitre",
+              "drapeau",
+              "défense"
+            ]
+          },
+          {
+            "text": "Carton rouge",
+            "difficulty": 1,
+            "forbidden": [
+              "arbitre",
+              "exclusion",
+              "faute"
+            ]
+          },
+          {
+            "text": "Gardien de but",
+            "difficulty": 1,
+            "forbidden": [
+              "cages",
+              "arrêter",
+              "gants"
+            ]
+          },
+          {
+            "text": "Arbitre",
+            "difficulty": 1,
+            "forbidden": [
+              "sifflet",
+              "règles",
+              "carton"
+            ]
+          },
+          {
+            "text": "Coupe du monde",
+            "difficulty": 1,
+            "forbidden": [
+              "football",
+              "trophée",
+              "pays"
+            ]
+          },
+          {
+            "text": "Jeux olympiques",
+            "difficulty": 1,
+            "forbidden": [
+              "anneaux",
+              "médailles",
+              "tous les quatre ans"
+            ]
+          },
+          {
+            "text": "Coupe d'Afrique des nations",
+            "difficulty": 1,
+            "forbidden": [
+              "football",
+              "continent",
+              "trophée"
+            ]
+          },
+          {
+            "text": "Ligue des champions",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "clubs",
+              "Europe"
+            ]
+          },
+          {
+            "text": "Médaille d'or",
+            "difficulty": 1,
+            "forbidden": [
+              "premier",
+              "gagnant",
+              "podium"
+            ]
+          },
+          {
+            "text": "Podium",
+            "difficulty": 1,
+            "forbidden": [
+              "marches",
+              "médailles",
+              "premiers"
+            ]
+          },
+          {
+            "text": "Supporter",
+            "difficulty": 1,
+            "forbidden": [
+              "fan",
+              "encourager",
+              "stade"
+            ]
+          },
+          {
+            "text": "Stade",
+            "difficulty": 1,
+            "forbidden": [
+              "match",
+              "tribunes",
+              "terrain"
+            ]
+          },
+          {
+            "text": "Vestiaire",
+            "difficulty": 2,
+            "forbidden": [
+              "joueurs",
+              "se changer",
+              "douches"
+            ]
+          },
+          {
+            "text": "Échauffement",
+            "difficulty": 2,
+            "forbidden": [
+              "avant",
+              "muscles",
+              "préparer"
+            ]
+          },
+          {
+            "text": "Crampe",
+            "difficulty": 2,
+            "forbidden": [
+              "douleur",
+              "muscle",
+              "jambe"
+            ]
+          },
+          {
+            "text": "Mi-temps",
+            "difficulty": 2,
+            "forbidden": [
+              "pause",
+              "match",
+              "quinze minutes"
+            ]
+          },
+          {
+            "text": "Prolongations",
+            "difficulty": 2,
+            "forbidden": [
+              "égalité",
+              "match",
+              "temps supplémentaire"
+            ]
+          },
+          {
+            "text": "Tirs au but",
+            "difficulty": 2,
+            "forbidden": [
+              "penalty",
+              "gardien",
+              "égalité"
+            ]
+          },
+          {
+            "text": "Dribble",
+            "difficulty": 1,
+            "forbidden": [
+              "ballon",
+              "passer",
+              "adversaire"
+            ]
+          },
+          {
+            "text": "Tacle",
+            "difficulty": 2,
+            "forbidden": [
+              "glisser",
+              "ballon",
+              "défense"
+            ]
+          },
+          {
+            "text": "Smash",
+            "difficulty": 2,
+            "forbidden": [
+              "frapper",
+              "fort",
+              "volley"
+            ]
+          },
+          {
+            "text": "Dunk",
+            "difficulty": 2,
+            "forbidden": [
+              "panier",
+              "sauter",
+              "basket"
+            ]
+          },
+          {
+            "text": "Course en sac",
+            "difficulty": 1,
+            "forbidden": [
+              "sauter",
+              "fête",
+              "kermesse"
+            ]
+          },
+          {
+            "text": "Tir à la corde",
+            "difficulty": 1,
+            "forbidden": [
+              "tirer",
+              "équipes",
+              "force"
+            ]
+          },
+          {
+            "text": "Saut à la corde",
+            "difficulty": 1,
+            "forbidden": [
+              "tourner",
+              "sauter",
+              "enfants"
+            ]
+          },
+          {
+            "text": "Marelle",
+            "difficulty": 2,
+            "forbidden": [
+              "cases",
+              "sauter",
+              "craie"
+            ]
+          },
+          {
+            "text": "Cerf-volant",
+            "difficulty": 2,
+            "forbidden": [
+              "vent",
+              "ficelle",
+              "voler"
+            ]
+          },
+          {
+            "text": "Parachutisme",
+            "difficulty": 2,
+            "forbidden": [
+              "avion",
+              "sauter",
+              "ciel"
+            ]
+          },
+          {
+            "text": "Saut à l'élastique",
+            "difficulty": 2,
+            "forbidden": [
+              "pont",
+              "vide",
+              "chute"
+            ]
+          },
+          {
+            "text": "Escalade de glace",
+            "difficulty": 3,
+            "forbidden": [
+              "piolet",
+              "grimper",
+              "cascade gelée"
+            ]
+          },
+          {
+            "text": "Plongée sous-marine",
+            "difficulty": 2,
+            "forbidden": [
+              "bouteille",
+              "poissons",
+              "masque"
+            ]
+          },
+          {
+            "text": "Pêche",
+            "difficulty": 2,
+            "forbidden": [
+              "canne",
+              "poisson",
+              "hameçon"
+            ]
           }
         ]
       }

@@ -1,0 +1,1112 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "monde-fruits-legumes",
+    "name": {
+      "fr": "Fruits et légumes",
+      "en": "Fruits and vegetables"
+    },
+    "region": "world",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "fruits-et-legumes",
+        "name": {
+          "fr": "Fruits et légumes",
+          "en": "Fruits and vegetables"
+        },
+        "emoji": "🥭",
+        "color": "lilac",
+        "tags": [
+          "universel",
+          "cuisine"
+        ],
+        "words": [
+          {
+            "text": "Mangue",
+            "difficulty": 1,
+            "forbidden": [
+              "jaune",
+              "noyau",
+              "sucré"
+            ]
+          },
+          {
+            "text": "Ananas",
+            "difficulty": 1,
+            "forbidden": [
+              "piquant",
+              "couronne",
+              "jaune"
+            ]
+          },
+          {
+            "text": "Banane",
+            "difficulty": 1,
+            "forbidden": [
+              "jaune",
+              "peler",
+              "singe"
+            ]
+          },
+          {
+            "text": "Plantain",
+            "difficulty": 1,
+            "forbidden": [
+              "frit",
+              "banane",
+              "mûr"
+            ]
+          },
+          {
+            "text": "Papaye",
+            "difficulty": 1,
+            "forbidden": [
+              "orange",
+              "graines noires",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Avocat",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "noyau",
+              "guacamole"
+            ]
+          },
+          {
+            "text": "Orange",
+            "difficulty": 1,
+            "forbidden": [
+              "agrume",
+              "jus",
+              "vitamine C"
+            ]
+          },
+          {
+            "text": "Citron",
+            "difficulty": 1,
+            "forbidden": [
+              "acide",
+              "jaune",
+              "jus"
+            ]
+          },
+          {
+            "text": "Pamplemousse",
+            "difficulty": 2,
+            "forbidden": [
+              "agrume",
+              "amer",
+              "rose"
+            ]
+          },
+          {
+            "text": "Mandarine",
+            "difficulty": 1,
+            "forbidden": [
+              "petite",
+              "orange",
+              "éplucher"
+            ]
+          },
+          {
+            "text": "Goyave",
+            "difficulty": 2,
+            "forbidden": [
+              "rose",
+              "graines",
+              "fruit tropical"
+            ]
+          },
+          {
+            "text": "Corossol",
+            "difficulty": 2,
+            "forbidden": [
+              "piquant",
+              "vert",
+              "blanc"
+            ]
+          },
+          {
+            "text": "Fruit de la passion",
+            "difficulty": 2,
+            "forbidden": [
+              "graines",
+              "violet",
+              "acide"
+            ]
+          },
+          {
+            "text": "Noix de coco",
+            "difficulty": 1,
+            "forbidden": [
+              "lait",
+              "dur",
+              "palmier"
+            ]
+          },
+          {
+            "text": "Pastèque",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "pépins",
+              "eau"
+            ]
+          },
+          {
+            "text": "Melon",
+            "difficulty": 1,
+            "forbidden": [
+              "orange",
+              "été",
+              "sucré"
+            ]
+          },
+          {
+            "text": "Pomme",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "croquer",
+              "arbre"
+            ]
+          },
+          {
+            "text": "Poire",
+            "difficulty": 1,
+            "forbidden": [
+              "forme",
+              "vert",
+              "jus"
+            ]
+          },
+          {
+            "text": "Raisin",
+            "difficulty": 1,
+            "forbidden": [
+              "grappe",
+              "vin",
+              "grains"
+            ]
+          },
+          {
+            "text": "Fraise",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "petits grains",
+              "dessert"
+            ]
+          },
+          {
+            "text": "Framboise",
+            "difficulty": 2,
+            "forbidden": [
+              "rouge",
+              "petite",
+              "confiture"
+            ]
+          },
+          {
+            "text": "Myrtille",
+            "difficulty": 2,
+            "forbidden": [
+              "bleue",
+              "petite",
+              "baies"
+            ]
+          },
+          {
+            "text": "Cerise",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "noyau",
+              "paire"
+            ]
+          },
+          {
+            "text": "Abricot",
+            "difficulty": 2,
+            "forbidden": [
+              "orange",
+              "noyau",
+              "été"
+            ]
+          },
+          {
+            "text": "Pêche",
+            "difficulty": 1,
+            "forbidden": [
+              "velours",
+              "noyau",
+              "été"
+            ]
+          },
+          {
+            "text": "Prune",
+            "difficulty": 2,
+            "forbidden": [
+              "violette",
+              "noyau",
+              "pruneau"
+            ]
+          },
+          {
+            "text": "Kiwi",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "poilu",
+              "petit"
+            ]
+          },
+          {
+            "text": "Grenade",
+            "difficulty": 2,
+            "forbidden": [
+              "grains",
+              "rouge",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Figue",
+            "difficulty": 2,
+            "forbidden": [
+              "violette",
+              "sucrée",
+              "grains"
+            ]
+          },
+          {
+            "text": "Datte",
+            "difficulty": 2,
+            "forbidden": [
+              "palmier",
+              "sucrée",
+              "désert"
+            ]
+          },
+          {
+            "text": "Litchi",
+            "difficulty": 2,
+            "forbidden": [
+              "blanc",
+              "noyau",
+              "coque rose"
+            ]
+          },
+          {
+            "text": "Safou",
+            "difficulty": 1,
+            "forbidden": [
+              "violet",
+              "braise",
+              "prune"
+            ]
+          },
+          {
+            "text": "Pomme cannelle",
+            "difficulty": 3,
+            "forbidden": [
+              "grains",
+              "sucrée",
+              "écailles"
+            ]
+          },
+          {
+            "text": "Carambole",
+            "difficulty": 3,
+            "forbidden": [
+              "étoile",
+              "jaune",
+              "tranche"
+            ]
+          },
+          {
+            "text": "Tamarin",
+            "difficulty": 3,
+            "forbidden": [
+              "gousse",
+              "acide",
+              "brun"
+            ]
+          },
+          {
+            "text": "Noix de kola",
+            "difficulty": 2,
+            "forbidden": [
+              "amer",
+              "mâcher",
+              "tradition"
+            ]
+          },
+          {
+            "text": "Arachide",
+            "difficulty": 1,
+            "forbidden": [
+              "cacahuète",
+              "coque",
+              "huile"
+            ]
+          },
+          {
+            "text": "Noix de cajou",
+            "difficulty": 2,
+            "forbidden": [
+              "amande",
+              "arbre",
+              "apéritif"
+            ]
+          },
+          {
+            "text": "Amande",
+            "difficulty": 2,
+            "forbidden": [
+              "noyau",
+              "lait",
+              "croquant"
+            ]
+          },
+          {
+            "text": "Noisette",
+            "difficulty": 2,
+            "forbidden": [
+              "chocolat",
+              "écureuil",
+              "croquant"
+            ]
+          },
+          {
+            "text": "Olive",
+            "difficulty": 2,
+            "forbidden": [
+              "huile",
+              "noire",
+              "vert"
+            ]
+          },
+          {
+            "text": "Tomate",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "sauce",
+              "salade"
+            ]
+          },
+          {
+            "text": "Oignon",
+            "difficulty": 1,
+            "forbidden": [
+              "pleurer",
+              "couper",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Ail",
+            "difficulty": 1,
+            "forbidden": [
+              "odeur",
+              "gousse",
+              "vampire"
+            ]
+          },
+          {
+            "text": "Piment",
+            "difficulty": 1,
+            "forbidden": [
+              "piquant",
+              "rouge",
+              "brûler"
+            ]
+          },
+          {
+            "text": "Poivron",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "vert",
+              "farci"
+            ]
+          },
+          {
+            "text": "Aubergine",
+            "difficulty": 1,
+            "forbidden": [
+              "violette",
+              "légume",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Gombo",
+            "difficulty": 1,
+            "forbidden": [
+              "gluant",
+              "sauce",
+              "vert"
+            ]
+          },
+          {
+            "text": "Carotte",
+            "difficulty": 1,
+            "forbidden": [
+              "orange",
+              "lapin",
+              "racine"
+            ]
+          },
+          {
+            "text": "Pomme de terre",
+            "difficulty": 1,
+            "forbidden": [
+              "frites",
+              "purée",
+              "tubercule"
+            ]
+          },
+          {
+            "text": "Patate douce",
+            "difficulty": 1,
+            "forbidden": [
+              "sucrée",
+              "orange",
+              "tubercule"
+            ]
+          },
+          {
+            "text": "Igname",
+            "difficulty": 2,
+            "forbidden": [
+              "tubercule",
+              "pilée",
+              "blanc"
+            ]
+          },
+          {
+            "text": "Manioc",
+            "difficulty": 1,
+            "forbidden": [
+              "tubercule",
+              "bâton",
+              "feuilles"
+            ]
+          },
+          {
+            "text": "Macabo",
+            "difficulty": 2,
+            "forbidden": [
+              "tubercule",
+              "taro",
+              "râpé"
+            ]
+          },
+          {
+            "text": "Taro",
+            "difficulty": 2,
+            "forbidden": [
+              "tubercule",
+              "Ouest",
+              "achu"
+            ]
+          },
+          {
+            "text": "Chou",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "feuilles",
+              "salade"
+            ]
+          },
+          {
+            "text": "Chou-fleur",
+            "difficulty": 2,
+            "forbidden": [
+              "blanc",
+              "légume",
+              "bouquets"
+            ]
+          },
+          {
+            "text": "Brocoli",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "petit arbre",
+              "légume"
+            ]
+          },
+          {
+            "text": "Laitue",
+            "difficulty": 1,
+            "forbidden": [
+              "salade",
+              "vert",
+              "feuilles"
+            ]
+          },
+          {
+            "text": "Épinards",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "Popeye",
+              "feuilles"
+            ]
+          },
+          {
+            "text": "Concombre",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "frais",
+              "salade"
+            ]
+          },
+          {
+            "text": "Courgette",
+            "difficulty": 1,
+            "forbidden": [
+              "verte",
+              "longue",
+              "légume"
+            ]
+          },
+          {
+            "text": "Citrouille",
+            "difficulty": 1,
+            "forbidden": [
+              "orange",
+              "Halloween",
+              "grosse"
+            ]
+          },
+          {
+            "text": "Haricot vert",
+            "difficulty": 1,
+            "forbidden": [
+              "long",
+              "fin",
+              "légume"
+            ]
+          },
+          {
+            "text": "Petits pois",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "ronds",
+              "cosse"
+            ]
+          },
+          {
+            "text": "Maïs",
+            "difficulty": 1,
+            "forbidden": [
+              "épi",
+              "grains",
+              "jaune"
+            ]
+          },
+          {
+            "text": "Champignon",
+            "difficulty": 1,
+            "forbidden": [
+              "forêt",
+              "chapeau",
+              "pied"
+            ]
+          },
+          {
+            "text": "Betterave",
+            "difficulty": 2,
+            "forbidden": [
+              "rouge",
+              "sucre",
+              "racine"
+            ]
+          },
+          {
+            "text": "Radis",
+            "difficulty": 2,
+            "forbidden": [
+              "rouge",
+              "piquant",
+              "petit"
+            ]
+          },
+          {
+            "text": "Navet",
+            "difficulty": 3,
+            "forbidden": [
+              "blanc",
+              "racine",
+              "légume"
+            ]
+          },
+          {
+            "text": "Poireau",
+            "difficulty": 2,
+            "forbidden": [
+              "blanc",
+              "vert",
+              "soupe"
+            ]
+          },
+          {
+            "text": "Céleri",
+            "difficulty": 3,
+            "forbidden": [
+              "branche",
+              "soupe",
+              "vert"
+            ]
+          },
+          {
+            "text": "Persil",
+            "difficulty": 2,
+            "forbidden": [
+              "vert",
+              "herbe",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Basilic",
+            "difficulty": 2,
+            "forbidden": [
+              "herbe",
+              "pesto",
+              "tomate"
+            ]
+          },
+          {
+            "text": "Menthe",
+            "difficulty": 1,
+            "forbidden": [
+              "frais",
+              "thé",
+              "herbe"
+            ]
+          },
+          {
+            "text": "Gingembre",
+            "difficulty": 1,
+            "forbidden": [
+              "racine",
+              "piquant",
+              "jus"
+            ]
+          },
+          {
+            "text": "Citronnelle",
+            "difficulty": 2,
+            "forbidden": [
+              "herbe",
+              "tisane",
+              "odeur"
+            ]
+          },
+          {
+            "text": "Feuilles de manioc",
+            "difficulty": 2,
+            "forbidden": [
+              "pilées",
+              "sauce",
+              "vert"
+            ]
+          },
+          {
+            "text": "Fruit à pain",
+            "difficulty": 3,
+            "forbidden": [
+              "arbre",
+              "gros",
+              "cuire"
+            ]
+          },
+          {
+            "text": "Haricot",
+            "difficulty": 1,
+            "forbidden": [
+              "grains",
+              "sauce",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Lentilles",
+            "difficulty": 2,
+            "forbidden": [
+              "petites",
+              "rondes",
+              "légumineuses"
+            ]
+          },
+          {
+            "text": "Pois chiches",
+            "difficulty": 2,
+            "forbidden": [
+              "houmous",
+              "rond",
+              "beige"
+            ]
+          },
+          {
+            "text": "Soja",
+            "difficulty": 2,
+            "forbidden": [
+              "graines",
+              "lait",
+              "tofu"
+            ]
+          },
+          {
+            "text": "Sésame",
+            "difficulty": 3,
+            "forbidden": [
+              "graines",
+              "huile",
+              "petites"
+            ]
+          },
+          {
+            "text": "Courge",
+            "difficulty": 2,
+            "forbidden": [
+              "graines",
+              "pistache",
+              "légume"
+            ]
+          },
+          {
+            "text": "Cresson",
+            "difficulty": 3,
+            "forbidden": [
+              "vert",
+              "eau",
+              "feuilles"
+            ]
+          },
+          {
+            "text": "Artichaut",
+            "difficulty": 2,
+            "forbidden": [
+              "cœur",
+              "feuilles",
+              "légume"
+            ]
+          },
+          {
+            "text": "Asperge",
+            "difficulty": 2,
+            "forbidden": [
+              "longue",
+              "verte",
+              "légume"
+            ]
+          },
+          {
+            "text": "Endive",
+            "difficulty": 3,
+            "forbidden": [
+              "blanche",
+              "amère",
+              "salade"
+            ]
+          },
+          {
+            "text": "Fenouil",
+            "difficulty": 3,
+            "forbidden": [
+              "anis",
+              "bulbe",
+              "légume"
+            ]
+          },
+          {
+            "text": "Échalote",
+            "difficulty": 3,
+            "forbidden": [
+              "oignon",
+              "petite",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Canne à sucre",
+            "difficulty": 1,
+            "forbidden": [
+              "mâcher",
+              "tige",
+              "jus"
+            ]
+          },
+          {
+            "text": "Cacao",
+            "difficulty": 1,
+            "forbidden": [
+              "chocolat",
+              "fève",
+              "cabosse"
+            ]
+          },
+          {
+            "text": "Café",
+            "difficulty": 1,
+            "forbidden": [
+              "boisson",
+              "grains",
+              "matin"
+            ]
+          },
+          {
+            "text": "Vanille",
+            "difficulty": 2,
+            "forbidden": [
+              "gousse",
+              "parfum",
+              "glace"
+            ]
+          },
+          {
+            "text": "Poivre",
+            "difficulty": 1,
+            "forbidden": [
+              "noir",
+              "piquant",
+              "éternuer"
+            ]
+          },
+          {
+            "text": "Cannelle",
+            "difficulty": 2,
+            "forbidden": [
+              "écorce",
+              "épice",
+              "odeur"
+            ]
+          },
+          {
+            "text": "Clou de girofle",
+            "difficulty": 3,
+            "forbidden": [
+              "épice",
+              "odeur",
+              "dentiste"
+            ]
+          },
+          {
+            "text": "Noix de muscade",
+            "difficulty": 3,
+            "forbidden": [
+              "épice",
+              "râper",
+              "gâteau"
+            ]
+          },
+          {
+            "text": "Mûre",
+            "difficulty": 2,
+            "forbidden": [
+              "noire",
+              "ronces",
+              "baies"
+            ]
+          },
+          {
+            "text": "Groseille",
+            "difficulty": 3,
+            "forbidden": [
+              "rouge",
+              "grappe",
+              "acide"
+            ]
+          },
+          {
+            "text": "Kaki",
+            "difficulty": 3,
+            "forbidden": [
+              "orange",
+              "fruit",
+              "automne"
+            ]
+          },
+          {
+            "text": "Ramboutan",
+            "difficulty": 3,
+            "forbidden": [
+              "poilu",
+              "rouge",
+              "litchi"
+            ]
+          },
+          {
+            "text": "Pistache",
+            "difficulty": 2,
+            "forbidden": [
+              "vert",
+              "coque",
+              "glace"
+            ]
+          },
+          {
+            "text": "Noix",
+            "difficulty": 1,
+            "forbidden": [
+              "cerneau",
+              "coquille",
+              "arbre"
+            ]
+          },
+          {
+            "text": "Coing",
+            "difficulty": 3,
+            "forbidden": [
+              "jaune",
+              "gelée",
+              "dur"
+            ]
+          },
+          {
+            "text": "Clémentine",
+            "difficulty": 1,
+            "forbidden": [
+              "petite",
+              "orange",
+              "Noël"
+            ]
+          },
+          {
+            "text": "Ndolé",
+            "difficulty": 2,
+            "forbidden": [
+              "feuilles",
+              "amer",
+              "arachide"
+            ]
+          },
+          {
+            "text": "Bitter kola",
+            "difficulty": 3,
+            "forbidden": [
+              "amer",
+              "mâcher",
+              "noix"
+            ]
+          },
+          {
+            "text": "Poivre de Penja",
+            "difficulty": 3,
+            "forbidden": [
+              "Cameroun",
+              "poivre blanc",
+              "épice"
+            ]
+          },
+          {
+            "text": "Noix de palme",
+            "difficulty": 2,
+            "forbidden": [
+              "huile rouge",
+              "régime",
+              "palmier"
+            ]
+          },
+          {
+            "text": "Njansang",
+            "difficulty": 3,
+            "forbidden": [
+              "graines",
+              "épice",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Chou de Bruxelles",
+            "difficulty": 2,
+            "forbidden": [
+              "petit",
+              "vert",
+              "amer"
+            ]
+          },
+          {
+            "text": "Ciboulette",
+            "difficulty": 3,
+            "forbidden": [
+              "herbe",
+              "fine",
+              "vert"
+            ]
+          },
+          {
+            "text": "Laurier",
+            "difficulty": 3,
+            "forbidden": [
+              "feuille",
+              "sauce",
+              "épice"
+            ]
+          },
+          {
+            "text": "Thym",
+            "difficulty": 3,
+            "forbidden": [
+              "herbe",
+              "sauce",
+              "odeur"
+            ]
+          },
+          {
+            "text": "Pain de singe",
+            "difficulty": 3,
+            "forbidden": [
+              "baobab",
+              "poudre",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Oseille",
+            "difficulty": 3,
+            "forbidden": [
+              "feuilles",
+              "acide",
+              "vert"
+            ]
+          },
+          {
+            "text": "Tomate cerise",
+            "difficulty": 2,
+            "forbidden": [
+              "petite",
+              "rouge",
+              "apéritif"
+            ]
+          },
+          {
+            "text": "Pruneau",
+            "difficulty": 2,
+            "forbidden": [
+              "sec",
+              "prune",
+              "violet"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

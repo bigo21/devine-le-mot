@@ -1,4 +1,5 @@
 // Logique pure de la mise à jour des paquets intégrés (docs/PROJET.md §4).
+import { foldText } from './filter';
 import { type NormalizedWord, normalizeWord, type PackFile } from './schema';
 
 /** Faut-il (ré)écrire ce paquet ? Seulement s'il est absent ou plus ancien en base. */
@@ -52,8 +53,15 @@ export function builtinRuleViolations(file: PackFile): string[] {
           `${where} : « ${word.text} » a ${word.forbidden.length} mots interdits (3 attendus)`,
         );
       }
-      if (word.forbidden.some((f) => f.toLowerCase() === word.text.toLowerCase())) {
-        problems.push(`${where} : « ${word.text} » s'interdit lui-même`);
+      // Un mot interdit qui fait partie du mot à deviner ne sert à rien (on ne le dira pas).
+      const tokens = new Set(foldText(word.text).split(/[\s'’-]+/));
+      for (const forbidden of word.forbidden) {
+        const folded = foldText(forbidden);
+        if (folded === foldText(word.text) || tokens.has(folded)) {
+          problems.push(
+            `${where} : « ${word.text} » interdit « ${forbidden} », qui fait partie du mot`,
+          );
+        }
       }
     }
   }

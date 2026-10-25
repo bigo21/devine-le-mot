@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "metiers",
@@ -20,127 +20,1098 @@
         },
         "emoji": "👷",
         "color": "plum",
-        "tags": ["universel"],
+        "tags": [
+          "universel"
+        ],
         "words": [
           {
             "text": "Médecin",
             "difficulty": 1,
-            "forbidden": ["malade", "hôpital", "soigner"]
+            "forbidden": [
+              "malade",
+              "hôpital",
+              "soigner"
+            ]
           },
           {
             "text": "Enseignant",
             "difficulty": 1,
-            "forbidden": ["école", "élèves", "classe"]
+            "forbidden": [
+              "école",
+              "élèves",
+              "classe"
+            ]
           },
           {
             "text": "Boulanger",
             "difficulty": 1,
-            "forbidden": ["pain", "four", "baguette"]
+            "forbidden": [
+              "pain",
+              "four",
+              "baguette"
+            ]
           },
           {
             "text": "Pompier",
             "difficulty": 1,
-            "forbidden": ["feu", "camion", "éteindre"]
+            "forbidden": [
+              "feu",
+              "camion",
+              "éteindre"
+            ]
           },
           {
             "text": "Policier",
             "difficulty": 1,
-            "forbidden": ["voleur", "uniforme", "sifflet"]
+            "forbidden": [
+              "voleur",
+              "uniforme",
+              "sifflet"
+            ]
           },
           {
             "text": "Coiffeur",
             "difficulty": 1,
-            "forbidden": ["cheveux", "ciseaux", "salon"]
+            "forbidden": [
+              "cheveux",
+              "ciseaux",
+              "salon"
+            ]
           },
           {
             "text": "Mécanicien",
             "difficulty": 1,
-            "forbidden": ["voiture", "garage", "réparer"]
+            "forbidden": [
+              "voiture",
+              "garage",
+              "réparer"
+            ]
           },
           {
             "text": "Chauffeur de taxi",
             "difficulty": 1,
-            "forbidden": ["voiture", "client", "conduire"]
+            "forbidden": [
+              "voiture",
+              "client",
+              "conduire"
+            ]
           },
           {
             "text": "Couturier",
             "difficulty": 1,
-            "forbidden": ["tissu", "aiguille", "habits"]
+            "forbidden": [
+              "tissu",
+              "aiguille",
+              "habits"
+            ]
           },
           {
             "text": "Agriculteur",
             "difficulty": 1,
-            "forbidden": ["champ", "récolte", "planter"]
+            "forbidden": [
+              "champ",
+              "récolte",
+              "planter"
+            ]
           },
           {
             "text": "Pilote",
             "difficulty": 1,
-            "forbidden": ["avion", "ciel", "voler"]
+            "forbidden": [
+              "avion",
+              "ciel",
+              "voler"
+            ]
           },
           {
             "text": "Cuisinier",
             "difficulty": 1,
-            "forbidden": ["cuisine", "recette", "plats"]
+            "forbidden": [
+              "cuisine",
+              "recette",
+              "plats"
+            ]
           },
           {
             "text": "Journaliste",
             "difficulty": 1,
-            "forbidden": ["informations", "micro", "journal"]
+            "forbidden": [
+              "informations",
+              "micro",
+              "journal"
+            ]
           },
           {
             "text": "Avocat",
             "difficulty": 2,
-            "forbidden": ["tribunal", "juge", "défendre"]
+            "forbidden": [
+              "tribunal",
+              "juge",
+              "défendre"
+            ]
           },
           {
             "text": "Infirmier",
             "difficulty": 1,
-            "forbidden": ["hôpital", "piqûre", "soins"]
+            "forbidden": [
+              "hôpital",
+              "piqûre",
+              "soins"
+            ]
           },
           {
             "text": "Maçon",
             "difficulty": 2,
-            "forbidden": ["briques", "ciment", "construire"]
+            "forbidden": [
+              "briques",
+              "ciment",
+              "construire"
+            ]
           },
           {
             "text": "Électricien",
             "difficulty": 2,
-            "forbidden": ["courant", "fils", "ampoule"]
+            "forbidden": [
+              "courant",
+              "fils",
+              "ampoule"
+            ]
           },
           {
             "text": "Photographe",
             "difficulty": 1,
-            "forbidden": ["appareil", "photo", "flash"]
+            "forbidden": [
+              "appareil",
+              "photo",
+              "flash"
+            ]
           },
           {
             "text": "Footballeur",
             "difficulty": 1,
-            "forbidden": ["ballon", "match", "but"]
+            "forbidden": [
+              "ballon",
+              "match",
+              "but"
+            ]
           },
           {
             "text": "Chanteur",
             "difficulty": 1,
-            "forbidden": ["chanson", "micro", "voix"]
+            "forbidden": [
+              "chanson",
+              "micro",
+              "voix"
+            ]
           },
           {
             "text": "Pêcheur",
             "difficulty": 1,
-            "forbidden": ["poisson", "filet", "pirogue"]
+            "forbidden": [
+              "poisson",
+              "filet",
+              "pirogue"
+            ]
           },
           {
             "text": "Vendeur",
             "difficulty": 1,
-            "forbidden": ["marché", "vendre", "client"]
+            "forbidden": [
+              "marché",
+              "vendre",
+              "client"
+            ]
           },
           {
             "text": "Architecte",
             "difficulty": 2,
-            "forbidden": ["plans", "maison", "dessiner"]
+            "forbidden": [
+              "plans",
+              "maison",
+              "dessiner"
+            ]
           },
           {
             "text": "Dentiste",
             "difficulty": 1,
-            "forbidden": ["dents", "carie", "bouche"]
+            "forbidden": [
+              "dents",
+              "carie",
+              "bouche"
+            ]
+          },
+          {
+            "text": "Directeur d'école",
+            "difficulty": 2,
+            "forbidden": [
+              "élèves",
+              "chef",
+              "bureau"
+            ]
+          },
+          {
+            "text": "Ingénieur",
+            "difficulty": 1,
+            "forbidden": [
+              "calcul",
+              "construire",
+              "technique"
+            ]
+          },
+          {
+            "text": "Informaticien",
+            "difficulty": 1,
+            "forbidden": [
+              "ordinateur",
+              "programme",
+              "code"
+            ]
+          },
+          {
+            "text": "Comptable",
+            "difficulty": 2,
+            "forbidden": [
+              "chiffres",
+              "argent",
+              "bilan"
+            ]
+          },
+          {
+            "text": "Banquier",
+            "difficulty": 1,
+            "forbidden": [
+              "banque",
+              "argent",
+              "compte"
+            ]
+          },
+          {
+            "text": "Caissier",
+            "difficulty": 1,
+            "forbidden": [
+              "caisse",
+              "payer",
+              "magasin"
+            ]
+          },
+          {
+            "text": "Commerçant",
+            "difficulty": 1,
+            "forbidden": [
+              "boutique",
+              "vendre",
+              "client"
+            ]
+          },
+          {
+            "text": "Secrétaire",
+            "difficulty": 1,
+            "forbidden": [
+              "bureau",
+              "téléphone",
+              "courrier"
+            ]
+          },
+          {
+            "text": "Facteur",
+            "difficulty": 1,
+            "forbidden": [
+              "lettres",
+              "courrier",
+              "poste"
+            ]
+          },
+          {
+            "text": "Serveur",
+            "difficulty": 1,
+            "forbidden": [
+              "restaurant",
+              "plateau",
+              "commande"
+            ]
+          },
+          {
+            "text": "Barman",
+            "difficulty": 2,
+            "forbidden": [
+              "cocktails",
+              "bar",
+              "boissons"
+            ]
+          },
+          {
+            "text": "Boucher",
+            "difficulty": 1,
+            "forbidden": [
+              "viande",
+              "couteau",
+              "étal"
+            ]
+          },
+          {
+            "text": "Poissonnier",
+            "difficulty": 2,
+            "forbidden": [
+              "poisson",
+              "marché",
+              "écailler"
+            ]
+          },
+          {
+            "text": "Pâtissier",
+            "difficulty": 1,
+            "forbidden": [
+              "gâteaux",
+              "sucre",
+              "four"
+            ]
+          },
+          {
+            "text": "Plombier",
+            "difficulty": 1,
+            "forbidden": [
+              "tuyaux",
+              "fuite",
+              "eau"
+            ]
+          },
+          {
+            "text": "Menuisier",
+            "difficulty": 1,
+            "forbidden": [
+              "bois",
+              "meubles",
+              "scie"
+            ]
+          },
+          {
+            "text": "Charpentier",
+            "difficulty": 2,
+            "forbidden": [
+              "toit",
+              "bois",
+              "poutres"
+            ]
+          },
+          {
+            "text": "Peintre en bâtiment",
+            "difficulty": 2,
+            "forbidden": [
+              "murs",
+              "pinceau",
+              "couleur"
+            ]
+          },
+          {
+            "text": "Soudeur",
+            "difficulty": 2,
+            "forbidden": [
+              "métal",
+              "flamme",
+              "masque"
+            ]
+          },
+          {
+            "text": "Forgeron",
+            "difficulty": 2,
+            "forbidden": [
+              "fer",
+              "marteau",
+              "enclume"
+            ]
+          },
+          {
+            "text": "Cordonnier",
+            "difficulty": 2,
+            "forbidden": [
+              "chaussures",
+              "réparer",
+              "cuir"
+            ]
+          },
+          {
+            "text": "Tailleur",
+            "difficulty": 2,
+            "forbidden": [
+              "costume",
+              "tissu",
+              "mesures"
+            ]
+          },
+          {
+            "text": "Bijoutier",
+            "difficulty": 2,
+            "forbidden": [
+              "bijoux",
+              "or",
+              "bague"
+            ]
+          },
+          {
+            "text": "Horloger",
+            "difficulty": 3,
+            "forbidden": [
+              "montres",
+              "réparer",
+              "aiguilles"
+            ]
+          },
+          {
+            "text": "Fleuriste",
+            "difficulty": 2,
+            "forbidden": [
+              "fleurs",
+              "bouquet",
+              "boutique"
+            ]
+          },
+          {
+            "text": "Jardinier",
+            "difficulty": 1,
+            "forbidden": [
+              "plantes",
+              "arroser",
+              "jardin"
+            ]
+          },
+          {
+            "text": "Éleveur",
+            "difficulty": 2,
+            "forbidden": [
+              "animaux",
+              "bétail",
+              "ferme"
+            ]
+          },
+          {
+            "text": "Berger",
+            "difficulty": 1,
+            "forbidden": [
+              "moutons",
+              "troupeau",
+              "bâton"
+            ]
+          },
+          {
+            "text": "Vétérinaire",
+            "difficulty": 1,
+            "forbidden": [
+              "animaux",
+              "soigner",
+              "malades"
+            ]
+          },
+          {
+            "text": "Pharmacien",
+            "difficulty": 1,
+            "forbidden": [
+              "médicaments",
+              "ordonnance",
+              "pharmacie"
+            ]
+          },
+          {
+            "text": "Sage-femme",
+            "difficulty": 2,
+            "forbidden": [
+              "bébé",
+              "accouchement",
+              "maternité"
+            ]
+          },
+          {
+            "text": "Chirurgien",
+            "difficulty": 1,
+            "forbidden": [
+              "opération",
+              "bistouri",
+              "hôpital"
+            ]
+          },
+          {
+            "text": "Psychologue",
+            "difficulty": 2,
+            "forbidden": [
+              "écouter",
+              "esprit",
+              "séances"
+            ]
+          },
+          {
+            "text": "Kinésithérapeute",
+            "difficulty": 2,
+            "forbidden": [
+              "massage",
+              "rééducation",
+              "muscles"
+            ]
+          },
+          {
+            "text": "Opticien",
+            "difficulty": 2,
+            "forbidden": [
+              "lunettes",
+              "yeux",
+              "verres"
+            ]
+          },
+          {
+            "text": "Ambulancier",
+            "difficulty": 2,
+            "forbidden": [
+              "urgence",
+              "sirène",
+              "blessés"
+            ]
+          },
+          {
+            "text": "Militaire",
+            "difficulty": 1,
+            "forbidden": [
+              "armée",
+              "soldat",
+              "uniforme"
+            ]
+          },
+          {
+            "text": "Gendarme",
+            "difficulty": 1,
+            "forbidden": [
+              "police",
+              "route",
+              "uniforme"
+            ]
+          },
+          {
+            "text": "Douanier",
+            "difficulty": 2,
+            "forbidden": [
+              "frontière",
+              "contrôle",
+              "bagages"
+            ]
+          },
+          {
+            "text": "Gardien",
+            "difficulty": 1,
+            "forbidden": [
+              "surveiller",
+              "porte",
+              "nuit"
+            ]
+          },
+          {
+            "text": "Vigile",
+            "difficulty": 2,
+            "forbidden": [
+              "sécurité",
+              "surveiller",
+              "entrée"
+            ]
+          },
+          {
+            "text": "Détective",
+            "difficulty": 2,
+            "forbidden": [
+              "enquête",
+              "indices",
+              "loupe"
+            ]
+          },
+          {
+            "text": "Juge",
+            "difficulty": 1,
+            "forbidden": [
+              "tribunal",
+              "marteau",
+              "verdict"
+            ]
+          },
+          {
+            "text": "Notaire",
+            "difficulty": 3,
+            "forbidden": [
+              "actes",
+              "héritage",
+              "signature"
+            ]
+          },
+          {
+            "text": "Maire",
+            "difficulty": 1,
+            "forbidden": [
+              "mairie",
+              "ville",
+              "élu"
+            ]
+          },
+          {
+            "text": "Député",
+            "difficulty": 2,
+            "forbidden": [
+              "assemblée",
+              "lois",
+              "élu"
+            ]
+          },
+          {
+            "text": "Ministre",
+            "difficulty": 1,
+            "forbidden": [
+              "gouvernement",
+              "président",
+              "ministère"
+            ]
+          },
+          {
+            "text": "Président",
+            "difficulty": 1,
+            "forbidden": [
+              "pays",
+              "élection",
+              "chef de l'État"
+            ]
+          },
+          {
+            "text": "Ambassadeur",
+            "difficulty": 2,
+            "forbidden": [
+              "pays",
+              "étranger",
+              "diplomate"
+            ]
+          },
+          {
+            "text": "Chauffeur de bus",
+            "difficulty": 1,
+            "forbidden": [
+              "passagers",
+              "conduire",
+              "arrêt"
+            ]
+          },
+          {
+            "text": "Moto-taxi",
+            "difficulty": 1,
+            "forbidden": [
+              "passager",
+              "course",
+              "casque"
+            ]
+          },
+          {
+            "text": "Camionneur",
+            "difficulty": 2,
+            "forbidden": [
+              "camion",
+              "route",
+              "marchandises"
+            ]
+          },
+          {
+            "text": "Conducteur de train",
+            "difficulty": 2,
+            "forbidden": [
+              "rails",
+              "locomotive",
+              "gare"
+            ]
+          },
+          {
+            "text": "Capitaine de bateau",
+            "difficulty": 2,
+            "forbidden": [
+              "navire",
+              "mer",
+              "barre"
+            ]
+          },
+          {
+            "text": "Hôtesse de l'air",
+            "difficulty": 1,
+            "forbidden": [
+              "avion",
+              "passagers",
+              "uniforme"
+            ]
+          },
+          {
+            "text": "Astronaute",
+            "difficulty": 1,
+            "forbidden": [
+              "espace",
+              "fusée",
+              "lune"
+            ]
+          },
+          {
+            "text": "Ouvrier",
+            "difficulty": 1,
+            "forbidden": [
+              "usine",
+              "travail",
+              "chantier"
+            ]
+          },
+          {
+            "text": "Chef de chantier",
+            "difficulty": 2,
+            "forbidden": [
+              "construction",
+              "casque",
+              "ouvriers"
+            ]
+          },
+          {
+            "text": "Mineur",
+            "difficulty": 2,
+            "forbidden": [
+              "mine",
+              "sous terre",
+              "charbon"
+            ]
+          },
+          {
+            "text": "Bûcheron",
+            "difficulty": 2,
+            "forbidden": [
+              "arbres",
+              "hache",
+              "forêt"
+            ]
+          },
+          {
+            "text": "Pompiste",
+            "difficulty": 2,
+            "forbidden": [
+              "essence",
+              "station",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Laveur de voitures",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "eau",
+              "éponge"
+            ]
+          },
+          {
+            "text": "Femme de ménage",
+            "difficulty": 1,
+            "forbidden": [
+              "nettoyer",
+              "maison",
+              "balai"
+            ]
+          },
+          {
+            "text": "Nounou",
+            "difficulty": 1,
+            "forbidden": [
+              "enfants",
+              "garder",
+              "bébé"
+            ]
+          },
+          {
+            "text": "Livreur",
+            "difficulty": 1,
+            "forbidden": [
+              "colis",
+              "moto",
+              "adresse"
+            ]
+          },
+          {
+            "text": "Agent immobilier",
+            "difficulty": 2,
+            "forbidden": [
+              "maison",
+              "vendre",
+              "visite"
+            ]
+          },
+          {
+            "text": "Assureur",
+            "difficulty": 3,
+            "forbidden": [
+              "contrat",
+              "accident",
+              "assurance"
+            ]
+          },
+          {
+            "text": "Traducteur",
+            "difficulty": 2,
+            "forbidden": [
+              "langues",
+              "texte",
+              "interprète"
+            ]
+          },
+          {
+            "text": "Écrivain",
+            "difficulty": 1,
+            "forbidden": [
+              "livre",
+              "roman",
+              "écrire"
+            ]
+          },
+          {
+            "text": "Poète",
+            "difficulty": 2,
+            "forbidden": [
+              "poème",
+              "rimes",
+              "vers"
+            ]
+          },
+          {
+            "text": "Peintre",
+            "difficulty": 2,
+            "forbidden": [
+              "tableau",
+              "pinceau",
+              "toile"
+            ]
+          },
+          {
+            "text": "Sculpteur",
+            "difficulty": 2,
+            "forbidden": [
+              "statue",
+              "pierre",
+              "bois"
+            ]
+          },
+          {
+            "text": "Musicien",
+            "difficulty": 1,
+            "forbidden": [
+              "instrument",
+              "musique",
+              "jouer"
+            ]
+          },
+          {
+            "text": "Batteur",
+            "difficulty": 2,
+            "forbidden": [
+              "tambours",
+              "baguettes",
+              "rythme"
+            ]
+          },
+          {
+            "text": "DJ",
+            "difficulty": 1,
+            "forbidden": [
+              "platines",
+              "musique",
+              "soirée"
+            ]
+          },
+          {
+            "text": "Danseur",
+            "difficulty": 1,
+            "forbidden": [
+              "danse",
+              "scène",
+              "rythme"
+            ]
+          },
+          {
+            "text": "Comédien",
+            "difficulty": 1,
+            "forbidden": [
+              "théâtre",
+              "rôle",
+              "scène"
+            ]
+          },
+          {
+            "text": "Humoriste",
+            "difficulty": 1,
+            "forbidden": [
+              "blagues",
+              "rire",
+              "spectacle"
+            ]
+          },
+          {
+            "text": "Réalisateur",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "caméra",
+              "tournage"
+            ]
+          },
+          {
+            "text": "Animateur radio",
+            "difficulty": 2,
+            "forbidden": [
+              "micro",
+              "émission",
+              "voix"
+            ]
+          },
+          {
+            "text": "Présentateur télé",
+            "difficulty": 2,
+            "forbidden": [
+              "télévision",
+              "journal",
+              "caméra"
+            ]
+          },
+          {
+            "text": "Mannequin",
+            "difficulty": 1,
+            "forbidden": [
+              "défilé",
+              "mode",
+              "photos"
+            ]
+          },
+          {
+            "text": "Styliste",
+            "difficulty": 2,
+            "forbidden": [
+              "mode",
+              "vêtements",
+              "créer"
+            ]
+          },
+          {
+            "text": "Esthéticienne",
+            "difficulty": 2,
+            "forbidden": [
+              "beauté",
+              "ongles",
+              "soins"
+            ]
+          },
+          {
+            "text": "Maquilleuse",
+            "difficulty": 2,
+            "forbidden": [
+              "maquillage",
+              "visage",
+              "pinceau"
+            ]
+          },
+          {
+            "text": "Influenceur",
+            "difficulty": 1,
+            "forbidden": [
+              "réseaux sociaux",
+              "abonnés",
+              "Instagram"
+            ]
+          },
+          {
+            "text": "YouTubeur",
+            "difficulty": 1,
+            "forbidden": [
+              "vidéos",
+              "chaîne",
+              "abonnés"
+            ]
+          },
+          {
+            "text": "Développeur",
+            "difficulty": 2,
+            "forbidden": [
+              "code",
+              "application",
+              "ordinateur"
+            ]
+          },
+          {
+            "text": "Scientifique",
+            "difficulty": 1,
+            "forbidden": [
+              "laboratoire",
+              "recherche",
+              "expérience"
+            ]
+          },
+          {
+            "text": "Archéologue",
+            "difficulty": 2,
+            "forbidden": [
+              "fouilles",
+              "ancien",
+              "os"
+            ]
+          },
+          {
+            "text": "Astronome",
+            "difficulty": 2,
+            "forbidden": [
+              "étoiles",
+              "télescope",
+              "ciel"
+            ]
+          },
+          {
+            "text": "Météorologue",
+            "difficulty": 3,
+            "forbidden": [
+              "météo",
+              "temps",
+              "prévisions"
+            ]
+          },
+          {
+            "text": "Prêtre",
+            "difficulty": 1,
+            "forbidden": [
+              "église",
+              "messe",
+              "Dieu"
+            ]
+          },
+          {
+            "text": "Imam",
+            "difficulty": 1,
+            "forbidden": [
+              "mosquée",
+              "prière",
+              "islam"
+            ]
+          },
+          {
+            "text": "Pasteur",
+            "difficulty": 2,
+            "forbidden": [
+              "église",
+              "prêche",
+              "protestant"
+            ]
+          },
+          {
+            "text": "Guide touristique",
+            "difficulty": 2,
+            "forbidden": [
+              "visite",
+              "touristes",
+              "expliquer"
+            ]
+          },
+          {
+            "text": "Entraîneur",
+            "difficulty": 1,
+            "forbidden": [
+              "équipe",
+              "sport",
+              "coach"
+            ]
           }
         ]
       }

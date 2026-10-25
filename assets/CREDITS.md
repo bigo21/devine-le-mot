@@ -39,3 +39,4 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/objets-du-quotidien.webp | Microsoft Fluent Emoji 3D « toolbox » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-24 |
 | src/assets/categories/metiers.webp | Microsoft Fluent Emoji 3D « construction worker » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-24 |
 | src/assets/categories/sports.webp | Microsoft Fluent Emoji 3D « sports medal » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-24 |
+| src/assets/categories/fruits-et-legumes.webp | Microsoft Fluent Emoji 3D « mango » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |

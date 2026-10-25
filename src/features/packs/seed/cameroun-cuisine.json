@@ -3,7 +3,10 @@
   "formatVersion": 1,
   "pack": {
     "id": "cameroun-cuisine",
-    "name": { "fr": "Cameroun · Cuisine", "en": "Cameroon · Food" },
+    "name": {
+      "fr": "Cameroun · Cuisine",
+      "en": "Cameroon · Food"
+    },
     "description": {
       "fr": "Plats, snacks et boissons du Cameroun",
       "en": "Dishes, snacks and drinks from Cameroon"
@@ -11,86 +14,255 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "cm-plats",
-        "name": { "fr": "Plats camerounais", "en": "Cameroonian dishes" },
+        "name": {
+          "fr": "Plats camerounais",
+          "en": "Cameroonian dishes"
+        },
         "emoji": "🍲",
         "color": "orchid",
-        "tags": ["cuisine", "cameroun"],
-        "variants": ["classic", "mime", "one-word", "forbidden", "air-draw", "mix"],
+        "tags": [
+          "cuisine",
+          "cameroun"
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "one-word",
+          "forbidden",
+          "air-draw",
+          "mix"
+        ],
         "words": [
-          { "text": "Ndolé", "difficulty": 1, "forbidden": ["feuilles", "arachide", "amer"] },
-          { "text": "Eru", "difficulty": 1, "forbidden": ["feuilles", "waterleaf", "anglophone"] },
+          {
+            "text": "Ndolé",
+            "difficulty": 1,
+            "forbidden": [
+              "feuilles",
+              "arachide",
+              "amer"
+            ]
+          },
+          {
+            "text": "Eru",
+            "difficulty": 1,
+            "forbidden": [
+              "feuilles",
+              "waterleaf",
+              "anglophone"
+            ]
+          },
           {
             "text": "Poulet DG",
             "difficulty": 1,
-            "forbidden": ["poulet", "plantain", "directeur"]
+            "forbidden": [
+              "plantain",
+              "directeur",
+              "légumes"
+            ]
           },
           {
             "text": "Koki",
             "difficulty": 2,
-            "forbidden": ["haricot", "feuilles de bananier", "huile rouge"]
+            "forbidden": [
+              "haricot",
+              "feuilles de bananier",
+              "huile rouge"
+            ]
           },
-          { "text": "Achu", "difficulty": 2, "forbidden": ["sauce jaune", "taro", "Nord-Ouest"] },
-          { "text": "Mbongo tchobi", "difficulty": 2, "forbidden": ["noir", "poisson", "épices"] },
+          {
+            "text": "Achu",
+            "difficulty": 2,
+            "forbidden": [
+              "sauce jaune",
+              "taro",
+              "Nord-Ouest"
+            ]
+          },
+          {
+            "text": "Mbongo tchobi",
+            "difficulty": 2,
+            "forbidden": [
+              "noir",
+              "poisson",
+              "épices"
+            ]
+          },
           {
             "text": "Okok",
             "difficulty": 2,
-            "forbidden": ["feuilles", "arachide", "bâton de manioc"]
+            "forbidden": [
+              "feuilles",
+              "arachide",
+              "bâton de manioc"
+            ]
           },
-          { "text": "Kondre", "difficulty": 2, "forbidden": ["plantain", "chèvre", "Ouest"] },
+          {
+            "text": "Kondre",
+            "difficulty": 2,
+            "forbidden": [
+              "plantain",
+              "chèvre",
+              "Ouest"
+            ]
+          },
           {
             "text": "Sanga",
             "difficulty": 3,
-            "forbidden": ["maïs", "feuilles de manioc", "noix de palme"]
+            "forbidden": [
+              "maïs",
+              "feuilles de manioc",
+              "noix de palme"
+            ]
           },
-          { "text": "Bobolo", "difficulty": 1, "forbidden": ["manioc", "bâton", "fermenté"] },
-          { "text": "Miondo", "difficulty": 1, "forbidden": ["manioc", "bâton", "Douala"] },
+          {
+            "text": "Bobolo",
+            "difficulty": 1,
+            "forbidden": [
+              "manioc",
+              "bâton",
+              "fermenté"
+            ]
+          },
+          {
+            "text": "Miondo",
+            "difficulty": 1,
+            "forbidden": [
+              "manioc",
+              "bâton",
+              "Douala"
+            ]
+          },
           {
             "text": "Beignets haricots bouillie",
             "difficulty": 1,
-            "forbidden": ["BHB", "petit-déjeuner", "maïs"]
+            "forbidden": [
+              "BHB",
+              "petit-déjeuner",
+              "maïs"
+            ]
           },
-          { "text": "Soya", "difficulty": 1, "forbidden": ["viande", "brochette", "piment"] },
+          {
+            "text": "Soya",
+            "difficulty": 1,
+            "forbidden": [
+              "viande",
+              "brochette",
+              "piment"
+            ]
+          },
           {
             "text": "Poisson braisé",
             "difficulty": 1,
-            "forbidden": ["grillé", "maquereau", "piment"]
+            "forbidden": [
+              "grillé",
+              "maquereau",
+              "piment"
+            ]
           },
           {
             "text": "Met de pistache",
             "difficulty": 2,
-            "forbidden": ["graines", "courge", "feuilles"]
+            "forbidden": [
+              "graines",
+              "courge",
+              "feuilles"
+            ]
           },
           {
             "text": "Kwacoco bible",
             "difficulty": 3,
-            "forbidden": ["macabo", "poisson", "vapeur"]
+            "forbidden": [
+              "macabo",
+              "poisson",
+              "vapeur"
+            ]
           },
-          { "text": "Pepper soup", "difficulty": 1, "forbidden": ["piment", "bouillon", "épicé"] },
-          { "text": "Sauce gombo", "difficulty": 1, "forbidden": ["gluant", "légume", "couscous"] },
+          {
+            "text": "Pepper soup",
+            "difficulty": 1,
+            "forbidden": [
+              "piment",
+              "bouillon",
+              "épicé"
+            ]
+          },
+          {
+            "text": "Sauce gombo",
+            "difficulty": 1,
+            "forbidden": [
+              "gluant",
+              "légume",
+              "couscous"
+            ]
+          },
           {
             "text": "Fufu corn et njama njama",
             "difficulty": 2,
-            "forbidden": ["maïs", "légumes", "Nord-Ouest"]
+            "forbidden": [
+              "maïs",
+              "légumes",
+              "Nord-Ouest"
+            ]
           },
-          { "text": "Ekwang", "difficulty": 3, "forbidden": ["macabo", "feuilles", "Sud-Ouest"] },
-          { "text": "Folong", "difficulty": 2, "forbidden": ["légume", "feuilles", "sauce"] },
-          { "text": "Plantain frit", "difficulty": 1, "forbidden": ["banane", "huile", "alloco"] },
-          { "text": "Safou", "difficulty": 1, "forbidden": ["prune", "violet", "braise"] },
+          {
+            "text": "Ekwang",
+            "difficulty": 3,
+            "forbidden": [
+              "macabo",
+              "feuilles",
+              "Sud-Ouest"
+            ]
+          },
+          {
+            "text": "Folong",
+            "difficulty": 2,
+            "forbidden": [
+              "légume",
+              "feuilles",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Plantain frit",
+            "difficulty": 1,
+            "forbidden": [
+              "banane",
+              "huile",
+              "alloco"
+            ]
+          },
+          {
+            "text": "Safou",
+            "difficulty": 1,
+            "forbidden": [
+              "prune",
+              "violet",
+              "braise"
+            ]
+          },
           {
             "text": "Folere",
             "difficulty": 2,
             "hint": "Jus d'hibiscus",
-            "forbidden": ["hibiscus", "jus", "rouge"]
+            "forbidden": [
+              "hibiscus",
+              "jus",
+              "rouge"
+            ]
           },
           {
             "text": "Kossam",
             "difficulty": 2,
             "hint": "Lait caillé",
-            "forbidden": ["lait", "caillé", "Nord"]
+            "forbidden": [
+              "lait",
+              "caillé",
+              "Nord"
+            ]
           }
         ]
       }

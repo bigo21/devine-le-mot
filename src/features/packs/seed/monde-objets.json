@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "objets-du-quotidien",
@@ -20,127 +20,1107 @@
         },
         "emoji": "🧰",
         "color": "slate",
-        "tags": ["universel"],
+        "tags": [
+          "universel"
+        ],
         "words": [
           {
             "text": "Parapluie",
             "difficulty": 1,
-            "forbidden": ["pluie", "ouvrir", "mouillé"]
+            "forbidden": [
+              "pluie",
+              "ouvrir",
+              "mouillé"
+            ]
           },
           {
             "text": "Brosse à dents",
             "difficulty": 1,
-            "forbidden": ["dents", "dentifrice", "matin"]
+            "forbidden": [
+              "dentifrice",
+              "matin",
+              "poils"
+            ]
           },
           {
             "text": "Téléphone",
             "difficulty": 1,
-            "forbidden": ["appeler", "écran", "sonner"]
+            "forbidden": [
+              "appeler",
+              "écran",
+              "sonner"
+            ]
           },
           {
             "text": "Lampe torche",
             "difficulty": 1,
-            "forbidden": ["lumière", "piles", "nuit"]
+            "forbidden": [
+              "lumière",
+              "piles",
+              "nuit"
+            ]
           },
           {
             "text": "Ventilateur",
             "difficulty": 1,
-            "forbidden": ["air", "chaleur", "tourner"]
+            "forbidden": [
+              "air",
+              "chaleur",
+              "tourner"
+            ]
           },
           {
             "text": "Marmite",
             "difficulty": 1,
-            "forbidden": ["cuisiner", "feu", "couvercle"]
+            "forbidden": [
+              "cuisiner",
+              "feu",
+              "couvercle"
+            ]
           },
           {
             "text": "Réfrigérateur",
             "difficulty": 1,
-            "forbidden": ["froid", "cuisine", "glace"]
+            "forbidden": [
+              "froid",
+              "cuisine",
+              "glace"
+            ]
           },
           {
             "text": "Ciseaux",
             "difficulty": 1,
-            "forbidden": ["couper", "papier", "lames"]
+            "forbidden": [
+              "couper",
+              "papier",
+              "lames"
+            ]
           },
           {
             "text": "Clé",
             "difficulty": 1,
-            "forbidden": ["porte", "serrure", "ouvrir"]
+            "forbidden": [
+              "porte",
+              "serrure",
+              "ouvrir"
+            ]
           },
           {
             "text": "Miroir",
             "difficulty": 1,
-            "forbidden": ["reflet", "visage", "regarder"]
+            "forbidden": [
+              "reflet",
+              "visage",
+              "regarder"
+            ]
           },
           {
             "text": "Oreiller",
             "difficulty": 1,
-            "forbidden": ["lit", "tête", "dormir"]
+            "forbidden": [
+              "lit",
+              "tête",
+              "dormir"
+            ]
           },
           {
             "text": "Moustiquaire",
             "difficulty": 2,
-            "forbidden": ["moustiques", "lit", "filet"]
+            "forbidden": [
+              "moustiques",
+              "lit",
+              "filet"
+            ]
           },
           {
             "text": "Seau",
             "difficulty": 1,
-            "forbidden": ["eau", "porter", "anse"]
+            "forbidden": [
+              "eau",
+              "porter",
+              "anse"
+            ]
           },
           {
             "text": "Balai",
             "difficulty": 1,
-            "forbidden": ["balayer", "sol", "poussière"]
+            "forbidden": [
+              "balayer",
+              "sol",
+              "poussière"
+            ]
           },
           {
             "text": "Fer à repasser",
             "difficulty": 2,
-            "forbidden": ["vêtements", "plis", "chaud"]
+            "forbidden": [
+              "vêtements",
+              "plis",
+              "chaud"
+            ]
           },
           {
             "text": "Télécommande",
             "difficulty": 1,
-            "forbidden": ["télévision", "boutons", "chaîne"]
+            "forbidden": [
+              "télévision",
+              "boutons",
+              "chaîne"
+            ]
           },
           {
             "text": "Montre",
             "difficulty": 1,
-            "forbidden": ["heure", "poignet", "temps"]
+            "forbidden": [
+              "heure",
+              "poignet",
+              "temps"
+            ]
           },
           {
             "text": "Lunettes",
             "difficulty": 1,
-            "forbidden": ["yeux", "voir", "verres"]
+            "forbidden": [
+              "yeux",
+              "voir",
+              "verres"
+            ]
           },
           {
             "text": "Sac à dos",
             "difficulty": 1,
-            "forbidden": ["épaules", "école", "porter"]
+            "forbidden": [
+              "épaules",
+              "école",
+              "porter"
+            ]
           },
           {
             "text": "Bougie",
             "difficulty": 1,
-            "forbidden": ["flamme", "cire", "lumière"]
+            "forbidden": [
+              "flamme",
+              "cire",
+              "lumière"
+            ]
           },
           {
             "text": "Chaise",
             "difficulty": 1,
-            "forbidden": ["s'asseoir", "pieds", "table"]
+            "forbidden": [
+              "s'asseoir",
+              "pieds",
+              "table"
+            ]
           },
           {
             "text": "Peigne",
             "difficulty": 1,
-            "forbidden": ["cheveux", "coiffer", "dents"]
+            "forbidden": [
+              "cheveux",
+              "coiffer",
+              "dents"
+            ]
           },
           {
             "text": "Savon",
             "difficulty": 1,
-            "forbidden": ["laver", "mousse", "mains"]
+            "forbidden": [
+              "laver",
+              "mousse",
+              "mains"
+            ]
           },
           {
             "text": "Allumettes",
             "difficulty": 1,
-            "forbidden": ["feu", "boîte", "frotter"]
+            "forbidden": [
+              "feu",
+              "boîte",
+              "frotter"
+            ]
+          },
+          {
+            "text": "Lit",
+            "difficulty": 1,
+            "forbidden": [
+              "dormir",
+              "matelas",
+              "chambre"
+            ]
+          },
+          {
+            "text": "Table",
+            "difficulty": 1,
+            "forbidden": [
+              "manger",
+              "chaises",
+              "pieds"
+            ]
+          },
+          {
+            "text": "Armoire",
+            "difficulty": 1,
+            "forbidden": [
+              "vêtements",
+              "ranger",
+              "portes"
+            ]
+          },
+          {
+            "text": "Canapé",
+            "difficulty": 1,
+            "forbidden": [
+              "salon",
+              "assis",
+              "coussins"
+            ]
+          },
+          {
+            "text": "Télévision",
+            "difficulty": 1,
+            "forbidden": [
+              "écran",
+              "chaînes",
+              "regarder"
+            ]
+          },
+          {
+            "text": "Radio",
+            "difficulty": 1,
+            "forbidden": [
+              "écouter",
+              "musique",
+              "ondes"
+            ]
+          },
+          {
+            "text": "Ordinateur",
+            "difficulty": 1,
+            "forbidden": [
+              "clavier",
+              "écran",
+              "internet"
+            ]
+          },
+          {
+            "text": "Clavier",
+            "difficulty": 2,
+            "forbidden": [
+              "touches",
+              "taper",
+              "ordinateur"
+            ]
+          },
+          {
+            "text": "Souris d'ordinateur",
+            "difficulty": 2,
+            "forbidden": [
+              "cliquer",
+              "écran",
+              "flèche"
+            ]
+          },
+          {
+            "text": "Imprimante",
+            "difficulty": 2,
+            "forbidden": [
+              "papier",
+              "encre",
+              "feuille"
+            ]
+          },
+          {
+            "text": "Chargeur",
+            "difficulty": 1,
+            "forbidden": [
+              "batterie",
+              "prise",
+              "câble"
+            ]
+          },
+          {
+            "text": "Écouteurs",
+            "difficulty": 1,
+            "forbidden": [
+              "oreilles",
+              "musique",
+              "fil"
+            ]
+          },
+          {
+            "text": "Casque de moto",
+            "difficulty": 2,
+            "forbidden": [
+              "tête",
+              "protéger",
+              "visière"
+            ]
+          },
+          {
+            "text": "Ampoule",
+            "difficulty": 1,
+            "forbidden": [
+              "lumière",
+              "plafond",
+              "électricité"
+            ]
+          },
+          {
+            "text": "Prise électrique",
+            "difficulty": 2,
+            "forbidden": [
+              "courant",
+              "brancher",
+              "mur"
+            ]
+          },
+          {
+            "text": "Rallonge",
+            "difficulty": 2,
+            "forbidden": [
+              "câble",
+              "prise",
+              "électricité"
+            ]
+          },
+          {
+            "text": "Pile",
+            "difficulty": 2,
+            "forbidden": [
+              "énergie",
+              "télécommande",
+              "batterie"
+            ]
+          },
+          {
+            "text": "Horloge",
+            "difficulty": 1,
+            "forbidden": [
+              "heure",
+              "mur",
+              "aiguilles"
+            ]
+          },
+          {
+            "text": "Réveil",
+            "difficulty": 1,
+            "forbidden": [
+              "sonner",
+              "matin",
+              "dormir"
+            ]
+          },
+          {
+            "text": "Calendrier",
+            "difficulty": 1,
+            "forbidden": [
+              "jours",
+              "mois",
+              "date"
+            ]
+          },
+          {
+            "text": "Stylo",
+            "difficulty": 1,
+            "forbidden": [
+              "écrire",
+              "encre",
+              "bic"
+            ]
+          },
+          {
+            "text": "Crayon",
+            "difficulty": 1,
+            "forbidden": [
+              "dessiner",
+              "mine",
+              "gomme"
+            ]
+          },
+          {
+            "text": "Gomme",
+            "difficulty": 1,
+            "forbidden": [
+              "effacer",
+              "crayon",
+              "erreur"
+            ]
+          },
+          {
+            "text": "Règle",
+            "difficulty": 1,
+            "forbidden": [
+              "mesurer",
+              "tracer",
+              "droite"
+            ]
+          },
+          {
+            "text": "Cahier",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "pages",
+              "écrire"
+            ]
+          },
+          {
+            "text": "Livre",
+            "difficulty": 1,
+            "forbidden": [
+              "lire",
+              "pages",
+              "histoire"
+            ]
+          },
+          {
+            "text": "Cartable",
+            "difficulty": 1,
+            "forbidden": [
+              "école",
+              "sac",
+              "élève"
+            ]
+          },
+          {
+            "text": "Tableau noir",
+            "difficulty": 2,
+            "forbidden": [
+              "craie",
+              "classe",
+              "maître"
+            ]
+          },
+          {
+            "text": "Craie",
+            "difficulty": 2,
+            "forbidden": [
+              "tableau",
+              "blanc",
+              "écrire"
+            ]
+          },
+          {
+            "text": "Agrafeuse",
+            "difficulty": 2,
+            "forbidden": [
+              "papier",
+              "agrafes",
+              "bureau"
+            ]
+          },
+          {
+            "text": "Scotch",
+            "difficulty": 2,
+            "forbidden": [
+              "coller",
+              "ruban",
+              "adhésif"
+            ]
+          },
+          {
+            "text": "Colle",
+            "difficulty": 1,
+            "forbidden": [
+              "coller",
+              "papier",
+              "tube"
+            ]
+          },
+          {
+            "text": "Enveloppe",
+            "difficulty": 2,
+            "forbidden": [
+              "lettre",
+              "poste",
+              "timbre"
+            ]
+          },
+          {
+            "text": "Timbre",
+            "difficulty": 2,
+            "forbidden": [
+              "lettre",
+              "poste",
+              "coller"
+            ]
+          },
+          {
+            "text": "Portefeuille",
+            "difficulty": 1,
+            "forbidden": [
+              "argent",
+              "poche",
+              "cartes"
+            ]
+          },
+          {
+            "text": "Sac à main",
+            "difficulty": 1,
+            "forbidden": [
+              "femme",
+              "bandoulière",
+              "porter"
+            ]
+          },
+          {
+            "text": "Valise",
+            "difficulty": 1,
+            "forbidden": [
+              "voyage",
+              "roulettes",
+              "vêtements"
+            ]
+          },
+          {
+            "text": "Parasol",
+            "difficulty": 2,
+            "forbidden": [
+              "plage",
+              "ombre",
+              "soleil"
+            ]
+          },
+          {
+            "text": "Éventail",
+            "difficulty": 2,
+            "forbidden": [
+              "chaleur",
+              "air",
+              "main"
+            ]
+          },
+          {
+            "text": "Climatiseur",
+            "difficulty": 2,
+            "forbidden": [
+              "froid",
+              "chaleur",
+              "air"
+            ]
+          },
+          {
+            "text": "Cuisinière",
+            "difficulty": 2,
+            "forbidden": [
+              "four",
+              "feu",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Four",
+            "difficulty": 1,
+            "forbidden": [
+              "cuire",
+              "gâteau",
+              "chaud"
+            ]
+          },
+          {
+            "text": "Micro-ondes",
+            "difficulty": 1,
+            "forbidden": [
+              "chauffer",
+              "cuisine",
+              "minutes"
+            ]
+          },
+          {
+            "text": "Mixeur",
+            "difficulty": 2,
+            "forbidden": [
+              "mélanger",
+              "jus",
+              "lames"
+            ]
+          },
+          {
+            "text": "Bouilloire",
+            "difficulty": 2,
+            "forbidden": [
+              "eau",
+              "chauffer",
+              "thé"
+            ]
+          },
+          {
+            "text": "Casserole",
+            "difficulty": 1,
+            "forbidden": [
+              "cuisine",
+              "manche",
+              "chauffer"
+            ]
+          },
+          {
+            "text": "Poêle",
+            "difficulty": 1,
+            "forbidden": [
+              "frire",
+              "œuf",
+              "huile"
+            ]
+          },
+          {
+            "text": "Assiette",
+            "difficulty": 1,
+            "forbidden": [
+              "manger",
+              "table",
+              "plat"
+            ]
+          },
+          {
+            "text": "Fourchette",
+            "difficulty": 1,
+            "forbidden": [
+              "manger",
+              "dents",
+              "couteau"
+            ]
+          },
+          {
+            "text": "Cuillère",
+            "difficulty": 1,
+            "forbidden": [
+              "soupe",
+              "manger",
+              "remuer"
+            ]
+          },
+          {
+            "text": "Couteau",
+            "difficulty": 1,
+            "forbidden": [
+              "couper",
+              "lame",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Verre",
+            "difficulty": 1,
+            "forbidden": [
+              "boire",
+              "eau",
+              "transparent"
+            ]
+          },
+          {
+            "text": "Tasse",
+            "difficulty": 1,
+            "forbidden": [
+              "café",
+              "anse",
+              "boire"
+            ]
+          },
+          {
+            "text": "Bouteille",
+            "difficulty": 1,
+            "forbidden": [
+              "eau",
+              "bouchon",
+              "boire"
+            ]
+          },
+          {
+            "text": "Thermos",
+            "difficulty": 3,
+            "forbidden": [
+              "chaud",
+              "café",
+              "garder"
+            ]
+          },
+          {
+            "text": "Plateau",
+            "difficulty": 2,
+            "forbidden": [
+              "servir",
+              "porter",
+              "tasses"
+            ]
+          },
+          {
+            "text": "Mortier et pilon",
+            "difficulty": 2,
+            "forbidden": [
+              "écraser",
+              "piler",
+              "épices"
+            ]
+          },
+          {
+            "text": "Tamis",
+            "difficulty": 3,
+            "forbidden": [
+              "farine",
+              "filtrer",
+              "trous"
+            ]
+          },
+          {
+            "text": "Glacière",
+            "difficulty": 2,
+            "forbidden": [
+              "froid",
+              "boissons",
+              "glaçons"
+            ]
+          },
+          {
+            "text": "Bouteille de gaz",
+            "difficulty": 2,
+            "forbidden": [
+              "cuisine",
+              "feu",
+              "recharger"
+            ]
+          },
+          {
+            "text": "Lampe tempête",
+            "difficulty": 3,
+            "forbidden": [
+              "pétrole",
+              "lumière",
+              "nuit"
+            ]
+          },
+          {
+            "text": "Natte",
+            "difficulty": 2,
+            "forbidden": [
+              "dormir",
+              "sol",
+              "tressée"
+            ]
+          },
+          {
+            "text": "Tabouret",
+            "difficulty": 2,
+            "forbidden": [
+              "s'asseoir",
+              "petit",
+              "pieds"
+            ]
+          },
+          {
+            "text": "Hamac",
+            "difficulty": 2,
+            "forbidden": [
+              "dormir",
+              "suspendu",
+              "balancer"
+            ]
+          },
+          {
+            "text": "Matelas",
+            "difficulty": 1,
+            "forbidden": [
+              "lit",
+              "dormir",
+              "mousse"
+            ]
+          },
+          {
+            "text": "Couverture",
+            "difficulty": 1,
+            "forbidden": [
+              "froid",
+              "lit",
+              "chaude"
+            ]
+          },
+          {
+            "text": "Drap",
+            "difficulty": 2,
+            "forbidden": [
+              "lit",
+              "tissu",
+              "blanc"
+            ]
+          },
+          {
+            "text": "Serviette",
+            "difficulty": 1,
+            "forbidden": [
+              "douche",
+              "essuyer",
+              "bain"
+            ]
+          },
+          {
+            "text": "Rasoir",
+            "difficulty": 1,
+            "forbidden": [
+              "barbe",
+              "lame",
+              "raser"
+            ]
+          },
+          {
+            "text": "Coupe-ongles",
+            "difficulty": 2,
+            "forbidden": [
+              "doigts",
+              "couper",
+              "petit"
+            ]
+          },
+          {
+            "text": "Dentifrice",
+            "difficulty": 1,
+            "forbidden": [
+              "dents",
+              "tube",
+              "brosse"
+            ]
+          },
+          {
+            "text": "Shampoing",
+            "difficulty": 1,
+            "forbidden": [
+              "cheveux",
+              "mousse",
+              "laver"
+            ]
+          },
+          {
+            "text": "Parfum",
+            "difficulty": 1,
+            "forbidden": [
+              "odeur",
+              "sentir bon",
+              "flacon"
+            ]
+          },
+          {
+            "text": "Crème pour la peau",
+            "difficulty": 2,
+            "forbidden": [
+              "visage",
+              "hydrater",
+              "pot"
+            ]
+          },
+          {
+            "text": "Rouge à lèvres",
+            "difficulty": 1,
+            "forbidden": [
+              "bouche",
+              "maquillage",
+              "tube"
+            ]
+          },
+          {
+            "text": "Vernis à ongles",
+            "difficulty": 2,
+            "forbidden": [
+              "couleur",
+              "pinceau",
+              "manucure"
+            ]
+          },
+          {
+            "text": "Collier",
+            "difficulty": 1,
+            "forbidden": [
+              "cou",
+              "bijou",
+              "perles"
+            ]
+          },
+          {
+            "text": "Bague",
+            "difficulty": 1,
+            "forbidden": [
+              "doigt",
+              "mariage",
+              "bijou"
+            ]
+          },
+          {
+            "text": "Boucles d'oreilles",
+            "difficulty": 2,
+            "forbidden": [
+              "lobe",
+              "bijou",
+              "percer"
+            ]
+          },
+          {
+            "text": "Chaussures",
+            "difficulty": 1,
+            "forbidden": [
+              "pieds",
+              "lacets",
+              "marcher"
+            ]
+          },
+          {
+            "text": "Sandales",
+            "difficulty": 1,
+            "forbidden": [
+              "pieds",
+              "été",
+              "lanières"
+            ]
+          },
+          {
+            "text": "Tongs",
+            "difficulty": 1,
+            "forbidden": [
+              "pieds",
+              "plage",
+              "orteils"
+            ]
+          },
+          {
+            "text": "Ceinture",
+            "difficulty": 1,
+            "forbidden": [
+              "pantalon",
+              "boucle",
+              "taille"
+            ]
+          },
+          {
+            "text": "Chapeau",
+            "difficulty": 1,
+            "forbidden": [
+              "tête",
+              "soleil",
+              "bord"
+            ]
+          },
+          {
+            "text": "Casquette",
+            "difficulty": 1,
+            "forbidden": [
+              "tête",
+              "visière",
+              "soleil"
+            ]
+          },
+          {
+            "text": "Écharpe",
+            "difficulty": 2,
+            "forbidden": [
+              "cou",
+              "froid",
+              "laine"
+            ]
+          },
+          {
+            "text": "Cintre",
+            "difficulty": 2,
+            "forbidden": [
+              "vêtements",
+              "armoire",
+              "suspendre"
+            ]
+          },
+          {
+            "text": "Machine à laver",
+            "difficulty": 1,
+            "forbidden": [
+              "linge",
+              "tambour",
+              "lessive"
+            ]
+          },
+          {
+            "text": "Corde à linge",
+            "difficulty": 2,
+            "forbidden": [
+              "sécher",
+              "pinces",
+              "fil"
+            ]
+          },
+          {
+            "text": "Pince à linge",
+            "difficulty": 2,
+            "forbidden": [
+              "sécher",
+              "corde",
+              "accrocher"
+            ]
+          },
+          {
+            "text": "Aspirateur",
+            "difficulty": 1,
+            "forbidden": [
+              "poussière",
+              "aspirer",
+              "sol"
+            ]
+          },
+          {
+            "text": "Serpillière",
+            "difficulty": 2,
+            "forbidden": [
+              "laver",
+              "sol",
+              "eau"
+            ]
+          },
+          {
+            "text": "Poubelle",
+            "difficulty": 1,
+            "forbidden": [
+              "déchets",
+              "ordures",
+              "couvercle"
+            ]
+          },
+          {
+            "text": "Marteau",
+            "difficulty": 1,
+            "forbidden": [
+              "clou",
+              "taper",
+              "outil"
+            ]
+          },
+          {
+            "text": "Tournevis",
+            "difficulty": 1,
+            "forbidden": [
+              "vis",
+              "tourner",
+              "outil"
+            ]
+          },
+          {
+            "text": "Clou",
+            "difficulty": 1,
+            "forbidden": [
+              "marteau",
+              "bois",
+              "pointu"
+            ]
+          },
+          {
+            "text": "Échelle",
+            "difficulty": 1,
+            "forbidden": [
+              "monter",
+              "barreaux",
+              "haut"
+            ]
+          },
+          {
+            "text": "Cadenas",
+            "difficulty": 2,
+            "forbidden": [
+              "fermer",
+              "clé",
+              "sécurité"
+            ]
           }
         ]
       }

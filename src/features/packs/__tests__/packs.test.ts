@@ -1,4 +1,5 @@
 import example from '../../../../docs/exemple-pack.json';
+import { foldText } from '../filter';
 import { normalizeWord, packFileSchema, packLimits } from '../schema';
 import { builtinPackFiles } from '../seed';
 import { builtinRuleViolations, needsUpdate, planWords } from '../seed-plan';
@@ -101,6 +102,19 @@ describe('paquets intégrés', () => {
       if (parsed.success) expect(builtinRuleViolations(parsed.data)).toEqual([]);
     },
   );
+
+  it('aucun mot en double dans une catégorie (accents et majuscules ignorés)', () => {
+    for (const file of builtinPackFiles) {
+      for (const category of packFileSchema.parse(file).pack.categories) {
+        const texts = category.words.map((entry) => foldText(normalizeWord(entry).text));
+        const duplicates = texts.filter((text, i) => texts.indexOf(text) !== i);
+        expect({ category: category.id, duplicates }).toEqual({
+          category: category.id,
+          duplicates: [],
+        });
+      }
+    }
+  });
 
   it('les identifiants de paquets sont uniques', () => {
     const ids = builtinPackFiles.map((file) => packFileSchema.parse(file).pack.id);

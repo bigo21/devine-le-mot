@@ -2,6 +2,7 @@
 // Insérés en base au premier lancement et à chaque nouvelle version (voir seed.ts).
 import camerounCuisine from './cameroun-cuisine.json';
 import mondeAnimaux from './monde-animaux.json';
+import mondeFruitsLegumes from './monde-fruits-legumes.json';
 import mondeMetiers from './monde-metiers.json';
 import mondeObjets from './monde-objets.json';
 import mondeSports from './monde-sports.json';
@@ -13,4 +14,5 @@ export const builtinPackFiles: readonly unknown[] = [
   mondeObjets,
   mondeSports,
   mondeMetiers,
+  mondeFruitsLegumes,
 ];
