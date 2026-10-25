@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "expressions",
@@ -246,7 +246,7 @@
             "forbidden": [
               "policier",
               "corrompu",
-              "mille francs"
+              "racket"
             ]
           },
           {
@@ -425,8 +425,8 @@
             "difficulty": 1,
             "forbidden": [
               "résignation",
-              "rien à faire",
-              "fatalité"
+              "fatalité",
+              "haussement d'épaules"
             ]
           }
         ]

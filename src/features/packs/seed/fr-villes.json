@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "villes",
@@ -722,7 +722,7 @@
             "difficulty": 2,
             "forbidden": [
               "Disneyland",
-              "Seine-et-Marne",
+              "77",
               "RER A"
             ]
           },
@@ -937,7 +937,7 @@
             "text": "Roubaix",
             "difficulty": 3,
             "forbidden": [
-              "Paris-Roubaix",
+              "pavés",
               "vélodrome",
               "Nord"
             ]

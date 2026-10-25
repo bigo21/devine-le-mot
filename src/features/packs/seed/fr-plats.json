@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "plats",
@@ -777,7 +777,7 @@
             "forbidden": [
               "cerises",
               "crème",
-              "Pays basque"
+              "Espelette"
             ]
           },
           {

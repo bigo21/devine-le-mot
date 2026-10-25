@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "marques",
@@ -920,7 +920,7 @@
             "difficulty": 3,
             "forbidden": [
               "processeur",
-              "Intel Inside",
+              "puce",
               "ordinateur"
             ]
           },
@@ -1047,7 +1047,7 @@
             "forbidden": [
               "opérateur",
               "téléphone",
-              "orange money"
+              "fruit"
             ]
           },
           {

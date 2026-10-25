@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "films",
@@ -1146,7 +1146,7 @@
             "forbidden": [
               "Eddie Murphy",
               "Zamunda",
-              "prince africain"
+              "royaume"
             ]
           },
           {

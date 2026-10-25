@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "stars-musique",
@@ -326,7 +326,7 @@
             "text": "Backstreet Boys",
             "difficulty": 2,
             "forbidden": [
-              "boys band",
+              "groupe vocal",
               "I Want It That Way",
               "années 90"
             ]
@@ -335,7 +335,7 @@
             "text": "Spice Girls",
             "difficulty": 2,
             "forbidden": [
-              "girls band",
+              "groupe vocal",
               "Wannabe",
               "Posh"
             ]

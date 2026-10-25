@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "super-heros",
@@ -1036,8 +1036,8 @@
             "text": "Spider-Gwen",
             "difficulty": 3,
             "forbidden": [
-              "Gwen Stacy",
-              "Spider-Verse",
+              "blonde",
+              "univers parallèle",
               "capuche"
             ]
           },

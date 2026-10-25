@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "dessins-animes",
@@ -443,7 +443,7 @@
             "text": "Inspecteur Gadget",
             "difficulty": 1,
             "forbidden": [
-              "Go Go Gadget",
+              "bras extensibles",
               "Docteur Gang",
               "Sophie"
             ]
@@ -821,7 +821,7 @@
             "text": "Félix le Chat",
             "difficulty": 3,
             "forbidden": [
-              "chat noir",
+              "noir et blanc",
               "sac magique",
               "années 1920"
             ]
@@ -831,7 +831,7 @@
             "difficulty": 3,
             "forbidden": [
               "années 30",
-              "Boop-oop-a-doop",
+              "pin-up",
               "robe"
             ]
           },

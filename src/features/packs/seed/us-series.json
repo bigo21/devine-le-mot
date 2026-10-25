@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "series",
@@ -631,7 +631,7 @@
             "text": "Tout le monde déteste Chris",
             "difficulty": 2,
             "forbidden": [
-              "Chris Rock",
+              "humoriste",
               "Brooklyn",
               "sitcom"
             ]

@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "fruits-et-legumes",
@@ -1011,8 +1011,8 @@
             "difficulty": 3,
             "forbidden": [
               "Cameroun",
-              "poivre blanc",
-              "épice"
+              "épice",
+              "Moungo"
             ]
           },
           {

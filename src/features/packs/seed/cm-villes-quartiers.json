@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "villes-quartiers",
@@ -407,7 +407,7 @@
             "difficulty": 3,
             "forbidden": [
               "Adamaoua",
-              "Mayo-Banyo",
+              "Nord",
               "bétail"
             ]
           },

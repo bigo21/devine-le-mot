@@ -128,6 +128,32 @@ describe('paquets intégrés', () => {
     });
     expect(builtinRuleViolations(pack).some((p) => p.includes('3 attendus'))).toBe(true);
   });
+
+  it('détecte un mot interdit qui reprend un mot du mot à deviner', () => {
+    const base = validPack();
+    const pack = packFileSchema.parse({
+      ...base,
+      pack: {
+        ...base.pack,
+        region: 'world',
+        categories: [
+          {
+            ...base.pack.categories[0]!,
+            words: [
+              ...base.pack.categories[0]!.words,
+              { text: 'Rire au mauvais moment', forbidden: ['fou rire', 'gêne', 'sérieux'] },
+              { text: 'Tour de Pise', forbidden: ['de travers', 'Italie', 'penchée'] },
+            ],
+          },
+        ],
+      },
+    });
+    const problems = builtinRuleViolations(pack).filter((p) => p.includes('fait partie du mot'));
+    // « fou rire » reprend « rire » ; « de travers » ne partage qu'un mot court (« de »).
+    expect(problems).toEqual([
+      expect.stringContaining('« Rire au mauvais moment » interdit « fou rire »'),
+    ]);
+  });
 });
 
 describe('mise à jour des paquets intégrés', () => {

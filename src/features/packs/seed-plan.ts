@@ -53,11 +53,16 @@ export function builtinRuleViolations(file: PackFile): string[] {
           `${where} : « ${word.text} » a ${word.forbidden.length} mots interdits (3 attendus)`,
         );
       }
-      // Un mot interdit qui fait partie du mot à deviner ne sert à rien (on ne le dira pas).
+      // Un mot interdit qui fait partie du mot à deviner ne sert à rien (on ne le dira pas),
+      // et un mot interdit en plusieurs mots ne doit pas reprendre un mot significatif
+      // (4 lettres ou plus) du mot à deviner : « fou rire » pour « Rire au mauvais moment ».
       const tokens = new Set(foldText(word.text).split(/[^a-z0-9]+/));
       for (const forbidden of word.forbidden) {
         const folded = foldText(forbidden);
-        if (folded === foldText(word.text) || tokens.has(folded)) {
+        const shared = folded
+          .split(/[^a-z0-9]+/)
+          .some((token) => token.length >= 4 && tokens.has(token));
+        if (folded === foldText(word.text) || tokens.has(folded) || shared) {
           problems.push(
             `${where} : « ${word.text} » interdit « ${forbidden} », qui fait partie du mot`,
           );

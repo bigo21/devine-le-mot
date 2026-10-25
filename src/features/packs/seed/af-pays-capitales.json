@@ -10,7 +10,7 @@
     "region": "africa",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "pays-capitales",
@@ -200,7 +200,7 @@
             "difficulty": 1,
             "forbidden": [
               "capitale",
-              "fleuve Congo",
+              "Sassou",
               "Pointe-Noire"
             ]
           },
@@ -451,9 +451,9 @@
             "text": "Bissau",
             "difficulty": 3,
             "forbidden": [
-              "Guinée-Bissau",
+              "lusophone",
               "capitale",
-              "lusophone"
+              "océan Atlantique"
             ]
           },
           {

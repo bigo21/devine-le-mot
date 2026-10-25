@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "sportifs",
@@ -39,7 +39,7 @@
             "difficulty": 1,
             "forbidden": [
               "Lakers",
-              "King James",
+              "Cleveland",
               "basket"
             ]
           },
@@ -409,7 +409,7 @@
             "forbidden": [
               "Phoenix",
               "Dream Team",
-              "Sir Charles"
+              "Auburn"
             ]
           },
           {
