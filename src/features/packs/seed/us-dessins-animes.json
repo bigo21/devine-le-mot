@@ -1,0 +1,1141 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-dessins-animes",
+    "name": {
+      "fr": "Dessins animés",
+      "en": "Cartoons"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "dessins-animes",
+        "name": {
+          "fr": "Dessins animés",
+          "en": "Cartoons"
+        },
+        "emoji": "🐭",
+        "color": "indigo",
+        "tags": [
+          "personnages",
+          "enfants"
+        ],
+        "words": [
+          {
+            "text": "Mickey Mouse",
+            "difficulty": 1,
+            "forbidden": [
+              "souris",
+              "Disney",
+              "oreilles rondes"
+            ]
+          },
+          {
+            "text": "Minnie",
+            "difficulty": 2,
+            "forbidden": [
+              "souris",
+              "nœud rose",
+              "Mickey"
+            ]
+          },
+          {
+            "text": "Donald Duck",
+            "difficulty": 1,
+            "forbidden": [
+              "canard",
+              "Disney",
+              "colère"
+            ]
+          },
+          {
+            "text": "Picsou",
+            "difficulty": 2,
+            "forbidden": [
+              "canard",
+              "argent",
+              "oncle"
+            ]
+          },
+          {
+            "text": "Dingo",
+            "difficulty": 2,
+            "forbidden": [
+              "chien",
+              "Disney",
+              "Mickey"
+            ]
+          },
+          {
+            "text": "Pluto",
+            "difficulty": 2,
+            "forbidden": [
+              "chien",
+              "Mickey",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Bugs Bunny",
+            "difficulty": 1,
+            "forbidden": [
+              "lapin",
+              "carotte",
+              "Quoi de neuf docteur"
+            ]
+          },
+          {
+            "text": "Daffy Duck",
+            "difficulty": 2,
+            "forbidden": [
+              "canard noir",
+              "Looney Tunes",
+              "zézaie"
+            ]
+          },
+          {
+            "text": "Titi et Grosminet",
+            "difficulty": 1,
+            "forbidden": [
+              "canari",
+              "chat",
+              "cage"
+            ]
+          },
+          {
+            "text": "Bip Bip et Coyote",
+            "difficulty": 1,
+            "forbidden": [
+              "désert",
+              "course",
+              "Acme"
+            ]
+          },
+          {
+            "text": "Tom et Jerry",
+            "difficulty": 1,
+            "forbidden": [
+              "chat",
+              "souris",
+              "poursuite"
+            ]
+          },
+          {
+            "text": "Scooby-Doo",
+            "difficulty": 1,
+            "forbidden": [
+              "chien",
+              "Sammy",
+              "Mystère et Compagnie"
+            ]
+          },
+          {
+            "text": "Les Pierrafeu",
+            "difficulty": 2,
+            "forbidden": [
+              "préhistoire",
+              "Fred",
+              "Yabba Dabba Doo"
+            ]
+          },
+          {
+            "text": "Popeye",
+            "difficulty": 1,
+            "forbidden": [
+              "épinards",
+              "marin",
+              "Olive"
+            ]
+          },
+          {
+            "text": "Bob l'éponge",
+            "difficulty": 1,
+            "forbidden": [
+              "carré",
+              "Bikini Bottom",
+              "Patrick"
+            ]
+          },
+          {
+            "text": "Patrick l'étoile de mer",
+            "difficulty": 2,
+            "forbidden": [
+              "Bob l'éponge",
+              "rose",
+              "Bikini Bottom"
+            ]
+          },
+          {
+            "text": "Dora l'exploratrice",
+            "difficulty": 1,
+            "forbidden": [
+              "sac à dos",
+              "Babouche",
+              "carte"
+            ]
+          },
+          {
+            "text": "Peppa Pig",
+            "difficulty": 1,
+            "forbidden": [
+              "cochon",
+              "flaques de boue",
+              "George"
+            ]
+          },
+          {
+            "text": "Pat'Patrouille",
+            "difficulty": 1,
+            "forbidden": [
+              "chiots",
+              "Ryder",
+              "secours"
+            ]
+          },
+          {
+            "text": "Les Schtroumpfs",
+            "difficulty": 1,
+            "forbidden": [
+              "bleus",
+              "Gargamel",
+              "champignon"
+            ]
+          },
+          {
+            "text": "Gargamel",
+            "difficulty": 2,
+            "forbidden": [
+              "sorcier",
+              "Schtroumpfs",
+              "Azraël"
+            ]
+          },
+          {
+            "text": "Tintin",
+            "difficulty": 1,
+            "forbidden": [
+              "reporter",
+              "Milou",
+              "houppette"
+            ]
+          },
+          {
+            "text": "Capitaine Haddock",
+            "difficulty": 2,
+            "forbidden": [
+              "Tintin",
+              "mille sabords",
+              "barbe"
+            ]
+          },
+          {
+            "text": "Astérix",
+            "difficulty": 1,
+            "forbidden": [
+              "Gaulois",
+              "potion magique",
+              "Obélix"
+            ]
+          },
+          {
+            "text": "Obélix",
+            "difficulty": 1,
+            "forbidden": [
+              "menhir",
+              "sangliers",
+              "Astérix"
+            ]
+          },
+          {
+            "text": "Idéfix",
+            "difficulty": 3,
+            "forbidden": [
+              "chien",
+              "Obélix",
+              "Gaulois"
+            ]
+          },
+          {
+            "text": "Lucky Luke",
+            "difficulty": 2,
+            "forbidden": [
+              "cow-boy",
+              "Jolly Jumper",
+              "Dalton"
+            ]
+          },
+          {
+            "text": "Boule et Bill",
+            "difficulty": 2,
+            "forbidden": [
+              "cocker",
+              "garçon",
+              "tortue Caroline"
+            ]
+          },
+          {
+            "text": "Titeuf",
+            "difficulty": 2,
+            "forbidden": [
+              "mèche",
+              "Nadia",
+              "Tchô"
+            ]
+          },
+          {
+            "text": "Garfield",
+            "difficulty": 1,
+            "forbidden": [
+              "chat orange",
+              "lasagnes",
+              "lundi"
+            ]
+          },
+          {
+            "text": "Snoopy",
+            "difficulty": 1,
+            "forbidden": [
+              "beagle",
+              "Charlie Brown",
+              "niche"
+            ]
+          },
+          {
+            "text": "Futurama",
+            "difficulty": 2,
+            "forbidden": [
+              "Fry",
+              "Bender",
+              "livreur"
+            ]
+          },
+          {
+            "text": "Les Razmoket",
+            "difficulty": 2,
+            "forbidden": [
+              "bébés",
+              "Tommy",
+              "Angelica"
+            ]
+          },
+          {
+            "text": "Hé Arnold !",
+            "difficulty": 3,
+            "forbidden": [
+              "tête de ballon",
+              "Helga",
+              "grand-mère"
+            ]
+          },
+          {
+            "text": "Totally Spies",
+            "difficulty": 2,
+            "forbidden": [
+              "espionnes",
+              "Sam",
+              "Clover"
+            ]
+          },
+          {
+            "text": "Code Lyoko",
+            "difficulty": 3,
+            "forbidden": [
+              "Xana",
+              "virtuel",
+              "Kadic"
+            ]
+          },
+          {
+            "text": "Oggy et les Cafards",
+            "difficulty": 1,
+            "forbidden": [
+              "chat bleu",
+              "Dee Dee",
+              "Jack"
+            ]
+          },
+          {
+            "text": "Les Lapins Crétins",
+            "difficulty": 1,
+            "forbidden": [
+              "Bwaaah",
+              "Ubisoft",
+              "fous"
+            ]
+          },
+          {
+            "text": "Ben 10",
+            "difficulty": 2,
+            "forbidden": [
+              "Omnitrix",
+              "extraterrestres",
+              "montre"
+            ]
+          },
+          {
+            "text": "Les Supers Nanas",
+            "difficulty": 2,
+            "forbidden": [
+              "Belle",
+              "Rebelle",
+              "Bulle"
+            ]
+          },
+          {
+            "text": "Le Laboratoire de Dexter",
+            "difficulty": 3,
+            "forbidden": [
+              "génie",
+              "Dee Dee",
+              "labo"
+            ]
+          },
+          {
+            "text": "Courage le chien froussard",
+            "difficulty": 3,
+            "forbidden": [
+              "rose",
+              "peur",
+              "Muriel"
+            ]
+          },
+          {
+            "text": "Johnny Bravo",
+            "difficulty": 3,
+            "forbidden": [
+              "banane",
+              "lunettes de soleil",
+              "muscles"
+            ]
+          },
+          {
+            "text": "Kim Possible",
+            "difficulty": 3,
+            "forbidden": [
+              "Ron",
+              "Rufus",
+              "espionne"
+            ]
+          },
+          {
+            "text": "Phinéas et Ferb",
+            "difficulty": 2,
+            "forbidden": [
+              "Perry",
+              "ornithorynque",
+              "vacances"
+            ]
+          },
+          {
+            "text": "Avatar, le dernier maître de l'air",
+            "difficulty": 3,
+            "forbidden": [
+              "Aang",
+              "flèche bleue",
+              "éléments"
+            ]
+          },
+          {
+            "text": "Inspecteur Gadget",
+            "difficulty": 1,
+            "forbidden": [
+              "Go Go Gadget",
+              "Docteur Gang",
+              "Sophie"
+            ]
+          },
+          {
+            "text": "Il était une fois… la Vie",
+            "difficulty": 3,
+            "forbidden": [
+              "globules",
+              "Maestro",
+              "corps humain"
+            ]
+          },
+          {
+            "text": "Les Mystérieuses Cités d'or",
+            "difficulty": 3,
+            "forbidden": [
+              "Esteban",
+              "condor",
+              "Incas"
+            ]
+          },
+          {
+            "text": "Barbapapa",
+            "difficulty": 2,
+            "forbidden": [
+              "forme",
+              "famille",
+              "rose"
+            ]
+          },
+          {
+            "text": "Babar",
+            "difficulty": 2,
+            "forbidden": [
+              "éléphant",
+              "roi",
+              "Céleste"
+            ]
+          },
+          {
+            "text": "Caillou",
+            "difficulty": 2,
+            "forbidden": [
+              "chauve",
+              "garçon",
+              "dessin animé"
+            ]
+          },
+          {
+            "text": "T'choupi",
+            "difficulty": 1,
+            "forbidden": [
+              "pingouin",
+              "Doudou",
+              "enfant"
+            ]
+          },
+          {
+            "text": "Petit Ours Brun",
+            "difficulty": 2,
+            "forbidden": [
+              "ourson",
+              "enfant",
+              "livre"
+            ]
+          },
+          {
+            "text": "Trotro",
+            "difficulty": 1,
+            "forbidden": [
+              "âne",
+              "Boubou",
+              "Nana"
+            ]
+          },
+          {
+            "text": "Masha et Michka",
+            "difficulty": 1,
+            "forbidden": [
+              "ours",
+              "fillette",
+              "Russie"
+            ]
+          },
+          {
+            "text": "Bluey",
+            "difficulty": 2,
+            "forbidden": [
+              "chienne",
+              "Bingo",
+              "Australie"
+            ]
+          },
+          {
+            "text": "Le Monde incroyable de Gumball",
+            "difficulty": 3,
+            "forbidden": [
+              "chat bleu",
+              "Darwin",
+              "Elmore"
+            ]
+          },
+          {
+            "text": "Adventure Time",
+            "difficulty": 3,
+            "forbidden": [
+              "Finn",
+              "Jake",
+              "Ooo"
+            ]
+          },
+          {
+            "text": "Teen Titans Go!",
+            "difficulty": 3,
+            "forbidden": [
+              "Robin",
+              "Cyborg",
+              "Raven"
+            ]
+          },
+          {
+            "text": "Winx Club",
+            "difficulty": 2,
+            "forbidden": [
+              "fées",
+              "Bloom",
+              "Alféa"
+            ]
+          },
+          {
+            "text": "Sonic",
+            "difficulty": 1,
+            "forbidden": [
+              "hérisson bleu",
+              "anneaux",
+              "Sega"
+            ]
+          },
+          {
+            "text": "Pikachu",
+            "difficulty": 1,
+            "forbidden": [
+              "Pokémon",
+              "jaune",
+              "éclair"
+            ]
+          },
+          {
+            "text": "Pokémon",
+            "difficulty": 1,
+            "forbidden": [
+              "Sacha",
+              "Pikachu",
+              "dresseur"
+            ]
+          },
+          {
+            "text": "Dragon Ball",
+            "difficulty": 1,
+            "forbidden": [
+              "Goku",
+              "Kamehameha",
+              "boules de cristal"
+            ]
+          },
+          {
+            "text": "Sangoku",
+            "difficulty": 1,
+            "forbidden": [
+              "Dragon Ball",
+              "Super Saiyan",
+              "Kamehameha"
+            ]
+          },
+          {
+            "text": "Naruto",
+            "difficulty": 1,
+            "forbidden": [
+              "ninja",
+              "Konoha",
+              "Sasuke"
+            ]
+          },
+          {
+            "text": "One Piece",
+            "difficulty": 1,
+            "forbidden": [
+              "Luffy",
+              "pirates",
+              "chapeau de paille"
+            ]
+          },
+          {
+            "text": "L'Attaque des Titans",
+            "difficulty": 2,
+            "forbidden": [
+              "géants",
+              "murs",
+              "Eren"
+            ]
+          },
+          {
+            "text": "Death Note",
+            "difficulty": 2,
+            "forbidden": [
+              "cahier",
+              "Light",
+              "Ryuk"
+            ]
+          },
+          {
+            "text": "Les Chevaliers du Zodiaque",
+            "difficulty": 2,
+            "forbidden": [
+              "armures",
+              "Seiya",
+              "Athéna"
+            ]
+          },
+          {
+            "text": "Olive et Tom",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "Captain Tsubasa",
+              "Japon"
+            ]
+          },
+          {
+            "text": "Nicky Larson",
+            "difficulty": 3,
+            "forbidden": [
+              "City Hunter",
+              "massue",
+              "Tokyo"
+            ]
+          },
+          {
+            "text": "Sailor Moon",
+            "difficulty": 2,
+            "forbidden": [
+              "guerrière",
+              "lune",
+              "Bunny"
+            ]
+          },
+          {
+            "text": "Demon Slayer",
+            "difficulty": 2,
+            "forbidden": [
+              "Tanjiro",
+              "démons",
+              "sabre"
+            ]
+          },
+          {
+            "text": "My Hero Academia",
+            "difficulty": 3,
+            "forbidden": [
+              "Deku",
+              "super-pouvoirs",
+              "All Might"
+            ]
+          },
+          {
+            "text": "Jujutsu Kaisen",
+            "difficulty": 3,
+            "forbidden": [
+              "Itadori",
+              "fléaux",
+              "Gojo"
+            ]
+          },
+          {
+            "text": "Doraemon",
+            "difficulty": 2,
+            "forbidden": [
+              "chat robot",
+              "poche",
+              "Japon"
+            ]
+          },
+          {
+            "text": "Heidi",
+            "difficulty": 2,
+            "forbidden": [
+              "Alpes",
+              "grand-père",
+              "chèvres"
+            ]
+          },
+          {
+            "text": "Candy",
+            "difficulty": 3,
+            "forbidden": [
+              "orpheline",
+              "Anthony",
+              "taches de rousseur"
+            ]
+          },
+          {
+            "text": "Albator",
+            "difficulty": 3,
+            "forbidden": [
+              "pirate de l'espace",
+              "balafre",
+              "Arcadia"
+            ]
+          },
+          {
+            "text": "Ulysse 31",
+            "difficulty": 3,
+            "forbidden": [
+              "espace",
+              "Nono",
+              "Odyssée"
+            ]
+          },
+          {
+            "text": "Mon petit poney",
+            "difficulty": 2,
+            "forbidden": [
+              "poneys",
+              "arc-en-ciel",
+              "licorne"
+            ]
+          },
+          {
+            "text": "Les Bisounours",
+            "difficulty": 2,
+            "forbidden": [
+              "ours",
+              "ventre",
+              "arc-en-ciel"
+            ]
+          },
+          {
+            "text": "Pocoyo",
+            "difficulty": 3,
+            "forbidden": [
+              "enfant bleu",
+              "Pato",
+              "Elly"
+            ]
+          },
+          {
+            "text": "Simon le lapin",
+            "difficulty": 3,
+            "forbidden": [
+              "oreilles",
+              "Gaspard",
+              "Super Jules"
+            ]
+          },
+          {
+            "text": "La Panthère rose",
+            "difficulty": 1,
+            "forbidden": [
+              "félin",
+              "Inspecteur Clouseau",
+              "Henri Mancini"
+            ]
+          },
+          {
+            "text": "Woody Woodpecker",
+            "difficulty": 2,
+            "forbidden": [
+              "pic-vert",
+              "rire",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Félix le Chat",
+            "difficulty": 3,
+            "forbidden": [
+              "chat noir",
+              "sac magique",
+              "années 1920"
+            ]
+          },
+          {
+            "text": "Betty Boop",
+            "difficulty": 3,
+            "forbidden": [
+              "années 30",
+              "Boop-oop-a-doop",
+              "robe"
+            ]
+          },
+          {
+            "text": "Casper",
+            "difficulty": 2,
+            "forbidden": [
+              "fantôme",
+              "gentil",
+              "blanc"
+            ]
+          },
+          {
+            "text": "Les Looney Tunes",
+            "difficulty": 2,
+            "forbidden": [
+              "Bugs Bunny",
+              "Warner",
+              "That's all folks"
+            ]
+          },
+          {
+            "text": "Speedy Gonzales",
+            "difficulty": 3,
+            "forbidden": [
+              "souris",
+              "Mexique",
+              "rapide"
+            ]
+          },
+          {
+            "text": "Taz",
+            "difficulty": 2,
+            "forbidden": [
+              "diable de Tasmanie",
+              "tourbillon",
+              "Looney Tunes"
+            ]
+          },
+          {
+            "text": "Marsupilami",
+            "difficulty": 2,
+            "forbidden": [
+              "houba",
+              "queue",
+              "jungle"
+            ]
+          },
+          {
+            "text": "Calimero",
+            "difficulty": 3,
+            "forbidden": [
+              "poussin",
+              "coquille",
+              "c'est trop injuste"
+            ]
+          },
+          {
+            "text": "Rantanplan",
+            "difficulty": 3,
+            "forbidden": [
+              "chien",
+              "Lucky Luke",
+              "bête"
+            ]
+          },
+          {
+            "text": "Les Fous du volant",
+            "difficulty": 3,
+            "forbidden": [
+              "course",
+              "Satanas",
+              "Diabolo"
+            ]
+          },
+          {
+            "text": "Wallace et Gromit",
+            "difficulty": 3,
+            "forbidden": [
+              "pâte à modeler",
+              "fromage",
+              "chien"
+            ]
+          },
+          {
+            "text": "Shaun le mouton",
+            "difficulty": 2,
+            "forbidden": [
+              "Aardman",
+              "ferme",
+              "pâte à modeler"
+            ]
+          },
+          {
+            "text": "Pingu",
+            "difficulty": 2,
+            "forbidden": [
+              "pingouin",
+              "Noot noot",
+              "banquise"
+            ]
+          },
+          {
+            "text": "Teletubbies",
+            "difficulty": 2,
+            "forbidden": [
+              "antenne",
+              "ventre écran",
+              "Tinky Winky"
+            ]
+          },
+          {
+            "text": "Franklin",
+            "difficulty": 3,
+            "forbidden": [
+              "tortue",
+              "carapace",
+              "dessin animé"
+            ]
+          },
+          {
+            "text": "Winnie l'ourson",
+            "difficulty": 1,
+            "forbidden": [
+              "miel",
+              "Porcinet",
+              "Tigrou"
+            ]
+          },
+          {
+            "text": "Tic et Tac",
+            "difficulty": 2,
+            "forbidden": [
+              "écureuils",
+              "Disney",
+              "noisettes"
+            ]
+          },
+          {
+            "text": "La Bande à Picsou",
+            "difficulty": 2,
+            "forbidden": [
+              "Riri",
+              "Fifi",
+              "Loulou"
+            ]
+          },
+          {
+            "text": "Kid Paddle",
+            "difficulty": 3,
+            "forbidden": [
+              "jeux vidéo",
+              "Blork",
+              "Midam"
+            ]
+          },
+          {
+            "text": "Bob le bricoleur",
+            "difficulty": 2,
+            "forbidden": [
+              "chantier",
+              "outils",
+              "Peut-on le faire ?"
+            ]
+          },
+          {
+            "text": "Thomas le petit train",
+            "difficulty": 2,
+            "forbidden": [
+              "locomotive",
+              "bleu",
+              "rails"
+            ]
+          },
+          {
+            "text": "Super Wings",
+            "difficulty": 3,
+            "forbidden": [
+              "avions",
+              "Jett",
+              "livraison"
+            ]
+          },
+          {
+            "text": "Steven Universe",
+            "difficulty": 3,
+            "forbidden": [
+              "gemmes",
+              "Crystal Gems",
+              "Beach City"
+            ]
+          },
+          {
+            "text": "Les Minions",
+            "difficulty": 1,
+            "forbidden": [
+              "jaunes",
+              "banane",
+              "Gru"
+            ]
+          },
+          {
+            "text": "Mowgli",
+            "difficulty": 2,
+            "forbidden": [
+              "Livre de la jungle",
+              "Baloo",
+              "loups"
+            ]
+          },
+          {
+            "text": "Simba",
+            "difficulty": 1,
+            "forbidden": [
+              "lion",
+              "Roi lion",
+              "Mufasa"
+            ]
+          },
+          {
+            "text": "Elsa",
+            "difficulty": 1,
+            "forbidden": [
+              "Reine des neiges",
+              "glace",
+              "Libérée délivrée"
+            ]
+          },
+          {
+            "text": "Olaf",
+            "difficulty": 1,
+            "forbidden": [
+              "bonhomme de neige",
+              "carotte",
+              "Reine des neiges"
+            ]
+          },
+          {
+            "text": "Buzz l'Éclair",
+            "difficulty": 1,
+            "forbidden": [
+              "Toy Story",
+              "vers l'infini",
+              "astronaute"
+            ]
+          },
+          {
+            "text": "Woody",
+            "difficulty": 2,
+            "forbidden": [
+              "cow-boy",
+              "Toy Story",
+              "shérif"
+            ]
+          },
+          {
+            "text": "Flash McQueen",
+            "difficulty": 2,
+            "forbidden": [
+              "Cars",
+              "voiture rouge",
+              "Kachow"
+            ]
+          },
+          {
+            "text": "Nemo",
+            "difficulty": 2,
+            "forbidden": [
+              "poisson-clown",
+              "Dory",
+              "nageoire"
+            ]
+          },
+          {
+            "text": "Dory",
+            "difficulty": 2,
+            "forbidden": [
+              "poisson bleu",
+              "Nemo",
+              "mémoire"
+            ]
+          },
+          {
+            "text": "Stitch",
+            "difficulty": 1,
+            "forbidden": [
+              "Lilo",
+              "bleu",
+              "extraterrestre"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

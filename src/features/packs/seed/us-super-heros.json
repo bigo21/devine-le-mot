@@ -1,0 +1,1140 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-super-heros",
+    "name": {
+      "fr": "Super-héros",
+      "en": "Superheroes"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "super-heros",
+        "name": {
+          "fr": "Super-héros",
+          "en": "Superheroes"
+        },
+        "emoji": "🦸",
+        "color": "lagoon",
+        "tags": [
+          "personnages"
+        ],
+        "words": [
+          {
+            "text": "Superman",
+            "difficulty": 1,
+            "forbidden": [
+              "Krypton",
+              "cape",
+              "Clark Kent"
+            ]
+          },
+          {
+            "text": "Batman",
+            "difficulty": 1,
+            "forbidden": [
+              "Gotham",
+              "chauve-souris",
+              "Bruce Wayne"
+            ]
+          },
+          {
+            "text": "Spider-Man",
+            "difficulty": 1,
+            "forbidden": [
+              "araignée",
+              "Peter Parker",
+              "toile"
+            ]
+          },
+          {
+            "text": "Iron Man",
+            "difficulty": 1,
+            "forbidden": [
+              "Tony Stark",
+              "armure",
+              "Marvel"
+            ]
+          },
+          {
+            "text": "Captain America",
+            "difficulty": 1,
+            "forbidden": [
+              "bouclier",
+              "Steve Rogers",
+              "étoile"
+            ]
+          },
+          {
+            "text": "Hulk",
+            "difficulty": 1,
+            "forbidden": [
+              "vert",
+              "colère",
+              "Bruce Banner"
+            ]
+          },
+          {
+            "text": "Thor",
+            "difficulty": 1,
+            "forbidden": [
+              "marteau",
+              "Asgard",
+              "tonnerre"
+            ]
+          },
+          {
+            "text": "Wonder Woman",
+            "difficulty": 1,
+            "forbidden": [
+              "amazone",
+              "lasso",
+              "Diana"
+            ]
+          },
+          {
+            "text": "Black Widow",
+            "difficulty": 2,
+            "forbidden": [
+              "Natasha Romanoff",
+              "espionne",
+              "Avengers"
+            ]
+          },
+          {
+            "text": "Hawkeye",
+            "difficulty": 3,
+            "forbidden": [
+              "arc",
+              "flèches",
+              "Clint Barton"
+            ]
+          },
+          {
+            "text": "Black Panther",
+            "difficulty": 1,
+            "forbidden": [
+              "Wakanda",
+              "T'Challa",
+              "vibranium"
+            ]
+          },
+          {
+            "text": "Doctor Strange",
+            "difficulty": 2,
+            "forbidden": [
+              "sorcier",
+              "cape",
+              "Benedict Cumberbatch"
+            ]
+          },
+          {
+            "text": "Captain Marvel",
+            "difficulty": 2,
+            "forbidden": [
+              "Carol Danvers",
+              "Avengers",
+              "pouvoirs cosmiques"
+            ]
+          },
+          {
+            "text": "Ant-Man",
+            "difficulty": 2,
+            "forbidden": [
+              "fourmi",
+              "rétrécir",
+              "Scott Lang"
+            ]
+          },
+          {
+            "text": "La Guêpe",
+            "difficulty": 3,
+            "forbidden": [
+              "Hope van Dyne",
+              "rétrécir",
+              "ailes"
+            ]
+          },
+          {
+            "text": "Vision",
+            "difficulty": 3,
+            "forbidden": [
+              "androïde",
+              "pierre",
+              "Wanda"
+            ]
+          },
+          {
+            "text": "Wanda Maximoff",
+            "difficulty": 2,
+            "forbidden": [
+              "Sorcière rouge",
+              "WandaVision",
+              "magie"
+            ]
+          },
+          {
+            "text": "Loki",
+            "difficulty": 1,
+            "forbidden": [
+              "dieu de la malice",
+              "Thor",
+              "Asgard"
+            ]
+          },
+          {
+            "text": "Thanos",
+            "difficulty": 1,
+            "forbidden": [
+              "gant",
+              "pierres d'infinité",
+              "claquement de doigts"
+            ]
+          },
+          {
+            "text": "Groot",
+            "difficulty": 1,
+            "forbidden": [
+              "arbre",
+              "Je s'appelle",
+              "Gardiens de la Galaxie"
+            ]
+          },
+          {
+            "text": "Rocket",
+            "difficulty": 2,
+            "forbidden": [
+              "raton laveur",
+              "Gardiens de la Galaxie",
+              "armes"
+            ]
+          },
+          {
+            "text": "Star-Lord",
+            "difficulty": 3,
+            "forbidden": [
+              "Peter Quill",
+              "walkman",
+              "Gardiens"
+            ]
+          },
+          {
+            "text": "Gamora",
+            "difficulty": 3,
+            "forbidden": [
+              "verte",
+              "Thanos",
+              "Gardiens"
+            ]
+          },
+          {
+            "text": "Deadpool",
+            "difficulty": 1,
+            "forbidden": [
+              "Ryan Reynolds",
+              "rouge",
+              "bavard"
+            ]
+          },
+          {
+            "text": "Wolverine",
+            "difficulty": 1,
+            "forbidden": [
+              "griffes",
+              "X-Men",
+              "Hugh Jackman"
+            ]
+          },
+          {
+            "text": "Professeur X",
+            "difficulty": 2,
+            "forbidden": [
+              "fauteuil roulant",
+              "télépathe",
+              "mutants"
+            ]
+          },
+          {
+            "text": "Magnéto",
+            "difficulty": 2,
+            "forbidden": [
+              "métal",
+              "casque",
+              "X-Men"
+            ]
+          },
+          {
+            "text": "Tornade",
+            "difficulty": 3,
+            "forbidden": [
+              "X-Men",
+              "météo",
+              "cheveux blancs"
+            ]
+          },
+          {
+            "text": "Cyclope",
+            "difficulty": 3,
+            "forbidden": [
+              "X-Men",
+              "lunettes",
+              "rayon"
+            ]
+          },
+          {
+            "text": "Jean Grey",
+            "difficulty": 3,
+            "forbidden": [
+              "X-Men",
+              "Phénix",
+              "télékinésie"
+            ]
+          },
+          {
+            "text": "Mystique",
+            "difficulty": 3,
+            "forbidden": [
+              "bleue",
+              "métamorphe",
+              "X-Men"
+            ]
+          },
+          {
+            "text": "Malicia",
+            "difficulty": 3,
+            "forbidden": [
+              "X-Men",
+              "mèche blanche",
+              "toucher"
+            ]
+          },
+          {
+            "text": "Diablo",
+            "difficulty": 3,
+            "forbidden": [
+              "X-Men",
+              "téléportation",
+              "bleu"
+            ]
+          },
+          {
+            "text": "Venom",
+            "difficulty": 2,
+            "forbidden": [
+              "symbiote",
+              "noir",
+              "langue"
+            ]
+          },
+          {
+            "text": "Le Bouffon vert",
+            "difficulty": 2,
+            "forbidden": [
+              "Spider-Man",
+              "planeur",
+              "Norman Osborn"
+            ]
+          },
+          {
+            "text": "Docteur Octopus",
+            "difficulty": 2,
+            "forbidden": [
+              "tentacules",
+              "Spider-Man",
+              "lunettes"
+            ]
+          },
+          {
+            "text": "Le Joker",
+            "difficulty": 1,
+            "forbidden": [
+              "Batman",
+              "clown",
+              "sourire"
+            ]
+          },
+          {
+            "text": "Harley Quinn",
+            "difficulty": 1,
+            "forbidden": [
+              "Joker",
+              "batte",
+              "couettes"
+            ]
+          },
+          {
+            "text": "Catwoman",
+            "difficulty": 2,
+            "forbidden": [
+              "chat",
+              "voleuse",
+              "fouet"
+            ]
+          },
+          {
+            "text": "Le Pingouin",
+            "difficulty": 2,
+            "forbidden": [
+              "Batman",
+              "parapluie",
+              "Gotham"
+            ]
+          },
+          {
+            "text": "Robin",
+            "difficulty": 2,
+            "forbidden": [
+              "Batman",
+              "acolyte",
+              "masque"
+            ]
+          },
+          {
+            "text": "Alfred",
+            "difficulty": 2,
+            "forbidden": [
+              "majordome",
+              "Batman",
+              "Bruce Wayne"
+            ]
+          },
+          {
+            "text": "Bane",
+            "difficulty": 3,
+            "forbidden": [
+              "masque",
+              "Batman",
+              "force"
+            ]
+          },
+          {
+            "text": "L'Homme-Mystère",
+            "difficulty": 3,
+            "forbidden": [
+              "énigmes",
+              "point d'interrogation",
+              "Batman"
+            ]
+          },
+          {
+            "text": "Double-Face",
+            "difficulty": 3,
+            "forbidden": [
+              "pièce",
+              "Batman",
+              "Harvey Dent"
+            ]
+          },
+          {
+            "text": "Poison Ivy",
+            "difficulty": 3,
+            "forbidden": [
+              "plantes",
+              "Batman",
+              "rousse"
+            ]
+          },
+          {
+            "text": "Lex Luthor",
+            "difficulty": 2,
+            "forbidden": [
+              "chauve",
+              "Superman",
+              "milliardaire"
+            ]
+          },
+          {
+            "text": "Supergirl",
+            "difficulty": 2,
+            "forbidden": [
+              "cousine",
+              "Krypton",
+              "cape"
+            ]
+          },
+          {
+            "text": "Flash",
+            "difficulty": 1,
+            "forbidden": [
+              "vitesse",
+              "éclair",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Aquaman",
+            "difficulty": 1,
+            "forbidden": [
+              "mer",
+              "trident",
+              "Atlantis"
+            ]
+          },
+          {
+            "text": "Green Lantern",
+            "difficulty": 2,
+            "forbidden": [
+              "anneau",
+              "vert",
+              "volonté"
+            ]
+          },
+          {
+            "text": "Cyborg",
+            "difficulty": 3,
+            "forbidden": [
+              "Justice League",
+              "robot",
+              "Victor Stone"
+            ]
+          },
+          {
+            "text": "Shazam",
+            "difficulty": 2,
+            "forbidden": [
+              "éclair",
+              "Billy Batson",
+              "mot magique"
+            ]
+          },
+          {
+            "text": "Martian Manhunter",
+            "difficulty": 3,
+            "forbidden": [
+              "Mars",
+              "vert",
+              "Justice League"
+            ]
+          },
+          {
+            "text": "Justice League",
+            "difficulty": 2,
+            "forbidden": [
+              "DC",
+              "Superman",
+              "Batman"
+            ]
+          },
+          {
+            "text": "Avengers",
+            "difficulty": 1,
+            "forbidden": [
+              "Marvel",
+              "équipe",
+              "Iron Man"
+            ]
+          },
+          {
+            "text": "X-Men",
+            "difficulty": 1,
+            "forbidden": [
+              "mutants",
+              "Professeur X",
+              "Wolverine"
+            ]
+          },
+          {
+            "text": "Les Quatre Fantastiques",
+            "difficulty": 2,
+            "forbidden": [
+              "La Chose",
+              "Torche humaine",
+              "Mister Fantastic"
+            ]
+          },
+          {
+            "text": "La Chose",
+            "difficulty": 3,
+            "forbidden": [
+              "rochers",
+              "Quatre Fantastiques",
+              "Ben Grimm"
+            ]
+          },
+          {
+            "text": "La Torche humaine",
+            "difficulty": 3,
+            "forbidden": [
+              "feu",
+              "Quatre Fantastiques",
+              "flamme"
+            ]
+          },
+          {
+            "text": "Silver Surfer",
+            "difficulty": 3,
+            "forbidden": [
+              "planche",
+              "argenté",
+              "Galactus"
+            ]
+          },
+          {
+            "text": "Daredevil",
+            "difficulty": 2,
+            "forbidden": [
+              "aveugle",
+              "avocat",
+              "Hell's Kitchen"
+            ]
+          },
+          {
+            "text": "Le Punisher",
+            "difficulty": 3,
+            "forbidden": [
+              "crâne",
+              "justicier",
+              "Frank Castle"
+            ]
+          },
+          {
+            "text": "Ghost Rider",
+            "difficulty": 2,
+            "forbidden": [
+              "crâne enflammé",
+              "moto",
+              "chaînes"
+            ]
+          },
+          {
+            "text": "Blade",
+            "difficulty": 2,
+            "forbidden": [
+              "vampires",
+              "Wesley Snipes",
+              "sabre"
+            ]
+          },
+          {
+            "text": "Moon Knight",
+            "difficulty": 3,
+            "forbidden": [
+              "Égypte",
+              "Marvel",
+              "Khonshu"
+            ]
+          },
+          {
+            "text": "Shang-Chi",
+            "difficulty": 3,
+            "forbidden": [
+              "anneaux",
+              "arts martiaux",
+              "Marvel"
+            ]
+          },
+          {
+            "text": "Miles Morales",
+            "difficulty": 2,
+            "forbidden": [
+              "Spider-Man",
+              "Brooklyn",
+              "Spider-Verse"
+            ]
+          },
+          {
+            "text": "Nick Fury",
+            "difficulty": 2,
+            "forbidden": [
+              "bandeau",
+              "S.H.I.E.L.D.",
+              "Samuel L. Jackson"
+            ]
+          },
+          {
+            "text": "Le Faucon",
+            "difficulty": 3,
+            "forbidden": [
+              "ailes",
+              "Sam Wilson",
+              "Captain America"
+            ]
+          },
+          {
+            "text": "Le Soldat de l'hiver",
+            "difficulty": 3,
+            "forbidden": [
+              "bras de métal",
+              "Bucky",
+              "Captain America"
+            ]
+          },
+          {
+            "text": "Ultron",
+            "difficulty": 3,
+            "forbidden": [
+              "robot",
+              "Avengers",
+              "intelligence artificielle"
+            ]
+          },
+          {
+            "text": "Galactus",
+            "difficulty": 3,
+            "forbidden": [
+              "dévoreur de planètes",
+              "géant",
+              "Silver Surfer"
+            ]
+          },
+          {
+            "text": "Crâne rouge",
+            "difficulty": 3,
+            "forbidden": [
+              "Hydra",
+              "Captain America",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Hellboy",
+            "difficulty": 2,
+            "forbidden": [
+              "démon",
+              "cornes coupées",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Kick-Ass",
+            "difficulty": 3,
+            "forbidden": [
+              "ado",
+              "justicier",
+              "costume vert"
+            ]
+          },
+          {
+            "text": "Mister Indestructible",
+            "difficulty": 3,
+            "forbidden": [
+              "Pixar",
+              "force",
+              "famille Parr"
+            ]
+          },
+          {
+            "text": "Frozone",
+            "difficulty": 3,
+            "forbidden": [
+              "glace",
+              "Pixar",
+              "Indestructibles"
+            ]
+          },
+          {
+            "text": "Megamind",
+            "difficulty": 3,
+            "forbidden": [
+              "tête bleue",
+              "DreamWorks",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Les Tortues Ninja",
+            "difficulty": 1,
+            "forbidden": [
+              "pizza",
+              "égouts",
+              "Splinter"
+            ]
+          },
+          {
+            "text": "Leonardo",
+            "difficulty": 3,
+            "forbidden": [
+              "Tortues Ninja",
+              "bleu",
+              "katanas"
+            ]
+          },
+          {
+            "text": "Donatello",
+            "difficulty": 3,
+            "forbidden": [
+              "Tortues Ninja",
+              "violet",
+              "bâton"
+            ]
+          },
+          {
+            "text": "Michelangelo",
+            "difficulty": 3,
+            "forbidden": [
+              "Tortues Ninja",
+              "orange",
+              "nunchakus"
+            ]
+          },
+          {
+            "text": "Raphael",
+            "difficulty": 3,
+            "forbidden": [
+              "Tortues Ninja",
+              "rouge",
+              "saïs"
+            ]
+          },
+          {
+            "text": "Splinter",
+            "difficulty": 3,
+            "forbidden": [
+              "rat",
+              "maître",
+              "Tortues Ninja"
+            ]
+          },
+          {
+            "text": "Power Rangers",
+            "difficulty": 1,
+            "forbidden": [
+              "couleurs",
+              "Zordon",
+              "Go Go"
+            ]
+          },
+          {
+            "text": "Goldorak",
+            "difficulty": 2,
+            "forbidden": [
+              "robot",
+              "Actarus",
+              "Japon"
+            ]
+          },
+          {
+            "text": "Ladybug",
+            "difficulty": 1,
+            "forbidden": [
+              "Miraculous",
+              "Chat Noir",
+              "coccinelle"
+            ]
+          },
+          {
+            "text": "Chat Noir",
+            "difficulty": 2,
+            "forbidden": [
+              "Miraculous",
+              "Ladybug",
+              "Adrien"
+            ]
+          },
+          {
+            "text": "Les Pyjamasques",
+            "difficulty": 2,
+            "forbidden": [
+              "Yoyo",
+              "Bibou",
+              "Gluglu"
+            ]
+          },
+          {
+            "text": "One Punch Man",
+            "difficulty": 3,
+            "forbidden": [
+              "chauve",
+              "un coup",
+              "anime"
+            ]
+          },
+          {
+            "text": "Hancock",
+            "difficulty": 3,
+            "forbidden": [
+              "Will Smith",
+              "super-héros",
+              "maladroit"
+            ]
+          },
+          {
+            "text": "Général Zod",
+            "difficulty": 3,
+            "forbidden": [
+              "Krypton",
+              "Superman",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Darkseid",
+            "difficulty": 3,
+            "forbidden": [
+              "Apokolips",
+              "DC",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Batgirl",
+            "difficulty": 3,
+            "forbidden": [
+              "Barbara Gordon",
+              "Batman",
+              "Gotham"
+            ]
+          },
+          {
+            "text": "Batmobile",
+            "difficulty": 2,
+            "forbidden": [
+              "voiture",
+              "Batman",
+              "Gotham"
+            ]
+          },
+          {
+            "text": "Bat-signal",
+            "difficulty": 2,
+            "forbidden": [
+              "projecteur",
+              "Batman",
+              "ciel"
+            ]
+          },
+          {
+            "text": "Mjolnir",
+            "difficulty": 2,
+            "forbidden": [
+              "marteau",
+              "Thor",
+              "digne"
+            ]
+          },
+          {
+            "text": "Kryptonite",
+            "difficulty": 2,
+            "forbidden": [
+              "verte",
+              "Superman",
+              "faiblesse"
+            ]
+          },
+          {
+            "text": "Batcave",
+            "difficulty": 3,
+            "forbidden": [
+              "grotte",
+              "Batman",
+              "Alfred"
+            ]
+          },
+          {
+            "text": "Gotham City",
+            "difficulty": 2,
+            "forbidden": [
+              "Batman",
+              "ville",
+              "Joker"
+            ]
+          },
+          {
+            "text": "Wakanda",
+            "difficulty": 2,
+            "forbidden": [
+              "Black Panther",
+              "vibranium",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "Asgard",
+            "difficulty": 3,
+            "forbidden": [
+              "Thor",
+              "Odin",
+              "royaume"
+            ]
+          },
+          {
+            "text": "Odin",
+            "difficulty": 3,
+            "forbidden": [
+              "Thor",
+              "père",
+              "Asgard"
+            ]
+          },
+          {
+            "text": "Hela",
+            "difficulty": 3,
+            "forbidden": [
+              "Thor",
+              "déesse de la mort",
+              "Cate Blanchett"
+            ]
+          },
+          {
+            "text": "Nebula",
+            "difficulty": 3,
+            "forbidden": [
+              "bleue",
+              "Thanos",
+              "Gamora"
+            ]
+          },
+          {
+            "text": "Drax",
+            "difficulty": 3,
+            "forbidden": [
+              "Gardiens",
+              "tatouages",
+              "littéral"
+            ]
+          },
+          {
+            "text": "Mantis",
+            "difficulty": 3,
+            "forbidden": [
+              "antennes",
+              "Gardiens",
+              "empathie"
+            ]
+          },
+          {
+            "text": "Okoye",
+            "difficulty": 3,
+            "forbidden": [
+              "Wakanda",
+              "Dora Milaje",
+              "lance"
+            ]
+          },
+          {
+            "text": "Shuri",
+            "difficulty": 3,
+            "forbidden": [
+              "Wakanda",
+              "sœur",
+              "technologie"
+            ]
+          },
+          {
+            "text": "Killmonger",
+            "difficulty": 3,
+            "forbidden": [
+              "Wakanda",
+              "Michael B. Jordan",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Static Shock",
+            "difficulty": 3,
+            "forbidden": [
+              "électricité",
+              "ado",
+              "dessin animé"
+            ]
+          },
+          {
+            "text": "Spider-Gwen",
+            "difficulty": 3,
+            "forbidden": [
+              "Gwen Stacy",
+              "Spider-Verse",
+              "capuche"
+            ]
+          },
+          {
+            "text": "Mister Freeze",
+            "difficulty": 3,
+            "forbidden": [
+              "glace",
+              "Batman",
+              "scaphandre"
+            ]
+          },
+          {
+            "text": "L'Épouvantail",
+            "difficulty": 3,
+            "forbidden": [
+              "peur",
+              "Batman",
+              "toxine"
+            ]
+          },
+          {
+            "text": "Sinestro",
+            "difficulty": 3,
+            "forbidden": [
+              "jaune",
+              "Green Lantern",
+              "anneau"
+            ]
+          },
+          {
+            "text": "Captain Planet",
+            "difficulty": 3,
+            "forbidden": [
+              "écologie",
+              "anneaux",
+              "Planeteers"
+            ]
+          },
+          {
+            "text": "Electro",
+            "difficulty": 3,
+            "forbidden": [
+              "Spider-Man",
+              "électricité",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Le Lézard",
+            "difficulty": 3,
+            "forbidden": [
+              "Spider-Man",
+              "Curt Connors",
+              "reptile"
+            ]
+          },
+          {
+            "text": "Mysterio",
+            "difficulty": 3,
+            "forbidden": [
+              "Spider-Man",
+              "illusions",
+              "bocal"
+            ]
+          },
+          {
+            "text": "Sandman",
+            "difficulty": 3,
+            "forbidden": [
+              "Spider-Man",
+              "sable",
+              "méchant"
+            ]
+          },
+          {
+            "text": "Black Adam",
+            "difficulty": 3,
+            "forbidden": [
+              "Dwayne Johnson",
+              "Shazam",
+              "Kahndaq"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

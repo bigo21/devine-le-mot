@@ -22,6 +22,13 @@ import mondeFruitsLegumes from './monde-fruits-legumes.json';
 import mondeMetiers from './monde-metiers.json';
 import mondeObjets from './monde-objets.json';
 import mondeSports from './monde-sports.json';
+import usDessinsAnimes from './us-dessins-animes.json';
+import usFilms from './us-films.json';
+import usMarques from './us-marques.json';
+import usMusique from './us-musique.json';
+import usSeries from './us-series.json';
+import usSportifs from './us-sportifs.json';
+import usSuperHeros from './us-super-heros.json';
 
 /** Contenu brut : validé par zod avant insertion (et par les tests). */
 export const builtinPackFiles: readonly unknown[] = [
@@ -42,6 +49,13 @@ export const builtinPackFiles: readonly unknown[] = [
   frVilles,
   frExpressions,
   frTvInternet,
+  usFilms,
+  usSeries,
+  usMusique,
+  usSuperHeros,
+  usSportifs,
+  usMarques,
+  usDessinsAnimes,
   mondeAnimaux,
   mondeObjets,
   mondeSports,

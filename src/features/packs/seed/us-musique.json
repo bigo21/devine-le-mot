@@ -1,0 +1,1132 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-musique",
+    "name": {
+      "fr": "Stars de la musique",
+      "en": "Music stars"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "stars-musique",
+        "name": {
+          "fr": "Stars de la musique",
+          "en": "Music stars"
+        },
+        "emoji": "🎧",
+        "color": "orchid",
+        "tags": [
+          "personnalites",
+          "musique"
+        ],
+        "words": [
+          {
+            "text": "Michael Jackson",
+            "difficulty": 1,
+            "forbidden": [
+              "moonwalk",
+              "Thriller",
+              "roi de la pop"
+            ]
+          },
+          {
+            "text": "Madonna",
+            "difficulty": 1,
+            "forbidden": [
+              "reine de la pop",
+              "Like a Virgin",
+              "Material Girl"
+            ]
+          },
+          {
+            "text": "Beyoncé",
+            "difficulty": 1,
+            "forbidden": [
+              "Destiny's Child",
+              "Single Ladies",
+              "Jay-Z"
+            ]
+          },
+          {
+            "text": "Rihanna",
+            "difficulty": 1,
+            "forbidden": [
+              "Umbrella",
+              "Barbade",
+              "Fenty"
+            ]
+          },
+          {
+            "text": "Taylor Swift",
+            "difficulty": 1,
+            "forbidden": [
+              "Shake It Off",
+              "Eras Tour",
+              "country"
+            ]
+          },
+          {
+            "text": "Ed Sheeran",
+            "difficulty": 1,
+            "forbidden": [
+              "Shape of You",
+              "guitare",
+              "roux"
+            ]
+          },
+          {
+            "text": "Adele",
+            "difficulty": 1,
+            "forbidden": [
+              "Hello",
+              "Rolling in the Deep",
+              "Londres"
+            ]
+          },
+          {
+            "text": "Bruno Mars",
+            "difficulty": 1,
+            "forbidden": [
+              "Uptown Funk",
+              "24K Magic",
+              "Hawaï"
+            ]
+          },
+          {
+            "text": "Justin Bieber",
+            "difficulty": 1,
+            "forbidden": [
+              "Baby",
+              "Canada",
+              "Beliebers"
+            ]
+          },
+          {
+            "text": "Drake",
+            "difficulty": 1,
+            "forbidden": [
+              "Hotline Bling",
+              "Toronto",
+              "rappeur"
+            ]
+          },
+          {
+            "text": "Eminem",
+            "difficulty": 1,
+            "forbidden": [
+              "Slim Shady",
+              "rap",
+              "Detroit"
+            ]
+          },
+          {
+            "text": "Jay-Z",
+            "difficulty": 2,
+            "forbidden": [
+              "Beyoncé",
+              "Brooklyn",
+              "rappeur"
+            ]
+          },
+          {
+            "text": "Kanye West",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "Yeezy",
+              "Chicago"
+            ]
+          },
+          {
+            "text": "Snoop Dogg",
+            "difficulty": 1,
+            "forbidden": [
+              "rappeur",
+              "Doggystyle",
+              "West Coast"
+            ]
+          },
+          {
+            "text": "Tupac",
+            "difficulty": 1,
+            "forbidden": [
+              "2Pac",
+              "rappeur",
+              "West Coast"
+            ]
+          },
+          {
+            "text": "The Notorious B.I.G.",
+            "difficulty": 2,
+            "forbidden": [
+              "Biggie",
+              "Brooklyn",
+              "rappeur"
+            ]
+          },
+          {
+            "text": "50 Cent",
+            "difficulty": 2,
+            "forbidden": [
+              "In da Club",
+              "rappeur",
+              "Get Rich or Die Tryin'"
+            ]
+          },
+          {
+            "text": "Lil Wayne",
+            "difficulty": 3,
+            "forbidden": [
+              "rappeur",
+              "Lollipop",
+              "Nouvelle-Orléans"
+            ]
+          },
+          {
+            "text": "Nicki Minaj",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeuse",
+              "Super Bass",
+              "Trinidad"
+            ]
+          },
+          {
+            "text": "Cardi B",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeuse",
+              "Bodak Yellow",
+              "Bronx"
+            ]
+          },
+          {
+            "text": "Kendrick Lamar",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "Compton",
+              "HUMBLE."
+            ]
+          },
+          {
+            "text": "Travis Scott",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "Sicko Mode",
+              "Astroworld"
+            ]
+          },
+          {
+            "text": "Post Malone",
+            "difficulty": 2,
+            "forbidden": [
+              "tatouages au visage",
+              "rappeur",
+              "Circles"
+            ]
+          },
+          {
+            "text": "The Weeknd",
+            "difficulty": 1,
+            "forbidden": [
+              "Blinding Lights",
+              "Canada",
+              "Starboy"
+            ]
+          },
+          {
+            "text": "Billie Eilish",
+            "difficulty": 1,
+            "forbidden": [
+              "Bad Guy",
+              "Finneas",
+              "cheveux verts"
+            ]
+          },
+          {
+            "text": "Ariana Grande",
+            "difficulty": 1,
+            "forbidden": [
+              "queue de cheval",
+              "7 Rings",
+              "Wicked"
+            ]
+          },
+          {
+            "text": "Lady Gaga",
+            "difficulty": 1,
+            "forbidden": [
+              "Poker Face",
+              "Little Monsters",
+              "robe en viande"
+            ]
+          },
+          {
+            "text": "Katy Perry",
+            "difficulty": 2,
+            "forbidden": [
+              "Roar",
+              "Firework",
+              "California Gurls"
+            ]
+          },
+          {
+            "text": "Shakira",
+            "difficulty": 1,
+            "forbidden": [
+              "Colombie",
+              "Waka Waka",
+              "Hips Don't Lie"
+            ]
+          },
+          {
+            "text": "Jennifer Lopez",
+            "difficulty": 2,
+            "forbidden": [
+              "J.Lo",
+              "Bronx",
+              "On the Floor"
+            ]
+          },
+          {
+            "text": "Dua Lipa",
+            "difficulty": 1,
+            "forbidden": [
+              "Levitating",
+              "New Rules",
+              "Londres"
+            ]
+          },
+          {
+            "text": "Harry Styles",
+            "difficulty": 2,
+            "forbidden": [
+              "One Direction",
+              "As It Was",
+              "Watermelon Sugar"
+            ]
+          },
+          {
+            "text": "One Direction",
+            "difficulty": 2,
+            "forbidden": [
+              "boys band",
+              "Harry Styles",
+              "X Factor"
+            ]
+          },
+          {
+            "text": "Backstreet Boys",
+            "difficulty": 2,
+            "forbidden": [
+              "boys band",
+              "I Want It That Way",
+              "années 90"
+            ]
+          },
+          {
+            "text": "Spice Girls",
+            "difficulty": 2,
+            "forbidden": [
+              "girls band",
+              "Wannabe",
+              "Posh"
+            ]
+          },
+          {
+            "text": "Britney Spears",
+            "difficulty": 1,
+            "forbidden": [
+              "Baby One More Time",
+              "Toxic",
+              "pop"
+            ]
+          },
+          {
+            "text": "Christina Aguilera",
+            "difficulty": 2,
+            "forbidden": [
+              "Genie in a Bottle",
+              "Dirrty",
+              "The Voice"
+            ]
+          },
+          {
+            "text": "Mariah Carey",
+            "difficulty": 1,
+            "forbidden": [
+              "All I Want for Christmas Is You",
+              "notes aiguës",
+              "diva"
+            ]
+          },
+          {
+            "text": "Whitney Houston",
+            "difficulty": 1,
+            "forbidden": [
+              "I Will Always Love You",
+              "Bodyguard",
+              "diva"
+            ]
+          },
+          {
+            "text": "Elvis Presley",
+            "difficulty": 1,
+            "forbidden": [
+              "King",
+              "rock'n'roll",
+              "déhanché"
+            ]
+          },
+          {
+            "text": "The Beatles",
+            "difficulty": 1,
+            "forbidden": [
+              "Liverpool",
+              "Yellow Submarine",
+              "John Lennon"
+            ]
+          },
+          {
+            "text": "John Lennon",
+            "difficulty": 2,
+            "forbidden": [
+              "Beatles",
+              "Imagine",
+              "lunettes rondes"
+            ]
+          },
+          {
+            "text": "Paul McCartney",
+            "difficulty": 2,
+            "forbidden": [
+              "Beatles",
+              "Yesterday",
+              "Wings"
+            ]
+          },
+          {
+            "text": "The Rolling Stones",
+            "difficulty": 2,
+            "forbidden": [
+              "Mick Jagger",
+              "Satisfaction",
+              "langue"
+            ]
+          },
+          {
+            "text": "Queen",
+            "difficulty": 1,
+            "forbidden": [
+              "Freddie Mercury",
+              "Bohemian Rhapsody",
+              "We Will Rock You"
+            ]
+          },
+          {
+            "text": "Freddie Mercury",
+            "difficulty": 1,
+            "forbidden": [
+              "Queen",
+              "moustache",
+              "Bohemian Rhapsody"
+            ]
+          },
+          {
+            "text": "David Bowie",
+            "difficulty": 2,
+            "forbidden": [
+              "Ziggy Stardust",
+              "éclair",
+              "Space Oddity"
+            ]
+          },
+          {
+            "text": "Elton John",
+            "difficulty": 1,
+            "forbidden": [
+              "lunettes",
+              "Rocket Man",
+              "piano"
+            ]
+          },
+          {
+            "text": "Prince",
+            "difficulty": 2,
+            "forbidden": [
+              "Purple Rain",
+              "violet",
+              "Minneapolis"
+            ]
+          },
+          {
+            "text": "Bob Marley",
+            "difficulty": 1,
+            "forbidden": [
+              "reggae",
+              "Jamaïque",
+              "dreadlocks"
+            ]
+          },
+          {
+            "text": "Stevie Wonder",
+            "difficulty": 2,
+            "forbidden": [
+              "aveugle",
+              "Isn't She Lovely",
+              "harmonica"
+            ]
+          },
+          {
+            "text": "Ray Charles",
+            "difficulty": 2,
+            "forbidden": [
+              "aveugle",
+              "piano",
+              "Hit the Road Jack"
+            ]
+          },
+          {
+            "text": "James Brown",
+            "difficulty": 2,
+            "forbidden": [
+              "soul",
+              "I Feel Good",
+              "funk"
+            ]
+          },
+          {
+            "text": "Aretha Franklin",
+            "difficulty": 2,
+            "forbidden": [
+              "Respect",
+              "soul",
+              "reine"
+            ]
+          },
+          {
+            "text": "Tina Turner",
+            "difficulty": 2,
+            "forbidden": [
+              "Simply the Best",
+              "rock",
+              "Proud Mary"
+            ]
+          },
+          {
+            "text": "Frank Sinatra",
+            "difficulty": 2,
+            "forbidden": [
+              "My Way",
+              "crooner",
+              "New York"
+            ]
+          },
+          {
+            "text": "Louis Armstrong",
+            "difficulty": 2,
+            "forbidden": [
+              "trompette",
+              "What a Wonderful World",
+              "jazz"
+            ]
+          },
+          {
+            "text": "Nirvana",
+            "difficulty": 2,
+            "forbidden": [
+              "Kurt Cobain",
+              "grunge",
+              "Smells Like Teen Spirit"
+            ]
+          },
+          {
+            "text": "Metallica",
+            "difficulty": 2,
+            "forbidden": [
+              "metal",
+              "Enter Sandman",
+              "guitare"
+            ]
+          },
+          {
+            "text": "AC/DC",
+            "difficulty": 2,
+            "forbidden": [
+              "Highway to Hell",
+              "Angus Young",
+              "écolier"
+            ]
+          },
+          {
+            "text": "Guns N' Roses",
+            "difficulty": 2,
+            "forbidden": [
+              "Axl Rose",
+              "Slash",
+              "Sweet Child o' Mine"
+            ]
+          },
+          {
+            "text": "Bon Jovi",
+            "difficulty": 3,
+            "forbidden": [
+              "Livin' on a Prayer",
+              "rock",
+              "New Jersey"
+            ]
+          },
+          {
+            "text": "U2",
+            "difficulty": 2,
+            "forbidden": [
+              "Bono",
+              "Irlande",
+              "With or Without You"
+            ]
+          },
+          {
+            "text": "Coldplay",
+            "difficulty": 1,
+            "forbidden": [
+              "Chris Martin",
+              "Viva la Vida",
+              "Yellow"
+            ]
+          },
+          {
+            "text": "Linkin Park",
+            "difficulty": 2,
+            "forbidden": [
+              "Numb",
+              "In the End",
+              "rock"
+            ]
+          },
+          {
+            "text": "Imagine Dragons",
+            "difficulty": 2,
+            "forbidden": [
+              "Believer",
+              "Radioactive",
+              "rock"
+            ]
+          },
+          {
+            "text": "Maroon 5",
+            "difficulty": 2,
+            "forbidden": [
+              "Adam Levine",
+              "Sugar",
+              "Moves Like Jagger"
+            ]
+          },
+          {
+            "text": "Pink Floyd",
+            "difficulty": 3,
+            "forbidden": [
+              "The Wall",
+              "prisme",
+              "rock"
+            ]
+          },
+          {
+            "text": "Red Hot Chili Peppers",
+            "difficulty": 3,
+            "forbidden": [
+              "Californication",
+              "Flea",
+              "funk rock"
+            ]
+          },
+          {
+            "text": "Green Day",
+            "difficulty": 3,
+            "forbidden": [
+              "American Idiot",
+              "punk",
+              "Billie Joe"
+            ]
+          },
+          {
+            "text": "Gorillaz",
+            "difficulty": 3,
+            "forbidden": [
+              "groupe virtuel",
+              "Feel Good Inc.",
+              "Damon Albarn"
+            ]
+          },
+          {
+            "text": "ABBA",
+            "difficulty": 1,
+            "forbidden": [
+              "Suède",
+              "Mamma Mia",
+              "Dancing Queen"
+            ]
+          },
+          {
+            "text": "Bee Gees",
+            "difficulty": 3,
+            "forbidden": [
+              "Stayin' Alive",
+              "falsetto",
+              "frères"
+            ]
+          },
+          {
+            "text": "Daddy Yankee",
+            "difficulty": 2,
+            "forbidden": [
+              "Gasolina",
+              "reggaeton",
+              "Despacito"
+            ]
+          },
+          {
+            "text": "Luis Fonsi",
+            "difficulty": 2,
+            "forbidden": [
+              "Despacito",
+              "Porto Rico",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Bad Bunny",
+            "difficulty": 2,
+            "forbidden": [
+              "reggaeton",
+              "Porto Rico",
+              "lunettes de soleil"
+            ]
+          },
+          {
+            "text": "J Balvin",
+            "difficulty": 3,
+            "forbidden": [
+              "reggaeton",
+              "Colombie",
+              "Mi Gente"
+            ]
+          },
+          {
+            "text": "Enrique Iglesias",
+            "difficulty": 2,
+            "forbidden": [
+              "Bailando",
+              "Hero",
+              "Espagne"
+            ]
+          },
+          {
+            "text": "Ricky Martin",
+            "difficulty": 2,
+            "forbidden": [
+              "Livin' la Vida Loca",
+              "Porto Rico",
+              "Menudo"
+            ]
+          },
+          {
+            "text": "Pitbull",
+            "difficulty": 2,
+            "forbidden": [
+              "Mr. Worldwide",
+              "crâne rasé",
+              "Miami"
+            ]
+          },
+          {
+            "text": "Marc Anthony",
+            "difficulty": 3,
+            "forbidden": [
+              "salsa",
+              "Jennifer Lopez",
+              "Vivir mi vida"
+            ]
+          },
+          {
+            "text": "Rosalía",
+            "difficulty": 3,
+            "forbidden": [
+              "Espagne",
+              "flamenco",
+              "Malamente"
+            ]
+          },
+          {
+            "text": "BTS",
+            "difficulty": 1,
+            "forbidden": [
+              "K-pop",
+              "Corée",
+              "ARMY"
+            ]
+          },
+          {
+            "text": "Blackpink",
+            "difficulty": 2,
+            "forbidden": [
+              "K-pop",
+              "Corée",
+              "Lisa"
+            ]
+          },
+          {
+            "text": "Psy",
+            "difficulty": 1,
+            "forbidden": [
+              "Gangnam Style",
+              "Corée",
+              "danse du cheval"
+            ]
+          },
+          {
+            "text": "Sia",
+            "difficulty": 2,
+            "forbidden": [
+              "Chandelier",
+              "perruque",
+              "Australie"
+            ]
+          },
+          {
+            "text": "Lana Del Rey",
+            "difficulty": 3,
+            "forbidden": [
+              "Summertime Sadness",
+              "Video Games",
+              "mélancolie"
+            ]
+          },
+          {
+            "text": "Sam Smith",
+            "difficulty": 3,
+            "forbidden": [
+              "Stay with Me",
+              "James Bond",
+              "Londres"
+            ]
+          },
+          {
+            "text": "Lewis Capaldi",
+            "difficulty": 3,
+            "forbidden": [
+              "Someone You Loved",
+              "Écosse",
+              "ballade"
+            ]
+          },
+          {
+            "text": "Shawn Mendes",
+            "difficulty": 3,
+            "forbidden": [
+              "Canada",
+              "Señorita",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Camila Cabello",
+            "difficulty": 3,
+            "forbidden": [
+              "Havana",
+              "Fifth Harmony",
+              "Cuba"
+            ]
+          },
+          {
+            "text": "Selena Gomez",
+            "difficulty": 2,
+            "forbidden": [
+              "Disney",
+              "Rare",
+              "Calm Down"
+            ]
+          },
+          {
+            "text": "Miley Cyrus",
+            "difficulty": 2,
+            "forbidden": [
+              "Hannah Montana",
+              "Wrecking Ball",
+              "Flowers"
+            ]
+          },
+          {
+            "text": "Demi Lovato",
+            "difficulty": 3,
+            "forbidden": [
+              "Disney",
+              "Camp Rock",
+              "Sorry Not Sorry"
+            ]
+          },
+          {
+            "text": "Olivia Rodrigo",
+            "difficulty": 2,
+            "forbidden": [
+              "drivers license",
+              "Disney",
+              "Good 4 U"
+            ]
+          },
+          {
+            "text": "Doja Cat",
+            "difficulty": 3,
+            "forbidden": [
+              "Say So",
+              "rappeuse",
+              "Kiss Me More"
+            ]
+          },
+          {
+            "text": "SZA",
+            "difficulty": 3,
+            "forbidden": [
+              "Kill Bill",
+              "chanteuse",
+              "R'n'B"
+            ]
+          },
+          {
+            "text": "Alicia Keys",
+            "difficulty": 2,
+            "forbidden": [
+              "piano",
+              "Empire State of Mind",
+              "Fallin'"
+            ]
+          },
+          {
+            "text": "Usher",
+            "difficulty": 2,
+            "forbidden": [
+              "Yeah!",
+              "R'n'B",
+              "Super Bowl"
+            ]
+          },
+          {
+            "text": "Chris Brown",
+            "difficulty": 3,
+            "forbidden": [
+              "R'n'B",
+              "danseur",
+              "With You"
+            ]
+          },
+          {
+            "text": "Ne-Yo",
+            "difficulty": 3,
+            "forbidden": [
+              "R'n'B",
+              "chapeau",
+              "So Sick"
+            ]
+          },
+          {
+            "text": "Pharrell Williams",
+            "difficulty": 1,
+            "forbidden": [
+              "Happy",
+              "chapeau",
+              "producteur"
+            ]
+          },
+          {
+            "text": "Will.i.am",
+            "difficulty": 3,
+            "forbidden": [
+              "Black Eyed Peas",
+              "The Voice",
+              "producteur"
+            ]
+          },
+          {
+            "text": "The Black Eyed Peas",
+            "difficulty": 2,
+            "forbidden": [
+              "I Gotta Feeling",
+              "Fergie",
+              "Where Is the Love"
+            ]
+          },
+          {
+            "text": "Avicii",
+            "difficulty": 2,
+            "forbidden": [
+              "Wake Me Up",
+              "DJ",
+              "Suède"
+            ]
+          },
+          {
+            "text": "Calvin Harris",
+            "difficulty": 2,
+            "forbidden": [
+              "DJ",
+              "Écosse",
+              "Summer"
+            ]
+          },
+          {
+            "text": "Martin Garrix",
+            "difficulty": 3,
+            "forbidden": [
+              "DJ",
+              "Animals",
+              "Pays-Bas"
+            ]
+          },
+          {
+            "text": "Kygo",
+            "difficulty": 3,
+            "forbidden": [
+              "DJ",
+              "Norvège",
+              "tropical house"
+            ]
+          },
+          {
+            "text": "Lil Nas X",
+            "difficulty": 2,
+            "forbidden": [
+              "Old Town Road",
+              "cow-boy",
+              "rappeur"
+            ]
+          },
+          {
+            "text": "Gotye",
+            "difficulty": 3,
+            "forbidden": [
+              "Somebody That I Used to Know",
+              "Australie",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Lenny Kravitz",
+            "difficulty": 3,
+            "forbidden": [
+              "rock",
+              "Fly Away",
+              "lunettes de soleil"
+            ]
+          },
+          {
+            "text": "Amy Winehouse",
+            "difficulty": 2,
+            "forbidden": [
+              "Rehab",
+              "choucroute",
+              "soul"
+            ]
+          },
+          {
+            "text": "Oasis",
+            "difficulty": 3,
+            "forbidden": [
+              "Wonderwall",
+              "frères Gallagher",
+              "Manchester"
+            ]
+          },
+          {
+            "text": "Rick Astley",
+            "difficulty": 3,
+            "forbidden": [
+              "Never Gonna Give You Up",
+              "mème",
+              "années 80"
+            ]
+          },
+          {
+            "text": "Cher",
+            "difficulty": 2,
+            "forbidden": [
+              "Believe",
+              "autotune",
+              "Sonny"
+            ]
+          },
+          {
+            "text": "Gloria Gaynor",
+            "difficulty": 3,
+            "forbidden": [
+              "I Will Survive",
+              "disco",
+              "hymne"
+            ]
+          },
+          {
+            "text": "Lionel Richie",
+            "difficulty": 3,
+            "forbidden": [
+              "Hello",
+              "All Night Long",
+              "We Are the World"
+            ]
+          },
+          {
+            "text": "Cyndi Lauper",
+            "difficulty": 3,
+            "forbidden": [
+              "Girls Just Want to Have Fun",
+              "années 80",
+              "Time After Time"
+            ]
+          },
+          {
+            "text": "Phil Collins",
+            "difficulty": 3,
+            "forbidden": [
+              "In the Air Tonight",
+              "Genesis",
+              "batterie"
+            ]
+          },
+          {
+            "text": "Sean Paul",
+            "difficulty": 2,
+            "forbidden": [
+              "Temperature",
+              "Jamaïque",
+              "dancehall"
+            ]
+          },
+          {
+            "text": "Shaggy",
+            "difficulty": 2,
+            "forbidden": [
+              "It Wasn't Me",
+              "Jamaïque",
+              "Boombastic"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

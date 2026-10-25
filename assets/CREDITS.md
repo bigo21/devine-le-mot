@@ -53,3 +53,10 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/carte-monde.webp | Microsoft Fluent Emoji 3D « world map » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/tete-qui-parle.webp | Microsoft Fluent Emoji 3D « speaking head » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
 | src/assets/categories/television.webp | Microsoft Fluent Emoji 3D « television » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/pop-corn.webp | Microsoft Fluent Emoji 3D « popcorn » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/cassette-video.webp | Microsoft Fluent Emoji 3D « videocassette » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/casque-audio.webp | Microsoft Fluent Emoji 3D « headphone » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/super-heros.webp | Microsoft Fluent Emoji 3D « superhero » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/basket.webp | Microsoft Fluent Emoji 3D « basketball » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/sacs-shopping.webp | Microsoft Fluent Emoji 3D « shopping bags » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |
+| src/assets/categories/souris.webp | Microsoft Fluent Emoji 3D « mouse face » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-10-25 |

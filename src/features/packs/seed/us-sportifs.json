@@ -1,0 +1,1141 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-sportifs",
+    "name": {
+      "fr": "Sportifs américains",
+      "en": "American athletes"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "sportifs",
+        "name": {
+          "fr": "Sportifs américains",
+          "en": "American athletes"
+        },
+        "emoji": "🏀",
+        "color": "slate",
+        "tags": [
+          "personnalites",
+          "sport"
+        ],
+        "words": [
+          {
+            "text": "Michael Jordan",
+            "difficulty": 1,
+            "forbidden": [
+              "Chicago Bulls",
+              "23",
+              "basket"
+            ]
+          },
+          {
+            "text": "LeBron James",
+            "difficulty": 1,
+            "forbidden": [
+              "Lakers",
+              "King James",
+              "basket"
+            ]
+          },
+          {
+            "text": "Kobe Bryant",
+            "difficulty": 1,
+            "forbidden": [
+              "Lakers",
+              "Black Mamba",
+              "basket"
+            ]
+          },
+          {
+            "text": "Stephen Curry",
+            "difficulty": 1,
+            "forbidden": [
+              "Golden State",
+              "trois points",
+              "basket"
+            ]
+          },
+          {
+            "text": "Shaquille O'Neal",
+            "difficulty": 1,
+            "forbidden": [
+              "Shaq",
+              "Lakers",
+              "géant"
+            ]
+          },
+          {
+            "text": "Magic Johnson",
+            "difficulty": 2,
+            "forbidden": [
+              "Lakers",
+              "meneur",
+              "sourire"
+            ]
+          },
+          {
+            "text": "Larry Bird",
+            "difficulty": 3,
+            "forbidden": [
+              "Celtics",
+              "Boston",
+              "basket"
+            ]
+          },
+          {
+            "text": "Kareem Abdul-Jabbar",
+            "difficulty": 3,
+            "forbidden": [
+              "Lakers",
+              "skyhook",
+              "lunettes"
+            ]
+          },
+          {
+            "text": "Kevin Durant",
+            "difficulty": 2,
+            "forbidden": [
+              "KD",
+              "basket",
+              "Golden State"
+            ]
+          },
+          {
+            "text": "Giannis Antetokounmpo",
+            "difficulty": 2,
+            "forbidden": [
+              "Milwaukee",
+              "Greek Freak",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Joel Embiid",
+            "difficulty": 1,
+            "forbidden": [
+              "Cameroun",
+              "Philadelphie",
+              "pivot"
+            ]
+          },
+          {
+            "text": "Pascal Siakam",
+            "difficulty": 2,
+            "forbidden": [
+              "Cameroun",
+              "Toronto",
+              "basket"
+            ]
+          },
+          {
+            "text": "Luka Dončić",
+            "difficulty": 2,
+            "forbidden": [
+              "Slovénie",
+              "Dallas",
+              "basket"
+            ]
+          },
+          {
+            "text": "Victor Wembanyama",
+            "difficulty": 1,
+            "forbidden": [
+              "Wemby",
+              "San Antonio",
+              "géant"
+            ]
+          },
+          {
+            "text": "Tony Parker",
+            "difficulty": 2,
+            "forbidden": [
+              "Spurs",
+              "meneur",
+              "France"
+            ]
+          },
+          {
+            "text": "Allen Iverson",
+            "difficulty": 2,
+            "forbidden": [
+              "The Answer",
+              "Philadelphie",
+              "crossover"
+            ]
+          },
+          {
+            "text": "Dwyane Wade",
+            "difficulty": 3,
+            "forbidden": [
+              "Miami Heat",
+              "arrière",
+              "Flash"
+            ]
+          },
+          {
+            "text": "Tim Duncan",
+            "difficulty": 3,
+            "forbidden": [
+              "Spurs",
+              "pivot",
+              "San Antonio"
+            ]
+          },
+          {
+            "text": "Hakeem Olajuwon",
+            "difficulty": 3,
+            "forbidden": [
+              "Nigeria",
+              "Houston",
+              "Dream Shake"
+            ]
+          },
+          {
+            "text": "Dikembe Mutombo",
+            "difficulty": 2,
+            "forbidden": [
+              "RDC",
+              "contre",
+              "doigt"
+            ]
+          },
+          {
+            "text": "Dennis Rodman",
+            "difficulty": 2,
+            "forbidden": [
+              "cheveux colorés",
+              "rebonds",
+              "Bulls"
+            ]
+          },
+          {
+            "text": "Scottie Pippen",
+            "difficulty": 3,
+            "forbidden": [
+              "Bulls",
+              "Jordan",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Kevin Garnett",
+            "difficulty": 3,
+            "forbidden": [
+              "Celtics",
+              "Minnesota",
+              "intensité"
+            ]
+          },
+          {
+            "text": "Dirk Nowitzki",
+            "difficulty": 3,
+            "forbidden": [
+              "Dallas",
+              "Allemagne",
+              "fadeaway"
+            ]
+          },
+          {
+            "text": "James Harden",
+            "difficulty": 2,
+            "forbidden": [
+              "barbe",
+              "Houston",
+              "step-back"
+            ]
+          },
+          {
+            "text": "Russell Westbrook",
+            "difficulty": 3,
+            "forbidden": [
+              "triple-double",
+              "Oklahoma",
+              "meneur"
+            ]
+          },
+          {
+            "text": "Kawhi Leonard",
+            "difficulty": 3,
+            "forbidden": [
+              "Toronto",
+              "mains",
+              "Spurs"
+            ]
+          },
+          {
+            "text": "Ja Morant",
+            "difficulty": 3,
+            "forbidden": [
+              "Memphis",
+              "dunks",
+              "meneur"
+            ]
+          },
+          {
+            "text": "Jayson Tatum",
+            "difficulty": 3,
+            "forbidden": [
+              "Celtics",
+              "Boston",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Nikola Jokić",
+            "difficulty": 2,
+            "forbidden": [
+              "Serbie",
+              "Denver",
+              "pivot"
+            ]
+          },
+          {
+            "text": "Anthony Davis",
+            "difficulty": 3,
+            "forbidden": [
+              "Lakers",
+              "sourcil",
+              "pivot"
+            ]
+          },
+          {
+            "text": "Carmelo Anthony",
+            "difficulty": 3,
+            "forbidden": [
+              "New York",
+              "Knicks",
+              "Melo"
+            ]
+          },
+          {
+            "text": "Chris Paul",
+            "difficulty": 3,
+            "forbidden": [
+              "CP3",
+              "meneur",
+              "Phoenix"
+            ]
+          },
+          {
+            "text": "Klay Thompson",
+            "difficulty": 3,
+            "forbidden": [
+              "Golden State",
+              "trois points",
+              "Splash Brothers"
+            ]
+          },
+          {
+            "text": "Vince Carter",
+            "difficulty": 3,
+            "forbidden": [
+              "dunks",
+              "Toronto",
+              "Vinsanity"
+            ]
+          },
+          {
+            "text": "Tracy McGrady",
+            "difficulty": 3,
+            "forbidden": [
+              "Houston",
+              "T-Mac",
+              "Orlando"
+            ]
+          },
+          {
+            "text": "Yao Ming",
+            "difficulty": 2,
+            "forbidden": [
+              "Chine",
+              "Houston",
+              "géant"
+            ]
+          },
+          {
+            "text": "Kyrie Irving",
+            "difficulty": 3,
+            "forbidden": [
+              "Cleveland",
+              "dribble",
+              "Boston"
+            ]
+          },
+          {
+            "text": "Damian Lillard",
+            "difficulty": 3,
+            "forbidden": [
+              "Portland",
+              "Dame Time",
+              "trois points"
+            ]
+          },
+          {
+            "text": "Zion Williamson",
+            "difficulty": 3,
+            "forbidden": [
+              "New Orleans",
+              "dunks",
+              "Duke"
+            ]
+          },
+          {
+            "text": "Rudy Gobert",
+            "difficulty": 2,
+            "forbidden": [
+              "France",
+              "pivot",
+              "Utah"
+            ]
+          },
+          {
+            "text": "Wilt Chamberlain",
+            "difficulty": 3,
+            "forbidden": [
+              "100 points",
+              "pivot",
+              "Philadelphie"
+            ]
+          },
+          {
+            "text": "Charles Barkley",
+            "difficulty": 3,
+            "forbidden": [
+              "Phoenix",
+              "Dream Team",
+              "Sir Charles"
+            ]
+          },
+          {
+            "text": "Steve Nash",
+            "difficulty": 3,
+            "forbidden": [
+              "Canada",
+              "Phoenix",
+              "meneur"
+            ]
+          },
+          {
+            "text": "Shai Gilgeous-Alexander",
+            "difficulty": 3,
+            "forbidden": [
+              "Oklahoma City",
+              "Canada",
+              "MVP"
+            ]
+          },
+          {
+            "text": "Anthony Edwards",
+            "difficulty": 3,
+            "forbidden": [
+              "Minnesota",
+              "Ant-Man",
+              "dunks"
+            ]
+          },
+          {
+            "text": "Jimmy Butler",
+            "difficulty": 3,
+            "forbidden": [
+              "Miami",
+              "café",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Lakers",
+            "difficulty": 1,
+            "forbidden": [
+              "Los Angeles",
+              "violet et or",
+              "basket"
+            ]
+          },
+          {
+            "text": "Chicago Bulls",
+            "difficulty": 1,
+            "forbidden": [
+              "Jordan",
+              "taureau",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Golden State Warriors",
+            "difficulty": 2,
+            "forbidden": [
+              "Curry",
+              "San Francisco",
+              "basket"
+            ]
+          },
+          {
+            "text": "Boston Celtics",
+            "difficulty": 2,
+            "forbidden": [
+              "trèfle",
+              "vert",
+              "basket"
+            ]
+          },
+          {
+            "text": "Miami Heat",
+            "difficulty": 2,
+            "forbidden": [
+              "Floride",
+              "basket",
+              "LeBron"
+            ]
+          },
+          {
+            "text": "Harlem Globetrotters",
+            "difficulty": 2,
+            "forbidden": [
+              "basket",
+              "spectacle",
+              "acrobaties"
+            ]
+          },
+          {
+            "text": "Dream Team",
+            "difficulty": 2,
+            "forbidden": [
+              "Barcelone 1992",
+              "Jordan",
+              "basket"
+            ]
+          },
+          {
+            "text": "NBA",
+            "difficulty": 1,
+            "forbidden": [
+              "basket",
+              "ligue",
+              "américaine"
+            ]
+          },
+          {
+            "text": "Tom Brady",
+            "difficulty": 1,
+            "forbidden": [
+              "quarterback",
+              "Patriots",
+              "Super Bowl"
+            ]
+          },
+          {
+            "text": "Patrick Mahomes",
+            "difficulty": 2,
+            "forbidden": [
+              "quarterback",
+              "Kansas City",
+              "Super Bowl"
+            ]
+          },
+          {
+            "text": "Peyton Manning",
+            "difficulty": 3,
+            "forbidden": [
+              "quarterback",
+              "Indianapolis",
+              "Denver"
+            ]
+          },
+          {
+            "text": "Joe Montana",
+            "difficulty": 3,
+            "forbidden": [
+              "quarterback",
+              "San Francisco",
+              "49ers"
+            ]
+          },
+          {
+            "text": "Travis Kelce",
+            "difficulty": 2,
+            "forbidden": [
+              "Kansas City",
+              "Taylor Swift",
+              "tight end"
+            ]
+          },
+          {
+            "text": "Aaron Rodgers",
+            "difficulty": 3,
+            "forbidden": [
+              "quarterback",
+              "Green Bay",
+              "Packers"
+            ]
+          },
+          {
+            "text": "Odell Beckham Jr.",
+            "difficulty": 3,
+            "forbidden": [
+              "receveur",
+              "une main",
+              "New York Giants"
+            ]
+          },
+          {
+            "text": "Super Bowl",
+            "difficulty": 1,
+            "forbidden": [
+              "finale",
+              "football américain",
+              "mi-temps"
+            ]
+          },
+          {
+            "text": "Kansas City Chiefs",
+            "difficulty": 3,
+            "forbidden": [
+              "Mahomes",
+              "Kelce",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Dallas Cowboys",
+            "difficulty": 2,
+            "forbidden": [
+              "étoile",
+              "Texas",
+              "football américain"
+            ]
+          },
+          {
+            "text": "New England Patriots",
+            "difficulty": 3,
+            "forbidden": [
+              "Tom Brady",
+              "Boston",
+              "football américain"
+            ]
+          },
+          {
+            "text": "NFL",
+            "difficulty": 2,
+            "forbidden": [
+              "football américain",
+              "ligue",
+              "Super Bowl"
+            ]
+          },
+          {
+            "text": "Serena Williams",
+            "difficulty": 1,
+            "forbidden": [
+              "tennis",
+              "Venus",
+              "Grand Chelem"
+            ]
+          },
+          {
+            "text": "Venus Williams",
+            "difficulty": 2,
+            "forbidden": [
+              "tennis",
+              "Serena",
+              "Wimbledon"
+            ]
+          },
+          {
+            "text": "Coco Gauff",
+            "difficulty": 3,
+            "forbidden": [
+              "tennis",
+              "jeune",
+              "US Open"
+            ]
+          },
+          {
+            "text": "Tiger Woods",
+            "difficulty": 1,
+            "forbidden": [
+              "golf",
+              "Masters",
+              "tigre"
+            ]
+          },
+          {
+            "text": "Mohamed Ali",
+            "difficulty": 1,
+            "forbidden": [
+              "boxe",
+              "papillon",
+              "Cassius Clay"
+            ]
+          },
+          {
+            "text": "Mike Tyson",
+            "difficulty": 1,
+            "forbidden": [
+              "boxe",
+              "oreille",
+              "tatouage au visage"
+            ]
+          },
+          {
+            "text": "Floyd Mayweather",
+            "difficulty": 2,
+            "forbidden": [
+              "boxe",
+              "invaincu",
+              "Money"
+            ]
+          },
+          {
+            "text": "Carl Lewis",
+            "difficulty": 2,
+            "forbidden": [
+              "sprint",
+              "saut en longueur",
+              "JO 1984"
+            ]
+          },
+          {
+            "text": "Michael Phelps",
+            "difficulty": 1,
+            "forbidden": [
+              "natation",
+              "médailles d'or",
+              "Baltimore"
+            ]
+          },
+          {
+            "text": "Simone Biles",
+            "difficulty": 1,
+            "forbidden": [
+              "gymnastique",
+              "JO",
+              "médailles"
+            ]
+          },
+          {
+            "text": "Florence Griffith-Joyner",
+            "difficulty": 3,
+            "forbidden": [
+              "sprint",
+              "ongles",
+              "Flo-Jo"
+            ]
+          },
+          {
+            "text": "Jesse Owens",
+            "difficulty": 2,
+            "forbidden": [
+              "Berlin 1936",
+              "sprint",
+              "quatre médailles d'or"
+            ]
+          },
+          {
+            "text": "Babe Ruth",
+            "difficulty": 3,
+            "forbidden": [
+              "baseball",
+              "Yankees",
+              "home run"
+            ]
+          },
+          {
+            "text": "Derek Jeter",
+            "difficulty": 3,
+            "forbidden": [
+              "baseball",
+              "Yankees",
+              "capitaine"
+            ]
+          },
+          {
+            "text": "Wayne Gretzky",
+            "difficulty": 3,
+            "forbidden": [
+              "hockey",
+              "Canada",
+              "The Great One"
+            ]
+          },
+          {
+            "text": "Andre Agassi",
+            "difficulty": 3,
+            "forbidden": [
+              "tennis",
+              "perruque",
+              "Las Vegas"
+            ]
+          },
+          {
+            "text": "Pete Sampras",
+            "difficulty": 3,
+            "forbidden": [
+              "tennis",
+              "Wimbledon",
+              "service"
+            ]
+          },
+          {
+            "text": "John McEnroe",
+            "difficulty": 3,
+            "forbidden": [
+              "tennis",
+              "colère",
+              "bandeau"
+            ]
+          },
+          {
+            "text": "Tony Hawk",
+            "difficulty": 2,
+            "forbidden": [
+              "skateboard",
+              "900",
+              "jeu vidéo"
+            ]
+          },
+          {
+            "text": "Shaun White",
+            "difficulty": 3,
+            "forbidden": [
+              "snowboard",
+              "JO",
+              "cheveux roux"
+            ]
+          },
+          {
+            "text": "Francis Ngannou",
+            "difficulty": 1,
+            "forbidden": [
+              "Cameroun",
+              "MMA",
+              "Predator"
+            ]
+          },
+          {
+            "text": "Jon Jones",
+            "difficulty": 3,
+            "forbidden": [
+              "UFC",
+              "MMA",
+              "Bones"
+            ]
+          },
+          {
+            "text": "Conor McGregor",
+            "difficulty": 2,
+            "forbidden": [
+              "UFC",
+              "Irlande",
+              "Notorious"
+            ]
+          },
+          {
+            "text": "Ronda Rousey",
+            "difficulty": 3,
+            "forbidden": [
+              "UFC",
+              "judo",
+              "catch"
+            ]
+          },
+          {
+            "text": "Dwayne Johnson",
+            "difficulty": 1,
+            "forbidden": [
+              "The Rock",
+              "catch",
+              "sourcil"
+            ]
+          },
+          {
+            "text": "John Cena",
+            "difficulty": 1,
+            "forbidden": [
+              "catch",
+              "You Can't See Me",
+              "casquette"
+            ]
+          },
+          {
+            "text": "The Undertaker",
+            "difficulty": 2,
+            "forbidden": [
+              "catch",
+              "croque-mort",
+              "chapeau noir"
+            ]
+          },
+          {
+            "text": "Hulk Hogan",
+            "difficulty": 2,
+            "forbidden": [
+              "catch",
+              "moustache",
+              "bandana"
+            ]
+          },
+          {
+            "text": "Rey Mysterio",
+            "difficulty": 2,
+            "forbidden": [
+              "catch",
+              "masque",
+              "619"
+            ]
+          },
+          {
+            "text": "Usain Bolt",
+            "difficulty": 1,
+            "forbidden": [
+              "Jamaïque",
+              "éclair",
+              "100 mètres"
+            ]
+          },
+          {
+            "text": "Allyson Felix",
+            "difficulty": 3,
+            "forbidden": [
+              "sprint",
+              "JO",
+              "relais"
+            ]
+          },
+          {
+            "text": "Sha'Carri Richardson",
+            "difficulty": 3,
+            "forbidden": [
+              "sprint",
+              "ongles",
+              "cheveux colorés"
+            ]
+          },
+          {
+            "text": "Noah Lyles",
+            "difficulty": 3,
+            "forbidden": [
+              "sprint",
+              "100 mètres",
+              "JO 2024"
+            ]
+          },
+          {
+            "text": "Katie Ledecky",
+            "difficulty": 3,
+            "forbidden": [
+              "natation",
+              "nage libre",
+              "JO"
+            ]
+          },
+          {
+            "text": "Caitlin Clark",
+            "difficulty": 3,
+            "forbidden": [
+              "WNBA",
+              "trois points",
+              "Indiana"
+            ]
+          },
+          {
+            "text": "Lisa Leslie",
+            "difficulty": 3,
+            "forbidden": [
+              "WNBA",
+              "dunk",
+              "Los Angeles"
+            ]
+          },
+          {
+            "text": "Bo Jackson",
+            "difficulty": 3,
+            "forbidden": [
+              "baseball",
+              "football américain",
+              "Nike"
+            ]
+          },
+          {
+            "text": "Muggsy Bogues",
+            "difficulty": 3,
+            "forbidden": [
+              "petit",
+              "meneur",
+              "Charlotte"
+            ]
+          },
+          {
+            "text": "Manute Bol",
+            "difficulty": 3,
+            "forbidden": [
+              "Soudan",
+              "géant",
+              "contre"
+            ]
+          },
+          {
+            "text": "Luol Deng",
+            "difficulty": 3,
+            "forbidden": [
+              "Soudan du Sud",
+              "Chicago",
+              "ailier"
+            ]
+          },
+          {
+            "text": "Serge Ibaka",
+            "difficulty": 3,
+            "forbidden": [
+              "Congo",
+              "contre",
+              "Oklahoma"
+            ]
+          },
+          {
+            "text": "Bismack Biyombo",
+            "difficulty": 3,
+            "forbidden": [
+              "RDC",
+              "pivot",
+              "contre"
+            ]
+          },
+          {
+            "text": "Jeremy Lin",
+            "difficulty": 3,
+            "forbidden": [
+              "Linsanity",
+              "Knicks",
+              "Taïwan"
+            ]
+          },
+          {
+            "text": "Kristaps Porziņģis",
+            "difficulty": 3,
+            "forbidden": [
+              "Lettonie",
+              "Knicks",
+              "géant"
+            ]
+          },
+          {
+            "text": "Dunk",
+            "difficulty": 1,
+            "forbidden": [
+              "panier",
+              "smash",
+              "basket"
+            ]
+          },
+          {
+            "text": "Slam Dunk Contest",
+            "difficulty": 3,
+            "forbidden": [
+              "concours",
+              "All-Star",
+              "basket"
+            ]
+          },
+          {
+            "text": "All-Star Game",
+            "difficulty": 3,
+            "forbidden": [
+              "NBA",
+              "étoiles",
+              "match"
+            ]
+          },
+          {
+            "text": "March Madness",
+            "difficulty": 3,
+            "forbidden": [
+              "universitaire",
+              "tournoi",
+              "basket"
+            ]
+          },
+          {
+            "text": "Michael Vick",
+            "difficulty": 3,
+            "forbidden": [
+              "quarterback",
+              "Atlanta",
+              "vitesse"
+            ]
+          },
+          {
+            "text": "Jerry Rice",
+            "difficulty": 3,
+            "forbidden": [
+              "receveur",
+              "49ers",
+              "records"
+            ]
+          },
+          {
+            "text": "Paul George",
+            "difficulty": 3,
+            "forbidden": [
+              "Clippers",
+              "ailier",
+              "PG-13"
+            ]
+          },
+          {
+            "text": "Devin Booker",
+            "difficulty": 3,
+            "forbidden": [
+              "Phoenix",
+              "arrière",
+              "70 points"
+            ]
+          },
+          {
+            "text": "Bill Russell",
+            "difficulty": 3,
+            "forbidden": [
+              "Celtics",
+              "11 titres",
+              "Boston"
+            ]
+          },
+          {
+            "text": "Karl-Anthony Towns",
+            "difficulty": 3,
+            "forbidden": [
+              "Minnesota",
+              "pivot",
+              "Knicks"
+            ]
+          },
+          {
+            "text": "Draymond Green",
+            "difficulty": 3,
+            "forbidden": [
+              "Golden State",
+              "défense",
+              "Warriors"
+            ]
+          }
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ]
+      }
+    ]
+  }
+}

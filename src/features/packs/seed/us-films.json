@@ -1,0 +1,1174 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-films",
+    "name": {
+      "fr": "Films hollywoodiens",
+      "en": "Hollywood films"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "films",
+        "name": {
+          "fr": "Films hollywoodiens",
+          "en": "Hollywood films"
+        },
+        "emoji": "🍿",
+        "color": "indigo",
+        "tags": [
+          "cinema"
+        ],
+        "words": [
+          {
+            "text": "Titanic",
+            "difficulty": 1,
+            "forbidden": [
+              "bateau",
+              "iceberg",
+              "DiCaprio"
+            ]
+          },
+          {
+            "text": "Avatar",
+            "difficulty": 1,
+            "forbidden": [
+              "bleus",
+              "Pandora",
+              "James Cameron"
+            ]
+          },
+          {
+            "text": "Star Wars",
+            "difficulty": 1,
+            "forbidden": [
+              "Jedi",
+              "Dark Vador",
+              "sabre laser"
+            ]
+          },
+          {
+            "text": "Le Seigneur des anneaux",
+            "difficulty": 1,
+            "forbidden": [
+              "Frodon",
+              "Gandalf",
+              "Mordor"
+            ]
+          },
+          {
+            "text": "Harry Potter",
+            "difficulty": 1,
+            "forbidden": [
+              "sorcier",
+              "Poudlard",
+              "baguette"
+            ]
+          },
+          {
+            "text": "Jurassic Park",
+            "difficulty": 1,
+            "forbidden": [
+              "dinosaures",
+              "Spielberg",
+              "tyrannosaure"
+            ]
+          },
+          {
+            "text": "Retour vers le futur",
+            "difficulty": 1,
+            "forbidden": [
+              "DeLorean",
+              "Marty",
+              "Doc"
+            ]
+          },
+          {
+            "text": "E.T. l'extra-terrestre",
+            "difficulty": 1,
+            "forbidden": [
+              "Spielberg",
+              "vélo",
+              "téléphone maison"
+            ]
+          },
+          {
+            "text": "Les Dents de la mer",
+            "difficulty": 1,
+            "forbidden": [
+              "requin",
+              "Spielberg",
+              "plage"
+            ]
+          },
+          {
+            "text": "Indiana Jones",
+            "difficulty": 1,
+            "forbidden": [
+              "fouet",
+              "chapeau",
+              "archéologue"
+            ]
+          },
+          {
+            "text": "Le Parrain",
+            "difficulty": 1,
+            "forbidden": [
+              "mafia",
+              "Corleone",
+              "Marlon Brando"
+            ]
+          },
+          {
+            "text": "Forrest Gump",
+            "difficulty": 1,
+            "forbidden": [
+              "Tom Hanks",
+              "courir",
+              "boîte de chocolats"
+            ]
+          },
+          {
+            "text": "Pulp Fiction",
+            "difficulty": 2,
+            "forbidden": [
+              "Tarantino",
+              "Travolta",
+              "danse"
+            ]
+          },
+          {
+            "text": "Matrix",
+            "difficulty": 1,
+            "forbidden": [
+              "Neo",
+              "pilule rouge",
+              "Keanu Reeves"
+            ]
+          },
+          {
+            "text": "Terminator",
+            "difficulty": 1,
+            "forbidden": [
+              "Schwarzenegger",
+              "robot",
+              "I'll be back"
+            ]
+          },
+          {
+            "text": "Rocky",
+            "difficulty": 1,
+            "forbidden": [
+              "boxe",
+              "Stallone",
+              "escaliers"
+            ]
+          },
+          {
+            "text": "Rambo",
+            "difficulty": 2,
+            "forbidden": [
+              "Stallone",
+              "Vietnam",
+              "bandeau"
+            ]
+          },
+          {
+            "text": "Le Roi lion",
+            "difficulty": 1,
+            "forbidden": [
+              "Simba",
+              "Mufasa",
+              "Hakuna Matata"
+            ]
+          },
+          {
+            "text": "La Reine des neiges",
+            "difficulty": 1,
+            "forbidden": [
+              "Elsa",
+              "Olaf",
+              "Libérée délivrée"
+            ]
+          },
+          {
+            "text": "Toy Story",
+            "difficulty": 1,
+            "forbidden": [
+              "Woody",
+              "Buzz l'Éclair",
+              "jouets"
+            ]
+          },
+          {
+            "text": "Le Monde de Nemo",
+            "difficulty": 1,
+            "forbidden": [
+              "poisson-clown",
+              "Dory",
+              "océan"
+            ]
+          },
+          {
+            "text": "Shrek",
+            "difficulty": 1,
+            "forbidden": [
+              "ogre",
+              "âne",
+              "Fiona"
+            ]
+          },
+          {
+            "text": "Les Indestructibles",
+            "difficulty": 2,
+            "forbidden": [
+              "super-héros",
+              "famille",
+              "Pixar"
+            ]
+          },
+          {
+            "text": "Ratatouille",
+            "difficulty": 1,
+            "forbidden": [
+              "rat",
+              "cuisine",
+              "Rémy"
+            ]
+          },
+          {
+            "text": "Là-haut",
+            "difficulty": 2,
+            "forbidden": [
+              "ballons",
+              "maison volante",
+              "Pixar"
+            ]
+          },
+          {
+            "text": "Vice-versa",
+            "difficulty": 2,
+            "forbidden": [
+              "émotions",
+              "Joie",
+              "Tristesse"
+            ]
+          },
+          {
+            "text": "Coco",
+            "difficulty": 2,
+            "forbidden": [
+              "Mexique",
+              "morts",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Vaiana",
+            "difficulty": 2,
+            "forbidden": [
+              "océan",
+              "Maui",
+              "Polynésie"
+            ]
+          },
+          {
+            "text": "Aladdin",
+            "difficulty": 1,
+            "forbidden": [
+              "génie",
+              "lampe",
+              "Jasmine"
+            ]
+          },
+          {
+            "text": "La Belle et la Bête",
+            "difficulty": 1,
+            "forbidden": [
+              "rose",
+              "château",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Cendrillon",
+            "difficulty": 1,
+            "forbidden": [
+              "pantoufle de verre",
+              "citrouille",
+              "minuit"
+            ]
+          },
+          {
+            "text": "Blanche-Neige",
+            "difficulty": 1,
+            "forbidden": [
+              "sept nains",
+              "pomme",
+              "miroir"
+            ]
+          },
+          {
+            "text": "La Petite Sirène",
+            "difficulty": 1,
+            "forbidden": [
+              "Ariel",
+              "sous l'eau",
+              "Sébastien"
+            ]
+          },
+          {
+            "text": "Mulan",
+            "difficulty": 2,
+            "forbidden": [
+              "Chine",
+              "guerrière",
+              "Mushu"
+            ]
+          },
+          {
+            "text": "Le Livre de la jungle",
+            "difficulty": 2,
+            "forbidden": [
+              "Mowgli",
+              "Baloo",
+              "Shere Khan"
+            ]
+          },
+          {
+            "text": "Madagascar",
+            "difficulty": 2,
+            "forbidden": [
+              "lion",
+              "zèbre",
+              "pingouins"
+            ]
+          },
+          {
+            "text": "L'Âge de glace",
+            "difficulty": 2,
+            "forbidden": [
+              "mammouth",
+              "écureuil",
+              "gland"
+            ]
+          },
+          {
+            "text": "Moi, moche et méchant",
+            "difficulty": 1,
+            "forbidden": [
+              "Minions",
+              "Gru",
+              "bananes"
+            ]
+          },
+          {
+            "text": "Kung Fu Panda",
+            "difficulty": 2,
+            "forbidden": [
+              "Po",
+              "arts martiaux",
+              "maître Shifu"
+            ]
+          },
+          {
+            "text": "Dragons",
+            "difficulty": 2,
+            "forbidden": [
+              "Krokmou",
+              "Vikings",
+              "dresser"
+            ]
+          },
+          {
+            "text": "Zootopie",
+            "difficulty": 2,
+            "forbidden": [
+              "lapin",
+              "renard",
+              "police"
+            ]
+          },
+          {
+            "text": "Encanto",
+            "difficulty": 2,
+            "forbidden": [
+              "Colombie",
+              "famille Madrigal",
+              "Bruno"
+            ]
+          },
+          {
+            "text": "Avengers",
+            "difficulty": 1,
+            "forbidden": [
+              "Marvel",
+              "super-héros",
+              "Thanos"
+            ]
+          },
+          {
+            "text": "Black Panther",
+            "difficulty": 1,
+            "forbidden": [
+              "Wakanda",
+              "Marvel",
+              "T'Challa"
+            ]
+          },
+          {
+            "text": "Joker",
+            "difficulty": 2,
+            "forbidden": [
+              "Joaquin Phoenix",
+              "clown",
+              "escaliers"
+            ]
+          },
+          {
+            "text": "Mission impossible",
+            "difficulty": 1,
+            "forbidden": [
+              "Tom Cruise",
+              "espion",
+              "autodestruction"
+            ]
+          },
+          {
+            "text": "James Bond",
+            "difficulty": 1,
+            "forbidden": [
+              "007",
+              "espion",
+              "martini"
+            ]
+          },
+          {
+            "text": "Fast and Furious",
+            "difficulty": 1,
+            "forbidden": [
+              "voitures",
+              "Vin Diesel",
+              "famille"
+            ]
+          },
+          {
+            "text": "Pirates des Caraïbes",
+            "difficulty": 1,
+            "forbidden": [
+              "Jack Sparrow",
+              "Johnny Depp",
+              "Black Pearl"
+            ]
+          },
+          {
+            "text": "Gladiator",
+            "difficulty": 1,
+            "forbidden": [
+              "Russell Crowe",
+              "Rome",
+              "arène"
+            ]
+          },
+          {
+            "text": "Braveheart",
+            "difficulty": 2,
+            "forbidden": [
+              "Écosse",
+              "Mel Gibson",
+              "liberté"
+            ]
+          },
+          {
+            "text": "Inception",
+            "difficulty": 2,
+            "forbidden": [
+              "rêves",
+              "toupie",
+              "DiCaprio"
+            ]
+          },
+          {
+            "text": "Interstellar",
+            "difficulty": 2,
+            "forbidden": [
+              "espace",
+              "trou noir",
+              "Nolan"
+            ]
+          },
+          {
+            "text": "The Dark Knight",
+            "difficulty": 2,
+            "forbidden": [
+              "Batman",
+              "Joker",
+              "Nolan"
+            ]
+          },
+          {
+            "text": "Le Loup de Wall Street",
+            "difficulty": 2,
+            "forbidden": [
+              "DiCaprio",
+              "bourse",
+              "Scorsese"
+            ]
+          },
+          {
+            "text": "Les Affranchis",
+            "difficulty": 3,
+            "forbidden": [
+              "mafia",
+              "Scorsese",
+              "Ray Liotta"
+            ]
+          },
+          {
+            "text": "Scarface",
+            "difficulty": 2,
+            "forbidden": [
+              "Al Pacino",
+              "Tony Montana",
+              "Miami"
+            ]
+          },
+          {
+            "text": "Le Silence des agneaux",
+            "difficulty": 2,
+            "forbidden": [
+              "Hannibal Lecter",
+              "Jodie Foster",
+              "cannibale"
+            ]
+          },
+          {
+            "text": "Psychose",
+            "difficulty": 3,
+            "forbidden": [
+              "Hitchcock",
+              "douche",
+              "motel"
+            ]
+          },
+          {
+            "text": "Shining",
+            "difficulty": 2,
+            "forbidden": [
+              "Stephen King",
+              "hôtel",
+              "Here's Johnny"
+            ]
+          },
+          {
+            "text": "Ça",
+            "difficulty": 2,
+            "forbidden": [
+              "clown",
+              "Stephen King",
+              "Grippe-Sou"
+            ]
+          },
+          {
+            "text": "L'Exorciste",
+            "difficulty": 3,
+            "forbidden": [
+              "démon",
+              "possession",
+              "prêtre"
+            ]
+          },
+          {
+            "text": "Scream",
+            "difficulty": 2,
+            "forbidden": [
+              "masque",
+              "tueur",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "SOS Fantômes",
+            "difficulty": 2,
+            "forbidden": [
+              "Ghostbusters",
+              "chasseurs",
+              "Marshmallow"
+            ]
+          },
+          {
+            "text": "Men in Black",
+            "difficulty": 2,
+            "forbidden": [
+              "extraterrestres",
+              "costume noir",
+              "Will Smith"
+            ]
+          },
+          {
+            "text": "Independence Day",
+            "difficulty": 2,
+            "forbidden": [
+              "aliens",
+              "Will Smith",
+              "4 juillet"
+            ]
+          },
+          {
+            "text": "Bad Boys",
+            "difficulty": 2,
+            "forbidden": [
+              "Will Smith",
+              "Martin Lawrence",
+              "Miami"
+            ]
+          },
+          {
+            "text": "Top Gun",
+            "difficulty": 1,
+            "forbidden": [
+              "Tom Cruise",
+              "avion de chasse",
+              "Maverick"
+            ]
+          },
+          {
+            "text": "Grease",
+            "difficulty": 2,
+            "forbidden": [
+              "John Travolta",
+              "comédie musicale",
+              "blouson"
+            ]
+          },
+          {
+            "text": "Dirty Dancing",
+            "difficulty": 2,
+            "forbidden": [
+              "Patrick Swayze",
+              "porté",
+              "danse"
+            ]
+          },
+          {
+            "text": "Pretty Woman",
+            "difficulty": 2,
+            "forbidden": [
+              "Julia Roberts",
+              "Richard Gere",
+              "shopping"
+            ]
+          },
+          {
+            "text": "Ghost",
+            "difficulty": 2,
+            "forbidden": [
+              "poterie",
+              "Patrick Swayze",
+              "fantôme"
+            ]
+          },
+          {
+            "text": "Maman, j'ai raté l'avion",
+            "difficulty": 1,
+            "forbidden": [
+              "Kevin",
+              "Noël",
+              "cambrioleurs"
+            ]
+          },
+          {
+            "text": "Mrs Doubtfire",
+            "difficulty": 2,
+            "forbidden": [
+              "Robin Williams",
+              "nounou",
+              "déguisement"
+            ]
+          },
+          {
+            "text": "Jumanji",
+            "difficulty": 2,
+            "forbidden": [
+              "jeu de société",
+              "jungle",
+              "Robin Williams"
+            ]
+          },
+          {
+            "text": "Le Cercle des poètes disparus",
+            "difficulty": 3,
+            "forbidden": [
+              "Robin Williams",
+              "Ô Capitaine",
+              "professeur"
+            ]
+          },
+          {
+            "text": "La La Land",
+            "difficulty": 2,
+            "forbidden": [
+              "Ryan Gosling",
+              "Emma Stone",
+              "jazz"
+            ]
+          },
+          {
+            "text": "Barbie",
+            "difficulty": 1,
+            "forbidden": [
+              "poupée",
+              "rose",
+              "Margot Robbie"
+            ]
+          },
+          {
+            "text": "Oppenheimer",
+            "difficulty": 2,
+            "forbidden": [
+              "bombe atomique",
+              "Nolan",
+              "Cillian Murphy"
+            ]
+          },
+          {
+            "text": "Dune",
+            "difficulty": 2,
+            "forbidden": [
+              "désert",
+              "épice",
+              "Timothée Chalamet"
+            ]
+          },
+          {
+            "text": "Hunger Games",
+            "difficulty": 2,
+            "forbidden": [
+              "Katniss",
+              "arène",
+              "Jennifer Lawrence"
+            ]
+          },
+          {
+            "text": "Twilight",
+            "difficulty": 2,
+            "forbidden": [
+              "vampire",
+              "Edward",
+              "Bella"
+            ]
+          },
+          {
+            "text": "Les Gardiens de la Galaxie",
+            "difficulty": 2,
+            "forbidden": [
+              "Groot",
+              "Marvel",
+              "Star-Lord"
+            ]
+          },
+          {
+            "text": "Le Magicien d'Oz",
+            "difficulty": 3,
+            "forbidden": [
+              "Dorothy",
+              "route de briques jaunes",
+              "Kansas"
+            ]
+          },
+          {
+            "text": "Mary Poppins",
+            "difficulty": 2,
+            "forbidden": [
+              "nounou",
+              "parapluie",
+              "Supercalifragilisticexpialidocious"
+            ]
+          },
+          {
+            "text": "King Kong",
+            "difficulty": 2,
+            "forbidden": [
+              "gorille",
+              "Empire State Building",
+              "géant"
+            ]
+          },
+          {
+            "text": "Godzilla",
+            "difficulty": 2,
+            "forbidden": [
+              "monstre",
+              "Japon",
+              "lézard géant"
+            ]
+          },
+          {
+            "text": "Alien",
+            "difficulty": 2,
+            "forbidden": [
+              "Ripley",
+              "extraterrestre",
+              "vaisseau"
+            ]
+          },
+          {
+            "text": "Predator",
+            "difficulty": 3,
+            "forbidden": [
+              "Schwarzenegger",
+              "jungle",
+              "chasseur"
+            ]
+          },
+          {
+            "text": "Die Hard",
+            "difficulty": 2,
+            "forbidden": [
+              "Bruce Willis",
+              "tour",
+              "John McClane"
+            ]
+          },
+          {
+            "text": "Le Sixième Sens",
+            "difficulty": 3,
+            "forbidden": [
+              "Bruce Willis",
+              "fantômes",
+              "Je vois des gens morts"
+            ]
+          },
+          {
+            "text": "Seven",
+            "difficulty": 3,
+            "forbidden": [
+              "Brad Pitt",
+              "péchés capitaux",
+              "boîte"
+            ]
+          },
+          {
+            "text": "Fight Club",
+            "difficulty": 2,
+            "forbidden": [
+              "Brad Pitt",
+              "Edward Norton",
+              "règle"
+            ]
+          },
+          {
+            "text": "Ocean's Eleven",
+            "difficulty": 2,
+            "forbidden": [
+              "braquage",
+              "casino",
+              "George Clooney"
+            ]
+          },
+          {
+            "text": "Le Diable s'habille en Prada",
+            "difficulty": 2,
+            "forbidden": [
+              "Meryl Streep",
+              "mode",
+              "Anne Hathaway"
+            ]
+          },
+          {
+            "text": "Mean Girls",
+            "difficulty": 3,
+            "forbidden": [
+              "lycée",
+              "Lindsay Lohan",
+              "rose le mercredi"
+            ]
+          },
+          {
+            "text": "Very Bad Trip",
+            "difficulty": 2,
+            "forbidden": [
+              "Las Vegas",
+              "enterrement de vie de garçon",
+              "tigre"
+            ]
+          },
+          {
+            "text": "Les Évadés",
+            "difficulty": 2,
+            "forbidden": [
+              "prison",
+              "Shawshank",
+              "Morgan Freeman"
+            ]
+          },
+          {
+            "text": "La Ligne verte",
+            "difficulty": 2,
+            "forbidden": [
+              "prison",
+              "Tom Hanks",
+              "souris"
+            ]
+          },
+          {
+            "text": "Il faut sauver le soldat Ryan",
+            "difficulty": 2,
+            "forbidden": [
+              "Spielberg",
+              "débarquement",
+              "Tom Hanks"
+            ]
+          },
+          {
+            "text": "Seul au monde",
+            "difficulty": 2,
+            "forbidden": [
+              "Tom Hanks",
+              "île",
+              "Wilson"
+            ]
+          },
+          {
+            "text": "Arrête-moi si tu peux",
+            "difficulty": 3,
+            "forbidden": [
+              "DiCaprio",
+              "faussaire",
+              "Tom Hanks"
+            ]
+          },
+          {
+            "text": "Le Terminal",
+            "difficulty": 3,
+            "forbidden": [
+              "Tom Hanks",
+              "aéroport",
+              "Spielberg"
+            ]
+          },
+          {
+            "text": "The Truman Show",
+            "difficulty": 2,
+            "forbidden": [
+              "Jim Carrey",
+              "téléréalité",
+              "dôme"
+            ]
+          },
+          {
+            "text": "The Mask",
+            "difficulty": 1,
+            "forbidden": [
+              "Jim Carrey",
+              "visage vert",
+              "chien Milo"
+            ]
+          },
+          {
+            "text": "Ace Ventura",
+            "difficulty": 2,
+            "forbidden": [
+              "Jim Carrey",
+              "animaux",
+              "détective"
+            ]
+          },
+          {
+            "text": "Bruce tout-puissant",
+            "difficulty": 3,
+            "forbidden": [
+              "Jim Carrey",
+              "Dieu",
+              "Morgan Freeman"
+            ]
+          },
+          {
+            "text": "Rush Hour",
+            "difficulty": 2,
+            "forbidden": [
+              "Jackie Chan",
+              "Chris Tucker",
+              "Los Angeles"
+            ]
+          },
+          {
+            "text": "Kill Bill",
+            "difficulty": 2,
+            "forbidden": [
+              "Tarantino",
+              "Uma Thurman",
+              "sabre"
+            ]
+          },
+          {
+            "text": "Django Unchained",
+            "difficulty": 3,
+            "forbidden": [
+              "Tarantino",
+              "esclavage",
+              "Jamie Foxx"
+            ]
+          },
+          {
+            "text": "Get Out",
+            "difficulty": 3,
+            "forbidden": [
+              "Jordan Peele",
+              "hypnose",
+              "belle-famille"
+            ]
+          },
+          {
+            "text": "Creed",
+            "difficulty": 3,
+            "forbidden": [
+              "boxe",
+              "Rocky",
+              "Michael B. Jordan"
+            ]
+          },
+          {
+            "text": "Space Jam",
+            "difficulty": 2,
+            "forbidden": [
+              "Michael Jordan",
+              "Bugs Bunny",
+              "basket"
+            ]
+          },
+          {
+            "text": "Le Prince d'Égypte",
+            "difficulty": 3,
+            "forbidden": [
+              "Moïse",
+              "DreamWorks",
+              "mer Rouge"
+            ]
+          },
+          {
+            "text": "Pocahontas",
+            "difficulty": 2,
+            "forbidden": [
+              "Disney",
+              "John Smith",
+              "Amérindienne"
+            ]
+          },
+          {
+            "text": "Bambi",
+            "difficulty": 1,
+            "forbidden": [
+              "faon",
+              "forêt",
+              "Panpan"
+            ]
+          },
+          {
+            "text": "Dumbo",
+            "difficulty": 2,
+            "forbidden": [
+              "éléphant",
+              "oreilles",
+              "cirque"
+            ]
+          },
+          {
+            "text": "Pinocchio",
+            "difficulty": 1,
+            "forbidden": [
+              "nez",
+              "Geppetto",
+              "marionnette"
+            ]
+          },
+          {
+            "text": "Peter Pan",
+            "difficulty": 1,
+            "forbidden": [
+              "Clochette",
+              "Capitaine Crochet",
+              "Pays imaginaire"
+            ]
+          },
+          {
+            "text": "Les 101 Dalmatiens",
+            "difficulty": 2,
+            "forbidden": [
+              "chiots",
+              "Cruella",
+              "taches"
+            ]
+          },
+          {
+            "text": "Raiponce",
+            "difficulty": 2,
+            "forbidden": [
+              "cheveux",
+              "tour",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Wall-E",
+            "difficulty": 2,
+            "forbidden": [
+              "robot",
+              "Pixar",
+              "Eve"
+            ]
+          },
+          {
+            "text": "Cars",
+            "difficulty": 2,
+            "forbidden": [
+              "Flash McQueen",
+              "voitures",
+              "Pixar"
+            ]
+          },
+          {
+            "text": "Monstres et Cie",
+            "difficulty": 2,
+            "forbidden": [
+              "Sulli",
+              "Bob",
+              "Bouh"
+            ]
+          },
+          {
+            "text": "Un prince à New York",
+            "difficulty": 2,
+            "forbidden": [
+              "Eddie Murphy",
+              "Zamunda",
+              "prince africain"
+            ]
+          },
+          {
+            "text": "Le Flic de Beverly Hills",
+            "difficulty": 3,
+            "forbidden": [
+              "Eddie Murphy",
+              "policier",
+              "Detroit"
+            ]
+          },
+          {
+            "text": "Coming 2 America",
+            "difficulty": 3,
+            "forbidden": [
+              "Eddie Murphy",
+              "Zamunda",
+              "suite"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

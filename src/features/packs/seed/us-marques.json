@@ -1,0 +1,1120 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-marques",
+    "name": {
+      "fr": "Marques mondiales",
+      "en": "Global brands"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "marques",
+        "name": {
+          "fr": "Marques mondiales",
+          "en": "Global brands"
+        },
+        "emoji": "🛍️",
+        "color": "lilac",
+        "tags": [
+          "marques"
+        ],
+        "words": [
+          {
+            "text": "Coca-Cola",
+            "difficulty": 1,
+            "forbidden": [
+              "soda",
+              "rouge",
+              "bouteille"
+            ]
+          },
+          {
+            "text": "Pepsi",
+            "difficulty": 2,
+            "forbidden": [
+              "soda",
+              "bleu",
+              "cola"
+            ]
+          },
+          {
+            "text": "McDonald's",
+            "difficulty": 1,
+            "forbidden": [
+              "Big Mac",
+              "fast-food",
+              "M jaune"
+            ]
+          },
+          {
+            "text": "Burger King",
+            "difficulty": 2,
+            "forbidden": [
+              "Whopper",
+              "fast-food",
+              "couronne"
+            ]
+          },
+          {
+            "text": "KFC",
+            "difficulty": 1,
+            "forbidden": [
+              "poulet frit",
+              "Colonel",
+              "seau"
+            ]
+          },
+          {
+            "text": "Starbucks",
+            "difficulty": 2,
+            "forbidden": [
+              "café",
+              "sirène",
+              "gobelet"
+            ]
+          },
+          {
+            "text": "Nike",
+            "difficulty": 1,
+            "forbidden": [
+              "virgule",
+              "Just Do It",
+              "baskets"
+            ]
+          },
+          {
+            "text": "Adidas",
+            "difficulty": 1,
+            "forbidden": [
+              "trois bandes",
+              "baskets",
+              "Allemagne"
+            ]
+          },
+          {
+            "text": "Puma",
+            "difficulty": 2,
+            "forbidden": [
+              "félin",
+              "baskets",
+              "sport"
+            ]
+          },
+          {
+            "text": "Apple",
+            "difficulty": 1,
+            "forbidden": [
+              "iPhone",
+              "pomme",
+              "Steve Jobs"
+            ]
+          },
+          {
+            "text": "Samsung",
+            "difficulty": 1,
+            "forbidden": [
+              "Galaxy",
+              "Corée",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Google",
+            "difficulty": 1,
+            "forbidden": [
+              "recherche",
+              "moteur",
+              "Android"
+            ]
+          },
+          {
+            "text": "Microsoft",
+            "difficulty": 1,
+            "forbidden": [
+              "Windows",
+              "Bill Gates",
+              "Xbox"
+            ]
+          },
+          {
+            "text": "Amazon",
+            "difficulty": 1,
+            "forbidden": [
+              "colis",
+              "Jeff Bezos",
+              "livraison"
+            ]
+          },
+          {
+            "text": "Tecno",
+            "difficulty": 1,
+            "forbidden": [
+              "téléphone",
+              "Afrique",
+              "Camon"
+            ]
+          },
+          {
+            "text": "Infinix",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "Afrique",
+              "Hot"
+            ]
+          },
+          {
+            "text": "Itel",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "Afrique",
+              "pas cher"
+            ]
+          },
+          {
+            "text": "Huawei",
+            "difficulty": 2,
+            "forbidden": [
+              "Chine",
+              "téléphone",
+              "5G"
+            ]
+          },
+          {
+            "text": "Xiaomi",
+            "difficulty": 2,
+            "forbidden": [
+              "Chine",
+              "téléphone",
+              "Redmi"
+            ]
+          },
+          {
+            "text": "Sony",
+            "difficulty": 2,
+            "forbidden": [
+              "Japon",
+              "PlayStation",
+              "télévision"
+            ]
+          },
+          {
+            "text": "PlayStation",
+            "difficulty": 1,
+            "forbidden": [
+              "console",
+              "Sony",
+              "manette"
+            ]
+          },
+          {
+            "text": "Nintendo",
+            "difficulty": 1,
+            "forbidden": [
+              "Mario",
+              "Switch",
+              "Japon"
+            ]
+          },
+          {
+            "text": "Xbox",
+            "difficulty": 2,
+            "forbidden": [
+              "console",
+              "Microsoft",
+              "manette"
+            ]
+          },
+          {
+            "text": "Toyota",
+            "difficulty": 1,
+            "forbidden": [
+              "Corolla",
+              "Japon",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Mercedes-Benz",
+            "difficulty": 1,
+            "forbidden": [
+              "étoile",
+              "Allemagne",
+              "voiture"
+            ]
+          },
+          {
+            "text": "BMW",
+            "difficulty": 2,
+            "forbidden": [
+              "Bavière",
+              "voiture",
+              "Allemagne"
+            ]
+          },
+          {
+            "text": "Ferrari",
+            "difficulty": 1,
+            "forbidden": [
+              "cheval cabré",
+              "rouge",
+              "Italie"
+            ]
+          },
+          {
+            "text": "Lamborghini",
+            "difficulty": 2,
+            "forbidden": [
+              "taureau",
+              "Italie",
+              "voiture de sport"
+            ]
+          },
+          {
+            "text": "Tesla",
+            "difficulty": 1,
+            "forbidden": [
+              "Elon Musk",
+              "électrique",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Volkswagen",
+            "difficulty": 2,
+            "forbidden": [
+              "Golf",
+              "Allemagne",
+              "Coccinelle"
+            ]
+          },
+          {
+            "text": "Peugeot",
+            "difficulty": 2,
+            "forbidden": [
+              "lion",
+              "France",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Renault",
+            "difficulty": 2,
+            "forbidden": [
+              "losange",
+              "France",
+              "Clio"
+            ]
+          },
+          {
+            "text": "Honda",
+            "difficulty": 3,
+            "forbidden": [
+              "Japon",
+              "moto",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Nissan",
+            "difficulty": 3,
+            "forbidden": [
+              "Japon",
+              "Patrol",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Ford",
+            "difficulty": 2,
+            "forbidden": [
+              "Mustang",
+              "États-Unis",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Jeep",
+            "difficulty": 2,
+            "forbidden": [
+              "4x4",
+              "tout-terrain",
+              "Wrangler"
+            ]
+          },
+          {
+            "text": "Porsche",
+            "difficulty": 3,
+            "forbidden": [
+              "911",
+              "Allemagne",
+              "voiture de sport"
+            ]
+          },
+          {
+            "text": "Audi",
+            "difficulty": 2,
+            "forbidden": [
+              "anneaux",
+              "Allemagne",
+              "voiture"
+            ]
+          },
+          {
+            "text": "Hyundai",
+            "difficulty": 3,
+            "forbidden": [
+              "Corée",
+              "voiture",
+              "Tucson"
+            ]
+          },
+          {
+            "text": "Michelin",
+            "difficulty": 2,
+            "forbidden": [
+              "pneus",
+              "Bibendum",
+              "guide"
+            ]
+          },
+          {
+            "text": "TotalEnergies",
+            "difficulty": 2,
+            "forbidden": [
+              "station-service",
+              "essence",
+              "France"
+            ]
+          },
+          {
+            "text": "Shell",
+            "difficulty": 2,
+            "forbidden": [
+              "coquillage",
+              "essence",
+              "station-service"
+            ]
+          },
+          {
+            "text": "Lego",
+            "difficulty": 1,
+            "forbidden": [
+              "briques",
+              "construction",
+              "Danemark"
+            ]
+          },
+          {
+            "text": "Disney",
+            "difficulty": 1,
+            "forbidden": [
+              "Mickey",
+              "château",
+              "dessins animés"
+            ]
+          },
+          {
+            "text": "Netflix",
+            "difficulty": 1,
+            "forbidden": [
+              "séries",
+              "streaming",
+              "rouge"
+            ]
+          },
+          {
+            "text": "IKEA",
+            "difficulty": 2,
+            "forbidden": [
+              "meubles",
+              "Suède",
+              "montage"
+            ]
+          },
+          {
+            "text": "Zara",
+            "difficulty": 2,
+            "forbidden": [
+              "vêtements",
+              "Espagne",
+              "mode"
+            ]
+          },
+          {
+            "text": "H&M",
+            "difficulty": 2,
+            "forbidden": [
+              "vêtements",
+              "Suède",
+              "mode"
+            ]
+          },
+          {
+            "text": "Gucci",
+            "difficulty": 2,
+            "forbidden": [
+              "luxe",
+              "Italie",
+              "double G"
+            ]
+          },
+          {
+            "text": "Louis Vuitton",
+            "difficulty": 2,
+            "forbidden": [
+              "luxe",
+              "sac",
+              "monogramme"
+            ]
+          },
+          {
+            "text": "Chanel",
+            "difficulty": 2,
+            "forbidden": [
+              "N° 5",
+              "Coco",
+              "parfum"
+            ]
+          },
+          {
+            "text": "Dior",
+            "difficulty": 2,
+            "forbidden": [
+              "luxe",
+              "parfum",
+              "J'adore"
+            ]
+          },
+          {
+            "text": "Hermès",
+            "difficulty": 3,
+            "forbidden": [
+              "luxe",
+              "Birkin",
+              "foulard"
+            ]
+          },
+          {
+            "text": "Rolex",
+            "difficulty": 2,
+            "forbidden": [
+              "montre",
+              "Suisse",
+              "couronne"
+            ]
+          },
+          {
+            "text": "Ray-Ban",
+            "difficulty": 3,
+            "forbidden": [
+              "lunettes de soleil",
+              "Aviator",
+              "Wayfarer"
+            ]
+          },
+          {
+            "text": "Lacoste",
+            "difficulty": 2,
+            "forbidden": [
+              "crocodile",
+              "polo",
+              "tennis"
+            ]
+          },
+          {
+            "text": "Levi's",
+            "difficulty": 2,
+            "forbidden": [
+              "jean",
+              "501",
+              "denim"
+            ]
+          },
+          {
+            "text": "Converse",
+            "difficulty": 2,
+            "forbidden": [
+              "All Star",
+              "baskets",
+              "toile"
+            ]
+          },
+          {
+            "text": "Vans",
+            "difficulty": 3,
+            "forbidden": [
+              "skate",
+              "baskets",
+              "damier"
+            ]
+          },
+          {
+            "text": "Timberland",
+            "difficulty": 3,
+            "forbidden": [
+              "chaussures",
+              "jaunes",
+              "arbre"
+            ]
+          },
+          {
+            "text": "Jordan",
+            "difficulty": 2,
+            "forbidden": [
+              "Jumpman",
+              "baskets",
+              "Michael"
+            ]
+          },
+          {
+            "text": "Gillette",
+            "difficulty": 2,
+            "forbidden": [
+              "rasoir",
+              "lames",
+              "homme"
+            ]
+          },
+          {
+            "text": "Colgate",
+            "difficulty": 1,
+            "forbidden": [
+              "dentifrice",
+              "sourire",
+              "dents"
+            ]
+          },
+          {
+            "text": "Nivea",
+            "difficulty": 2,
+            "forbidden": [
+              "crème",
+              "boîte bleue",
+              "peau"
+            ]
+          },
+          {
+            "text": "L'Oréal",
+            "difficulty": 3,
+            "forbidden": [
+              "parce que je le vaux bien",
+              "cosmétiques",
+              "France"
+            ]
+          },
+          {
+            "text": "Dove",
+            "difficulty": 3,
+            "forbidden": [
+              "savon",
+              "colombe",
+              "douceur"
+            ]
+          },
+          {
+            "text": "Nutella",
+            "difficulty": 1,
+            "forbidden": [
+              "pâte à tartiner",
+              "noisette",
+              "pot"
+            ]
+          },
+          {
+            "text": "Nescafé",
+            "difficulty": 2,
+            "forbidden": [
+              "café soluble",
+              "Nestlé",
+              "tasse"
+            ]
+          },
+          {
+            "text": "Nestlé",
+            "difficulty": 2,
+            "forbidden": [
+              "Suisse",
+              "chocolat",
+              "Nescafé"
+            ]
+          },
+          {
+            "text": "Maggi",
+            "difficulty": 1,
+            "forbidden": [
+              "cube",
+              "bouillon",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Red Bull",
+            "difficulty": 1,
+            "forbidden": [
+              "taureaux",
+              "donne des ailes",
+              "énergie"
+            ]
+          },
+          {
+            "text": "Heineken",
+            "difficulty": 2,
+            "forbidden": [
+              "bière",
+              "étoile rouge",
+              "Pays-Bas"
+            ]
+          },
+          {
+            "text": "Guinness",
+            "difficulty": 2,
+            "forbidden": [
+              "bière noire",
+              "Irlande",
+              "stout"
+            ]
+          },
+          {
+            "text": "Fanta",
+            "difficulty": 1,
+            "forbidden": [
+              "orange",
+              "soda",
+              "bouteille"
+            ]
+          },
+          {
+            "text": "Sprite",
+            "difficulty": 2,
+            "forbidden": [
+              "citron",
+              "soda",
+              "vert"
+            ]
+          },
+          {
+            "text": "Orangina",
+            "difficulty": 2,
+            "forbidden": [
+              "pulpe",
+              "secouer",
+              "bouteille ronde"
+            ]
+          },
+          {
+            "text": "Lipton",
+            "difficulty": 2,
+            "forbidden": [
+              "thé",
+              "sachet",
+              "jaune"
+            ]
+          },
+          {
+            "text": "Kinder",
+            "difficulty": 1,
+            "forbidden": [
+              "œuf surprise",
+              "chocolat",
+              "enfants"
+            ]
+          },
+          {
+            "text": "M&M's",
+            "difficulty": 2,
+            "forbidden": [
+              "bonbons",
+              "chocolat",
+              "couleurs"
+            ]
+          },
+          {
+            "text": "Haribo",
+            "difficulty": 1,
+            "forbidden": [
+              "bonbons",
+              "ours",
+              "Allemagne"
+            ]
+          },
+          {
+            "text": "Pringles",
+            "difficulty": 2,
+            "forbidden": [
+              "chips",
+              "tube",
+              "moustache"
+            ]
+          },
+          {
+            "text": "Oreo",
+            "difficulty": 2,
+            "forbidden": [
+              "biscuit",
+              "noir",
+              "crème"
+            ]
+          },
+          {
+            "text": "Kellogg's",
+            "difficulty": 2,
+            "forbidden": [
+              "céréales",
+              "petit-déjeuner",
+              "coq"
+            ]
+          },
+          {
+            "text": "Danone",
+            "difficulty": 3,
+            "forbidden": [
+              "yaourt",
+              "France",
+              "produits laitiers"
+            ]
+          },
+          {
+            "text": "Ferrero Rocher",
+            "difficulty": 2,
+            "forbidden": [
+              "chocolat",
+              "papier doré",
+              "noisette"
+            ]
+          },
+          {
+            "text": "Toblerone",
+            "difficulty": 2,
+            "forbidden": [
+              "chocolat",
+              "triangle",
+              "Suisse"
+            ]
+          },
+          {
+            "text": "Visa",
+            "difficulty": 2,
+            "forbidden": [
+              "carte bancaire",
+              "paiement",
+              "bleu"
+            ]
+          },
+          {
+            "text": "Mastercard",
+            "difficulty": 3,
+            "forbidden": [
+              "carte bancaire",
+              "cercles",
+              "paiement"
+            ]
+          },
+          {
+            "text": "PayPal",
+            "difficulty": 3,
+            "forbidden": [
+              "paiement en ligne",
+              "bleu",
+              "argent"
+            ]
+          },
+          {
+            "text": "Western Union",
+            "difficulty": 2,
+            "forbidden": [
+              "transfert d'argent",
+              "jaune",
+              "envoi"
+            ]
+          },
+          {
+            "text": "DHL",
+            "difficulty": 2,
+            "forbidden": [
+              "colis",
+              "jaune",
+              "livraison"
+            ]
+          },
+          {
+            "text": "FedEx",
+            "difficulty": 3,
+            "forbidden": [
+              "colis",
+              "livraison",
+              "flèche cachée"
+            ]
+          },
+          {
+            "text": "Airbus",
+            "difficulty": 2,
+            "forbidden": [
+              "avion",
+              "Toulouse",
+              "A380"
+            ]
+          },
+          {
+            "text": "Boeing",
+            "difficulty": 2,
+            "forbidden": [
+              "avion",
+              "747",
+              "États-Unis"
+            ]
+          },
+          {
+            "text": "Air France",
+            "difficulty": 2,
+            "forbidden": [
+              "compagnie aérienne",
+              "Roissy",
+              "avion"
+            ]
+          },
+          {
+            "text": "Emirates",
+            "difficulty": 2,
+            "forbidden": [
+              "compagnie aérienne",
+              "Dubaï",
+              "Fly Better"
+            ]
+          },
+          {
+            "text": "Ethiopian Airlines",
+            "difficulty": 3,
+            "forbidden": [
+              "compagnie aérienne",
+              "Addis-Abeba",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "Canon",
+            "difficulty": 3,
+            "forbidden": [
+              "appareil photo",
+              "Japon",
+              "imprimante"
+            ]
+          },
+          {
+            "text": "GoPro",
+            "difficulty": 3,
+            "forbidden": [
+              "caméra",
+              "sport",
+              "aventure"
+            ]
+          },
+          {
+            "text": "Intel",
+            "difficulty": 3,
+            "forbidden": [
+              "processeur",
+              "Intel Inside",
+              "ordinateur"
+            ]
+          },
+          {
+            "text": "HP",
+            "difficulty": 3,
+            "forbidden": [
+              "imprimante",
+              "ordinateur",
+              "Hewlett-Packard"
+            ]
+          },
+          {
+            "text": "Dell",
+            "difficulty": 3,
+            "forbidden": [
+              "ordinateur",
+              "portable",
+              "États-Unis"
+            ]
+          },
+          {
+            "text": "LG",
+            "difficulty": 3,
+            "forbidden": [
+              "Corée",
+              "télévision",
+              "électroménager"
+            ]
+          },
+          {
+            "text": "Philips",
+            "difficulty": 3,
+            "forbidden": [
+              "Pays-Bas",
+              "ampoule",
+              "rasoir"
+            ]
+          },
+          {
+            "text": "Bic",
+            "difficulty": 2,
+            "forbidden": [
+              "stylo",
+              "briquet",
+              "France"
+            ]
+          },
+          {
+            "text": "Duracell",
+            "difficulty": 3,
+            "forbidden": [
+              "piles",
+              "lapin",
+              "cuivre"
+            ]
+          },
+          {
+            "text": "Bosch",
+            "difficulty": 3,
+            "forbidden": [
+              "outils",
+              "Allemagne",
+              "électroménager"
+            ]
+          },
+          {
+            "text": "Hello Kitty",
+            "difficulty": 2,
+            "forbidden": [
+              "chat",
+              "nœud rose",
+              "Japon"
+            ]
+          },
+          {
+            "text": "Domino's Pizza",
+            "difficulty": 2,
+            "forbidden": [
+              "livraison",
+              "dominos",
+              "pizzas"
+            ]
+          },
+          {
+            "text": "Pizza Hut",
+            "difficulty": 3,
+            "forbidden": [
+              "pizzas",
+              "toit rouge",
+              "restaurant"
+            ]
+          },
+          {
+            "text": "Subway",
+            "difficulty": 3,
+            "forbidden": [
+              "sandwichs",
+              "sous-marin",
+              "fast-food"
+            ]
+          },
+          {
+            "text": "Heinz",
+            "difficulty": 2,
+            "forbidden": [
+              "ketchup",
+              "bouteille",
+              "sauce"
+            ]
+          },
+          {
+            "text": "MTN",
+            "difficulty": 1,
+            "forbidden": [
+              "jaune",
+              "opérateur",
+              "téléphone"
+            ]
+          },
+          {
+            "text": "Orange",
+            "difficulty": 1,
+            "forbidden": [
+              "opérateur",
+              "téléphone",
+              "orange money"
+            ]
+          },
+          {
+            "text": "Canal+",
+            "difficulty": 2,
+            "forbidden": [
+              "chaîne",
+              "bouquet",
+              "abonnement"
+            ]
+          },
+          {
+            "text": "Pampers",
+            "difficulty": 2,
+            "forbidden": [
+              "couches",
+              "bébé",
+              "sec"
+            ]
+          },
+          {
+            "text": "Barbie",
+            "difficulty": 1,
+            "forbidden": [
+              "poupée",
+              "rose",
+              "Mattel"
+            ]
+          },
+          {
+            "text": "Monopoly",
+            "difficulty": 2,
+            "forbidden": [
+              "jeu de société",
+              "argent",
+              "rue de la Paix"
+            ]
+          },
+          {
+            "text": "Rolls-Royce",
+            "difficulty": 3,
+            "forbidden": [
+              "luxe",
+              "voiture",
+              "Angleterre"
+            ]
+          },
+          {
+            "text": "Uniqlo",
+            "difficulty": 3,
+            "forbidden": [
+              "vêtements",
+              "Japon",
+              "doudoune"
+            ]
+          },
+          {
+            "text": "New Balance",
+            "difficulty": 3,
+            "forbidden": [
+              "baskets",
+              "N",
+              "États-Unis"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

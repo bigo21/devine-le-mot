@@ -1,0 +1,1129 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "us-series",
+    "name": {
+      "fr": "Séries",
+      "en": "TV series"
+    },
+    "region": "us",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 1,
+    "categories": [
+      {
+        "id": "series",
+        "name": {
+          "fr": "Séries",
+          "en": "TV series"
+        },
+        "emoji": "📼",
+        "color": "plum",
+        "tags": [
+          "tele"
+        ],
+        "words": [
+          {
+            "text": "Friends",
+            "difficulty": 1,
+            "forbidden": [
+              "Central Perk",
+              "Ross",
+              "Rachel"
+            ]
+          },
+          {
+            "text": "Game of Thrones",
+            "difficulty": 1,
+            "forbidden": [
+              "Trône de fer",
+              "dragons",
+              "Jon Snow"
+            ]
+          },
+          {
+            "text": "Breaking Bad",
+            "difficulty": 1,
+            "forbidden": [
+              "Walter White",
+              "chimie",
+              "Albuquerque"
+            ]
+          },
+          {
+            "text": "La Casa de Papel",
+            "difficulty": 1,
+            "forbidden": [
+              "Professeur",
+              "braquage",
+              "masques Dalí"
+            ]
+          },
+          {
+            "text": "Stranger Things",
+            "difficulty": 1,
+            "forbidden": [
+              "Onze",
+              "monde à l'envers",
+              "Demogorgon"
+            ]
+          },
+          {
+            "text": "Squid Game",
+            "difficulty": 1,
+            "forbidden": [
+              "Corée",
+              "jeux",
+              "survivants"
+            ]
+          },
+          {
+            "text": "Prison Break",
+            "difficulty": 1,
+            "forbidden": [
+              "Michael Scofield",
+              "tatouage",
+              "évasion"
+            ]
+          },
+          {
+            "text": "The Walking Dead",
+            "difficulty": 1,
+            "forbidden": [
+              "zombies",
+              "Rick",
+              "apocalypse"
+            ]
+          },
+          {
+            "text": "Les Simpson",
+            "difficulty": 1,
+            "forbidden": [
+              "Homer",
+              "jaune",
+              "Springfield"
+            ]
+          },
+          {
+            "text": "South Park",
+            "difficulty": 2,
+            "forbidden": [
+              "Cartman",
+              "Kenny",
+              "Colorado"
+            ]
+          },
+          {
+            "text": "Family Guy",
+            "difficulty": 3,
+            "forbidden": [
+              "Peter Griffin",
+              "Stewie",
+              "chien Brian"
+            ]
+          },
+          {
+            "text": "Grey's Anatomy",
+            "difficulty": 1,
+            "forbidden": [
+              "hôpital",
+              "Meredith",
+              "chirurgiens"
+            ]
+          },
+          {
+            "text": "Dr House",
+            "difficulty": 1,
+            "forbidden": [
+              "médecin",
+              "canne",
+              "Vicodin"
+            ]
+          },
+          {
+            "text": "Urgences",
+            "difficulty": 2,
+            "forbidden": [
+              "hôpital",
+              "George Clooney",
+              "Chicago"
+            ]
+          },
+          {
+            "text": "Lost",
+            "difficulty": 2,
+            "forbidden": [
+              "île",
+              "avion",
+              "Oceanic"
+            ]
+          },
+          {
+            "text": "Desperate Housewives",
+            "difficulty": 2,
+            "forbidden": [
+              "Wisteria Lane",
+              "voisines",
+              "banlieue"
+            ]
+          },
+          {
+            "text": "How I Met Your Mother",
+            "difficulty": 1,
+            "forbidden": [
+              "Ted",
+              "Barney",
+              "Legen-dary"
+            ]
+          },
+          {
+            "text": "The Big Bang Theory",
+            "difficulty": 1,
+            "forbidden": [
+              "Sheldon",
+              "physiciens",
+              "Penny"
+            ]
+          },
+          {
+            "text": "The Office",
+            "difficulty": 2,
+            "forbidden": [
+              "Michael Scott",
+              "bureau",
+              "Dunder Mifflin"
+            ]
+          },
+          {
+            "text": "Le Prince de Bel-Air",
+            "difficulty": 1,
+            "forbidden": [
+              "Will Smith",
+              "Carlton",
+              "Philadelphie"
+            ]
+          },
+          {
+            "text": "Dexter",
+            "difficulty": 2,
+            "forbidden": [
+              "tueur",
+              "Miami",
+              "police scientifique"
+            ]
+          },
+          {
+            "text": "Les Experts",
+            "difficulty": 2,
+            "forbidden": [
+              "police scientifique",
+              "Las Vegas",
+              "CSI"
+            ]
+          },
+          {
+            "text": "NCIS",
+            "difficulty": 2,
+            "forbidden": [
+              "Gibbs",
+              "marine",
+              "enquêtes"
+            ]
+          },
+          {
+            "text": "24 heures chrono",
+            "difficulty": 2,
+            "forbidden": [
+              "Jack Bauer",
+              "terrorisme",
+              "temps réel"
+            ]
+          },
+          {
+            "text": "The Crown",
+            "difficulty": 2,
+            "forbidden": [
+              "Élisabeth II",
+              "monarchie",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "Peaky Blinders",
+            "difficulty": 2,
+            "forbidden": [
+              "Birmingham",
+              "Shelby",
+              "casquettes"
+            ]
+          },
+          {
+            "text": "Sherlock",
+            "difficulty": 2,
+            "forbidden": [
+              "Benedict Cumberbatch",
+              "Watson",
+              "Londres"
+            ]
+          },
+          {
+            "text": "Doctor Who",
+            "difficulty": 3,
+            "forbidden": [
+              "TARDIS",
+              "Daleks",
+              "BBC"
+            ]
+          },
+          {
+            "text": "Downton Abbey",
+            "difficulty": 3,
+            "forbidden": [
+              "aristocrates",
+              "domestiques",
+              "château"
+            ]
+          },
+          {
+            "text": "Narcos",
+            "difficulty": 2,
+            "forbidden": [
+              "Pablo Escobar",
+              "Colombie",
+              "cartel"
+            ]
+          },
+          {
+            "text": "Mercredi",
+            "difficulty": 1,
+            "forbidden": [
+              "Addams",
+              "Netflix",
+              "Jenna Ortega"
+            ]
+          },
+          {
+            "text": "Bridgerton",
+            "difficulty": 2,
+            "forbidden": [
+              "Netflix",
+              "bal",
+              "Lady Whistledown"
+            ]
+          },
+          {
+            "text": "The Witcher",
+            "difficulty": 2,
+            "forbidden": [
+              "Geralt",
+              "sorceleur",
+              "Henry Cavill"
+            ]
+          },
+          {
+            "text": "The Last of Us",
+            "difficulty": 2,
+            "forbidden": [
+              "champignons",
+              "Joel",
+              "Ellie"
+            ]
+          },
+          {
+            "text": "The Mandalorian",
+            "difficulty": 2,
+            "forbidden": [
+              "Bébé Yoda",
+              "Star Wars",
+              "casque"
+            ]
+          },
+          {
+            "text": "House of the Dragon",
+            "difficulty": 2,
+            "forbidden": [
+              "Targaryen",
+              "Game of Thrones",
+              "Westeros"
+            ]
+          },
+          {
+            "text": "Vikings",
+            "difficulty": 2,
+            "forbidden": [
+              "Ragnar",
+              "Scandinaves",
+              "drakkar"
+            ]
+          },
+          {
+            "text": "Suits",
+            "difficulty": 2,
+            "forbidden": [
+              "avocats",
+              "Harvey Specter",
+              "Meghan Markle"
+            ]
+          },
+          {
+            "text": "Les Soprano",
+            "difficulty": 2,
+            "forbidden": [
+              "mafia",
+              "Tony",
+              "psy"
+            ]
+          },
+          {
+            "text": "The Wire",
+            "difficulty": 3,
+            "forbidden": [
+              "Baltimore",
+              "drogue",
+              "police"
+            ]
+          },
+          {
+            "text": "Mad Men",
+            "difficulty": 3,
+            "forbidden": [
+              "publicité",
+              "années 60",
+              "Don Draper"
+            ]
+          },
+          {
+            "text": "Dallas",
+            "difficulty": 2,
+            "forbidden": [
+              "J.R.",
+              "pétrole",
+              "Texas"
+            ]
+          },
+          {
+            "text": "Alerte à Malibu",
+            "difficulty": 1,
+            "forbidden": [
+              "maillot rouge",
+              "sauveteurs",
+              "Pamela Anderson"
+            ]
+          },
+          {
+            "text": "Charmed",
+            "difficulty": 2,
+            "forbidden": [
+              "sorcières",
+              "sœurs",
+              "Livre des ombres"
+            ]
+          },
+          {
+            "text": "Buffy contre les vampires",
+            "difficulty": 2,
+            "forbidden": [
+              "tueuse",
+              "pieu",
+              "Sarah Michelle Gellar"
+            ]
+          },
+          {
+            "text": "X-Files",
+            "difficulty": 2,
+            "forbidden": [
+              "Mulder",
+              "Scully",
+              "extraterrestres"
+            ]
+          },
+          {
+            "text": "Twin Peaks",
+            "difficulty": 3,
+            "forbidden": [
+              "Laura Palmer",
+              "David Lynch",
+              "café"
+            ]
+          },
+          {
+            "text": "Les Feux de l'amour",
+            "difficulty": 2,
+            "forbidden": [
+              "Genoa City",
+              "feuilleton",
+              "Victor Newman"
+            ]
+          },
+          {
+            "text": "Amour, gloire et beauté",
+            "difficulty": 2,
+            "forbidden": [
+              "Ridge",
+              "Brooke",
+              "feuilleton"
+            ]
+          },
+          {
+            "text": "Gossip Girl",
+            "difficulty": 2,
+            "forbidden": [
+              "Upper East Side",
+              "blog",
+              "Blair"
+            ]
+          },
+          {
+            "text": "Glee",
+            "difficulty": 3,
+            "forbidden": [
+              "chorale",
+              "lycée",
+              "chansons"
+            ]
+          },
+          {
+            "text": "Pretty Little Liars",
+            "difficulty": 3,
+            "forbidden": [
+              "A",
+              "menteuses",
+              "lycée"
+            ]
+          },
+          {
+            "text": "Riverdale",
+            "difficulty": 3,
+            "forbidden": [
+              "Archie",
+              "Jughead",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "Euphoria",
+            "difficulty": 2,
+            "forbidden": [
+              "Zendaya",
+              "lycée",
+              "HBO"
+            ]
+          },
+          {
+            "text": "Élite",
+            "difficulty": 2,
+            "forbidden": [
+              "lycée",
+              "Espagne",
+              "Las Encinas"
+            ]
+          },
+          {
+            "text": "Emily in Paris",
+            "difficulty": 2,
+            "forbidden": [
+              "Netflix",
+              "Lily Collins",
+              "marketing"
+            ]
+          },
+          {
+            "text": "The Boys",
+            "difficulty": 2,
+            "forbidden": [
+              "super-héros",
+              "Homelander",
+              "Amazon"
+            ]
+          },
+          {
+            "text": "Westworld",
+            "difficulty": 3,
+            "forbidden": [
+              "robots",
+              "Far West",
+              "parc"
+            ]
+          },
+          {
+            "text": "Black Mirror",
+            "difficulty": 2,
+            "forbidden": [
+              "technologie",
+              "Netflix",
+              "anthologie"
+            ]
+          },
+          {
+            "text": "Le Jeu de la dame",
+            "difficulty": 3,
+            "forbidden": [
+              "échecs",
+              "Beth Harmon",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "Better Call Saul",
+            "difficulty": 2,
+            "forbidden": [
+              "avocat",
+              "Breaking Bad",
+              "Albuquerque"
+            ]
+          },
+          {
+            "text": "Succession",
+            "difficulty": 3,
+            "forbidden": [
+              "famille Roy",
+              "HBO",
+              "héritage"
+            ]
+          },
+          {
+            "text": "Ted Lasso",
+            "difficulty": 3,
+            "forbidden": [
+              "football",
+              "entraîneur",
+              "Apple TV"
+            ]
+          },
+          {
+            "text": "Brooklyn Nine-Nine",
+            "difficulty": 2,
+            "forbidden": [
+              "commissariat",
+              "Jake Peralta",
+              "New York"
+            ]
+          },
+          {
+            "text": "Modern Family",
+            "difficulty": 2,
+            "forbidden": [
+              "famille",
+              "sitcom",
+              "Phil"
+            ]
+          },
+          {
+            "text": "Malcolm",
+            "difficulty": 1,
+            "forbidden": [
+              "génie",
+              "Hal",
+              "Lois"
+            ]
+          },
+          {
+            "text": "Ma famille d'abord",
+            "difficulty": 2,
+            "forbidden": [
+              "sitcom",
+              "Damon Wayans",
+              "enfants"
+            ]
+          },
+          {
+            "text": "Tout le monde déteste Chris",
+            "difficulty": 2,
+            "forbidden": [
+              "Chris Rock",
+              "Brooklyn",
+              "sitcom"
+            ]
+          },
+          {
+            "text": "Hannah Montana",
+            "difficulty": 2,
+            "forbidden": [
+              "Miley Cyrus",
+              "perruque",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Les Sorciers de Waverly Place",
+            "difficulty": 3,
+            "forbidden": [
+              "Selena Gomez",
+              "magie",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Zack et Cody",
+            "difficulty": 3,
+            "forbidden": [
+              "jumeaux",
+              "hôtel",
+              "Disney"
+            ]
+          },
+          {
+            "text": "Columbo",
+            "difficulty": 2,
+            "forbidden": [
+              "imperméable",
+              "inspecteur",
+              "cigare"
+            ]
+          },
+          {
+            "text": "Walker, Texas Ranger",
+            "difficulty": 2,
+            "forbidden": [
+              "Chuck Norris",
+              "cow-boy",
+              "karaté"
+            ]
+          },
+          {
+            "text": "MacGyver",
+            "difficulty": 2,
+            "forbidden": [
+              "couteau suisse",
+              "bricoleur",
+              "trombone"
+            ]
+          },
+          {
+            "text": "K 2000",
+            "difficulty": 1,
+            "forbidden": [
+              "voiture parlante",
+              "Kitt",
+              "David Hasselhoff"
+            ]
+          },
+          {
+            "text": "L'Agence tous risques",
+            "difficulty": 2,
+            "forbidden": [
+              "Barracuda",
+              "van",
+              "Hannibal"
+            ]
+          },
+          {
+            "text": "Sauvés par le gong",
+            "difficulty": 3,
+            "forbidden": [
+              "lycée",
+              "Zack Morris",
+              "Screech"
+            ]
+          },
+          {
+            "text": "Les Frères Scott",
+            "difficulty": 3,
+            "forbidden": [
+              "basket",
+              "Tree Hill",
+              "Lucas"
+            ]
+          },
+          {
+            "text": "Smallville",
+            "difficulty": 2,
+            "forbidden": [
+              "Superman",
+              "Clark Kent",
+              "Kansas"
+            ]
+          },
+          {
+            "text": "Esprits criminels",
+            "difficulty": 2,
+            "forbidden": [
+              "profileurs",
+              "FBI",
+              "tueurs en série"
+            ]
+          },
+          {
+            "text": "Mentalist",
+            "difficulty": 2,
+            "forbidden": [
+              "Patrick Jane",
+              "CBI",
+              "Red John"
+            ]
+          },
+          {
+            "text": "Castle",
+            "difficulty": 3,
+            "forbidden": [
+              "écrivain",
+              "policière",
+              "New York"
+            ]
+          },
+          {
+            "text": "Bones",
+            "difficulty": 2,
+            "forbidden": [
+              "anthropologue",
+              "squelettes",
+              "FBI"
+            ]
+          },
+          {
+            "text": "Scrubs",
+            "difficulty": 2,
+            "forbidden": [
+              "hôpital",
+              "J.D.",
+              "internes"
+            ]
+          },
+          {
+            "text": "Orange Is the New Black",
+            "difficulty": 2,
+            "forbidden": [
+              "prison",
+              "femmes",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "The Handmaid's Tale",
+            "difficulty": 3,
+            "forbidden": [
+              "servantes",
+              "Gilead",
+              "rouge"
+            ]
+          },
+          {
+            "text": "Ozark",
+            "difficulty": 3,
+            "forbidden": [
+              "blanchiment",
+              "Missouri",
+              "lac"
+            ]
+          },
+          {
+            "text": "You",
+            "difficulty": 2,
+            "forbidden": [
+              "Joe Goldberg",
+              "libraire",
+              "harceleur"
+            ]
+          },
+          {
+            "text": "Sex Education",
+            "difficulty": 2,
+            "forbidden": [
+              "lycée",
+              "Otis",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "Rick et Morty",
+            "difficulty": 2,
+            "forbidden": [
+              "grand-père",
+              "science",
+              "portail"
+            ]
+          },
+          {
+            "text": "Arcane",
+            "difficulty": 2,
+            "forbidden": [
+              "League of Legends",
+              "Vi",
+              "Jinx"
+            ]
+          },
+          {
+            "text": "Marimar",
+            "difficulty": 3,
+            "forbidden": [
+              "telenovela",
+              "Mexique",
+              "Thalía"
+            ]
+          },
+          {
+            "text": "Ugly Betty",
+            "difficulty": 3,
+            "forbidden": [
+              "magazine",
+              "appareil dentaire",
+              "mode"
+            ]
+          },
+          {
+            "text": "Dark",
+            "difficulty": 3,
+            "forbidden": [
+              "Allemagne",
+              "voyage dans le temps",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "Cobra Kai",
+            "difficulty": 2,
+            "forbidden": [
+              "karaté",
+              "Karaté Kid",
+              "dojo"
+            ]
+          },
+          {
+            "text": "Shogun",
+            "difficulty": 3,
+            "forbidden": [
+              "Japon",
+              "samouraï",
+              "Blackthorne"
+            ]
+          },
+          {
+            "text": "Severance",
+            "difficulty": 3,
+            "forbidden": [
+              "Apple TV",
+              "mémoire",
+              "bureau"
+            ]
+          },
+          {
+            "text": "The Bear",
+            "difficulty": 3,
+            "forbidden": [
+              "cuisine",
+              "Chicago",
+              "sandwichs"
+            ]
+          },
+          {
+            "text": "Sons of Anarchy",
+            "difficulty": 3,
+            "forbidden": [
+              "motards",
+              "club",
+              "Californie"
+            ]
+          },
+          {
+            "text": "Yellowstone",
+            "difficulty": 3,
+            "forbidden": [
+              "ranch",
+              "Montana",
+              "Kevin Costner"
+            ]
+          },
+          {
+            "text": "La Petite Maison dans la prairie",
+            "difficulty": 2,
+            "forbidden": [
+              "Laura Ingalls",
+              "ferme",
+              "western"
+            ]
+          },
+          {
+            "text": "Homeland",
+            "difficulty": 3,
+            "forbidden": [
+              "CIA",
+              "Carrie",
+              "terrorisme"
+            ]
+          },
+          {
+            "text": "The Vampire Diaries",
+            "difficulty": 2,
+            "forbidden": [
+              "Elena",
+              "frères Salvatore",
+              "vampires"
+            ]
+          },
+          {
+            "text": "Teen Wolf",
+            "difficulty": 3,
+            "forbidden": [
+              "loup-garou",
+              "lycée",
+              "Scott"
+            ]
+          },
+          {
+            "text": "Supernatural",
+            "difficulty": 2,
+            "forbidden": [
+              "frères Winchester",
+              "démons",
+              "Impala"
+            ]
+          },
+          {
+            "text": "Chicago Fire",
+            "difficulty": 3,
+            "forbidden": [
+              "caserne 51",
+              "pompiers",
+              "NBC"
+            ]
+          },
+          {
+            "text": "This Is Us",
+            "difficulty": 3,
+            "forbidden": [
+              "famille Pearson",
+              "émotion",
+              "Jack"
+            ]
+          },
+          {
+            "text": "Empire",
+            "difficulty": 3,
+            "forbidden": [
+              "Cookie",
+              "label",
+              "hip-hop"
+            ]
+          },
+          {
+            "text": "Power",
+            "difficulty": 3,
+            "forbidden": [
+              "Ghost",
+              "New York",
+              "Starz"
+            ]
+          },
+          {
+            "text": "Insecure",
+            "difficulty": 3,
+            "forbidden": [
+              "Issa Rae",
+              "Los Angeles",
+              "HBO"
+            ]
+          },
+          {
+            "text": "Atlanta",
+            "difficulty": 3,
+            "forbidden": [
+              "Donald Glover",
+              "rap",
+              "Earn"
+            ]
+          },
+          {
+            "text": "Heartstopper",
+            "difficulty": 3,
+            "forbidden": [
+              "Netflix",
+              "lycée",
+              "rugby"
+            ]
+          },
+          {
+            "text": "Lucifer",
+            "difficulty": 2,
+            "forbidden": [
+              "diable",
+              "Los Angeles",
+              "Netflix"
+            ]
+          },
+          {
+            "text": "Vikings Valhalla",
+            "difficulty": 3,
+            "forbidden": [
+              "Netflix",
+              "Leif Erikson",
+              "suite"
+            ]
+          },
+          {
+            "text": "The Good Doctor",
+            "difficulty": 2,
+            "forbidden": [
+              "chirurgien",
+              "autisme",
+              "Shaun Murphy"
+            ]
+          },
+          {
+            "text": "Les Anges de Charlie",
+            "difficulty": 3,
+            "forbidden": [
+              "détectives",
+              "trois femmes",
+              "Farrah Fawcett"
+            ]
+          },
+          {
+            "text": "Magnum",
+            "difficulty": 3,
+            "forbidden": [
+              "Hawaï",
+              "moustache",
+              "détective"
+            ]
+          },
+          {
+            "text": "Two and a Half Men",
+            "difficulty": 3,
+            "forbidden": [
+              "Charlie Sheen",
+              "Malibu",
+              "sitcom"
+            ]
+          },
+          {
+            "text": "Seinfeld",
+            "difficulty": 3,
+            "forbidden": [
+              "New York",
+              "sitcom",
+              "Kramer"
+            ]
+          },
+          {
+            "text": "The Rookie",
+            "difficulty": 3,
+            "forbidden": [
+              "policier",
+              "Los Angeles",
+              "Nathan Fillion"
+            ]
+          },
+          {
+            "text": "Blacklist",
+            "difficulty": 3,
+            "forbidden": [
+              "Raymond Reddington",
+              "FBI",
+              "chapeau"
+            ]
+          },
+          {
+            "text": "Jessica Jones",
+            "difficulty": 3,
+            "forbidden": [
+              "Marvel",
+              "détective",
+              "Netflix"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
