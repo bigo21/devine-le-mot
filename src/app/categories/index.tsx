@@ -10,6 +10,7 @@ import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native
 import Animated from 'react-native-reanimated';
 
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
+import { CategoryCard } from '@/features/packs/components/category-card';
 import { type CategoryFilter, categoryFilters, filterCategories } from '@/features/packs/filter';
 import {
   type CategorySummary,
@@ -18,17 +19,7 @@ import {
   setFavorite,
 } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
-import {
-  BottomSheet,
-  Button,
-  Card,
-  CategoryIcon,
-  Chip,
-  Flag,
-  Icon,
-  Screen,
-  Text,
-} from '@/ui/components';
+import { BottomSheet, Button, CategoryIcon, Chip, Flag, Icon, Screen, Text } from '@/ui/components';
 import { fadeOut, rise, staggerDelay, useReducedMotion } from '@/ui/motion';
 import { colors, maxFontScale, radii, spacing, touchTarget, typography } from '@/ui/tokens';
 
@@ -155,28 +146,11 @@ export default function CategoriesScreen() {
                   exiting={fadeOut}
                   style={styles.gridItem}
                 >
-                  <Card
-                    accent={category.color}
-                    style={styles.card}
+                  <CategoryCard
+                    category={category}
                     onPress={() => play(category)}
                     onLongPress={() => void openPreview(category)}
-                    accessibilityLabel={
-                      category.favorite
-                        ? `${category.name}, ${t('categoriesScreen.favorite')}`
-                        : category.name
-                    }
-                  >
-                    <View style={styles.cardTop}>
-                      <CategoryIcon emoji={category.emoji} size={44} />
-                      {category.favorite ? <Icon icon={StarIcon} size={20} emphasis /> : null}
-                    </View>
-                    <Text variant="subheading" android_hyphenationFrequency="normal">
-                      {category.name}
-                    </Text>
-                    <Text variant="labelSmall">
-                      {t('categoriesScreen.words', { count: category.wordCount })}
-                    </Text>
-                  </Card>
+                  />
                 </Animated.View>
               ))}
             </View>
@@ -273,8 +247,6 @@ const styles = StyleSheet.create({
   filters: { gap: spacing.sm, paddingHorizontal: spacing.xl, paddingVertical: spacing.xs },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
   gridItem: { width: '48%' },
-  card: { minHeight: 132, justifyContent: 'space-between' },
-  cardTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' },
   empty: { gap: spacing.md, alignItems: 'flex-start', marginTop: spacing.lg },
   words: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   word: {

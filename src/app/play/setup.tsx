@@ -1,6 +1,5 @@
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
-import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
 import { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
@@ -8,6 +7,7 @@ import Animated from 'react-native-reanimated';
 
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
+import { CategoryCard } from '@/features/packs/components/category-card';
 import {
   type CategorySummary,
   getCategoryCards,
@@ -15,7 +15,7 @@ import {
   recentlySeenWords,
 } from '@/features/packs/repository';
 import { type RoundDuration, useSettings } from '@/features/settings/store';
-import { Button, Card, CategoryIcon, Icon, Screen, SegmentedControl, Text } from '@/ui/components';
+import { Button, Screen, SegmentedControl, Text } from '@/ui/components';
 import { rise, staggerDelay, useReducedMotion } from '@/ui/motion';
 import { colors, radii, spacing } from '@/ui/tokens';
 
@@ -95,21 +95,11 @@ export default function PlaySetupScreen() {
               style={[styles.gridItem, selected && styles.selected]}
               accessibilityState={{ selected }}
             >
-              <Card
-                accent={category.color}
-                style={styles.card}
+              <CategoryCard
+                category={category}
+                selected={selected}
                 onPress={() => setCategoryId(category.id)}
-                accessibilityLabel={category.name}
-              >
-                <View style={styles.cardTop}>
-                  <CategoryIcon emoji={category.emoji} size={40} />
-                  {selected ? <Icon icon={CheckIcon} size={22} /> : null}
-                </View>
-                <Text variant="subheading" android_hyphenationFrequency="normal">
-                  {category.name}
-                </Text>
-                <Text variant="labelSmall">{t('setup.words', { count: category.wordCount })}</Text>
-              </Card>
+              />
             </Animated.View>
           );
         })}
@@ -150,7 +140,5 @@ const styles = StyleSheet.create({
   gridItem: { width: '48%', borderRadius: radii.card + 4, padding: 2 },
   // Sélection : contour blanc cassé (et coche), jamais la couleur seule.
   selected: { backgroundColor: colors.text },
-  card: { minHeight: 132, justifyContent: 'space-between' },
-  cardTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' },
   variant: { gap: spacing.xs, marginTop: spacing.sm },
 });

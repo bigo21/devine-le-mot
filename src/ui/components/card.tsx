@@ -28,6 +28,8 @@ type Props = {
   onLongPress?: () => void;
   accessibilityLabel?: string;
   style?: ViewStyle;
+  /** Style du conteneur interne (ex. `flex: 1` pour une carte de hauteur fixe). */
+  contentStyle?: ViewStyle;
 };
 
 export function Card({
@@ -39,6 +41,7 @@ export function Card({
   onLongPress,
   accessibilityLabel,
   style,
+  contentStyle,
 }: Props) {
   const reduced = useReducedMotion();
   const press = usePress(reduced);
@@ -70,7 +73,7 @@ export function Card({
     >
       {pattern ? <NdopPattern color={foreground} opacity={patternOpacity.card} /> : null}
       <SurfaceContext value={{ foreground, muted: accent ? foreground : colors.textMuted }}>
-        <View style={styles.content}>{children}</View>
+        <View style={[styles.content, contentStyle]}>{children}</View>
       </SurfaceContext>
     </Animated.View>
   );

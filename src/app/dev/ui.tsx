@@ -7,6 +7,7 @@ import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { useSettings } from '@/features/settings/store';
+import { CATEGORY_CARD_HEIGHT } from '@/features/packs/components/category-card';
 import { useWordFont } from '@/features/settings/use-word-font';
 import { useFeedback } from '@/lib/use-feedback';
 import {
@@ -441,7 +442,8 @@ const styles = StyleSheet.create({
   wordSample: { fontSize: 56, lineHeight: 64 },
   // Deux colonnes qui suivent la largeur de l'écran (la largeur vit sur le conteneur extérieur).
   gridItem: { width: '48%' },
-  categoryCard: { minHeight: 120, justifyContent: 'flex-end' },
+  // Même hauteur que les vraies cartes de catégorie (CategoryCard).
+  categoryCard: { height: CATEGORY_CARD_HEIGHT, justifyContent: 'flex-end' },
   demoRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg },
   badge: {
     width: 64,
