@@ -94,7 +94,7 @@ Situations gênantes · Choses qu'on dit en soirée · Années 2000 · Tendances
 
 **Import** :
 - **Voie principale** : sélecteur de fichiers (document picker) sur un `.json` / `.devine.json`.
-- **Best effort** : ouverture d'un fichier partagé vers l'app (intent filter Android). Selon l'app d'origine et le type MIME envoyé, ça peut ne pas marcher : l'écran d'import l'explique simplement (« Si le fichier ne s'ouvre pas directement, enregistre-le puis choisis-le ici »).
+- **Best effort** : fichier partagé vers l'app depuis WhatsApp, un gestionnaire de fichiers… (intent `SEND` Android via expo-sharing, types `application/json`, `application/octet-stream`, `text/plain`). Un texte ou un fichier `.txt` partagé devient une liste de mots dans l'éditeur. Selon l'app d'origine et le type MIME envoyé, ça peut ne pas marcher : l'écran d'import l'explique simplement (« Si le fichier ne s'ouvre pas directement, enregistre-le puis choisis-le ici »).
 - Collage d'un texte brut (une ligne = un mot) → crée une catégorie.
 - Validation zod stricte ; message d'erreur clair et en français si invalide ; aperçu avant import.
 - **Conflits** : un paquet intégré n'est **jamais remplacé**. Un import portant l'`id` d'un paquet intégré est importé comme copie (nouvel `id`, nom suffixé « (copie) »). Même `id` qu'un paquet utilisateur / importé → choix « Remplacer » ou « Garder les deux » (la copie suit la même règle de nommage).

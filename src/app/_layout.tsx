@@ -7,6 +7,7 @@ import { Suspense, useEffect } from 'react';
 import { I18nextProvider, useTranslation } from 'react-i18next';
 import { StyleSheet, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { KeyboardProvider } from 'react-native-keyboard-controller';
 
 import { seedBuiltinPacks } from '@/features/packs/repository';
 import { DATABASE_NAME, initDatabase } from '@/lib/db';
@@ -32,21 +33,25 @@ export default function RootLayout() {
 
   return (
     <GestureHandlerRootView style={styles.root}>
-      <I18nextProvider i18n={i18n}>
-        <StatusBar style="light" />
-        <Suspense fallback={<View style={styles.root} />}>
-          <SQLiteProvider databaseName={DATABASE_NAME} onInit={prepareDatabase} useSuspense>
-            <HideSplashWhenReady />
-            <Stack
-              screenOptions={{
-                headerShown: false,
-                contentStyle: { backgroundColor: colors.bg },
-                animation: 'fade',
-              }}
-            />
-          </SQLiteProvider>
-        </Suspense>
-      </I18nextProvider>
+      {/* Clavier suivi sur le thread UI (UX.md §5). L'app est bord à bord : barres translucides
+          déclarées, et le bord à bord est conservé même si le module est désactivé. */}
+      <KeyboardProvider statusBarTranslucent navigationBarTranslucent preserveEdgeToEdge>
+        <I18nextProvider i18n={i18n}>
+          <StatusBar style="light" />
+          <Suspense fallback={<View style={styles.root} />}>
+            <SQLiteProvider databaseName={DATABASE_NAME} onInit={prepareDatabase} useSuspense>
+              <HideSplashWhenReady />
+              <Stack
+                screenOptions={{
+                  headerShown: false,
+                  contentStyle: { backgroundColor: colors.bg },
+                  animation: 'fade',
+                }}
+              />
+            </SQLiteProvider>
+          </Suspense>
+        </I18nextProvider>
+      </KeyboardProvider>
     </GestureHandlerRootView>
   );
 }

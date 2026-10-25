@@ -1,6 +1,8 @@
 import { router, useFocusEffect } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
+import { CopySimpleIcon } from 'phosphor-react-native/src/icons/CopySimple';
 import { MagnifyingGlassIcon } from 'phosphor-react-native/src/icons/MagnifyingGlass';
+import { PencilSimpleIcon } from 'phosphor-react-native/src/icons/PencilSimple';
 import { PlayIcon } from 'phosphor-react-native/src/icons/Play';
 import { StarIcon } from 'phosphor-react-native/src/icons/Star';
 import { XIcon } from 'phosphor-react-native/src/icons/X';
@@ -82,6 +84,18 @@ export default function CategoriesScreen() {
   const play = (category: CategorySummary) => {
     setPreview(null);
     router.push({ pathname: '/play/setup', params: { category: String(category.id) } });
+  };
+
+  // Catégorie du jeu : en lecture seule, on la duplique (GAMEPLAY.md §5) ; sinon on la modifie.
+  const edit = (category: CategorySummary) => {
+    setPreview(null);
+    router.push({
+      pathname: '/create/editor',
+      params:
+        category.source === 'builtin'
+          ? { duplicate: String(category.id) }
+          : { id: String(category.id) },
+    });
   };
 
   return (
@@ -215,6 +229,21 @@ export default function CategoriesScreen() {
               block
               icon={<Icon icon={StarIcon} emphasis={preview.category.favorite} />}
               onPress={() => void toggleFavorite()}
+            />
+            <Button
+              label={
+                preview.category.source === 'builtin'
+                  ? t('categoriesScreen.duplicate')
+                  : t('categoriesScreen.edit')
+              }
+              variant="ghost"
+              block
+              icon={
+                <Icon
+                  icon={preview.category.source === 'builtin' ? CopySimpleIcon : PencilSimpleIcon}
+                />
+              }
+              onPress={() => edit(preview.category)}
             />
           </>
         ) : null}

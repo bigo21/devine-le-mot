@@ -30,7 +30,8 @@ Le meilleur jeu de devinettes de soirée **gratuit**, pensé d'abord pour le Cam
 | Base de données | **expo-sqlite** (+ **Drizzle ORM** optionnel) | catégories, mots, historique ; requêtes rapides sur des milliers de mots |
 | Préférences | **`expo-sqlite/kv-store`** | réglages, onboarding vu, etc. (pas de MMKV : une lib native de moins) |
 | i18n | **i18next** + **react-i18next** + **expo-localization** | FR / EN |
-| Import / export | **expo-document-picker**, **expo-file-system**, **expo-sharing** | fichiers `.json` de paquets |
+| Import / export | **expo-file-system** (sélecteur `File.pickFileAsync`, lecture, écriture), **expo-sharing** (feuille de partage et réception de partages) | fichiers `.devine.json` de paquets ; pas d'expo-document-picker : le sélecteur d'expo-file-system suffit (une lib native de moins) |
+| Clavier | **react-native-keyboard-controller** (`KeyboardProvider` à la racine, `KeyboardScreen`) | suit le clavier sur le thread UI, garde le champ actif visible (UX.md §5) ; décision du 25/10/2026 |
 | Validation | **zod** | validation des paquets importés |
 | Polices | **expo-font** | voir DESIGN.md |
 | Tests | **jest** + **@testing-library/react-native** | logique du jeu en priorité |
@@ -101,6 +102,8 @@ src/
 - `is_favorite` et `is_hidden` des catégories intégrées sont **préservés** ;
 - les mots retirés de la nouvelle version sont **supprimés**, ainsi que leurs lignes dans `seen_words` ;
 - les catégories intégrées sont **en lecture seule** : l'action « Dupliquer pour modifier » crée une copie utilisateur (source `user`, `duplicated_from` renseigné).
+
+**Catégories créées** : une catégorie de l'éditeur vit dans **son propre paquet** (source `user`, id `perso-<nom>-<suffixe>`, région `custom`) : l'export partage exactement cette catégorie. Un paquet importé à plusieurs catégories reste groupé (décision du 25/10/2026).
 
 **Préférences** (réglages, onboarding vu, sensibilité, mode tap…) : `expo-sqlite/kv-store`.
 
