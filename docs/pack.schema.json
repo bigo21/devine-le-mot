@@ -57,7 +57,10 @@
         "name": { "$ref": "#/$defs/localizedText" },
         "description": { "$ref": "#/$defs/localizedText" },
         "emoji": { "type": "string", "maxLength": 8 },
-        "color": { "enum": ["mango", "hibiscus", "palm", "sun", "lagoon", "plum", "clay", "teal"] },
+        "color": {
+          "description": "Couleur de fond pendant la partie. Ni vert ni rouge/orange : les flashs trouvé/passer doivent rester visibles.",
+          "enum": ["lagoon", "indigo", "plum", "lilac", "orchid", "slate"]
+        },
         "tags": { "type": "array", "items": { "type": "string", "maxLength": 30 }, "maxItems": 10 },
         "variants": {
           "description": "Variantes compatibles, définies au niveau de la catégorie (fait foi). Absent = toutes sauf \"imitation\", qui doit être déclarée explicitement. \"forbidden\" n'est proposée que si la catégorie compte au moins 20 mots éligibles (au moins 3 mots interdits chacun), qu'elle soit déclarée ou non.",

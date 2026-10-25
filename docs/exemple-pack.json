@@ -14,7 +14,7 @@
         "id": "cm-plats",
         "name": { "fr": "Plats camerounais", "en": "Cameroonian dishes" },
         "emoji": "🍲",
-        "color": "mango",
+        "color": "orchid",
         "tags": ["cuisine", "cameroun"],
         "variants": ["classic", "mime", "one-word", "forbidden", "air-draw", "mix"],
         "words": [

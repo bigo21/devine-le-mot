@@ -34,7 +34,7 @@ Valeurs de départ, à ajuster à l'œil sur un vrai téléphone. Toute couleur 
 
 Thème clair : prévu dans les tokens (structure `light`/`dark`), mais secondaire pour le lancement.
 
-Chaque catégorie a une couleur parmi `mango / hibiscus / palm / sun / lagoon` + 3 teintes supplémentaires (`plum #9B5DE5`, `clay #E07A5F`, `teal #00BBA7`).
+**Couleurs de catégorie** (fond plein pendant la partie, décision du 25/10/2026) : uniquement des teintes **ni vertes ni rouges/orangées**, pour que les flashs `palm` (trouvé) et `pass` (passer) restent toujours visibles. Palette : `lagoon #3DA9FC`, `indigo #7C8CFF`, `plum #9B5DE5`, `lilac #B79CFF`, `orchid #D77CFF`, `slate #9AAAC8` (token `categoryColors`). Un test vérifie que chacune reste à plus de 45° de teinte du vert et de l'orange. Les autres couleurs vives (`mango`, `hibiscus`, `palm`, `sun`, `clay`, `teal`) restent des couleurs d'interface (bouton principal, flashs, mise en avant), jamais des fonds de catégorie.
 
 **Texte posé sur une couleur : tokens `on<Couleur>`**
 
@@ -52,6 +52,10 @@ Chaque couleur de catégorie et de feedback a un token `on<Couleur>` pour le tex
 | `plum` | `#9B5DE5` | **4,59** | 3,72 | `onPlum` = `#120E1F` |
 | `clay` | `#E07A5F` | **6,42** | 2,66 | `onClay` = `#120E1F` |
 | `teal` | `#00BBA7` | **7,82** | 2,19 | `onTeal` = `#120E1F` |
+| `indigo` | `#7C8CFF` | **6,36** | 2,69 | `onIndigo` = `#120E1F` |
+| `lilac` | `#B79CFF` | **8,31** | 2,06 | `onLilac` = `#120E1F` |
+| `orchid` | `#D77CFF` | **7,41** | 2,31 | `onOrchid` = `#120E1F` |
+| `slate` | `#9AAAC8` | **8,08** | 2,12 | `onSlate` = `#120E1F` |
 
 Toutes les couleurs vives passent avec le texte foncé ; aucune ne passe avec le blanc cassé, et aucune teinte n'a dû être modifiée. Les `on*` restent des tokens distincts, au cas où une couleur changerait plus tard. Points de vigilance :
 - `plum` est juste au-dessus du seuil (4,59) : ne pas l'éclaircir ni lui appliquer d'opacité sous le texte.
@@ -133,8 +137,9 @@ Règles :
 - Fond plein de la couleur de la catégorie, mot énorme au centre dans la couleur `on<Couleur>` correspondante, consigne de variante en petit dessous (même token).
 - Mode tap : chaque moitié affiche son libellé et son icône (droite « ✓ Trouvé », gauche « ⏭ Passer »), discrets mais toujours visibles, avec un retour visuel au toucher.
 - Timer : anneau fin qui se vide sur le bord ; dans les 10 dernières secondes il passe au rouge, pulse, et un tic sonore accompagne chaque seconde.
-- Trouvé : l'écran entier flashe en `palm`, le mot s'envole vers le bas avec un ✓, compteur +1 qui rebondit.
-- Passer : flash `pass`, le mot glisse vers le haut.
+- Trouvé : l'écran entier flashe en `palm` (500 ms), le mot s'envole vers le bas, **« ✓ Trouvé » en grand au centre**, compteur +1 qui rebondit.
+- Passer : flash `pass` (500 ms), le mot glisse vers le haut, **« ⏭ Passé » en grand au centre**.
+- L'icône et le libellé au centre garantissent que l'information ne passe jamais par la couleur seule (§7).
 - Changement de mot : nouvelle carte qui arrive avec `spring.bouncy`.
 
 **Résultats** : confettis Skia si bon score, score en grand avec compteur animé, liste des mots (verts / gris) apparaissant en cascade, record battu → badge `sun` animé.

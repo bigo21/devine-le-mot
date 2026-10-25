@@ -21,7 +21,7 @@ Complète DESIGN.md §3 (presets). Ici : **pourquoi** on anime, **quoi** exactem
 | `breathe` | scale 1 ↔ 1,03 en boucle, 2,4 s, ease in-out | bouton Jouer, mascotte au repos |
 | `shake` | translateX ±8 × 3, 300 ms | erreur (import invalide, champ vide) |
 | `count` | compteur numérique qui défile jusqu'à la valeur | scores, nombre de mots |
-| `flash` | calque plein écran opacité 0 → 0,9 → 0 en 220 ms | trouvé / passer |
+| `flash` | calque plein écran opacité 0 → 0,9 → 0 en 500 ms : montée 75 ms, palier, fondu (220 ms jugés trop courts sur appareil) | trouvé / passer |
 
 ## 3. Chorégraphie des moments clés
 
@@ -48,8 +48,8 @@ Complète DESIGN.md §3 (presets). Ici : **pourquoi** on anime, **quoi** exactem
 | Événement | Image | Son | Vibration | Durée |
 |---|---|---|---|---|
 | Nouveau mot | entre depuis le haut (translateY -40 → 0) + `pop` léger (0,92 → 1), `spring.bouncy` | — | — | ~250 ms |
-| Trouvé | `flash` palm ; le mot part vers le bas (translateY +120, scale 0,8, fondu) ; ✓ `pop` au centre ; compteur +1 `pop` | « trouvé » | success | 220 ms puis mot suivant |
-| Passer | `flash` pass ; le mot part vers le haut (translateY -120, fondu) | « passer » | warning | 220 ms puis mot suivant |
+| Trouvé | `flash` palm (500 ms) ; le mot part vers le bas (translateY +120, scale 0,8, fondu, 220 ms) ; « ✓ Trouvé » `pop` au centre ; compteur +1 `pop` | « trouvé » | success | mot suivant après 220 ms, sous le flash qui s'estompe |
+| Passer | `flash` pass (500 ms) ; le mot part vers le haut (translateY -120, fondu, 220 ms) ; « ⏭ Passé » `pop` au centre | « passer » | warning | mot suivant après 220 ms |
 | 10 dernières s | anneau du timer passe au `danger`, pulse à chaque seconde (scale 1 → 1,04 → 1) | tic par seconde | light par seconde | — |
 | Fin | le mot se fige, tout l'écran fait un fondu vers `bg`, « Temps écoulé ! » `pop` | gong de fin | heavy | 600 ms |
 
@@ -80,7 +80,7 @@ Séquence (timeline totale ≈ 1,6 s, interruptible par un tap qui affiche tout 
 - **Lottie** pour : mascotte (si dessinée par un humain), icônes animées des variantes, animation « téléphone sur le front ».
 - Tous les presets et les mouvements nommés (§2) vivent dans `src/ui/motion/` ; **aucune valeur de durée ou de ressort en dur** dans un écran.
 - Un hook `useFeedback()` centralise `son + haptique + animation` pour garantir la synchronisation (§1.4).
-- `useReducedMotion()` : quand c'est activé, `pop`/`rise`/`flash` deviennent des fondus de 150 ms, pas de confettis, pas de `breathe`, mascotte figée sur son état.
+- `useReducedMotion()` : quand c'est activé, `pop`/`rise` deviennent des fondus de 150 ms, `flash` un fondu de 300 ms (plus court, il passerait inaperçu), pas de confettis, pas de `breathe`, mascotte figée sur son état.
 
 ## 5. Vérification
 

@@ -12,7 +12,12 @@ export const motion = {
   shakeCycles: 3,
   countDuration: 600,
   flashPeak: 0.9,
-  flashDuration: 220,
+  /** Flash trouvé/passer : assez long pour être vu du coin de l'œil, en pleine partie (retour terrain). */
+  flashDuration: 500,
+  /** Flash en mode réduit : simple fondu, sans palier. */
+  flashReducedDuration: 300,
+  /** Sortie du mot trouvé/passé : le jeu reste vif, le mot suivant arrive ensuite. */
+  wordExit: 220,
   /** Décalage entre deux éléments d'une liste en cascade (30–40 ms). */
   stagger: 35,
   /** Au-delà, les éléments d'une liste apparaissent sans animation. */

@@ -88,6 +88,8 @@ export default function PlayGameScreen() {
   const [danger, setDanger] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [reshuffled, setReshuffled] = useState(false);
+  /** Confirmation au centre (icône + libellé) : jamais la couleur seule (DESIGN.md §7). */
+  const [burst, setBurst] = useState<{ result: CardResult; id: number } | null>(null);
   const busy = useRef(false);
   const lastSecond = useRef<number | null>(null);
 
@@ -171,7 +173,11 @@ export default function PlayGameScreen() {
       busy.current = true;
       const at = Date.now();
       const found = result === 'found';
-      feedback(found ? 'found' : 'pass', () => flash.flash(found ? colors.palm : colors.pass));
+      feedback(found ? 'found' : 'pass', () => {
+        flash.flash(found ? colors.palm : colors.pass);
+        setBurst({ result, id: at });
+      });
+      setTimeout(() => setBurst(null), motion.flashDuration);
       if (found) {
         scoreScale.set(
           withSequence(
@@ -184,7 +190,7 @@ export default function PlayGameScreen() {
         'worklet';
         if (finished) scheduleOnRN(advance, result, at);
       };
-      const exit = { duration: motion.flashDuration, easing: easing.out };
+      const exit = { duration: motion.wordExit, easing: easing.out };
       if (!reduced) {
         wordY.set(withTiming(found ? WORD_EXIT_Y : -WORD_EXIT_Y, exit));
         if (found) wordScale.set(withTiming(0.8, exit));
@@ -433,6 +439,26 @@ export default function PlayGameScreen() {
 
       <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, flash.style]} />
 
+      {burst ? (
+        <View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.burstWrap]}>
+          <Animated.View
+            key={burst.id}
+            entering={pop({ reduced })}
+            exiting={fadeOut}
+            style={styles.burst}
+          >
+            <Icon
+              icon={burst.result === 'found' ? CheckIcon : SkipForwardIcon}
+              size={88}
+              color={burst.result === 'found' ? colors.onPalm : colors.onPass}
+            />
+            <Text variant="hero" color={burst.result === 'found' ? colors.onPalm : colors.onPass}>
+              {burst.result === 'found' ? t('game.found') : t('game.passed')}
+            </Text>
+          </Animated.View>
+        </View>
+      ) : null}
+
       <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.end, endStyle]}>
         {phase === 'ended' ? (
           <Animated.View entering={pop({ reduced })}>
@@ -515,5 +541,7 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
     opacity: 0.85,
   },
+  burstWrap: { alignItems: 'center', justifyContent: 'center' },
+  burst: { alignItems: 'center', gap: spacing.sm },
   end: { backgroundColor: colors.bg, alignItems: 'center', justifyContent: 'center' },
 });

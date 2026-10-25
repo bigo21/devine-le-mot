@@ -1,7 +1,7 @@
 // TEMPORAIRE (étape 1.2) : 5 catégories de test en mémoire, pour jouer avant la base de données.
 // Remplacées en Phase 2 par les paquets intégrés (seed JSON → SQLite).
 import type { CategoryIconName } from '@/assets/categories';
-import type { AccentColor } from '@/ui/tokens';
+import type { CategoryColor } from '@/ui/tokens';
 
 import type { Card } from './engine';
 
@@ -9,7 +9,7 @@ export type TestCategory = {
   id: string;
   /** Clé i18n du nom (`testCategories.<id>`). */
   nameKey: 'food' | 'animals' | 'objects' | 'sports' | 'jobs';
-  accent: AccentColor;
+  accent: CategoryColor;
   icon: CategoryIconName;
   cards: Card[];
 };
@@ -22,7 +22,7 @@ export const testCategories: TestCategory[] = [
   {
     id: 'test-plats',
     nameKey: 'food',
-    accent: 'mango',
+    accent: 'orchid',
     icon: 'plats-camerounais',
     cards: cards(1000, [
       'Ndolé',
@@ -86,7 +86,7 @@ export const testCategories: TestCategory[] = [
   {
     id: 'test-objets',
     nameKey: 'objects',
-    accent: 'teal',
+    accent: 'slate',
     icon: 'objets-du-quotidien',
     cards: cards(3000, [
       'Parapluie',
@@ -118,7 +118,7 @@ export const testCategories: TestCategory[] = [
   {
     id: 'test-sports',
     nameKey: 'sports',
-    accent: 'palm',
+    accent: 'indigo',
     icon: 'sports',
     cards: cards(4000, [
       'Football',

@@ -149,19 +149,29 @@ export function useShake(reduced: boolean) {
   return { style, shake };
 }
 
-/** `flash` : calque plein écran 0 → 0,9 → 0 en 220 ms (trouvé / passer). */
+/** `flash` : calque plein écran 0 → 0,9 → 0 en 500 ms : montée rapide, palier, fondu (trouvé / passer). */
 export function useFlash(reduced: boolean) {
   const opacity = useSharedValue(0);
   const color = useSharedValue('transparent');
 
   const flash = useCallback(
     (nextColor: string) => {
-      const total = reduced ? timing.fast.duration : motion.flashDuration;
       color.set(nextColor);
+      if (reduced) {
+        const half = motion.flashReducedDuration / 2;
+        opacity.set(
+          withSequence(
+            withTiming(motion.flashPeak, { duration: half }),
+            withTiming(0, { duration: half }),
+          ),
+        );
+        return;
+      }
+      const total = motion.flashDuration;
       opacity.set(
         withSequence(
-          withTiming(motion.flashPeak, { duration: total * 0.3, easing: easing.out }),
-          withTiming(0, { duration: total * 0.7, easing: easing.out }),
+          withTiming(motion.flashPeak, { duration: total * 0.15, easing: easing.out }),
+          withDelay(total * 0.3, withTiming(0, { duration: total * 0.55, easing: easing.out })),
         ),
       );
     },

@@ -59,9 +59,9 @@ const REGION_ICONS: Record<(typeof REGIONS)[number], ReactNode> = {
 };
 const DURATIONS = [30, 60, 90, 120] as const;
 const CATEGORY_CARDS = [
-  { key: 'food', accent: 'mango', words: 120, icon: 'plats-camerounais' },
-  { key: 'music', accent: 'hibiscus', words: 140, icon: 'artistes-africains' },
-  { key: 'football', accent: 'palm', words: 110, icon: 'footballeurs' },
+  { key: 'food', accent: 'orchid', words: 120, icon: 'plats-camerounais' },
+  { key: 'music', accent: 'indigo', words: 140, icon: 'artistes-africains' },
+  { key: 'football', accent: 'lilac', words: 110, icon: 'footballeurs' },
   { key: 'party', accent: 'plum', words: 90, icon: 'situations-genantes' },
   { key: 'animals', accent: 'lagoon', words: 160, icon: 'animaux' },
 ] as const;
@@ -240,7 +240,7 @@ export default function DevUiScreen() {
         </Section>
 
         <Section title={t('devUi.sections.word')}>
-          <Card accent="mango" size="lg" style={styles.wordCard}>
+          <Card accent="orchid" size="lg" style={styles.wordCard}>
             <Text
               align="center"
               style={[styles.wordSample, wordFont]}

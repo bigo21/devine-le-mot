@@ -20,6 +20,11 @@ const dark = {
   plum: '#9B5DE5',
   clay: '#E07A5F',
   teal: '#00BBA7',
+  // Couleurs de catégorie ajoutées : loin du vert « trouvé » et de l'orange « passer ».
+  indigo: '#7C8CFF',
+  lilac: '#B79CFF',
+  orchid: '#D77CFF',
+  slate: '#9AAAC8',
 
   // Texte posé sur une couleur vive : ratios ≥ 4,5:1 (DESIGN.md §2).
   onMango: ink,
@@ -32,6 +37,10 @@ const dark = {
   onPlum: ink,
   onClay: ink,
   onTeal: ink,
+  onIndigo: ink,
+  onLilac: ink,
+  onOrchid: ink,
+  onSlate: ink,
 
   // Dérivés translucides (jamais sous du texte sans recalcul de contraste).
   hairline: 'rgba(247, 243, 234, 0.08)', // bordures fines, séparateurs
@@ -50,7 +59,7 @@ export const colors = themes.dark;
 
 export type ColorToken = keyof Palette;
 
-/** Couleurs vives attribuables à une catégorie (et au feedback de jeu). */
+/** Toutes les couleurs vives (fonds de boutons, de cartes, de démo). */
 export const accentColors = [
   'mango',
   'hibiscus',
@@ -60,8 +69,19 @@ export const accentColors = [
   'plum',
   'clay',
   'teal',
+  'indigo',
+  'lilac',
+  'orchid',
+  'slate',
 ] as const;
 export type AccentColor = (typeof accentColors)[number] | 'pass' | 'danger';
+
+/**
+ * Couleurs attribuables à une catégorie (fond plein pendant la partie). Ni vert ni rouge/orange :
+ * les flashs « trouvé » (palm) et « passer » (pass) doivent toujours se voir (DESIGN.md §2).
+ */
+export const categoryColors = ['lagoon', 'indigo', 'plum', 'lilac', 'orchid', 'slate'] as const;
+export type CategoryColor = (typeof categoryColors)[number];
 
 const onColorKey = {
   mango: 'onMango',
@@ -72,6 +92,10 @@ const onColorKey = {
   plum: 'onPlum',
   clay: 'onClay',
   teal: 'onTeal',
+  indigo: 'onIndigo',
+  lilac: 'onLilac',
+  orchid: 'onOrchid',
+  slate: 'onSlate',
   pass: 'onPass',
   danger: 'onDanger',
 } as const satisfies Record<AccentColor, ColorToken>;
