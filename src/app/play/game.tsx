@@ -106,6 +106,10 @@ export default function PlayGameScreen() {
   // Le libellé suit l'opacité du flash : ils apparaissent et disparaissent ensemble.
   const [burst, setBurst] = useState<CardResult | null>(null);
   const busy = useRef(false);
+  /** Mix : lecture de la consigne en cours (chrono arrêté). */
+  const [reading, setReading] = useState(false);
+  const readingRef = useRef(false);
+  const readingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastSecond = useRef<number | null>(null);
 
   const progress = useSharedValue(1);
@@ -157,12 +161,47 @@ export default function PlayGameScreen() {
     setTimeout(() => router.replace('/play/results'), END_TO_RESULTS_MS);
   }, [endFade, feedback, progress, reduced]);
 
+  // --- Mix : temps de lecture de la consigne -----------------------------------------------
+
+  const stopReading = useCallback(() => {
+    if (readingTimer.current) clearTimeout(readingTimer.current);
+    readingTimer.current = null;
+    readingRef.current = false;
+    setReading(false);
+  }, []);
+
+  /** Fin de la lecture : le chrono repart (aussi dès qu'un mot est trouvé ou passé). */
+  const endReading = useCallback(() => {
+    if (!readingRef.current) return;
+    stopReading();
+    const state = getRound();
+    if (state?.status !== 'paused') return;
+    const now = Date.now();
+    const next = resume(state, now);
+    setRound(next);
+    runRing(next, now);
+  }, [runRing, setRound, stopReading]);
+
+  /** En Mix, chaque nouveau mot arrête le chrono le temps de lire sa consigne. */
+  const startReading = useCallback(() => {
+    const state = getRound();
+    if (variant !== 'mix' || state?.status !== 'playing') return;
+    setRound(pause(state, Date.now()));
+    cancelAnimation(progress);
+    readingRef.current = true;
+    setReading(true);
+    readingTimer.current = setTimeout(endReading, motion.mixReading);
+  }, [endReading, progress, setRound, variant]);
+
+  useEffect(() => () => stopReading(), [stopReading]);
+
   // --- Mots ---------------------------------------------------------------------------------
 
   const showCard = useCallback(
-    (card: Card | null) => {
+    (card: Card | null, options: { newCard?: boolean } = { newCard: true }) => {
       setDisplayed(card);
-      if (card) {
+      // Après une pause, la carte reste la même : on ne retire pas sa variante.
+      if (card && options.newCard) {
         setCardVariant((previous) =>
           variantForCard(variant, card, {
             available,
@@ -187,8 +226,9 @@ export default function PlayGameScreen() {
         wordOpacity.set(withTiming(1, timing.fast));
       }
       busy.current = false;
+      if (card) startReading();
     },
-    [available, reduced, variant, wordOpacity, wordScale, wordY],
+    [available, reduced, startReading, variant, wordOpacity, wordScale, wordY],
   );
 
   const advance = useCallback(
@@ -213,6 +253,8 @@ export default function PlayGameScreen() {
   const onAnswer = useCallback(
     (result: CardResult) => {
       if (phase !== 'playing' || busy.current || sheetOpen) return;
+      // Mot trouvé ou passé pendant la lecture : le chrono repart d'abord.
+      endReading();
       busy.current = true;
       const at = Date.now();
       const found = result === 'found';
@@ -239,6 +281,7 @@ export default function PlayGameScreen() {
     },
     [
       advance,
+      endReading,
       feedback,
       flash,
       phase,
@@ -266,16 +309,16 @@ export default function PlayGameScreen() {
     const state = getRound();
     if (!state) return;
     const now = Date.now();
-    const next =
-      state.status === 'ready'
-        ? startRound(state, now)
-        : state.status === 'paused'
-          ? resume(state, now)
-          : state;
+    const first = state.status === 'ready';
+    const next = first
+      ? startRound(state, now)
+      : state.status === 'paused'
+        ? resume(state, now)
+        : state;
     setRound(next);
     runRing(next, now);
     setPhase('playing');
-    showCard(currentCard(next));
+    showCard(currentCard(next), { newCard: first });
   }, [runRing, setRound, showCard]);
 
   useEffect(() => {
@@ -329,12 +372,13 @@ export default function PlayGameScreen() {
 
   const pauseGame = useCallback(() => {
     if (phase !== 'playing' && phase !== 'countdown') return;
+    stopReading();
     const state = getRound();
     if (state?.status === 'playing') setRound(pause(state, Date.now()));
     cancelAnimation(progress);
     setPhase('paused');
     setSheetOpen(true);
-  }, [phase, progress, setRound]);
+  }, [phase, progress, setRound, stopReading]);
 
   useFocusEffect(
     useCallback(() => {
@@ -363,6 +407,7 @@ export default function PlayGameScreen() {
   const restartGame = () => {
     if (!category) return;
     // Nouveau tirage sur les mêmes mots et les mêmes réglages.
+    stopReading();
     again();
     setDisplayed(null);
     setDanger(false);
@@ -376,6 +421,7 @@ export default function PlayGameScreen() {
   };
 
   const quitGame = () => {
+    stopReading();
     setSheetOpen(false);
     router.replace('/play/setup');
   };
@@ -456,11 +502,7 @@ export default function PlayGameScreen() {
                 align="center"
                 // Mots interdits affichés dessous : mot plus petit au départ (l'auto-fit ne réduit
                 // qu'en largeur), pour que tout tienne dans la hauteur de l'écran.
-                style={[
-                  styles.word,
-                  cardVariant === 'forbidden' && styles.wordCompact,
-                  wordFont,
-                ]}
+                style={[styles.word, cardVariant === 'forbidden' && styles.wordCompact, wordFont]}
                 adjustsFontSizeToFit
                 minimumFontScale={0.2}
                 numberOfLines={2}
@@ -491,6 +533,11 @@ export default function PlayGameScreen() {
                     : t(`variants.${cardVariant}.instruction`)}
                 </Text>
               </View>
+              {reading ? (
+                <Text variant="labelSmall" align="center" accessibilityLiveRegion="polite">
+                  {t('game.reading')}
+                </Text>
+              ) : null}
             </Animated.View>
           ) : null}
 

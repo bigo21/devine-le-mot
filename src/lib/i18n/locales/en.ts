@@ -179,6 +179,7 @@ export const en: Translation = {
     noSensor: 'No motion sensor on this phone: we’ll play in tap mode.',
   },
   game: {
+    reading: 'Timer paused: read the instruction',
     forbiddenLabel: 'Taboo',
     variantLabel: 'Variant: {{name}}',
     introHint: 'New variant',

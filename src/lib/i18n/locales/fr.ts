@@ -178,6 +178,7 @@ export const fr = {
     noSensor: 'Pas de capteur de mouvement sur ce téléphone : on joue en mode tap.',
   },
   game: {
+    reading: 'Chrono en pause : lisez la consigne',
     forbiddenLabel: 'Interdits',
     variantLabel: 'Variante : {{name}}',
     introHint: 'Nouvelle variante',

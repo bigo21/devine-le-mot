@@ -53,7 +53,9 @@ Chaque variante a : un nom, une icône animée, une consigne courte affichée so
 
 **Mélange de catégories** (décision du 25/10/2026) : plusieurs catégories peuvent être choisies pour une manche ; une variante n'est proposée que si elle convient à toutes, et les 20 mots éligibles de « Mots interdits » se comptent sur l'ensemble. Une catégorie est jugée trop petite pour la durée sous un mot toutes les 3 s.
 
-**Première fois dans une variante** : sa consigne s'affiche en grand 2 s avant le compte à rebours (UX.md §4).
+**Première fois dans une variante** : sa consigne s'affiche en grand **5 s** avant le compte à rebours (UX.md §4), le temps que tout le groupe la lise.
+
+**Mix : temps de lecture** : à chaque nouveau mot, le chrono s'arrête **3 s** le temps de lire la consigne (« Chrono en pause : lisez la consigne ») ; la durée choisie reste du temps de jeu effectif. Un mot trouvé ou passé pendant la lecture relance aussitôt le chrono (retour terrain du 25/10/2026).
 
 **Mode équipes** : 2 à 6 équipes nommées (noms et couleurs auto, modifiables), manches à tour de rôle, tableau des scores animé, nombre de manches au choix. Une partie en équipes est enregistrée dans `matches` (reprise possible si l'app est fermée).
 

@@ -27,8 +27,11 @@ export const motion = {
   resultsMaxStaggered: 15,
   /** Boucle de l'icône animée d'une variante (aller-retour). */
   variantIconLoop: 700,
-  /** Consigne d'une variante jouée pour la première fois, avant le compte à rebours (UX.md §4). */
-  variantIntro: 2000,
+  /** Consigne d'une variante jouée pour la première fois, avant le compte à rebours (UX.md §4) :
+   * 5 s, le temps que tout le groupe la lise (retour terrain du 25/10/2026). */
+  variantIntro: 5000,
+  /** Mix : chrono arrêté à chaque nouveau mot, le temps de lire sa consigne (retour terrain). */
+  mixReading: 3000,
 } as const;
 
 /** Délai d'un élément de liste en cascade ; `undefined` au-delà du plafond (apparition directe). */
