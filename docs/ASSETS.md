@@ -17,6 +17,7 @@ Principe : **une seule famille visuelle par type d'élément**, des licences pro
 | Animation « téléphone sur le front » | Lottie | Humain, ou Claude Code en fausse 3D (Reanimated) | Lottie ou code |
 | Confettis, particules, dégradés | Skia | Claude Code | code |
 | Icône de l'app (adaptative + monochrome Android 13+) | Sur mesure | Humain, dans Figma | PNG 1024 + calques foreground/background |
+| Icône **provisoire** (14/11/2026) | Mascotte géométrique, `node scripts/app-icon.mjs` (canvaskit) : calques adaptatifs, monochrome, icône complète, splash, icône Play Store 512 (`assets/store/`) | Claude Code | à remplacer par l'icône définitive |
 | Splash screen | Logo + `bg` | Claude Code à partir du logo | via `expo-splash-screen` |
 | Logo / logotype « Devine le mot » | Sur mesure, typo Unbounded retravaillée | Humain | SVG |
 | Sons | Bibliothèques **CC0** : Kenney (audio), Freesound filtré CC0, Pixabay Sound Effects (licence à relire) | Claude Code (sélection) + toi (validation à l'oreille) | `.m4a`/`.ogg` mono, normalisés |
