@@ -4,8 +4,8 @@
   "pack": {
     "id": "cameroun-cuisine",
     "name": {
-      "fr": "Cameroun · Cuisine",
-      "en": "Cameroon · Food"
+      "fr": "Plats et boissons camerounais",
+      "en": "Cameroonian food and drinks"
     },
     "description": {
       "fr": "Plats, snacks et boissons du Cameroun",
@@ -14,13 +14,13 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 5,
+    "version": 6,
     "categories": [
       {
         "id": "cm-plats",
         "name": {
-          "fr": "Plats camerounais",
-          "en": "Cameroonian dishes"
+          "fr": "Plats et boissons camerounais",
+          "en": "Cameroonian food and drinks"
         },
         "emoji": "🍲",
         "color": "plum",
@@ -262,6 +262,672 @@
               "lait",
               "caillé",
               "Nord"
+            ]
+          },
+          {
+            "text": "Kpem",
+            "difficulty": 2,
+            "forbidden": [
+              "feuilles de manioc",
+              "pilées",
+              "Est"
+            ]
+          },
+          {
+            "text": "Ndomba",
+            "difficulty": 2,
+            "forbidden": [
+              "papillote",
+              "feuilles de bananier",
+              "viande"
+            ]
+          },
+          {
+            "text": "Mintoumba",
+            "difficulty": 3,
+            "forbidden": [
+              "manioc",
+              "huile de palme",
+              "pâte"
+            ]
+          },
+          {
+            "text": "Nnam owondo",
+            "difficulty": 2,
+            "forbidden": [
+              "arachide",
+              "gâteau",
+              "vapeur"
+            ]
+          },
+          {
+            "text": "Nnam ngon",
+            "difficulty": 2,
+            "forbidden": [
+              "pistache",
+              "gâteau",
+              "feuilles"
+            ]
+          },
+          {
+            "text": "Ebobolo",
+            "difficulty": 3,
+            "forbidden": [
+              "manioc",
+              "bâton",
+              "Centre"
+            ]
+          },
+          {
+            "text": "Banane malaxée",
+            "difficulty": 2,
+            "forbidden": [
+              "plantain",
+              "huile rouge",
+              "écrasée"
+            ]
+          },
+          {
+            "text": "Okok sucré",
+            "difficulty": 3,
+            "forbidden": [
+              "feuilles",
+              "arachide",
+              "dessert"
+            ]
+          },
+          {
+            "text": "Mbanga soup",
+            "difficulty": 2,
+            "forbidden": [
+              "noix de palme",
+              "Sud-Ouest",
+              "poisson"
+            ]
+          },
+          {
+            "text": "Water fufu",
+            "difficulty": 2,
+            "forbidden": [
+              "manioc",
+              "fermenté",
+              "anglophone"
+            ]
+          },
+          {
+            "text": "Poisson à l'étouffée",
+            "difficulty": 2,
+            "forbidden": [
+              "vapeur",
+              "feuilles",
+              "épices"
+            ]
+          },
+          {
+            "text": "Crevettes du Wouri",
+            "difficulty": 3,
+            "forbidden": [
+              "fleuve",
+              "Douala",
+              "fruits de mer"
+            ]
+          },
+          {
+            "text": "Bar braisé",
+            "difficulty": 2,
+            "forbidden": [
+              "poisson",
+              "grillé",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Silure fumé",
+            "difficulty": 3,
+            "forbidden": [
+              "poisson",
+              "fumée",
+              "rivière"
+            ]
+          },
+          {
+            "text": "Nkui",
+            "difficulty": 2,
+            "forbidden": [
+              "sauce gluante",
+              "Bamiléké",
+              "fufu"
+            ]
+          },
+          {
+            "text": "Taro sauce jaune",
+            "difficulty": 1,
+            "forbidden": [
+              "achu",
+              "Bamiléké",
+              "huile rouge"
+            ]
+          },
+          {
+            "text": "Pommes pilées",
+            "difficulty": 2,
+            "forbidden": [
+              "haricots",
+              "patates",
+              "Ouest"
+            ]
+          },
+          {
+            "text": "Koki maïs",
+            "difficulty": 3,
+            "forbidden": [
+              "farine",
+              "feuilles de bananier",
+              "vapeur"
+            ]
+          },
+          {
+            "text": "Corn chaff",
+            "difficulty": 2,
+            "forbidden": [
+              "maïs",
+              "haricots",
+              "Nord-Ouest"
+            ]
+          },
+          {
+            "text": "Kati kati",
+            "difficulty": 2,
+            "forbidden": [
+              "poulet grillé",
+              "Nord-Ouest",
+              "huile rouge"
+            ]
+          },
+          {
+            "text": "Fufu corn",
+            "difficulty": 1,
+            "forbidden": [
+              "maïs",
+              "pâte",
+              "anglophone"
+            ]
+          },
+          {
+            "text": "Couscous de maïs",
+            "difficulty": 1,
+            "forbidden": [
+              "farine",
+              "boule",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Couscous de mil",
+            "difficulty": 2,
+            "forbidden": [
+              "céréale",
+              "boule",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Sauce longo-longo",
+            "difficulty": 3,
+            "forbidden": [
+              "gluante",
+              "feuilles",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Kilishi",
+            "difficulty": 2,
+            "forbidden": [
+              "viande séchée",
+              "épices",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Bouillie de mil",
+            "difficulty": 2,
+            "forbidden": [
+              "petit-déjeuner",
+              "céréale",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Bil-bil",
+            "difficulty": 3,
+            "forbidden": [
+              "bière",
+              "sorgho",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Pain chargé",
+            "difficulty": 1,
+            "forbidden": [
+              "sandwich",
+              "avocat",
+              "omelette"
+            ]
+          },
+          {
+            "text": "Omelette spaghetti",
+            "difficulty": 1,
+            "forbidden": [
+              "œufs",
+              "pâtes",
+              "tourne-dos"
+            ]
+          },
+          {
+            "text": "Riz sauté",
+            "difficulty": 1,
+            "forbidden": [
+              "poêle",
+              "légumes",
+              "rue"
+            ]
+          },
+          {
+            "text": "Beignets soufflés",
+            "difficulty": 1,
+            "forbidden": [
+              "farine",
+              "sucre",
+              "huile"
+            ]
+          },
+          {
+            "text": "Bouillie de maïs",
+            "difficulty": 1,
+            "forbidden": [
+              "petit-déjeuner",
+              "beignets",
+              "chaude"
+            ]
+          },
+          {
+            "text": "Maïs braisé",
+            "difficulty": 1,
+            "forbidden": [
+              "épi",
+              "grillé",
+              "rue"
+            ]
+          },
+          {
+            "text": "Maïs bouilli",
+            "difficulty": 1,
+            "forbidden": [
+              "épi",
+              "eau",
+              "saison"
+            ]
+          },
+          {
+            "text": "Arachides grillées",
+            "difficulty": 1,
+            "forbidden": [
+              "cacahuètes",
+              "sachet",
+              "rue"
+            ]
+          },
+          {
+            "text": "Chips de plantain",
+            "difficulty": 2,
+            "forbidden": [
+              "banane",
+              "croustillant",
+              "sachet"
+            ]
+          },
+          {
+            "text": "Porc braisé",
+            "difficulty": 1,
+            "forbidden": [
+              "cochon",
+              "grillé",
+              "bière"
+            ]
+          },
+          {
+            "text": "Poulet bicyclette",
+            "difficulty": 2,
+            "forbidden": [
+              "village",
+              "coq",
+              "local"
+            ]
+          },
+          {
+            "text": "Brochettes de foie",
+            "difficulty": 2,
+            "forbidden": [
+              "soya",
+              "grillé",
+              "abats"
+            ]
+          },
+          {
+            "text": "Tapioca",
+            "difficulty": 1,
+            "forbidden": [
+              "manioc",
+              "grains",
+              "sucre"
+            ]
+          },
+          {
+            "text": "Garri",
+            "difficulty": 1,
+            "forbidden": [
+              "manioc",
+              "grains",
+              "eau"
+            ]
+          },
+          {
+            "text": "Gâteau de maïs",
+            "difficulty": 2,
+            "forbidden": [
+              "farine",
+              "vapeur",
+              "sucré"
+            ]
+          },
+          {
+            "text": "Haricots rouges",
+            "difficulty": 1,
+            "forbidden": [
+              "légumineuses",
+              "sauce",
+              "marché"
+            ]
+          },
+          {
+            "text": "Djansang",
+            "difficulty": 3,
+            "forbidden": [
+              "épice",
+              "graines",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Pèbè",
+            "difficulty": 3,
+            "forbidden": [
+              "épice",
+              "noix",
+              "soupe"
+            ]
+          },
+          {
+            "text": "Rondelles",
+            "difficulty": 3,
+            "forbidden": [
+              "épice",
+              "écorce",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Huile de palme",
+            "difficulty": 1,
+            "forbidden": [
+              "rouge",
+              "noix",
+              "friture"
+            ]
+          },
+          {
+            "text": "Crevettes séchées",
+            "difficulty": 2,
+            "forbidden": [
+              "poudre",
+              "sauce",
+              "marché"
+            ]
+          },
+          {
+            "text": "Poisson fumé",
+            "difficulty": 1,
+            "forbidden": [
+              "séché",
+              "fumée",
+              "marché"
+            ]
+          },
+          {
+            "text": "Viande de brousse",
+            "difficulty": 2,
+            "forbidden": [
+              "gibier",
+              "chasse",
+              "forêt"
+            ]
+          },
+          {
+            "text": "Chenilles",
+            "difficulty": 2,
+            "forbidden": [
+              "insectes",
+              "grillées",
+              "saison"
+            ]
+          },
+          {
+            "text": "Hannetons",
+            "difficulty": 3,
+            "forbidden": [
+              "insectes",
+              "grillés",
+              "saison des pluies"
+            ]
+          },
+          {
+            "text": "Vers de palmier",
+            "difficulty": 2,
+            "forbidden": [
+              "larves",
+              "grillés",
+              "délice"
+            ]
+          },
+          {
+            "text": "Andok",
+            "difficulty": 3,
+            "forbidden": [
+              "mangue sauvage",
+              "graines",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Noix de cola",
+            "difficulty": 1,
+            "forbidden": [
+              "amère",
+              "partager",
+              "visite"
+            ]
+          },
+          {
+            "text": "Vin de palme",
+            "difficulty": 1,
+            "forbidden": [
+              "palmier",
+              "blanc",
+              "matango"
+            ]
+          },
+          {
+            "text": "Matango",
+            "difficulty": 2,
+            "forbidden": [
+              "vin de palme",
+              "calebasse",
+              "pidgin"
+            ]
+          },
+          {
+            "text": "Odontol",
+            "difficulty": 2,
+            "forbidden": [
+              "alcool",
+              "fort",
+              "distillé"
+            ]
+          },
+          {
+            "text": "Arki",
+            "difficulty": 3,
+            "forbidden": [
+              "alcool",
+              "maïs",
+              "distillé"
+            ]
+          },
+          {
+            "text": "Sucrerie",
+            "difficulty": 1,
+            "forbidden": [
+              "boisson gazeuse",
+              "soda",
+              "bouteille"
+            ]
+          },
+          {
+            "text": "Jus de baobab",
+            "difficulty": 3,
+            "forbidden": [
+              "bouye",
+              "boisson",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Kpata",
+            "difficulty": 3,
+            "forbidden": [
+              "boisson",
+              "Nord",
+              "sorgho"
+            ]
+          },
+          {
+            "text": "Shawarma",
+            "difficulty": 1,
+            "forbidden": [
+              "pain libanais",
+              "poulet",
+              "rue"
+            ]
+          },
+          {
+            "text": "Beignets de banane",
+            "difficulty": 2,
+            "forbidden": [
+              "plantain mûr",
+              "sucré",
+              "friture"
+            ]
+          },
+          {
+            "text": "Brochettes de poisson",
+            "difficulty": 2,
+            "forbidden": [
+              "grillé",
+              "bâtonnet",
+              "rue"
+            ]
+          },
+          {
+            "text": "Jus de corossol",
+            "difficulty": 2,
+            "forbidden": [
+              "fruit",
+              "blanc",
+              "boisson"
+            ]
+          },
+          {
+            "text": "Gombo sec",
+            "difficulty": 3,
+            "forbidden": [
+              "poudre",
+              "gluant",
+              "Nord"
+            ]
+          },
+          {
+            "text": "Pâte d'arachide",
+            "difficulty": 1,
+            "forbidden": [
+              "cacahuètes",
+              "sauce",
+              "pot"
+            ]
+          },
+          {
+            "text": "Vin de raphia",
+            "difficulty": 2,
+            "forbidden": [
+              "palmier",
+              "Ouest",
+              "calebasse"
+            ]
+          },
+          {
+            "text": "Kanda",
+            "difficulty": 3,
+            "forbidden": [
+              "peau",
+              "bœuf",
+              "sauce"
+            ]
+          },
+          {
+            "text": "Tourne-dos",
+            "difficulty": 1,
+            "forbidden": [
+              "restaurant",
+              "rue",
+              "banc"
+            ]
+          },
+          {
+            "text": "Braiseuse",
+            "difficulty": 1,
+            "forbidden": [
+              "poisson",
+              "grill",
+              "vendeuse"
+            ]
+          },
+          {
+            "text": "Calebasse",
+            "difficulty": 1,
+            "forbidden": [
+              "récipient",
+              "gourde",
+              "boire"
+            ]
+          },
+          {
+            "text": "Feu de bois",
+            "difficulty": 1,
+            "forbidden": [
+              "cuisiner",
+              "fumée",
+              "marmite"
             ]
           }
         ]
