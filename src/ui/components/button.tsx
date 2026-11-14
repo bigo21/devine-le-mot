@@ -32,6 +32,8 @@ type Props = {
   /** Occupe toute la largeur disponible. */
   block?: boolean;
   accessibilityHint?: string;
+  /** Lignes du libellé (1 par défaut) ; plus, pour un libellé long en grande police. */
+  numberOfLines?: number;
 };
 
 export function Button({
@@ -45,6 +47,7 @@ export function Button({
   loading = false,
   block = false,
   accessibilityHint,
+  numberOfLines = 1,
 }: Props) {
   const reduced = useReducedMotion();
   const press = usePress(reduced);
@@ -88,7 +91,11 @@ export function Button({
         <SurfaceContext value={{ foreground, muted: foreground }}>
           <View style={[styles.row, loading && styles.hidden]}>
             {icon}
-            <Text variant="label" numberOfLines={1}>
+            <Text
+              variant="label"
+              numberOfLines={numberOfLines}
+              style={numberOfLines > 1 ? styles.wrap : undefined}
+            >
               {label}
             </Text>
           </View>
@@ -114,4 +121,5 @@ const styles = StyleSheet.create({
   lg: { minHeight: 60, paddingHorizontal: spacing.xxl },
   row: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   hidden: { opacity: 0 },
+  wrap: { flexShrink: 1, textAlign: 'center' },
 });

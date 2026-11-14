@@ -6,7 +6,7 @@ import { PlusIcon } from 'phosphor-react-native/src/icons/Plus';
 import { SquaresFourIcon } from 'phosphor-react-native/src/icons/SquaresFour';
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -38,6 +38,8 @@ const SHORTCUT_STAGGER = 40;
 const BREATHE_AT = 700;
 /** La mascotte salue, puis se met au repos. */
 const WAVE_MS = 1800;
+/** Au-delà de cette taille de police système, les raccourcis passent l'un sous l'autre. */
+const LARGE_FONT_SCALE = 1.3;
 
 type Replay = { last: LastRound; categories: CategorySummary[] };
 
@@ -51,6 +53,7 @@ export default function HomeScreen() {
   useOrientationLock('portrait');
   const { t, i18n } = useTranslation();
   const insets = useSafeAreaInsets();
+  const largeFont = useWindowDimensions().fontScale > LARGE_FONT_SCALE;
   const db = useSQLiteContext();
   const systemReduced = useReducedMotion();
   const feedback = useFeedback();
@@ -207,6 +210,7 @@ export default function HomeScreen() {
               variant="secondary"
               block
               loading={replaying}
+              numberOfLines={2}
               icon={<Icon icon={ArrowCounterClockwiseIcon} />}
               onPress={() => void startReplay(replay)}
             />
@@ -214,9 +218,9 @@ export default function HomeScreen() {
         ) : null}
         <Animated.View
           entering={rise({ delay: SHORTCUTS_AT + SHORTCUT_STAGGER, reduced: quiet })}
-          style={styles.row}
+          style={largeFont ? styles.column : styles.row}
         >
-          <View style={styles.flex}>
+          <View style={largeFont ? undefined : styles.flex}>
             <Button
               label={t('home.categories')}
               variant="secondary"
@@ -225,7 +229,7 @@ export default function HomeScreen() {
               onPress={() => router.push('/categories')}
             />
           </View>
-          <View style={styles.flex}>
+          <View style={largeFont ? undefined : styles.flex}>
             <Button
               label={t('home.create')}
               variant="secondary"
@@ -260,6 +264,7 @@ const styles = StyleSheet.create({
     borderColor: colors.hairline,
   },
   row: { flexDirection: 'row', gap: spacing.md },
+  column: { gap: spacing.md },
   flex: { flex: 1 },
   shortcuts: { gap: spacing.md },
 });
