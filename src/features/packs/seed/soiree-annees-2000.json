@@ -10,7 +10,7 @@
     "region": "party",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "annees-2000",
@@ -19,7 +19,7 @@
           "en": "The 2000s"
         },
         "emoji": "📟",
-        "color": "orchid",
+        "color": "lilac",
         "tags": [
           "soiree",
           "nostalgie"

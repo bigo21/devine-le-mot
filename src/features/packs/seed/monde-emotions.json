@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "emotions",
@@ -19,7 +19,7 @@
           "en": "Emotions and feelings"
         },
         "emoji": "🎭",
-        "color": "indigo",
+        "color": "slate",
         "tags": [
           "universel"
         ],

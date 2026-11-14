@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "actions",
@@ -19,7 +19,7 @@
           "en": "Actions to mime"
         },
         "emoji": "🤸",
-        "color": "indigo",
+        "color": "slate",
         "tags": [
           "universel"
         ],

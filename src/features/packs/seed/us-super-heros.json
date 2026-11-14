@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "super-heros",
@@ -19,7 +19,7 @@
           "en": "Superheroes"
         },
         "emoji": "🦸",
-        "color": "slate",
+        "color": "lagoon",
         "tags": [
           "personnages"
         ],

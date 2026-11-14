@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "metiers",
@@ -19,7 +19,7 @@
           "en": "Jobs"
         },
         "emoji": "👷",
-        "color": "lagoon",
+        "color": "indigo",
         "tags": [
           "universel"
         ],

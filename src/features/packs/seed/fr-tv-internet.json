@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "tv-internet",
@@ -19,7 +19,7 @@
           "en": "TV and internet personalities"
         },
         "emoji": "📺",
-        "color": "slate",
+        "color": "lagoon",
         "tags": [
           "personnalites",
           "tele"

@@ -4,22 +4,22 @@
   "pack": {
     "id": "cm-villes-quartiers",
     "name": {
-      "fr": "Villes, quartiers et lieux",
-      "en": "Cities, districts and places"
+      "fr": "Villes et quartiers",
+      "en": "Cities and districts"
     },
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 5,
     "categories": [
       {
         "id": "villes-quartiers",
         "name": {
-          "fr": "Villes, quartiers et lieux",
-          "en": "Cities, districts and places"
+          "fr": "Villes et quartiers",
+          "en": "Cities and districts"
         },
         "emoji": "🏙️",
-        "color": "indigo",
+        "color": "slate",
         "tags": [
           "lieux"
         ],
@@ -463,15 +463,6 @@
               "quartier",
               "Yaoundé",
               "ambiance"
-            ]
-          },
-          {
-            "text": "Mokolo (marché)",
-            "difficulty": 1,
-            "forbidden": [
-              "Yaoundé",
-              "foule",
-              "commerçants"
             ]
           },
           {
@@ -934,282 +925,255 @@
             ]
           },
           {
-            "text": "Pont du Wouri",
+            "text": "Bandjoun",
             "difficulty": 1,
             "forbidden": [
-              "Douala",
-              "fleuve",
-              "Bonabéri"
+              "chefferie",
+              "Ouest",
+              "Koung-Khi"
             ]
           },
           {
-            "text": "Mont Cameroun",
-            "difficulty": 1,
-            "forbidden": [
-              "volcan",
-              "Buea",
-              "Course de l'Espoir"
-            ]
-          },
-          {
-            "text": "Lac Nyos",
+            "text": "Baham",
             "difficulty": 2,
             "forbidden": [
-              "catastrophe",
-              "gaz",
-              "1986"
+              "Ouest",
+              "Hauts-Plateaux",
+              "chefferie"
             ]
           },
           {
-            "text": "Chutes de la Lobé",
+            "text": "Mfou",
             "difficulty": 2,
             "forbidden": [
-              "Kribi",
-              "mer",
-              "cascade"
-            ]
-          },
-          {
-            "text": "Mont Manengouba",
-            "difficulty": 3,
-            "forbidden": [
-              "lacs jumeaux",
-              "volcan",
-              "Bangem"
-            ]
-          },
-          {
-            "text": "Parc de Waza",
-            "difficulty": 2,
-            "forbidden": [
-              "Extrême-Nord",
-              "animaux",
-              "éléphants"
-            ]
-          },
-          {
-            "text": "Parc de la Bénoué",
-            "difficulty": 3,
-            "forbidden": [
-              "Nord",
-              "animaux",
-              "safari"
-            ]
-          },
-          {
-            "text": "Réserve du Dja",
-            "difficulty": 3,
-            "forbidden": [
-              "forêt",
-              "UNESCO",
-              "Est"
-            ]
-          },
-          {
-            "text": "Rhumsiki",
-            "difficulty": 2,
-            "forbidden": [
-              "Extrême-Nord",
-              "pics",
-              "paysage"
-            ]
-          },
-          {
-            "text": "Lac Barombi Mbo",
-            "difficulty": 3,
-            "forbidden": [
-              "Kumba",
-              "cratère",
-              "eau"
-            ]
-          },
-          {
-            "text": "Monts Mandara",
-            "difficulty": 2,
-            "forbidden": [
-              "Extrême-Nord",
-              "montagnes",
-              "Mokolo"
-            ]
-          },
-          {
-            "text": "Sanaga",
-            "difficulty": 1,
-            "forbidden": [
-              "fleuve",
-              "plus long",
-              "Edéa"
-            ]
-          },
-          {
-            "text": "Wouri",
-            "difficulty": 1,
-            "forbidden": [
-              "fleuve",
-              "Douala",
-              "pont"
-            ]
-          },
-          {
-            "text": "Nyong",
-            "difficulty": 2,
-            "forbidden": [
-              "fleuve",
+              "Méfou",
               "Centre",
-              "Mbalmayo"
+              "Yaoundé"
             ]
           },
           {
-            "text": "Logone",
+            "text": "Soa",
+            "difficulty": 2,
+            "forbidden": [
+              "université",
+              "Centre",
+              "Yaoundé"
+            ]
+          },
+          {
+            "text": "Eséka",
+            "difficulty": 2,
+            "forbidden": [
+              "train",
+              "Nyong-et-Kellé",
+              "gare"
+            ]
+          },
+          {
+            "text": "Nanga-Eboko",
+            "difficulty": 2,
+            "forbidden": [
+              "Haute-Sanaga",
+              "Centre",
+              "Sanaga"
+            ]
+          },
+          {
+            "text": "Ambam",
+            "difficulty": 2,
+            "forbidden": [
+              "Sud",
+              "Gabon",
+              "frontière"
+            ]
+          },
+          {
+            "text": "Kye-Ossi",
+            "difficulty": 2,
+            "forbidden": [
+              "frontière",
+              "Guinée équatoriale",
+              "Gabon"
+            ]
+          },
+          {
+            "text": "Garoua-Boulaï",
             "difficulty": 3,
             "forbidden": [
-              "fleuve",
-              "Tchad",
-              "Extrême-Nord"
+              "Est",
+              "Centrafrique",
+              "frontière"
             ]
           },
           {
-            "text": "Lac Tchad",
-            "difficulty": 2,
+            "text": "Bélabo",
+            "difficulty": 3,
             "forbidden": [
-              "Extrême-Nord",
-              "frontière",
-              "eau"
+              "Est",
+              "gare",
+              "Sanaga"
             ]
           },
           {
-            "text": "Palais des Congrès",
-            "difficulty": 2,
+            "text": "Ndop",
+            "difficulty": 3,
             "forbidden": [
-              "Yaoundé",
-              "colline",
-              "conférences"
+              "Nord-Ouest",
+              "plaine",
+              "riz"
             ]
           },
           {
-            "text": "Monument de la Réunification",
-            "difficulty": 1,
+            "text": "Nkambé",
+            "difficulty": 3,
             "forbidden": [
-              "Yaoundé",
-              "spirale",
-              "1961"
+              "Nord-Ouest",
+              "Donga-Mantung",
+              "montagne"
             ]
           },
           {
-            "text": "Boulevard du 20 Mai",
-            "difficulty": 2,
+            "text": "Campo",
+            "difficulty": 3,
             "forbidden": [
-              "Yaoundé",
-              "défilé",
-              "fête nationale"
+              "Sud",
+              "plage",
+              "parc"
             ]
           },
           {
-            "text": "Marché Central",
-            "difficulty": 1,
-            "forbidden": [
-              "Douala",
-              "Yaoundé",
-              "commerce"
-            ]
-          },
-          {
-            "text": "Marché Sandaga",
-            "difficulty": 2,
-            "forbidden": [
-              "Douala",
-              "vivres",
-              "commerçants"
-            ]
-          },
-          {
-            "text": "Musée national",
+            "text": "Ngousso",
             "difficulty": 2,
             "forbidden": [
               "Yaoundé",
-              "ancien palais",
-              "histoire"
+              "hôpital",
+              "quartier"
             ]
           },
           {
-            "text": "Hippodrome",
+            "text": "Etoa-Meki",
+            "difficulty": 2,
+            "forbidden": [
+              "Yaoundé",
+              "quartier",
+              "Centre"
+            ]
+          },
+          {
+            "text": "Elig-Edzoa",
+            "difficulty": 2,
+            "forbidden": [
+              "Yaoundé",
+              "quartier",
+              "Centre"
+            ]
+          },
+          {
+            "text": "Ekié",
             "difficulty": 3,
             "forbidden": [
               "Yaoundé",
               "quartier",
-              "courses"
+              "Centre"
             ]
           },
           {
-            "text": "Carrefour Warda",
+            "text": "Efoulan",
             "difficulty": 2,
             "forbidden": [
               "Yaoundé",
-              "centre",
-              "rond-point"
+              "mairie",
+              "quartier"
             ]
           },
           {
-            "text": "Poste centrale",
-            "difficulty": 2,
+            "text": "Obobogo",
+            "difficulty": 3,
             "forbidden": [
               "Yaoundé",
-              "centre-ville",
-              "carrefour"
+              "quartier",
+              "Centre"
             ]
           },
           {
-            "text": "Aéroport de Nsimalen",
-            "difficulty": 2,
+            "text": "Nkolmesseng",
+            "difficulty": 3,
             "forbidden": [
               "Yaoundé",
-              "avions",
-              "international"
+              "quartier",
+              "Centre"
             ]
           },
           {
-            "text": "Gare de Bessengué",
+            "text": "Nkol-Eton",
+            "difficulty": 3,
+            "forbidden": [
+              "Yaoundé",
+              "quartier",
+              "Centre"
+            ]
+          },
+          {
+            "text": "Ndogpassi",
             "difficulty": 3,
             "forbidden": [
               "Douala",
-              "train",
-              "voyageurs"
+              "quartier",
+              "Littoral"
             ]
           },
           {
-            "text": "Port autonome de Douala",
-            "difficulty": 2,
-            "forbidden": [
-              "bateaux",
-              "conteneurs",
-              "Wouri"
-            ]
-          },
-          {
-            "text": "Université de Yaoundé I",
-            "difficulty": 2,
-            "forbidden": [
-              "Ngoa-Ekellé",
-              "étudiants",
-              "amphithéâtre"
-            ]
-          },
-          {
-            "text": "Stade Ahmadou Ahidjo",
-            "difficulty": 1,
-            "forbidden": [
-              "Omnisport",
-              "Yaoundé",
-              "Lions"
-            ]
-          },
-          {
-            "text": "Stade de la Réunification",
+            "text": "Logbaba",
             "difficulty": 2,
             "forbidden": [
               "Douala",
-              "Bépanda",
-              "Lions"
+              "quartier",
+              "Littoral"
+            ]
+          },
+          {
+            "text": "Nkololoun",
+            "difficulty": 3,
+            "forbidden": [
+              "Douala",
+              "marché",
+              "quartier"
+            ]
+          },
+          {
+            "text": "Bassa (Douala)",
+            "difficulty": 3,
+            "forbidden": [
+              "zone industrielle",
+              "Littoral",
+              "quartier"
+            ]
+          },
+          {
+            "text": "Cité SIC",
+            "difficulty": 2,
+            "forbidden": [
+              "Douala",
+              "logements",
+              "quartier"
+            ]
+          },
+          {
+            "text": "Beedi",
+            "difficulty": 3,
+            "forbidden": [
+              "Douala",
+              "quartier",
+              "Littoral"
+            ]
+          },
+          {
+            "text": "Ange Raphaël",
+            "difficulty": 2,
+            "forbidden": [
+              "Douala",
+              "quartier",
+              "carrefour"
             ]
           }
         ]

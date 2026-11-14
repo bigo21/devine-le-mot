@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "marques",
@@ -19,7 +19,7 @@
           "en": "Global brands"
         },
         "emoji": "🛍️",
-        "color": "orchid",
+        "color": "lilac",
         "tags": [
           "marques"
         ],

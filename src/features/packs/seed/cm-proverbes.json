@@ -1,0 +1,381 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-proverbes",
+    "name": {
+      "fr": "Proverbes et dictons",
+      "en": "Proverbs and sayings"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 2,
+    "categories": [
+      {
+        "id": "proverbes",
+        "name": {
+          "fr": "Proverbes et dictons",
+          "en": "Proverbs and sayings"
+        },
+        "emoji": "🦉",
+        "color": "lagoon",
+        "tags": [
+          "langue",
+          "expressions"
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "one-word",
+          "forbidden",
+          "mix"
+        ],
+        "words": [
+          {
+            "text": "Le bouc broute là où il est attaché",
+            "difficulty": 1,
+            "forbidden": [
+              "chèvre",
+              "profiter",
+              "poste"
+            ]
+          },
+          {
+            "text": "Cabri mort n'a plus peur du couteau",
+            "difficulty": 1,
+            "forbidden": [
+              "chèvre",
+              "danger",
+              "perdu"
+            ]
+          },
+          {
+            "text": "Seul on va vite, ensemble on va loin",
+            "difficulty": 1,
+            "forbidden": [
+              "équipe",
+              "groupe",
+              "rapide"
+            ]
+          },
+          {
+            "text": "La pluie ne tombe pas sur un seul toit",
+            "difficulty": 2,
+            "forbidden": [
+              "malheur",
+              "tout le monde",
+              "maison"
+            ]
+          },
+          {
+            "text": "Le bois dans l'eau ne devient pas caïman",
+            "difficulty": 2,
+            "forbidden": [
+              "crocodile",
+              "rivière",
+              "changer"
+            ]
+          },
+          {
+            "text": "Un seul doigt ne lave pas le visage",
+            "difficulty": 2,
+            "forbidden": [
+              "main",
+              "ensemble",
+              "aide"
+            ]
+          },
+          {
+            "text": "L'eau chaude n'oublie pas qu'elle a été froide",
+            "difficulty": 2,
+            "forbidden": [
+              "souvenir",
+              "origine",
+              "humble"
+            ]
+          },
+          {
+            "text": "L'arbre qui tombe fait plus de bruit",
+            "difficulty": 2,
+            "forbidden": [
+              "forêt",
+              "pousse",
+              "silence"
+            ]
+          },
+          {
+            "text": "Qui rame avec le courant fait rire les caïmans",
+            "difficulty": 3,
+            "forbidden": [
+              "pirogue",
+              "crocodiles",
+              "facile"
+            ]
+          },
+          {
+            "text": "Le mensonge donne des fleurs, pas de fruits",
+            "difficulty": 2,
+            "forbidden": [
+              "vérité",
+              "récolte",
+              "mentir"
+            ]
+          },
+          {
+            "text": "Qui ne voyage pas croit que sa mère cuisine le mieux",
+            "difficulty": 2,
+            "forbidden": [
+              "voyager",
+              "maman",
+              "repas"
+            ]
+          },
+          {
+            "text": "On ne cache pas le soleil avec un doigt",
+            "difficulty": 2,
+            "forbidden": [
+              "main",
+              "vérité",
+              "évident"
+            ]
+          },
+          {
+            "text": "La nuit a des oreilles",
+            "difficulty": 2,
+            "forbidden": [
+              "secret",
+              "écouter",
+              "sombre"
+            ]
+          },
+          {
+            "text": "Celui qui suit l'éléphant ne se mouille pas",
+            "difficulty": 3,
+            "forbidden": [
+              "rosée",
+              "grand",
+              "protégé"
+            ]
+          },
+          {
+            "text": "Petit poisson deviendra grand",
+            "difficulty": 1,
+            "forbidden": [
+              "enfant",
+              "grandir",
+              "patience"
+            ]
+          },
+          {
+            "text": "Qui va à la chasse perd sa place",
+            "difficulty": 1,
+            "forbidden": [
+              "chaise",
+              "partir",
+              "revenir"
+            ]
+          },
+          {
+            "text": "Ventre affamé n'a point d'oreilles",
+            "difficulty": 1,
+            "forbidden": [
+              "faim",
+              "manger",
+              "écouter"
+            ]
+          },
+          {
+            "text": "Le chien aboie, la caravane passe",
+            "difficulty": 2,
+            "forbidden": [
+              "critiques",
+              "avancer",
+              "désert"
+            ]
+          },
+          {
+            "text": "Il n'y a pas de fumée sans feu",
+            "difficulty": 1,
+            "forbidden": [
+              "rumeur",
+              "vrai",
+              "flamme"
+            ]
+          },
+          {
+            "text": "Qui veut aller loin ménage sa monture",
+            "difficulty": 2,
+            "forbidden": [
+              "cheval",
+              "repos",
+              "voyage"
+            ]
+          },
+          {
+            "text": "Qui sème le vent récolte la tempête",
+            "difficulty": 2,
+            "forbidden": [
+              "cultiver",
+              "conséquence",
+              "orage"
+            ]
+          },
+          {
+            "text": "Le temps, c'est de l'argent",
+            "difficulty": 1,
+            "forbidden": [
+              "heure",
+              "perdre",
+              "riche"
+            ]
+          },
+          {
+            "text": "Œil pour œil, dent pour dent",
+            "difficulty": 1,
+            "forbidden": [
+              "vengeance",
+              "rendre",
+              "pareil"
+            ]
+          },
+          {
+            "text": "La parole est d'argent, le silence est d'or",
+            "difficulty": 2,
+            "forbidden": [
+              "parler",
+              "taire",
+              "bijou"
+            ]
+          },
+          {
+            "text": "Ne vends pas la peau de l'ours avant de l'avoir tué",
+            "difficulty": 2,
+            "forbidden": [
+              "chasse",
+              "trop tôt",
+              "animal"
+            ]
+          },
+          {
+            "text": "Les paroles s'envolent, les écrits restent",
+            "difficulty": 2,
+            "forbidden": [
+              "papier",
+              "contrat",
+              "mots"
+            ]
+          },
+          {
+            "text": "Chacun voit midi à sa porte",
+            "difficulty": 2,
+            "forbidden": [
+              "égoïste",
+              "heure",
+              "maison"
+            ]
+          },
+          {
+            "text": "À chaque jour suffit sa peine",
+            "difficulty": 2,
+            "forbidden": [
+              "demain",
+              "souci",
+              "journée"
+            ]
+          },
+          {
+            "text": "Qui ne risque rien n'a rien",
+            "difficulty": 1,
+            "forbidden": [
+              "oser",
+              "gagner",
+              "danger"
+            ]
+          },
+          {
+            "text": "L'union fait la force",
+            "difficulty": 1,
+            "forbidden": [
+              "ensemble",
+              "équipe",
+              "unité"
+            ]
+          },
+          {
+            "text": "Tout ce qui brille n'est pas or",
+            "difficulty": 1,
+            "forbidden": [
+              "bijou",
+              "apparence",
+              "faux"
+            ]
+          },
+          {
+            "text": "Il faut battre le fer pendant qu'il est chaud",
+            "difficulty": 2,
+            "forbidden": [
+              "occasion",
+              "forgeron",
+              "vite"
+            ]
+          },
+          {
+            "text": "Un tiens vaut mieux que deux tu l'auras",
+            "difficulty": 2,
+            "forbidden": [
+              "promesse",
+              "posséder",
+              "main"
+            ]
+          },
+          {
+            "text": "L'appétit vient en mangeant",
+            "difficulty": 1,
+            "forbidden": [
+              "faim",
+              "repas",
+              "plus"
+            ]
+          },
+          {
+            "text": "Bien mal acquis ne profite jamais",
+            "difficulty": 2,
+            "forbidden": [
+              "voler",
+              "argent",
+              "punition"
+            ]
+          },
+          {
+            "text": "Aide-toi, le ciel t'aidera",
+            "difficulty": 2,
+            "forbidden": [
+              "Dieu",
+              "effort",
+              "travail"
+            ]
+          },
+          {
+            "text": "Comme on fait son lit, on se couche",
+            "difficulty": 2,
+            "forbidden": [
+              "dormir",
+              "conséquence",
+              "chambre"
+            ]
+          },
+          {
+            "text": "La vérité sort de la bouche des enfants",
+            "difficulty": 2,
+            "forbidden": [
+              "mentir",
+              "petit",
+              "franchise"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

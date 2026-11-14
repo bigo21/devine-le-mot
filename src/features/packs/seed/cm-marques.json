@@ -1,0 +1,527 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-marques",
+    "name": {
+      "fr": "Marques et produits du quotidien",
+      "en": "Everyday brands and products"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 2,
+    "categories": [
+      {
+        "id": "marques",
+        "name": {
+          "fr": "Marques et produits du quotidien",
+          "en": "Everyday brands and products"
+        },
+        "emoji": "🛒",
+        "color": "lilac",
+        "tags": [
+          "marques",
+          "quotidien"
+        ],
+        "words": [
+          {
+            "text": "33 Export",
+            "difficulty": 1,
+            "forbidden": [
+              "bière",
+              "Brasseries",
+              "trente-trois"
+            ]
+          },
+          {
+            "text": "Castel Beer",
+            "difficulty": 1,
+            "forbidden": [
+              "bière",
+              "Brasseries",
+              "bouteille"
+            ]
+          },
+          {
+            "text": "Beaufort",
+            "difficulty": 1,
+            "forbidden": [
+              "bière",
+              "Brasseries",
+              "Light"
+            ]
+          },
+          {
+            "text": "Mützig",
+            "difficulty": 1,
+            "forbidden": [
+              "bière",
+              "Brasseries",
+              "bouteille"
+            ]
+          },
+          {
+            "text": "Isenbeck",
+            "difficulty": 2,
+            "forbidden": [
+              "bière",
+              "Guinness Cameroun",
+              "bouteille"
+            ]
+          },
+          {
+            "text": "Malta Guinness",
+            "difficulty": 2,
+            "forbidden": [
+              "malt",
+              "sans alcool",
+              "noire"
+            ]
+          },
+          {
+            "text": "Top Pamplemousse",
+            "difficulty": 1,
+            "forbidden": [
+              "jus",
+              "sucrerie",
+              "orange"
+            ]
+          },
+          {
+            "text": "Top Ananas",
+            "difficulty": 1,
+            "forbidden": [
+              "jus",
+              "sucrerie",
+              "fruit"
+            ]
+          },
+          {
+            "text": "Djino",
+            "difficulty": 1,
+            "forbidden": [
+              "cocktail",
+              "fruits",
+              "sucrerie"
+            ]
+          },
+          {
+            "text": "Supermont",
+            "difficulty": 1,
+            "forbidden": [
+              "eau minérale",
+              "bouteille",
+              "source"
+            ]
+          },
+          {
+            "text": "Tangui",
+            "difficulty": 1,
+            "forbidden": [
+              "eau minérale",
+              "bouteille",
+              "source"
+            ]
+          },
+          {
+            "text": "Brasseries du Cameroun",
+            "difficulty": 1,
+            "forbidden": [
+              "bière",
+              "SABC",
+              "usine"
+            ]
+          },
+          {
+            "text": "Bonnet Rouge",
+            "difficulty": 2,
+            "forbidden": [
+              "lait",
+              "poudre",
+              "boîte"
+            ]
+          },
+          {
+            "text": "Jumbo",
+            "difficulty": 1,
+            "forbidden": [
+              "cube",
+              "bouillon",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Chococam",
+            "difficulty": 1,
+            "forbidden": [
+              "chocolat",
+              "Douala",
+              "usine"
+            ]
+          },
+          {
+            "text": "Mambo",
+            "difficulty": 1,
+            "forbidden": [
+              "chocolat",
+              "barre",
+              "enfants"
+            ]
+          },
+          {
+            "text": "Tartina",
+            "difficulty": 1,
+            "forbidden": [
+              "pâte à tartiner",
+              "chocolat",
+              "pain"
+            ]
+          },
+          {
+            "text": "Diamaor",
+            "difficulty": 2,
+            "forbidden": [
+              "huile",
+              "coton",
+              "cuisine"
+            ]
+          },
+          {
+            "text": "Camtel",
+            "difficulty": 1,
+            "forbidden": [
+              "téléphone",
+              "internet",
+              "opérateur"
+            ]
+          },
+          {
+            "text": "Nexttel",
+            "difficulty": 1,
+            "forbidden": [
+              "opérateur",
+              "téléphone",
+              "Viettel"
+            ]
+          },
+          {
+            "text": "Blue (Camtel)",
+            "difficulty": 2,
+            "forbidden": [
+              "opérateur",
+              "mobile",
+              "forfait"
+            ]
+          },
+          {
+            "text": "MTN MoMo",
+            "difficulty": 1,
+            "forbidden": [
+              "Mobile Money",
+              "transfert",
+              "jaune"
+            ]
+          },
+          {
+            "text": "Express Union",
+            "difficulty": 1,
+            "forbidden": [
+              "transfert",
+              "agence",
+              "argent"
+            ]
+          },
+          {
+            "text": "Afriland First Bank",
+            "difficulty": 2,
+            "forbidden": [
+              "banque",
+              "compte",
+              "agence"
+            ]
+          },
+          {
+            "text": "BICEC",
+            "difficulty": 2,
+            "forbidden": [
+              "banque",
+              "compte",
+              "agence"
+            ]
+          },
+          {
+            "text": "Société Générale Cameroun",
+            "difficulty": 2,
+            "forbidden": [
+              "banque",
+              "SGC",
+              "agence"
+            ]
+          },
+          {
+            "text": "Ecobank",
+            "difficulty": 2,
+            "forbidden": [
+              "banque",
+              "compte",
+              "Afrique"
+            ]
+          },
+          {
+            "text": "UBA",
+            "difficulty": 3,
+            "forbidden": [
+              "banque",
+              "Nigeria",
+              "compte"
+            ]
+          },
+          {
+            "text": "Eneo",
+            "difficulty": 1,
+            "forbidden": [
+              "électricité",
+              "coupure",
+              "courant"
+            ]
+          },
+          {
+            "text": "Camwater",
+            "difficulty": 1,
+            "forbidden": [
+              "robinet",
+              "facture",
+              "coupure"
+            ]
+          },
+          {
+            "text": "Camrail",
+            "difficulty": 1,
+            "forbidden": [
+              "train",
+              "gare",
+              "voyageurs"
+            ]
+          },
+          {
+            "text": "Camair-Co",
+            "difficulty": 1,
+            "forbidden": [
+              "avion",
+              "compagnie",
+              "vol"
+            ]
+          },
+          {
+            "text": "Tradex",
+            "difficulty": 1,
+            "forbidden": [
+              "station-service",
+              "carburant",
+              "essence"
+            ]
+          },
+          {
+            "text": "Sonara",
+            "difficulty": 2,
+            "forbidden": [
+              "raffinerie",
+              "Limbé",
+              "pétrole"
+            ]
+          },
+          {
+            "text": "SODECOTON",
+            "difficulty": 2,
+            "forbidden": [
+              "coton",
+              "Nord",
+              "Garoua"
+            ]
+          },
+          {
+            "text": "CDC",
+            "difficulty": 2,
+            "forbidden": [
+              "plantations",
+              "Sud-Ouest",
+              "bananes"
+            ]
+          },
+          {
+            "text": "Cimencam",
+            "difficulty": 2,
+            "forbidden": [
+              "ciment",
+              "sacs",
+              "construction"
+            ]
+          },
+          {
+            "text": "Campost",
+            "difficulty": 2,
+            "forbidden": [
+              "poste",
+              "courrier",
+              "colis"
+            ]
+          },
+          {
+            "text": "Dovv",
+            "difficulty": 2,
+            "forbidden": [
+              "supermarché",
+              "courses",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Santa Lucia",
+            "difficulty": 2,
+            "forbidden": [
+              "supermarché",
+              "courses",
+              "magasin"
+            ]
+          },
+          {
+            "text": "Mahima",
+            "difficulty": 2,
+            "forbidden": [
+              "supermarché",
+              "Douala",
+              "courses"
+            ]
+          },
+          {
+            "text": "CRTV",
+            "difficulty": 1,
+            "forbidden": [
+              "télévision",
+              "radio",
+              "publique"
+            ]
+          },
+          {
+            "text": "Canal 2 International",
+            "difficulty": 2,
+            "forbidden": [
+              "télévision",
+              "chaîne",
+              "privée"
+            ]
+          },
+          {
+            "text": "Equinoxe TV",
+            "difficulty": 2,
+            "forbidden": [
+              "télévision",
+              "chaîne",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Vision 4",
+            "difficulty": 2,
+            "forbidden": [
+              "télévision",
+              "chaîne",
+              "privée"
+            ]
+          },
+          {
+            "text": "STV",
+            "difficulty": 2,
+            "forbidden": [
+              "télévision",
+              "Spectrum",
+              "chaîne"
+            ]
+          },
+          {
+            "text": "Cameroon Tribune",
+            "difficulty": 2,
+            "forbidden": [
+              "journal",
+              "quotidien",
+              "presse"
+            ]
+          },
+          {
+            "text": "Le Messager",
+            "difficulty": 3,
+            "forbidden": [
+              "journal",
+              "presse",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Mutations",
+            "difficulty": 3,
+            "forbidden": [
+              "journal",
+              "presse",
+              "quotidien"
+            ]
+          },
+          {
+            "text": "Buca Voyages",
+            "difficulty": 2,
+            "forbidden": [
+              "car",
+              "agence",
+              "bus"
+            ]
+          },
+          {
+            "text": "General Express",
+            "difficulty": 2,
+            "forbidden": [
+              "car",
+              "agence",
+              "bus"
+            ]
+          },
+          {
+            "text": "Touristique Express",
+            "difficulty": 2,
+            "forbidden": [
+              "car",
+              "agence",
+              "bus"
+            ]
+          },
+          {
+            "text": "Finexs Voyages",
+            "difficulty": 2,
+            "forbidden": [
+              "car",
+              "agence",
+              "bus"
+            ]
+          },
+          {
+            "text": "Nanfang",
+            "difficulty": 2,
+            "forbidden": [
+              "moto",
+              "bendskin",
+              "chinoise"
+            ]
+          },
+          {
+            "text": "Taxi jaune",
+            "difficulty": 1,
+            "forbidden": [
+              "ramassage",
+              "dépôt",
+              "course"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

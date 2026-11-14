@@ -68,7 +68,7 @@ Organisées en **packs régionaux** : la **région est définie sur le pack** et
 **Contenu intégré** : catégories en lecture seule (« Dupliquer pour modifier » crée une copie utilisateur). Chaque mot a **exactement 3 mots interdits** (vérifié par un test sur les fichiers de seed), et les catégories de personnalités déclarent `imitation` dans `variants`.
 
 ### 🇨🇲 Cameroun
-Artistes et musiciens camerounais · Plats et boissons camerounais · Villes et quartiers · Expressions et camfranglais · Footballeurs (Lions Indomptables, Lionnes) · Marques et produits du quotidien · Lieux et monuments · Danses et rythmes (makossa, bikutsi, bend skin…) · Proverbes (à compléter) · Séries, films et humoristes
+Artistes et musiciens camerounais · Plats et boissons camerounais · Villes et quartiers · Expressions et camfranglais · Footballeurs (Lions Indomptables, Lionnes) · Marques et produits du quotidien · Lieux et monuments (sites, monuments, parcs et ouvrages ; les villes et quartiers restent dans leur catégorie, sans doublon) · Danses et rythmes (makossa, bikutsi, bend skin…) · Proverbes et dictons (versions courtes, 60 caractères au plus, sans reprendre les proverbes déjà dans « Expressions françaises ») · Séries, films et humoristes
 
 ### 🌍 Afrique
 Artistes africains (afrobeats, coupé-décalé, ndombolo, etc.) · Pays et capitales africaines · Plats africains · Footballeurs africains · Personnalités historiques africaines · Animaux de la savane · Nollywood et séries africaines

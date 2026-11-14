@@ -1,0 +1,251 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "cm-ecrans-humour",
+    "name": {
+      "fr": "Séries, films et humoristes",
+      "en": "Shows, films and comedians"
+    },
+    "region": "cm",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 2,
+    "categories": [
+      {
+        "id": "ecrans-humour",
+        "name": {
+          "fr": "Séries, films et humoristes",
+          "en": "Shows, films and comedians"
+        },
+        "emoji": "😂",
+        "color": "plum",
+        "tags": [
+          "personnalites",
+          "cinema",
+          "humour"
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ],
+        "words": [
+          {
+            "text": "Jean-Michel Kankan",
+            "difficulty": 1,
+            "forbidden": [
+              "humoriste",
+              "sketch",
+              "Baham"
+            ]
+          },
+          {
+            "text": "Major Asse",
+            "difficulty": 1,
+            "forbidden": [
+              "humoriste",
+              "sketch",
+              "comédien"
+            ]
+          },
+          {
+            "text": "Daniel Ndo",
+            "difficulty": 1,
+            "forbidden": [
+              "humoriste",
+              "comédien",
+              "théâtre"
+            ]
+          },
+          {
+            "text": "Moustik Karismatik",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "sketch",
+              "scène"
+            ]
+          },
+          {
+            "text": "Ulrich Takam",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "stand-up",
+              "Parlement du rire"
+            ]
+          },
+          {
+            "text": "Essindi Mindja",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "sketch",
+              "comédien"
+            ]
+          },
+          {
+            "text": "Valéry Ndongo",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "stand-up",
+              "scène"
+            ]
+          },
+          {
+            "text": "Le Parlement du rire",
+            "difficulty": 2,
+            "forbidden": [
+              "émission",
+              "humour",
+              "Canal 2"
+            ]
+          },
+          {
+            "text": "Jean-Pierre Bekolo",
+            "difficulty": 2,
+            "forbidden": [
+              "réalisateur",
+              "Quartier Mozart",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Jean-Marie Teno",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "documentaire",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Bassek Ba Kobhio",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "Écrans Noirs",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Jean-Pierre Dikongué-Pipa",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "Muna Moto",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Daniel Kamwa",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "Pousse-Pousse",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Quartier Mozart",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "Bekolo",
+              "Yaoundé"
+            ]
+          },
+          {
+            "text": "Les Saignantes",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Bekolo",
+              "science-fiction"
+            ]
+          },
+          {
+            "text": "Muna Moto",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Dikongué-Pipa",
+              "enfant"
+            ]
+          },
+          {
+            "text": "Le Prix de la liberté",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Dikongué-Pipa",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Afrique, je te plumerai",
+            "difficulty": 3,
+            "forbidden": [
+              "documentaire",
+              "Teno",
+              "colonisation"
+            ]
+          },
+          {
+            "text": "Clando (film)",
+            "difficulty": 3,
+            "forbidden": [
+              "Teno",
+              "taxi",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Sango Malo",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "instituteur",
+              "Kobhio"
+            ]
+          },
+          {
+            "text": "Pousse-Pousse",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Kamwa",
+              "mariage"
+            ]
+          },
+          {
+            "text": "Écrans Noirs",
+            "difficulty": 2,
+            "forbidden": [
+              "festival",
+              "cinéma",
+              "Yaoundé"
+            ]
+          },
+          {
+            "text": "Foyer polygamique",
+            "difficulty": 2,
+            "forbidden": [
+              "série",
+              "épouses",
+              "famille"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

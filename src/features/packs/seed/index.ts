@@ -7,9 +7,13 @@ import afPaysCapitales from './af-pays-capitales.json';
 import afPlats from './af-plats.json';
 import camerounCuisine from './cameroun-cuisine.json';
 import cmArtistes from './cm-artistes.json';
+import cmEcransHumour from './cm-ecrans-humour.json';
 import cmExpressions from './cm-expressions.json';
 import cmFootballeurs from './cm-footballeurs.json';
+import cmLieux from './cm-lieux.json';
+import cmMarques from './cm-marques.json';
 import cmMusique from './cm-musique.json';
+import cmProverbes from './cm-proverbes.json';
 import cmVillesQuartiers from './cm-villes-quartiers.json';
 import frChanteurs from './fr-chanteurs.json';
 import frExpressions from './fr-expressions.json';
@@ -50,6 +54,10 @@ export const builtinPackFiles: readonly unknown[] = [
   cmVillesQuartiers,
   cmExpressions,
   cmMusique,
+  cmLieux,
+  cmMarques,
+  cmProverbes,
+  cmEcransHumour,
   afPaysCapitales,
   afArtistes,
   afPlats,

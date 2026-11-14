@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "films",
@@ -19,7 +19,7 @@
           "en": "French films"
         },
         "emoji": "🎬",
-        "color": "plum",
+        "color": "orchid",
         "tags": [
           "cinema"
         ],
