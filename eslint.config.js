@@ -28,4 +28,10 @@ module.exports = defineConfig([
       ],
     },
   },
+  {
+    // Scènes @react-three/fiber : les propriétés three.js (position, args, roughness…) ne sont
+    // pas des attributs HTML ; la règle ne s'applique pas à ce JSX.
+    files: ['src/features/tutorial/**/*.tsx'],
+    rules: { 'react/no-unknown-property': 'off' },
+  },
 ]);

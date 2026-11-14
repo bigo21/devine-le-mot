@@ -9,6 +9,7 @@ export const fr = {
     close: 'Fermer',
   },
   screens: {
+    devThree: 'Test 3D (dev)',
     home: 'Accueil',
     categories: 'Catégories',
     categoryDetail: 'Catégorie',
@@ -226,6 +227,9 @@ export const fr = {
       'Détails techniques : angle {{angle}}, référence {{reference}}, écart {{delta}}, orientation {{orientation}}',
   },
   dev: {
+    fps: 'Moyenne {{average}} fps · pire image {{worst}} fps · seconde la plus lente {{lowest}} fps',
+    fpsWaiting: 'Mesure en cours…',
+    threeHint: 'Incline le téléphone : le téléphone 3D doit suivre. Objectif 60 fps, 30 minimum.',
     skiaHint:
       'Si le dégradé s’affiche et que le disque respire, Skia et Reanimated fonctionnent dans ce build.',
   },

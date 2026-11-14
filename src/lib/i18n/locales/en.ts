@@ -10,6 +10,7 @@ export const en: Translation = {
     close: 'Close',
   },
   screens: {
+    devThree: '3D test (dev)',
     home: 'Home',
     categories: 'Categories',
     categoryDetail: 'Category',
@@ -226,6 +227,9 @@ export const en: Translation = {
       'Technical details: angle {{angle}}, reference {{reference}}, offset {{delta}}, orientation {{orientation}}',
   },
   dev: {
+    fps: 'Average {{average}} fps · worst frame {{worst}} fps · slowest second {{lowest}} fps',
+    fpsWaiting: 'Measuring…',
+    threeHint: 'Tilt the phone: the 3D phone should follow. Target 60 fps, 30 minimum.',
     skiaHint:
       'If the gradient shows and the disc breathes, Skia and Reanimated work in this build.',
   },

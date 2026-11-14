@@ -21,6 +21,7 @@ const screens: { href: Href; key: keyof Translation['screens'] }[] = [
   { href: '/dev/ui', key: 'devUi' },
   { href: '/dev/tilt', key: 'devTilt' },
   { href: '/dev/skia', key: 'devSkia' },
+  { href: '/dev/three', key: 'devThree' },
 ];
 
 export default function HomeScreen() {
