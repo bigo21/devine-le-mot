@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 4,
+    "version": 5,
     "categories": [
       {
         "id": "expressions",
@@ -427,6 +427,294 @@
               "résignation",
               "fatalité",
               "haussement d'épaules"
+            ]
+          },
+          {
+            "text": "Ndomo",
+            "difficulty": 2,
+            "forbidden": [
+              "coup",
+              "bagarre",
+              "frapper"
+            ]
+          },
+          {
+            "text": "Nyè",
+            "difficulty": 2,
+            "forbidden": [
+              "regarder",
+              "voir",
+              "yeux"
+            ]
+          },
+          {
+            "text": "Mbout",
+            "difficulty": 2,
+            "forbidden": [
+              "nul",
+              "faible",
+              "incapable"
+            ]
+          },
+          {
+            "text": "Ngata",
+            "difficulty": 2,
+            "forbidden": [
+              "prison",
+              "cellule",
+              "enfermé"
+            ]
+          },
+          {
+            "text": "Mbindi",
+            "difficulty": 2,
+            "forbidden": [
+              "petit",
+              "enfant",
+              "minuscule"
+            ]
+          },
+          {
+            "text": "Mouf",
+            "difficulty": 1,
+            "forbidden": [
+              "dégage",
+              "va-t-en",
+              "pars"
+            ]
+          },
+          {
+            "text": "Ngué",
+            "difficulty": 2,
+            "forbidden": [
+              "galère",
+              "misère",
+              "fauché"
+            ]
+          },
+          {
+            "text": "Kamer",
+            "difficulty": 1,
+            "forbidden": [
+              "Cameroun",
+              "pays",
+              "camerounais"
+            ]
+          },
+          {
+            "text": "Mater",
+            "difficulty": 1,
+            "forbidden": [
+              "maman",
+              "mère",
+              "parents"
+            ]
+          },
+          {
+            "text": "Pater",
+            "difficulty": 1,
+            "forbidden": [
+              "papa",
+              "père",
+              "parents"
+            ]
+          },
+          {
+            "text": "Bolo",
+            "difficulty": 2,
+            "forbidden": [
+              "travail",
+              "job",
+              "boulot"
+            ]
+          },
+          {
+            "text": "Do",
+            "difficulty": 2,
+            "forbidden": [
+              "argent",
+              "billets",
+              "payer"
+            ]
+          },
+          {
+            "text": "Un bâton",
+            "difficulty": 2,
+            "forbidden": [
+              "million",
+              "francs",
+              "argent"
+            ]
+          },
+          {
+            "text": "Kwatt",
+            "difficulty": 2,
+            "forbidden": [
+              "quartier",
+              "voisins",
+              "maison"
+            ]
+          },
+          {
+            "text": "Ndamba",
+            "difficulty": 2,
+            "forbidden": [
+              "football",
+              "ballon",
+              "jouer"
+            ]
+          },
+          {
+            "text": "Toli",
+            "difficulty": 3,
+            "forbidden": [
+              "histoire",
+              "raconter",
+              "ragot"
+            ]
+          },
+          {
+            "text": "Faroter",
+            "difficulty": 2,
+            "forbidden": [
+              "distribuer",
+              "billets",
+              "soirée"
+            ]
+          },
+          {
+            "text": "Mamy nyanga",
+            "difficulty": 2,
+            "forbidden": [
+              "coquette",
+              "élégante",
+              "femme"
+            ]
+          },
+          {
+            "text": "Tok",
+            "difficulty": 2,
+            "forbidden": [
+              "parler",
+              "pidgin",
+              "dire"
+            ]
+          },
+          {
+            "text": "Chakara",
+            "difficulty": 3,
+            "forbidden": [
+              "cassé",
+              "abîmé",
+              "pidgin"
+            ]
+          },
+          {
+            "text": "Pikin",
+            "difficulty": 2,
+            "forbidden": [
+              "enfant",
+              "pidgin",
+              "petit"
+            ]
+          },
+          {
+            "text": "Dash",
+            "difficulty": 2,
+            "forbidden": [
+              "cadeau",
+              "gratuit",
+              "pidgin"
+            ]
+          },
+          {
+            "text": "Sabi",
+            "difficulty": 2,
+            "forbidden": [
+              "savoir",
+              "connaître",
+              "pidgin"
+            ]
+          },
+          {
+            "text": "I di kam",
+            "difficulty": 2,
+            "forbidden": [
+              "arriver",
+              "attendre",
+              "pidgin"
+            ]
+          },
+          {
+            "text": "Small small",
+            "difficulty": 2,
+            "forbidden": [
+              "doucement",
+              "lentement",
+              "pidgin"
+            ]
+          },
+          {
+            "text": "Waka",
+            "difficulty": 2,
+            "forbidden": [
+              "marcher",
+              "pidgin",
+              "pieds"
+            ]
+          },
+          {
+            "text": "On est ensemble",
+            "difficulty": 1,
+            "forbidden": [
+              "solidarité",
+              "au revoir",
+              "frère"
+            ]
+          },
+          {
+            "text": "Manger l'argent",
+            "difficulty": 1,
+            "forbidden": [
+              "détourner",
+              "voler",
+              "caisse"
+            ]
+          },
+          {
+            "text": "Bonne arrivée",
+            "difficulty": 1,
+            "forbidden": [
+              "bienvenue",
+              "voyage",
+              "accueil"
+            ]
+          },
+          {
+            "text": "Gendarme couché",
+            "difficulty": 1,
+            "forbidden": [
+              "ralentisseur",
+              "dos-d'âne",
+              "route"
+            ]
+          },
+          {
+            "text": "Call-box",
+            "difficulty": 2,
+            "forbidden": [
+              "téléphone",
+              "cabine",
+              "rue"
+            ]
+          },
+          {
+            "text": "Mon pied, mon char",
+            "difficulty": 2,
+            "forbidden": [
+              "marcher",
+              "taxi",
+              "voiture"
             ]
           }
         ]
