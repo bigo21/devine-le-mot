@@ -49,6 +49,7 @@
         }
       ],
       "./plugins/with-gradle-build-limits",
+      "./plugins/with-config-changes",
       [
         "expo-audio",
         {
