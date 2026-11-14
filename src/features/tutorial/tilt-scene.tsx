@@ -50,7 +50,7 @@ export default function TiltScene({ onFps }: Props) {
   }, []);
 
   return (
-    <Canvas style={styles.canvas} camera={{ position: [2.6, 1.1, 3.6], fov: 40 }}>
+    <Canvas style={styles.canvas} camera={{ position: [3.4, 1.6, 6.4], fov: 38 }}>
       <color attach="background" args={[colors.bg]} />
       <ambientLight intensity={0.55} />
       <directionalLight position={[3, 5, 4]} intensity={1.1} />
