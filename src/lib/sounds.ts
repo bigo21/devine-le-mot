@@ -7,7 +7,7 @@ import {
 
 // Famille de sons de docs/DESIGN.md §5 : sons Kenney (CC0), mono, normalisés à −14 LUFS,
 // choisis à l'oreille (voir assets/CREDITS.md). Une entrée à null ne joue rien.
-export type SoundName = 'start' | 'found' | 'pass' | 'tick' | 'end' | 'record';
+export type SoundName = 'start' | 'found' | 'pass' | 'tick' | 'end' | 'record' | 'score';
 
 const sources: Record<SoundName, AudioSource> = {
   start: require('@/assets/sounds/start.m4a') as number,
@@ -16,6 +16,7 @@ const sources: Record<SoundName, AudioSource> = {
   tick: require('@/assets/sounds/tick.m4a') as number,
   end: require('@/assets/sounds/end.m4a') as number,
   record: require('@/assets/sounds/record.m4a') as number,
+  score: require('@/assets/sounds/score.m4a') as number,
 };
 
 const players = new Map<SoundName, AudioPlayer>();

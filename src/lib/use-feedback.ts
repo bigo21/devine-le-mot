@@ -18,6 +18,7 @@ export type FeedbackEvent =
   | 'tick'
   | 'end'
   | 'record'
+  | 'score'
   | 'error';
 
 const recipes: Record<FeedbackEvent, { haptic?: HapticKind; sound?: SoundName }> = {
@@ -33,6 +34,8 @@ const recipes: Record<FeedbackEvent, { haptic?: HapticKind; sound?: SoundName }>
   tick: { haptic: 'light', sound: 'tick' },
   end: { haptic: 'heavy', sound: 'end' },
   record: { haptic: 'success', sound: 'record' },
+  /** Le score défile sur les résultats (MOTION.md §3) : son qui monte, sans vibration. */
+  score: { sound: 'score' },
   error: { haptic: 'error' },
 };
 

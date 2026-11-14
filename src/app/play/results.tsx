@@ -23,7 +23,7 @@ import {
   recordRound,
 } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
-import { Button, Confetti, CountText, Icon, Screen, Text } from '@/ui/components';
+import { Button, Confetti, CountText, Icon, KeyboardScreen, Text } from '@/ui/components';
 import { Mascot } from '@/ui/mascot';
 import { motion, pop, rise, useReducedMotion } from '@/ui/motion';
 import { colors, onColor, radii, spacing, touchTarget } from '@/ui/tokens';
@@ -33,6 +33,8 @@ const SCORE_AT = 150;
 const LIST_AT = 900;
 /** Confettis, mascotte et badge de record (MOTION.md §3, étape 3). */
 const CELEBRATE_AT = 750;
+/** Marge après l'entrée des boutons : au-delà, un tap ne sert plus à tout afficher. */
+const SEQUENCE_TAIL = 400;
 
 export default function PlayResultsScreen() {
   useOrientationLock('portrait');
@@ -89,6 +91,40 @@ export default function PlayResultsScreen() {
     const timer = setTimeout(() => setCelebrating(true), CELEBRATE_AT);
     return () => clearTimeout(timer);
   }, []);
+
+  // Le score défile : son qui monte (MOTION.md §3, étape 2), seulement s'il y a un score.
+  const [scoredAtStart] = useState(() => {
+    const played = useGameSession.getState().round;
+    return played ? score(played) > 0 : false;
+  });
+  useEffect(() => {
+    if (!scoredAtStart) return;
+    const timer = setTimeout(() => feedback('score'), SCORE_AT);
+    return () => clearTimeout(timer);
+  }, [feedback, scoredAtStart]);
+
+  // Séquence interruptible (MOTION.md §3) : un tap pendant la séquence affiche tout aussitôt.
+  const [skipped, setSkipped] = useState(false);
+  const [sequenceOver, setSequenceOver] = useState(false);
+  const [sequenceMs] = useState(() => {
+    const count = useGameSession.getState().round?.results.length ?? 0;
+    return (
+      LIST_AT + Math.min(count, motion.resultsMaxStaggered) * motion.resultsStagger + SEQUENCE_TAIL
+    );
+  });
+  useEffect(() => {
+    const timer = setTimeout(() => setSequenceOver(true), sequenceMs);
+    return () => clearTimeout(timer);
+  }, [sequenceMs]);
+  const skip = () => {
+    if (skipped || sequenceOver || reduced) return;
+    setSkipped(true);
+    setCelebrating(true);
+  };
+  /** Entrée d'un élément de la séquence ; une fois la séquence passée au tap, affichage direct. */
+  const enter = (delay: number) => (skipped ? undefined : rise({ delay, reduced }));
+  /** Clé de remontage : les éléments encore en attente s'affichent tout de suite après le tap. */
+  const phase = skipped ? 'shown' : 'sequence';
 
   // Enregistrée en quittant l'écran, pour garder les corrections (une seule fois par manche).
   const record = useCallback(async () => {
@@ -176,143 +212,156 @@ export default function PlayResultsScreen() {
     router.replace('/play/setup');
   };
 
+  const actions = (
+    // Pied fixe : les boutons entrent avec la liste, pour ne pas laisser un pied vide.
+    <Animated.View key={`actions-${phase}`} entering={enter(LIST_AT)} style={styles.actions}>
+      {preview ? (
+        matchOver ? (
+          <Button label={t('teams.seePodium')} size="lg" block onPress={() => void seePodium()} />
+        ) : (
+          <Button label={t('teams.nextTeam')} size="lg" block onPress={() => void nextTeam()} />
+        )
+      ) : (
+        <>
+          <Button label={t('results.replay')} size="lg" block onPress={() => void replay()} />
+          <Button
+            label={t('results.changeCategory')}
+            variant="secondary"
+            block
+            onPress={() => void changeCategory()}
+          />
+        </>
+      )}
+    </Animated.View>
+  );
+
   return (
     <View style={styles.fill}>
-      <Screen scroll>
-        <Animated.View entering={rise({ reduced })}>
-          <Text variant="display" accessibilityRole="header">
-            {t('results.title')}
-          </Text>
-          {team ? (
-            <View style={styles.team}>
-              <View style={[styles.teamDot, { backgroundColor: colors[team.color] }]} />
-              <Text variant="label">{t('teams.roundOf', { team: team.name })}</Text>
-            </View>
-          ) : null}
-        </Animated.View>
-
-        <Animated.View entering={rise({ delay: SCORE_AT, reduced })} style={styles.scoreRow}>
-          <View style={styles.flex}>
-            <View style={styles.score}>
-              <CountText value={finalScore} from={0} delay={SCORE_AT} variant="hero" />
-              <Text variant="bodyLarge" muted>
-                {t('results.scoreCaption')}
-              </Text>
-            </View>
-            {celebrating && recordBeaten ? (
-              <RecordBadge previous={previousBest ?? 0} reduced={reduced} />
+      {/* « Rejouer » reste visible en bas, quelle que soit la longueur de la liste des mots. */}
+      <KeyboardScreen footer={actions}>
+        {/* Toucher le contenu (pas les boutons du pied) saute la séquence. */}
+        <View style={styles.sequence} onTouchStart={skip}>
+          <Animated.View entering={rise({ reduced })}>
+            <Text variant="display" accessibilityRole="header">
+              {t('results.title')}
+            </Text>
+            {team ? (
+              <View style={styles.team}>
+                <View style={[styles.teamDot, { backgroundColor: colors[team.color] }]} />
+                <Text variant="label">{t('teams.roundOf', { team: team.name })}</Text>
+              </View>
             ) : null}
-          </View>
-          <Mascot state={celebrating && mood !== 'neutral' ? mood : 'rest'} size={96} />
-        </Animated.View>
+          </Animated.View>
 
-        {sensitivityHint ? (
-          <Animated.View entering={rise({ delay: CELEBRATE_AT, reduced })} style={styles.hint}>
-            <Text variant="bodyStrong">{t('hints.sensitiveTitle')}</Text>
-            {sensitivityHint === 'ask' ? (
-              <>
-                <Text variant="labelSmall" muted>
-                  {t('hints.sensitiveBody')}
+          <Animated.View entering={rise({ delay: SCORE_AT, reduced })} style={styles.scoreRow}>
+            <View style={styles.flex}>
+              <View style={styles.score}>
+                <CountText
+                  key={`score-${phase}`}
+                  value={finalScore}
+                  from={skipped ? finalScore : 0}
+                  delay={SCORE_AT}
+                  variant="hero"
+                />
+                <Text variant="bodyLarge" muted>
+                  {t('results.scoreCaption')}
                 </Text>
-                <View style={styles.hintActions}>
-                  <Button
-                    label={t('hints.sensitiveLower')}
-                    variant="secondary"
-                    onPress={() => {
-                      const lower = lowerSensitivity(sensitivity);
-                      if (lower) updateSettings({ sensitivity: lower });
-                      feedback('select');
-                      setSensitivityHint('done');
-                    }}
-                  />
-                  <Button
-                    label={t('hints.sensitiveDismiss')}
-                    variant="ghost"
-                    onPress={() => setSensitivityHint(null)}
-                  />
-                </View>
-              </>
-            ) : (
-              <Text variant="labelSmall" accessibilityLiveRegion="polite">
-                {t('hints.sensitiveDone', { level: t(`settings.sensitivities.${sensitivity}`) })}
-              </Text>
-            )}
+              </View>
+              {celebrating && recordBeaten ? (
+                <RecordBadge previous={previousBest ?? 0} reduced={reduced} />
+              ) : null}
+            </View>
+            <Mascot state={celebrating && mood !== 'neutral' ? mood : 'rest'} size={96} />
           </Animated.View>
-        ) : null}
 
-        {results.length === 0 ? (
-          <Text muted>{t('results.empty')}</Text>
-        ) : (
-          <View style={styles.list}>
-            <Text variant="caption" muted>
-              {t('results.correctHint')}
-            </Text>
-            {results.map((entry, index) => {
-              const found = entry.result === 'found';
-              const status = found ? t('results.found') : t('results.passed');
-              return (
-                <Animated.View
-                  key={`${entry.card.id}-${index}`}
-                  entering={rise({ delay: listDelay(index), reduced })}
-                >
-                  <Pressable
-                    onPress={() => feedback('select', () => setRound(toggleResult(round, index)))}
-                    style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
-                    accessibilityRole="button"
-                    accessibilityLabel={`${entry.card.text}, ${status}`}
-                    accessibilityHint={t('results.correctHint')}
-                  >
-                    <Icon
-                      icon={found ? CheckIcon : SkipForwardIcon}
-                      color={found ? colors.palm : colors.textMuted}
+          {sensitivityHint ? (
+            <Animated.View key={`hint-${phase}`} entering={enter(CELEBRATE_AT)} style={styles.hint}>
+              <Text variant="bodyStrong">{t('hints.sensitiveTitle')}</Text>
+              {sensitivityHint === 'ask' ? (
+                <>
+                  <Text variant="labelSmall" muted>
+                    {t('hints.sensitiveBody')}
+                  </Text>
+                  <View style={styles.hintActions}>
+                    <Button
+                      label={t('hints.sensitiveLower')}
+                      variant="secondary"
+                      onPress={() => {
+                        const lower = lowerSensitivity(sensitivity);
+                        if (lower) updateSettings({ sensitivity: lower });
+                        feedback('select');
+                        setSensitivityHint('done');
+                      }}
                     />
-                    <Text variant="bodyStrong" muted={!found} style={styles.word} numberOfLines={1}>
-                      {entry.card.text}
-                    </Text>
-                    <Text variant="labelSmall" muted>
-                      {status}
-                    </Text>
-                  </Pressable>
-                </Animated.View>
-              );
-            })}
-          </View>
-        )}
+                    <Button
+                      label={t('hints.sensitiveDismiss')}
+                      variant="ghost"
+                      onPress={() => setSensitivityHint(null)}
+                    />
+                  </View>
+                </>
+              ) : (
+                <Text variant="labelSmall" accessibilityLiveRegion="polite">
+                  {t('hints.sensitiveDone', { level: t(`settings.sensitivities.${sensitivity}`) })}
+                </Text>
+              )}
+            </Animated.View>
+          ) : null}
 
-        {preview ? (
-          <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.board}>
-            <Text variant="heading" accessibilityRole="header">
-              {t('teams.scoreboard')}
-            </Text>
-            <Scoreboard match={preview} highlight={lastTurn?.teamIndex ?? null} />
-          </Animated.View>
-        ) : null}
-
-        <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.actions}>
-          {preview ? (
-            matchOver ? (
-              <Button
-                label={t('teams.seePodium')}
-                size="lg"
-                block
-                onPress={() => void seePodium()}
-              />
-            ) : (
-              <Button label={t('teams.nextTeam')} size="lg" block onPress={() => void nextTeam()} />
-            )
+          {results.length === 0 ? (
+            <Text muted>{t('results.empty')}</Text>
           ) : (
-            <>
-              <Button label={t('results.replay')} size="lg" block onPress={() => void replay()} />
-              <Button
-                label={t('results.changeCategory')}
-                variant="secondary"
-                block
-                onPress={() => void changeCategory()}
-              />
-            </>
+            <View style={styles.list}>
+              <Text variant="caption" muted>
+                {t('results.correctHint')}
+              </Text>
+              {results.map((entry, index) => {
+                const found = entry.result === 'found';
+                const status = found ? t('results.found') : t('results.passed');
+                return (
+                  <Animated.View
+                    key={`${entry.card.id}-${index}-${phase}`}
+                    entering={enter(listDelay(index))}
+                  >
+                    <Pressable
+                      onPress={() => feedback('select', () => setRound(toggleResult(round, index)))}
+                      style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
+                      accessibilityRole="button"
+                      accessibilityLabel={`${entry.card.text}, ${status}`}
+                      accessibilityHint={t('results.correctHint')}
+                    >
+                      <Icon
+                        icon={found ? CheckIcon : SkipForwardIcon}
+                        color={found ? colors.palm : colors.textMuted}
+                      />
+                      <Text
+                        variant="bodyStrong"
+                        muted={!found}
+                        style={styles.word}
+                        numberOfLines={1}
+                      >
+                        {entry.card.text}
+                      </Text>
+                      <Text variant="labelSmall" muted>
+                        {status}
+                      </Text>
+                    </Pressable>
+                  </Animated.View>
+                );
+              })}
+            </View>
           )}
-        </Animated.View>
-      </Screen>
+
+          {preview ? (
+            <Animated.View key={`board-${phase}`} entering={enter(buttonsAt)} style={styles.board}>
+              <Text variant="heading" accessibilityRole="header">
+                {t('teams.scoreboard')}
+              </Text>
+              <Scoreboard match={preview} highlight={lastTurn?.teamIndex ?? null} />
+            </Animated.View>
+          ) : null}
+        </View>
+      </KeyboardScreen>
       {/* Par-dessus l'écran visible, pas dans le contenu qui défile. */}
       <Confetti fire={celebrating && mood === 'celebrate'} />
     </View>
@@ -382,7 +431,8 @@ const styles = StyleSheet.create({
   },
   rowPressed: { backgroundColor: colors.bgElevated },
   word: { flex: 1 },
-  actions: { gap: spacing.md, marginTop: spacing.lg },
+  sequence: { gap: spacing.lg },
+  actions: { gap: spacing.sm },
   board: { gap: spacing.md, marginTop: spacing.lg },
   team: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginTop: spacing.sm },
   teamDot: { width: 16, height: 16, borderRadius: radii.pill },
