@@ -46,6 +46,7 @@ import {
 } from '@/features/game/variants';
 import { useSettings } from '@/features/settings/store';
 import { useWordFont } from '@/features/settings/use-word-font';
+import { wordFontSize } from '@/features/game/word-fit';
 import { useFeedback } from '@/lib/use-feedback';
 import { BottomSheet, Button, Icon, SurfaceContext, Text } from '@/ui/components';
 import {
@@ -72,6 +73,10 @@ const RESHUFFLE_TOAST_MS = 2200;
 const WORD_EXIT_Y = 120;
 const WORD_ENTER_Y = -40;
 
+/** Taille de base du mot en jeu, et avec les mots interdits dessous. */
+const WORD_BASE = 120;
+const WORD_BASE_COMPACT = 80;
+
 const getRound = () => useGameSession.getState().round;
 
 export default function PlayGameScreen() {
@@ -82,6 +87,9 @@ export default function PlayGameScreen() {
   const reduced = useReducedMotion();
   const feedback = useFeedback();
   const wordFont = useWordFont();
+  const wordFontKey = useSettings((s) => s.wordFont);
+  // Largeur de la zone du mot (stable pendant la manche), pour l'auto-fit calculé à l'avance.
+  const [wordWidth, setWordWidth] = useState(0);
   const tapMode = useSettings((s) => s.tapMode);
   const seenVariants = useSettings((s) => s.seenVariants);
   const updateSettings = useSettings((s) => s.update);
@@ -509,12 +517,23 @@ export default function PlayGameScreen() {
           ) : null}
 
           {phase === 'playing' || phase === 'paused' ? (
-            <Animated.View style={[styles.wordBox, wordStyle]}>
+            <Animated.View
+              style={[styles.wordBox, wordStyle]}
+              onLayout={(e) => setWordWidth(e.nativeEvent.layout.width)}
+            >
               <Text
                 align="center"
-                // Mots interdits affichés dessous : mot plus petit au départ (l'auto-fit ne réduit
-                // qu'en largeur), pour que tout tienne dans la hauteur de l'écran.
-                style={[styles.word, cardVariant === 'forbidden' && styles.wordCompact, wordFont]}
+                // Taille de départ calculée pour que le mot le plus long tienne sur une ligne
+                // (Android couperait au milieu du mot) ; l'auto-fit natif ne réduit plus qu'en
+                // hauteur. Mots interdits affichés dessous : base plus petite.
+                style={[
+                  styles.word,
+                  wordFont,
+                  wordFontSize(displayed?.text ?? '', wordWidth, {
+                    base: cardVariant === 'forbidden' ? WORD_BASE_COMPACT : WORD_BASE,
+                    font: wordFontKey,
+                  }),
+                ]}
                 adjustsFontSizeToFit
                 minimumFontScale={0.2}
                 numberOfLines={2}
@@ -690,8 +709,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     borderWidth: 2,
   },
-  word: { width: '100%', fontSize: 120, lineHeight: 132 },
-  wordCompact: { fontSize: 80, lineHeight: 90 },
+  word: { width: '100%' },
   readingPill: {
     position: 'absolute',
     paddingHorizontal: spacing.lg,
