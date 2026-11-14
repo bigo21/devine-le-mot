@@ -10,7 +10,8 @@ import { StarIcon } from 'phosphor-react-native/src/icons/Star';
 import { XIcon } from 'phosphor-react-native/src/icons/X';
 import { type ComponentRef, type ReactNode, useCallback, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { FlatList, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Animated from 'react-native-reanimated';
 
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
@@ -32,12 +33,19 @@ import {
   Chip,
   Flag,
   Icon,
-  KeyboardScreen,
-  Screen,
+  NdopPattern,
   Text,
 } from '@/ui/components';
 import { fadeOut, rise, setZoomOrigin, staggerDelay, useReducedMotion } from '@/ui/motion';
-import { colors, maxFontScale, radii, spacing, touchTarget, typography } from '@/ui/tokens';
+import {
+  colors,
+  maxFontScale,
+  patternOpacity,
+  radii,
+  spacing,
+  touchTarget,
+  typography,
+} from '@/ui/tokens';
 
 /** Icône de chaque pilule : drapeau pour un pays, Fluent 3D sinon (docs/ASSETS.md §1). */
 const FILTER_ICONS: Record<CategoryFilter, ReactNode> = {
@@ -57,6 +65,7 @@ export default function CategoriesScreen() {
   const db = useSQLiteContext();
   const reduced = useReducedMotion();
   const feedback = useFeedback();
+  const insets = useSafeAreaInsets();
   // Mode sélection (ouvert depuis la préparation) : toucher une carte l'ajoute ou la retire.
   const picking = useLocalSearchParams<{ pick?: string }>().pick === '1';
   const [pickedIds, setPickedIds] = useState<number[]>(() => (picking ? pickingIds() : []));
@@ -126,111 +135,144 @@ export default function CategoriesScreen() {
     });
   };
 
+  const header = (
+    <View style={styles.header}>
+      <Text variant="display" accessibilityRole="header">
+        {picking ? t('categoriesScreen.pickTitle') : t('screens.categories')}
+      </Text>
+
+      <View style={styles.search}>
+        <Icon icon={MagnifyingGlassIcon} color={colors.textMuted} />
+        <TextInput
+          value={query}
+          onChangeText={setQuery}
+          placeholder={t('categoriesScreen.searchPlaceholder')}
+          placeholderTextColor={colors.textMuted}
+          selectionColor={colors.mango}
+          cursorColor={colors.mango}
+          style={styles.searchInput}
+          maxFontSizeMultiplier={maxFontScale}
+          returnKeyType="search"
+          autoCorrect={false}
+          accessibilityLabel={t('categoriesScreen.searchPlaceholder')}
+        />
+        {query ? (
+          <Pressable
+            onPress={() => setQuery('')}
+            hitSlop={12}
+            accessibilityRole="button"
+            accessibilityLabel={t('categoriesScreen.clearSearch')}
+          >
+            <Icon icon={XIcon} color={colors.textMuted} />
+          </Pressable>
+        ) : null}
+      </View>
+
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.filters}
+        style={styles.filtersScroll}
+        accessibilityLabel={t('categoriesScreen.filters')}
+        keyboardShouldPersistTaps="handled"
+      >
+        {categoryFilters.map((key) => (
+          <Chip
+            key={key}
+            label={t(`categoriesScreen.regions.${key}`)}
+            icon={FILTER_ICONS[key]}
+            selected={filter === key}
+            onPress={() => setFilter(key)}
+          />
+        ))}
+      </ScrollView>
+    </View>
+  );
+
+  const empty = (
+    <View style={styles.empty}>
+      <Text muted>
+        {filter === 'mine' && !query
+          ? t('categoriesScreen.emptyMine')
+          : t('categoriesScreen.emptySearch')}
+      </Text>
+      <Button
+        label={t('categoriesScreen.create')}
+        variant="secondary"
+        onPress={() => router.push('/create/editor')}
+      />
+      {filter === 'mine' ? (
+        <Button
+          label={t('categoriesScreen.import')}
+          variant="ghost"
+          onPress={() => router.push('/create')}
+        />
+      ) : null}
+    </View>
+  );
+
   return (
     <View style={styles.fill}>
-      <Container
-        picking={picking}
-        footer={
-          <>
-            <Text variant="labelSmall" accessibilityLiveRegion="polite">
-              {pickedCategories.length === 0
-                ? t('setup.noCategory')
-                : t('setup.selected', { count: pickedCategories.length, words: pickedWords })}
-            </Text>
-            <Button label={t('categoriesScreen.pickDone')} size="lg" block onPress={router.back} />
-          </>
-        }
-      >
-        <Text variant="display" accessibilityRole="header">
-          {picking ? t('categoriesScreen.pickTitle') : t('screens.categories')}
-        </Text>
-
-        <View style={styles.search}>
-          <Icon icon={MagnifyingGlassIcon} color={colors.textMuted} />
-          <TextInput
-            value={query}
-            onChangeText={setQuery}
-            placeholder={t('categoriesScreen.searchPlaceholder')}
-            placeholderTextColor={colors.textMuted}
-            selectionColor={colors.mango}
-            cursorColor={colors.mango}
-            style={styles.searchInput}
-            maxFontSizeMultiplier={maxFontScale}
-            returnKeyType="search"
-            autoCorrect={false}
-            accessibilityLabel={t('categoriesScreen.searchPlaceholder')}
-          />
-          {query ? (
-            <Pressable
-              onPress={() => setQuery('')}
-              hitSlop={12}
-              accessibilityRole="button"
-              accessibilityLabel={t('categoriesScreen.clearSearch')}
-            >
-              <Icon icon={XIcon} color={colors.textMuted} />
-            </Pressable>
-          ) : null}
-        </View>
-
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.filters}
-          style={styles.filtersScroll}
-          accessibilityLabel={t('categoriesScreen.filters')}
-        >
-          {categoryFilters.map((key) => (
-            <Chip
-              key={key}
-              label={t(`categoriesScreen.regions.${key}`)}
-              icon={FILTER_ICONS[key]}
-              selected={filter === key}
-              onPress={() => setFilter(key)}
-            />
-          ))}
-        </ScrollView>
-
-        {visible.length > 0 ? (
-          <>
-            <View style={styles.grid}>
-              {visible.map((category, index) => (
-                <GridItem
-                  key={`${filter}-${category.id}`}
-                  category={category}
-                  delay={staggerDelay(index) ?? 0}
-                  reduced={reduced}
-                  picked={picking ? pickedIds.includes(category.id) : undefined}
-                  onPick={picking ? () => togglePicked(category.id) : undefined}
-                  onLongPress={() => void openPreview(category)}
-                />
-              ))}
-            </View>
-            <Text variant="caption" muted>
+      <NdopPattern color={colors.text} opacity={patternOpacity.screen} />
+      {/* Grille virtualisée : seules les cartes proches de l'écran sont montées (les paquets
+          importés peuvent compter des dizaines de catégories). */}
+      <FlatList
+        data={visible}
+        keyExtractor={(category) => `${filter}-${category.id}`}
+        numColumns={2}
+        columnWrapperStyle={styles.row}
+        ItemSeparatorComponent={RowGap}
+        ListHeaderComponent={header}
+        ListEmptyComponent={empty}
+        ListFooterComponent={
+          visible.length > 0 ? (
+            <Text variant="caption" muted style={styles.hint}>
               {picking ? t('categoriesScreen.pickHint') : t('categoriesScreen.hint')}
             </Text>
-          </>
-        ) : (
-          <View style={styles.empty}>
-            <Text muted>
-              {filter === 'mine' && !query
-                ? t('categoriesScreen.emptyMine')
-                : t('categoriesScreen.emptySearch')}
-            </Text>
-            <Button
-              label={t('categoriesScreen.create')}
-              variant="secondary"
-              onPress={() => router.push('/create/editor')}
-            />
-            {filter === 'mine' ? (
-              <Button
-                label={t('categoriesScreen.import')}
-                variant="ghost"
-                onPress={() => router.push('/create')}
-              />
-            ) : null}
-          </View>
+          ) : undefined
+        }
+        renderItem={({ item: category, index }) => (
+          <GridItem
+            category={category}
+            delay={staggerDelay(index)}
+            reduced={reduced}
+            picked={picking ? pickedIds.includes(category.id) : undefined}
+            onPick={picking ? () => togglePicked(category.id) : undefined}
+            onLongPress={() => void openPreview(category)}
+          />
         )}
-      </Container>
+        extraData={pickedIds}
+        initialNumToRender={8}
+        windowSize={7}
+        keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{
+          paddingTop: insets.top + spacing.xl,
+          paddingBottom: (picking ? 0 : insets.bottom) + spacing.xl,
+          paddingLeft: insets.left + spacing.xl,
+          paddingRight: insets.right + spacing.xl,
+        }}
+      />
+      {picking ? (
+        <View
+          style={[
+            styles.footer,
+            {
+              paddingBottom: insets.bottom + spacing.lg,
+              paddingLeft: insets.left + spacing.xl,
+              paddingRight: insets.right + spacing.xl,
+            },
+          ]}
+        >
+          <Text variant="labelSmall" accessibilityLiveRegion="polite">
+            {pickedCategories.length === 0
+              ? t('setup.noCategory')
+              : t('setup.selected', { count: pickedCategories.length, words: pickedWords })}
+          </Text>
+          <Button label={t('categoriesScreen.pickDone')} size="lg" block onPress={router.back} />
+        </View>
+      ) : null}
 
       <BottomSheet
         visible={preview !== null}
@@ -315,7 +357,8 @@ export default function CategoriesScreen() {
 
 type GridItemProps = {
   category: CategorySummary;
-  delay: number;
+  /** Délai d'entrée en cascade ; `undefined` au-delà des premières cartes : pas d'animation. */
+  delay: number | undefined;
   reduced: boolean;
   /** Mode sélection : carte choisie ou non (contour et coche, jamais la couleur seule). */
   picked?: boolean;
@@ -325,18 +368,9 @@ type GridItemProps = {
 };
 
 /** Carte de la grille : au toucher, on mémorise sa place pour que le détail en parte (zoom). */
-/** Conteneur : pied fixe « Valider » en mode sélection, écran défilant simple sinon. */
-function Container({
-  picking,
-  footer,
-  children,
-}: {
-  picking: boolean;
-  footer: ReactNode;
-  children: ReactNode;
-}) {
-  if (picking) return <KeyboardScreen footer={footer}>{children}</KeyboardScreen>;
-  return <Screen scroll>{children}</Screen>;
+/** Espace entre deux rangées de la grille. */
+function RowGap() {
+  return <View style={styles.rowGap} />;
 }
 
 function GridItem({ category, delay, reduced, picked, onPick, onLongPress }: GridItemProps) {
@@ -355,7 +389,7 @@ function GridItem({ category, delay, reduced, picked, onPick, onLongPress }: Gri
   return (
     <Animated.View
       ref={ref}
-      entering={rise({ delay, reduced })}
+      entering={delay === undefined ? undefined : rise({ delay, reduced })}
       exiting={fadeOut}
       style={[styles.gridItem, onPick && styles.pickable, picked && styles.picked]}
       accessibilityState={onPick ? { selected: picked === true } : undefined}
@@ -392,12 +426,22 @@ const styles = StyleSheet.create({
   // La rangée de pilules déborde volontairement des marges pour défiler jusqu'au bord.
   filtersScroll: { marginHorizontal: -spacing.xl },
   filters: { gap: spacing.sm, paddingHorizontal: spacing.xl, paddingVertical: spacing.xs },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+  header: { gap: spacing.lg, marginBottom: spacing.lg },
+  row: { justifyContent: 'space-between' },
+  rowGap: { height: spacing.md },
+  hint: { marginTop: spacing.lg },
+  footer: {
+    gap: spacing.sm,
+    paddingTop: spacing.md,
+    backgroundColor: colors.bg,
+    borderTopWidth: 1,
+    borderTopColor: colors.hairline,
+  },
   gridItem: { width: '48%' },
   // Mode sélection : même contour que la préparation (anneau blanc cassé autour de la carte).
   pickable: { borderRadius: radii.card + 4, padding: 2 },
   picked: { backgroundColor: colors.text },
-  empty: { gap: spacing.md, alignItems: 'flex-start', marginTop: spacing.lg },
+  empty: { gap: spacing.md, alignItems: 'flex-start' },
   words: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   word: {
     paddingHorizontal: spacing.md,

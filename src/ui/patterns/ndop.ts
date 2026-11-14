@@ -1,6 +1,7 @@
 // Motif en filigrane inspiré des tissus Ndop des Grassfields (DESIGN.md §1) : panneaux carrés
 // séparés par des bandes, qui alternent losanges concentriques et croisillons pointés.
-// Fonction pure : renvoie un chemin SVG, dessiné une seule fois par Skia.
+// Fonction pure : renvoie un chemin SVG. Pré-rendu en tuile par scripts/ndop-tile.mjs
+// (src/assets/patterns), que NdopPattern répète : relancer le script après toute modification.
 
 /** Taille d'un motif élémentaire, en dp. */
 export const NDOP_TILE = 44;
