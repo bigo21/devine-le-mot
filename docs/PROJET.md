@@ -45,6 +45,8 @@ Le meilleur jeu de devinettes de soirée **gratuit**, pensé d'abord pour le Cam
 - **R8 activé en release** : tester Skia (et toute lib native ajoutée) dans un build release dès la Phase 0, pas seulement en dev build.
 - `StatusBar` n'a plus `backgroundColor` / `translucent` ; `ImageBackground` est déprécié.
 - **Retour prédictif désactivé** (`android.predictiveBackGestureEnabled: false`, décision du 14/11/2026) : avec un `targetSdk` 36, l'activer couperait le bouton Retour classique dont dépendent la pause en jeu (`BackHandler`) et la garde de l'éditeur (`usePreventRemove`). À réactiver seulement après migration de ces deux écrans et test sur appareil.
+- **Permissions Android** (`app.config.js`, décision du 14/11/2026) : stockage externe et `SYSTEM_ALERT_WINDOW` toujours retirés ; `INTERNET` retirée du profil EAS `production` (l'app est hors ligne), gardée en développement pour Metro. Restent `VIBRATE` et `MODIFY_AUDIO_SETTINGS`.
+- **Écrans de développement supprimés** avant publication (14/11/2026) ; ils restent dans l'historique git (`src/app/dev/`).
 - **`configChanges` inclut `fontScale|density`** (plugin `plugins/with-config-changes.js`) : l'activité n'est plus recréée au changement de police ; la nouvelle échelle arrive côté JS au retour au premier plan.
 
 ## 3. Architecture des dossiers

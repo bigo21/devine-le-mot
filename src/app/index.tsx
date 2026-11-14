@@ -155,16 +155,9 @@ export default function HomeScreen() {
       </Animated.View>
 
       <Animated.View entering={rise({ delay: TITLE_AT, reduced: quiet })} style={styles.title}>
-        {/* Appui long sur le titre : menu développeur (en développement seulement). */}
-        <Pressable
-          onLongPress={__DEV__ ? () => router.push('/dev') : undefined}
-          accessibilityRole="header"
-          accessibilityHint={__DEV__ ? t('home.devMenu') : undefined}
-        >
-          <Text variant="hero" align="center">
-            {t('app.name')}
-          </Text>
-        </Pressable>
+        <Text variant="hero" align="center" accessibilityRole="header">
+          {t('app.name')}
+        </Text>
         <Text muted align="center">
           {t('home.tagline')}
         </Text>

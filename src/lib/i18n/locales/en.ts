@@ -16,16 +16,12 @@ export const en: Translation = {
     firstTime: 'First time? See how to play (30 s)',
     showMe: 'Show me',
     iKnow: 'I know',
-    devMenu: 'Developer menu (long press)',
   },
   common: {
-    wip: 'Screen under construction',
     back: 'Back',
     close: 'Close',
   },
   screens: {
-    devMenu: 'Developer menu',
-    devThree: '3D test (dev)',
     home: 'Home',
     categories: 'Categories',
     categoryDetail: 'Category',
@@ -38,9 +34,6 @@ export const en: Translation = {
     import: 'Import',
     tutorial: 'How to play',
     settings: 'Settings',
-    devSkia: 'Skia test (dev)',
-    devUi: 'Design system (dev)',
-    devTilt: 'Tilt test (dev)',
   },
   devUi: {
     intro: 'Every component and motion, for review on a phone.',
@@ -251,13 +244,6 @@ export const en: Translation = {
     restart: 'Start over',
     details:
       'Technical details: angle {{angle}}, reference {{reference}}, offset {{delta}}, orientation {{orientation}}',
-  },
-  dev: {
-    fps: 'Average {{average}} fps · worst frame {{worst}} fps · slowest second {{lowest}} fps',
-    fpsWaiting: 'Measuring…',
-    threeHint: 'Tilt the phone: the 3D phone should follow. Target 60 fps, 30 minimum.',
-    skiaHint:
-      'If the gradient shows and the disc breathes, Skia and Reanimated work in this build.',
   },
   myCategories: {
     intro: 'Your categories and the packs you received.',

@@ -15,16 +15,12 @@ export const fr = {
     firstTime: 'Première fois ? Voir comment jouer (30 s)',
     showMe: 'Montre-moi',
     iKnow: 'Je connais',
-    devMenu: 'Menu développeur (appui long)',
   },
   common: {
-    wip: 'Écran en construction',
     back: 'Retour',
     close: 'Fermer',
   },
   screens: {
-    devMenu: 'Menu développeur',
-    devThree: 'Test 3D (dev)',
     home: 'Accueil',
     categories: 'Catégories',
     categoryDetail: 'Catégorie',
@@ -37,9 +33,6 @@ export const fr = {
     import: 'Importer',
     tutorial: 'Comment jouer',
     settings: 'Réglages',
-    devSkia: 'Test Skia (dev)',
-    devUi: 'Design system (dev)',
-    devTilt: 'Test de l’inclinaison (dev)',
   },
   devUi: {
     intro: 'Tous les composants et mouvements, pour validation sur téléphone.',
@@ -251,13 +244,6 @@ export const fr = {
     restart: 'Recommencer',
     details:
       'Détails techniques : angle {{angle}}, référence {{reference}}, écart {{delta}}, orientation {{orientation}}',
-  },
-  dev: {
-    fps: 'Moyenne {{average}} fps · pire image {{worst}} fps · seconde la plus lente {{lowest}} fps',
-    fpsWaiting: 'Mesure en cours…',
-    threeHint: 'Incline le téléphone : le téléphone 3D doit suivre. Objectif 60 fps, 30 minimum.',
-    skiaHint:
-      'Si le dégradé s’affiche et que le disque respire, Skia et Reanimated fonctionnent dans ce build.',
   },
   myCategories: {
     intro: 'Tes catégories et les paquets que tu as reçus.',
