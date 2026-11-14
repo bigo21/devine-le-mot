@@ -9,11 +9,13 @@ import { Pressable, StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { isRecord, moodFor } from '@/features/game/celebration';
+import { lowerSensitivity, suggestLowerSensitivity } from '@/features/game/hints';
 import { Scoreboard } from '@/features/game/components/scoreboard';
 import { score, toggleResult } from '@/features/game/engine';
 import { isFinished, nextTeamIndex, recordTurn } from '@/features/game/match';
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
+import { useSettings } from '@/features/settings/store';
 import {
   bestSoloScore,
   finishMatch,
@@ -69,6 +71,17 @@ export default function PlayResultsScreen() {
       active = false;
     };
   }, [db]);
+
+  // Détection trop sensible (UX.md §4) : décidé une fois, à l'arrivée (corriger un mot ne le change pas).
+  const [sensitivityHint, setSensitivityHint] = useState<'ask' | 'done' | null>(() => {
+    const played = useGameSession.getState().round;
+    const { tapMode, sensitivity } = useSettings.getState();
+    return played && suggestLowerSensitivity(played.results, { tapMode, sensitivity })
+      ? 'ask'
+      : null;
+  });
+  const sensitivity = useSettings((s) => s.sensitivity);
+  const updateSettings = useSettings((s) => s.update);
 
   // Réaction différée sur la séquence (le score défile d'abord).
   const [celebrating, setCelebrating] = useState(false);
@@ -193,6 +206,40 @@ export default function PlayResultsScreen() {
           <Mascot state={celebrating && mood !== 'neutral' ? mood : 'rest'} size={96} />
         </Animated.View>
 
+        {sensitivityHint ? (
+          <Animated.View entering={rise({ delay: CELEBRATE_AT, reduced })} style={styles.hint}>
+            <Text variant="bodyStrong">{t('hints.sensitiveTitle')}</Text>
+            {sensitivityHint === 'ask' ? (
+              <>
+                <Text variant="labelSmall" muted>
+                  {t('hints.sensitiveBody')}
+                </Text>
+                <View style={styles.hintActions}>
+                  <Button
+                    label={t('hints.sensitiveLower')}
+                    variant="secondary"
+                    onPress={() => {
+                      const lower = lowerSensitivity(sensitivity);
+                      if (lower) updateSettings({ sensitivity: lower });
+                      feedback('select');
+                      setSensitivityHint('done');
+                    }}
+                  />
+                  <Button
+                    label={t('hints.sensitiveDismiss')}
+                    variant="ghost"
+                    onPress={() => setSensitivityHint(null)}
+                  />
+                </View>
+              </>
+            ) : (
+              <Text variant="labelSmall" accessibilityLiveRegion="polite">
+                {t('hints.sensitiveDone', { level: t(`settings.sensitivities.${sensitivity}`) })}
+              </Text>
+            )}
+          </Animated.View>
+        ) : null}
+
         {results.length === 0 ? (
           <Text muted>{t('results.empty')}</Text>
         ) : (
@@ -304,6 +351,15 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   scoreRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
   score: { flexDirection: 'row', alignItems: 'baseline', gap: spacing.md },
+  hint: {
+    gap: spacing.sm,
+    padding: spacing.lg,
+    borderRadius: radii.card,
+    backgroundColor: colors.bgElevated,
+    borderWidth: 1,
+    borderColor: colors.hairline,
+  },
+  hintActions: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   record: {
     flexDirection: 'row',
     alignItems: 'center',

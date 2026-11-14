@@ -19,6 +19,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { scheduleOnRN } from 'react-native-worklets';
 
 import { TimerRing } from '@/features/game/components/timer-ring';
+import { TurnPhoneHint } from '@/features/game/components/turn-phone-hint';
+import { heldUpright } from '@/features/game/hints';
 import { VariantIcon } from '@/features/game/components/variant-icon';
 import {
   answer as answerCard,
@@ -107,6 +109,9 @@ export default function PlayGameScreen() {
   // Le libellé suit l'opacité du flash : ils apparaissent et disparaissent ensemble.
   const [burst, setBurst] = useState<CardResult | null>(null);
   const busy = useRef(false);
+  // Téléphone tenu debout pendant la partie (UX.md §5) : message « Retourne le téléphone ».
+  const [upright, setUpright] = useState(false);
+  const uprightRef = useRef(false);
   /** Mix : lecture de la consigne en cours (chrono arrêté). */
   const [reading, setReading] = useState(false);
   const readingRef = useRef(false);
@@ -301,6 +306,12 @@ export default function PlayGameScreen() {
     onEvent: (event) => {
       if (event.type === 'correct') onAnswer('found');
       else if (event.type === 'pass') onAnswer('passed');
+    },
+    onSample: (sample) => {
+      const next = heldUpright(sample.gravity);
+      if (next === uprightRef.current) return;
+      uprightRef.current = next;
+      setUpright(next);
     },
   });
 
@@ -583,6 +594,10 @@ export default function PlayGameScreen() {
       </SurfaceContext>
 
       <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, flash.style]} />
+
+      {upright && (phase === 'countdown' || phase === 'playing') && !tapMode ? (
+        <TurnPhoneHint />
+      ) : null}
 
       {burst ? (
         <View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.burstWrap]}>

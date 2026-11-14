@@ -525,6 +525,14 @@ export const fr = {
     forbidden_one: '{{count}} mot avec mots interdits',
     forbidden_other: '{{count}} mots avec mots interdits',
   },
+  hints: {
+    turnPhone: 'Retourne le téléphone : tiens-le à l’horizontale.',
+    sensitiveTitle: 'La détection est trop sensible ?',
+    sensitiveBody: 'Plusieurs mots ont été passés en moins d’une seconde, sans doute sans le vouloir.',
+    sensitiveLower: 'Baisser la sensibilité',
+    sensitiveDone: 'Sensibilité : {{level}}',
+    sensitiveDismiss: 'Non merci',
+  },
   colorNames: {
     lagoon: 'Lagon',
     indigo: 'Indigo',

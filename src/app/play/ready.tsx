@@ -2,7 +2,7 @@ import { useKeepAwake } from 'expo-keep-awake';
 import { router } from 'expo-router';
 import { ArrowFatDownIcon } from 'phosphor-react-native/src/icons/ArrowFatDown';
 import { ArrowFatUpIcon } from 'phosphor-react-native/src/icons/ArrowFatUp';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
@@ -10,6 +10,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CalibrationRing } from '@/features/game/components/calibration-ring';
 import { ForeheadDemo } from '@/features/game/components/forehead-demo';
+import { TurnPhoneHint } from '@/features/game/components/turn-phone-hint';
+import { heldUpright } from '@/features/game/hints';
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import { useTilt } from '@/features/game/use-tilt';
@@ -40,10 +42,25 @@ export default function PlayReadyScreen() {
     if (!round) router.replace('/play/setup');
   }, [round]);
 
+  // Téléphone tenu debout au lieu d'à l'horizontale (UX.md §5) : message, et pas de départ.
+  const [upright, setUpright] = useState(false);
+  const uprightRef = useRef(false);
+
   const tilt = useTilt({
     enabled: !tapMode,
+    onSample: (sample) => {
+      const next = heldUpright(sample.gravity);
+      if (next === uprightRef.current) return;
+      uprightRef.current = next;
+      setUpright(next);
+    },
     onEvent: (event) => {
       if (event.type !== 'calibrated') return;
+      // Calibré téléphone debout : la partie partirait dans le mauvais sens. On recommence.
+      if (uprightRef.current) {
+        tilt.recalibrate();
+        return;
+      }
       // Anneau plein → vibration de succès → compte à rebours (MOTION.md §3).
       feedback('calibrated');
       updateSettings({ seenGestureHint: true });
@@ -72,6 +89,7 @@ export default function PlayReadyScreen() {
       ]}
     >
       <NdopPattern color={colors.text} opacity={patternOpacity.screen} />
+      {upright && !playWithTaps ? <TurnPhoneHint /> : null}
 
       <CalibrationRing progress={playWithTaps ? 0 : tilt.calibrationProgress} size={196}>
         <ForeheadDemo size={150} showGestures={!seenGestureHint} />

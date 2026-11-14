@@ -28,6 +28,8 @@ export type TiltSample = {
   reference: number | null;
   phase: TiltState['phase'];
   orientation: ScreenOrientation;
+  /** Gravité brute (m/s²), pour détecter un téléphone tenu debout. */
+  gravity: { x: number; y: number; z: number };
 };
 
 type Options = {
@@ -111,6 +113,7 @@ export function useTilt({ enabled, onEvent, onSample }: Options) {
         reference: result.state.reference,
         phase: result.state.phase,
         orientation,
+        gravity: { x: gravity.x, y: gravity.y, z: gravity.z },
       });
     });
 

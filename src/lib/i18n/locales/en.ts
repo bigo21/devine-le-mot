@@ -525,6 +525,14 @@ export const en: Translation = {
     forbidden_one: '{{count}} word with taboo words',
     forbidden_other: '{{count}} words with taboo words',
   },
+  hints: {
+    turnPhone: 'Turn the phone: hold it sideways.',
+    sensitiveTitle: 'Is detection too sensitive?',
+    sensitiveBody: 'Several words were passed in under a second, probably by accident.',
+    sensitiveLower: 'Lower the sensitivity',
+    sensitiveDone: 'Sensitivity: {{level}}',
+    sensitiveDismiss: 'No thanks',
+  },
   colorNames: {
     lagoon: 'Lagoon',
     indigo: 'Indigo',
