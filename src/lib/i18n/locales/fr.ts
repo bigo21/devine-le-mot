@@ -417,6 +417,44 @@ export const fr = {
     abandon: 'Abandonner',
     quitMatch: 'La partie en équipes est gardée : tu pourras la reprendre depuis la préparation.',
   },
+  tutorial: {
+    stepOf: 'Étape {{step}} sur {{total}}',
+    skip: 'Passer',
+    next: 'Suivant',
+    play: 'Jouer maintenant',
+    rotateHint: 'Fais tourner la scène du doigt.',
+    loading: 'Préparation de la scène…',
+    steps: {
+      place: {
+        title: 'Le téléphone sur le front',
+        body: 'Pose le téléphone sur ton front, écran tourné vers les autres. Tu ne vois pas le mot : ce sont eux qui te le font deviner.',
+      },
+      found: {
+        title: 'Vers le bas : trouvé',
+        body: 'Tu as trouvé ? Incline la tête vers le bas, écran vers le sol. L’écran devient vert et le mot suivant arrive.',
+      },
+      pass: {
+        title: 'Vers le haut : passer',
+        body: 'Trop dur ? Incline la tête vers le haut, écran vers le plafond. L’écran devient orange et on passe au mot suivant.',
+      },
+      try: {
+        title: 'Essaie toi-même',
+        body: 'Tiens le téléphone face à toi sans bouger, puis incline-le vers le bas, reviens, et incline-le vers le haut.',
+      },
+      variants: {
+        title: 'Et pour pimenter',
+        body: 'Mime, chant, mots interdits, mix… Choisis une variante au moment de préparer la partie.',
+      },
+    },
+    try: {
+      calibrating: 'Ne bouge plus…',
+      ready: 'C’est bon, à toi !',
+      found: 'Vers le bas',
+      pass: 'Vers le haut',
+      done: 'Bravo, tu as compris !',
+      noSensor: 'Ce téléphone n’a pas de capteur d’inclinaison : tu joueras en touchant l’écran (mode tap).',
+    },
+  },
   colorNames: {
     lagoon: 'Lagon',
     indigo: 'Indigo',

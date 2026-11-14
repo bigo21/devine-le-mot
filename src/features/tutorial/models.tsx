@@ -1,7 +1,7 @@
 // Modèles 3D du tutoriel, construits en code avec des primitives three.js (DESIGN.md §6 : pas
 // de .glb, pas de drei). Matériaux mats aux couleurs des tokens.
-import { useMemo } from 'react';
-import { ExtrudeGeometry, Shape } from 'three';
+import { type Ref, useMemo } from 'react';
+import { ExtrudeGeometry, type MeshStandardMaterial, Shape } from 'three';
 
 import { colors } from '@/ui/tokens';
 
@@ -27,10 +27,12 @@ const PHONE = { width: 1.6, height: 0.78, depth: 0.08, radius: 0.12 };
 type PhoneProps = {
   /** Couleur de l'écran (catégorie, ou flash vert/orange d'un geste). */
   screen: string;
+  /** Matériau de l'écran, pour changer sa couleur dans la boucle de rendu (sans rendu React). */
+  screenRef?: Ref<MeshStandardMaterial>;
 };
 
 /** Téléphone tenu en paysage : coque nuit, écran coloré légèrement en relief. */
-export function Phone({ screen }: PhoneProps) {
+export function Phone({ screen, screenRef }: PhoneProps) {
   const body = useMemo(
     () =>
       new ExtrudeGeometry(roundedRect(PHONE.width, PHONE.height, PHONE.radius), {
@@ -60,6 +62,7 @@ export function Phone({ screen }: PhoneProps) {
       </mesh>
       <mesh geometry={display} position={[0, 0, PHONE.depth / 2 + 0.021]}>
         <meshStandardMaterial
+          ref={screenRef}
           color={screen}
           emissive={screen}
           emissiveIntensity={0.35}

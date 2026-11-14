@@ -417,6 +417,44 @@ export const en: Translation = {
     abandon: 'Abandon',
     quitMatch: 'The team match is saved: you can resume it from the setup screen.',
   },
+  tutorial: {
+    stepOf: 'Step {{step}} of {{total}}',
+    skip: 'Skip',
+    next: 'Next',
+    play: 'Play now',
+    rotateHint: 'Turn the scene with your finger.',
+    loading: 'Preparing the scene…',
+    steps: {
+      place: {
+        title: 'Phone on your forehead',
+        body: 'Put the phone on your forehead, screen facing the others. You can’t see the word: they help you guess it.',
+      },
+      found: {
+        title: 'Tilt down: got it',
+        body: 'Got it? Tilt your head down, screen to the floor. The screen turns green and the next word comes up.',
+      },
+      pass: {
+        title: 'Tilt up: pass',
+        body: 'Too hard? Tilt your head up, screen to the ceiling. The screen turns orange and you move on.',
+      },
+      try: {
+        title: 'Try it yourself',
+        body: 'Hold the phone in front of you, keep still, then tilt it down, come back, and tilt it up.',
+      },
+      variants: {
+        title: 'Spice it up',
+        body: 'Mime, singing, taboo words, mix… Pick a variant when you set up the game.',
+      },
+    },
+    try: {
+      calibrating: 'Keep still…',
+      ready: 'All set, your turn!',
+      found: 'Tilt down',
+      pass: 'Tilt up',
+      done: 'Well done, you’ve got it!',
+      noSensor: 'This phone has no tilt sensor: you’ll play by tapping the screen (tap mode).',
+    },
+  },
   colorNames: {
     lagoon: 'Lagoon',
     indigo: 'Indigo',
