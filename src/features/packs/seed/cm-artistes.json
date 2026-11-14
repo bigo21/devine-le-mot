@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "artistes",
@@ -626,6 +626,222 @@
               "chanteur",
               "jeune",
               "afropop"
+            ]
+          },
+          {
+            "text": "Moni Bilé",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "années 80",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Tom Yoms",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "années 80"
+            ]
+          },
+          {
+            "text": "Charlotte Mbango",
+            "difficulty": 2,
+            "forbidden": [
+              "makossa",
+              "chanteuse",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Misse Ngoh",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "guitariste",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Nelle Eyoum",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "pionnier",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Eko Roosevelt",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "chef d'orchestre",
+              "claviers"
+            ]
+          },
+          {
+            "text": "Wes Madiko",
+            "difficulty": 2,
+            "forbidden": [
+              "Alane",
+              "chanteur",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Coco Mbassi",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "sawa",
+              "douceur"
+            ]
+          },
+          {
+            "text": "Uta Bella",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "romantique"
+            ]
+          },
+          {
+            "text": "Lornoar",
+            "difficulty": 3,
+            "forbidden": [
+              "makossa",
+              "chanteur",
+              "années 90"
+            ]
+          },
+          {
+            "text": "Zele le Bombardier",
+            "difficulty": 2,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "Yaoundé"
+            ]
+          },
+          {
+            "text": "Ange Ebogo Emerent",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "Yaoundé"
+            ]
+          },
+          {
+            "text": "Kristo Numpuby",
+            "difficulty": 3,
+            "forbidden": [
+              "bikutsi",
+              "chanteur",
+              "danse"
+            ]
+          },
+          {
+            "text": "Jean-Marie Ahanda",
+            "difficulty": 3,
+            "forbidden": [
+              "Têtes Brûlées",
+              "bikutsi",
+              "trompette"
+            ]
+          },
+          {
+            "text": "Jean Bikoko Aladin",
+            "difficulty": 3,
+            "forbidden": [
+              "assiko",
+              "guitare",
+              "Bassa"
+            ]
+          },
+          {
+            "text": "Pierre Didy Tchakounté",
+            "difficulty": 3,
+            "forbidden": [
+              "mangambeu",
+              "Ouest",
+              "chanteur"
+            ]
+          },
+          {
+            "text": "Ama Pierrot",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "Ouest",
+              "mangambeu"
+            ]
+          },
+          {
+            "text": "Étienne Mbappé",
+            "difficulty": 3,
+            "forbidden": [
+              "bassiste",
+              "jazz",
+              "gants"
+            ]
+          },
+          {
+            "text": "Armand Sabal-Lecco",
+            "difficulty": 3,
+            "forbidden": [
+              "bassiste",
+              "jazz",
+              "virtuose"
+            ]
+          },
+          {
+            "text": "Jean Dikoto Mandengue",
+            "difficulty": 3,
+            "forbidden": [
+              "bassiste",
+              "jazz",
+              "pionnier"
+            ]
+          },
+          {
+            "text": "Mink's",
+            "difficulty": 2,
+            "forbidden": [
+              "rappeur",
+              "humour",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Aveiro Djess",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteur",
+              "afropop",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Mimie",
+            "difficulty": 2,
+            "forbidden": [
+              "chanteuse",
+              "afropop",
+              "jeune"
+            ]
+          },
+          {
+            "text": "Kaïssa Doumbè",
+            "difficulty": 3,
+            "forbidden": [
+              "chanteuse",
+              "sawa",
+              "Douala"
             ]
           }
         ],
