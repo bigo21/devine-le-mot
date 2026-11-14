@@ -1,4 +1,5 @@
 import Constants from 'expo-constants';
+import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import { CaretRightIcon } from 'phosphor-react-native/src/icons/CaretRight';
 import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
@@ -16,6 +17,9 @@ import type { LanguagePreference } from '@/lib/i18n';
 import { Button, Icon, Screen, SegmentedControl, Text } from '@/ui/components';
 import { pop, useReducedMotion } from '@/ui/motion';
 import { colors, radii, spacing, touchTarget, type WordFont, wordFonts } from '@/ui/tokens';
+
+/** Adresse de contact publique de « Donne ton avis » (UX.md §8). */
+const FEEDBACK_EMAIL = 'gloic.ango@gmail.com';
 
 const VOLUMES = { low: 0.35, medium: 0.7, high: 1 } as const;
 type VolumeLevel = keyof typeof VOLUMES;
@@ -158,6 +162,15 @@ export default function SettingsScreen() {
 
       <Section title={t('settings.help')}>
         <LinkRow label={t('settings.tutorial')} onPress={() => router.push('/tutorial')} />
+        <LinkRow
+          label={t('settings.feedback')}
+          hint={t('settings.feedbackHint')}
+          onPress={() =>
+            void Linking.openURL(
+              `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(t('settings.feedbackSubject'))}`,
+            ).catch(() => undefined)
+          }
+        />
       </Section>
 
       <Section title={t('settings.about')}>
@@ -237,17 +250,23 @@ function ToggleRow({ label, hint, value, onChange }: ToggleRowProps) {
   );
 }
 
-function LinkRow({ label, onPress }: { label: string; onPress: () => void }) {
+function LinkRow({ label, hint, onPress }: { label: string; hint?: string; onPress: () => void }) {
   return (
     <Pressable
       style={styles.row}
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={label}
+      accessibilityHint={hint}
     >
-      <Text variant="bodyStrong" style={styles.flex}>
-        {label}
-      </Text>
+      <View style={styles.flex}>
+        <Text variant="bodyStrong">{label}</Text>
+        {hint ? (
+          <Text variant="caption" muted>
+            {hint}
+          </Text>
+        ) : null}
+      </View>
       <Icon icon={CaretRightIcon} color={colors.textMuted} />
     </Pressable>
   );

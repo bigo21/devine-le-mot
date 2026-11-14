@@ -32,6 +32,9 @@ export const motion = {
   variantIntro: 5000,
   /** Dérive du dégradé du bouton Jouer (aller-retour), plus lente que la respiration. */
   playGradientLoop: 4800,
+  /** Boucle de l'écran du front : le téléphone monte, se pose (et montre les gestes la 1re fois). */
+  foreheadLoop: 2600,
+  foreheadLoopWithGestures: 5200,
   /** Mix : chrono arrêté à chaque nouveau mot, le temps de lire sa consigne (retour terrain). */
   mixReading: 3000,
 } as const;

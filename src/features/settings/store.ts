@@ -28,6 +28,8 @@ export type Settings = {
   seenVariants: VariantId[];
   /** Jour du dernier lancement (AAAA-MM-JJ) : au 2e lancement du jour, entrée courte (MOTION.md §3). */
   lastLaunchDay: string;
+  /** Rappel animé des deux gestes sur l'écran du front, montré la première fois (UX.md §4). */
+  seenGestureHint: boolean;
 };
 
 type SettingsStore = Settings & {
@@ -48,6 +50,7 @@ export const defaultSettings: Settings = {
   lastVariant: 'classic',
   seenVariants: [],
   lastLaunchDay: '',
+  seenGestureHint: false,
 };
 
 export const useSettings = create<SettingsStore>()(

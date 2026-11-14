@@ -9,13 +9,13 @@ import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CalibrationRing } from '@/features/game/components/calibration-ring';
+import { ForeheadDemo } from '@/features/game/components/forehead-demo';
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import { useTilt } from '@/features/game/use-tilt';
 import { useSettings } from '@/features/settings/store';
 import { useFeedback } from '@/lib/use-feedback';
 import { Button, Icon, NdopPattern, Text } from '@/ui/components';
-import { Mascot } from '@/ui/mascot';
 import { rise, useReducedMotion } from '@/ui/motion';
 import { colors, patternOpacity, spacing } from '@/ui/tokens';
 
@@ -32,6 +32,8 @@ export default function PlayReadyScreen() {
   const round = useGameSession((s) => s.round);
   const tapMode = useSettings((s) => s.tapMode);
   const updateSettings = useSettings((s) => s.update);
+  // Lu une fois : le rappel reste affiché pendant toute la visite, même après calibration.
+  const [seenGestureHint] = useState(() => useSettings.getState().seenGestureHint);
   const [needsHelp, setNeedsHelp] = useState(false);
 
   useEffect(() => {
@@ -44,6 +46,7 @@ export default function PlayReadyScreen() {
       if (event.type !== 'calibrated') return;
       // Anneau plein → vibration de succès → compte à rebours (MOTION.md §3).
       feedback('calibrated');
+      updateSettings({ seenGestureHint: true });
       router.replace('/play/game');
     },
   });
@@ -71,7 +74,7 @@ export default function PlayReadyScreen() {
       <NdopPattern color={colors.text} opacity={patternOpacity.screen} />
 
       <CalibrationRing progress={playWithTaps ? 0 : tilt.calibrationProgress} size={196}>
-        <Mascot state="attention" size={120} />
+        <ForeheadDemo size={150} showGestures={!seenGestureHint} />
       </CalibrationRing>
 
       <Animated.View entering={rise({ reduced })} style={styles.texts}>
@@ -85,7 +88,10 @@ export default function PlayReadyScreen() {
             <Button
               label={t('ready.tapStart')}
               size="lg"
-              onPress={() => router.replace('/play/game')}
+              onPress={() => {
+                updateSettings({ seenGestureHint: true });
+                router.replace('/play/game');
+              }}
             />
           </>
         ) : (
