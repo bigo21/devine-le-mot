@@ -3,12 +3,27 @@ export const fr = {
   app: {
     name: 'Devine le mot',
   },
+  home: {
+    tagline: 'Le jeu de devinettes pour vos soirées.',
+    play: 'Jouer',
+    replay: 'Rejouer',
+    replayMix_one: '{{name}} + {{count}} autre',
+    replayMix_other: '{{name}} + {{count}} autres',
+    categories: 'Catégories',
+    create: 'Créer',
+    settings: 'Réglages',
+    firstTime: 'Première fois ? Voir comment jouer (30 s)',
+    showMe: 'Montre-moi',
+    iKnow: 'Je connais',
+    devMenu: 'Menu développeur (appui long)',
+  },
   common: {
     wip: 'Écran en construction',
     back: 'Retour',
     close: 'Fermer',
   },
   screens: {
+    devMenu: 'Menu développeur',
     devThree: 'Test 3D (dev)',
     home: 'Accueil',
     categories: 'Catégories',

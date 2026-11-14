@@ -673,6 +673,22 @@ export async function exportPackOf(
   return parsed.success ? parsed.data : null;
 }
 
+/** Réglages de la dernière manche solo, pour « Rejouer » depuis l'accueil (UX.md §2). */
+export type LastRound = { categoryIds: number[]; variant: VariantId; durationS: number };
+
+export async function lastSoloRound(db: SQLiteDatabase): Promise<LastRound | null> {
+  const row = await db.getFirstAsync<{ category_ids: string; variant: string; duration_s: number }>(
+    `SELECT category_ids, variant, duration_s FROM rounds WHERE match_id IS NULL
+     ORDER BY played_at DESC, id DESC LIMIT 1`,
+  );
+  if (!row) return null;
+  return {
+    categoryIds: JSON.parse(row.category_ids) as number[],
+    variant: row.variant as VariantId,
+    durationS: row.duration_s,
+  };
+}
+
 // --- Parties en équipes (table `matches`) -------------------------------------------------------
 
 export type MatchSettings = {

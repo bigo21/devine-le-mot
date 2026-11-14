@@ -4,12 +4,27 @@ export const en: Translation = {
   app: {
     name: 'Guess the Word',
   },
+  home: {
+    tagline: 'The guessing game for your parties.',
+    play: 'Play',
+    replay: 'Play again',
+    replayMix_one: '{{name}} + {{count}} more',
+    replayMix_other: '{{name}} + {{count}} more',
+    categories: 'Categories',
+    create: 'Create',
+    settings: 'Settings',
+    firstTime: 'First time? See how to play (30 s)',
+    showMe: 'Show me',
+    iKnow: 'I know',
+    devMenu: 'Developer menu (long press)',
+  },
   common: {
     wip: 'Screen under construction',
     back: 'Back',
     close: 'Close',
   },
   screens: {
+    devMenu: 'Developer menu',
     devThree: '3D test (dev)',
     home: 'Home',
     categories: 'Categories',

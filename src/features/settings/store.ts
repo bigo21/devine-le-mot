@@ -26,6 +26,8 @@ export type Settings = {
   lastVariant: VariantId;
   /** Variantes déjà jouées : la première fois, la consigne s'affiche en grand (UX.md §4). */
   seenVariants: VariantId[];
+  /** Jour du dernier lancement (AAAA-MM-JJ) : au 2e lancement du jour, entrée courte (MOTION.md §3). */
+  lastLaunchDay: string;
 };
 
 type SettingsStore = Settings & {
@@ -45,6 +47,7 @@ export const defaultSettings: Settings = {
   hasSeenOnboarding: false,
   lastVariant: 'classic',
   seenVariants: [],
+  lastLaunchDay: '',
 };
 
 export const useSettings = create<SettingsStore>()(

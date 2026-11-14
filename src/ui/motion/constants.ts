@@ -30,6 +30,8 @@ export const motion = {
   /** Consigne d'une variante jouée pour la première fois, avant le compte à rebours (UX.md §4) :
    * 5 s, le temps que tout le groupe la lise (retour terrain du 25/10/2026). */
   variantIntro: 5000,
+  /** Dérive du dégradé du bouton Jouer (aller-retour), plus lente que la respiration. */
+  playGradientLoop: 4800,
   /** Mix : chrono arrêté à chaque nouveau mot, le temps de lire sa consigne (retour terrain). */
   mixReading: 3000,
 } as const;
