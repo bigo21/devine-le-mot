@@ -1,7 +1,7 @@
 // Transition « carte → écran détail » (MOTION.md §3, choix de catégorie) : zoom + fondu croisé.
 // Les transitions d'éléments partagés de Reanimated 4.7 restent expérimentales (option native
 // désactivée) : on reproduit l'effet en faisant partir l'élément d'arrivée du rectangle touché.
-import { type ComponentRef, useCallback, useRef } from 'react';
+import { type ComponentRef, useCallback, useEffect, useRef, useState } from 'react';
 import type { View } from 'react-native';
 import { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 
@@ -14,6 +14,8 @@ export type ZoomOrigin = { x: number; y: number; width: number; height: number }
 const MAX_AGE_MS = 1000;
 /** Opacité de départ : l'élément se révèle en grandissant (fondu croisé avec l'écran quitté). */
 const FROM_OPACITY = 0.4;
+/** Filet de sécurité : sans mesure après ce délai (ms), l'élément s'affiche sans zoom. */
+const MEASURE_TIMEOUT_MS = 600;
 
 let pending: { key: string; origin: ZoomOrigin; at: number } | null = null;
 
@@ -42,6 +44,8 @@ export function useZoomFrom(origin: ZoomOrigin | null, reduced: boolean) {
   // Invisible tant que la place d'arrivée n'est pas mesurée (pas d'éclair à pleine taille).
   const from = useSharedValue({ dx: 0, dy: 0, scale: 1, measured: !active });
   const measured = useRef(false);
+  /** Le zoom a démarré (ou n'a pas lieu) : le reste de l'écran peut faire son entrée. */
+  const [started, setStarted] = useState(!active);
 
   const onLayout = useCallback(() => {
     if (!active || measured.current || !origin) return;
@@ -55,9 +59,25 @@ export function useZoomFrom(origin: ZoomOrigin | null, reduced: boolean) {
         measured: true,
       });
       // Départ à l'image suivante : l'écran natif vient d'être posé avec l'élément à l'origine.
-      requestAnimationFrame(() => progress.set(withSpring(1, spring.gentle)));
+      requestAnimationFrame(() => {
+        progress.set(withSpring(1, spring.gentle));
+        setStarted(true);
+      });
     });
   }, [active, from, origin, progress]);
+
+  // Si la mesure n'arrive jamais, l'élément et le reste de l'écran ne doivent pas rester cachés.
+  useEffect(() => {
+    if (!active) return;
+    const timer = setTimeout(() => {
+      if (measured.current) return;
+      measured.current = true;
+      from.set({ dx: 0, dy: 0, scale: 1, measured: true });
+      progress.set(1);
+      setStarted(true);
+    }, MEASURE_TIMEOUT_MS);
+    return () => clearTimeout(timer);
+  }, [active, from, progress]);
 
   const style = useAnimatedStyle(() => {
     const p = progress.get();
@@ -72,5 +92,5 @@ export function useZoomFrom(origin: ZoomOrigin | null, reduced: boolean) {
     };
   });
 
-  return { ref, onLayout, style, active };
+  return { ref, onLayout, style, active, started };
 }

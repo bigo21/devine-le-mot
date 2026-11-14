@@ -54,6 +54,7 @@ export default function CategoryDetailScreen() {
     onLayout: onZoomLayout,
     style: zoomStyle,
     active: zooming,
+    started: zoomStarted,
   } = useZoomFrom(origin, reduced);
 
   // Venue de la grille : la catégorie est déjà connue, l'écran s'affiche sans attendre la base.
@@ -141,111 +142,117 @@ export default function CategoryDetailScreen() {
         </Text>
       </Animated.View>
 
-      <Animated.View entering={rise({ delay: 80, reduced })} style={styles.actions}>
-        <Button
-          label={t('categoryDetail.play')}
-          size="lg"
-          block
-          icon={<Icon icon={PlayIcon} emphasis />}
-          onPress={() =>
-            router.push({ pathname: '/play/setup', params: { category: String(category.id) } })
-          }
-        />
-        <View style={styles.row}>
-          <View style={styles.flex}>
+      {/* Le reste de l'écran entre une fois le zoom parti : sinon son entrée se jouerait avant
+          que l'écran soit visible. */}
+      {zoomStarted ? (
+        <>
+          <Animated.View entering={rise({ delay: 80, reduced })} style={styles.actions}>
             <Button
-              label={
-                category.favorite
-                  ? t('categoriesScreen.removeFavorite')
-                  : t('categoriesScreen.addFavorite')
-              }
-              variant="secondary"
+              label={t('categoryDetail.play')}
+              size="lg"
               block
-              icon={<Icon icon={StarIcon} emphasis={category.favorite} />}
-              onPress={() => void toggleFavorite()}
-            />
-          </View>
-        </View>
-        <View style={styles.row}>
-          <View style={styles.flex}>
-            <Button
-              label={builtin ? t('categoriesScreen.duplicate') : t('categoriesScreen.edit')}
-              variant="ghost"
-              block
-              icon={<Icon icon={builtin ? CopySimpleIcon : PencilSimpleIcon} />}
+              icon={<Icon icon={PlayIcon} emphasis />}
               onPress={() =>
-                router.push({
-                  pathname: '/create/editor',
-                  params: builtin
-                    ? { duplicate: String(category.id) }
-                    : { id: String(category.id) },
-                })
+                router.push({ pathname: '/play/setup', params: { category: String(category.id) } })
               }
             />
-          </View>
-          {!builtin ? (
-            <View style={styles.flex}>
-              <Button
-                label={t('myCategories.share')}
-                variant="ghost"
-                block
-                loading={sharing}
-                icon={<Icon icon={ShareNetworkIcon} />}
-                onPress={() => void share()}
-              />
+            <View style={styles.row}>
+              <View style={styles.flex}>
+                <Button
+                  label={
+                    category.favorite
+                      ? t('categoriesScreen.removeFavorite')
+                      : t('categoriesScreen.addFavorite')
+                  }
+                  variant="secondary"
+                  block
+                  icon={<Icon icon={StarIcon} emphasis={category.favorite} />}
+                  onPress={() => void toggleFavorite()}
+                />
+              </View>
             </View>
-          ) : null}
-        </View>
-      </Animated.View>
+            <View style={styles.row}>
+              <View style={styles.flex}>
+                <Button
+                  label={builtin ? t('categoriesScreen.duplicate') : t('categoriesScreen.edit')}
+                  variant="ghost"
+                  block
+                  icon={<Icon icon={builtin ? CopySimpleIcon : PencilSimpleIcon} />}
+                  onPress={() =>
+                    router.push({
+                      pathname: '/create/editor',
+                      params: builtin
+                        ? { duplicate: String(category.id) }
+                        : { id: String(category.id) },
+                    })
+                  }
+                />
+              </View>
+              {!builtin ? (
+                <View style={styles.flex}>
+                  <Button
+                    label={t('myCategories.share')}
+                    variant="ghost"
+                    block
+                    loading={sharing}
+                    icon={<Icon icon={ShareNetworkIcon} />}
+                    onPress={() => void share()}
+                  />
+                </View>
+              ) : null}
+            </View>
+          </Animated.View>
 
-      <Animated.View entering={rise({ delay: 160, reduced })} style={styles.section}>
-        <Text variant="heading" accessibilityRole="header">
-          {t('categoryDetail.variants')}
-        </Text>
-        <View style={styles.variants}>
-          {availableVariants([category]).map((variant) => (
-            <View key={variant} style={styles.variant}>
-              <VariantIcon variant={variant} size={36} />
-              <Text variant="caption" align="center" numberOfLines={2}>
-                {t(`variants.${variant}.name`)}
+          <Animated.View entering={rise({ delay: 160, reduced })} style={styles.section}>
+            <Text variant="heading" accessibilityRole="header">
+              {t('categoryDetail.variants')}
+            </Text>
+            <View style={styles.variants}>
+              {availableVariants([category]).map((variant) => (
+                <View key={variant} style={styles.variant}>
+                  <VariantIcon variant={variant} size={36} />
+                  <Text variant="caption" align="center" numberOfLines={2}>
+                    {t(`variants.${variant}.name`)}
+                  </Text>
+                </View>
+              ))}
+            </View>
+            {category.forbiddenEligible > 0 ? (
+              <Text variant="caption" muted>
+                {t('categoryDetail.forbidden', { count: category.forbiddenEligible })}
               </Text>
-            </View>
-          ))}
-        </View>
-        {category.forbiddenEligible > 0 ? (
-          <Text variant="caption" muted>
-            {t('categoryDetail.forbidden', { count: category.forbiddenEligible })}
-          </Text>
-        ) : null}
-      </Animated.View>
+            ) : null}
+          </Animated.View>
 
-      <Animated.View entering={rise({ delay: 240, reduced })} style={styles.section}>
-        <Text variant="heading" accessibilityRole="header">
-          {t('categoryDetail.sample')}
-        </Text>
-        <Text variant="caption" muted>
-          {t('categoryDetail.spoiler')}
-        </Text>
-        <View style={styles.words}>
-          {sample.map((word, index) => (
-            <Animated.View
-              key={`${shuffles}-${word}`}
-              entering={pop({ delay: staggerDelay(index) ?? 0, reduced })}
-              style={styles.word}
-            >
-              <Text variant="labelSmall">{word}</Text>
-            </Animated.View>
-          ))}
-        </View>
-        {category.wordCount > SAMPLE_SIZE ? (
-          <Button
-            label={t('categoryDetail.shuffle')}
-            variant="ghost"
-            icon={<Icon icon={ArrowsClockwiseIcon} />}
-            onPress={() => void shuffle()}
-          />
-        ) : null}
-      </Animated.View>
+          <Animated.View entering={rise({ delay: 240, reduced })} style={styles.section}>
+            <Text variant="heading" accessibilityRole="header">
+              {t('categoryDetail.sample')}
+            </Text>
+            <Text variant="caption" muted>
+              {t('categoryDetail.spoiler')}
+            </Text>
+            <View style={styles.words}>
+              {sample.map((word, index) => (
+                <Animated.View
+                  key={`${shuffles}-${word}`}
+                  entering={pop({ delay: staggerDelay(index) ?? 0, reduced })}
+                  style={styles.word}
+                >
+                  <Text variant="labelSmall">{word}</Text>
+                </Animated.View>
+              ))}
+            </View>
+            {category.wordCount > SAMPLE_SIZE ? (
+              <Button
+                label={t('categoryDetail.shuffle')}
+                variant="ghost"
+                icon={<Icon icon={ArrowsClockwiseIcon} />}
+                onPress={() => void shuffle()}
+              />
+            ) : null}
+          </Animated.View>
+        </>
+      ) : null}
     </Screen>
   );
 }
