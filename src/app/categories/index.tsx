@@ -6,12 +6,13 @@ import { PencilSimpleIcon } from 'phosphor-react-native/src/icons/PencilSimple';
 import { PlayIcon } from 'phosphor-react-native/src/icons/Play';
 import { StarIcon } from 'phosphor-react-native/src/icons/Star';
 import { XIcon } from 'phosphor-react-native/src/icons/X';
-import { type ReactNode, useCallback, useMemo, useState } from 'react';
+import { type ComponentRef, type ReactNode, useCallback, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
+import { handOffCategory } from '@/features/packs/category-handoff';
 import { CategoryCard } from '@/features/packs/components/category-card';
 import { type CategoryFilter, categoryFilters, filterCategories } from '@/features/packs/filter';
 import {
@@ -22,7 +23,7 @@ import {
 } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
 import { BottomSheet, Button, CategoryIcon, Chip, Flag, Icon, Screen, Text } from '@/ui/components';
-import { fadeOut, rise, staggerDelay, useReducedMotion } from '@/ui/motion';
+import { fadeOut, rise, setZoomOrigin, staggerDelay, useReducedMotion } from '@/ui/motion';
 import { colors, maxFontScale, radii, spacing, touchTarget, typography } from '@/ui/tokens';
 
 /** Icône de chaque pilule : drapeau pour un pays, Fluent 3D sinon (docs/ASSETS.md §1). */
@@ -154,23 +155,13 @@ export default function CategoriesScreen() {
           <>
             <View style={styles.grid}>
               {visible.map((category, index) => (
-                <Animated.View
+                <GridItem
                   key={`${filter}-${category.id}`}
-                  entering={rise({ delay: staggerDelay(index) ?? 0, reduced })}
-                  exiting={fadeOut}
-                  style={styles.gridItem}
-                >
-                  <CategoryCard
-                    category={category}
-                    onPress={() =>
-                      router.push({
-                        pathname: '/categories/[id]',
-                        params: { id: String(category.id) },
-                      })
-                    }
-                    onLongPress={() => void openPreview(category)}
-                  />
-                </Animated.View>
+                  category={category}
+                  delay={staggerDelay(index) ?? 0}
+                  reduced={reduced}
+                  onLongPress={() => void openPreview(category)}
+                />
               ))}
             </View>
             <Text variant="caption" muted>
@@ -254,6 +245,39 @@ export default function CategoriesScreen() {
         ) : null}
       </BottomSheet>
     </View>
+  );
+}
+
+type GridItemProps = {
+  category: CategorySummary;
+  delay: number;
+  reduced: boolean;
+  onLongPress: () => void;
+};
+
+/** Carte de la grille : au toucher, on mémorise sa place pour que le détail en parte (zoom). */
+function GridItem({ category, delay, reduced, onLongPress }: GridItemProps) {
+  const ref = useRef<ComponentRef<typeof View>>(null);
+  const open = () => {
+    const go = () =>
+      router.push({ pathname: '/categories/[id]', params: { id: String(category.id) } });
+    const view = ref.current;
+    handOffCategory(category);
+    if (!view) return go();
+    view.measureInWindow((x, y, width, height) => {
+      if (width > 0) setZoomOrigin(`category-${category.id}`, { x, y, width, height });
+      go();
+    });
+  };
+  return (
+    <Animated.View
+      ref={ref}
+      entering={rise({ delay, reduced })}
+      exiting={fadeOut}
+      style={styles.gridItem}
+    >
+      <CategoryCard category={category} onPress={open} onLongPress={onLongPress} />
+    </Animated.View>
   );
 }
 

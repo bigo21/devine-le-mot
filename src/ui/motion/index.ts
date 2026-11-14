@@ -10,3 +10,4 @@ export {
   usePress,
   useShake,
 } from './vocabulary';
+export { setZoomOrigin, takeZoomOrigin, useZoomFrom, type ZoomOrigin } from './zoom-from';

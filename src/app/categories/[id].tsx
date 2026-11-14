@@ -14,6 +14,7 @@ import Animated from 'react-native-reanimated';
 import { VariantIcon } from '@/features/game/components/variant-icon';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import { availableVariants } from '@/features/game/variants';
+import { takeHandedOffCategory } from '@/features/packs/category-handoff';
 import { sharePackFile } from '@/features/packs/files';
 import {
   type CategorySummary,
@@ -24,7 +25,14 @@ import {
 } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
 import { Button, CategoryIcon, Icon, NdopPattern, Screen, Text } from '@/ui/components';
-import { pop, rise, staggerDelay, useReducedMotion } from '@/ui/motion';
+import {
+  pop,
+  rise,
+  staggerDelay,
+  takeZoomOrigin,
+  useReducedMotion,
+  useZoomFrom,
+} from '@/ui/motion';
 import { colors, onColor, patternOpacity, radii, spacing } from '@/ui/tokens';
 
 /** Mots montrés : un échantillon seulement, pour ne pas gâcher la partie. */
@@ -39,8 +47,19 @@ export default function CategoryDetailScreen() {
   const feedback = useFeedback();
   const { id } = useLocalSearchParams<{ id: string }>();
   const categoryId = Number(id);
+  // Arrivée depuis une carte de la grille : le bandeau part de la carte touchée (zoom).
+  const [origin] = useState(() => takeZoomOrigin(`category-${id}`));
+  const {
+    ref: zoomRef,
+    onLayout: onZoomLayout,
+    style: zoomStyle,
+    active: zooming,
+  } = useZoomFrom(origin, reduced);
 
-  const [category, setCategory] = useState<CategorySummary | null | undefined>(undefined);
+  // Venue de la grille : la catégorie est déjà connue, l'écran s'affiche sans attendre la base.
+  const [category, setCategory] = useState<CategorySummary | null | undefined>(() =>
+    takeHandedOffCategory(categoryId),
+  );
   const [sample, setSample] = useState<string[]>([]);
   const [shuffles, setShuffles] = useState(0);
   const [sharing, setSharing] = useState(false);
@@ -107,8 +126,10 @@ export default function CategoryDetailScreen() {
   return (
     <Screen scroll>
       <Animated.View
-        entering={pop({ reduced })}
-        style={[styles.hero, { backgroundColor: colors[category.color] }]}
+        ref={zoomRef}
+        onLayout={onZoomLayout}
+        entering={zooming ? undefined : pop({ reduced })}
+        style={[styles.hero, { backgroundColor: colors[category.color] }, zoomStyle]}
       >
         <NdopPattern color={foreground} opacity={patternOpacity.card} />
         <CategoryIcon emoji={category.emoji} size={88} />
