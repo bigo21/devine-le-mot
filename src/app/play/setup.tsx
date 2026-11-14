@@ -1,11 +1,12 @@
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
 import { InfoIcon } from 'phosphor-react-native/src/icons/Info';
+import { PencilSimpleIcon } from 'phosphor-react-native/src/icons/PencilSimple';
+import { PlusIcon } from 'phosphor-react-native/src/icons/Plus';
 import { UsersThreeIcon } from 'phosphor-react-native/src/icons/UsersThree';
 import { type ComponentRef, useCallback, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
-import Animated from 'react-native-reanimated';
 
 import { VariantIcon } from '@/features/game/components/variant-icon';
 import {
@@ -27,21 +28,29 @@ import {
   tooFewWordsFor,
   type VariantId,
 } from '@/features/game/variants';
-import { CategoryCard } from '@/features/packs/components/category-card';
+import { startPicking, takePicked } from '@/features/packs/category-picker';
 import {
   type CategorySummary,
   createMatchRecord,
   finishMatch,
   getCategoryCards,
   inProgressMatch,
+  lastSoloRound,
   listCategories,
   recentlySeenWords,
   type StoredMatch,
 } from '@/features/packs/repository';
 import { type RoundDuration, useSettings } from '@/features/settings/store';
 import { useFeedback } from '@/lib/use-feedback';
-import { Button, Icon, KeyboardScreen, SegmentedControl, Text, TextField } from '@/ui/components';
-import { rise, staggerDelay, useReducedMotion } from '@/ui/motion';
+import {
+  Button,
+  CategoryIcon,
+  Icon,
+  KeyboardScreen,
+  SegmentedControl,
+  Text,
+  TextField,
+} from '@/ui/components';
 import { colors, radii, spacing } from '@/ui/tokens';
 
 type Mode = 'solo' | 'teams';
@@ -54,14 +63,13 @@ const TEAM_COUNTS = Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => 
 const ROUND_COUNTS = [1, 2, 3, 5] as const;
 
 /**
- * Préparation : variante → durée → catégories (une ou plusieurs, mélangées) → « C'est parti »
+ * Préparation : catégories (résumé, changées dans l'explorateur) → variante → durée → « C'est parti »
  * (3 taps depuis l'accueil, UX.md §2 ; variante et durée mémorisées).
  */
 export default function PlaySetupScreen() {
   useOrientationLock('portrait');
   const { t, i18n } = useTranslation();
   const db = useSQLiteContext();
-  const reduced = useReducedMotion();
   const feedback = useFeedback();
   const params = useLocalSearchParams<{ category?: string }>();
   const defaultDuration = useSettings((s) => s.defaultDuration);
@@ -86,15 +94,27 @@ export default function PlaySetupScreen() {
     [t],
   );
   const [teams, setTeams] = useState<Team[]>(() => resizeTeams([], MIN_TEAMS, teamName));
+  const seeded = useRef(false);
   /** Partie en équipes restée en cours (app fermée) : proposée à la reprise. */
   const [pending, setPending] = useState<StoredMatch | null>(null);
 
   useFocusEffect(
     useCallback(() => {
       let active = true;
+      // Retour de l'explorateur en mode sélection : on reprend la sélection modifiée.
+      const picked = takePicked();
+      if (picked) setSelectedIds(picked);
       void listCategories(db, i18n.language).then((list) => {
         if (active) setCategories(list);
       });
+      // App relancée : la sélection de la dernière manche n'est plus en mémoire, on la reprend
+      // de l'historique (une fois, et seulement si rien n'est encore choisi).
+      if (!seeded.current) {
+        seeded.current = true;
+        void lastSoloRound(db).then((last) => {
+          if (active && last) setSelectedIds((ids) => (ids.length > 0 ? ids : last.categoryIds));
+        });
+      }
       void inProgressMatch(db).then((match) => {
         if (active) setPending(match);
       });
@@ -102,17 +122,6 @@ export default function PlaySetupScreen() {
         active = false;
       };
     }, [db, i18n.language]),
-  );
-
-  // Les catégories choisies au départ passent en tête : sinon elles peuvent être sélectionnées
-  // tout en bas de la grille, hors de vue. Ordre figé sur le choix initial.
-  const [initialIds] = useState(selectedIds);
-  const ordered = useMemo(
-    () => [
-      ...categories.filter((c) => initialIds.includes(c.id)),
-      ...categories.filter((c) => !initialIds.includes(c.id)),
-    ],
-    [categories, initialIds],
   );
 
   const selected = useMemo(
@@ -144,9 +153,10 @@ export default function PlaySetupScreen() {
   const teamCountOptions = TEAM_COUNTS.map((value) => ({ value, label: String(value) }));
   const roundOptions = ROUND_COUNTS.map((value) => ({ value, label: String(value) }));
 
-  const toggle = (id: number) => {
-    feedback('select');
-    setSelectedIds((ids) => (ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]));
+  /** Ouvre l'explorateur Catégories en mode sélection, avec la sélection en cours. */
+  const changeCategories = () => {
+    startPicking(selectedIds);
+    router.push({ pathname: '/categories', params: { pick: '1' } });
   };
 
   const start = async () => {
@@ -301,6 +311,50 @@ export default function PlaySetupScreen() {
           </View>
         ) : null}
 
+        {/* Catégories d'abord : le choix le plus important, résumé ici ; on les change dans
+            l'explorateur (filtres, recherche) plutôt que dans une grille de toutes les cartes. */}
+        <View style={styles.section}>
+          <View style={styles.sectionHeader}>
+            <Text variant="heading" accessibilityRole="header" style={styles.flex}>
+              {t('setup.category')}
+            </Text>
+            {selected.length > 0 ? (
+              <Button
+                label={t('setup.changeCategories')}
+                variant="secondary"
+                icon={<Icon icon={PencilSimpleIcon} />}
+                onPress={changeCategories}
+              />
+            ) : null}
+          </View>
+          {selected.length > 0 ? (
+            <View style={styles.picked}>
+              {selected.map((category) => (
+                <View key={category.id} style={styles.pickedItem}>
+                  <CategoryIcon emoji={category.emoji} size={24} />
+                  <Text variant="labelSmall" numberOfLines={1} style={styles.pickedName}>
+                    {category.name}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          ) : (
+            <>
+              <Text muted>{t('setup.noCategoryYet')}</Text>
+              <Button
+                label={t('setup.chooseCategories')}
+                variant="secondary"
+                block
+                icon={<Icon icon={PlusIcon} />}
+                onPress={changeCategories}
+              />
+            </>
+          )}
+          <Text variant="caption" muted>
+            {t('setup.categoryHint')}
+          </Text>
+        </View>
+
         <View style={styles.section}>
           <Text variant="heading" accessibilityRole="header">
             {t('teams.mode')}
@@ -416,34 +470,6 @@ export default function PlaySetupScreen() {
             accessibilityLabel={t('setup.duration')}
           />
         </View>
-
-        <View style={styles.section}>
-          <Text variant="heading" accessibilityRole="header">
-            {t('setup.category')}
-          </Text>
-          <Text variant="caption" muted>
-            {t('setup.categoryHint')}
-          </Text>
-          <View style={styles.grid} collapsable={false}>
-            {ordered.map((category, index) => {
-              const isSelected = selectedIds.includes(category.id);
-              return (
-                <Animated.View
-                  key={category.id}
-                  entering={rise({ delay: staggerDelay(index) ?? 0, reduced })}
-                  style={[styles.gridItem, isSelected && styles.selected]}
-                  accessibilityState={{ selected: isSelected }}
-                >
-                  <CategoryCard
-                    category={category}
-                    selected={isSelected}
-                    onPress={() => toggle(category.id)}
-                  />
-                </Animated.View>
-              );
-            })}
-          </View>
-        </View>
       </KeyboardScreen>
     </View>
   );
@@ -468,9 +494,22 @@ const styles = StyleSheet.create({
   },
   // Sélection : contour blanc cassé (et icône animée), jamais la couleur seule.
   variantSelected: { borderColor: colors.text },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
-  gridItem: { width: '48%', borderRadius: radii.card + 4, padding: 2 },
-  selected: { backgroundColor: colors.text },
+  sectionHeader: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+  picked: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+  pickedItem: {
+    maxWidth: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    paddingLeft: spacing.sm,
+    paddingRight: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: radii.pill,
+    backgroundColor: colors.bgElevated,
+    borderWidth: 1,
+    borderColor: colors.hairline,
+  },
+  pickedName: { flexShrink: 1 },
   teamRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
   teamDot: { width: 24, height: 24, borderRadius: radii.pill },
   resume: {

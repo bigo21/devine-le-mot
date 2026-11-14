@@ -155,6 +155,11 @@ export const en: Translation = {
     import: 'Import a pack',
     duplicate: 'Duplicate to edit',
     edit: 'Edit',
+    pickTitle: 'Choose your categories',
+    pickHint: 'Tap to add or remove, long press to see a few words.',
+    pickDone: 'Done',
+    pickAdd: 'Add to the game',
+    pickRemove: 'Remove from the game',
   },
   variants: {
     classic: { name: 'Classic', instruction: 'Describe the word without saying it' },
@@ -169,7 +174,10 @@ export const en: Translation = {
   },
   setup: {
     variantsHint: 'Swipe to see the other variants.',
-    categoryHint: 'Tap one or more categories to mix them.',
+    categoryHint: 'One or more categories, mixed together.',
+    changeCategories: 'Change',
+    chooseCategories: 'Choose categories',
+    noCategoryYet: 'No category chosen yet.',
     selected_one: '{{count}} category · {{words}} words',
     selected_other: '{{count}} categories mixed · {{words}} words',
     tooFewWords: 'Few words for this duration: add another category to the mix.',

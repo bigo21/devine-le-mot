@@ -1,9 +1,11 @@
-import { router, useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
 import { CopySimpleIcon } from 'phosphor-react-native/src/icons/CopySimple';
 import { MagnifyingGlassIcon } from 'phosphor-react-native/src/icons/MagnifyingGlass';
 import { PencilSimpleIcon } from 'phosphor-react-native/src/icons/PencilSimple';
+import { MinusIcon } from 'phosphor-react-native/src/icons/Minus';
 import { PlayIcon } from 'phosphor-react-native/src/icons/Play';
+import { PlusIcon } from 'phosphor-react-native/src/icons/Plus';
 import { StarIcon } from 'phosphor-react-native/src/icons/Star';
 import { XIcon } from 'phosphor-react-native/src/icons/X';
 import { type ComponentRef, type ReactNode, useCallback, useMemo, useRef, useState } from 'react';
@@ -13,6 +15,7 @@ import Animated from 'react-native-reanimated';
 
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
 import { handOffCategory } from '@/features/packs/category-handoff';
+import { pickingIds, setPicked } from '@/features/packs/category-picker';
 import { CategoryCard } from '@/features/packs/components/category-card';
 import { type CategoryFilter, categoryFilters, filterCategories } from '@/features/packs/filter';
 import {
@@ -22,7 +25,17 @@ import {
   setFavorite,
 } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
-import { BottomSheet, Button, CategoryIcon, Chip, Flag, Icon, Screen, Text } from '@/ui/components';
+import {
+  BottomSheet,
+  Button,
+  CategoryIcon,
+  Chip,
+  Flag,
+  Icon,
+  KeyboardScreen,
+  Screen,
+  Text,
+} from '@/ui/components';
 import { fadeOut, rise, setZoomOrigin, staggerDelay, useReducedMotion } from '@/ui/motion';
 import { colors, maxFontScale, radii, spacing, touchTarget, typography } from '@/ui/tokens';
 
@@ -44,6 +57,9 @@ export default function CategoriesScreen() {
   const db = useSQLiteContext();
   const reduced = useReducedMotion();
   const feedback = useFeedback();
+  // Mode sélection (ouvert depuis la préparation) : toucher une carte l'ajoute ou la retire.
+  const picking = useLocalSearchParams<{ pick?: string }>().pick === '1';
+  const [pickedIds, setPickedIds] = useState<number[]>(() => (picking ? pickingIds() : []));
 
   const [categories, setCategories] = useState<CategorySummary[]>([]);
   const [filter, setFilter] = useState<CategoryFilter>('all');
@@ -67,6 +83,17 @@ export default function CategoriesScreen() {
     () => filterCategories(categories, filter, query),
     [categories, filter, query],
   );
+
+  const togglePicked = (id: number) => {
+    feedback('select');
+    setPickedIds((ids) => {
+      const next = ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id];
+      setPicked(next);
+      return next;
+    });
+  };
+  const pickedCategories = categories.filter((c) => pickedIds.includes(c.id));
+  const pickedWords = pickedCategories.reduce((sum, c) => sum + c.wordCount, 0);
 
   const openPreview = async (category: CategorySummary) => {
     const words = await previewWords(db, category.id);
@@ -101,9 +128,21 @@ export default function CategoriesScreen() {
 
   return (
     <View style={styles.fill}>
-      <Screen scroll>
+      <Container
+        picking={picking}
+        footer={
+          <>
+            <Text variant="labelSmall" accessibilityLiveRegion="polite">
+              {pickedCategories.length === 0
+                ? t('setup.noCategory')
+                : t('setup.selected', { count: pickedCategories.length, words: pickedWords })}
+            </Text>
+            <Button label={t('categoriesScreen.pickDone')} size="lg" block onPress={router.back} />
+          </>
+        }
+      >
         <Text variant="display" accessibilityRole="header">
-          {t('screens.categories')}
+          {picking ? t('categoriesScreen.pickTitle') : t('screens.categories')}
         </Text>
 
         <View style={styles.search}>
@@ -160,12 +199,14 @@ export default function CategoriesScreen() {
                   category={category}
                   delay={staggerDelay(index) ?? 0}
                   reduced={reduced}
+                  picked={picking ? pickedIds.includes(category.id) : undefined}
+                  onPick={picking ? () => togglePicked(category.id) : undefined}
                   onLongPress={() => void openPreview(category)}
                 />
               ))}
             </View>
             <Text variant="caption" muted>
-              {t('categoriesScreen.hint')}
+              {picking ? t('categoriesScreen.pickHint') : t('categoriesScreen.hint')}
             </Text>
           </>
         ) : (
@@ -189,7 +230,7 @@ export default function CategoriesScreen() {
             ) : null}
           </View>
         )}
-      </Screen>
+      </Container>
 
       <BottomSheet
         visible={preview !== null}
@@ -208,13 +249,35 @@ export default function CategoriesScreen() {
                 </View>
               ))}
             </View>
-            <Button
-              label={t('categoriesScreen.play')}
-              size="lg"
-              block
-              icon={<Icon icon={PlayIcon} emphasis />}
-              onPress={() => play(preview.category)}
-            />
+            {picking ? (
+              <Button
+                label={
+                  pickedIds.includes(preview.category.id)
+                    ? t('categoriesScreen.pickRemove')
+                    : t('categoriesScreen.pickAdd')
+                }
+                size="lg"
+                block
+                icon={
+                  <Icon
+                    icon={pickedIds.includes(preview.category.id) ? MinusIcon : PlusIcon}
+                    emphasis
+                  />
+                }
+                onPress={() => {
+                  togglePicked(preview.category.id);
+                  setPreview(null);
+                }}
+              />
+            ) : (
+              <Button
+                label={t('categoriesScreen.play')}
+                size="lg"
+                block
+                icon={<Icon icon={PlayIcon} emphasis />}
+                onPress={() => play(preview.category)}
+              />
+            )}
             <Button
               label={
                 preview.category.favorite
@@ -226,21 +289,23 @@ export default function CategoriesScreen() {
               icon={<Icon icon={StarIcon} emphasis={preview.category.favorite} />}
               onPress={() => void toggleFavorite()}
             />
-            <Button
-              label={
-                preview.category.source === 'builtin'
-                  ? t('categoriesScreen.duplicate')
-                  : t('categoriesScreen.edit')
-              }
-              variant="ghost"
-              block
-              icon={
-                <Icon
-                  icon={preview.category.source === 'builtin' ? CopySimpleIcon : PencilSimpleIcon}
-                />
-              }
-              onPress={() => edit(preview.category)}
-            />
+            {picking ? null : (
+              <Button
+                label={
+                  preview.category.source === 'builtin'
+                    ? t('categoriesScreen.duplicate')
+                    : t('categoriesScreen.edit')
+                }
+                variant="ghost"
+                block
+                icon={
+                  <Icon
+                    icon={preview.category.source === 'builtin' ? CopySimpleIcon : PencilSimpleIcon}
+                  />
+                }
+                onPress={() => edit(preview.category)}
+              />
+            )}
           </>
         ) : null}
       </BottomSheet>
@@ -252,11 +317,29 @@ type GridItemProps = {
   category: CategorySummary;
   delay: number;
   reduced: boolean;
+  /** Mode sélection : carte choisie ou non (contour et coche, jamais la couleur seule). */
+  picked?: boolean;
+  /** Mode sélection : le toucher ajoute ou retire la carte au lieu d'ouvrir le détail. */
+  onPick?: () => void;
   onLongPress: () => void;
 };
 
 /** Carte de la grille : au toucher, on mémorise sa place pour que le détail en parte (zoom). */
-function GridItem({ category, delay, reduced, onLongPress }: GridItemProps) {
+/** Conteneur : pied fixe « Valider » en mode sélection, écran défilant simple sinon. */
+function Container({
+  picking,
+  footer,
+  children,
+}: {
+  picking: boolean;
+  footer: ReactNode;
+  children: ReactNode;
+}) {
+  if (picking) return <KeyboardScreen footer={footer}>{children}</KeyboardScreen>;
+  return <Screen scroll>{children}</Screen>;
+}
+
+function GridItem({ category, delay, reduced, picked, onPick, onLongPress }: GridItemProps) {
   const ref = useRef<ComponentRef<typeof View>>(null);
   const open = () => {
     const go = () =>
@@ -274,9 +357,15 @@ function GridItem({ category, delay, reduced, onLongPress }: GridItemProps) {
       ref={ref}
       entering={rise({ delay, reduced })}
       exiting={fadeOut}
-      style={styles.gridItem}
+      style={[styles.gridItem, onPick && styles.pickable, picked && styles.picked]}
+      accessibilityState={onPick ? { selected: picked === true } : undefined}
     >
-      <CategoryCard category={category} onPress={open} onLongPress={onLongPress} />
+      <CategoryCard
+        category={category}
+        selected={picked === true}
+        onPress={onPick ?? open}
+        onLongPress={onLongPress}
+      />
     </Animated.View>
   );
 }
@@ -305,6 +394,9 @@ const styles = StyleSheet.create({
   filters: { gap: spacing.sm, paddingHorizontal: spacing.xl, paddingVertical: spacing.xs },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
   gridItem: { width: '48%' },
+  // Mode sélection : même contour que la préparation (anneau blanc cassé autour de la carte).
+  pickable: { borderRadius: radii.card + 4, padding: 2 },
+  picked: { backgroundColor: colors.text },
   empty: { gap: spacing.md, alignItems: 'flex-start', marginTop: spacing.lg },
   words: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   word: {

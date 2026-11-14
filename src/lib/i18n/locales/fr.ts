@@ -154,6 +154,11 @@ export const fr = {
     import: 'Importer un paquet',
     duplicate: 'Dupliquer pour modifier',
     edit: 'Modifier',
+    pickTitle: 'Choisis tes catégories',
+    pickHint: 'Touche pour ajouter ou retirer, appui long pour voir quelques mots.',
+    pickDone: 'Valider',
+    pickAdd: 'Ajouter à la partie',
+    pickRemove: 'Retirer de la partie',
   },
   variants: {
     classic: { name: 'Classique', instruction: 'Décris le mot sans le prononcer' },
@@ -168,7 +173,10 @@ export const fr = {
   },
   setup: {
     variantsHint: 'Glisse pour voir les autres variantes.',
-    categoryHint: 'Touche une ou plusieurs catégories pour les mélanger.',
+    categoryHint: 'Une ou plusieurs catégories, mélangées.',
+    changeCategories: 'Changer',
+    chooseCategories: 'Choisir des catégories',
+    noCategoryYet: 'Aucune catégorie choisie pour l’instant.',
     selected_one: '{{count}} catégorie · {{words}} mots',
     selected_other: '{{count}} catégories mélangées · {{words}} mots',
     tooFewWords: 'Peu de mots pour cette durée : ajoute une autre catégorie au mélange.',
