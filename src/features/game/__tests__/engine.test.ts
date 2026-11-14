@@ -46,6 +46,22 @@ describe('tirage', () => {
     expect(firstSix.every((id) => !seen.has(id))).toBe(true);
   });
 
+  it("catégories mélangées : un mot présent deux fois n'est tiré qu'une fois", () => {
+    const mixed: Card[] = [
+      { id: 1, text: 'Lion' },
+      { id: 2, text: 'Girafe' },
+      { id: 101, text: 'lion ' },
+      { id: 102, text: 'Éléphant' },
+      { id: 103, text: 'Elephant' },
+    ];
+    const deck = buildDeck(mixed, new Set([1]), seededRandom(3));
+    expect(deck).toHaveLength(3);
+    expect(deck.filter((card) => card.id === 102 || card.id === 103)).toHaveLength(1);
+    // L'exemplaire non vu récemment est gardé.
+    expect(deck.some((card) => card.id === 101)).toBe(true);
+    expect(deck.some((card) => card.id === 1)).toBe(false);
+  });
+
   it('sans remise : aucun mot ne revient avant que tous aient été vus', () => {
     let { state, random } = started();
     const shown: number[] = [];

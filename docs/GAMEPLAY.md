@@ -61,7 +61,7 @@ Chaque variante a : un nom, une icône animée, une consigne courte affichée so
 
 ## 4. Catégories
 
-Organisées en **packs régionaux** : la **région est définie sur le pack** et ses catégories en héritent. Filtres par région (pilules 🇨🇲 🌍 🇫🇷 🇺🇸 🌐 🎉 Soirée, plus ✏️ Mes catégories pour les catégories créées ou importées), thème (tags), recherche. Cible : **40+ catégories au lancement**, 80 à 200 mots chacune (plus les mots sont nombreux, moins on retombe dessus). Tirage sans remise par session ; on évite de reproposer les mots vus récemment (table `seen_words`).
+Organisées en **packs régionaux** : la **région est définie sur le pack** et ses catégories en héritent. Filtres par région (pilules 🇨🇲 🌍 🇫🇷 🇺🇸 🌐 🎉 Soirée, plus ✏️ Mes catégories pour les catégories créées ou importées), thème (tags), recherche. Cible : **40+ catégories au lancement**, 80 à 200 mots chacune (plus les mots sont nombreux, moins on retombe dessus). Tirage sans remise par session ; on évite de reproposer les mots vus récemment (table `seen_words`). Un même mot peut exister dans deux catégories (« Lion » dans Animaux et Animaux de la savane, choix du 14/11/2026) : quand on les mélange, il n'est tiré qu'une fois par manche.
 
 **Langue** : au lancement, seule l'interface est traduite (FR / EN). Tout le contenu intégré est en français (`language: "fr"`). Le champ `language` du pack est déjà stocké et affiché pour accueillir des packs en anglais plus tard.
 

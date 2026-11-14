@@ -69,7 +69,15 @@ export function buildDeck(
 ): Card[] {
   const fresh = cards.filter((card) => !recentlySeen.has(card.id));
   const seen = cards.filter((card) => recentlySeen.has(card.id));
-  return [...shuffle(fresh, random), ...shuffle(seen, random)];
+  // Catégories mélangées : un même mot peut exister dans deux catégories (« Lion » dans Animaux
+  // et Savane). On ne le tire qu'une fois, en gardant de préférence l'exemplaire non vu.
+  const shown = new Set<string>();
+  return [...shuffle(fresh, random), ...shuffle(seen, random)].filter((card) => {
+    const key = card.text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().trim();
+    if (shown.has(key)) return false;
+    shown.add(key);
+    return true;
+  });
 }
 
 export function createRound(options: {
