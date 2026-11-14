@@ -36,6 +36,8 @@ import {
   NdopPattern,
   Text,
 } from '@/ui/components';
+import { useCardGrid } from '@/ui/grid';
+import { Mascot } from '@/ui/mascot';
 import { fadeOut, rise, setZoomOrigin, staggerDelay, useReducedMotion } from '@/ui/motion';
 import {
   colors,
@@ -66,6 +68,7 @@ export default function CategoriesScreen() {
   const reduced = useReducedMotion();
   const feedback = useFeedback();
   const insets = useSafeAreaInsets();
+  const grid = useCardGrid();
   // Mode sélection (ouvert depuis la préparation) : toucher une carte l'ajoute ou la retire.
   const picking = useLocalSearchParams<{ pick?: string }>().pick === '1';
   const [pickedIds, setPickedIds] = useState<number[]>(() => (picking ? pickingIds() : []));
@@ -193,6 +196,8 @@ export default function CategoriesScreen() {
 
   const empty = (
     <View style={styles.empty}>
+      {/* Recherche sans résultat ou « Mes catégories » vide : la mascotte réfléchit (UX.md §6). */}
+      <Mascot state="think" size={96} />
       <Text muted>
         {filter === 'mine' && !query
           ? t('categoriesScreen.emptyMine')
@@ -221,8 +226,10 @@ export default function CategoriesScreen() {
       <FlatList
         data={visible}
         keyExtractor={(category) => `${filter}-${category.id}`}
-        numColumns={2}
-        columnWrapperStyle={styles.row}
+        // Changer le nombre de colonnes (tablette) demande un nouveau montage de la liste.
+        key={`grid-${grid.columns}`}
+        numColumns={grid.columns}
+        columnWrapperStyle={{ gap: grid.gap }}
         ItemSeparatorComponent={RowGap}
         ListHeaderComponent={header}
         ListEmptyComponent={empty}
@@ -236,6 +243,7 @@ export default function CategoriesScreen() {
         renderItem={({ item: category, index }) => (
           <GridItem
             category={category}
+            width={grid.itemWidth}
             delay={staggerDelay(index)}
             reduced={reduced}
             picked={picking ? pickedIds.includes(category.id) : undefined}
@@ -359,6 +367,8 @@ export default function CategoriesScreen() {
 
 type GridItemProps = {
   category: CategorySummary;
+  /** Largeur de la carte (selon le nombre de colonnes). */
+  width: number;
   /** Délai d'entrée en cascade ; `undefined` au-delà des premières cartes : pas d'animation. */
   delay: number | undefined;
   reduced: boolean;
@@ -375,7 +385,7 @@ function RowGap() {
   return <View style={styles.rowGap} />;
 }
 
-function GridItem({ category, delay, reduced, picked, onPick, onLongPress }: GridItemProps) {
+function GridItem({ category, width, delay, reduced, picked, onPick, onLongPress }: GridItemProps) {
   const ref = useRef<ComponentRef<typeof View>>(null);
   const open = () => {
     const go = () =>
@@ -393,7 +403,7 @@ function GridItem({ category, delay, reduced, picked, onPick, onLongPress }: Gri
       ref={ref}
       entering={delay === undefined ? undefined : rise({ delay, reduced })}
       exiting={fadeOut}
-      style={[styles.gridItem, onPick && styles.pickable, picked && styles.picked]}
+      style={[{ width }, onPick && styles.pickable, picked && styles.picked]}
       accessibilityState={onPick ? { selected: picked === true } : undefined}
     >
       <CategoryCard
@@ -429,7 +439,6 @@ const styles = StyleSheet.create({
   filtersScroll: { marginHorizontal: -spacing.xl },
   filters: { gap: spacing.sm, paddingHorizontal: spacing.xl, paddingVertical: spacing.xs },
   header: { gap: spacing.lg, marginBottom: spacing.lg },
-  row: { justifyContent: 'space-between' },
   rowGap: { height: spacing.md },
   hint: { marginTop: spacing.lg },
   footer: {
@@ -439,7 +448,6 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: colors.hairline,
   },
-  gridItem: { width: '48%' },
   // Mode sélection : même contour que la préparation (anneau blanc cassé autour de la carte).
   pickable: { borderRadius: radii.card + 4, padding: 2 },
   picked: { backgroundColor: colors.text },

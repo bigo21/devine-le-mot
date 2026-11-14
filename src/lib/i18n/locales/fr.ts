@@ -281,6 +281,7 @@ export const fr = {
     created: 'Créée',
   },
   editor: {
+    emptyWords: 'Pas encore de mots. Ajoute-les un par un, ou colle une liste.',
     createTitle: 'Créer une catégorie',
     editTitle: 'Modifier la catégorie',
     preview: 'Aperçu',

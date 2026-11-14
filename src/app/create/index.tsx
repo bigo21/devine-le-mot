@@ -23,6 +23,7 @@ import {
 } from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
 import { BottomSheet, Button, Icon, Screen, Text } from '@/ui/components';
+import { useCardGrid } from '@/ui/grid';
 import { Mascot } from '@/ui/mascot';
 import { fadeOut, rise, staggerDelay, useReducedMotion } from '@/ui/motion';
 import { colors, spacing } from '@/ui/tokens';
@@ -33,6 +34,7 @@ type SheetState = { category: CategorySummary; confirmDelete: boolean } | null;
 export default function MyCategoriesScreen() {
   useOrientationLock('portrait');
   const { t, i18n } = useTranslation();
+  const grid = useCardGrid();
   const db = useSQLiteContext();
   const reduced = useReducedMotion();
   const feedback = useFeedback();
@@ -147,7 +149,7 @@ export default function MyCategoriesScreen() {
                 key={category.id}
                 entering={rise({ delay: staggerDelay(index) ?? 0, reduced })}
                 exiting={fadeOut}
-                style={styles.gridItem}
+                style={{ width: grid.itemWidth }}
               >
                 <CategoryCard category={category} onPress={() => open(category)} />
               </Animated.View>
@@ -242,6 +244,5 @@ const styles = StyleSheet.create({
   actions: { flexDirection: 'row', gap: spacing.md },
   action: { flex: 1 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
-  gridItem: { width: '48%' },
   empty: { alignItems: 'center', gap: spacing.lg, marginTop: spacing.xl },
 });

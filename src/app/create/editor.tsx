@@ -41,14 +41,8 @@ import {
   Text,
   TextField,
 } from '@/ui/components';
-import {
-  categoryColors,
-  colors,
-  onColor,
-  radii,
-  spacing,
-  touchTarget,
-} from '@/ui/tokens';
+import { Mascot } from '@/ui/mascot';
+import { categoryColors, colors, onColor, radii, spacing, touchTarget } from '@/ui/tokens';
 
 /** Icônes proposées : celles qui ont une image Fluent 3D (pas d'emoji système, ASSETS.md §3). */
 const DEFAULT_EMOJI = '🎉';
@@ -61,7 +55,9 @@ const EMOJI_SIZE = 56;
 /** Largeur d'une icône de la rangée, espacement compris (liste virtualisée). */
 const EMOJI_STEP = EMOJI_SIZE + spacing.sm;
 
-type LeaveAction = Parameters<NonNullable<Parameters<typeof usePreventRemove>[1]>>[0]['data']['action'];
+type LeaveAction = Parameters<
+  NonNullable<Parameters<typeof usePreventRemove>[1]>
+>[0]['data']['action'];
 
 /** Éditeur de catégorie (GAMEPLAY.md §5, DESIGN.md §4) : création, modification, duplication. */
 export default function EditorScreen() {
@@ -495,7 +491,6 @@ export default function EditorScreen() {
               onPress={() => setPasteOpen(true)}
             />
           )}
-
         </View>
 
         <View style={styles.section}>
@@ -509,6 +504,15 @@ export default function EditorScreen() {
                 })}`}
           </Text>
         </View>
+
+        {shownWords.length === 0 ? (
+          <View style={styles.emptyWords}>
+            <Mascot state="think" size={88} />
+            <Text muted align="center">
+              {t('editor.emptyWords')}
+            </Text>
+          </View>
+        ) : null}
 
         <View style={styles.list}>
           {shownWords.slice(0, visibleWords).map((word) => {
@@ -656,6 +660,7 @@ const styles = StyleSheet.create({
   status: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   entryRow: { flexDirection: 'row', alignItems: 'flex-start', gap: spacing.sm },
   list: { gap: spacing.sm },
+  emptyWords: { alignItems: 'center', gap: spacing.sm, paddingVertical: spacing.md },
   word: {
     borderRadius: radii.sm,
     backgroundColor: colors.bgElevated,
@@ -672,6 +677,11 @@ const styles = StyleSheet.create({
     paddingLeft: spacing.lg,
     paddingVertical: spacing.sm,
   },
-  remove: { width: touchTarget, height: touchTarget, alignItems: 'center', justifyContent: 'center' },
+  remove: {
+    width: touchTarget,
+    height: touchTarget,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   forbidden: { gap: spacing.sm, paddingHorizontal: spacing.lg, paddingBottom: spacing.md },
 });

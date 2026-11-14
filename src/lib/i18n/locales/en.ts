@@ -281,6 +281,7 @@ export const en: Translation = {
     created: 'Created',
   },
   editor: {
+    emptyWords: 'No words yet. Add them one by one, or paste a list.',
     createTitle: 'Create a category',
     editTitle: 'Edit the category',
     preview: 'Preview',
