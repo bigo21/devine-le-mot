@@ -42,8 +42,9 @@ export function ForeheadDemo({ size, showGestures }: Props) {
     return () => cancelAnimation(clock);
   }, [clock, duration, reduced]);
 
-  const phoneWidth = size * 0.5;
-  const rest = -size * 0.2; // hauteur du front
+  const phoneWidth = size * 0.42;
+  // Hauteur du front : au-dessus des yeux de la mascotte, qui restent visibles.
+  const rest = -size * 0.29;
   const start = size * 0.55; // départ, en bas (dans la main)
 
   const phoneStyle = useAnimatedStyle(() => {

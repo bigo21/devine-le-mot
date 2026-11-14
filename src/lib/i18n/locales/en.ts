@@ -216,6 +216,8 @@ export const en: Translation = {
   results: {
     title: 'Results',
     scoreCaption: 'words found',
+    record: 'New record!',
+    recordPrevious: 'Previous record: {{count}}',
     found: 'Got it',
     passed: 'Passed',
     correctHint: 'Tap a word to correct it.',

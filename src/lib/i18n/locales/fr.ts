@@ -215,6 +215,8 @@ export const fr = {
   results: {
     title: 'Résultats',
     scoreCaption: 'mots trouvés',
+    record: 'Nouveau record !',
+    recordPrevious: 'Ancien record : {{count}}',
     found: 'Trouvé',
     passed: 'Passé',
     correctHint: 'Touche un mot pour corriger.',

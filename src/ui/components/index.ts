@@ -13,3 +13,4 @@ export { CategoryIcon } from './category-icon';
 export { Flag } from './flag';
 export { KeyboardScreen } from './keyboard-screen';
 export { TextField } from './text-field';
+export { Confetti } from './confetti';

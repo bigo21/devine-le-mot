@@ -1,26 +1,36 @@
 import { router } from 'expo-router';
 import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
+import { TrophyIcon } from 'phosphor-react-native/src/icons/Trophy';
 import { SkipForwardIcon } from 'phosphor-react-native/src/icons/SkipForward';
 import { useSQLiteContext } from 'expo-sqlite';
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
+import { isRecord, moodFor } from '@/features/game/celebration';
 import { Scoreboard } from '@/features/game/components/scoreboard';
 import { score, toggleResult } from '@/features/game/engine';
 import { isFinished, nextTeamIndex, recordTurn } from '@/features/game/match';
 import { useGameSession } from '@/features/game/session-store';
 import { useOrientationLock } from '@/features/game/use-orientation-lock';
-import { finishMatch, recentlySeenWords, recordRound } from '@/features/packs/repository';
+import {
+  bestSoloScore,
+  finishMatch,
+  recentlySeenWords,
+  recordRound,
+} from '@/features/packs/repository';
 import { useFeedback } from '@/lib/use-feedback';
-import { Button, CountText, Icon, Screen, Text } from '@/ui/components';
-import { motion, rise, useReducedMotion } from '@/ui/motion';
-import { colors, radii, spacing, touchTarget } from '@/ui/tokens';
+import { Button, Confetti, CountText, Icon, Screen, Text } from '@/ui/components';
+import { Mascot } from '@/ui/mascot';
+import { motion, pop, rise, useReducedMotion } from '@/ui/motion';
+import { colors, onColor, radii, spacing, touchTarget } from '@/ui/tokens';
 
 // Séquence de MOTION.md §3 (ms).
 const SCORE_AT = 150;
 const LIST_AT = 900;
+/** Confettis, mascotte et badge de record (MOTION.md §3, étape 3). */
+const CELEBRATE_AT = 750;
 
 export default function PlayResultsScreen() {
   useOrientationLock('portrait');
@@ -37,6 +47,35 @@ export default function PlayResultsScreen() {
   useEffect(() => {
     if (!round) router.replace('/play/setup');
   }, [round]);
+
+  // Meilleur score précédent (mêmes catégories, même durée, solo), lu avant l'enregistrement.
+  // En équipes, pas de record solo : `null` d'emblée ; sinon `undefined` le temps de la lecture.
+  const [previousBest, setPreviousBest] = useState<number | null | undefined>(() => {
+    const { categories, match: current } = useGameSession.getState();
+    return current || categories.length === 0 ? null : undefined;
+  });
+  useEffect(() => {
+    const { categories, durationMs, match: current } = useGameSession.getState();
+    if (current || categories.length === 0) return;
+    let active = true;
+    void bestSoloScore(
+      db,
+      categories.map((c) => c.id),
+      Math.round(durationMs / 1000),
+    ).then((best) => {
+      if (active) setPreviousBest(best);
+    });
+    return () => {
+      active = false;
+    };
+  }, [db]);
+
+  // Réaction différée sur la séquence (le score défile d'abord).
+  const [celebrating, setCelebrating] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setCelebrating(true), CELEBRATE_AT);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Enregistrée en quittant l'écran, pour garder les corrections (une seule fois par manche).
   const record = useCallback(async () => {
@@ -71,6 +110,11 @@ export default function PlayResultsScreen() {
   useEffect(() => () => void record(), [record]);
 
   if (!round) return null;
+
+  const finalScore = score(round);
+  const durationS = Math.round(round.durationMs / 1000);
+  const recordBeaten = previousBest !== undefined && isRecord(finalScore, previousBest);
+  const mood = moodFor(finalScore, durationS, recordBeaten);
 
   const results = round.results;
   const listDelay = (index: number) =>
@@ -120,99 +164,157 @@ export default function PlayResultsScreen() {
   };
 
   return (
-    <Screen scroll>
-      <Animated.View entering={rise({ reduced })}>
-        <Text variant="display" accessibilityRole="header">
-          {t('results.title')}
-        </Text>
-        {team ? (
-          <View style={styles.team}>
-            <View style={[styles.teamDot, { backgroundColor: colors[team.color] }]} />
-            <Text variant="label">{t('teams.roundOf', { team: team.name })}</Text>
-          </View>
-        ) : null}
-      </Animated.View>
-
-      <Animated.View entering={rise({ delay: SCORE_AT, reduced })} style={styles.score}>
-        <CountText value={score(round)} from={0} delay={SCORE_AT} variant="hero" />
-        <Text variant="bodyLarge" muted>
-          {t('results.scoreCaption')}
-        </Text>
-      </Animated.View>
-
-      {results.length === 0 ? (
-        <Text muted>{t('results.empty')}</Text>
-      ) : (
-        <View style={styles.list}>
-          <Text variant="caption" muted>
-            {t('results.correctHint')}
+    <View style={styles.fill}>
+      <Screen scroll>
+        <Animated.View entering={rise({ reduced })}>
+          <Text variant="display" accessibilityRole="header">
+            {t('results.title')}
           </Text>
-          {results.map((entry, index) => {
-            const found = entry.result === 'found';
-            const status = found ? t('results.found') : t('results.passed');
-            return (
-              <Animated.View
-                key={`${entry.card.id}-${index}`}
-                entering={rise({ delay: listDelay(index), reduced })}
-              >
-                <Pressable
-                  onPress={() => feedback('select', () => setRound(toggleResult(round, index)))}
-                  style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
-                  accessibilityRole="button"
-                  accessibilityLabel={`${entry.card.text}, ${status}`}
-                  accessibilityHint={t('results.correctHint')}
-                >
-                  <Icon
-                    icon={found ? CheckIcon : SkipForwardIcon}
-                    color={found ? colors.palm : colors.textMuted}
-                  />
-                  <Text variant="bodyStrong" muted={!found} style={styles.word} numberOfLines={1}>
-                    {entry.card.text}
-                  </Text>
-                  <Text variant="labelSmall" muted>
-                    {status}
-                  </Text>
-                </Pressable>
-              </Animated.View>
-            );
-          })}
-        </View>
-      )}
-
-      {preview ? (
-        <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.board}>
-          <Text variant="heading" accessibilityRole="header">
-            {t('teams.scoreboard')}
-          </Text>
-          <Scoreboard match={preview} highlight={lastTurn?.teamIndex ?? null} />
+          {team ? (
+            <View style={styles.team}>
+              <View style={[styles.teamDot, { backgroundColor: colors[team.color] }]} />
+              <Text variant="label">{t('teams.roundOf', { team: team.name })}</Text>
+            </View>
+          ) : null}
         </Animated.View>
-      ) : null}
 
-      <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.actions}>
-        {preview ? (
-          matchOver ? (
-            <Button label={t('teams.seePodium')} size="lg" block onPress={() => void seePodium()} />
-          ) : (
-            <Button label={t('teams.nextTeam')} size="lg" block onPress={() => void nextTeam()} />
-          )
+        <Animated.View entering={rise({ delay: SCORE_AT, reduced })} style={styles.scoreRow}>
+          <View style={styles.flex}>
+            <View style={styles.score}>
+              <CountText value={finalScore} from={0} delay={SCORE_AT} variant="hero" />
+              <Text variant="bodyLarge" muted>
+                {t('results.scoreCaption')}
+              </Text>
+            </View>
+            {celebrating && recordBeaten ? (
+              <RecordBadge previous={previousBest ?? 0} reduced={reduced} />
+            ) : null}
+          </View>
+          <Mascot state={celebrating && mood !== 'neutral' ? mood : 'rest'} size={96} />
+        </Animated.View>
+
+        {results.length === 0 ? (
+          <Text muted>{t('results.empty')}</Text>
         ) : (
-          <>
-            <Button label={t('results.replay')} size="lg" block onPress={() => void replay()} />
-            <Button
-              label={t('results.changeCategory')}
-              variant="secondary"
-              block
-              onPress={() => void changeCategory()}
-            />
-          </>
+          <View style={styles.list}>
+            <Text variant="caption" muted>
+              {t('results.correctHint')}
+            </Text>
+            {results.map((entry, index) => {
+              const found = entry.result === 'found';
+              const status = found ? t('results.found') : t('results.passed');
+              return (
+                <Animated.View
+                  key={`${entry.card.id}-${index}`}
+                  entering={rise({ delay: listDelay(index), reduced })}
+                >
+                  <Pressable
+                    onPress={() => feedback('select', () => setRound(toggleResult(round, index)))}
+                    style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
+                    accessibilityRole="button"
+                    accessibilityLabel={`${entry.card.text}, ${status}`}
+                    accessibilityHint={t('results.correctHint')}
+                  >
+                    <Icon
+                      icon={found ? CheckIcon : SkipForwardIcon}
+                      color={found ? colors.palm : colors.textMuted}
+                    />
+                    <Text variant="bodyStrong" muted={!found} style={styles.word} numberOfLines={1}>
+                      {entry.card.text}
+                    </Text>
+                    <Text variant="labelSmall" muted>
+                      {status}
+                    </Text>
+                  </Pressable>
+                </Animated.View>
+              );
+            })}
+          </View>
         )}
-      </Animated.View>
-    </Screen>
+
+        {preview ? (
+          <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.board}>
+            <Text variant="heading" accessibilityRole="header">
+              {t('teams.scoreboard')}
+            </Text>
+            <Scoreboard match={preview} highlight={lastTurn?.teamIndex ?? null} />
+          </Animated.View>
+        ) : null}
+
+        <Animated.View entering={rise({ delay: buttonsAt, reduced })} style={styles.actions}>
+          {preview ? (
+            matchOver ? (
+              <Button
+                label={t('teams.seePodium')}
+                size="lg"
+                block
+                onPress={() => void seePodium()}
+              />
+            ) : (
+              <Button label={t('teams.nextTeam')} size="lg" block onPress={() => void nextTeam()} />
+            )
+          ) : (
+            <>
+              <Button label={t('results.replay')} size="lg" block onPress={() => void replay()} />
+              <Button
+                label={t('results.changeCategory')}
+                variant="secondary"
+                block
+                onPress={() => void changeCategory()}
+              />
+            </>
+          )}
+        </Animated.View>
+      </Screen>
+      {/* Par-dessus l'écran visible, pas dans le contenu qui défile. */}
+      <Confetti fire={celebrating && mood === 'celebrate'} />
+    </View>
+  );
+}
+
+/** Record battu (DESIGN.md §4) : badge `sun` qui fait « pop », son de record. */
+function RecordBadge({ previous, reduced }: { previous: number; reduced: boolean }) {
+  const { t } = useTranslation();
+  const feedback = useFeedback();
+  useEffect(() => {
+    feedback('record');
+  }, [feedback]);
+  return (
+    <Animated.View
+      entering={pop({ reduced })}
+      style={styles.record}
+      accessibilityLiveRegion="polite"
+    >
+      <Icon icon={TrophyIcon} color={onColor('sun')} emphasis />
+      <View>
+        <Text variant="label" color={onColor('sun')}>
+          {t('results.record')}
+        </Text>
+        <Text variant="caption" color={onColor('sun')}>
+          {t('results.recordPrevious', { count: previous })}
+        </Text>
+      </View>
+    </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
+  // Fond explicite : évite l'aplatissement Fabric de la vue englobante (voir Mes catégories).
+  fill: { flex: 1, backgroundColor: colors.bg },
+  flex: { flex: 1 },
+  scoreRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
   score: { flexDirection: 'row', alignItems: 'baseline', gap: spacing.md },
+  record: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    gap: spacing.sm,
+    marginTop: spacing.sm,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    borderRadius: radii.pill,
+    backgroundColor: colors.sun,
+  },
   list: { gap: spacing.xs },
   row: {
     minHeight: touchTarget,

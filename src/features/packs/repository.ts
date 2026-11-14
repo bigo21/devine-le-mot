@@ -326,7 +326,8 @@ export async function recordRound(db: SQLiteDatabase, round: RoundRecord): Promi
          team_index)
        VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
       round.playedAt,
-      json(round.categoryIds),
+      // Triées : une même sélection s'enregistre toujours pareil (comparaison des records).
+      json([...round.categoryIds].sort((a, b) => a - b)),
       round.variant,
       round.durationS,
       round.score,
@@ -687,6 +688,24 @@ export async function lastSoloRound(db: SQLiteDatabase): Promise<LastRound | nul
     variant: row.variant as VariantId,
     durationS: row.duration_s,
   };
+}
+
+/**
+ * Meilleur score déjà enregistré avec les mêmes catégories et la même durée (solo), ou `null` si
+ * c'est la première fois. Appelé avant d'enregistrer la manche en cours.
+ */
+export async function bestSoloScore(
+  db: SQLiteDatabase,
+  categoryIds: readonly number[],
+  durationS: number,
+): Promise<number | null> {
+  const row = await db.getFirstAsync<{ best: number | null }>(
+    `SELECT MAX(score) AS best FROM rounds
+     WHERE match_id IS NULL AND category_ids = ? AND duration_s = ?`,
+    json([...categoryIds].sort((a, b) => a - b)),
+    durationS,
+  );
+  return row?.best ?? null;
 }
 
 // --- Parties en équipes (table `matches`) -------------------------------------------------------

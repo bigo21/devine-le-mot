@@ -34,6 +34,9 @@ export const motion = {
   playGradientLoop: 4800,
   /** Boucle de l'écran du front : le téléphone monte, se pose (et montre les gestes la 1re fois). */
   foreheadLoop: 2600,
+  /** Confettis des résultats (MOTION.md §3) : 1,5 s, 80 particules au plus. */
+  confettiDuration: 1500,
+  confettiCount: 70,
   foreheadLoopWithGestures: 5200,
   /** Mix : chrono arrêté à chaque nouveau mot, le temps de lire sa consigne (retour terrain). */
   mixReading: 3000,
