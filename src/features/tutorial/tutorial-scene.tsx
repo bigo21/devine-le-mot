@@ -1,7 +1,6 @@
 import { Canvas, useFrame } from '@react-three/fiber/native';
 import { type RefObject, useRef } from 'react';
 import { StyleSheet } from 'react-native';
-import type { SharedValue } from 'react-native-reanimated';
 import { Color, type Group, type MeshStandardMaterial } from 'three';
 
 import { colors } from '@/ui/tokens';
@@ -12,8 +11,9 @@ import { ContactShadow, Head, Phone } from './models';
 export type TutorialStep = 'place' | 'found' | 'pass' | 'try' | 'variants';
 
 /** Position du téléphone posé sur le front, et position de départ (dans la main, plus bas). */
-const ON_FOREHEAD = { y: 0.35, z: 1.05 };
-const IN_HAND = { y: -1.4, z: 2.4 };
+// Assez en avant pour que le téléphone incliné ne traverse pas la tête.
+const ON_FOREHEAD = { y: 0.35, z: 1.4 };
+const IN_HAND = { y: -1.4, z: 2.6 };
 /** Inclinaison montrée dans les démonstrations (≈ seuil de déclenchement du jeu, 40°). */
 const DEMO_TILT = (45 * Math.PI) / 180;
 /** Durée d'une boucle de démonstration (s) : approche, inclinaison, retour, pause. */
@@ -103,12 +103,12 @@ function DemoPhone({ step, reduced, tilt, flash }: DemoPhoneProps) {
 }
 
 /** Rotation de la scène au doigt (angle autour de la verticale, écrit par le geste). */
-function Orbit({ yaw, children }: { yaw: SharedValue<number>; children: React.ReactNode }) {
+function Orbit({ yaw, children }: { yaw: RefObject<number>; children: React.ReactNode }) {
   const group = useRef<Group>(null);
   useFrame((_, delta) => {
     const g = group.current;
     if (!g) return;
-    g.rotation.y += (yaw.get() - g.rotation.y) * Math.min(1, FOLLOW * delta);
+    g.rotation.y += (yaw.current - g.rotation.y) * Math.min(1, FOLLOW * delta);
   });
   return <group ref={group}>{children}</group>;
 }
@@ -125,7 +125,8 @@ function FirstFrame({ onReady }: { onReady: () => void }) {
 }
 
 type Props = DemoPhoneProps & {
-  yaw: SharedValue<number>;
+  /** Rotation au doigt autour de la verticale (radians), écrite par le geste. */
+  yaw: RefObject<number>;
   onReady: () => void;
 };
 
@@ -135,7 +136,7 @@ type Props = DemoPhoneProps & {
  */
 export default function TutorialScene({ yaw, onReady, ...phone }: Props) {
   return (
-    <Canvas style={styles.canvas} camera={{ position: [3.4, 1.4, 6.6], fov: 34 }}>
+    <Canvas style={styles.canvas} camera={{ position: [1.9, 1.3, 7.4], fov: 32 }}>
       <color attach="background" args={[colors.bg]} />
       <ambientLight intensity={0.55} />
       <directionalLight position={[3, 5, 4]} intensity={1.1} />

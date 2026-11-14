@@ -54,18 +54,19 @@ export default function TutorialScreen() {
   const pager = useRef<ComponentRef<typeof ScrollView>>(null);
 
   // --- Scène : rotation au doigt et fondu d'entrée ------------------------------------------
-  const yaw = useSharedValue(0);
-  const yawStart = useSharedValue(0);
+  // La boucle de rendu 3D tourne sur le fil JS : le geste y écrit l'angle directement (une ref
+  // lue à chaque image), sans passer par une valeur partagée Reanimated.
+  const yaw = useRef(0);
+  const yawStart = useRef(0);
   const pan = usePanGesture({
+    runOnJS: true,
     activeOffsetX: [-10, 10],
     onActivate: () => {
-      'worklet';
-      yawStart.set(yaw.get());
+      yawStart.current = yaw.current;
     },
     onUpdate: (e) => {
-      'worklet';
-      const next = yawStart.get() + (e.translationX / width) * Math.PI;
-      yaw.set(Math.max(-MAX_YAW, Math.min(MAX_YAW, next)));
+      const next = yawStart.current + (e.translationX / width) * Math.PI;
+      yaw.current = Math.max(-MAX_YAW, Math.min(MAX_YAW, next));
     },
   });
 
@@ -140,32 +141,39 @@ export default function TutorialScreen() {
 
   return (
     <View style={styles.root}>
-      <GestureDetector gesture={pan}>
-        <View style={styles.scene} accessibilityLabel={t('tutorial.rotateHint')}>
-          <Suspense fallback={null}>
-            <TutorialScene
-              step={step}
-              reduced={reduced}
-              tilt={tiltRef}
-              flash={flashRef}
-              yaw={yaw}
-              onReady={onReady}
-            />
-          </Suspense>
-          {/* Fondu d'entrée : masque la compilation des shaders (première image lente). */}
-          <Animated.View
-            pointerEvents="none"
-            style={[StyleSheet.absoluteFill, styles.cover, coverStyle]}
-          >
-            <Text muted>{t('tutorial.loading')}</Text>
-          </Animated.View>
-          <View style={[styles.hint, { top: insets.top + spacing.md }]} pointerEvents="none">
-            <Text variant="caption" muted>
-              {t('tutorial.rotateHint')}
-            </Text>
-          </View>
+      <View style={styles.scene}>
+        <Suspense fallback={null}>
+          <TutorialScene
+            step={step}
+            reduced={reduced}
+            tilt={tiltRef}
+            flash={flashRef}
+            yaw={yaw}
+            onReady={onReady}
+          />
+        </Suspense>
+        {/* Calque transparent au-dessus du canvas GL : c'est lui qui reçoit le geste de rotation
+              (la vue GL native garderait les touches pour elle). */}
+        <GestureDetector gesture={pan}>
+          <View
+            style={StyleSheet.absoluteFill}
+            collapsable={false}
+            accessibilityLabel={t('tutorial.rotateHint')}
+          />
+        </GestureDetector>
+        {/* Fondu d'entrée : masque la compilation des shaders (première image lente). */}
+        <Animated.View
+          pointerEvents="none"
+          style={[StyleSheet.absoluteFill, styles.cover, coverStyle]}
+        >
+          <Text muted>{t('tutorial.loading')}</Text>
+        </Animated.View>
+        <View style={[styles.hint, { top: insets.top + spacing.md }]} pointerEvents="none">
+          <Text variant="caption" muted>
+            {t('tutorial.rotateHint')}
+          </Text>
         </View>
-      </GestureDetector>
+      </View>
 
       <ScrollView
         ref={pager}
@@ -212,7 +220,7 @@ export default function TutorialScreen() {
                 {variantOrder.map((variant) => (
                   <View key={variant} style={styles.variant}>
                     <VariantIcon variant={variant} size={36} active={index === i} />
-                    <Text variant="caption" numberOfLines={1}>
+                    <Text variant="caption" numberOfLines={2} align="center">
                       {t(`variants.${variant}.name`)}
                     </Text>
                   </View>
@@ -230,9 +238,7 @@ export default function TutorialScreen() {
           ))}
         </View>
         <View style={styles.actions}>
-          <View style={styles.action}>
-            <Button label={t('tutorial.skip')} variant="ghost" block onPress={skip} />
-          </View>
+          <Button label={t('tutorial.skip')} variant="ghost" onPress={skip} />
           <View style={styles.action}>
             <Button
               label={last ? t('tutorial.play') : t('tutorial.next')}
@@ -278,7 +284,8 @@ const styles = StyleSheet.create({
   checks: { flexDirection: 'row', gap: spacing.xl },
   check: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   variants: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginTop: spacing.xs },
-  variant: { width: 64, alignItems: 'center', gap: spacing.xs },
+  // Trois par ligne : les noms longs (« Dessin dans les airs ») tiennent sur deux lignes.
+  variant: { width: '30%', alignItems: 'center', gap: spacing.xs },
   footer: { gap: spacing.md, paddingHorizontal: spacing.xl, paddingTop: spacing.md },
   dots: { flexDirection: 'row', justifyContent: 'center', gap: spacing.sm },
   dot: { width: 8, height: 8, borderRadius: radii.pill, backgroundColor: colors.hairline },
