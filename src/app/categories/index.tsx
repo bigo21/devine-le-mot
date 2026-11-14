@@ -140,6 +140,8 @@ export default function CategoriesScreen() {
       <Text variant="display" accessibilityRole="header">
         {picking ? t('categoriesScreen.pickTitle') : t('screens.categories')}
       </Text>
+      {/* En mode sélection, la consigne est en tête : en bas de la liste, on ne la voit pas. */}
+      {picking ? <Text muted>{t('categoriesScreen.pickHint')}</Text> : null}
 
       <View style={styles.search}>
         <Icon icon={MagnifyingGlassIcon} color={colors.textMuted} />
@@ -225,9 +227,9 @@ export default function CategoriesScreen() {
         ListHeaderComponent={header}
         ListEmptyComponent={empty}
         ListFooterComponent={
-          visible.length > 0 ? (
+          visible.length > 0 && !picking ? (
             <Text variant="caption" muted style={styles.hint}>
-              {picking ? t('categoriesScreen.pickHint') : t('categoriesScreen.hint')}
+              {t('categoriesScreen.hint')}
             </Text>
           ) : undefined
         }

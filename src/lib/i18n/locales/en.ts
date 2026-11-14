@@ -183,7 +183,7 @@ export const en: Translation = {
     tooFewWords: 'Few words for this duration: add another category to the mix.',
     noCategory: 'Pick at least one category.',
     variantSelected: 'Selected variant',
-    category: 'Category',
+    category: 'Categories',
     words: '{{count}} words',
     duration: 'Round length',
     seconds: '{{count}} s',

@@ -182,7 +182,7 @@ export const fr = {
     tooFewWords: 'Peu de mots pour cette durée : ajoute une autre catégorie au mélange.',
     noCategory: 'Choisis au moins une catégorie.',
     variantSelected: 'Variante choisie',
-    category: 'Catégorie',
+    category: 'Catégories',
     words: '{{count}} mots',
     duration: 'Durée de la manche',
     seconds: '{{count}} s',
