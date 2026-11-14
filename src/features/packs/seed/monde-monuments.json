@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "monuments",
@@ -19,7 +19,7 @@
           "en": "World landmarks"
         },
         "emoji": "🗽",
-        "color": "slate",
+        "color": "orchid",
         "tags": [
           "universel",
           "lieux"

@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "sportifs",
@@ -19,7 +19,7 @@
           "en": "American athletes"
         },
         "emoji": "🏀",
-        "color": "slate",
+        "color": "lagoon",
         "tags": [
           "personnalites",
           "sport"

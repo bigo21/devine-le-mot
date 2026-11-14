@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "plats",
@@ -19,7 +19,7 @@
           "en": "French dishes"
         },
         "emoji": "🥐",
-        "color": "plum",
+        "color": "lilac",
         "tags": [
           "cuisine"
         ],

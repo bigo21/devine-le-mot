@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "dessins-animes",
@@ -19,7 +19,7 @@
           "en": "Cartoons"
         },
         "emoji": "🐭",
-        "color": "indigo",
+        "color": "lilac",
         "tags": [
           "personnages",
           "enfants"

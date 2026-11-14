@@ -10,7 +10,7 @@
     "region": "africa",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "artistes",
@@ -19,7 +19,7 @@
           "en": "African artists"
         },
         "emoji": "🎶",
-        "color": "orchid",
+        "color": "lagoon",
         "tags": [
           "personnalites",
           "musique"

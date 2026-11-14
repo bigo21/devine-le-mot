@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "sports",
@@ -19,7 +19,7 @@
           "en": "Sports"
         },
         "emoji": "🏅",
-        "color": "indigo",
+        "color": "lilac",
         "tags": [
           "universel"
         ],

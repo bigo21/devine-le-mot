@@ -10,7 +10,7 @@
     "region": "party",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "tendances-tiktok",
@@ -19,7 +19,7 @@
           "en": "TikTok and social trends"
         },
         "emoji": "🔥",
-        "color": "lagoon",
+        "color": "slate",
         "tags": [
           "soiree",
           "internet"

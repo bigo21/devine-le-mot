@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "villes-quartiers",
@@ -19,7 +19,7 @@
           "en": "Cities, districts and places"
         },
         "emoji": "🏙️",
-        "color": "slate",
+        "color": "indigo",
         "tags": [
           "lieux"
         ],

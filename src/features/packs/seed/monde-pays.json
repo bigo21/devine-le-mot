@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "pays",
@@ -19,7 +19,7 @@
           "en": "Countries of the world"
         },
         "emoji": "🧭",
-        "color": "lagoon",
+        "color": "slate",
         "tags": [
           "universel",
           "geographie"

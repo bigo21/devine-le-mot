@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "series",
@@ -19,7 +19,7 @@
           "en": "TV series"
         },
         "emoji": "📼",
-        "color": "plum",
+        "color": "lilac",
         "tags": [
           "tele"
         ],

@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "expressions",
@@ -19,7 +19,7 @@
           "en": "French expressions"
         },
         "emoji": "🗣️",
-        "color": "lilac",
+        "color": "lagoon",
         "tags": [
           "langage"
         ],
