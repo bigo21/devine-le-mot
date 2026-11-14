@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 1,
+    "version": 2,
     "categories": [
       {
         "id": "artistes",
@@ -19,7 +19,7 @@
           "en": "Cameroonian artists"
         },
         "emoji": "🎤",
-        "color": "orchid",
+        "color": "plum",
         "tags": [
           "personnalites",
           "musique"

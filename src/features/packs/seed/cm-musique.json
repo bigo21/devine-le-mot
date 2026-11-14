@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "musique",
@@ -19,7 +19,7 @@
           "en": "Music: rhythms, instruments and hits"
         },
         "emoji": "🥁",
-        "color": "indigo",
+        "color": "lagoon",
         "tags": [
           "musique"
         ],

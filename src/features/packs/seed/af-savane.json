@@ -1,0 +1,626 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-savane",
+    "name": {
+      "fr": "Animaux de la savane",
+      "en": "Savanna animals"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 2,
+    "categories": [
+      {
+        "id": "savane",
+        "name": {
+          "fr": "Animaux de la savane",
+          "en": "Savanna animals"
+        },
+        "emoji": "🦓",
+        "color": "lagoon",
+        "tags": [
+          "animaux",
+          "nature"
+        ],
+        "words": [
+          {
+            "text": "Lion",
+            "difficulty": 1,
+            "forbidden": [
+              "crinière",
+              "roi",
+              "rugir"
+            ]
+          },
+          {
+            "text": "Lionne",
+            "difficulty": 1,
+            "forbidden": [
+              "chasse",
+              "femelle",
+              "félin"
+            ]
+          },
+          {
+            "text": "Lionceau",
+            "difficulty": 2,
+            "forbidden": [
+              "bébé",
+              "petit",
+              "félin"
+            ]
+          },
+          {
+            "text": "Éléphant",
+            "difficulty": 1,
+            "forbidden": [
+              "trompe",
+              "défenses",
+              "ivoire"
+            ]
+          },
+          {
+            "text": "Éléphanteau",
+            "difficulty": 2,
+            "forbidden": [
+              "bébé",
+              "trompe",
+              "petit"
+            ]
+          },
+          {
+            "text": "Girafe",
+            "difficulty": 1,
+            "forbidden": [
+              "cou",
+              "taches",
+              "grande"
+            ]
+          },
+          {
+            "text": "Zèbre",
+            "difficulty": 1,
+            "forbidden": [
+              "rayures",
+              "noir et blanc",
+              "cheval"
+            ]
+          },
+          {
+            "text": "Hippopotame",
+            "difficulty": 1,
+            "forbidden": [
+              "rivière",
+              "gueule",
+              "gros"
+            ]
+          },
+          {
+            "text": "Rhinocéros",
+            "difficulty": 1,
+            "forbidden": [
+              "corne",
+              "gros",
+              "cuir"
+            ]
+          },
+          {
+            "text": "Buffle",
+            "difficulty": 1,
+            "forbidden": [
+              "cornes",
+              "troupeau",
+              "bœuf"
+            ]
+          },
+          {
+            "text": "Gnou",
+            "difficulty": 2,
+            "forbidden": [
+              "migration",
+              "troupeau",
+              "barbe"
+            ]
+          },
+          {
+            "text": "Antilope",
+            "difficulty": 1,
+            "forbidden": [
+              "cornes",
+              "courir",
+              "herbivore"
+            ]
+          },
+          {
+            "text": "Gazelle",
+            "difficulty": 1,
+            "forbidden": [
+              "rapide",
+              "sauter",
+              "cornes"
+            ]
+          },
+          {
+            "text": "Impala",
+            "difficulty": 2,
+            "forbidden": [
+              "sauter",
+              "antilope",
+              "cornes"
+            ]
+          },
+          {
+            "text": "Koudou",
+            "difficulty": 3,
+            "forbidden": [
+              "cornes",
+              "spirale",
+              "antilope"
+            ]
+          },
+          {
+            "text": "Oryx",
+            "difficulty": 3,
+            "forbidden": [
+              "cornes",
+              "désert",
+              "antilope"
+            ]
+          },
+          {
+            "text": "Éland",
+            "difficulty": 3,
+            "forbidden": [
+              "antilope",
+              "géante",
+              "cornes"
+            ]
+          },
+          {
+            "text": "Dik-dik",
+            "difficulty": 3,
+            "forbidden": [
+              "petite",
+              "antilope",
+              "minuscule"
+            ]
+          },
+          {
+            "text": "Guépard",
+            "difficulty": 1,
+            "forbidden": [
+              "rapide",
+              "taches",
+              "félin"
+            ]
+          },
+          {
+            "text": "Léopard",
+            "difficulty": 1,
+            "forbidden": [
+              "taches",
+              "arbre",
+              "félin"
+            ]
+          },
+          {
+            "text": "Panthère noire",
+            "difficulty": 2,
+            "forbidden": [
+              "félin",
+              "nuit",
+              "sombre"
+            ]
+          },
+          {
+            "text": "Serval",
+            "difficulty": 3,
+            "forbidden": [
+              "félin",
+              "oreilles",
+              "taches"
+            ]
+          },
+          {
+            "text": "Caracal",
+            "difficulty": 3,
+            "forbidden": [
+              "félin",
+              "oreilles",
+              "pinceaux"
+            ]
+          },
+          {
+            "text": "Hyène",
+            "difficulty": 1,
+            "forbidden": [
+              "ricaner",
+              "charognard",
+              "rire"
+            ]
+          },
+          {
+            "text": "Lycaon",
+            "difficulty": 3,
+            "forbidden": [
+              "chien sauvage",
+              "meute",
+              "taches"
+            ]
+          },
+          {
+            "text": "Chacal",
+            "difficulty": 2,
+            "forbidden": [
+              "chien",
+              "charognard",
+              "nuit"
+            ]
+          },
+          {
+            "text": "Babouin",
+            "difficulty": 1,
+            "forbidden": [
+              "singe",
+              "fesses",
+              "troupe"
+            ]
+          },
+          {
+            "text": "Phacochère",
+            "difficulty": 2,
+            "forbidden": [
+              "cochon",
+              "défenses",
+              "Pumbaa"
+            ]
+          },
+          {
+            "text": "Suricate",
+            "difficulty": 2,
+            "forbidden": [
+              "debout",
+              "guetteur",
+              "Timon"
+            ]
+          },
+          {
+            "text": "Mangouste",
+            "difficulty": 2,
+            "forbidden": [
+              "serpent",
+              "rapide",
+              "petite"
+            ]
+          },
+          {
+            "text": "Porc-épic",
+            "difficulty": 2,
+            "forbidden": [
+              "piquants",
+              "épines",
+              "nuit"
+            ]
+          },
+          {
+            "text": "Pangolin",
+            "difficulty": 2,
+            "forbidden": [
+              "écailles",
+              "boule",
+              "fourmis"
+            ]
+          },
+          {
+            "text": "Oryctérope",
+            "difficulty": 3,
+            "forbidden": [
+              "fourmis",
+              "termites",
+              "museau"
+            ]
+          },
+          {
+            "text": "Crocodile",
+            "difficulty": 1,
+            "forbidden": [
+              "dents",
+              "rivière",
+              "reptile"
+            ]
+          },
+          {
+            "text": "Varan",
+            "difficulty": 2,
+            "forbidden": [
+              "lézard",
+              "grand",
+              "langue"
+            ]
+          },
+          {
+            "text": "Caméléon",
+            "difficulty": 1,
+            "forbidden": [
+              "couleurs",
+              "langue",
+              "lézard"
+            ]
+          },
+          {
+            "text": "Mamba noir",
+            "difficulty": 2,
+            "forbidden": [
+              "serpent",
+              "venin",
+              "rapide"
+            ]
+          },
+          {
+            "text": "Cobra",
+            "difficulty": 1,
+            "forbidden": [
+              "serpent",
+              "capuchon",
+              "venin"
+            ]
+          },
+          {
+            "text": "Python",
+            "difficulty": 1,
+            "forbidden": [
+              "serpent",
+              "étouffer",
+              "énorme"
+            ]
+          },
+          {
+            "text": "Vipère du Gabon",
+            "difficulty": 3,
+            "forbidden": [
+              "serpent",
+              "venin",
+              "crochets"
+            ]
+          },
+          {
+            "text": "Tortue",
+            "difficulty": 1,
+            "forbidden": [
+              "carapace",
+              "lente",
+              "reptile"
+            ]
+          },
+          {
+            "text": "Autruche",
+            "difficulty": 1,
+            "forbidden": [
+              "oiseau",
+              "courir",
+              "œufs"
+            ]
+          },
+          {
+            "text": "Vautour",
+            "difficulty": 1,
+            "forbidden": [
+              "charognard",
+              "oiseau",
+              "chauve"
+            ]
+          },
+          {
+            "text": "Marabout",
+            "difficulty": 2,
+            "forbidden": [
+              "oiseau",
+              "cigogne",
+              "chauve"
+            ]
+          },
+          {
+            "text": "Calao",
+            "difficulty": 2,
+            "forbidden": [
+              "bec",
+              "oiseau",
+              "casque"
+            ]
+          },
+          {
+            "text": "Grue couronnée",
+            "difficulty": 2,
+            "forbidden": [
+              "oiseau",
+              "huppe",
+              "Ouganda"
+            ]
+          },
+          {
+            "text": "Serpentaire",
+            "difficulty": 3,
+            "forbidden": [
+              "oiseau",
+              "serpents",
+              "secrétaire"
+            ]
+          },
+          {
+            "text": "Aigle bateleur",
+            "difficulty": 3,
+            "forbidden": [
+              "rapace",
+              "oiseau",
+              "ciel"
+            ]
+          },
+          {
+            "text": "Pintade",
+            "difficulty": 1,
+            "forbidden": [
+              "oiseau",
+              "taches",
+              "poule"
+            ]
+          },
+          {
+            "text": "Outarde",
+            "difficulty": 3,
+            "forbidden": [
+              "oiseau",
+              "lourd",
+              "courir"
+            ]
+          },
+          {
+            "text": "Flamant rose",
+            "difficulty": 1,
+            "forbidden": [
+              "oiseau",
+              "patte",
+              "lac"
+            ]
+          },
+          {
+            "text": "Tisserin",
+            "difficulty": 3,
+            "forbidden": [
+              "nid",
+              "oiseau",
+              "tisser"
+            ]
+          },
+          {
+            "text": "Pique-bœuf",
+            "difficulty": 3,
+            "forbidden": [
+              "oiseau",
+              "buffle",
+              "dos"
+            ]
+          },
+          {
+            "text": "Termite",
+            "difficulty": 1,
+            "forbidden": [
+              "colonie",
+              "insecte",
+              "bois"
+            ]
+          },
+          {
+            "text": "Mouche tsé-tsé",
+            "difficulty": 2,
+            "forbidden": [
+              "piqûre",
+              "sommeil",
+              "insecte"
+            ]
+          },
+          {
+            "text": "Criquet",
+            "difficulty": 2,
+            "forbidden": [
+              "sauter",
+              "nuée",
+              "insecte"
+            ]
+          },
+          {
+            "text": "Bousier",
+            "difficulty": 2,
+            "forbidden": [
+              "boule",
+              "scarabée",
+              "crotte"
+            ]
+          },
+          {
+            "text": "Scorpion",
+            "difficulty": 1,
+            "forbidden": [
+              "dard",
+              "venin",
+              "pinces"
+            ]
+          },
+          {
+            "text": "Termitière",
+            "difficulty": 2,
+            "forbidden": [
+              "butte",
+              "insectes",
+              "terre"
+            ]
+          },
+          {
+            "text": "Baobab",
+            "difficulty": 1,
+            "forbidden": [
+              "arbre",
+              "tronc",
+              "géant"
+            ]
+          },
+          {
+            "text": "Acacia",
+            "difficulty": 2,
+            "forbidden": [
+              "arbre",
+              "épines",
+              "girafes"
+            ]
+          },
+          {
+            "text": "Point d'eau",
+            "difficulty": 2,
+            "forbidden": [
+              "boire",
+              "mare",
+              "animaux"
+            ]
+          },
+          {
+            "text": "Safari",
+            "difficulty": 1,
+            "forbidden": [
+              "jeep",
+              "photos",
+              "parc"
+            ]
+          },
+          {
+            "text": "Grande migration",
+            "difficulty": 2,
+            "forbidden": [
+              "gnous",
+              "Serengeti",
+              "traverser"
+            ]
+          },
+          {
+            "text": "Ranger",
+            "difficulty": 2,
+            "forbidden": [
+              "garde",
+              "parc",
+              "braconniers"
+            ]
+          },
+          {
+            "text": "Braconnier",
+            "difficulty": 2,
+            "forbidden": [
+              "chasse illégale",
+              "ivoire",
+              "ranger"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

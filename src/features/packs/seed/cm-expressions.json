@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "expressions",
@@ -19,7 +19,7 @@
           "en": "Sayings and Camfranglais"
         },
         "emoji": "💬",
-        "color": "lagoon",
+        "color": "slate",
         "tags": [
           "langage"
         ],

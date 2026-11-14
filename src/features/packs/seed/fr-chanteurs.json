@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "chanteurs",
@@ -19,7 +19,7 @@
           "en": "French-speaking singers and rappers"
         },
         "emoji": "🎙️",
-        "color": "lilac",
+        "color": "orchid",
         "tags": [
           "personnalites",
           "musique"

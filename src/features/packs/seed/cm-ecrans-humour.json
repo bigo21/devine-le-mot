@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "ecrans-humour",
@@ -19,7 +19,7 @@
           "en": "Shows, films and comedians"
         },
         "emoji": "😂",
-        "color": "plum",
+        "color": "lilac",
         "tags": [
           "personnalites",
           "cinema",

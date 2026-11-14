@@ -10,7 +10,7 @@
     "region": "party",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "situations-genantes",
@@ -19,7 +19,7 @@
           "en": "Awkward situations"
         },
         "emoji": "😬",
-        "color": "orchid",
+        "color": "plum",
         "tags": [
           "soiree"
         ],

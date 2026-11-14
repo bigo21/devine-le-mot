@@ -10,7 +10,7 @@
     "region": "party",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "phrases-soiree",
@@ -19,7 +19,7 @@
           "en": "Things people say at parties"
         },
         "emoji": "🥳",
-        "color": "indigo",
+        "color": "lagoon",
         "tags": [
           "soiree",
           "langage"

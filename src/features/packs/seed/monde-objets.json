@@ -10,7 +10,7 @@
     "region": "world",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 4,
+    "version": 5,
     "categories": [
       {
         "id": "objets-du-quotidien",
@@ -19,7 +19,7 @@
           "en": "Everyday objects"
         },
         "emoji": "🧰",
-        "color": "orchid",
+        "color": "plum",
         "tags": [
           "universel"
         ],

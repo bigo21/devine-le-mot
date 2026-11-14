@@ -10,7 +10,7 @@
     "region": "africa",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "footballeurs",
@@ -19,7 +19,7 @@
           "en": "African footballers"
         },
         "emoji": "🏆",
-        "color": "plum",
+        "color": "slate",
         "tags": [
           "personnalites",
           "sport"

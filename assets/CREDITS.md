@@ -76,3 +76,5 @@ Tout fichier tiers embarqué dans l'app est listé ici (docs/ASSETS.md §3). Auc
 | src/assets/categories/caddie.webp | Microsoft Fluent Emoji 3D « shopping cart » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-11-14 |
 | src/assets/categories/hibou.webp | Microsoft Fluent Emoji 3D « owl » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-11-14 |
 | src/assets/categories/rire-aux-larmes.webp | Microsoft Fluent Emoji 3D « face with tears of joy » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-11-14 |
+| src/assets/categories/zebre.webp | Microsoft Fluent Emoji 3D « zebra » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-11-14 |
+| src/assets/categories/projecteur-film.webp | Microsoft Fluent Emoji 3D « film projector » | https://github.com/microsoft/fluentui-emoji | MIT | 2026-11-14 |

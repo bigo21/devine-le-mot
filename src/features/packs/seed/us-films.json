@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 3,
+    "version": 4,
     "categories": [
       {
         "id": "films",
@@ -19,7 +19,7 @@
           "en": "Hollywood films"
         },
         "emoji": "🍿",
-        "color": "slate",
+        "color": "indigo",
         "tags": [
           "cinema"
         ],

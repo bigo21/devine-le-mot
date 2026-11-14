@@ -3,8 +3,10 @@
 import afArtistes from './af-artistes.json';
 import afFootballeurs from './af-footballeurs.json';
 import afHistoriques from './af-historiques.json';
+import afNollywood from './af-nollywood.json';
 import afPaysCapitales from './af-pays-capitales.json';
 import afPlats from './af-plats.json';
+import afSavane from './af-savane.json';
 import camerounCuisine from './cameroun-cuisine.json';
 import cmArtistes from './cm-artistes.json';
 import cmEcransHumour from './cm-ecrans-humour.json';
@@ -63,6 +65,8 @@ export const builtinPackFiles: readonly unknown[] = [
   afPlats,
   afFootballeurs,
   afHistoriques,
+  afSavane,
+  afNollywood,
   frChanteurs,
   frFilms,
   frPlats,

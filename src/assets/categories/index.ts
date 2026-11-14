@@ -29,6 +29,7 @@ export const categoryIcons = {
   'plats-africains': require('./plats-africains.webp') as number,
   'plats-camerounais': require('./plats-camerounais.webp') as number,
   'pop-corn': require('./pop-corn.webp') as number,
+  'projecteur-film': require('./projecteur-film.webp') as number,
   'region-africa': require('./region-africa.webp') as number,
   'region-mine': require('./region-mine.webp') as number,
   'region-party': require('./region-party.webp') as number,
@@ -48,6 +49,7 @@ export const categoryIcons = {
   'trophee': require('./trophee.webp') as number,
   'villes-quartiers': require('./villes-quartiers.webp') as number,
   'visage-fete': require('./visage-fete.webp') as number,
+  'zebre': require('./zebre.webp') as number,
 };
 
 export type CategoryIconName = keyof typeof categoryIcons;
@@ -83,6 +85,7 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🍛": 'plats-africains',
   "🍲": 'plats-camerounais',
   "🍿": 'pop-corn',
+  "📽": 'projecteur-film',
   "🌍": 'region-africa',
   "✏": 'region-mine',
   "🎉": 'region-party',
@@ -102,4 +105,5 @@ export const emojiIcons: Record<string, CategoryIconName> = {
   "🏆": 'trophee',
   "🏙": 'villes-quartiers',
   "🥳": 'visage-fete',
+  "🦓": 'zebre',
 };

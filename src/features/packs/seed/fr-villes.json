@@ -10,7 +10,7 @@
     "region": "fr",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 4,
+    "version": 5,
     "categories": [
       {
         "id": "villes",
@@ -19,7 +19,7 @@
           "en": "French cities"
         },
         "emoji": "🗺️",
-        "color": "slate",
+        "color": "indigo",
         "tags": [
           "lieux"
         ],

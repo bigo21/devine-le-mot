@@ -14,7 +14,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 4,
+    "version": 5,
     "categories": [
       {
         "id": "cm-plats",
@@ -23,7 +23,7 @@
           "en": "Cameroonian dishes"
         },
         "emoji": "🍲",
-        "color": "orchid",
+        "color": "plum",
         "tags": [
           "cuisine",
           "cameroun"

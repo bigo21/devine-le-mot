@@ -1,0 +1,601 @@
+{
+  "format": "devine-pack",
+  "formatVersion": 1,
+  "pack": {
+    "id": "af-nollywood",
+    "name": {
+      "fr": "Nollywood et séries africaines",
+      "en": "Nollywood and African shows"
+    },
+    "region": "africa",
+    "language": "fr",
+    "author": "Devine le mot",
+    "version": 2,
+    "categories": [
+      {
+        "id": "nollywood",
+        "name": {
+          "fr": "Nollywood et séries africaines",
+          "en": "Nollywood and African shows"
+        },
+        "emoji": "📽️",
+        "color": "lilac",
+        "tags": [
+          "personnalites",
+          "cinema"
+        ],
+        "variants": [
+          "classic",
+          "mime",
+          "sounds",
+          "one-word",
+          "sing",
+          "forbidden",
+          "air-draw",
+          "imitation",
+          "mix"
+        ],
+        "words": [
+          {
+            "text": "Genevieve Nnaji",
+            "difficulty": 1,
+            "forbidden": [
+              "actrice",
+              "Nigeria",
+              "Lionheart"
+            ]
+          },
+          {
+            "text": "Omotola Jalade-Ekeinde",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Nigeria",
+              "Omosexy"
+            ]
+          },
+          {
+            "text": "Ramsey Nouah",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Nigeria",
+              "romance"
+            ]
+          },
+          {
+            "text": "Pete Edochie",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Okonkwo",
+              "chef"
+            ]
+          },
+          {
+            "text": "Nkem Owoh",
+            "difficulty": 2,
+            "forbidden": [
+              "Osuofia",
+              "acteur",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Funke Akindele",
+            "difficulty": 1,
+            "forbidden": [
+              "Jenifa",
+              "actrice",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Mercy Johnson",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Nigeria",
+              "films"
+            ]
+          },
+          {
+            "text": "Patience Ozokwor",
+            "difficulty": 2,
+            "forbidden": [
+              "Mama G",
+              "méchante",
+              "belle-mère"
+            ]
+          },
+          {
+            "text": "Jim Iyke",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Nigeria",
+              "beau gosse"
+            ]
+          },
+          {
+            "text": "Richard Mofe-Damijo",
+            "difficulty": 3,
+            "forbidden": [
+              "RMD",
+              "acteur",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Rita Dominic",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Nigeria",
+              "films"
+            ]
+          },
+          {
+            "text": "Kanayo O. Kanayo",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "rituel",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Aki et Pawpaw",
+            "difficulty": 1,
+            "forbidden": [
+              "petits",
+              "jumeaux",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Zubby Michael",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Nigeria",
+              "films"
+            ]
+          },
+          {
+            "text": "Yul Edochie",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "fils",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Tonto Dikeh",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Nigeria",
+              "films"
+            ]
+          },
+          {
+            "text": "Regina Daniels",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "jeune",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Toyin Abraham",
+            "difficulty": 3,
+            "forbidden": [
+              "actrice",
+              "yoruba",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Kunle Afolayan",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "Anikulapo",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Kemi Adetiba",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisatrice",
+              "King of Boys",
+              "Nigeria"
+            ]
+          },
+          {
+            "text": "Nollywood",
+            "difficulty": 1,
+            "forbidden": [
+              "Nigeria",
+              "films",
+              "Lagos"
+            ]
+          },
+          {
+            "text": "Living in Bondage",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "argent",
+              "rituel"
+            ]
+          },
+          {
+            "text": "Osuofia in London",
+            "difficulty": 1,
+            "forbidden": [
+              "Nkem Owoh",
+              "Londres",
+              "comédie"
+            ]
+          },
+          {
+            "text": "King of Boys",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "Lagos",
+              "pouvoir"
+            ]
+          },
+          {
+            "text": "The Wedding Party",
+            "difficulty": 2,
+            "forbidden": [
+              "mariage",
+              "comédie",
+              "Lagos"
+            ]
+          },
+          {
+            "text": "Lionheart",
+            "difficulty": 2,
+            "forbidden": [
+              "Genevieve Nnaji",
+              "Netflix",
+              "entreprise"
+            ]
+          },
+          {
+            "text": "Anikulapo",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "yoruba",
+              "Afolayan"
+            ]
+          },
+          {
+            "text": "Jenifa",
+            "difficulty": 2,
+            "forbidden": [
+              "Funke Akindele",
+              "comédie",
+              "campus"
+            ]
+          },
+          {
+            "text": "Blood Sisters",
+            "difficulty": 3,
+            "forbidden": [
+              "série",
+              "Netflix",
+              "mariage"
+            ]
+          },
+          {
+            "text": "A Tribe Called Judah",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Funke Akindele",
+              "famille"
+            ]
+          },
+          {
+            "text": "Gangs of Lagos",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Amazon",
+              "bandits"
+            ]
+          },
+          {
+            "text": "Half of a Yellow Sun",
+            "difficulty": 3,
+            "forbidden": [
+              "Biafra",
+              "roman",
+              "guerre"
+            ]
+          },
+          {
+            "text": "Jackie Appiah",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Ghana",
+              "films"
+            ]
+          },
+          {
+            "text": "Van Vicker",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Ghana",
+              "romance"
+            ]
+          },
+          {
+            "text": "Majid Michel",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Ghana",
+              "films"
+            ]
+          },
+          {
+            "text": "Nadia Buari",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Ghana",
+              "films"
+            ]
+          },
+          {
+            "text": "Yvonne Nelson",
+            "difficulty": 3,
+            "forbidden": [
+              "actrice",
+              "Ghana",
+              "films"
+            ]
+          },
+          {
+            "text": "Lil Win",
+            "difficulty": 3,
+            "forbidden": [
+              "acteur",
+              "Ghana",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Ma Famille",
+            "difficulty": 1,
+            "forbidden": [
+              "série",
+              "Akissi Delta",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Akissi Delta",
+            "difficulty": 2,
+            "forbidden": [
+              "Ma Famille",
+              "actrice",
+              "Côte d'Ivoire"
+            ]
+          },
+          {
+            "text": "Qui fait ça ?",
+            "difficulty": 3,
+            "forbidden": [
+              "série",
+              "Côte d'Ivoire",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Michel Gohou",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Côte d'Ivoire",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Adama Dahico",
+            "difficulty": 3,
+            "forbidden": [
+              "humoriste",
+              "Côte d'Ivoire",
+              "scène"
+            ]
+          },
+          {
+            "text": "Les Bobodiouf",
+            "difficulty": 2,
+            "forbidden": [
+              "série",
+              "Burkina Faso",
+              "comédie"
+            ]
+          },
+          {
+            "text": "Bienvenue au Gondwana",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Mamane",
+              "dictature"
+            ]
+          },
+          {
+            "text": "Mamane",
+            "difficulty": 2,
+            "forbidden": [
+              "humoriste",
+              "Niger",
+              "Gondwana"
+            ]
+          },
+          {
+            "text": "Maîtresse d'un homme marié",
+            "difficulty": 2,
+            "forbidden": [
+              "série",
+              "Sénégal",
+              "Marodi"
+            ]
+          },
+          {
+            "text": "Idoles",
+            "difficulty": 3,
+            "forbidden": [
+              "série",
+              "Sénégal",
+              "politique"
+            ]
+          },
+          {
+            "text": "Marodi TV",
+            "difficulty": 3,
+            "forbidden": [
+              "Sénégal",
+              "production",
+              "séries"
+            ]
+          },
+          {
+            "text": "FESPACO",
+            "difficulty": 2,
+            "forbidden": [
+              "festival",
+              "Ouagadougou",
+              "cinéma"
+            ]
+          },
+          {
+            "text": "Sembène Ousmane",
+            "difficulty": 2,
+            "forbidden": [
+              "réalisateur",
+              "Sénégal",
+              "La Noire de"
+            ]
+          },
+          {
+            "text": "Moolaadé",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Sembène",
+              "excision"
+            ]
+          },
+          {
+            "text": "Souleymane Cissé",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "Mali",
+              "Yeelen"
+            ]
+          },
+          {
+            "text": "Yeelen",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Mali",
+              "Cissé"
+            ]
+          },
+          {
+            "text": "Timbuktu",
+            "difficulty": 2,
+            "forbidden": [
+              "film",
+              "Sissako",
+              "Mali"
+            ]
+          },
+          {
+            "text": "Abderrahmane Sissako",
+            "difficulty": 3,
+            "forbidden": [
+              "réalisateur",
+              "Mauritanie",
+              "Timbuktu"
+            ]
+          },
+          {
+            "text": "Atlantique",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Mati Diop",
+              "Dakar"
+            ]
+          },
+          {
+            "text": "Tsotsi",
+            "difficulty": 3,
+            "forbidden": [
+              "film",
+              "Afrique du Sud",
+              "Oscar"
+            ]
+          },
+          {
+            "text": "Queen Sono",
+            "difficulty": 3,
+            "forbidden": [
+              "série",
+              "Netflix",
+              "espionne"
+            ]
+          },
+          {
+            "text": "Blood & Water",
+            "difficulty": 3,
+            "forbidden": [
+              "série",
+              "Netflix",
+              "Le Cap"
+            ]
+          },
+          {
+            "text": "Djimon Hounsou",
+            "difficulty": 2,
+            "forbidden": [
+              "acteur",
+              "Bénin",
+              "Gladiator"
+            ]
+          },
+          {
+            "text": "Lupita Nyong'o",
+            "difficulty": 2,
+            "forbidden": [
+              "actrice",
+              "Kenya",
+              "Oscar"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

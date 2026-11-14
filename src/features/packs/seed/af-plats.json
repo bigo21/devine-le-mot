@@ -10,7 +10,7 @@
     "region": "africa",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "plats",
@@ -19,7 +19,7 @@
           "en": "African dishes"
         },
         "emoji": "🍛",
-        "color": "indigo",
+        "color": "lagoon",
         "tags": [
           "cuisine"
         ],

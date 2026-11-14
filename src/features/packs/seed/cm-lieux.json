@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "lieux",
@@ -19,7 +19,7 @@
           "en": "Places and landmarks"
         },
         "emoji": "🏞️",
-        "color": "slate",
+        "color": "indigo",
         "tags": [
           "lieux"
         ],

@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 2,
+    "version": 3,
     "categories": [
       {
         "id": "proverbes",
@@ -19,7 +19,7 @@
           "en": "Proverbs and sayings"
         },
         "emoji": "🦉",
-        "color": "lagoon",
+        "color": "slate",
         "tags": [
           "langue",
           "expressions"

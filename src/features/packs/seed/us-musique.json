@@ -10,7 +10,7 @@
     "region": "us",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 4,
+    "version": 5,
     "categories": [
       {
         "id": "stars-musique",
@@ -19,7 +19,7 @@
           "en": "Music stars"
         },
         "emoji": "🎧",
-        "color": "orchid",
+        "color": "plum",
         "tags": [
           "personnalites",
           "musique"
