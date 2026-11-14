@@ -2,6 +2,7 @@ import { useKeepAwake } from 'expo-keep-awake';
 import { router } from 'expo-router';
 import { ArrowFatDownIcon } from 'phosphor-react-native/src/icons/ArrowFatDown';
 import { ArrowFatUpIcon } from 'phosphor-react-native/src/icons/ArrowFatUp';
+import { InfoIcon } from 'phosphor-react-native/src/icons/Info';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
@@ -37,6 +38,8 @@ export default function PlayReadyScreen() {
   // Lu une fois : le rappel reste affiché pendant toute la visite, même après calibration.
   const [seenGestureHint] = useState(() => useSettings.getState().seenGestureHint);
   const [needsHelp, setNeedsHelp] = useState(false);
+  // Mode tap activé depuis cet écran : on le dit, car le réglage reste pour les parties suivantes.
+  const [switchedToTap, setSwitchedToTap] = useState(false);
 
   useEffect(() => {
     if (!round) router.replace('/play/setup');
@@ -103,6 +106,12 @@ export default function PlayReadyScreen() {
         {playWithTaps ? (
           <>
             <Text muted>{tilt.available === false ? t('ready.noSensor') : t('ready.tapHint')}</Text>
+            {switchedToTap ? (
+              <View style={styles.notice} accessibilityLiveRegion="polite">
+                <Icon icon={InfoIcon} size={18} color={colors.lagoon} />
+                <Text variant="labelSmall">{t('ready.tapModeOn')}</Text>
+              </View>
+            ) : null}
             <Button
               label={t('ready.tapStart')}
               size="lg"
@@ -129,7 +138,10 @@ export default function PlayReadyScreen() {
               <Button
                 label={t('ready.switchToTap')}
                 variant="secondary"
-                onPress={() => updateSettings({ tapMode: true })}
+                onPress={() => {
+                  updateSettings({ tapMode: true });
+                  setSwitchedToTap(true);
+                }}
               />
             ) : null}
           </>
@@ -150,4 +162,5 @@ const styles = StyleSheet.create({
   texts: { flex: 1, gap: spacing.md, alignItems: 'flex-start' },
   gestures: { gap: spacing.sm },
   gesture: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  notice: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
 });
