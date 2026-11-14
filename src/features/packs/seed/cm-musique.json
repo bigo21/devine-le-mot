@@ -10,7 +10,7 @@
     "region": "cm",
     "language": "fr",
     "author": "Devine le mot",
-    "version": 4,
+    "version": 5,
     "categories": [
       {
         "id": "musique",
@@ -292,6 +292,402 @@
               "Valsero",
               "rap",
               "engagé"
+            ]
+          },
+          {
+            "text": "Tchamassi",
+            "difficulty": 3,
+            "forbidden": [
+              "rythme",
+              "Ouest",
+              "Bamiléké"
+            ]
+          },
+          {
+            "text": "Essani",
+            "difficulty": 3,
+            "forbidden": [
+              "danse",
+              "Beti",
+              "funérailles"
+            ]
+          },
+          {
+            "text": "Les Ndoss",
+            "difficulty": 2,
+            "forbidden": [
+              "Petit Pays",
+              "fans",
+              "roi"
+            ]
+          },
+          {
+            "text": "Rumba",
+            "difficulty": 1,
+            "forbidden": [
+              "Congo",
+              "danse",
+              "guitare"
+            ]
+          },
+          {
+            "text": "Soukous",
+            "difficulty": 2,
+            "forbidden": [
+              "Congo",
+              "guitare",
+              "danse"
+            ]
+          },
+          {
+            "text": "Zouk",
+            "difficulty": 1,
+            "forbidden": [
+              "Antilles",
+              "danse",
+              "slow"
+            ]
+          },
+          {
+            "text": "Reggae",
+            "difficulty": 1,
+            "forbidden": [
+              "Jamaïque",
+              "Bob Marley",
+              "dreadlocks"
+            ]
+          },
+          {
+            "text": "Gospel",
+            "difficulty": 1,
+            "forbidden": [
+              "église",
+              "chorale",
+              "Dieu"
+            ]
+          },
+          {
+            "text": "Rap",
+            "difficulty": 1,
+            "forbidden": [
+              "rimes",
+              "micro",
+              "flow"
+            ]
+          },
+          {
+            "text": "Afrobeat",
+            "difficulty": 2,
+            "forbidden": [
+              "Fela Kuti",
+              "Nigeria",
+              "cuivres"
+            ]
+          },
+          {
+            "text": "Slow",
+            "difficulty": 1,
+            "forbidden": [
+              "couple",
+              "danser",
+              "lent"
+            ]
+          },
+          {
+            "text": "Mendzang",
+            "difficulty": 3,
+            "forbidden": [
+              "balafon",
+              "Beti",
+              "ensemble"
+            ]
+          },
+          {
+            "text": "Nkul",
+            "difficulty": 3,
+            "forbidden": [
+              "tambour",
+              "message",
+              "Beti"
+            ]
+          },
+          {
+            "text": "Tambour parleur",
+            "difficulty": 2,
+            "forbidden": [
+              "message",
+              "village",
+              "langage"
+            ]
+          },
+          {
+            "text": "Hochet",
+            "difficulty": 2,
+            "forbidden": [
+              "secouer",
+              "calebasse",
+              "bruit"
+            ]
+          },
+          {
+            "text": "Arc musical",
+            "difficulty": 3,
+            "forbidden": [
+              "corde",
+              "bouche",
+              "traditionnel"
+            ]
+          },
+          {
+            "text": "Flûte peule",
+            "difficulty": 3,
+            "forbidden": [
+              "Nord",
+              "bergers",
+              "souffler"
+            ]
+          },
+          {
+            "text": "Trompe en corne",
+            "difficulty": 3,
+            "forbidden": [
+              "souffler",
+              "animal",
+              "cérémonie"
+            ]
+          },
+          {
+            "text": "Ngondo",
+            "difficulty": 2,
+            "forbidden": [
+              "Sawa",
+              "fleuve",
+              "Douala"
+            ]
+          },
+          {
+            "text": "Ngouon",
+            "difficulty": 3,
+            "forbidden": [
+              "Bamoun",
+              "Foumban",
+              "sultan"
+            ]
+          },
+          {
+            "text": "Lela",
+            "difficulty": 3,
+            "forbidden": [
+              "Bali Nyonga",
+              "Nord-Ouest",
+              "festival"
+            ]
+          },
+          {
+            "text": "FENAC",
+            "difficulty": 3,
+            "forbidden": [
+              "festival",
+              "arts",
+              "culture"
+            ]
+          },
+          {
+            "text": "Balafon Music Awards",
+            "difficulty": 3,
+            "forbidden": [
+              "récompenses",
+              "cérémonie",
+              "artistes"
+            ]
+          },
+          {
+            "text": "Canal d'Or",
+            "difficulty": 3,
+            "forbidden": [
+              "récompenses",
+              "télévision",
+              "trophée"
+            ]
+          },
+          {
+            "text": "Bal poussière",
+            "difficulty": 2,
+            "forbidden": [
+              "danser",
+              "village",
+              "terre"
+            ]
+          },
+          {
+            "text": "Veillée",
+            "difficulty": 2,
+            "forbidden": [
+              "nuit",
+              "deuil",
+              "chants"
+            ]
+          },
+          {
+            "text": "Cabaret",
+            "difficulty": 1,
+            "forbidden": [
+              "soirée",
+              "orchestre",
+              "scène"
+            ]
+          },
+          {
+            "text": "Featuring",
+            "difficulty": 1,
+            "forbidden": [
+              "feat",
+              "duo",
+              "invité"
+            ]
+          },
+          {
+            "text": "Refrain",
+            "difficulty": 1,
+            "forbidden": [
+              "chanson",
+              "répéter",
+              "couplet"
+            ]
+          },
+          {
+            "text": "Playback",
+            "difficulty": 1,
+            "forbidden": [
+              "micro",
+              "lèvres",
+              "faux"
+            ]
+          },
+          {
+            "text": "Clip vidéo",
+            "difficulty": 1,
+            "forbidden": [
+              "chanson",
+              "tournage",
+              "YouTube"
+            ]
+          },
+          {
+            "text": "Choriste",
+            "difficulty": 2,
+            "forbidden": [
+              "voix",
+              "fond",
+              "chanter"
+            ]
+          },
+          {
+            "text": "Danseuse",
+            "difficulty": 1,
+            "forbidden": [
+              "scène",
+              "chorégraphie",
+              "artiste"
+            ]
+          },
+          {
+            "text": "Studio d'enregistrement",
+            "difficulty": 2,
+            "forbidden": [
+              "micro",
+              "album",
+              "producteur"
+            ]
+          },
+          {
+            "text": "Album",
+            "difficulty": 1,
+            "forbidden": [
+              "chansons",
+              "sortie",
+              "disque"
+            ]
+          },
+          {
+            "text": "Disque d'or",
+            "difficulty": 2,
+            "forbidden": [
+              "ventes",
+              "récompense",
+              "album"
+            ]
+          },
+          {
+            "text": "Sweet Mother",
+            "difficulty": 1,
+            "forbidden": [
+              "Prince Nico Mbarga",
+              "maman",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Wule Bang Bang",
+            "difficulty": 2,
+            "forbidden": [
+              "Magasco",
+              "chanson",
+              "danse"
+            ]
+          },
+          {
+            "text": "Yelele",
+            "difficulty": 2,
+            "forbidden": [
+              "X-Maleya",
+              "chanson",
+              "trio"
+            ]
+          },
+          {
+            "text": "Ascenseur",
+            "difficulty": 2,
+            "forbidden": [
+              "K-Tino",
+              "bikutsi",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Constitution constipée",
+            "difficulty": 3,
+            "forbidden": [
+              "Lapiro de Mbanga",
+              "chanson",
+              "engagé"
+            ]
+          },
+          {
+            "text": "African Typic Collection",
+            "difficulty": 2,
+            "forbidden": [
+              "Sam Fan Thomas",
+              "makassi",
+              "chanson"
+            ]
+          },
+          {
+            "text": "Hot Koki",
+            "difficulty": 3,
+            "forbidden": [
+              "André-Marie Talla",
+              "chanson",
+              "années 70"
+            ]
+          },
+          {
+            "text": "Agatha",
+            "difficulty": 3,
+            "forbidden": [
+              "Francis Bebey",
+              "chanson",
+              "mensonge"
             ]
           }
         ]
