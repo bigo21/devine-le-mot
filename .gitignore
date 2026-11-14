@@ -46,6 +46,8 @@ example
 .impeccable/review/
 .impeccable/mocks/
 .impeccable/build/
+.impeccable/critique/
+.impeccable/config.local.json
 
 # Cache des scripts d’assets
 scripts/.cache/
