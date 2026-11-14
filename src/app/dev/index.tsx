@@ -11,7 +11,6 @@ import { colors, fonts } from '@/ui/tokens';
 const screens: { href: Href; key: keyof Translation['screens'] }[] = [
   { href: '/', key: 'home' },
   { href: '/categories', key: 'categories' },
-  { href: '/categories/demo', key: 'categoryDetail' },
   { href: '/play/setup', key: 'playSetup' },
   { href: '/play/ready', key: 'playReady' },
   { href: '/play/game', key: 'playGame' },

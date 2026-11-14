@@ -162,7 +162,12 @@ export default function CategoriesScreen() {
                 >
                   <CategoryCard
                     category={category}
-                    onPress={() => play(category)}
+                    onPress={() =>
+                      router.push({
+                        pathname: '/categories/[id]',
+                        params: { id: String(category.id) },
+                      })
+                    }
                     onLongPress={() => void openPreview(category)}
                   />
                 </Animated.View>
