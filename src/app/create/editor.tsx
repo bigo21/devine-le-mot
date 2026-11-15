@@ -274,7 +274,7 @@ export default function EditorScreen() {
         footer={
           <>
             {saveError ? (
-              <Text variant="caption" color={colors.danger} accessibilityLiveRegion="polite">
+              <Text variant="labelSmall" color={colors.danger} accessibilityLiveRegion="polite">
                 {t('editor.saveFailed')}
               </Text>
             ) : null}
@@ -410,7 +410,7 @@ export default function EditorScreen() {
             <Text variant="heading" accessibilityRole="header">
               {t('editor.words')}
             </Text>
-            <Text variant="label">{t('editor.count', { count: status.wordCount })}</Text>
+            <Text variant="bodyStrong">{t('editor.count', { count: status.wordCount })}</Text>
           </View>
           <View
             style={styles.status}
@@ -457,7 +457,7 @@ export default function EditorScreen() {
             />
           </View>
           {report ? (
-            <Text variant="caption" muted accessibilityLiveRegion="polite">
+            <Text variant="labelSmall" muted accessibilityLiveRegion="polite">
               {report}
             </Text>
           ) : null}
@@ -495,7 +495,7 @@ export default function EditorScreen() {
 
         <View style={styles.section}>
           <Text variant="labelSmall">{t('editor.forbiddenTitle')}</Text>
-          <Text variant="caption" muted>
+          <Text variant="labelSmall" muted>
             {status.forbiddenVariant
               ? t('editor.forbiddenReady', { eligible: status.forbiddenEligible })
               : `${t('editor.forbiddenHint')} ${t('editor.forbiddenStatus', {
@@ -535,7 +535,7 @@ export default function EditorScreen() {
                     <Text variant="bodyStrong" style={styles.flex} numberOfLines={2}>
                       {word.text}
                     </Text>
-                    <Text variant="caption" muted>
+                    <Text variant="labelSmall" muted>
                       {t('editor.forbiddenCount', { count: filled })}
                     </Text>
                   </Pressable>
@@ -652,7 +652,7 @@ const styles = StyleSheet.create({
     borderRadius: radii.pill,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 3,
+    borderWidth: 2,
     borderColor: 'transparent',
   },
   swatchSelected: { borderColor: colors.text },

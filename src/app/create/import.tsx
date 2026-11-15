@@ -143,7 +143,7 @@ export default function ImportScreen() {
               icon={<Icon icon={FileArrowUpIcon} emphasis />}
               onPress={() => void pick()}
             />
-            <Text variant="caption" muted align="center">
+            <Text variant="labelSmall" muted align="center">
               {phase.kind === 'reading' ? t('importScreen.reading') : t('importScreen.pickHint')}
             </Text>
           </View>
@@ -204,7 +204,7 @@ export default function ImportScreen() {
           ) : (
             <>
               {phase.plan === 'copy' ? (
-                <Text variant="caption" muted>
+                <Text variant="labelSmall" muted>
                   {t('importScreen.builtinCopy')}
                 </Text>
               ) : null}
@@ -289,13 +289,13 @@ function Preview({ file }: { file: PackFile }) {
       <Text variant="labelSmall" muted>
         {t('importScreen.previewTitle')}
       </Text>
-      <Text variant="title">{summary.name}</Text>
+      <Text variant="heading">{summary.name}</Text>
       {summary.author ? (
         <Text variant="labelSmall" muted>
           {t('importScreen.by', { author: summary.author })}
         </Text>
       ) : null}
-      <Text variant="label">
+      <Text variant="bodyStrong">
         {t('importScreen.categories', { count: summary.categories.length })} ·{' '}
         {t('importScreen.words', { count: summary.words })}
       </Text>
@@ -306,7 +306,7 @@ function Preview({ file }: { file: PackFile }) {
             <Text variant="bodyStrong" style={styles.flex} numberOfLines={1}>
               {category.name}
             </Text>
-            <Text variant="caption" muted>
+            <Text variant="labelSmall" muted>
               {t('importScreen.words', { count: category.words })}
             </Text>
           </View>

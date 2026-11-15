@@ -59,7 +59,7 @@ import {
   useFlash,
   useReducedMotion,
 } from '@/ui/motion';
-import { colors, onColor, spacing } from '@/ui/tokens';
+import { colors, onColor, radii, spacing } from '@/ui/tokens';
 
 type Phase = 'intro' | 'countdown' | 'playing' | 'paused' | 'ended';
 
@@ -443,7 +443,8 @@ export default function PlayGameScreen() {
   const quitGame = () => {
     stopReading();
     setSheetOpen(false);
-    router.replace('/play/setup');
+    // Retour à la préparation déjà dans la pile (sinon Retour ramenait à une deuxième préparation).
+    router.dismissTo('/play/setup');
   };
 
   // --- Styles animés ------------------------------------------------------------------------
@@ -706,7 +707,7 @@ const styles = StyleSheet.create({
   forbiddenWord: {
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.xs,
-    borderRadius: 999,
+    borderRadius: radii.pill,
     borderWidth: 2,
   },
   word: { width: '100%' },
@@ -714,7 +715,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.sm,
-    borderRadius: 999,
+    borderRadius: radii.pill,
     backgroundColor: colors.bg,
   },
   toast: {
@@ -722,7 +723,7 @@ const styles = StyleSheet.create({
     bottom: spacing.xl,
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.sm,
-    borderRadius: 999,
+    borderRadius: radii.pill,
     backgroundColor: colors.bg,
   },
   halves: { flex: 1, flexDirection: 'row' },

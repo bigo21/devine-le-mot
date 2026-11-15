@@ -209,7 +209,8 @@ export default function PlayResultsScreen() {
 
   const changeCategory = async () => {
     await record();
-    router.replace('/play/setup');
+    // Retour à la préparation déjà dans la pile, plutôt que d'en empiler une deuxième.
+    router.dismissTo('/play/setup');
   };
 
   const actions = (
@@ -248,7 +249,7 @@ export default function PlayResultsScreen() {
             {team ? (
               <View style={styles.team}>
                 <View style={[styles.teamDot, { backgroundColor: colors[team.color] }]} />
-                <Text variant="label">{t('teams.roundOf', { team: team.name })}</Text>
+                <Text variant="bodyStrong">{t('teams.roundOf', { team: team.name })}</Text>
               </View>
             ) : null}
           </Animated.View>
@@ -263,7 +264,7 @@ export default function PlayResultsScreen() {
                   delay={SCORE_AT}
                   variant="hero"
                 />
-                <Text variant="bodyLarge" muted>
+                <Text variant="body" muted>
                   {t('results.scoreCaption')}
                 </Text>
               </View>
@@ -312,7 +313,7 @@ export default function PlayResultsScreen() {
             <Text muted>{t('results.empty')}</Text>
           ) : (
             <View style={styles.list}>
-              <Text variant="caption" muted>
+              <Text variant="labelSmall" muted>
                 {t('results.correctHint')}
               </Text>
               {results.map((entry, index) => {
@@ -383,10 +384,10 @@ function RecordBadge({ previous, reduced }: { previous: number; reduced: boolean
     >
       <Icon icon={TrophyIcon} color={onColor('sun')} emphasis />
       <View>
-        <Text variant="label" color={onColor('sun')}>
+        <Text variant="bodyStrong" color={onColor('sun')}>
           {t('results.record')}
         </Text>
-        <Text variant="caption" color={onColor('sun')}>
+        <Text variant="labelSmall" color={onColor('sun')}>
           {t('results.recordPrevious', { count: previous })}
         </Text>
       </View>

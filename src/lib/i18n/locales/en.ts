@@ -335,7 +335,7 @@ export const en: Translation = {
     pasteTitle: 'Paste a word list',
     pasteHint: 'One word per line: we create a category with it, you just need to name it.',
     pastePlaceholder: 'Paste your list here',
-    pasteContinue: 'Continue',
+    pasteContinue: 'Create with these words',
     reading: 'Reading the file…',
     previewTitle: 'Preview',
     by: 'By {{author}}',

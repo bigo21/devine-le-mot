@@ -180,7 +180,7 @@ export default function SettingsScreen() {
         </Text>
         <Text muted>{t('settings.promise')}</Text>
         <Text variant="labelSmall">{t('settings.credits')}</Text>
-        <Text variant="caption" muted>
+        <Text variant="labelSmall" muted>
           {t('settings.creditsList')}
         </Text>
       </Section>
@@ -205,7 +205,7 @@ function Field({ label, hint, children }: { label: string; hint?: string; childr
       <Text variant="labelSmall">{label}</Text>
       {children}
       {hint ? (
-        <Text variant="caption" muted>
+        <Text variant="labelSmall" muted>
           {hint}
         </Text>
       ) : null}
@@ -234,7 +234,7 @@ function ToggleRow({ label, hint, value, onChange }: ToggleRowProps) {
       <View style={styles.flex}>
         <Text variant="bodyStrong">{label}</Text>
         {hint ? (
-          <Text variant="caption" muted>
+          <Text variant="labelSmall" muted>
             {hint}
           </Text>
         ) : null}
@@ -242,7 +242,8 @@ function ToggleRow({ label, hint, value, onChange }: ToggleRowProps) {
       <Switch
         value={value}
         onValueChange={onChange}
-        trackColor={{ false: colors.bgSunken, true: colors.lagoon }}
+        // Rail désactivé en textMuted : contraste ≥ 3:1 avec la carte (WCAG 1.4.11).
+        trackColor={{ false: colors.textMuted, true: colors.lagoon }}
         thumbColor={colors.text}
         importantForAccessibility="no"
       />
@@ -262,7 +263,7 @@ function LinkRow({ label, hint, onPress }: { label: string; hint?: string; onPre
       <View style={styles.flex}>
         <Text variant="bodyStrong">{label}</Text>
         {hint ? (
-          <Text variant="caption" muted>
+          <Text variant="labelSmall" muted>
             {hint}
           </Text>
         ) : null}
@@ -328,7 +329,7 @@ function DetectionTest() {
               color={last.result === 'found' ? colors.onPalm : colors.onPass}
               emphasis
             />
-            <Text variant="label" color={last.result === 'found' ? colors.onPalm : colors.onPass}>
+            <Text variant="bodyStrong" color={last.result === 'found' ? colors.onPalm : colors.onPass}>
               {last.result === 'found' ? t('settings.testFound') : t('settings.testPassed')}
             </Text>
           </View>
