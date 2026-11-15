@@ -45,7 +45,7 @@
               "armeabi-v7a",
               "arm64-v8a"
             ],
-            "extraProguardRules": "# Vues natives des modules Expo créées par réflexion (ViewDefinitionBuilder) : la règle\n# d'expo-modules-core ne couvre que les classes qui implémentent ExpoView. GLView (expo-gl)\n# hérite de TextureView : sans ceci, R8 retire son constructeur et le tutoriel 3D plante.\n-keepclassmembers class expo.modules.** extends android.view.View {\n  public <init>(android.content.Context);\n  public <init>(android.content.Context, expo.modules.kotlin.AppContext);\n}\n"
+            "extraProguardRules": "# Vues natives des modules Expo créées par réflexion (ViewDefinitionBuilder) : la règle\n# d'expo-modules-core ne couvre que les classes qui implémentent ExpoView. GLView (expo-gl)\n# hérite de TextureView : sans ceci, R8 retire son constructeur et le tutoriel 3D plante.\n-keepclassmembers class expo.modules.** extends android.view.View {\n  public <init>(android.content.Context);\n  public <init>(android.content.Context, expo.modules.kotlin.AppContext);\n}\n# expo-gl n'a aucune règle R8 et son code C++ appelle des méthodes Java par leur nom (JNI,\n# ex. GLContext.flush()) : R8 les supprimait (« JNI DETECTED ERROR : mid == null »).\n-keep class expo.modules.gl.** { *; }\n"
           }
         }
       ],
