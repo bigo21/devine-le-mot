@@ -8,10 +8,12 @@ import { maxFontScale } from '@/ui/tokens';
 
 import type { CategorySummary } from '../repository';
 
-/** Hauteur unique des cartes de catégorie : icône, titre sur 2 lignes au plus, nombre de mots. */
-export const CATEGORY_CARD_HEIGHT = 156;
-/** Police système agrandie : au-delà, le titre a droit à 3 lignes et la carte grandit. */
-const LARGE_FONT_SCALE = 1.2;
+/**
+ * Hauteur unique des cartes de catégorie : marges (32) + icône (44) + espaces (16) + titre sur
+ * 3 lignes (66) + nombre de mots (18). Le titre garde toujours la même taille : une taille
+ * réduite au cas par cas rendait les titres longs bien plus petits que leurs voisins.
+ */
+export const CATEGORY_CARD_HEIGHT = 176;
 /** Le nombre de mots grandit moins que le titre : il reste secondaire. */
 const COUNT_MAX_FONT_SCALE = 1.25;
 
@@ -26,10 +28,8 @@ type Props = {
 /** Carte de catégorie : mêmes dimensions partout (grille de l'écran Catégories, préparation). */
 export function CategoryCard({ category, onPress, onLongPress, selected = false }: Props) {
   const { t } = useTranslation();
-  // En grande police, le titre ne doit pas rétrécir jusqu'à l'illisible : la carte grandit avec
-  // la police et le titre passe sur 3 lignes.
+  // En grande police, la carte grandit avec la police (le titre garde ses 3 lignes).
   const fontScale = Math.min(useWindowDimensions().fontScale, maxFontScale);
-  const largeFont = fontScale > LARGE_FONT_SCALE;
   const height = CATEGORY_CARD_HEIGHT * Math.max(1, fontScale);
   const label = category.favorite
     ? `${category.name}, ${t('categoriesScreen.favorite')}`
@@ -55,9 +55,7 @@ export function CategoryCard({ category, onPress, onLongPress, selected = false 
       <View style={styles.title}>
         <Text
           variant="subheading"
-          numberOfLines={largeFont ? 3 : 2}
-          adjustsFontSizeToFit
-          minimumFontScale={0.85}
+          numberOfLines={3}
           android_hyphenationFrequency="normal"
         >
           {category.name}
